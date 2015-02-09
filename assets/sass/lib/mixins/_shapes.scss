@@ -1,0 +1,18 @@
+
+
+// tamaños cajas
+@mixin size($width, $height) {
+  width: $width;
+  min-height: $height;
+}
+
+// cuadrados
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+// circulos
+@mixin circle() {
+  border-radius: 100%;
+  @include square(100px);
+}

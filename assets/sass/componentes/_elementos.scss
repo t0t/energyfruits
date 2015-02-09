@@ -1,0 +1,87 @@
+
+
+hr {
+	clear : both;
+	@extend %display-block;
+	margin : $baselineheight 0;
+	padding : 0;
+	height : 1px;
+	border : 0;
+	border-top : 1px dotted $bordercolor;
+}
+
+
+/*------------------------------------*\
+    $ELEMENTOS-IMÁGENES
+\*------------------------------------*/
+
+.img--rounded {
+	border-radius :$radius * 4;
+}
+
+.img--circle {
+	border-radius : 100%;
+}
+
+.img--noajust {
+	width: inherit;
+}
+
+// Iconos cargados mediante checkbox en acf
+.content-summary__img {
+
+	// width: 40px;
+	min-height: 210px;
+
+	&.ico_noticias {
+
+		@include background-image(ico_noticias,auto,no-repeat,svg);
+		background-position: center top;
+
+	}
+
+	&.ico_agenda {
+
+		@include background-image(ico_agenda,auto,no-repeat,svg);
+		background-position: center top;
+
+	}
+
+	&.ico_tienda {
+
+		@include background-image(ico_tienda,auto,no-repeat,svg);
+		background-position: center top;
+
+	}
+}
+
+
+
+
+/*------------------------------------*\
+    $ELEMENTOS-FIGURE
+\*------------------------------------*/
+figure {
+
+	@media screen and (min-width: $bp3) {}
+
+	img {
+		// margin-bottom : $baselineheight / 4;
+		
+		&:hover {
+			// box-shadow: 0 0 0 1px pink inset;
+		}
+	}
+
+	figcaption {
+
+		@extend %display-block;
+
+		// line-height: $baselineheight;
+
+		// @include font-size($basefontsize);
+
+		font-style : italic;
+
+	}
+}

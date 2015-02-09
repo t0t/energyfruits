@@ -1,0 +1,56 @@
+
+.sidebar {
+
+	@include max-width($bp1);
+	
+
+	* {
+		letter-spacing: $baseletterspacing;
+		@include transition(.3s);
+	}
+
+
+	a, a:visited {
+
+		color: $black;
+
+		&:hover {
+			color: $color-alt;
+		}
+
+	}
+
+
+
+	background-color: $white;
+	// background-color: darken($color-alt, 10%);
+	// background-color: lighten($color-base, 55%);
+
+	padding-top: $gutterwidth;
+
+	
+	
+	h3, h2, h4 {
+
+		color: $black;
+
+	}
+
+
+	img {
+
+		width: inherit;
+	}
+
+	figure {
+
+		> a {
+
+			@extend %clearfix;
+
+		}
+
+		figcaption {}
+	}
+
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="503px" viewBox="0 0 1440 503" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>bg_top_main</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Blank-Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Portada-10" sketch:type="MSArtboardGroup" transform="translate(-30.000000, -235.000000)" fill="#8C4C35">
+            <path d="M30,235 L1470,235 L1470,731.680507 C1470,731.680507 1270.13475,731.680507 1170.20213,731.680507 C1141.01055,731.680507 1113.03913,734.646626 1083.84756,734.646626 C1054.65598,734.646626 1024.24424,731.680507 995.05266,731.680507 C960.069008,731.680507 929.276627,737.297896 894.292975,737.297896 C859.309322,737.297896 820.134399,731.680507 785.150746,731.680507 C746.841427,731.680507 715.798105,734.695152 670.222787,731.680507 C621.302065,731.680507 572.952304,729.736702 524.031581,729.736702 C477.262181,729.736702 429.489912,729.616826 383.152421,731.680507 C328.636288,734.108431 204.330483,731.680507 114.919513,731.680507 C86.613009,731.680507 30,731.679993 30,731.679993 L30,235 Z" id="bg_top_main" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

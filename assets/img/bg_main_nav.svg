@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="63px" viewBox="0 0 1440 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>bg_main_nav</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Blank-Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Portada-8" sketch:type="MSArtboardGroup" transform="translate(-30.000000, -168.000000)" fill="#8C4C35">
+            <g id="main-menu-2" sketch:type="MSLayerGroup" transform="translate(30.000000, 169.000000)">
+                <path d="M0,4.4917405 C27.49125,4.4917405 55.0448775,4.42721571 82.56,4.4917405 C117.49875,4.57367418 170.950472,0.14453125 220.54875,0.14453125 C270.150472,0.14453125 330.558278,4.4917405 380.16,4.4917405 C489.25875,0.14453124 476.159237,0.272010593 557.2125,1.14453124 C567.17734,1.0685155 600.83625,4.83894961 696.5625,2.49174043 C781.2675,2.9140625 853.52853,4.11300285 911.0775,0.14453125 C1195.00125,-1.8513732 1144.005,7.4151342 1258.56,4.4917405 C1313.0625,8.90960452 1379.4775,4.4917405 1440,4.4917405 L1440,61.8300018 L0,61.8300018 L0,4.4917405 Z" id="bg_main_nav" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>logo 1</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="happy" sketch:type="MSLayerGroup" transform="translate(15.000000, 16.000000)" fill="#000000">
+            <path d="M33.068,66.135 C14.834,66.135 0,51.301 0,33.068 C0,14.834 14.834,0 33.068,0 C51.302,0 66.136,14.834 66.136,33.068 C66.136,51.301 51.302,66.135 33.068,66.135 L33.068,66.135 Z M33.068,4 C17.04,4 4,17.04 4,33.068 C4,49.095 17.04,62.134 33.068,62.134 C49.096,62.134 62.136,49.095 62.136,33.068 C62.136,17.04 49.096,4 33.068,4 L33.068,4 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <circle id="Oval" sketch:type="MSShapeGroup" cx="25.335" cy="25.335" r="4.335"></circle>
+            <circle id="Oval" sketch:type="MSShapeGroup" cx="41.335" cy="25.335" r="4.335"></circle>
+            <path d="M33.406,48.418 C24.196,48.418 18.413,42.283 18.328,42.189 L21.271,39.48 C21.696,39.937 31.869,50.546 46.916,39.239 L49.319,42.436 C43.36,46.916 37.963,48.418 33.406,48.418 L33.406,48.418 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,198 @@
+/*------------------------------------*\
+    $BREAKPOINTS
+\*------------------------------------*/
+$bp1 : 1440px;
+$bp2 : 1124px;
+$bp3 : 600px;
+$bp4 : 200px;
+$bp5 : 150px;
+
+/*------------------------------------*\
+    $IMAGE-DIR
+\*------------------------------------*/
+$image-path: 'assets/img/' !default;
+$fallback-extension: 'png' !default;
+$retina-suffix: '@2x';
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+$baselineheight  		:     1.6em;
+$line-height-computed	:	$baselineheight;
+$baseline :           	$baselineheight;
+$pagemaxwitdh :       	100%;
+$radius :             	5px;
+$hovertransition :    	.3s;
+$animationtime :      	.8s;
+
+// gutter
+$gutterwidth :       	3%;
+$margin: $gutterwidth;
+$paddingbase : 	20px;
+
+$link-vertical-padding:15px;
+$link-horizontal-padding:20px;
+
+/*------------------------------------*\
+    $FONT-FACE
+\*------------------------------------*/
+// $basefont 				: "Lato", sans-serif;
+// $basefont 				: Helvetica, Arial, sans-serif;
+$googlefont 				: "http://fonts.googleapis.com/css?family=Almendra:400,400italic";
+$altfont 					: 'Almendra', serif;
+$codefont 					: "Courier New", monospace;
+$basefont					: $altfont;
+$baseheadingfont 			: $basefont;
+$baseheadingfontweight 		: 400;
+
+$altlineheight : 1.35em;
+// $icons	: icomoon;
+
+
+/*------------------------------------*\
+    $TAMAÑOS
+\*------------------------------------*/
+$basefontsize 		: 20 !default;
+$baseletterspacing 	: 1px;
+
+
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+// Archivo de colores geniales:
+// ROJOS
+// rgb(225,86,89);
+// VERDES
+// rgb(119,199,132);
+// rgb(119,220,203);
+// AZULES
+// rgb(119,199,203);
+// NEUTROS
+// rgb(248,237,222);
+// rgb(197,152,128);
+// rgb(226,221,224);
+// 
+/**
+ * Brand stuff
+ */
+$color-base			: rgb(140,76,53); // color principal
+$color-alt			: rgb(50,97,113); //azul
+$color-base-invert 	: complement($color-alt);
+$color-base-light	: lighten($color-base, 2%);
+$color-base-lighten	: lighten($color-base, 10%);
+$color-base-dark	: darken($color-base, 5%);
+$color-base-darken	: darken($color-base, 10%);
+
+/**
+ * Transparencias
+ */
+
+$black 				: rgb(0,0,0);
+$black-alpha		: transparentize($black, .3);
+$black-alpha-suave 	: transparentize($black, .1);
+$black-alpha-medio	: transparentize($black, .5);
+$black-alpha-fuerte	: transparentize($black, .9);
+
+$white				: rgb(255,255,255);
+$white-alpha 		: rgba(255,255,255,0.3);
+$white-alpha-suave 	: rgba(255,255,255,0.1);
+$white-alpha-medio	: rgba(255,255,255,0.5);
+$white-alpha-fuerte	: rgba(255,255,255,0.8);
+
+/**
+ * Escala de grises
+ */
+$lightgrey			: lighten($black, 30%);
+$grey				: lighten($black, 50%);
+
+// Bordes
+$bordercolor    	: $white;
+$bordercolorhover   : $color-base;
+
+// Web
+$baseheadingfontcolor 		: $color-base;
+$background			: 	lighten($color-base, 56%);
+$textcolor			: 	$black;
+$textcolor-strong	:	$white;
+
+// Links  //////////////////////
+$linkcolor 			: $color-base;
+$linkcolorhover 	: lighten($linkcolor, 10%);
+$linkcolorvisited   : $linkcolor;
+$linkcolorfocus 	: $linkcolorvisited;
+$linkcolorfooter	: $black;
+
+$color-alert 		: $color-base;
+$color-error 		: red;
+$color-info 		: $color-base-invert;
+$color-inverse 	: invert($color-base);
+$color-success 	: green;
+$color-warning 	: $color-error;
+
+// Texturas de popups
+$alertbordercolor	: darken($color-alert, 5%);
+$alertborderwidth 	: 1px;
+$alertborderstyle 	: solid;
+$alerttext		: darken($color-alert, 60%);
+
+// Error
+$alerterrorcolor 	: lighten($color-error, 30%);
+$alerterrorborder  	: lighten($color-error, 20%);
+$alerterrortext 	: $color-error;
+
+// Info
+$alertinfocolor 	: lighten($color-info, 10%);
+$alertinfoborder  	: darken($color-info, 10%);
+$alertinfotext 	: $black;
+$alertinfobg 	: $color-info;
+
+// Inverso
+$alertinversecolor 	: $color-inverse;
+$alertinverseborder : $black;
+$alertinversetext 	: $white;
+
+// Success
+$alertsuccesscolor 	: lighten($color-success, 30%);
+$alertsuccessborder : lighten($color-success, 20%);
+$alertsuccesstext 	: darken($color-success, 20%);
+
+// Advertencia
+$alertwarningcolor 	: lighten($color-warning, 30%);
+$alertwarningborder : lighten($color-warning, 20%);
+$alertwarningtext 	: darken($color-warning, 20%);
+
+// bars
+//$bar-height		: #{$basefontsize / 2}px;
+
+// badges
+$badgebackground    : $color-base;
+$badgecolor         : $textcolor;
+
+
+// botones
+$buttonbackground   : $color-base-light;
+$buttonbordercolor  : darken($buttonbackground, 10%);
+$buttonbottombordercolor : darken($buttonbordercolor, 10%);
+$buttoncolor        : $black;
+$buttonborderwidth  : 1px;
+$buttonborderstyle  : solid;
+
+
+// formularios
+$inputbackground    : $black-alpha-fuerte;
+$inputborder        : $color-base;
+$inputborderwidth   : 1px;
+$inputborderstyle   : dotted;
+$inputhover         : lighten($black, 50%);
+$inputfocus         : $white-alpha-suave;
+$placeholdercolor   : $color-base-darken;
+
+
+// Navegación
+$navitembordercolor    : $bordercolor;
+$navitempadding        : $gutterwidth / 2;
+$navtabsbordercolor    : $bordercolor;
+
+// Bordes
+$borde				: 2px solid $bordercolor;
+$bordehover			: 2px solid $bordercolorhover;

@@ -1,0 +1,63 @@
+/*
+Theme Name:         t0theme
+Theme URI:          http://sergiofores.net/
+Description:        My Wordpress Theme
+Version:            0.1
+Author:             Sergio Forés
+Author URI:         http://t0t.es
+
+License:            MIT License
+License URI:        http://opensource.org/licenses/MIT
+*/
+@import "lib/normalize";
+@import "lib/variables";
+@import "lib/placeholders";
+
+
+@import "lib/mixins/flex";
+@import "lib/mixins/prefijos";
+@import "lib/mixins/images";
+@import "lib/mixins/breakpoints";
+@import "lib/mixins/transformaciones";
+@import "lib/mixins/espaciados";
+@import "lib/mixins/grid";
+@import "lib/mixins/sombras";
+@import "lib/mixins/formularios";
+@import "lib/mixins/scroll";
+@import "lib/mixins/shapes";
+@import "lib/mixins/tipografia";
+@import "componentes/reset";
+
+@import "layouts/header";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "componentes/slider";
+@import "layouts/sidebar";
+@import "layouts/cpt";
+@import "layouts/footer";
+@import "layouts/general";
+
+@import "componentes/wp-classes"; // Clases de Wordpress
+@import "componentes/fuentes";
+@import "componentes/links";
+@import "componentes/botones";
+@import "componentes/lightbox";
+@import "componentes/elementos";
+@import "componentes/tipografia";
+@import "componentes/paginacion";
+@import "componentes/navegacion";
+@import "componentes/widgets";
+@import "componentes/formularios";
+@import "componentes/listas";
+@import "componentes/galerias";
+@import "componentes/grids";
+@import "componentes/brand";
+@import "componentes/shapes";
+@import "componentes/animaciones";
+
+
+// Styleguide
+//@import "styleguide";
+
+// Debug
+// @import "debug";

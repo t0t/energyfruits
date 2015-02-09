@@ -1,0 +1,24 @@
+@mixin background-image($name, $size:false, $repeat: false, $svg:false, $jpg:false, $gif:false){
+
+    @if($size){
+        background-size: $size;
+        background-repeat: $repeat;
+    }
+    @if($jpg){
+        background-image:url(#{$image-path}#{$name}.#{$jpg});
+    }
+    @if($gif){
+        background-image:url(#{$image-path}#{$name}.#{$gif});
+    }
+    @if($svg){
+        background-image: url(#{$image-path}#{$name}.#{$svg});
+    }
+    
+    .no-svg &{
+        background-image: url(#{$image-path}#{$name}.#{$fallback-extension});
+
+        @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url(#{$image-path}#{$name}#{$retina-suffix}.#{$fallback-extension});
+        }
+    }
+}

@@ -1,0 +1,306 @@
+/*@include font-face("icomoon", font-files("../fonts/icomoon/icomoon.eot", "../fonts/icomoon/icomoon.eot?#iefix", "../fonts/icomoon/icomoon.woff", "../fonts/icomoon.ttf", "../fonts/icomoon/icomoon.svg#icomoon"));*/
+// https://github.com/srsgores/sass-boilerplate/edit/master/sass/partials/icomoon/_icomoon.scss
+@font-face {
+	font-family: 'icomoon';
+	src:url('assets/fonts/icomoon.eot?aa5xud');
+	src:url('assets/fonts/icomoon.eot?#iefixaa5xud') format('embedded-opentype'),
+		url('assets/fonts/icomoon.woff?aa5xud') format('woff'),
+		url('assets/fonts/icomoon.ttf?aa5xud') format('truetype'),
+		url('assets/fonts/icomoon.svg?aa5xud#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it"s slower:
+[class*="icon-"] {
+*/
+
+
+$icons: ".icon-logo-t0theme, .icon-tick, .icon-logo, .icon-logo-mazizo, .icon-collapse, .icon-facebook, .icon-facebook2, .icon-facebook3, .icon-github, .icon-git, .icon-twitter, .icon-twitter2, .icon-cc, .icon-caret, .icon-apple, .icon-wordpress, .icon-flickr, .icon-youtube, .icon-vimeo, .icon-linkedin, .icon-attachment, .icon-link2, .icon-mail2, .icon-cart, .icon-location, .icon-anchor, .icon-safari, .icon-quote, .icon-html5, .icon-safari, .icon-firefox, .icon-chrome, .icon-mail, .icon-IE, .icon-call37, .icon-image, .icon-code, .icon-console, .icon-paypal, .icon-download, .icon-arrow-left, .icon-arrow-right, .icon-cross-circle, .icon-mobile, .icon-phone, .icon-happy, .icon-link, .icon-laptop, .icon-close, .icon-diamonds, .icon-quotes-left, .icon-earth, .icon-neutral, .icon-wondering, .icon-wordpress2, .icon-plus, .icon-play, .icon-pause, .icon-stop, .icon-backward, .icon-forward, .icon-paperclip, .icon-house, .icon-bookmark, .icon-maximize, .icon-radio-unchecked, .icon-googleplus, .icon-minus, .icon-star-outline, .icon-cc";
+
+%icomoon {
+	font-family: "icomoon";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#{$icons} {
+	@extend %icomoon;
+	// &:hover {
+	// 	@extend: %icon;
+	// }
+}
+.icon-logo-t0theme:before {
+	content: "\e657";
+}
+.icon-apple:before {
+	content: "\e600";
+}
+.icon-arrow-left:before {
+	content: "\e601";
+}
+.icon-arrow-right:before {
+	content: "\e602";
+}
+.icon-call37:before {
+	content: "\e603";
+}
+.icon-caret:before {
+	content: "\e604";
+	font-size: 5px;
+}
+.icon-close:before {
+	content: "\e605";
+}
+.icon-collapse:before {
+	content: "\e606";
+}
+.icon-cross-circle:before {
+	content: "\e607";
+}
+.icon-desktop:before {
+	content: "\e608";
+}
+.icon-facebook:before {
+	content: "\e609";
+}
+.icon-facebook2:before {
+	content: "\e60a";
+}
+.icon-flickr:before {
+	content: "\e60b";
+}
+.icon-git:before {
+	content: "\e60c";
+}
+.icon-github:before {
+	content: "\e60d";
+}
+.icon-happy:before {
+	content: "\e60e";
+}
+.icon-laptop:before {
+	content: "\e60f";
+}
+.icon-link:before {
+	content: "\e610";
+}
+.icon-linkedin:before {
+	content: "\e611";
+}
+.icon-logo-mazizo:before {
+	content: "\e612";
+}
+.icon-logo:before {
+	content: "\e613";
+}
+.icon-mail:before {
+	content: "\e614";
+}
+.icon-mobile:before {
+	content: "\e615";
+}
+.icon-phone:before {
+	content: "\e616";
+}
+.icon-star-outline:before {
+	content: "\e617";
+}
+.icon-tick:before {
+	content: "\e618";
+}
+.icon-twitter:before {
+	content: "\e619";
+}
+.icon-wordpress:before {
+	content: "\e61a";
+}
+.icon-youtube:before {
+	content: "\e61b";
+}
+.icon-image:before {
+	content: "\e61c";
+}
+.icon-diamonds:before {
+	content: "\e61d";
+}
+.icon-cart:before {
+	content: "\e61e";
+}
+.icon-location:before {
+	content: "\e61f";
+}
+.icon-quotes-left:before {
+	content: "\e620";
+}
+.icon-busy:before {
+	content: "\e621";
+}
+.icon-earth:before {
+	content: "\e622";
+}
+.icon-link2:before {
+	content: "\e623";
+}
+.icon-attachment:before {
+	content: "\e624";
+}
+.icon-neutral:before {
+	content: "\e625";
+}
+.icon-wondering:before {
+	content: "\e626";
+}
+.icon-minus:before {
+	content: "\e627";
+}
+.icon-plus:before {
+	content: "\e628";
+}
+.icon-play:before {
+	content: "\e629";
+}
+.icon-pause:before {
+	content: "\e62a";
+}
+.icon-stop:before {
+	content: "\e62b";
+}
+.icon-backward:before {
+	content: "\e62c";
+}
+.icon-forward:before {
+	content: "\e62d";
+}
+.icon-radio-unchecked:before {
+	content: "\e62e";
+}
+.icon-embed:before {
+	content: "\e62f";
+}
+.icon-code:before {
+	content: "\e630";
+}
+.icon-console:before {
+	content: "\e631";
+}
+.icon-googleplus:before {
+	content: "\e632";
+}
+.icon-facebook3:before {
+	content: "\e633";
+}
+.icon-twitter2:before {
+	content: "\e634";
+}
+.icon-vimeo:before {
+	content: "\e635";
+}
+.icon-vimeo2:before {
+	content: "\e636";
+}
+.icon-flickr2:before {
+	content: "\e637";
+}
+.icon-github2:before {
+	content: "\e638";
+}
+.icon-github3:before {
+	content: "\e639";
+}
+.icon-wordpress2:before {
+	content: "\e63a";
+}
+.icon-paypal:before {
+	content: "\e63b";
+}
+.icon-html5:before {
+	content: "\e63c";
+}
+.icon-html52:before {
+	content: "\e63d";
+}
+.icon-chrome:before {
+	content: "\e63e";
+}
+.icon-firefox:before {
+	content: "\e63f";
+}
+.icon-IE:before {
+	content: "\e640";
+}
+.icon-safari:before {
+	content: "\e641";
+}
+.icon-anchor:before {
+	content: "\e642";
+}
+.icon-expand:before {
+	content: "\e643";
+}
+.icon-maximize:before {
+	content: "\e644";
+}
+.icon-forbid:before {
+	content: "\e645";
+}
+.icon-hyperlink:before {
+	content: "\e646";
+}
+.icon-phone2:before {
+	content: "\e647";
+}
+.icon-mail2:before {
+	content: "\e648";
+}
+.icon-paperclip:before {
+	content: "\e649";
+}
+.icon-quote:before {
+	content: "\e64a";
+}
+.icon-house:before {
+	content: "\e64b";
+}
+.icon-megaphone:before {
+	content: "\e64c";
+}
+.icon-list:before {
+	content: "\e64d";
+}
+.icon-layout:before {
+	content: "\e64e";
+}
+.icon-list2:before {
+	content: "\e64f";
+}
+.icon-download:before {
+	content: "\e650";
+}
+.icon-bookmark:before {
+	content: "\e651";
+}
+.icon-flow-cascade:before {
+	content: "\e652";
+}
+.icon-flow-tree:before {
+	content: "\e653";
+}
+.icon-arrow-right2:before {
+	content: "\e654";
+}
+.icon-ellipsis:before {
+	content: "\e655";
+}
+.icon-cc:before {
+	content: "\e656";
+}

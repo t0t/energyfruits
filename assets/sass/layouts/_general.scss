@@ -1,0 +1,203 @@
+html {
+
+  font-size: 75%; //de 16px
+
+  @media all and (min-width: $bp3) {
+    font-size: 85%; //de 16px
+  }
+
+}
+
+
+body {
+
+	font-family: $basefont;
+	color: $textcolor;
+	@include background-image(bg,auto, no-repeat,svg);
+	background-color: $background;
+	font-size: 1.5rem;
+
+}
+
+
+img {
+
+  @include max-width(100%);
+
+  height: auto;
+
+  @media all and (min-width: $bp3) {}
+
+}
+
+	// Fondos
+	.img--bg {
+		@include background-image(logoyo,contain,no-repeat,png);
+		background-position: center;
+		background-color: $color-base;
+	}
+	.img--bg-big {
+		@include background-image(image,cover,no-repeat,jpg);
+		background-position: center;
+		background-color: $color-base;
+	}
+	// Mascaras
+	.img--mascara {
+		clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+	}
+
+
+
+// LAYOUT
+
+.main__content {
+	
+	@include max-width($bp1);
+    // background-color: $white;
+    @media all and (min-width: $bp3) {
+    	// padding: $gutterwidth;
+    }
+
+	header:first-child {
+
+		padding: $gutterwidth ($gutterwidth * 1.5) ($gutterwidth/1.5) ($gutterwidth * 1.5);
+
+		h1 {
+			color: $background;
+		}
+
+		background-color: $color-base;
+
+	}
+
+	p:first-child {
+		
+		&::first-letter {
+		
+			color: $color-base;
+			@include font-size(100);
+
+		}
+		
+	}
+}
+
+.wrapper {
+  @include grid(2, 8, 2);
+}
+
+.main {
+  @include grid(2, 4, 2, 4); 
+  padding-bottom: 0;
+}
+
+
+
+// COLORES
+
+	.color-base {
+		background-color: $color-base;
+		&::before {
+			content: "#{$color-base}";
+		}
+	}
+
+	.color-base-invert 	{
+		background-color: $color-base-invert;
+		&::before {
+			content: "#{$color-base-invert}";
+		}
+	}
+
+	.color-base-light 	{ 
+		background-color: $color-base-light;
+		&::before {
+			content: "#{$color-base-light}";
+		}
+	}
+
+	.color-base-lighten { 
+		background-color: $color-base-lighten;
+		&::before {
+			content: "#{$color-base-lighten}";
+		}
+	}
+
+	.color-base-dark 	{ 
+		background-color: $color-base-dark;	
+		&::before {
+			content: "#{$color-base-dark}";
+		}
+	}
+
+	.color-base-darken	{ 
+		background-color: $color-base-darken;	
+		&::before {
+			content: "#{$color-base-darken}";
+		}
+	}
+
+	.white	{ 
+		background-color: $white;	
+		&::before {
+			content: "#{$white}";
+		}
+	}
+
+	.black	{ 
+		background-color: $black;
+		&::before {
+			content: "#{$black}";
+			color: $color-base-light;	
+		}
+	}
+
+
+// Web Colours
+::-moz-selection {
+	background-color : $color-base;
+	color : $black;
+	text-shadow : none;
+}
+
+::selection {
+	background-color : $color-base;
+	color : $black;
+	text-shadow : none;
+}
+
+
+// PLUGINS
+
+// Contact Form 7
+.wpcf7-form-control-wrap {}
+.your-name {}
+
+input {
+	.wpcf7-form {}
+	.wpcf7-form-control {}
+	.wpcf7-text {}
+	.wpcf7-validates-as-required {}
+	.wpcf7-textarea {}
+	.wpcf7-submit {}
+	.wpcf7-response-output {}
+	.wpcf7-display-none {}
+}
+
+.wpcf7 {
+	display: table-cell;	
+	img { width: auto; } // que no hayan sorpresas...
+	@media screen and (max-width: $bp3) {
+		display: table-row;
+	}
+}
+
+// Mappress
+//.mapp-iw { color: $black; }
+
+// Vegas
+// .nav-arrows {
+// 	@media all and (max-width: $bp3) {
+// 		display: none;
+// 	}
+// }

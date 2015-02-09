@@ -1,0 +1,20 @@
+.shapes {
+	display: flex;
+	justify-content: space-around;
+}
+.shape-rounded {
+	border-radius: $radius*2;
+	@include size(100px, 50px);
+}
+.shape-mask {
+	clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+}
+.shape-circle {
+	@include circle();
+}
+.shape-square {
+	@include square(100px);
+}
+.shape-custom {
+	@include size(100px, 50px);
+}

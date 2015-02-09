@@ -1,0 +1,231 @@
+
+/*------------------------------------*\
+    $BOTONES
+\*------------------------------------*/
+/*
+ * Definimos los botones y sus variantes
+ */
+.active {
+	font-weight: bold;
+}
+
+ /**
+ * .btn es la clase principal para definir un botón
+ */
+.btn {
+	display : inline-block;
+	@include font-size(20);
+	line-height : $baselineheight * 1.3;
+	text-align : center;
+	vertical-align : middle;
+	letter-spacing: $baseletterspacing;
+	white-space:nowrap;
+	border : 1px solid $color-base;
+	border-radius: 30px;
+	cursor : pointer;
+	margin:0;
+	padding-top:   0;
+   	padding-bottom:0;
+   	padding-right:1em;
+   	padding-left: 1em;
+	background-color : transparent;
+	@extend %lowercase;
+
+	a {
+		color : $textcolor;
+		@include transition(.4s);
+
+		&:hover {
+			text-decoration : none;
+			color: $white;
+		}
+		&:active,
+	    &:focus{
+			outline:none;
+	    }
+	}
+}
+
+/*------------------------------------*\
+    $BOTONES-VARIANTES
+\*------------------------------------*/
+/**
+ * Variantes de los botones: color para dar sensaciones.
+ *
+ */
+
+
+/**
+* Inputs con estilo de botones
+*/
+input[type="submit"].btn:hover {
+	border-color : $color-base;
+}
+
+
+/**
+* Botón no disponible
+*/
+.btn--disabled {
+	@include opacity(.5);
+	cursor : default;
+}
+
+
+// Botón desplegable
+.btn--slidemenu {
+	@include square(50px);
+	border-radius 		: $radius;
+	color 				: rgba(0,0,0,0.3);
+	background-color 	: $color-base-invert;
+	
+	&:hover {
+		color 				: $color-base-invert;
+		background-color	: $color-base;
+	}
+	&:visited {
+		color 				: $color-base;
+	}
+}
+
+/**
+* Botones
+*/
+
+.btn--well {
+	color 				: $color-base-darken;
+
+	&:hover {
+		color: $black;
+		background-color 	: $white-alpha-medio;
+	}
+	
+	&:focus {
+		outline: none;
+	}
+}
+
+.btn--info {
+	background-color 	: $color-info;
+	color 				: darken($color-info, 40%);
+	&:hover {
+		color 			: lighten($color-info, 40%);
+	}
+	&:visited {
+		color 			: darken($color-info, 40%);
+	}
+}
+
+.btn--error {
+	background-color: $color-error;
+	color : darken($color-error, 40%);
+	&:hover {
+		color : lighten($color-error, 40%);
+	}
+	&:visited {
+		color : darken($color-error, 40%);
+	}
+}
+
+/**
+* Botón principal
+*/
+.btn--primary {
+	border: $borde;
+	@extend %clearfix;
+	&:hover {
+		color: $color-base-darken;
+		background-color: $color-base;
+		border: $bordehover;
+	}
+	@include transition(.2s);
+}
+
+/**
+* Botón de OK
+*/
+.btn--success {
+	background-color: $color-success;
+	color : darken($color-success, 40%);
+	&:hover {
+		color : lighten($color-success, 40%);
+	}
+	&:visited {
+		color : darken($color-success, 40%);
+	}
+}
+
+
+/**
+* Botón de advertencia
+*/
+.btn--warning {
+	background-color: $color-warning;
+	color : darken($color-warning, 40%);
+	&:hover {
+		color : lighten($color-warning, 40%); }
+	&:visited {
+		color : darken($color-warning, 40%);
+	}
+}
+
+/**
+* Botón en footer
+*/
+.btn--footer {
+	color : $linkcolorfooter;
+	border : 1px solid $linkcolorfooter;
+	&:hover {
+		color : $linkcolorfooter;
+		border : none;
+		text-decoration: underline;
+		border : 1px dotted $linkcolorfooter;
+	}
+	&:visited {
+		color : darken($color-warning, 40%);
+	}
+}
+
+
+
+
+.btn--inactive,
+.btn--inactive:hover,
+.btn--inactive:active,
+.btn--inactive:focus{
+	@include opacity(.5);
+	cursor : default;
+ }
+
+
+/*------------------------------------*\
+    $BOTONES-TAMAÑOS
+\*------------------------------------*/
+
+.btn--mini{
+    padding-right:0.5em;
+    padding-left: 0.5em;
+    line-height:1.5;
+}
+
+.btn--small{
+    padding-right:1.5em;
+    padding-left: 1.5em;
+    line-height:2;
+}
+
+.btn--large{
+    padding-right:3em;
+    padding-left: 3em;
+    line-height:4;
+}
+
+.btn--image{
+    a {
+    	color: $color-base;
+    }
+}
+.btn--invert {
+	border-color: $white;
+	color: $white;
+}

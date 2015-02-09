@@ -1,0 +1,223 @@
+
+/*------------------------------------*\
+    $TIPOGRAFÍA
+\*------------------------------------*/
+
+
+// HEADINGS ====================================================
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin 			: 0;
+	font-family 	: $baseheadingfont;
+	font-weight 	: $baseheadingfontweight;
+	color 			: $baseheadingfontcolor;
+	// font-style: italic;
+
+	text-rendering 	: optimizelegibility;
+		
+		&.altheader {
+
+			// font-family: $google-font;
+			color: $black;
+			@extend %text-right;
+			letter-spacing: 0;
+
+		}
+}
+
+h1 small,
+h2 small,
+h3 small {
+
+	@extend %display-block;
+	// @extend %padding-vertical;
+	color : $black;
+	@include font-size(36);
+	font-style: italic;
+	letter-spacing: $baseletterspacing;
+
+}
+
+@each $header, $margin-bot, $font-size, $line-height in 
+	(h1, 0, 72, 1)
+	(h2, 3, 45, 1.1)
+	(h3, 3, 40, 1.3)
+	(h4, 7, 30, 1)
+	(h5, 7, 19, 2)
+	(h6, 7, 19, 1){
+  		#{$header}, .#{$header} {
+  		margin-bottom : $baselineheight / $margin-bot;
+  		@include font-size($font-size);
+  		line-height 	: $line-height;
+  		letter-spacing  : $baseletterspacing - 2;
+  		@extend %text-center;
+  		}
+	}
+	
+// TYPOGRAFÍA ====================================================
+p,
+ol,
+ul,
+dl,
+address {
+	margin-bottom : $baselineheight - 0.5;
+	line-height : $baselineheight;
+	letter-spacing: $baseletterspacing;
+	word-spacing: $altlineheight/10;
+	small {
+		font-style: normal;
+		line-height: $baselineheight / 4;
+	}
+
+	@media all and (max-width: $bp2) {
+		font-size: 76%;
+	}
+}
+
+small {
+	@include font-size(18);
+}
+
+dd {
+		line-height : $baselineheight / 2;
+}
+
+ul,
+ol {
+	margin : 0 0 $baselineheight 0;
+	padding : 0 0 0 $gutterwidth;
+}
+
+li ul,
+li ol {
+	margin : 0;
+}
+
+// listas
+ul {
+	list-style-type : none;
+}
+// blockquote
+
+blockquote  {
+	margin : 0 0 $baselineheight 0;
+	padding-left : $gutterwidth;
+	border-left : ($paddingbase / 4) solid $color-base;
+	font-style : normal;
+	line-height: $baselineheight;
+	q {
+		@include font-size(32);
+		@include margin-bottom(0);
+		color:$color-base-dark;
+	}
+}
+
+q {
+	quotes : none;
+}
+
+blockquote p::before,
+blockquote p::after,
+q:before,
+q:after {
+	content : "";
+}
+
+cite {
+	font-style : normal;
+}
+
+// definition lists
+
+dl,
+dd,
+dt {
+	margin-bottom : $baselineheight / 3;
+}
+
+dt {
+	// font-weight : bold;
+}
+
+
+// listas horizontales
+.list-inline {
+	> li {
+		@extend %list-inline;
+	}
+}
+.dl-horizontal {
+
+	dt {
+		float : left;
+		clear : left;
+		width : 20.25%;
+		text-align : right;
+	}
+
+	dd {
+		margin-left : 22.78%;
+	}
+}
+
+// text-level
+
+abbr[title] {
+	border-bottom : 1px dotted $bordercolor;
+	cursor : help;
+}
+
+b, strong {
+	font-weight : bold;
+}
+
+dfn {
+	font-style : italic;
+}
+
+ins {
+	background-color : lighten($color-base, 75%);
+	color : $textcolor;
+	text-decoration : none;
+}
+
+mark {
+	background-color : $color-base;
+	color : $textcolor;
+}
+
+pre,
+code,
+kbd,
+samp {
+	font-family : $codefont;
+	@include font-size(24);
+	line-height : $baselineheight;
+}
+
+pre {
+	white-space : pre;
+	white-space : pre-wrap;
+	word-wrap : break-word;
+}
+
+sub,
+sup {
+	position : relative;
+	@include font-size(8);
+	line-height : 0;
+	vertical-align : $baselineheight;
+}
+
+sup {
+	top : 1em;
+}
+
+sub {
+	bottom : -2.25em;
+}

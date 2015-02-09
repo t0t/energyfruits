@@ -1,0 +1,332 @@
+/*------------------------------------*\
+    $WIDGETS
+\*------------------------------------*/
+
+
+// Widgets
+.widget {
+
+
+
+}
+
+.widget--wp {
+
+	color: $white;
+
+}
+
+
+.widget--posts {}
+
+
+.widget--pages {}
+
+
+.widget--tags {
+
+	.tagcloud {
+
+		a {
+			font-size: 2rem;
+		}
+
+	}
+
+}
+
+
+.widget--agenda {}
+
+.widget--newsletter {
+		
+		@extend %basepadding;
+
+		margin-top: $gutterwidth / 2;
+
+		@extend %text-center;
+
+		background-color: $color-alt;
+
+		form {
+
+			width: 100%;
+			margin: 0;
+			padding: 0;
+
+			@media screen and (min-width: $bp3) {
+
+				@include flexbox;
+				@include justify-content(space-around);
+				@include align-items(baseline);	
+
+			}
+		}
+
+		h3 {
+			padding-bottom: $gutterwidth / 2;
+			margin-right: $gutterwidth;
+		}
+
+		h3, label {
+			color: $white;
+			margin-bottom: 0;
+		}
+		
+		input[type="email"] {
+			width: 50%;
+			@include flex-grow(2);
+			margin-right: 10px;
+			background-color: $white-alpha-fuerte;
+			&::-webkit-input-placeholder {
+	        	font-size: inherit;
+	        	color: $grey;
+	        	padding-left: $gutterwidth;
+	    	}
+		}
+
+		input[type="button"],
+		input[type="reset"],
+		input[type="submit"] {
+			// border: 3px solid $black-alpha-fuerte;
+			color: $white;
+			background-color: $black;
+			width: 30%;
+
+			&:hover {
+				background-color: $black-alpha-medio;
+			}
+
+		}
+
+	}
+
+
+
+
+// Idiomas
+.idiomas {
+	margin : $baselineheight/2;
+	display: table;
+	display: none;
+	width: 90px;
+	float: right;
+	padding : 8px 35px 8px 14px;
+	line-height: 1;
+	@extend %text-center;
+	background-color: $alertinfobg;
+
+	li {
+		display: table-cell;
+		@include font-size(18);
+	}
+	.idiomas__item {}
+}
+
+
+
+// Alerts
+.alert {
+	display: table;
+	width: 100%;
+	justify-content: center;
+	margin-bottom : $baselineheight;
+	padding : 8px 35px 8px 14px;
+	background-color : $color-alert;
+	border : $alertborderwidth $alertborderstyle $alertbordercolor;
+	font-family : $basefont;
+	@include font-size(18);
+	color: $alerttext;
+
+	> p {
+		margin-bottom: 0;
+		display: table-cell;
+		width: 90%;
+	}
+}
+
+	.alert--heading {
+		color : inherit;
+	}
+
+	.close {
+		display: table-cell;
+		width: 10%;
+		@include font-size(21);
+		font-weight 	: bold;
+		line-height 	: 18px;
+		color 		: inherit;
+	}
+
+	.alert--success {
+		background-color 	: $alertsuccesscolor;
+		border-color 		: $alertsuccessborder;
+		color 			: $alertsuccesstext;
+	}
+
+	.alert--warning {
+		background-color 	: $alertwarningcolor;
+		border-color 		: $alertwarningborder;
+		color 			: $alertwarningtext;
+	}
+
+	.alert--error {
+		background-color 	: $alerterrorcolor;
+		border-color 		: $alerterrorborder;
+		color 			: $alerterrortext;
+	}
+
+	.alert--info {
+		@extend %text-center;
+		padding: 6px 0;
+		line-height: 1;
+		border: none;
+		background-color: $alertinfobg;
+		// border-color 	: $alertinfoborder;
+		color 			: $alertinfotext;
+
+	}
+
+	.alert--inverse {
+		background-color 	: $alertinversecolor;
+		border-color 		: $alertinverseborder;
+		color 			: $alertinversetext;
+	}
+
+
+
+// WELL ====================================================
+
+.well {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	//flex-wrap: nowrap;
+	//align-content: center;
+	@include max-width($bp2);
+	// min-height : $paddingbase;
+	padding : $paddingbase $paddingbase;
+	border-radius: $radius;
+	margin-bottom : $baselineheight;
+	@extend %text-center;
+	background-color : $color-base-light;
+	
+	p {
+		@include max-width($bp3);
+	}
+	p:last-child {
+		margin-bottom : 0;
+	}
+}
+
+	.well--large {
+		padding : ($paddingbase * 4) ($paddingbase * 4);
+		@extend %text-center;
+		background-color: $color-base-invert;
+		border: none;
+		border-radius: none;
+		box-shadow: none;
+	}
+
+	.well--small {
+		padding : $paddingbase / 2;
+	}
+
+	.well--img {
+		@include max-width($bp1);
+		@include size(100%, 600px);
+		border-radius: 0;
+		p, h3 {
+			color: $white;
+		}
+	}
+
+	.well--anim {
+		@include max-width(100%);
+		@include size(100%, auto);
+		border-radius: 0;
+
+		p, h3 {
+			color: $white;
+		}
+		//background-image: url("assets/img/logo.svg")
+	}
+
+
+// Sumario de contenidos
+.content-summary {
+
+	// min-height: 500px;
+
+	h3 {
+		@extend %lowercase;
+		color: $color-base;
+		margin-bottom: $gutterwidth;
+	}
+
+	img {
+		width: 200px;
+		height: auto;
+	}
+}
+
+	.content-summary__item {
+
+		@extend %text-center;
+		padding: $gutterwidth;
+
+		p {
+			margin-bottom: $gutterwidth;
+			// @extend %line-height-smaller;
+		}
+
+		@media all and (min-width: 850px) {
+			width: 33%;
+		}
+		
+		// fix para iphone 6 en landscape
+		@media only screen 
+			and (orientation : landscape)
+			and (max-width: 850px) {
+			width: 33%;
+		}
+	}
+
+
+// Video
+.video-main {
+	@extend %padding-vertical;
+	@extend %text-center;
+	background-color: $black;
+
+}
+	.video-main__header {
+		color: $white;
+		margin-bottom: $gutterwidth;
+	}
+	.video-main__iframe {
+		@include max-width(560px);
+	}
+	.video-main__heading, .video-main__description {
+		color: $white;
+	}
+	.video-main__description {
+		margin-top: $paddingbase / 2;
+		margin-bottom: 0;
+	}
+
+
+
+// Componente Tienda
+.tienda {}
+
+.tienda__item {
+	max-height:730px;
+	@extend %text-center;
+	p {
+		margin-bottom: 0;
+	}
+}
+
+
