@@ -4088,9 +4088,9 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "assets",
-	"displayValue": "NANOSIGEGANTS",
+	"displayValue": "ENERGYFRUITS",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-trap"
+	"iconImageName": "meme-grumpy"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 1,
@@ -4235,7 +4235,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "dev.nanosigegants.com\/",
+	"externalServerAddress": "dev.energyfruits.es",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,

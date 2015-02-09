@@ -1,0 +1,10 @@
+assets/bower_components/*
+assets/sass/.sass-cache/*
+*.log
+*.sketch
+*.json
+*.sass-cache
+*.sql
+*.rar
+*.map
+.htaccess

@@ -75,8 +75,8 @@ $baseletterspacing 	: 1px;
 /**
  * Brand stuff
  */
-$color-base			: rgb(140,76,53); // color principal
-$color-alt			: rgb(50,97,113); //azul
+$color-base			: rgb(49,117,73); // color principal
+$color-alt			: rgb(240,115,11); //azul
 $color-base-invert 	: complement($color-alt);
 $color-base-light	: lighten($color-base, 2%);
 $color-base-lighten	: lighten($color-base, 10%);

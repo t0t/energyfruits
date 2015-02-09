@@ -169,7 +169,8 @@ Main navbar
   
   @include max-width($bp1);
   height: 62px;
-  @include background-image(bg_main_nav,initial,no-repeat,svg);
+  // @include background-image(bg_main_nav,initial,no-repeat,svg);
+  background-color: $color-base;
   margin: 0 auto;
   display: none;
   
