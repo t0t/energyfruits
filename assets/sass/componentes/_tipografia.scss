@@ -17,6 +17,7 @@ h6 {
 	font-weight 	: $baseheadingfontweight;
 	color 			: $baseheadingfontcolor;
 	// font-style: italic;
+	@extend %uppercase;
 
 	text-rendering 	: optimizelegibility;
 		

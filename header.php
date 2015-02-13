@@ -26,7 +26,25 @@
 <!-- Aquí acaba el head de mi web -->
 <body <?php body_class(["unaclase", "otraclase"]); ?>>
 
+
+
 <header class="header">
+	
+	<!-- Secondary menu 1 -->
+	<nav class="nav-secondary nav-secondary--uno">
+
+		<?php
+		$defaults = array(
+			'theme_location'  => 'secondary_menu1',
+			'container'       => '',
+			'container_class' => '',
+			'menu_class'      => ''
+		);
+
+		wp_nav_menu( $defaults );
+		?>
+
+	</nav>
 
 	<div class="brand">
 
@@ -37,14 +55,71 @@
 		</a>
 
 		<h1 class="h4 brand__name">
+
 			<?php bloginfo('name'); ?>
+
 			<span class="brand__description">
+
 				<?php bloginfo('description'); ?>
+
 			</span>
+
 		</h1>
-	
+
 	</div>
-	
+
+	<!-- Secondary menu 2 -->
+	<nav class="nav-secondary nav-secondary--dos">
+
+		<?php
+		$defaults = array(
+			'theme_location'  => 'secondary_menu2',
+			'container'       => '',
+			'container_class' => '',
+			'menu_class'      => ''
+		);
+
+		wp_nav_menu( $defaults );
+		?>
+
+	</nav>
+
+
 </header>
 
-<?php get_template_part('templates/nav', 'main' ); ?>
+	<!-- Main menu -->
+	<nav class="nav-barra">
+
+		<?php
+		$defaults = array(
+			'theme_location'  => 'main_menu',
+			'container'       => '',
+			'container_class' => '',
+			'menu_class'      => 'nav-header'
+		);
+
+		wp_nav_menu( $defaults );
+		?>
+
+	</nav>
+	
+	<!-- Hamburguer menu -->
+	<nav class="nav-main" role="navigation">
+
+	<input type="checkbox" id="trigger"/>
+	<label for="trigger"></label>
+	<?php
+		$defaults = array(
+			'theme_location'  => 'fixed_menu',
+			'container'       => '',
+			'container_class' => '',
+			'menu_class'      => 'nav-main__overlay'
+		);
+
+		wp_nav_menu( $defaults );
+	?>
+
+	</nav>
+
+<?php //get_template_part('templates/nav', 'secondary' ); ?>
+<?php //get_template_part('templates/nav', 'main' ); ?>

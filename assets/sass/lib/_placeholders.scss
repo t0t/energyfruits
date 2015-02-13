@@ -15,6 +15,9 @@
 %lowercase {
   text-transform: lowercase;
 }
+%uppercase {
+  text-transform: uppercase;
+}
 
 %basepadding {
   padding: $gutterwidth $gutterwidth + 4;

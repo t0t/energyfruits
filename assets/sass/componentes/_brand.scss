@@ -1,10 +1,11 @@
 .brand {
+	
 
-	@include flexbox;
+	// @include flexbox;
 
 	// @include justify-content(center); //alineado horizontal
 
-	@include align-items(center); //alineado vertical
+	// @include align-items(center); //alineado vertical
 
 	padding-top: $gutterwidth / 2;
 
@@ -15,6 +16,7 @@
 
 		@media all and (min-width: $bp3) {
 
+			// @include max-width(300px);
 			padding-bottom: $gutterwidth / 2;
 
 		}
@@ -22,11 +24,11 @@
 
 		@media all and (min-width:700px) {
 
-			@include justify-content(center); //alineado horizontal
+			// @include justify-content(center); //alineado horizontal
 
-			@include align-items(center); //alineado vertical
+			// @include align-items(center); //alineado vertical
 
-			flex-direction: column;
+			// flex-direction: column;
 
 		}
 
@@ -35,15 +37,15 @@
 
 	.brand__logo {
 
-		width: 60px;
+		width: 120px;
 
-		height: 60px;
+		height: auto;
 
-		@media screen and (min-width: 780px) {
+		@media screen and (min-width: $bp3) {
 
-			width: 120px;
+			width: 180px;
 
-			height: 120px;
+			height: auto;
 
 		}
 

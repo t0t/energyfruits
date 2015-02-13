@@ -5,13 +5,17 @@ Main navbar
 //Navegacion general
 .nav-barra {
 
+    // @include max-width($bp2);
+    
+
   a {
 
     @include transition(.4s);
 
     border-radius: $radius * 4;
     // border: dashed 3px $color-alt;
-    padding: 5px 12px;
+    padding: 15px 20px;
+    background-color: $black-alpha-fuerte;
 
     &:hover {
 
@@ -52,8 +56,9 @@ Main navbar
     width: 2em;
     height: 2em;
     position: fixed;
-    top: 12px;
-    right: 12px;
+    top: 100px;
+    right: 0;
+    left: 0;
     display: block;
     font-size: 2rem;
     content: "☰";
@@ -143,6 +148,104 @@ Main navbar
     }
   }
 
+// Nav Secondary
+.nav-secondary {
+    
+    flex-grow: 2;
+
+    ul {
+
+        width: 100%;
+        display: table;
+        @extend %no-padding;
+        @extend %no-margin;
+
+    }
+
+    li {
+
+        width: 50%;
+        display: table-cell;
+        @extend %text-center;
+        color: $color-alt;
+        letter-spacing: 0;
+
+            // &:hover {
+            //     color: $color-base;
+            // }
+
+    }
+
+    a {
+        font-family: $altfont;
+        color: $color-alt;
+
+        &:hover {
+                color: $color-base;
+        }
+    }
+
+}
+
+.nav-secondary--uno {
+
+    li {
+
+        &:first-child {
+            
+            @extend .icon-profile-male;
+
+            &::before {
+                @include font-size(42);
+                @extend %display-block;
+            }
+
+        }
+
+        &:nth-child(2) {
+
+            @extend .icon-envelope;
+
+            &::before {
+                @include font-size(42);
+                @extend %display-block;
+            }
+
+        }
+
+    }
+
+}
+.nav-secondary--dos {
+
+    li {
+
+        &:first-child {
+
+            @extend .icon-megaphone;
+
+            &::before {
+                @include font-size(42);
+                @extend %display-block;
+            }
+
+        }
+
+        &:nth-child(2) {
+
+            @extend .icon-facebook;
+            
+            &::before {
+                @include font-size(42);
+                @extend %display-block;
+            }
+
+        }
+
+    }
+
+}
+
 
 // Nav Footer
 .nav-footer {
@@ -167,15 +270,16 @@ Main navbar
 // Nav Header
 .nav-header {
   
-  @include max-width($bp1);
-  height: 62px;
+  @include max-width($bp0);
   // @include background-image(bg_main_nav,initial,no-repeat,svg);
   background-color: $color-base;
   margin: 0 auto;
   display: none;
+  line-height: $baselineheight*2.5;
   
   @media all and (min-width: 780px) {
-    display: table;
+    display: flex;
+    justify-content: center;
   }
   
   li ul {
@@ -184,12 +288,13 @@ Main navbar
   
 
   .nav-header__item, li {
-    display: table-cell;
-    width: 12%;
+    display: inline-block;
     @extend %text-center; 
     vertical-align: bottom;
-    @extend %lowercase;
-    font-size: 1.2rem;
+    @include margin-bottom($gutterwidth/10);
+    @extend %uppercase;
+    // @extend %lowercase;
+    font-size: 1rem;
     // font-weight: $baseheadingfontweight;
 
     a, a:visited {

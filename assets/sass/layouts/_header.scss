@@ -1,4 +1,10 @@
 .header {
-	//@include grid(2, 10);
-	// position: fixed;
+
+	@include flexbox;
+	@include justify-content(space-around); //alineado horizontal
+	@include align-items(center); //alineado vertical
+	@include max-width($bp0);
+
+	background-color: $white;
+
 }

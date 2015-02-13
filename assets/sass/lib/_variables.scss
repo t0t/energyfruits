@@ -1,6 +1,7 @@
 /*------------------------------------*\
     $BREAKPOINTS
 \*------------------------------------*/
+$bp0 : 1800px;
 $bp1 : 1440px;
 $bp2 : 1124px;
 $bp3 : 600px;
@@ -38,12 +39,12 @@ $link-horizontal-padding:20px;
 \*------------------------------------*/
 // $basefont 				: "Lato", sans-serif;
 // $basefont 				: Helvetica, Arial, sans-serif;
-$googlefont 				: "http://fonts.googleapis.com/css?family=Almendra:400,400italic";
-$altfont 					: 'Almendra', serif;
+$googlefont 				: "http://fonts.googleapis.com/css?family=Averia+Serif+Libre";
+$altfont 					: 'Averia Serif Libre', cursive;
 $codefont 					: "Courier New", monospace;
 $basefont					: $altfont;
 $baseheadingfont 			: $basefont;
-$baseheadingfontweight 		: 400;
+$baseheadingfontweight 		: 700;
 
 $altlineheight : 1.35em;
 // $icons	: icomoon;
@@ -111,7 +112,7 @@ $bordercolorhover   : $color-base;
 
 // Web
 $baseheadingfontcolor 		: $color-base;
-$background			: 	lighten($color-base, 56%);
+$background			: 	lighten($color-base, 60%);
 $textcolor			: 	$black;
 $textcolor-strong	:	$white;
 

@@ -6,9 +6,10 @@ add_image_size('mini', 75, 75, true);
 // register_sidebars( 2, array( 'name' => 'Zona %d' ) ); //sidebar-1, sidebar-2
 
 register_nav_menus( array(
-	'header_menu' => 'Header Menu',
-	'fixed_menu' => 'Menu Estatico',
-	'footer_menu' => 'Menu Footer',
+	'main_menu' => 'Main menu',
+	'secondary_menu1' => 'Secondary menu 1',
+	'secondary_menu2' => 'Secondary menu 2',
+	'fixed_menu' => 'Menu Estatico'
 ) );
 
 register_sidebar( array(
@@ -99,16 +100,18 @@ add_action( 'admin_menu' , 'quita_metaboxes_inutiles' );
 function roots_scripts() {
 
 	$assets = array(
+
       'css'       => '/style.css',
       'js'        => '/assets/js/main.min.js',
       'jquery'    => '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js'
+
     );
 
 
     wp_enqueue_style(
 
     	't0theme_css',
-    	 
+
     	get_template_directory_uri() . $assets['css'], 
 
     	false, 
@@ -122,7 +125,15 @@ function roots_scripts() {
 
     	wp_deregister_script('jquery');
 
-    	wp_register_script('jquery', $assets['jquery'], array(), null, false);
+    	wp_register_script(
+
+    		'jquery',
+    		$assets['jquery'],
+    		array(),
+    		null, 
+    		false
+    		
+    	);
 
     	add_filter('script_loader_src', 'roots_jquery_local_fallback', 10, 2);
 

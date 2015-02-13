@@ -1,7 +1,15 @@
-@mixin background-image($name, $size:false, $repeat: false, $svg:false, $jpg:false, $gif:false){
+
+// Por ejemplo: @include background-image(bg, cover, no-repeat, 0 0, svg);
+@mixin background-image($name, $size:false, $repeat: false, $position: false, $svg:false, $jpg:false, $gif:false){
 
     @if($size){
         background-size: $size;
+    }
+    @if($position){
+        background-position: $position;
+        background-repeat: $repeat;
+    }
+    @if($repeat){
         background-repeat: $repeat;
     }
     @if($jpg){

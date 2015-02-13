@@ -22,7 +22,7 @@
 	<?php
 
 	$defaults = array(
-		'theme_location'  => 'header_menu',
+		'theme_location'  => 'main_menu',
 		'container'       => '',
 		'container_class' => '',
 		'menu_class'      => 'nav-header'

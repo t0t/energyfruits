@@ -244,3 +244,34 @@
 .slider__btn-prev {
 	left: $gutterwidth;
 }
+
+
+// Estilos Revolution Slider
+.sliderh1 {
+
+	h1 {
+
+		color: $white;
+		font-size: 6rem;
+
+	}
+
+	h2 {
+
+		color: $white;
+		font-size: 2rem;
+		max-width: $bp3;
+		text-transform: inherit;
+		letter-spacing: $baseletterspacing;
+
+	}
+
+	.btn {
+		
+		@include font-size(30);
+		color: $white;
+		border: 2px solid $white;
+
+	}
+
+}

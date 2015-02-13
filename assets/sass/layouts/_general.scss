@@ -1,6 +1,6 @@
 html {
 
-  font-size: 75%; //de 16px
+  font-size: 100%; //de 16px
 
   @media all and (min-width: $bp3) {
     font-size: 85%; //de 16px
@@ -13,10 +13,9 @@ body {
 
 	font-family: $basefont;
 	color: $textcolor;
-	// @include background-image(bg,auto, no-repeat,svg);
-	background-color: $white;
-	font-size: 1.5rem;
-
+	// @include background-image(svgdefs,auto, no-repeat,svg);
+	background-color: $background;
+	font-size: 1.2rem;
 }
 
 
@@ -28,6 +27,12 @@ img {
 
   @media all and (min-width: $bp3) {}
 
+}
+
+img[src$=".svg"] {
+	max-width: auto;
+	width: 100%;
+	height: auto;
 }
 
 	// Fondos
@@ -52,8 +57,8 @@ img {
 
 .main__content {
 	
-	@include max-width($bp1);
-    // background-color: $white;
+	@include max-width($bp0);
+    background-color: $background;
     @media all and (min-width: $bp3) {
     	// padding: $gutterwidth;
     }
@@ -63,10 +68,10 @@ img {
 		padding: $gutterwidth ($gutterwidth * 1.5) ($gutterwidth/1.5) ($gutterwidth * 1.5);
 
 		h1 {
-			color: $background;
+			// color: $background;
 		}
 
-		background-color: $color-base;
+		// background-color: $color-base;
 
 	}
 
@@ -166,6 +171,10 @@ img {
 	text-shadow : none;
 }
 
+// Esconde visualmente
+.hidden {
+	@extend %hidden;
+}
 
 // PLUGINS
 

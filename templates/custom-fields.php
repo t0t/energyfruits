@@ -402,7 +402,7 @@
 
     <?php elseif(get_row_layout() == "video"): // Layout Videos ?>
 
-    <section class="video-main main__content">
+    <section class="video-main">
         
         <h2 class="video-main__header"></h2>
         
@@ -434,7 +434,7 @@
     <?php 
         $loop = new WP_Query( array( 
             'post_type' => '',
-            'category_name' => 'noticies',
+            'category_name' => '',
             'posts_per_page' => '3',
             'orderby' => 'date',
             'order'   => 'DESC'
@@ -542,7 +542,7 @@
 
     <?php elseif(get_row_layout() == "tienda"): // tienda ?>
     
-    <section class="tienda main__content">
+    <section class="tienda">
 
     <?php
     // check if the repeater field has rows of data
@@ -602,7 +602,7 @@
 
     <?php elseif(get_row_layout() == "links_gallery"): // Galeria de enlaces ?>
 
-    <section class="galeria-links main__content">
+    <section class="galeria-links">
 
         <div class="grid">
 
@@ -642,7 +642,7 @@
 
     <?php elseif(get_row_layout() == "content_summary"): // Sumario de contenido ?>
                 
-    <section class="content-summary main__content">
+    <section class="content-summary">
     
         <div class="grid">
 

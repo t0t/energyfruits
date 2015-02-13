@@ -28,3 +28,9 @@
   margin-bottom: $margin;
 }
 
+//Margenes laterales
+@mixin margin-bottom($margin: $gutterwidth) {
+  margin-right: $margin;
+  margin-left: $margin;
+}
+
