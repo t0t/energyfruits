@@ -59,12 +59,12 @@ function create_post_type() {
 	register_post_type( 'cpt',
 		array(
 			'labels' => array(
-				'name' => __( 'Proyectos' ),
-				'singular_name' => __( 'Proyecto' )
+				'name' => __( 'Productos' ),
+				'singular_name' => __( 'Producto' )
 			),
 		'public' => true,
 		'has_archive' => true,
-		'rewrite' => array('slug' => 'proyecto'),
+		'rewrite' => array('slug' => 'producto'),
 		'taxonomies' => array('category'),
 		'supports' => array( 'title', 'editor', 'thumbnail' ),
 		)

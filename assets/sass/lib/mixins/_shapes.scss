@@ -12,7 +12,7 @@
 }
 
 // circulos
-@mixin circle() {
+@mixin circle($size: 100px) {
   border-radius: 100%;
-  @include square(100px);
+  @include square($size);
 }

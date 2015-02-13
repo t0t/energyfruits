@@ -429,46 +429,44 @@
 
 
 
-    <?php elseif(get_row_layout() == "post-carrousel"): // Posts Carousel ?>
-
+    <?php elseif(get_row_layout() == "carusel1"): // Carusel Energyfruits ?>
+    
     <?php 
         $loop = new WP_Query( array( 
-            'post_type' => '',
-            'category_name' => '',
-            'posts_per_page' => '3',
+            'post_type' => 'cpt',
+            'category_name' => 'energyfruits',
+            'posts_per_page' => '10',
             'orderby' => 'date',
             'order'   => 'DESC'
             )); 
     ?>
 
     <section class="slider">
-
-    <?php the_sub_field("title"); ?>
+    
+    <h1 class="slider__title"><?php the_sub_field("title"); ?></h1>
     <?php the_sub_field("description"); ?>
 
-    <div class="slider__slides">
+    <div class="slider__slides sliderr">
 
     <?php while ($loop->have_posts()) : $loop->the_post(); ?>
       
-        <article class="slider__item">
+        <article>
 
         <? if ( has_post_thumbnail() ) { ?>
 
-            <figure class="slider__figure">
+            <a href="<?php the_permalink(); ?>">
+                <figure>
 
-                <?php the_post_thumbnail('thumbnail'); ?>
-                <figcaption class="slider__caption">
+                    <?php the_post_thumbnail('thumbnail'); ?>
+                    <figcaption class="slider__caption">
 
-                <small class="slider__meta-date"><?php the_date('j F Y'); ?></small>
+                        <span class="slider__title"><?php the_title(); ?></span>
 
-                <span class="slider__title"><?php the_title(); ?></span>
+                    </figcaption>
 
+                </figure>
 
-                </figcaption>
-
-            </figure>
-
-                <a class="slider__btn slider__btn-call" href="<?php the_permalink(); ?>">Noticia completa &rarr;</a>
+            </a>
 
         <?}else {?>
 
@@ -492,14 +490,140 @@
     <?php wp_reset_postdata(); ?>
         
     </div>
+  
+    </section>
+
+
+<?php elseif(get_row_layout() == "carusel2"): // Carusel Supershakes ?>
     
-        <!-- Prev/next controls -->
-        <button class="slider__btn slider__btn-prev">&larr;</button>
-        <button class="slider__btn slider__btn-next">&rarr;</button>
+    <?php 
+        $loop = new WP_Query( array( 
+            'post_type' => 'cpt',
+            'category_name' => 'supershakes',
+            'posts_per_page' => '10',
+            'orderby' => 'date',
+            'order'   => 'DESC'
+            )); 
+    ?>
+
+    <section class="slider">
+    
+    <h1 class="slider__title"><?php the_sub_field("title"); ?></h1>
+    <?php the_sub_field("description"); ?>
+
+    <div class="slider__slides sliderr">
+
+    <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+      
+        <article>
+
+        <? if ( has_post_thumbnail() ) { ?>
+
+            <a href="<?php the_permalink(); ?>">
+                <figure>
+
+                    <?php the_post_thumbnail('thumbnail'); ?>
+                    <figcaption class="slider__caption">
+
+                        <span class="slider__title"><?php the_title(); ?></span>
+
+                    </figcaption>
+
+                </figure>
+
+            </a>
+
+        <?}else {?>
+
+            <a href="<?php the_permalink(); ?>">
+
+                <figure class="slider__figure">
+
+                    <img src="<?php echo get_bloginfo('template_directory');?>/assets/img/logo.svg" alt="logo">
+
+                    <figcaption class="slider__caption"><?php the_title(); ?></figcaption>
+
+                </figure>
+
+            </a>
+        
+        <?}?>
+
+        </article>
+      
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
+        
+    </div>
   
     </section>
 
     
+    <?php elseif(get_row_layout() == "carusel3"): // Carusel 3 ?>
+    
+    <?php 
+        $loop = new WP_Query( array( 
+            'post_type' => 'post',
+            'category_name' => '',
+            'posts_per_page' => '10',
+            'orderby' => 'date',
+            'order'   => 'DESC'
+            )); 
+    ?>
+
+    <section class="slider">
+    
+    <?php the_sub_field("title"); ?>
+    <?php the_sub_field("description"); ?>
+
+    <div class="slider__slides sliderr">
+
+    <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+      
+        <article>
+
+        <? if ( has_post_thumbnail() ) { ?>
+
+            <a href="<?php the_permalink(); ?>">
+                <figure>
+
+                    <?php the_post_thumbnail('thumbnail'); ?>
+                    <figcaption class="slider__caption">
+
+                        <span class="slider__title"><?php the_title(); ?></span>
+
+                    </figcaption>
+
+                </figure>
+
+            </a>
+
+        <?}else {?>
+
+            <a href="<?php the_permalink(); ?>">
+
+                <figure class="slider__figure">
+
+                    <img src="<?php echo get_bloginfo('template_directory');?>/assets/img/logo.svg" alt="logo">
+
+                    <figcaption class="slider__caption"><?php the_title(); ?></figcaption>
+
+                </figure>
+
+            </a>
+        
+        <?}?>
+
+        </article>
+      
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
+        
+    </div>
+  
+    </section>
+
+
 
     <?php elseif(get_row_layout() == "list-group-ul"): // Grupo Listas Desordenadas ?>
                 

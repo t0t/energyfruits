@@ -3,7 +3,7 @@
       <?php //$defaults=array('theme_location'=>'footer_menu','menu_class'=>'nav-footer'); wp_nav_menu($defaults);?>      
       <div class="main-footer__brand">
 
-        <img src="<?php echo get_bloginfo('template_directory');?>/assets/img/logo_footer.svg" alt="logo">
+        <img src="<?php echo get_bloginfo('template_directory');?>/assets/img/logo.svg" alt="logo">
 
             <!-- <h4 class="main-footer__brand__name">
             <?php //bloginfo('name'); ?>
@@ -12,14 +12,10 @@
         </div>
 
         <div class="main-footer__social">
-
-          <a href="https://twitter.com/nanosigegants" target="_blank" class="icon-twitter"></a>
-          
-          <a href="https://www.facebook.com/pages/COLLA-DE-NANOS-I-GEGANTS-DE-VINARÒS/183606558388590" target="_blank" class="icon-facebook"></a>
-          
-          <a href="https://www.flickr.com/photos/74835237@N02/" target="_blank" class="icon-flickr"></a>
-          
-          <a href="https://www.youtube.com/user/nanosigegantsvinaros" target="_blank" class="icon-youtube"></a>
+         
+          <a href="https://www.facebook.com/energyfruits.es" target="_blank" class="icon-facebook"></a>
+               
+          <!-- <a href="https://www.youtube.com/" target="_blank" class="icon-youtube"></a> -->
 
         </div>
 

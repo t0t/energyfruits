@@ -28,7 +28,7 @@ Template Name: Portada
 
 
 <!-- Sidebars -->
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 
 
 <?php get_footer(); ?>
