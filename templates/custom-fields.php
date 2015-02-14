@@ -175,6 +175,24 @@
                     $email = get_sub_field('email');
                     ?>
 
+                    <div class="grid">
+
+                    <?php
+                        if ( function_exists( 'wpcf7_enqueue_scripts' ) ) { wpcf7_enqueue_scripts(); }
+                        if ( function_exists( 'wpcf7_enqueue_styles' ) ) { wpcf7_enqueue_styles(); }
+                    ?>
+
+                        <div class="grid-content__item">
+                            <img src="<?php the_sub_field("image"); ?>" alt="">
+                            <p><?php the_sub_field("address"); ?></p>
+                        </div>
+                        <div class="grid-content__item">
+                            <?php echo do_shortcode('[contact-form-7 id="313" title="Formulari de contacte"]'); ?>
+                        </div>
+
+                    </div>
+
+
                     <dt>
 
                       <?php if( $nombre ): ?>
