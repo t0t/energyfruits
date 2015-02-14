@@ -8,6 +8,9 @@
 	@include padding();
     // @include justify-content(space-around);
 
+	section {
+		margin-bottom: $gutterwidth;
+	}
 
 	@media all and (min-width: $bp3) {
 

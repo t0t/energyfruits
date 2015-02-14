@@ -194,10 +194,14 @@ input {
 }
 
 .wpcf7 {
-	display: table-cell;	
+	
+	// display: table-cell;	
 	img { width: auto; } // que no hayan sorpresas...
+
 	@media screen and (max-width: $bp3) {
-		display: table-row;
+
+		// display: table-row;
+
 	}
 }
 

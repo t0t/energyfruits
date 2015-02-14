@@ -10,7 +10,7 @@ $(".video-main__iframe").fitVids();
 
 // Slider
 // http://kenwheeler.github.io/slick/
-$('.sliderr').slick({
+$('.slider').slick({
   dots: true,
   speed: 5000,
   slidesToShow: 6,

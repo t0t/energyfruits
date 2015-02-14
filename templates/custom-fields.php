@@ -8,79 +8,27 @@
 
 
 
+        <!-- Contenido principal -->
+        <?php if( get_row_layout() == '1_block' ):?>
 
-
-    <?php if( get_row_layout() == 'contact_form' ):?>
-
-        <div class="grid">
-
-        <?php
-            if ( function_exists( 'wpcf7_enqueue_scripts' ) ) { wpcf7_enqueue_scripts(); }
-            if ( function_exists( 'wpcf7_enqueue_styles' ) ) { wpcf7_enqueue_styles(); }
-        ?>
-
-            <div class="grid-content__item">
-                <img src="<?php the_sub_field("image"); ?>" alt="">
-                <p><?php the_sub_field("address"); ?></p>
-            </div>
-            <div class="grid-content__item">
-                <?php echo do_shortcode('[contact-form-7 id="313" title="Formulari de contacte"]'); ?>
-            </div>
-
-        </div>
-
-
-
-
-        <?php elseif( get_row_layout() == '2_blocks' ):?>
-
-        <div class="grid">
-
-            <!-- repeater -->
-            <?php if( have_rows('block')): ?>
-            <?php while (have_rows('block')) : the_row(); ?>
-
-                <div class="grid__item">
-                
-                    <?php if (get_sub_field("header")): ?>
-                    <?php the_sub_field("header"); ?>xx
-                    <?php endif ?>
-                    
-                    <?php the_sub_field("content"); ?>
-
-                    <img src="<?php the_sub_field('image'); ?>" alt="">
-            
-                </div>
-
-            <?php endwhile;?>
-            <?php endif ?>
-
-
-
-
-
-        <!-- 1 bloque Contenido principal -->
-        <?php elseif( get_row_layout() == '1_block' ):?>
 
             <!-- repeater -->
             <?php if( have_rows('block')): ?>
             <?php while (have_rows('block')) : the_row(); ?>
 
             
-            <!-- <div class="main-post grid-content"> -->
-
-            
 
 
-                <figure>
-                
                 <?php if (get_sub_field("header")): ?>
+                
+                    <figure>
 
-                    <img src="<?php the_sub_field('image'); ?>" alt="">
-            
+                        <img src="<?php the_sub_field('image'); ?>" alt="">
+                
+                    </figure>
+
                 <?php endif ?>
 
-                </figure>
 
 
                 <?php if (get_sub_field("header")): ?>
@@ -90,8 +38,10 @@
                 <?php endif ?>
 
 
+
                 <!-- main post content -->
                 <div class="main-post__content">
+
 
 
                    <?php if (get_sub_field("content")): ?>
@@ -100,82 +50,123 @@
                        
                             <?php the_sub_field("content"); ?>
                        
-                        <?php the_tags( 'Contingut relacionat: ', ' • ', '<br />' ); ?>
+                            <?php the_tags( 'Contingut relacionat: ', ' • ', '<br />' ); ?>
 
                         </article>
 
                     <?php endif ?>
 
 
-                    <!-- galeria -->
+
                     <?php if (get_sub_field("gallery")): ?>
 
-                    <div class="galeria">
+                        <!-- galeria -->
+                        <div class="galeria">
 
-                        <h4 class="galeria__title">Galeria de fotos</h4>
-
-
-                        <?php if (get_sub_field("description")): ?>
-
-                            <h3 class="galeria-fotos__description">
-                                <?php the_sub_field("description"); ?>
-                            </h3>
-
-                        <?php endif ?>
+                            <h4 class="galeria__title">Galeria de fotos</h4>
 
 
-                        <div class="galeria-fotos">
-                            
-                            <?php
-                            $images = get_sub_field('gallery');
-                                 
-                            if( $images ): ?>
+                            <?php if (get_sub_field("description")): ?>
+
+                                <h3 class="galeria-fotos__description">
+                                    <?php the_sub_field("description"); ?>
+                                </h3>
+
+                            <?php endif ?>
+
+
+                            <div class="galeria-fotos">
                                 
-                                <?php foreach( $images as $image ): ?>
-
-                                    <figure class="galeria-fotos__figure">
-
-                                        <a href="<?php echo $image['url']; ?>" data-lightbox="serie" data-title="<?php echo $image['description']; ?>">
-
-                                        <img src="<?php echo $image['sizes']['mini']; ?>" alt="<?php echo $image['alt']; ?>" class="img--circle" />
-
-                                        <figcaption class="galeria-fotos__caption">
-                                        <?php echo $image['caption']; ?></figcaption>
-
-                                        </a>
+                                <?php
+                                $images = get_sub_field('gallery');
+                                     
+                                if( $images ): ?>
                                     
-                                    </figure>
-                                
-                                <?php endforeach; ?>
-                                
-                            <?php endif; ?>
+                                    <?php foreach( $images as $image ): ?>
+
+                                        <figure class="galeria-fotos__figure">
+
+                                            <a href="<?php echo $image['url']; ?>" data-lightbox="serie" data-title="<?php echo $image['description']; ?>">
+
+                                            <img src="<?php echo $image['sizes']['mini']; ?>" alt="<?php echo $image['alt']; ?>" class="img--circle" />
+
+                                            <figcaption class="galeria-fotos__caption">
+                                            <?php echo $image['caption']; ?></figcaption>
+
+                                            </a>
+                                        
+                                        </figure>
+                                    
+                                    <?php endforeach; ?>
+                                    
+                                <?php endif; ?>
+
+                            </div>
+
+
+                            <?php if (get_sub_field("enlace_externo")): ?>
+
+                                <small><a href="<?php the_sub_field('enlace_externo'); ?>" target="_blank">Enlace externo</a></small>
+
+                            <?php endif ?>
+
 
                         </div>
-
-                        <?php if (get_sub_field("flickr_gallery")): ?>
-
-                            <small><a href="<?php the_sub_field('flickr_gallery'); ?>" target="_blank">Vols vore l'album complert a flickr?</a></small>
-
-                        <?php endif ?>
-
-                    </div>
+                        <!-- /galeria -->
 
                     <?php endif ?>
-                    <!-- /galeria -->
+
 
 
     
-                    <!-- Equipo -->
+                    <!-- Lista con emails -->
                     <?php if( have_rows('equipo')): ?>
-                    <?php while( have_rows('equipo') ): the_row();
+
+                    <section class="grid">
+
+                    <?php while( have_rows('equipo') ): the_row(); ?>
                     
-                    // vars
-                    $nombre = get_sub_field('nombre');
-                    $cargo = get_sub_field('cargo');
-                    $email = get_sub_field('email');
+                    <?php
+                        $nombre = get_sub_field('nombre');
+                        $cargo = get_sub_field('cargo');
+                        $email = get_sub_field('email');
                     ?>
 
-                    <div class="grid">
+                    <article>
+
+                        <?php if( $nombre ): ?>
+
+                            <h3><i class="icon-profile-male"></i> 
+                            <?php echo $nombre; ?></h3>
+                            <h4><?php echo $cargo; ?></h4>
+
+                        <?php endif; ?>
+                    
+                        <?php if( $email ): ?>
+
+                            <a class="btn" href="mailto:<?php echo $email; ?>">
+                            <i class="icon-envelope"></i> <?php echo $email; ?></a>
+
+                        <?php endif; ?>
+
+                    </article>
+
+
+                    <?php endwhile; ?>
+
+                    </section>
+                    <!-- /equipo -->
+
+                    <?php endif; ?>
+
+
+
+
+                    <?php if (get_sub_field("address")): ?>
+                    
+
+                    <!-- mapa/form -->
+                    <section class="grid">
 
                     <?php
                         if ( function_exists( 'wpcf7_enqueue_scripts' ) ) { wpcf7_enqueue_scripts(); }
@@ -183,45 +174,94 @@
                     ?>
 
                         <div class="grid-content__item">
+
+                        <?php if (get_sub_field("image")) { ?>
+
                             <img src="<?php the_sub_field("image"); ?>" alt="">
+
+                        <?php } else { ?>
+
+                            <!-- Mapa -->
+                            <?php echo do_shortcode('[mappress mapid="2" width="100%"]'); ?>
+
+                        <?php } ?>
+                            
                             <p><?php the_sub_field("address"); ?></p>
+
                         </div>
+
                         <div class="grid-content__item">
-                            <?php echo do_shortcode('[contact-form-7 id="313" title="Formulari de contacte"]'); ?>
+
+                            <?php echo do_shortcode('[contact-form-7 id="56" title="Formulario de contacto"]'); ?>
+
                         </div>
 
-                    </div>
+                    </section>
+                    <!-- /mapa/form -->
 
 
-                    <dt>
+                    <?php endif; ?>
+                    
 
-                      <?php if( $nombre ): ?>
-                        <span class="glyphicon glyphicon-user"></span> <?php echo $nombre; ?>
-                      <?php endif; ?> - 
 
-                      <?php if( $cargo ): ?>
-                        <?php echo $cargo; ?>
-                      <?php endif; ?>
 
-                    </dt>
+                    <?php if( have_rows('carrusel_links_externos')): ?>
 
-                    <dd>
-                      <?php if( $email ): ?>
-                        <a class="btn btn-primary btn-lg" href="mailto:<?php echo $email; ?>">
-                      <?php endif; ?>
-                        <span class="glyphicon glyphicon-envelope"></span> <?php //echo $email; ?>
-                       <?php if( $email ): ?>
-                        </a>
+                    <!-- carrusel links externos -->
+                    <h3>Tiendas Virtuales</h3>
+                    
+                    <div class="slider">
+
+                    <?php while( have_rows('carrusel_links_externos') ): the_row(); ?>
+                    
+                    <?php
+                        $titulo = get_sub_field('titulo');
+                        $link = get_sub_field('link');
+                    ?>
+
+                    <figure>
+
+                        <?php if (get_sub_field("img")): ?>
+
+                            <a href="<?php echo $link; ?>" target="_blank">
+                                <?php $image = get_sub_field('img');
+                                echo '<img src="'.$image['sizes']['large'].'" />'; ?>
+                            </a>
+
+                        <?php endif ?>
+                    
+
+                        <figcaption>
+
+                            <?php if( $titulo ): ?>
+
+                            <h3><?php echo $titulo; ?></h3>
+
                         <?php endif; ?>
-                    </dd>
+
+                        <?php if( $link ): ?>
+
+                            <a class="btn" href="<?php echo $link; ?>" target="_blank">
+                            <i class="icon-envelope"></i> <?php echo $link; ?></a>
+
+                        <?php endif; ?>
+
+                        </figcaption>
+
+                    </figure>
+
 
                     <?php endwhile; ?>
 
+                    </div>
+                    <!-- /carrusel links externos -->
+
                     <?php endif; ?>
-                    <!-- /equipo -->
 
 
-                    <!-- grid -->
+
+
+                    
                     <?php if( have_rows('grid')): ?>
                     <?php while (have_rows('grid')) : the_row(); ?>
 
@@ -266,17 +306,15 @@
                                     <?php endif ?>
 
                                 </div>
+                                <!-- /grid item -->
                                                                 
                             <?php endwhile; ?>
-                            <!-- /grid item -->
 
 
-                    <?php 
-                    endwhile;
-                    endif;
-                    ?>
                     <!-- /grid -->
 
+                    <?php endwhile; ?>
+                    <?php endif; ?>
 
             
                 </div>
@@ -284,10 +322,10 @@
 
 
             <?php endwhile;?>
+            <!-- </div> -->
             <?php endif ?>
 
             
-        <!-- </div> -->
 
 
 
@@ -344,7 +382,7 @@
 
         <?php endif;?>
         <?php endwhile;?>
-        <!-- /row layout -->
+        <!-- /Contenido principal -->
 
 
 
@@ -497,12 +535,12 @@
             )); 
     ?>
 
-    <section class="slider">
+    <section>
     
     <h1 class="slider__title"><?php the_sub_field("title"); ?></h1>
     <?php the_sub_field("description"); ?>
 
-    <div class="slider__slides sliderr">
+    <div class="slider__slides slider">
 
     <?php while ($loop->have_posts()) : $loop->the_post(); ?>
       
@@ -562,12 +600,12 @@
             )); 
     ?>
 
-    <section class="slider">
+    <section>
     
     <h1 class="slider__title"><?php the_sub_field("title"); ?></h1>
     <?php the_sub_field("description"); ?>
 
-    <div class="slider__slides sliderr">
+    <div class="slider__slides slider">
 
     <?php while ($loop->have_posts()) : $loop->the_post(); ?>
       
@@ -615,7 +653,7 @@
     </section>
 
     
-    <?php elseif(get_row_layout() == "carusel3"): // Carusel 3 ?>
+    <?php elseif(get_row_layout() == "carusel3"): // Carusel enlaces externos ?>
     
     <?php 
         $loop = new WP_Query( array( 
@@ -627,12 +665,12 @@
             )); 
     ?>
 
-    <section class="slider">
+    <section>
     
     <?php the_sub_field("title"); ?>
     <?php the_sub_field("description"); ?>
 
-    <div class="slider__slides sliderr">
+    <div class="slider__slides slider">
 
     <?php while ($loop->have_posts()) : $loop->the_post(); ?>
       

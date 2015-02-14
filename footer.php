@@ -33,7 +33,7 @@
         <aside>
 
         <small>
-            <?php bloginfo('name'); ?> <?php echo date('Y'); ?> &sdot;
+            <address><?php bloginfo('name'); ?> <?php echo date('Y'); ?></address> 
             Texto legal, privacidad...
             <?php edit_post_link('&oplus; Editar ') ?> &sdot;
             <?php wp_loginout(); ?> &sdot;

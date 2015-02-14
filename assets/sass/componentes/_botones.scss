@@ -20,7 +20,7 @@
 	vertical-align : middle;
 	letter-spacing: $baseletterspacing;
 	white-space:nowrap;
-	border : 1px solid $color-base;
+	border : 1px solid $black-alpha-fuerte;
 	border-radius: 30px;
 	cursor : pointer;
 	margin:0;
@@ -30,6 +30,20 @@
    	padding-left: 1em;
 	background-color : transparent;
 	@extend %lowercase;
+	
+	&:hover {
+		
+			text-decoration : none;
+			color: $white;
+			background-color: $color-alt;
+			
+		}
+
+	&:active,
+	&:focus {
+
+			outline:none;
+	}
 
 	a {
 		color : $textcolor;
@@ -38,6 +52,7 @@
 		&:hover {
 			text-decoration : none;
 			color: $white;
+			background-color: $color-alt;
 		}
 		&:active,
 	    &:focus{

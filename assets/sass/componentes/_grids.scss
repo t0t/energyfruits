@@ -4,6 +4,7 @@
     @include flexbox;
     @include flex-flow(row wrap);
     @include justify-content(space-around);
+    width: 100%;
   }
 }
   
@@ -52,6 +53,7 @@
     }
 
   }
+
 
 .grid-form {
 

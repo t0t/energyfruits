@@ -17,7 +17,8 @@ h6 {
 	font-weight 	: $baseheadingfontweight;
 	color 			: $baseheadingfontcolor;
 	// font-style: italic;
-	@extend %uppercase;
+	@extend %lowercase;
+	letter-spacing: $baseletterspacing - 1;
 
 	text-rendering 	: optimizelegibility;
 		
@@ -47,15 +48,14 @@ h3 small {
 @each $header, $margin-bot, $font-size, $line-height in 
 	(h1, 0, 72, 1)
 	(h2, 3, 45, 1.1)
-	(h3, 3, 40, 1.3)
-	(h4, 7, 30, 1)
+	(h3, 0, 40, 1.3)
+	(h4, 2, 30, 1)
 	(h5, 7, 19, 2)
 	(h6, 7, 19, 1){
   		#{$header}, .#{$header} {
   		margin-bottom : $baselineheight / $margin-bot;
   		@include font-size($font-size);
   		line-height 	: $line-height;
-  		letter-spacing  : $baseletterspacing - 2;
   		@extend %text-center;
   		}
 	}

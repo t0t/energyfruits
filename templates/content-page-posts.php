@@ -9,10 +9,10 @@
     <?php 
     $this_post = $post->ID;
     $loop = new WP_Query( array( 
-    'post_type' => '',
-    'posts_per_page' => '9',
+    'post_type' => 'post',
+    'posts_per_page' => '',
     'post__not_in' => array($this_post),
-    'category_name' => 'noticies') ); 
+    'category_name' => '') ); 
     ?>
 
     <!-- Custom Loop -->

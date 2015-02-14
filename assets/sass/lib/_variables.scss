@@ -44,7 +44,7 @@ $altfont 					: 'Averia Serif Libre', cursive;
 $codefont 					: "Courier New", monospace;
 $basefont					: $altfont;
 $baseheadingfont 			: $basefont;
-$baseheadingfontweight 		: 700;
+$baseheadingfontweight 		: 400;
 
 $altlineheight : 1.35em;
 // $icons	: icomoon;
@@ -54,7 +54,7 @@ $altlineheight : 1.35em;
     $TAMAÑOS
 \*------------------------------------*/
 $basefontsize 		: 20 !default;
-$baseletterspacing 	: 1px;
+$baseletterspacing 	: 0;
 
 
 /*------------------------------------*\
@@ -113,7 +113,7 @@ $bordercolorhover   : $color-base;
 // Web
 $baseheadingfontcolor 		: $color-base;
 $background			: 	lighten($color-base, 60%);
-$textcolor			: 	$black;
+$textcolor			: 	$color-base;
 $textcolor-strong	:	$white;
 
 // Links  //////////////////////
