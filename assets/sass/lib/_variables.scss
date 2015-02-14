@@ -121,7 +121,7 @@ $linkcolor 			: $color-base;
 $linkcolorhover 	: lighten($linkcolor, 10%);
 $linkcolorvisited   : $linkcolor;
 $linkcolorfocus 	: $linkcolorvisited;
-$linkcolorfooter	: $black;
+$linkcolorfooter	: $white;
 
 $color-alert 		: $color-base;
 $color-error 		: red;

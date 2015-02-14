@@ -9,6 +9,13 @@
   	@media (min-width:$bp3) {
 		// min-height: 217px;
   	}
+  	img[src$=".svg"] {
+  		width: inherit;
+  	}
+  	input[type="submit"] {
+  		background-color: $color-base;
+  		color: $white;
+  	}
 }
 
 	.main-footer__header {}
@@ -21,7 +28,7 @@
 		height: 75px;
 		@media all and (min-width: $bp3) {
 			// width: 19%;
-			@include order(3);
+			// @include order(3);
 		}
 
 		a {
@@ -69,7 +76,7 @@
 		@extend %margin-vertical;
 		@extend %text-center;
 		@media all and (min-width: $bp3) {
-			@include order(2);
+			// @include order(2);
 		}
 		img {  
 			width: 100px;
@@ -91,15 +98,23 @@
 		
 		@extend %text-center;
 		@media all and (min-width: $bp3) {
-			@include order(1);
+			// @include order(1);
 		}
 		.screen-reader-text {
 			display: none;
 		}
 		input {
-			width: 75%;
+			width: 65%;
 		}
 		form {
 			margin-bottom: 0;
 		}
+	}
+
+	// Scroll to top button
+	.scroll-top {
+		// @extend .icon-arrow-up2;
+		position: relative;
+		float: right;
+		margin-right: $gutterwidth;
 	}

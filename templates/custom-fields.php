@@ -435,7 +435,7 @@
         $loop = new WP_Query( array( 
             'post_type' => 'cpt',
             'category_name' => 'energyfruits',
-            'posts_per_page' => '10',
+            'posts_per_page' => '',
             'orderby' => 'date',
             'order'   => 'DESC'
             )); 
@@ -500,7 +500,7 @@
         $loop = new WP_Query( array( 
             'post_type' => 'cpt',
             'category_name' => 'supershakes',
-            'posts_per_page' => '10',
+            'posts_per_page' => '',
             'orderby' => 'date',
             'order'   => 'DESC'
             )); 
@@ -565,7 +565,7 @@
         $loop = new WP_Query( array( 
             'post_type' => 'post',
             'category_name' => '',
-            'posts_per_page' => '10',
+            'posts_per_page' => '',
             'orderby' => 'date',
             'order'   => 'DESC'
             )); 

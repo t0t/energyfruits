@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main>
+<main class="main__content">
 
 	
 	<!-- Content search -->

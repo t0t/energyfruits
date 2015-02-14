@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<main>
+<main class="main__content" role="main">
 
-        <section role="main">
+        <section>
 
             <?php get_template_part( 'templates/content' ); ?>
 

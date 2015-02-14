@@ -5,7 +5,7 @@ Template Name: Contacto
 ?>
 <?php get_header(); ?>
 
-<main>
+<main class="main__content">
 
 
 	<!-- Content page template -->

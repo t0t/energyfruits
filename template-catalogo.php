@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Blog
+Template Name: Catalogo
 */
 ?>
 <?php get_header(); ?>
@@ -13,7 +13,7 @@ Template Name: Blog
 	<?php //get_template_part('templates/content', 'page'); ?>
 	
 	<!-- Loop for posts -->
-	<?php get_template_part('templates/content', 'page-posts'); ?>
+	<?php get_template_part('templates/content', 'page-catalogo'); ?>
 
 
 </main>

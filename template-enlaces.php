@@ -5,7 +5,7 @@ Template Name: Enlaces
 ?>
 <?php get_header(); ?>
 
-<main>
+<main class="main__content">
 
 
 

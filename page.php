@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main>
+<main class="main__content">
 
 	<!-- Content page -->
 	<?php get_template_part('templates/content', 'page'); ?>

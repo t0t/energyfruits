@@ -72,6 +72,16 @@
 
     </header>
 
+<?php elseif ( is_singular( 'cpt' ) ) : ?>
+        
+    <header>
+
+        <h1>
+            <?php the_title(); ?>vvv
+        </h1>
+
+    </header>
+
 <?php elseif ( is_search() ) : ?>
         
     <header>
