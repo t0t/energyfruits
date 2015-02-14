@@ -173,16 +173,19 @@ input[type="submit"].btn:hover {
 * Botón en footer
 */
 .btn--footer {
+
 	color : $linkcolorfooter;
-	border : 1px solid $linkcolorfooter;
+	background-color: $color-alt;
+	border-radius: $radius;
+	border : none;
+
 	&:hover {
 		color : $linkcolorfooter;
-		border : none;
-		text-decoration: underline;
-		border : 1px dotted $linkcolorfooter;
+		background-color: $color-base;
 	}
+
 	&:visited {
-		color : darken($color-warning, 40%);
+		color : $white;
 	}
 }
 

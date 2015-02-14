@@ -16,7 +16,7 @@
         
         <div>
 
-            <a class="btn" href="#">Area privada</a>
+            <a class="btn btn--footer btn--large" href="/area-privada">Area privada</a>
 
             <div class="main-footer__searchform">
                 <?php get_search_form(); ?>

@@ -566,9 +566,9 @@ input[type="submit"].btn:hover { border-color: #317549; }
 /**
 * Botón en footer
 */
-.btn--footer { color: white; border: 1px solid white; }
-.btn--footer:hover { color: white; border: none; text-decoration: underline; border: 1px dotted white; }
-.btn--footer:visited { color: #330000; }
+.btn--footer { color: white; background-color: #f0730b; border-radius: 5px; border: none; }
+.btn--footer:hover { color: white; background-color: #317549; }
+.btn--footer:visited { color: white; }
 
 .btn--inactive, .btn--inactive:hover, .btn--inactive:active, .btn--inactive:focus { -webkit-opacity: 0.5; -moz-opacity: 0.5; opacity: 0.5; cursor: default; }
 

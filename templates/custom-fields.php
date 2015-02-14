@@ -59,7 +59,7 @@
 
 
 
-        <!-- 1 bloque -->
+        <!-- 1 bloque Contenido principal -->
         <?php elseif( get_row_layout() == '1_block' ):?>
 
             <!-- repeater -->
@@ -107,9 +107,9 @@
                     <?php endif ?>
 
 
+                    <!-- galeria -->
                     <?php if (get_sub_field("gallery")): ?>
 
-                    <!-- galeria -->
                     <div class="galeria">
 
                         <h4 class="galeria__title">Galeria de fotos</h4>
@@ -159,10 +159,48 @@
                         <?php endif ?>
 
                     </div>
-                    <!-- /galeria -->
 
                     <?php endif ?>
+                    <!-- /galeria -->
 
+
+    
+                    <!-- Equipo -->
+                    <?php if( have_rows('equipo')): ?>
+                    <?php while( have_rows('equipo') ): the_row();
+                    
+                    // vars
+                    $nombre = get_sub_field('nombre');
+                    $cargo = get_sub_field('cargo');
+                    $email = get_sub_field('email');
+                    ?>
+
+                    <dt>
+
+                      <?php if( $nombre ): ?>
+                        <span class="glyphicon glyphicon-user"></span> <?php echo $nombre; ?>
+                      <?php endif; ?> - 
+
+                      <?php if( $cargo ): ?>
+                        <?php echo $cargo; ?>
+                      <?php endif; ?>
+
+                    </dt>
+
+                    <dd>
+                      <?php if( $email ): ?>
+                        <a class="btn btn-primary btn-lg" href="mailto:<?php echo $email; ?>">
+                      <?php endif; ?>
+                        <span class="glyphicon glyphicon-envelope"></span> <?php //echo $email; ?>
+                       <?php if( $email ): ?>
+                        </a>
+                        <?php endif; ?>
+                    </dd>
+
+                    <?php endwhile; ?>
+
+                    <?php endif; ?>
+                    <!-- /equipo -->
 
 
                     <!-- grid -->
