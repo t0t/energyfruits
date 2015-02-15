@@ -19,7 +19,7 @@
             
 
 
-                <?php if (get_sub_field("header")): ?>
+                <?php if (get_sub_field("image")): ?>
                 
                     <figure>
 
@@ -161,6 +161,48 @@
 
 
 
+                
+                    
+                     <!-- Upload files -->
+                    <?php if( have_rows('upload_files')): ?>
+
+                    <section class="grid">
+
+                    <ul>
+
+                    <?php while( have_rows('upload_files') ): the_row(); ?>
+                    
+                    <?php
+                        $title = get_sub_field('title');
+                        $file = get_sub_field('file');
+                    ?>
+
+                    <li>
+                        <?php if( $file ): ?>
+                        <a href="<?php echo $file['url']; ?>" alt="<?php echo $file['url']; ?>" target="_blank">
+                        <?php endif; ?>
+                        
+                        <?php if( $title ): ?>
+                        <?php echo $title; ?>
+                        <?php endif; ?>
+
+                        <?php if( $file ): ?>
+                        </a>
+                        <?php endif; ?>
+                    </li>
+
+
+                    <?php endwhile; ?>
+
+                    </ul>
+
+                    </section>
+                    <!-- /Upload files -->
+
+                    <?php endif; ?>
+
+
+
 
                     <?php if (get_sub_field("address")): ?>
                     
@@ -209,7 +251,7 @@
 
                     <!-- carrusel links externos -->
                     <h3>Tiendas Virtuales</h3>
-                    
+
                     <div class="slider">
 
                     <?php while( have_rows('carrusel_links_externos') ): the_row(); ?>
@@ -549,6 +591,7 @@
         <? if ( has_post_thumbnail() ) { ?>
 
             <a href="<?php the_permalink(); ?>">
+
                 <figure>
 
                     <?php the_post_thumbnail('thumbnail'); ?>

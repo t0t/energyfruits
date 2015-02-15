@@ -12,11 +12,12 @@ $(".video-main__iframe").fitVids();
 // http://kenwheeler.github.io/slick/
 $('.slider').slick({
   dots: true,
-  speed: 5000,
+  speed: 1000,
+  infinite: false,
   slidesToShow: 6,
-  slidesToScroll: 4,
-  autoplay: true,
-  autoplaySpeed: 5000,
+  slidesToScroll: 6,
+  autoplay: false,
+  autoplaySpeed: 300,
 
   responsive: [
     {

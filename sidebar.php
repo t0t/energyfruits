@@ -15,11 +15,13 @@
         
         <?php get_sidebar('single'); ?>
 
-    <?php //elseif ( is_page_template() ) : ?>
-        <?php //get_sidebar('page-template.php'); ?>
+    <?php elseif ( is_page_template() ) : ?>
+        
+        xxx
+        <?php get_sidebar('page-template.php'); ?>
 
     <?php else : ?>
-    <p>ups, no sidebar!</p>   
+    <p>ups, no sidebar!</p>
     <?php endif; ?>
 
 

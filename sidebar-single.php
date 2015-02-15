@@ -26,6 +26,12 @@
 </div>
 
 
+<li id="categories"><?php _e('Categories:'); ?>
+	<ul>
+<?php wp_list_cats(); ?>
+	</ul>
+ </li>
+
 
 
 

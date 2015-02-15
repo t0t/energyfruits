@@ -88,12 +88,39 @@ img[src$=".svg"] {
 }
 
 
-.main__content--single {
+.main__content--split {
 
 	// @include max-width($bp3);
-	width: 75%;
-	background-color: red;
-	float: left;
+	
+	// padding-top: $gutterwidth;
+	// background-color: red;
+	// float: left;
+	display: table;
+
+    	
+    > main {
+
+		@media all and (min-width: $bp2-5) {
+			
+    		display: table-cell;
+    		width: 75%;
+    		
+    	}
+
+	}
+
+	> aside {
+
+		@media all and (min-width: $bp2-5) {
+
+    		display: table-cell;
+    		width: 25%;
+    		background-color: $color-alt;
+
+    	}
+
+	}
+
 
 }
 

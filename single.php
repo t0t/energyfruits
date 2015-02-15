@@ -1,14 +1,18 @@
 <?php get_header(); ?>
 
-<main class="main__content--single">
+<div class="main__content--split">
 
-	<!-- Content single -->
-	<?php get_template_part('templates/content', 'single'); ?>
+	<main>
+
+		<!-- Content single -->
+		<?php get_template_part('templates/content', 'single'); ?>
 
 
-</main>
+	</main>
 
-<!-- Sidebars -->
-<?php get_sidebar(); ?>
+	<!-- Sidebars -->
+	<?php get_sidebar(); ?>
+
+</div>
 
 <?php get_footer(); ?>

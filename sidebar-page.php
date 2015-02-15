@@ -1,8 +1,14 @@
 
 
 <div class="widget widget--pages">
+<li id="categories"><?php _e('Categories:'); ?>
+    <ul>
+<?php wp_list_cats(); ?>
+    </ul>
+ </li>
 
-	<h3>La Colla</h3>
+ 
+	<h3></h3>
 
 	<!-- http://www.billerickson.net/code/wp_query-arguments/ -->
 	<?php 
