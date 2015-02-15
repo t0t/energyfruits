@@ -1,5 +1,4 @@
 
-<div class="main__content">
 
     <!-- Page Header -->
     <?php get_template_part('templates/page', 'header'); ?>
@@ -66,6 +65,3 @@
         </ul>
 
     </nav>
-
-</div>
-<!-- /main content -->

@@ -87,6 +87,17 @@ img[src$=".svg"] {
 	}
 }
 
+
+.main__content--single {
+
+	// @include max-width($bp3);
+	width: 75%;
+	background-color: red;
+	float: left;
+
+}
+
+
 .wrapper {
   @include grid(2, 8, 2);
 }
@@ -194,7 +205,7 @@ input {
 }
 
 .wpcf7 {
-	
+
 	// display: table-cell;	
 	img { width: auto; } // que no hayan sorpresas...
 

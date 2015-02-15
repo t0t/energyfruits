@@ -1,7 +1,7 @@
 
 <div class="widget widget--posts">
 
-	<h3>noticies recents</h3>
+	<h3>Últimos posts</h3>
 
 	<ul>
 
@@ -30,5 +30,5 @@
 
 
 <?php if ( is_active_sidebar( 'sidebar-custom' ) ) : ?>
-	<?php dynamic_sidebar( 'sidebar-custom' ); ?>
+	<?php //dynamic_sidebar( 'sidebar-custom' ); ?>
 <?php endif; ?>

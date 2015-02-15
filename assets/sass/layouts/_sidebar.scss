@@ -1,7 +1,8 @@
 
 .sidebar {
 
-	@include max-width($bp1);
+	@include max-width(25%);
+	float: right;
 	
 
 	* {
