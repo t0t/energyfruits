@@ -19,11 +19,11 @@
             
 
 
-                <?php if (get_sub_field("image")): ?>
+                <?php if (get_sub_field("header_image")): ?>
                 
                     <figure>
 
-                        <img src="<?php the_sub_field('image'); ?>" alt="">
+                        <img src="<?php the_sub_field('header_image'); ?>" alt="">
                 
                     </figure>
 

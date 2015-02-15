@@ -21,9 +21,9 @@ body {
 
 img {
 
-  @include max-width(100%);
+  // @include max-width(100%);
 
-  height: auto;
+  // height: auto;
 
   @media all and (min-width: $bp3) {}
 

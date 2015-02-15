@@ -390,8 +390,6 @@ html { font-size: 100%; }
 
 body { font-family: "Averia Serif Libre", cursive; color: #317549; background-color: #e4f4ea; font-size: 1.2rem; }
 
-img { margin-left: auto; margin-right: auto; max-width: 100%; width: 100%; height: auto; }
-
 img[src$=".svg"] { max-width: auto; width: 100%; height: auto; }
 
 .img--bg { background-size: contain; background-position: png; background-repeat: no-repeat; background-repeat: no-repeat; background-position: center; background-color: #317549; }
