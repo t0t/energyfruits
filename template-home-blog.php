@@ -6,9 +6,8 @@ Template Name: Blog
 <?php get_header(); ?>
 
 
-<div class="main__content--split">
+<main class="main__content">
 
-	<main>
 
 	<!-- Content page -->
 	<?php //get_template_part('templates/content', 'page'); ?>
@@ -17,13 +16,9 @@ Template Name: Blog
 	<?php get_template_part('templates/content', 'page-posts'); ?>
 
 
-	</main>
-
+</main>
 
 	<!-- Sidebars -->
-	<?php get_sidebar(); ?>
-
-</div>
-
+	<?php //get_sidebar(); ?>
 
 <?php get_footer(); ?>

@@ -53,7 +53,7 @@
 .main-post__subheader {
 
 	@include max-width($bp2);
-	@include padding($gutterwidth*2);
+	@include padding($gutterwidth);
 	margin-bottom: 0;
 
 
