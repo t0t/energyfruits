@@ -1,15 +1,21 @@
 
 
 
+
+
+    <?php  if ( get_post_type() == 'post' ) { ?>
+    
 <aside class="sidebar">
+    <?php get_sidebar('single'); ?>
+</aside>
 
-    <?php if ( is_single() ) : ?>
+    <?php } ?>
 
-        <?php get_sidebar('single'); ?>
+  
         
-    <?php elseif ( is_page() ) : ?>
+    <?php if ( is_page() ) : ?>
         
-        <?php get_sidebar('page'); ?>
+        <?php //get_sidebar('page'); ?>
 
     <?php elseif ( is_search() | is_404() ) : ?>
         
@@ -17,12 +23,8 @@
 
     <?php elseif ( is_page_template() ) : ?>
         
-        xxx
         <?php get_sidebar('page-template.php'); ?>
 
     <?php else : ?>
-    <p>ups, no sidebar!</p>
     <?php endif; ?>
 
-
-</aside>

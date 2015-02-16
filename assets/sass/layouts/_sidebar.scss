@@ -2,13 +2,15 @@
 .sidebar {
 
 	// width: 100%;
-	// float: right;
-	padding-top: $gutterwidth;
-	background-color: $color-alt;
+	padding: $gutterwidth/2;
+	// background-color: $color-alt;
+	@include font-size(24);
 	
-	@media all and (min-width: $bp2-5) {
+	@media all and (min-width: $bp2) {
 
     	// padding: $gutterwidth;
+    	position: relative;
+		width: 25%;
 
     }
 
@@ -21,10 +23,10 @@
 
 	a, a:visited {
 
-		color: $black;
+		color: $color-alt;
 
 		&:hover {
-			color: $color-alt;
+			color: $color-base;
 		}
 
 	}

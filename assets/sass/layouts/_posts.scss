@@ -5,7 +5,7 @@
 
 .main-post__content {
 
-	@include padding();
+	// @include padding();
     // @include justify-content(space-around);
 
 	section {
@@ -16,7 +16,7 @@
 
 		@include flexbox;
 	    @include flex-flow(row wrap);
-	    @include justify-content(space-around);
+	    @include justify-content(flex-end);
 		// width: calc(75% - #{$gutterwidth});
     
     }
@@ -43,7 +43,7 @@
 
 	    @media all and (min-width: $bp2) {
 
-	    	// width: calc(55% - #{$gutterwidth});
+	    	width: calc(55% - #{$gutterwidth});
 	    
 	    }
 
@@ -59,14 +59,14 @@
 
 	@media only screen and (min-width: $bp3) {
 
-		@include font-size(42);
+		@include font-size(24);
 
     }
 
 
     @media only screen and (min-width: $bp2) {
 
-		@include font-size(56);
+		@include font-size(48);
 
     }
 
@@ -136,7 +136,7 @@
 
 				@media all and (min-width: $bp3) {
 
-					color: $black;
+					// color: $black;
 
 				}
 
@@ -278,9 +278,8 @@
 
 		@include font-size(24);
 
-		color: $white-alpha-medio;
+		color: $black-alpha-medio;
 
-		font-style: italic;
 
 		line-height: 1;
 

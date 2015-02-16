@@ -1,18 +1,12 @@
 <?php get_header(); ?>
 
-<div class="main__content--split">
+<main class="main__content">
 
-	<main>
 
 		<!-- Content single -->
 		<?php get_template_part('templates/content', 'single'); ?>
 
 
-	</main>
-
-	<!-- Sidebars -->
-	<?php get_sidebar(); ?>
-
-</div>
+</main>
 
 <?php get_footer(); ?>

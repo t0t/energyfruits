@@ -192,7 +192,7 @@
 
                     <?php endif ?>
 
-
+                    
 
     
                     <!-- Lista con emails -->
@@ -440,7 +440,15 @@
                     <?php endwhile; ?>
                     <?php endif; ?>
 
-            
+                
+
+
+                <!-- Sidebars -->
+    <?php get_sidebar(); ?>
+
+    
+                
+
                 </div>
                 <!-- /main post content -->
 
@@ -628,16 +636,16 @@
 
     <?php while(has_sub_field('video_repeater')): ?>  
 
-        <?php if (get_sub_field("btn")): ?>
-            <a class="btn btn--invert" href="<?php the_sub_field('btn'); ?>"><?php the_sub_field('btn-title'); ?> &rarr;</a>
-        <?php endif ?>
-        
         <?php if (get_sub_field("video")): ?>
             <div class="video-main__iframe"><?php the_sub_field("video"); ?></div>
         <?php endif ?>
 
         <?php if (get_sub_field("descripcion")): ?>
             <p class="video-main__description"><?php the_sub_field("descripcion"); ?></p>
+        <?php endif ?>
+
+        <?php if (get_sub_field("btn")): ?>
+            <a class="btn btn--invert" href="<?php the_sub_field('btn'); ?>"><?php the_sub_field('btn-title'); ?> &rarr;</a>
         <?php endif ?>
     
     <?php endwhile; ?>

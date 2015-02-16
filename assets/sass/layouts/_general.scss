@@ -2,7 +2,7 @@ html {
 
   font-size: 100%; //de 16px
 
-  @media all and (min-width: $bp3) {
+  @media all and (max-width: $bp3) {
     font-size: 85%; //de 16px
   }
 
@@ -15,7 +15,7 @@ body {
 	color: $textcolor;
 	// @include background-image(svgdefs,auto, no-repeat,svg);
 	background-color: $background;
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 }
 
 
@@ -58,7 +58,7 @@ img[src$=".svg"] {
 .main__content {
 	
 	@include max-width($bp0);
-    background-color: $background;
+    background-color: $white;
     @media all and (min-width: $bp3) {
     	// padding: $gutterwidth;
     }
@@ -67,8 +67,16 @@ img[src$=".svg"] {
 
 		padding: $gutterwidth ($gutterwidth * 1.5) ($gutterwidth/1.5) ($gutterwidth * 1.5);
 
+
 		h1 {
 			// color: $background;
+			@include max-width(75%);
+
+			@media all and (min-width: $bp2-5) {
+			
+	    		@include font-size(125);
+    		
+    		}
 		}
 
 		// background-color: $color-base;
@@ -90,7 +98,7 @@ img[src$=".svg"] {
 
 .main__content--split {
 
-	// @include max-width($bp3);
+	@include max-width($bp0);
 	
 	// padding-top: $gutterwidth;
 	// background-color: red;
@@ -104,6 +112,7 @@ img[src$=".svg"] {
 			
     		display: table-cell;
     		width: 75%;
+    		background-color: $white;
     		
     	}
 
@@ -115,7 +124,7 @@ img[src$=".svg"] {
 
     		display: table-cell;
     		width: 25%;
-    		background-color: $color-alt;
+    		background-color: $white;
 
     	}
 

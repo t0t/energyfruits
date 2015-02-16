@@ -1,13 +1,13 @@
 //Slider
 .slider {
 
-	@include max-width($bp0);
+	@include max-width($bp0 - ($paddingbase * 10));
 	// height: 500px;
 	@include padding();
 	position: relative;
 	z-index: 1;
-
-	@include background-image(bg_top_main,100%,no-repeat,svg);
+	// background-color: $background-alt;
+	// @include background-image(bg_top_main,100%,no-repeat,svg);
 
 	ul {
 

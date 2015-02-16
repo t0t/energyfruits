@@ -68,5 +68,5 @@
 
 
 	<?php if ( is_active_sidebar( 'sidebar-custom' ) ) : ?>
-		<?php dynamic_sidebar( 'sidebar-custom' ); ?>
+		<?php //dynamic_sidebar( 'sidebar-custom' ); ?>
 	<?php endif; ?>

@@ -1,10 +1,10 @@
 
 
     <!-- Page Header -->
-    <?php get_template_part('templates/page', 'header'); ?>
+    <?php //get_template_part('templates/page', 'header'); ?>
 
     <!-- Slider noticias -->
-    <h3>noticias</h3>
+    <h1>noticias</h1>
 
     <section class="slider">
     
@@ -26,14 +26,14 @@
 
             <figure class="post__figure ">
                 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                <?php the_post_thumbnail('medium'); ?>
+                <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img--circle' ) ); ?>
                 </a>
             </figure>
 
             <div class="post__content">
 
                 <small class="post__meta-date"><?php the_date('j F Y'); ?></small>
-                <h2><?php the_title(); ?></h2>
+                <h2 class="h4"><?php the_title(); ?></h2>
                 <a class="btn" href="<?php the_permalink(); ?>">&rarr;</a>
 
             </div>
@@ -55,7 +55,7 @@
 
 
     <!-- Slider novedades -->
-    <h3>novedades</h3>
+    <h1>novedades</h1>
 
     <section class="slider">
     
@@ -77,14 +77,14 @@
 
             <figure class="post__figure ">
                 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                <?php the_post_thumbnail('medium'); ?>
+                <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img--circle' ) ); ?>
                 </a>
             </figure>
 
             <div class="post__content">
 
                 <small class="post__meta-date"><?php the_date('j F Y'); ?></small>
-                <h2><?php the_title(); ?></h2>
+                <h2 class="h4"><?php the_title(); ?></h2>
                 <a class="btn" href="<?php the_permalink(); ?>">&rarr;</a>
 
             </div>
@@ -106,7 +106,7 @@
 
 
     <!-- Slider recetas -->
-    <h3>recetas</h3>
+    <h1>recetas</h1>
 
     <section class="slider">
     
@@ -128,14 +128,14 @@
 
             <figure class="post__figure ">
                 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                <?php the_post_thumbnail('medium'); ?>
+                <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img--circle' ) ); ?>
                 </a>
             </figure>
 
             <div class="post__content">
 
                 <small class="post__meta-date"><?php the_date('j F Y'); ?></small>
-                <h2><?php the_title(); ?></h2>
+                <h2 class="h4"><?php the_title(); ?></h2>
                 <a class="btn" href="<?php the_permalink(); ?>">&rarr;</a>
 
             </div>

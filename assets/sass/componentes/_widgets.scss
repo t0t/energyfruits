@@ -298,18 +298,18 @@
 .video-main {
 	@extend %padding-vertical;
 	@extend %text-center;
-	background-color: $black;
+	// background-color: $black;
 
 }
 	.video-main__header {
-		color: $white;
+		// color: $white;
 		margin-bottom: $gutterwidth;
 	}
 	.video-main__iframe {
 		@include max-width(560px);
 	}
 	.video-main__heading, .video-main__description {
-		color: $white;
+		// color: $white;
 	}
 	.video-main__description {
 		margin-top: $paddingbase / 2;

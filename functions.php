@@ -71,6 +71,13 @@ function create_post_type() {
 	);
 }
 
+// http://wordpress.stackexchange.com/questions/6731/if-is-custom-post-type
+function is_post_type($type){
+    global $wp_query;
+    if($type == get_post_type($wp_query->post->ID)) return true;
+    return false;
+}
+
 // Quitame los metaboxes que me sobran
 function quita_metaboxes_inutiles() {
 	remove_meta_box('postexcerpt' , 'page' , 'normal' ); 
