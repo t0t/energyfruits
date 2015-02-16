@@ -7,7 +7,8 @@
 
     <header>
         
-        <?php the_category(''); ?>
+        <?php //the_category(''); ?>
+        <?php echo get_the_category(); ?>
         
         <h1> 
 
@@ -51,12 +52,24 @@
         
     <header>
         
-        <h2><?php the_category(); ?></h2>
+        <h3>
+            <?php
+            $cats=get_the_category();
+            echo $cats[0]->cat_name;
+            ?>
+        </h3>
 
         <h1>
-            <?php the_title(); ?><small class="altheader"><?php echo get_the_time('j F Y'); ?></small>
-        </h1>
 
+            <?php the_title(); ?>
+
+            <?php  if ( get_post_type() == 'post' ) { ?>
+    
+            <small class="altheader"><?php echo get_the_time('j F Y'); ?></small>
+
+            <?php } ?>
+
+        </h1>
 
     </header>
 

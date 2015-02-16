@@ -72,7 +72,13 @@ img[src$=".svg"] {
 			// color: $background;
 			@include max-width(75%);
 
-			@media all and (min-width: $bp2-5) {
+			@media all and (min-width: $bp3) {
+			
+	    		@include font-size(100);
+    		
+    		}
+
+    		@media all and (min-width: $bp1) {
 			
 	    		@include font-size(125);
     		

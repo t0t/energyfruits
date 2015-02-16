@@ -16,7 +16,7 @@
 
 		@include flexbox;
 	    @include flex-flow(row wrap);
-	    @include justify-content(flex-end);
+	    @include justify-content(center);
 		// width: calc(75% - #{$gutterwidth});
     
     }
@@ -59,12 +59,12 @@
 
 	@media only screen and (min-width: $bp3) {
 
-		@include font-size(24);
+		@include font-size(26);
 
     }
 
 
-    @media only screen and (min-width: $bp2) {
+    @media only screen and (min-width: $bp1) {
 
 		@include font-size(48);
 
