@@ -145,7 +145,7 @@
                         <?php endif; ?>
                         
                         <?php if( $title ): ?>
-                        <i class="icon-paperclip"></i> <?php echo $title; ?>
+                        <i class="icon-file-pdf"></i> <?php echo $title; ?>
                         <?php endif; ?>
 
                         <?php if( $file ): ?>
@@ -369,7 +369,7 @@
                         <?php if( $link ): ?>
 
                             <a class="btn" href="<?php echo $link; ?>" target="_blank">
-                            <i class="icon-envelope"></i> <?php echo $link; ?></a>
+                            <i class="icon-attachment"></i> <?php echo $link; ?></a>
 
                         <?php endif; ?>
 

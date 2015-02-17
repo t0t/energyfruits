@@ -260,18 +260,19 @@ input {
 
 // Mappress
 .mapp-canvas {
-	display: table-cell;
-	width: 50% !important;
+
+	@media all and (min-width: 410px) {
+
+    	display: table-cell;
+		width: 50% !important;
+
+    }
 }
 
 .mapp-layout {
 
-	@media all and (min-width: $bp3) {
+	@media all and (min-width: 410px) {
 
-		// @include flexbox;
-	 //    @include flex-flow(row wrap);
-	 //    @include justify-content(center);
-		// width: calc(75% - #{$gutterwidth});
 		display: table;
 		// width: 50%;
     

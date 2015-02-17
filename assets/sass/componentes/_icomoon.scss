@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-$icons: ".icon-megaphone,.icon-envelope,.icon-paperclip,.icon-profile-male,.icon-facebook,.icon-logo_sf2,.icon-arrow-right2,.icon-arrow-left2, .icon-arrow-up2";
+$icons: ".icon-megaphone,.icon-envelope,.icon-paperclip,.icon-profile-male,.icon-facebook,.icon-logo_sf2,.icon-arrow-right2,.icon-arrow-left2, .icon-arrow-up2, .icon-attachment, .icon-magnifying-glass, .icon-file-pdf, .icon-download2";
 
 %icomoon {
 	font-family: "icomoon";
@@ -42,6 +42,14 @@ $icons: ".icon-megaphone,.icon-envelope,.icon-paperclip,.icon-profile-male,.icon
 	content: "\e02d";
 }
 
+.icon-attachment:before {
+	content: "\e02e";
+}
+
+.icon-magnifying-glass:before {
+	content: "\e037";
+}
+
 .icon-profile-male:before {
 	content: "\e040";
 }
@@ -54,6 +62,10 @@ $icons: ".icon-megaphone,.icon-envelope,.icon-paperclip,.icon-profile-male,.icon
 	content: "\e613";
 }
 
+.icon-download2:before {
+	content: "\e9c5";
+}
+
 .icon-arrow-up2:before {
 	content: "\ea3a";
 }
@@ -64,4 +76,8 @@ $icons: ".icon-megaphone,.icon-envelope,.icon-paperclip,.icon-profile-male,.icon
 
 .icon-arrow-left2:before {
 	content: "\ea40";
+}
+
+.icon-file-pdf:before {
+	content: "\eada";
 }
