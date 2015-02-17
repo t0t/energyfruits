@@ -124,7 +124,46 @@
                     <?php endif; ?>
 
                        
-                            <?php the_tags( 'Contingut relacionat: ', ' • ', '<br />' ); ?>
+
+
+                    <?php if( have_rows('upload_files')): ?>
+                    <!-- Upload files -->
+
+
+                    <ul>
+
+                    <?php while( have_rows('upload_files') ): the_row(); ?>
+                    
+                    <?php
+                        $title = get_sub_field('title');
+                        $file = get_sub_field('file');
+                    ?>
+
+                    <li>
+                        <?php if( $file ): ?>
+                        <a href="<?php echo $file['url']; ?>" alt="<?php echo $file['url']; ?>" target="_blank">
+                        <?php endif; ?>
+                        
+                        <?php if( $title ): ?>
+                        <i class="icon-paperclip"></i> <?php echo $title; ?>
+                        <?php endif; ?>
+
+                        <?php if( $file ): ?>
+                        </a>
+                        <?php endif; ?>
+                    </li>
+
+                    <?php endwhile; ?>
+
+                    </ul>
+
+                    <!-- /Upload files -->
+                    <?php endif; ?>
+
+
+
+
+                        <?php the_tags( 'Contingut relacionat: ', ' • ', '<br />' ); ?>
 
 
 
@@ -139,7 +178,7 @@
                         <!-- galeria -->
                         <div class="galeria">
 
-                            <h4 class="galeria__title">Galeria de fotos</h4>
+                            <!-- <h4 class="galeria__title"></h4> -->
 
 
                             <?php if (get_sub_field("description")): ?>
@@ -245,43 +284,7 @@
 
                 
                     
-                     <!-- Upload files -->
-                    <?php if( have_rows('upload_files')): ?>
-
-                    <section class="grid">
-
-                    <ul>
-
-                    <?php while( have_rows('upload_files') ): the_row(); ?>
                     
-                    <?php
-                        $title = get_sub_field('title');
-                        $file = get_sub_field('file');
-                    ?>
-
-                    <li>
-                        <?php if( $file ): ?>
-                        <a href="<?php echo $file['url']; ?>" alt="<?php echo $file['url']; ?>" target="_blank">
-                        <?php endif; ?>
-                        
-                        <?php if( $title ): ?>
-                        <?php echo $title; ?>
-                        <?php endif; ?>
-
-                        <?php if( $file ): ?>
-                        </a>
-                        <?php endif; ?>
-                    </li>
-
-
-                    <?php endwhile; ?>
-
-                    </ul>
-
-                    </section>
-                    <!-- /Upload files -->
-
-                    <?php endif; ?>
 
 
 
@@ -742,11 +745,10 @@
 
     <?php while ($loop->have_posts()) : $loop->the_post(); ?>
       
-        <article>
+            <a href="<?php the_permalink(); ?>">
 
         <? if ( has_post_thumbnail() ) { ?>
 
-            <a href="<?php the_permalink(); ?>">
                 <figure>
 
                     <?php the_post_thumbnail('thumbnail'); ?>
@@ -758,11 +760,9 @@
 
                 </figure>
 
-            </a>
 
         <?}else {?>
 
-            <a href="<?php the_permalink(); ?>">
 
                 <figure class="slider__figure">
 
@@ -772,11 +772,10 @@
 
                 </figure>
 
-            </a>
         
         <?}?>
 
-        </article>
+            </a>
       
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>

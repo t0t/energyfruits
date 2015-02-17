@@ -93,8 +93,8 @@ img[src$=".svg"] {
 		
 		&::first-letter {
 		
-			color: $color-base;
-			@include font-size(100);
+			// color: $color-base;
+			// @include font-size(100);
 
 		}
 		
@@ -259,6 +259,57 @@ input {
 }
 
 // Mappress
+.mapp-canvas {
+	display: table-cell;
+	width: 50% !important;
+}
+
+.mapp-layout {
+
+	@media all and (min-width: $bp3) {
+
+		// @include flexbox;
+	 //    @include flex-flow(row wrap);
+	 //    @include justify-content(center);
+		// width: calc(75% - #{$gutterwidth});
+		display: table;
+		// width: 50%;
+    
+    }
+}
+.mapp-directions, .mapp-map-links, .mapp-dialog {display: none}
+
+.mapp-poi-list {
+	
+	display: table-cell;
+	width: 50% !important;
+	@include font-size(16);
+	padding-left: $gutterwidth*2;
+
+	thead {
+		display: none;
+	}
+
+	tbody {
+		// display: table;
+	}
+
+	img {
+		// display: none;
+		height: 10px;
+	}
+	td {
+		// @extend %text-center;
+	}
+	tr {
+		float: left;
+		width: 50%;
+	}
+
+}
+
+
+
 //.mapp-iw { color: $black; }
 
 // Vegas

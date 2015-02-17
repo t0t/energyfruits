@@ -155,8 +155,10 @@ Main navbar
 
     ul {
 
-        width: 100%;
+        max-width: 400px;
+
         display: table;
+
         @extend %no-padding;
         @extend %no-margin;
 

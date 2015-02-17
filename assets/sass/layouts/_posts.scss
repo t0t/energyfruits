@@ -34,6 +34,21 @@
 
 		@include padding();
 
+		ul {
+	        @extend %no-margin;
+			// background-color: $black-alpha-fuerte;
+			@include padding($gutterwidth);
+			border: 2px dotted $color-alt;
+		}
+		
+		li {
+			@include font-size(23);
+		}
+
+		a {
+			color: $color-alt;
+		}
+
 		@media all and (min-width: $bp3) {
 
 			width: calc(65% - #{$gutterwidth});

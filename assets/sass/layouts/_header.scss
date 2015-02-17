@@ -1,7 +1,7 @@
 .header {
 
 	@include flexbox;
-	@include justify-content(space-around); //alineado horizontal
+	@include justify-content(center); //alineado horizontal
 	@include align-items(center); //alineado vertical
 	@include max-width($bp0);
 
