@@ -13,10 +13,30 @@ body {
 
 	font-family: $basefont;
 	color: $textcolor;
-	// @include background-image(svgdefs,auto, no-repeat,svg);
-	background-color: $background;
+	// @include background-image(bg,cover,no-repeat,center top, svg);
+	// background-color: $background;
+	background-repeat: no-repeat;
+	background-position: top center;
 	font-size: 1.6rem;
+	background-image: url(#{$image-path}bg.svg);
 }
+
+$list: chia amaranto spiroulina camucamu canamo maca lucuma stevia quinoa alfalfa quinoa trigoverde algarroba cardomariano linodorado fresa coco gymtonic delifiber brainshake andeanprotein macuchino royalbreakfast;
+
+	@each $producto in $list {
+
+    body {
+
+		&.cpt-#{$producto} {
+
+      		background-image: url(#{$image-path}bg_#{$producto}.svg);
+
+    	}
+
+    }
+
+  }
+
 
 
 img {
@@ -58,7 +78,7 @@ img[src$=".svg"] {
 .main__content {
 	
 	@include max-width($bp0);
-    background-color: $white;
+    // background-color: $white;
     @media all and (min-width: $bp3) {
     	// padding: $gutterwidth;
     }
@@ -148,6 +168,34 @@ img[src$=".svg"] {
   @include grid(2, 4, 2, 4); 
   padding-bottom: 0;
 }
+
+
+
+
+// CUSTOM CLASSES
+// $type: monster;
+// p {
+//   @if $type == ocean {
+//     color: blue;
+//   } @else if $type == matador {
+//     color: red;
+//   } @else if $type == monster {
+//     color: green;
+//   } @else {
+//     color: black;
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

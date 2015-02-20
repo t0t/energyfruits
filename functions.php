@@ -23,6 +23,18 @@ register_sidebar( array(
 	'after_title' => '</h3>',
 ) );
 
+
+//Page Slug Body Class
+function add_slug_body_class( $classes ) {
+global $post;
+if ( isset( $post ) ) {
+$classes[] = $post->post_type . '-' . $post->post_name;
+}
+return $classes;
+}
+add_filter( 'body_class', 'add_slug_body_class' );
+
+
 // Allows svg load into media uploader 
 //http://css-tricks.com/snippets/wordpress/allow-svg-through-wordpress-media-uploader
 // function cc_mime_types($mimes) {

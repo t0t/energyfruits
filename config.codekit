@@ -2522,28 +2522,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/cavallets.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 37344,
-		"inputAbbreviatedPath": "\/assets\/img\/cavallets.png",
-		"outputAbbreviatedPath": "\/assets\/img\/cavallets.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/cavallets_2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1151,
-		"inputAbbreviatedPath": "\/assets\/img\/cavallets_2.png",
-		"outputAbbreviatedPath": "\/assets\/img\/cavallets_2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/img\/fondo_slider1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2566,133 +2544,32 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/geganta.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19820,
-		"inputAbbreviatedPath": "\/assets\/img\/geganta.png",
-		"outputAbbreviatedPath": "\/assets\/img\/geganta.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/graficos.sketch\/QuickLook\/Preview.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20793,
-		"inputAbbreviatedPath": "\/assets\/img\/graficos.sketch\/QuickLook\/Preview.png",
-		"outputAbbreviatedPath": "\/assets\/img\/graficos.sketch\/QuickLook\/Preview.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/graficos.sketch\/QuickLook\/Thumbnail.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 51078,
-		"inputAbbreviatedPath": "\/assets\/img\/graficos.sketch\/QuickLook\/Thumbnail.png",
-		"outputAbbreviatedPath": "\/assets\/img\/graficos.sketch\/QuickLook\/Thumbnail.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/historia.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 25939,
-		"inputAbbreviatedPath": "\/assets\/img\/historia.png",
-		"outputAbbreviatedPath": "\/assets\/img\/historia.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/ico_agenda.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 24950,
-		"inputAbbreviatedPath": "\/assets\/img\/ico_agenda.png",
-		"outputAbbreviatedPath": "\/assets\/img\/ico_agenda.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/ico_botiga.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 38201,
-		"inputAbbreviatedPath": "\/assets\/img\/ico_botiga.png",
-		"outputAbbreviatedPath": "\/assets\/img\/ico_botiga.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/ico_homenassos.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 16316,
-		"inputAbbreviatedPath": "\/assets\/img\/ico_homenassos.png",
-		"outputAbbreviatedPath": "\/assets\/img\/ico_homenassos.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/ico_noticias.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20691,
-		"inputAbbreviatedPath": "\/assets\/img\/ico_noticias.png",
-		"outputAbbreviatedPath": "\/assets\/img\/ico_noticias.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/IcoMoon - 90 Icons\/demo.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/img\/IcoMoon - 90 Icons\/demo.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/img\/IcoMoon - 90 Icons\/style.css": {
+	"\/assets\/img\/IcoMoon - 13 Icons\/demo-files\/demo.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/img\/IcoMoon - 90 Icons\/style.css",
+		"inputAbbreviatedPath": "\/assets\/img\/IcoMoon - 13 Icons\/demo-files\/demo.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/img\/nanos.png": {
-		"fileType": 32768,
+	"\/assets\/img\/IcoMoon - 13 Icons\/demo.html": {
+		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 8612,
-		"inputAbbreviatedPath": "\/assets\/img\/nanos.png",
-		"outputAbbreviatedPath": "\/assets\/img\/nanos.png",
+		"inputAbbreviatedPath": "\/assets\/img\/IcoMoon - 13 Icons\/demo.html",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/img\/tambors.png": {
-		"fileType": 32768,
+	"\/assets\/img\/IcoMoon - 13 Icons\/style.css": {
+		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 9967,
-		"inputAbbreviatedPath": "\/assets\/img\/tambors.png",
-		"outputAbbreviatedPath": "\/assets\/img\/tambors.png",
+		"inputAbbreviatedPath": "\/assets\/img\/IcoMoon - 13 Icons\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"outputPathIsSetByUser": 0
 		},
 	"\/assets\/js\/_main.js": {
 		"fileType": 64,
@@ -2933,6 +2810,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/sass\/componentes\/_listas.scss",
 		"outputAbbreviatedPath": "\/assets\/sass\/css\/_listas.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/assets\/sass\/componentes\/_mappress.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/sass\/componentes\/_mappress.scss",
+		"outputAbbreviatedPath": "\/assets\/sass\/css\/_mappress.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3495,7 +3388,7 @@
 		"outputAbbreviatedPath": "\/style.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 2,
+		"outputStyle": 1,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 0
