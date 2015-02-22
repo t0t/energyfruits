@@ -18,7 +18,7 @@ body {
 	background-image: url(#{$image-path}bg.svg);
 	background-repeat: no-repeat;
 	background-position: top center;
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 }
 
 
@@ -41,6 +41,7 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
         color: $grey;
         background-image: url(#{$image-path}bg_#{$brand}.svg);
         background-color: lighten($elcolor, 5%);
+        background-position: center 100px;
 		
 		.main-post__content {
 			background-color: $white;
@@ -57,9 +58,9 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
             	}
         	}
             img {
-            	background-color: $elcolor;
+            	background-color: lighten($elcolor, 45%);
             		&:hover {
-            			background-color: darken($elcolor,10%);
+            			background-color: $elcolor;
             		}
             }
         }

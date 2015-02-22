@@ -151,16 +151,29 @@ Main navbar
 // Nav Secondary
 .nav-secondary {
     
-    // flex-grow: 2;
+
 
     ul {
-
-        max-width: 400px;
+    
 
         display: table;
 
         @extend %no-padding;
         @extend %no-margin;
+
+        @media screen and (min-width: $bp1) {
+        
+        width: 600px;
+        background-color: red;
+        
+      }
+
+      @media screen and (min-width: $bp3) {
+        
+        width: 400px;
+        background-color: pink;
+        
+      }
 
     }
 
@@ -171,6 +184,15 @@ Main navbar
         @extend %text-center;
         color: $color-alt;
         letter-spacing: 0;
+        
+        @include font-size(20);
+
+        @media all and (min-width: $bp1) {
+
+            @include font-size(30);
+
+        }
+
 
             // &:hover {
             //     color: $color-base;
@@ -235,12 +257,12 @@ Main navbar
 
         &:last-child {
 
-            @extend .icon-facebook;
+            // @extend .icon-facebook;
             
-            &::before {
-                @include font-size(42);
-                @extend %display-block;
-            }
+            // &::before {
+            //     @include font-size(42);
+            //     @extend %display-block;
+            // }
 
         }
 

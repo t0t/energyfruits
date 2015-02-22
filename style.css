@@ -474,7 +474,7 @@ th {
 
 .slider__btn-next::after, .slick-next::after, .slider__btn-prev::before, .slick-prev::before, .aligncenter, .lightbox .lb-image, .lb-cancel, .lb-prev, .lb-next, .lb-data .lb-number, .lb-data .lb-close, hr, figure figcaption, h1 small,
 h2 small,
-h3 small, .nav-secondary--dos li:last-child::before {
+h3 small {
   display: block;
 }
 
@@ -731,7 +731,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
     font-size: 1.3rem;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1430px) {
   .main-post__subheader {
     font-size: 48px;
     font-size: 2.4rem;
@@ -1322,13 +1322,14 @@ body {
   background-image: url(assets/img/bg.svg);
   background-repeat: no-repeat;
   background-position: top center;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .cpt-graviola {
   color: gray;
   background-image: url(assets/img/bg_graviola.svg);
   background-color: #8f8356;
+  background-position: center 100px;
 }
 .cpt-graviola .main-post__content {
   background-color: white;
@@ -1340,16 +1341,17 @@ body {
   color: #5f5739;
 }
 .cpt-graviola .galeria-fotos__figure img {
-  background-color: #7f744c;
+  background-color: #e2decf;
 }
 .cpt-graviola .galeria-fotos__figure img:hover {
-  background-color: #5f5739;
+  background-color: #7f744c;
 }
 
 .cpt-cacaocriollo {
   color: gray;
   background-image: url(assets/img/bg_cacaocriollo.svg);
   background-color: #4d2525;
+  background-position: center 100px;
 }
 .cpt-cacaocriollo .main-post__content {
   background-color: white;
@@ -1361,16 +1363,17 @@ body {
   color: #1a0c0c;
 }
 .cpt-cacaocriollo .galeria-fotos__figure img {
-  background-color: #3c1d1d;
+  background-color: #c17e7e;
 }
 .cpt-cacaocriollo .galeria-fotos__figure img:hover {
-  background-color: #1a0c0c;
+  background-color: #3c1d1d;
 }
 
 .cpt-chlorella {
   color: gray;
   background-image: url(assets/img/bg_chlorella.svg);
   background-color: #988b81;
+  background-position: center 100px;
 }
 .cpt-chlorella .main-post__content {
   background-color: white;
@@ -1382,16 +1385,17 @@ body {
   color: #70655c;
 }
 .cpt-chlorella .galeria-fotos__figure img {
-  background-color: #8c7e73;
+  background-color: #f4f2f1;
 }
 .cpt-chlorella .galeria-fotos__figure img:hover {
-  background-color: #70655c;
+  background-color: #8c7e73;
 }
 
 .cpt-chia {
   color: gray;
   background-image: url(assets/img/bg_chia.svg);
   background-color: #988b81;
+  background-position: center 100px;
 }
 .cpt-chia .main-post__content {
   background-color: white;
@@ -1403,16 +1407,17 @@ body {
   color: #70655c;
 }
 .cpt-chia .galeria-fotos__figure img {
-  background-color: #8c7e73;
+  background-color: #f4f2f1;
 }
 .cpt-chia .galeria-fotos__figure img:hover {
-  background-color: #70655c;
+  background-color: #8c7e73;
 }
 
 .cpt-amaranto {
   color: gray;
   background-image: url(assets/img/bg_amaranto.svg);
   background-color: #c62771;
+  background-position: center 100px;
 }
 .cpt-amaranto .main-post__content {
   background-color: white;
@@ -1424,16 +1429,17 @@ body {
   color: #861b4d;
 }
 .cpt-amaranto .galeria-fotos__figure img {
-  background-color: #b12365;
+  background-color: #f4c6db;
 }
 .cpt-amaranto .galeria-fotos__figure img:hover {
-  background-color: #861b4d;
+  background-color: #b12365;
 }
 
 .cpt-spiroulina {
   color: gray;
   background-image: url(assets/img/bg_spiroulina.svg);
   background-color: #3a4733;
+  background-position: center 100px;
 }
 .cpt-spiroulina .main-post__content {
   background-color: white;
@@ -1445,16 +1451,17 @@ body {
   color: #161a13;
 }
 .cpt-spiroulina .galeria-fotos__figure img {
-  background-color: #2e3828;
+  background-color: #9fb293;
 }
 .cpt-spiroulina .galeria-fotos__figure img:hover {
-  background-color: #161a13;
+  background-color: #2e3828;
 }
 
 .cpt-camucamu {
   color: gray;
   background-image: url(assets/img/bg_camucamu.svg);
   background-color: #763c46;
+  background-position: center 100px;
 }
 .cpt-camucamu .main-post__content {
   background-color: white;
@@ -1466,16 +1473,17 @@ body {
   color: #432228;
 }
 .cpt-camucamu .galeria-fotos__figure img {
-  background-color: #65333c;
+  background-color: #d4aab1;
 }
 .cpt-camucamu .galeria-fotos__figure img:hover {
-  background-color: #432228;
+  background-color: #65333c;
 }
 
 .cpt-canamo {
   color: gray;
   background-image: url(assets/img/bg_canamo.svg);
   background-color: #00aa5b;
+  background-position: center 100px;
 }
 .cpt-canamo .main-post__content {
   background-color: white;
@@ -1487,16 +1495,17 @@ body {
   color: #005d32;
 }
 .cpt-canamo .galeria-fotos__figure img {
-  background-color: #00904d;
+  background-color: #76ffbf;
 }
 .cpt-canamo .galeria-fotos__figure img:hover {
-  background-color: #005d32;
+  background-color: #00904d;
 }
 
 .cpt-maca {
   color: gray;
   background-image: url(assets/img/bg_maca.svg);
   background-color: #b95179;
+  background-position: center 100px;
 }
 .cpt-maca .main-post__content {
   background-color: white;
@@ -1508,16 +1517,17 @@ body {
   color: #873655;
 }
 .cpt-maca .galeria-fotos__figure img {
-  background-color: #ab456c;
+  background-color: #f3e2e9;
 }
 .cpt-maca .galeria-fotos__figure img:hover {
-  background-color: #873655;
+  background-color: #ab456c;
 }
 
 .cpt-lucuma {
   color: gray;
   background-image: url(assets/img/bg_lucuma.svg);
   background-color: #f9b91b;
+  background-position: center 100px;
 }
 .cpt-lucuma .main-post__content {
   background-color: white;
@@ -1529,16 +1539,17 @@ body {
   color: #c38c05;
 }
 .cpt-lucuma .galeria-fotos__figure img {
-  background-color: #f5b006;
+  background-color: #fef6e2;
 }
 .cpt-lucuma .galeria-fotos__figure img:hover {
-  background-color: #c38c05;
+  background-color: #f5b006;
 }
 
 .cpt-stevia {
   color: gray;
   background-image: url(assets/img/bg_stevia.svg);
   background-color: #009559;
+  background-position: center 100px;
 }
 .cpt-stevia .main-post__content {
   background-color: white;
@@ -1550,16 +1561,17 @@ body {
   color: #00482b;
 }
 .cpt-stevia .galeria-fotos__figure img {
-  background-color: #007b4a;
+  background-color: #62ffc0;
 }
 .cpt-stevia .galeria-fotos__figure img:hover {
-  background-color: #00482b;
+  background-color: #007b4a;
 }
 
 .cpt-quinoa {
   color: gray;
   background-image: url(assets/img/bg_quinoa.svg);
   background-color: #d3313a;
+  background-position: center 100px;
 }
 .cpt-quinoa .main-post__content {
   background-color: white;
@@ -1571,16 +1583,17 @@ body {
   color: #982026;
 }
 .cpt-quinoa .galeria-fotos__figure img {
-  background-color: #c22931;
+  background-color: #f7d9db;
 }
 .cpt-quinoa .galeria-fotos__figure img:hover {
-  background-color: #982026;
+  background-color: #c22931;
 }
 
 .cpt-alfalfa {
   color: gray;
   background-image: url(assets/img/bg_alfalfa.svg);
   background-color: #2c9c80;
+  background-position: center 100px;
 }
 .cpt-alfalfa .main-post__content {
   background-color: white;
@@ -1592,16 +1605,17 @@ body {
   color: #1b604f;
 }
 .cpt-alfalfa .galeria-fotos__figure img {
-  background-color: #268870;
+  background-color: #ace8d9;
 }
 .cpt-alfalfa .galeria-fotos__figure img:hover {
-  background-color: #1b604f;
+  background-color: #268870;
 }
 
 .cpt-trigoverde {
   color: gray;
   background-image: url(assets/img/bg_trigoverde.svg);
   background-color: #558b36;
+  background-position: center 100px;
 }
 .cpt-trigoverde .main-post__content {
   background-color: white;
@@ -1613,16 +1627,17 @@ body {
   color: #345421;
 }
 .cpt-trigoverde .galeria-fotos__figure img {
-  background-color: #4a792f;
+  background-color: #c0e0ae;
 }
 .cpt-trigoverde .galeria-fotos__figure img:hover {
-  background-color: #345421;
+  background-color: #4a792f;
 }
 
 .cpt-algarroba {
   color: gray;
   background-image: url(assets/img/bg_algarroba.svg);
   background-color: #301f19;
+  background-position: center 100px;
 }
 .cpt-algarroba .main-post__content {
   background-color: white;
@@ -1634,16 +1649,17 @@ body {
   color: black;
 }
 .cpt-algarroba .galeria-fotos__figure img {
-  background-color: #1f1410;
+  background-color: #b07965;
 }
 .cpt-algarroba .galeria-fotos__figure img:hover {
-  background-color: black;
+  background-color: #1f1410;
 }
 
 .cpt-cardomariano {
   color: gray;
   background-image: url(assets/img/bg_cardomariano.svg);
   background-color: #b188b8;
+  background-position: center 100px;
 }
 .cpt-cardomariano .main-post__content {
   background-color: white;
@@ -1655,16 +1671,17 @@ body {
   color: #8f5b98;
 }
 .cpt-cardomariano .galeria-fotos__figure img {
-  background-color: #a678ae;
+  background-color: white;
 }
 .cpt-cardomariano .galeria-fotos__figure img:hover {
-  background-color: #8f5b98;
+  background-color: #a678ae;
 }
 
 .cpt-linodorado {
   color: gray;
   background-image: url(assets/img/bg_linodorado.svg);
   background-color: #e2cc59;
+  background-position: center 100px;
 }
 .cpt-linodorado .main-post__content {
   background-color: white;
@@ -1676,16 +1693,17 @@ body {
   color: #cab024;
 }
 .cpt-linodorado .galeria-fotos__figure img {
-  background-color: #dec543;
+  background-color: white;
 }
 .cpt-linodorado .galeria-fotos__figure img:hover {
-  background-color: #cab024;
+  background-color: #dec543;
 }
 
 .cpt-fresa {
   color: gray;
   background-image: url(assets/img/bg_fresa.svg);
   background-color: #fb3e03;
+  background-position: center 100px;
 }
 .cpt-fresa .main-post__content {
   background-color: white;
@@ -1697,16 +1715,17 @@ body {
   color: #b02c02;
 }
 .cpt-fresa .galeria-fotos__figure img {
-  background-color: #e23803;
+  background-color: #fed8cc;
 }
 .cpt-fresa .galeria-fotos__figure img:hover {
-  background-color: #b02c02;
+  background-color: #e23803;
 }
 
 .cpt-coco {
   color: gray;
   background-image: url(assets/img/bg_coco.svg);
   background-color: #955928;
+  background-position: center 100px;
 }
 .cpt-coco .main-post__content {
   background-color: white;
@@ -1718,16 +1737,17 @@ body {
   color: #593518;
 }
 .cpt-coco .galeria-fotos__figure img {
-  background-color: #814d23;
+  background-color: #e6c1a3;
 }
 .cpt-coco .galeria-fotos__figure img:hover {
-  background-color: #593518;
+  background-color: #814d23;
 }
 
 .cpt-gymtonic {
   color: gray;
   background-image: url(assets/img/bg_gymtonic.svg);
   background-color: #d90513;
+  background-position: center 100px;
 }
 .cpt-gymtonic .main-post__content {
   background-color: white;
@@ -1739,16 +1759,17 @@ body {
   color: #8e030d;
 }
 .cpt-gymtonic .galeria-fotos__figure img {
-  background-color: #c00411;
+  background-color: #fdacb2;
 }
 .cpt-gymtonic .galeria-fotos__figure img:hover {
-  background-color: #8e030d;
+  background-color: #c00411;
 }
 
 .cpt-delifiber {
   color: gray;
   background-image: url(assets/img/bg_delifiber.svg);
   background-color: #ffe509;
+  background-position: center 100px;
 }
 .cpt-delifiber .main-post__content {
   background-color: white;
@@ -1760,16 +1781,17 @@ body {
   color: #bca800;
 }
 .cpt-delifiber .galeria-fotos__figure img {
-  background-color: #efd600;
+  background-color: #fffbd6;
 }
 .cpt-delifiber .galeria-fotos__figure img:hover {
-  background-color: #bca800;
+  background-color: #efd600;
 }
 
 .cpt-brainshake {
   color: gray;
   background-image: url(assets/img/bg_brainshake.svg);
   background-color: #f3a200;
+  background-position: center 100px;
 }
 .cpt-brainshake .main-post__content {
   background-color: white;
@@ -1781,16 +1803,17 @@ body {
   color: #a66f00;
 }
 .cpt-brainshake .galeria-fotos__figure img {
-  background-color: #d99100;
+  background-color: #ffeac0;
 }
 .cpt-brainshake .galeria-fotos__figure img:hover {
-  background-color: #a66f00;
+  background-color: #d99100;
 }
 
 .cpt-andeanprotein {
   color: gray;
   background-image: url(assets/img/bg_andeanprotein.svg);
   background-color: #45762b;
+  background-position: center 100px;
 }
 .cpt-andeanprotein .main-post__content {
   background-color: white;
@@ -1802,16 +1825,17 @@ body {
   color: #243e16;
 }
 .cpt-andeanprotein .galeria-fotos__figure img {
-  background-color: #3a6324;
+  background-color: #acd894;
 }
 .cpt-andeanprotein .galeria-fotos__figure img:hover {
-  background-color: #243e16;
+  background-color: #3a6324;
 }
 
 .cpt-macuchino {
   color: gray;
   background-image: url(assets/img/bg_macuchino.svg);
   background-color: #bd944f;
+  background-position: center 100px;
 }
 .cpt-macuchino .main-post__content {
   background-color: white;
@@ -1823,16 +1847,17 @@ body {
   color: #8b6b34;
 }
 .cpt-macuchino .galeria-fotos__figure img {
-  background-color: #b08742;
+  background-color: #f4eee3;
 }
 .cpt-macuchino .galeria-fotos__figure img:hover {
-  background-color: #8b6b34;
+  background-color: #b08742;
 }
 
 .cpt-bodtox {
   color: gray;
   background-image: url(assets/img/bg_bodtox.svg);
   background-color: #b1cc3b;
+  background-position: center 100px;
 }
 .cpt-bodtox .main-post__content {
   background-color: white;
@@ -1844,16 +1869,17 @@ body {
   color: #809526;
 }
 .cpt-bodtox .galeria-fotos__figure img {
-  background-color: #a3bd31;
+  background-color: #f2f6dd;
 }
 .cpt-bodtox .galeria-fotos__figure img:hover {
-  background-color: #809526;
+  background-color: #a3bd31;
 }
 
 .cpt-royalbreakfast {
   color: gray;
   background-image: url(assets/img/bg_royalbreakfast.svg);
   background-color: #871a14;
+  background-position: center 100px;
 }
 .cpt-royalbreakfast .main-post__content {
   background-color: white;
@@ -1865,16 +1891,17 @@ body {
   color: #450d0a;
 }
 .cpt-royalbreakfast .galeria-fotos__figure img {
-  background-color: #711611;
+  background-color: #eb827c;
 }
 .cpt-royalbreakfast .galeria-fotos__figure img:hover {
-  background-color: #450d0a;
+  background-color: #711611;
 }
 
 .cpt-camucao {
   color: gray;
   background-image: url(assets/img/bg_camucao.svg);
   background-color: #871a14;
+  background-position: center 100px;
 }
 .cpt-camucao .main-post__content {
   background-color: white;
@@ -1886,10 +1913,10 @@ body {
   color: #450d0a;
 }
 .cpt-camucao .galeria-fotos__figure img {
-  background-color: #711611;
+  background-color: #eb827c;
 }
 .cpt-camucao .galeria-fotos__figure img:hover {
-  background-color: #450d0a;
+  background-color: #711611;
 }
 
 img[src$=".svg"] {
@@ -1956,7 +1983,7 @@ img[src$=".svg"] {
     font-size: 5rem;
   }
 }
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1430px) {
   .main__content header:first-child h1 {
     font-size: 125px;
     font-size: 6.25rem;
@@ -2142,7 +2169,7 @@ figure.alignnone {
   font-weight: normal;
   font-style: normal;
 }
-.icon-megaphone, .icon-envelope, .icon-paperclip, .icon-profile-male, .icon-facebook, .nav-secondary--dos li:last-child, .icon-logo_sf2, .icon-arrow-right2, .slider__btn-next, .slick-next, .icon-arrow-left2, .slider__btn-prev, .slick-prev, .icon-arrow-up2, .icon-attachment, .icon-magnifying-glass, .icon-file-pdf, .icon-download2 {
+.icon-megaphone, .icon-envelope, .icon-paperclip, .icon-profile-male, .icon-facebook, .icon-logo_sf2, .icon-arrow-right2, .slider__btn-next, .slick-next, .icon-arrow-left2, .slider__btn-prev, .slick-prev, .icon-arrow-up2, .icon-attachment, .icon-magnifying-glass, .icon-file-pdf, .icon-download2 {
   font-family: "icomoon";
   speak: none;
   font-style: normal;
@@ -2178,7 +2205,7 @@ figure.alignnone {
   content: "\e040";
 }
 
-.icon-facebook:before, .nav-secondary--dos li:last-child:before {
+.icon-facebook:before {
   content: "\e05d";
 }
 
@@ -3147,14 +3174,33 @@ Main navbar
 }
 
 .nav-secondary ul {
-  max-width: 400px;
   display: table;
+}
+@media screen and (min-width: 1430px) {
+  .nav-secondary ul {
+    width: 600px;
+    background-color: red;
+  }
+}
+@media screen and (min-width: 600px) {
+  .nav-secondary ul {
+    width: 400px;
+    background-color: pink;
+  }
 }
 .nav-secondary li {
   width: 50%;
   display: table-cell;
   color: #f0730b;
   letter-spacing: 0;
+  font-size: 20px;
+  font-size: 1rem;
+}
+@media all and (min-width: 1430px) {
+  .nav-secondary li {
+    font-size: 30px;
+    font-size: 1.5rem;
+  }
 }
 .nav-secondary a {
   font-family: "Averia Serif Libre", cursive;
@@ -3162,11 +3208,6 @@ Main navbar
 }
 .nav-secondary a:hover {
   color: #f0730b;
-}
-
-.nav-secondary--dos li:last-child::before {
-  font-size: 42px;
-  font-size: 2.1rem;
 }
 
 .nav-footer {
@@ -3219,7 +3260,7 @@ Main navbar
 .nav--posts {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1440px;
+  max-width: 1430px;
   width: 100%;
 }
 .nav--posts ul {
@@ -3454,7 +3495,7 @@ Main navbar
 .well--img {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1440px;
+  max-width: 1430px;
   width: 100%;
   width: 100%;
   min-height: 600px;
@@ -4037,7 +4078,7 @@ input:required:focus:valid {
     width: calc(50% - 3%);
   }
 }
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1430px) {
   .grid-form__item {
     width: calc(33.33% - 3%);
   }
@@ -4050,6 +4091,7 @@ input:required:focus:valid {
 @media all and (min-width: 600px) {
   .brand {
     padding-bottom: 1.5%;
+    margin: 0 3%;
   }
 }
 
