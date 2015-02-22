@@ -191,49 +191,49 @@ Main navbar
 
 .nav-secondary--uno {
 
-    li {
+    // li {
 
-        &:first-child {
+    //     &:first-child {
             
-            @extend .icon-profile-male;
+    //         @extend .icon-profile-male;
 
-            &::before {
-                @include font-size(42);
-                @extend %display-block;
-            }
+    //         &::before {
+    //             @include font-size(42);
+    //             @extend %display-block;
+    //         }
 
-        }
+    //     }
 
-        &:nth-child(2) {
+    //     &:nth-child(2) {
 
-            @extend .icon-envelope;
+    //         @extend .icon-envelope;
 
-            &::before {
-                @include font-size(42);
-                @extend %display-block;
-            }
+    //         &::before {
+    //             @include font-size(42);
+    //             @extend %display-block;
+    //         }
 
-        }
+    //     }
 
-    }
+    // }
 
 }
 .nav-secondary--dos {
 
     li {
 
-        &:first-child {
+        // &:nth-child(3) {
 
-            @extend .icon-megaphone;
+        //     @extend .icon-megaphone;
 
-            &::before {
-                @include font-size(42);
-                @extend %display-block;
-            }
+        //     &::before {
+        //         @include font-size(42);
+        //         @extend %display-block;
+        //     }
 
-        }
+        // }
 
-        &:nth-child(2) {
+        &:last-child {
 
             @extend .icon-facebook;
             

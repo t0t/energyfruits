@@ -474,7 +474,7 @@ th {
 
 .slider__btn-next::after, .slick-next::after, .slider__btn-prev::before, .slick-prev::before, .aligncenter, .lightbox .lb-image, .lb-cancel, .lb-prev, .lb-next, .lb-data .lb-number, .lb-data .lb-close, hr, figure figcaption, h1 small,
 h2 small,
-h3 small, .nav-secondary--uno li:first-child::before, .nav-secondary--uno li:nth-child(2)::before, .nav-secondary--dos li:first-child::before, .nav-secondary--dos li:nth-child(2)::before {
+h3 small, .nav-secondary--dos li:last-child::before {
   display: block;
 }
 
@@ -2142,7 +2142,7 @@ figure.alignnone {
   font-weight: normal;
   font-style: normal;
 }
-.icon-megaphone, .nav-secondary--dos li:first-child, .icon-envelope, .nav-secondary--uno li:nth-child(2), .icon-paperclip, .icon-profile-male, .nav-secondary--uno li:first-child, .icon-facebook, .nav-secondary--dos li:nth-child(2), .icon-logo_sf2, .icon-arrow-right2, .slider__btn-next, .slick-next, .icon-arrow-left2, .slider__btn-prev, .slick-prev, .icon-arrow-up2, .icon-attachment, .icon-magnifying-glass, .icon-file-pdf, .icon-download2 {
+.icon-megaphone, .icon-envelope, .icon-paperclip, .icon-profile-male, .icon-facebook, .nav-secondary--dos li:last-child, .icon-logo_sf2, .icon-arrow-right2, .slider__btn-next, .slick-next, .icon-arrow-left2, .slider__btn-prev, .slick-prev, .icon-arrow-up2, .icon-attachment, .icon-magnifying-glass, .icon-file-pdf, .icon-download2 {
   font-family: "icomoon";
   speak: none;
   font-style: normal;
@@ -2154,11 +2154,11 @@ figure.alignnone {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-megaphone:before, .nav-secondary--dos li:first-child:before {
+.icon-megaphone:before {
   content: "\e021";
 }
 
-.icon-envelope:before, .nav-secondary--uno li:nth-child(2):before {
+.icon-envelope:before {
   content: "\e028";
 }
 
@@ -2174,11 +2174,11 @@ figure.alignnone {
   content: "\e037";
 }
 
-.icon-profile-male:before, .nav-secondary--uno li:first-child:before {
+.icon-profile-male:before {
   content: "\e040";
 }
 
-.icon-facebook:before, .nav-secondary--dos li:nth-child(2):before {
+.icon-facebook:before, .nav-secondary--dos li:last-child:before {
   content: "\e05d";
 }
 
@@ -3164,20 +3164,7 @@ Main navbar
   color: #f0730b;
 }
 
-.nav-secondary--uno li:first-child::before {
-  font-size: 42px;
-  font-size: 2.1rem;
-}
-.nav-secondary--uno li:nth-child(2)::before {
-  font-size: 42px;
-  font-size: 2.1rem;
-}
-
-.nav-secondary--dos li:first-child::before {
-  font-size: 42px;
-  font-size: 2.1rem;
-}
-.nav-secondary--dos li:nth-child(2)::before {
+.nav-secondary--dos li:last-child::before {
   font-size: 42px;
   font-size: 2.1rem;
 }
