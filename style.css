@@ -427,7 +427,7 @@ th {
     $COLORS
 \*------------------------------------*/
 /**
- * Brand stuff
+ * Base colors
  */
 /**
  * Transparencias
@@ -1318,103 +1318,578 @@ html {
 
 body {
   font-family: "Averia Serif Libre", cursive;
-  color: #317549;
+  color: white;
+  background-image: url(assets/img/bg.svg);
   background-repeat: no-repeat;
   background-position: top center;
   font-size: 1.6rem;
-  background-image: url(assets/img/bg.svg);
 }
 
-body.cpt-chia {
+.cpt-graviola {
+  color: gray;
+  background-image: url(assets/img/bg_graviola.svg);
+  background-color: #8f8356;
+}
+.cpt-graviola .main-post__content {
+  background-color: white;
+}
+.cpt-graviola .galeria-fotos__figure a {
+  color: #7f744c;
+}
+.cpt-graviola .galeria-fotos__figure a:hover {
+  color: #5f5739;
+}
+.cpt-graviola .galeria-fotos__figure img {
+  background-color: #7f744c;
+}
+.cpt-graviola .galeria-fotos__figure img:hover {
+  background-color: #5f5739;
+}
+
+.cpt-cacaocriollo {
+  color: gray;
+  background-image: url(assets/img/bg_cacaocriollo.svg);
+  background-color: #4d2525;
+}
+.cpt-cacaocriollo .main-post__content {
+  background-color: white;
+}
+.cpt-cacaocriollo .galeria-fotos__figure a {
+  color: #3c1d1d;
+}
+.cpt-cacaocriollo .galeria-fotos__figure a:hover {
+  color: #1a0c0c;
+}
+.cpt-cacaocriollo .galeria-fotos__figure img {
+  background-color: #3c1d1d;
+}
+.cpt-cacaocriollo .galeria-fotos__figure img:hover {
+  background-color: #1a0c0c;
+}
+
+.cpt-chlorella {
+  color: gray;
+  background-image: url(assets/img/bg_chlorella.svg);
+  background-color: #988b81;
+}
+.cpt-chlorella .main-post__content {
+  background-color: white;
+}
+.cpt-chlorella .galeria-fotos__figure a {
+  color: #8c7e73;
+}
+.cpt-chlorella .galeria-fotos__figure a:hover {
+  color: #70655c;
+}
+.cpt-chlorella .galeria-fotos__figure img {
+  background-color: #8c7e73;
+}
+.cpt-chlorella .galeria-fotos__figure img:hover {
+  background-color: #70655c;
+}
+
+.cpt-chia {
+  color: gray;
   background-image: url(assets/img/bg_chia.svg);
+  background-color: #988b81;
+}
+.cpt-chia .main-post__content {
+  background-color: white;
+}
+.cpt-chia .galeria-fotos__figure a {
+  color: #8c7e73;
+}
+.cpt-chia .galeria-fotos__figure a:hover {
+  color: #70655c;
+}
+.cpt-chia .galeria-fotos__figure img {
+  background-color: #8c7e73;
+}
+.cpt-chia .galeria-fotos__figure img:hover {
+  background-color: #70655c;
 }
 
-body.cpt-amaranto {
+.cpt-amaranto {
+  color: gray;
   background-image: url(assets/img/bg_amaranto.svg);
+  background-color: #c62771;
+}
+.cpt-amaranto .main-post__content {
+  background-color: white;
+}
+.cpt-amaranto .galeria-fotos__figure a {
+  color: #b12365;
+}
+.cpt-amaranto .galeria-fotos__figure a:hover {
+  color: #861b4d;
+}
+.cpt-amaranto .galeria-fotos__figure img {
+  background-color: #b12365;
+}
+.cpt-amaranto .galeria-fotos__figure img:hover {
+  background-color: #861b4d;
 }
 
-body.cpt-spiroulina {
+.cpt-spiroulina {
+  color: gray;
   background-image: url(assets/img/bg_spiroulina.svg);
+  background-color: #3a4733;
+}
+.cpt-spiroulina .main-post__content {
+  background-color: white;
+}
+.cpt-spiroulina .galeria-fotos__figure a {
+  color: #2e3828;
+}
+.cpt-spiroulina .galeria-fotos__figure a:hover {
+  color: #161a13;
+}
+.cpt-spiroulina .galeria-fotos__figure img {
+  background-color: #2e3828;
+}
+.cpt-spiroulina .galeria-fotos__figure img:hover {
+  background-color: #161a13;
 }
 
-body.cpt-camucamu {
+.cpt-camucamu {
+  color: gray;
   background-image: url(assets/img/bg_camucamu.svg);
+  background-color: #763c46;
+}
+.cpt-camucamu .main-post__content {
+  background-color: white;
+}
+.cpt-camucamu .galeria-fotos__figure a {
+  color: #65333c;
+}
+.cpt-camucamu .galeria-fotos__figure a:hover {
+  color: #432228;
+}
+.cpt-camucamu .galeria-fotos__figure img {
+  background-color: #65333c;
+}
+.cpt-camucamu .galeria-fotos__figure img:hover {
+  background-color: #432228;
 }
 
-body.cpt-canamo {
+.cpt-canamo {
+  color: gray;
   background-image: url(assets/img/bg_canamo.svg);
+  background-color: #00aa5b;
+}
+.cpt-canamo .main-post__content {
+  background-color: white;
+}
+.cpt-canamo .galeria-fotos__figure a {
+  color: #00904d;
+}
+.cpt-canamo .galeria-fotos__figure a:hover {
+  color: #005d32;
+}
+.cpt-canamo .galeria-fotos__figure img {
+  background-color: #00904d;
+}
+.cpt-canamo .galeria-fotos__figure img:hover {
+  background-color: #005d32;
 }
 
-body.cpt-maca {
+.cpt-maca {
+  color: gray;
   background-image: url(assets/img/bg_maca.svg);
+  background-color: #b95179;
+}
+.cpt-maca .main-post__content {
+  background-color: white;
+}
+.cpt-maca .galeria-fotos__figure a {
+  color: #ab456c;
+}
+.cpt-maca .galeria-fotos__figure a:hover {
+  color: #873655;
+}
+.cpt-maca .galeria-fotos__figure img {
+  background-color: #ab456c;
+}
+.cpt-maca .galeria-fotos__figure img:hover {
+  background-color: #873655;
 }
 
-body.cpt-lucuma {
+.cpt-lucuma {
+  color: gray;
   background-image: url(assets/img/bg_lucuma.svg);
+  background-color: #f9b91b;
+}
+.cpt-lucuma .main-post__content {
+  background-color: white;
+}
+.cpt-lucuma .galeria-fotos__figure a {
+  color: #f5b006;
+}
+.cpt-lucuma .galeria-fotos__figure a:hover {
+  color: #c38c05;
+}
+.cpt-lucuma .galeria-fotos__figure img {
+  background-color: #f5b006;
+}
+.cpt-lucuma .galeria-fotos__figure img:hover {
+  background-color: #c38c05;
 }
 
-body.cpt-stevia {
+.cpt-stevia {
+  color: gray;
   background-image: url(assets/img/bg_stevia.svg);
+  background-color: #009559;
+}
+.cpt-stevia .main-post__content {
+  background-color: white;
+}
+.cpt-stevia .galeria-fotos__figure a {
+  color: #007b4a;
+}
+.cpt-stevia .galeria-fotos__figure a:hover {
+  color: #00482b;
+}
+.cpt-stevia .galeria-fotos__figure img {
+  background-color: #007b4a;
+}
+.cpt-stevia .galeria-fotos__figure img:hover {
+  background-color: #00482b;
 }
 
-body.cpt-quinoa {
+.cpt-quinoa {
+  color: gray;
   background-image: url(assets/img/bg_quinoa.svg);
+  background-color: #d3313a;
+}
+.cpt-quinoa .main-post__content {
+  background-color: white;
+}
+.cpt-quinoa .galeria-fotos__figure a {
+  color: #c22931;
+}
+.cpt-quinoa .galeria-fotos__figure a:hover {
+  color: #982026;
+}
+.cpt-quinoa .galeria-fotos__figure img {
+  background-color: #c22931;
+}
+.cpt-quinoa .galeria-fotos__figure img:hover {
+  background-color: #982026;
 }
 
-body.cpt-alfalfa {
+.cpt-alfalfa {
+  color: gray;
   background-image: url(assets/img/bg_alfalfa.svg);
+  background-color: #2c9c80;
+}
+.cpt-alfalfa .main-post__content {
+  background-color: white;
+}
+.cpt-alfalfa .galeria-fotos__figure a {
+  color: #268870;
+}
+.cpt-alfalfa .galeria-fotos__figure a:hover {
+  color: #1b604f;
+}
+.cpt-alfalfa .galeria-fotos__figure img {
+  background-color: #268870;
+}
+.cpt-alfalfa .galeria-fotos__figure img:hover {
+  background-color: #1b604f;
 }
 
-body.cpt-quinoa {
-  background-image: url(assets/img/bg_quinoa.svg);
-}
-
-body.cpt-trigoverde {
+.cpt-trigoverde {
+  color: gray;
   background-image: url(assets/img/bg_trigoverde.svg);
+  background-color: #558b36;
+}
+.cpt-trigoverde .main-post__content {
+  background-color: white;
+}
+.cpt-trigoverde .galeria-fotos__figure a {
+  color: #4a792f;
+}
+.cpt-trigoverde .galeria-fotos__figure a:hover {
+  color: #345421;
+}
+.cpt-trigoverde .galeria-fotos__figure img {
+  background-color: #4a792f;
+}
+.cpt-trigoverde .galeria-fotos__figure img:hover {
+  background-color: #345421;
 }
 
-body.cpt-algarroba {
+.cpt-algarroba {
+  color: gray;
   background-image: url(assets/img/bg_algarroba.svg);
+  background-color: #301f19;
+}
+.cpt-algarroba .main-post__content {
+  background-color: white;
+}
+.cpt-algarroba .galeria-fotos__figure a {
+  color: #1f1410;
+}
+.cpt-algarroba .galeria-fotos__figure a:hover {
+  color: black;
+}
+.cpt-algarroba .galeria-fotos__figure img {
+  background-color: #1f1410;
+}
+.cpt-algarroba .galeria-fotos__figure img:hover {
+  background-color: black;
 }
 
-body.cpt-cardomariano {
+.cpt-cardomariano {
+  color: gray;
   background-image: url(assets/img/bg_cardomariano.svg);
+  background-color: #b188b8;
+}
+.cpt-cardomariano .main-post__content {
+  background-color: white;
+}
+.cpt-cardomariano .galeria-fotos__figure a {
+  color: #a678ae;
+}
+.cpt-cardomariano .galeria-fotos__figure a:hover {
+  color: #8f5b98;
+}
+.cpt-cardomariano .galeria-fotos__figure img {
+  background-color: #a678ae;
+}
+.cpt-cardomariano .galeria-fotos__figure img:hover {
+  background-color: #8f5b98;
 }
 
-body.cpt-linodorado {
+.cpt-linodorado {
+  color: gray;
   background-image: url(assets/img/bg_linodorado.svg);
+  background-color: #e2cc59;
+}
+.cpt-linodorado .main-post__content {
+  background-color: white;
+}
+.cpt-linodorado .galeria-fotos__figure a {
+  color: #dec543;
+}
+.cpt-linodorado .galeria-fotos__figure a:hover {
+  color: #cab024;
+}
+.cpt-linodorado .galeria-fotos__figure img {
+  background-color: #dec543;
+}
+.cpt-linodorado .galeria-fotos__figure img:hover {
+  background-color: #cab024;
 }
 
-body.cpt-fresa {
+.cpt-fresa {
+  color: gray;
   background-image: url(assets/img/bg_fresa.svg);
+  background-color: #fb3e03;
+}
+.cpt-fresa .main-post__content {
+  background-color: white;
+}
+.cpt-fresa .galeria-fotos__figure a {
+  color: #e23803;
+}
+.cpt-fresa .galeria-fotos__figure a:hover {
+  color: #b02c02;
+}
+.cpt-fresa .galeria-fotos__figure img {
+  background-color: #e23803;
+}
+.cpt-fresa .galeria-fotos__figure img:hover {
+  background-color: #b02c02;
 }
 
-body.cpt-coco {
+.cpt-coco {
+  color: gray;
   background-image: url(assets/img/bg_coco.svg);
+  background-color: #955928;
+}
+.cpt-coco .main-post__content {
+  background-color: white;
+}
+.cpt-coco .galeria-fotos__figure a {
+  color: #814d23;
+}
+.cpt-coco .galeria-fotos__figure a:hover {
+  color: #593518;
+}
+.cpt-coco .galeria-fotos__figure img {
+  background-color: #814d23;
+}
+.cpt-coco .galeria-fotos__figure img:hover {
+  background-color: #593518;
 }
 
-body.cpt-gymtonic {
+.cpt-gymtonic {
+  color: gray;
   background-image: url(assets/img/bg_gymtonic.svg);
+  background-color: #d90513;
+}
+.cpt-gymtonic .main-post__content {
+  background-color: white;
+}
+.cpt-gymtonic .galeria-fotos__figure a {
+  color: #c00411;
+}
+.cpt-gymtonic .galeria-fotos__figure a:hover {
+  color: #8e030d;
+}
+.cpt-gymtonic .galeria-fotos__figure img {
+  background-color: #c00411;
+}
+.cpt-gymtonic .galeria-fotos__figure img:hover {
+  background-color: #8e030d;
 }
 
-body.cpt-delifiber {
+.cpt-delifiber {
+  color: gray;
   background-image: url(assets/img/bg_delifiber.svg);
+  background-color: #ffe509;
+}
+.cpt-delifiber .main-post__content {
+  background-color: white;
+}
+.cpt-delifiber .galeria-fotos__figure a {
+  color: #efd600;
+}
+.cpt-delifiber .galeria-fotos__figure a:hover {
+  color: #bca800;
+}
+.cpt-delifiber .galeria-fotos__figure img {
+  background-color: #efd600;
+}
+.cpt-delifiber .galeria-fotos__figure img:hover {
+  background-color: #bca800;
 }
 
-body.cpt-brainshake {
+.cpt-brainshake {
+  color: gray;
   background-image: url(assets/img/bg_brainshake.svg);
+  background-color: #f3a200;
+}
+.cpt-brainshake .main-post__content {
+  background-color: white;
+}
+.cpt-brainshake .galeria-fotos__figure a {
+  color: #d99100;
+}
+.cpt-brainshake .galeria-fotos__figure a:hover {
+  color: #a66f00;
+}
+.cpt-brainshake .galeria-fotos__figure img {
+  background-color: #d99100;
+}
+.cpt-brainshake .galeria-fotos__figure img:hover {
+  background-color: #a66f00;
 }
 
-body.cpt-andeanprotein {
+.cpt-andeanprotein {
+  color: gray;
   background-image: url(assets/img/bg_andeanprotein.svg);
+  background-color: #45762b;
+}
+.cpt-andeanprotein .main-post__content {
+  background-color: white;
+}
+.cpt-andeanprotein .galeria-fotos__figure a {
+  color: #3a6324;
+}
+.cpt-andeanprotein .galeria-fotos__figure a:hover {
+  color: #243e16;
+}
+.cpt-andeanprotein .galeria-fotos__figure img {
+  background-color: #3a6324;
+}
+.cpt-andeanprotein .galeria-fotos__figure img:hover {
+  background-color: #243e16;
 }
 
-body.cpt-macuchino {
+.cpt-macuchino {
+  color: gray;
   background-image: url(assets/img/bg_macuchino.svg);
+  background-color: #bd944f;
+}
+.cpt-macuchino .main-post__content {
+  background-color: white;
+}
+.cpt-macuchino .galeria-fotos__figure a {
+  color: #b08742;
+}
+.cpt-macuchino .galeria-fotos__figure a:hover {
+  color: #8b6b34;
+}
+.cpt-macuchino .galeria-fotos__figure img {
+  background-color: #b08742;
+}
+.cpt-macuchino .galeria-fotos__figure img:hover {
+  background-color: #8b6b34;
 }
 
-body.cpt-royalbreakfast {
+.cpt-bodtox {
+  color: gray;
+  background-image: url(assets/img/bg_bodtox.svg);
+  background-color: #b1cc3b;
+}
+.cpt-bodtox .main-post__content {
+  background-color: white;
+}
+.cpt-bodtox .galeria-fotos__figure a {
+  color: #a3bd31;
+}
+.cpt-bodtox .galeria-fotos__figure a:hover {
+  color: #809526;
+}
+.cpt-bodtox .galeria-fotos__figure img {
+  background-color: #a3bd31;
+}
+.cpt-bodtox .galeria-fotos__figure img:hover {
+  background-color: #809526;
+}
+
+.cpt-royalbreakfast {
+  color: gray;
   background-image: url(assets/img/bg_royalbreakfast.svg);
+  background-color: #871a14;
+}
+.cpt-royalbreakfast .main-post__content {
+  background-color: white;
+}
+.cpt-royalbreakfast .galeria-fotos__figure a {
+  color: #711611;
+}
+.cpt-royalbreakfast .galeria-fotos__figure a:hover {
+  color: #450d0a;
+}
+.cpt-royalbreakfast .galeria-fotos__figure img {
+  background-color: #711611;
+}
+.cpt-royalbreakfast .galeria-fotos__figure img:hover {
+  background-color: #450d0a;
+}
+
+.cpt-camucao {
+  color: gray;
+  background-image: url(assets/img/bg_camucao.svg);
+  background-color: #871a14;
+}
+.cpt-camucao .main-post__content {
+  background-color: white;
+}
+.cpt-camucao .galeria-fotos__figure a {
+  color: #711611;
+}
+.cpt-camucao .galeria-fotos__figure a:hover {
+  color: #450d0a;
+}
+.cpt-camucao .galeria-fotos__figure img {
+  background-color: #711611;
+}
+.cpt-camucao .galeria-fotos__figure img:hover {
+  background-color: #450d0a;
 }
 
 img[src$=".svg"] {
@@ -1827,7 +2302,7 @@ a:hover, a:active {
   outline: none;
 }
 .btn a {
-  color: #317549;
+  color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -2470,13 +2945,13 @@ dfn {
 
 ins {
   background-color: white;
-  color: #317549;
+  color: white;
   text-decoration: none;
 }
 
 mark {
   background-color: #317549;
-  color: #317549;
+  color: white;
 }
 
 pre,
@@ -3080,7 +3555,7 @@ form legend {
   width: 100%;
   margin-bottom: 3.2em;
   padding: 0;
-  color: #317549;
+  color: white;
   border: 0;
   border-bottom: 1px dotted #317549;
   white-space: normal;
@@ -3118,7 +3593,7 @@ textarea {
 label {
   display: block;
   margin-bottom: 0.2em;
-  color: #317549;
+  color: white;
   cursor: pointer;
 }
 label input,
@@ -3136,7 +3611,7 @@ select {
   margin-bottom: 0.4em;
   background-color: rgba(0, 0, 0, 0.1);
   border: none;
-  color: #317549;
+  color: white;
 }
 input:hover,
 textarea:hover,
@@ -3480,10 +3955,6 @@ input:required:focus:valid {
 .galeria-fotos__figure img {
   width: inherit;
   padding: 9%;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.galeria-fotos__figure img:hover {
-  background-color: #317549;
 }
 @media screen and (min-width: 960px) {
   .galeria-fotos__figure {

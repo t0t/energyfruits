@@ -9,12 +9,12 @@ Author URI:         http://t0t.es
 License:            MIT License
 License URI:        http://opensource.org/licenses/MIT
 */
+
 @import "lib/normalize";
 @import "lib/variables";
 @import "lib/placeholders";
-
-
 @import "lib/mixins/flex";
+
 @import "lib/mixins/prefijos";
 @import "lib/mixins/images";
 @import "lib/mixins/breakpoints";
@@ -31,7 +31,6 @@ License URI:        http://opensource.org/licenses/MIT
 @import "layouts/header";
 @import "layouts/pages";
 @import "layouts/posts";
-
 // @import "../bower_components/slick-carousel/slick/slick";
 @import "componentes/slider";
 @import "layouts/sidebar";

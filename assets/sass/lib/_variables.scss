@@ -75,7 +75,7 @@ $baseletterspacing 	: 0;
 // rgb(226,221,224);
 // 
 /**
- * Brand stuff
+ * Base colors
  */
 $color-base			: rgb(49,117,73); // color principal
 $color-alt			: rgb(240,115,11); //azul
@@ -84,6 +84,41 @@ $color-base-light	: lighten($color-base, 2%);
 $color-base-lighten	: lighten($color-base, 10%);
 $color-base-dark	: darken($color-base, 5%);
 $color-base-darken	: darken($color-base, 10%);
+
+// Brand colors
+$color_graviola: rgb(127,116,76); 
+$color_cacaocriollo: rgb(60,29,29); 
+$color_chlorella: rgb(140,126,115); 
+$color_chia: rgb(140,126,115); 
+$color_amaranto: rgb(177,35,101);
+$color_spiroulina: rgb(46,56,40);
+$color_camucamu: rgb(101,51,60);
+$color_canamo: rgb(0,144,77);
+$color_maca: rgb(171,69,108);
+$color_lucuma: rgb(245,176,6);
+$color_stevia: rgb(0,123,74);
+$color_quinoa: rgb(194,41,49);
+$color_alfalfa: rgb(38,136,112);
+$color_trigoverde: rgb(74,121,47);
+$color_algarroba: rgb(31,20,16);
+$color_cardomariano: rgb(166,120,174);
+$color_linodorado: rgb(222,197,67); 
+$color_fresa: rgb(226,56,3);
+$color_coco: rgb(129,77,35);
+$color_gymtonic: rgb(192,4,17);
+$color_delifiber: rgb(239,214,0);
+$color_brainshake: rgb(217,145,0);
+$color_andeanprotein: rgb(58,99,36);
+$color_macuchino: rgb(176,135,66);
+$color_bodtox: rgb(163,189,49);
+$color_royalbreakfast: rgb(113,22,17);
+$color_camucao: rgb(113,22,17);
+
+
+
+
+
+
 
 /**
  * Transparencias
@@ -118,7 +153,7 @@ $background			: 	lighten($color-base, 60%);
 $background-alt		: 	lighten($color-base, 63%);
 
 
-$textcolor			: 	$color-base;
+$textcolor			: 	$white;
 $textcolor-strong	:	$white;
 
 // Links  //////////////////////

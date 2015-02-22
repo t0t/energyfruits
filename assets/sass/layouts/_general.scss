@@ -15,28 +15,57 @@ body {
 	color: $textcolor;
 	// @include background-image(bg,cover,no-repeat,center top, svg);
 	// background-color: $background;
+	background-image: url(#{$image-path}bg.svg);
 	background-repeat: no-repeat;
 	background-position: top center;
 	font-size: 1.6rem;
-	background-image: url(#{$image-path}bg.svg);
 }
 
-$list: chia amaranto spiroulina camucamu canamo maca lucuma stevia quinoa alfalfa quinoa trigoverde algarroba cardomariano linodorado fresa coco gymtonic delifiber brainshake andeanprotein macuchino royalbreakfast;
 
-	@each $producto in $list {
 
-    body {
 
-		&.cpt-#{$producto} {
 
-      		background-image: url(#{$image-path}bg_#{$producto}.svg);
 
-    	}
+$brand_names: graviola cacaocriollo chlorella chia amaranto spiroulina camucamu canamo maca lucuma stevia quinoa alfalfa trigoverde algarroba cardomariano linodorado fresa coco gymtonic delifiber brainshake andeanprotein macuchino bodtox royalbreakfast camucao;
+
+$brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia $color_amaranto $color_spiroulina $color_camucamu $color_canamo $color_maca $color_lucuma $color_stevia $color_quinoa $color_alfalfa $color_trigoverde $color_algarroba $color_cardomariano $color_linodorado $color_fresa $color_coco $color_gymtonic $color_delifiber $color_brainshake $color_andeanprotein $color_macuchino $color_bodtox $color_royalbreakfast $color_camucao;
+
+
+@each $brand in $brand_names {
+
+    $i: index($brand_names, $brand);
+    $elcolor: nth($brand_colors, $i);
+
+    .cpt-#{$brand} {
+
+        color: $grey;
+        background-image: url(#{$image-path}bg_#{$brand}.svg);
+        background-color: lighten($elcolor, 5%);
+		
+		.main-post__content {
+			background-color: $white;
+		}
+        .galeria-fotos__figure {
+        	a {
+
+            	color: $elcolor;
+        		
+        		&:hover {
+
+            	color: darken($elcolor,10%);
+
+            	}
+        	}
+            img {
+            	background-color: $elcolor;
+            		&:hover {
+            			background-color: darken($elcolor,10%);
+            		}
+            }
+        }
 
     }
-
-  }
-
+}
 
 
 img {

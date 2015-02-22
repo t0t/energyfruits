@@ -1,5 +1,8 @@
 <?php
 
+
+
+
 add_theme_support( 'post-thumbnails' );
 add_image_size('mini', 75, 75, true);
 

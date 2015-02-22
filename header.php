@@ -87,21 +87,7 @@
 
 </header>
 
-	<!-- Main menu -->
-	<nav class="nav-barra">
-
-		<?php
-		$defaults = array(
-			'theme_location'  => 'main_menu',
-			'container'       => '',
-			'container_class' => '',
-			'menu_class'      => 'nav-header'
-		);
-
-		wp_nav_menu( $defaults );
-		?>
-
-	</nav>
+	
 	
 	<!-- Hamburguer menu -->
 	<nav class="nav-main" role="navigation">
