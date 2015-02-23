@@ -2,8 +2,8 @@ html {
 
   font-size: 100%; //de 16px
 
-  @media all and (max-width: $bp3) {
-    font-size: 85%; //de 16px
+  @media all and (min-width: $bp3) {
+    font-size: 125%;
   }
 
 }
@@ -18,7 +18,7 @@ body {
 	background-image: url(#{$image-path}bg.svg);
 	background-repeat: no-repeat;
 	background-position: top center;
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 
 
@@ -41,7 +41,7 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
         color: $grey;
         background-image: url(#{$image-path}bg_#{$brand}.svg);
         background-color: lighten($elcolor, 5%);
-        background-position: center 100px;
+        background-position: center 150px;
 		
 		.main-post__content {
 			background-color: $white;
@@ -115,12 +115,13 @@ img[src$=".svg"] {
 
 	header:first-child {
 
-		padding: $gutterwidth ($gutterwidth * 1.5) ($gutterwidth/1.5) ($gutterwidth * 1.5);
+		padding: ($gutterwidth/2)($gutterwidth * 1.5) $gutterwidth ($gutterwidth * 1.5);
 
 
 		h1 {
 			// color: $background;
 			@include max-width(75%);
+			line-height: 2;
 
 			@media all and (min-width: $bp3) {
 			

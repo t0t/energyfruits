@@ -68,7 +68,8 @@
 .main-post__subheader {
 
 	@include max-width($bp2);
-	@include padding($gutterwidth);
+	// @include padding($gutterwidth);
+	padding-bottom: $gutterwidth*2;
 	margin-bottom: 0;
 
 

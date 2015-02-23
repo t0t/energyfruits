@@ -56,11 +56,10 @@ Main navbar
     width: 2em;
     height: 2em;
     position: fixed;
-    top: 100px;
-    right: 0;
-    left: 0;
+    top: 10px;
+    right: 10px;
     display: block;
-    font-size: 2rem;
+    font-size: 1.2rem;
     content: "☰";
     z-index: 25;
     line-height: 2.1;
@@ -69,9 +68,12 @@ Main navbar
     border-radius: 100%;
     color: $white;
 
-    @media all and (min-width: 780px) {
+    @media all and (min-width: $bp2-5) {
+
       display: none;
+
     }
+
   }
 
   @media (min-width:$bp3) {
@@ -150,30 +152,31 @@ Main navbar
 
 // Nav Secondary
 .nav-secondary {
-    
-
 
     ul {
     
-
         display: table;
 
         @extend %no-padding;
         @extend %no-margin;
 
+        @media all and (max-width: $bp2-5) {
+        
+            display: none;
+        
+        }
+        
+        @media screen and (min-width: $bp3) {
+        
+            width: 400px;
+
+        }
+
         @media screen and (min-width: $bp1) {
         
-        width: 600px;
-        background-color: red;
-        
-      }
+            width: 550px;
 
-      @media screen and (min-width: $bp3) {
-        
-        width: 400px;
-        background-color: pink;
-        
-      }
+        }
 
     }
 

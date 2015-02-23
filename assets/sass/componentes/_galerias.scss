@@ -3,9 +3,9 @@
 	//mirar el line-height del small
 	line-height : $baselineheight/2;
 
-    @media (min-width: 960px) {
+    @media (min-width: $bp2-5) {
 
-      	width: calc(15% - #{$gutterwidth});
+      	width: calc(20% - #{$gutterwidth});
 
     }
 
@@ -15,7 +15,7 @@
 
 		@extend %flex-basis-fullwidth;
 
-    	@media (min-width: 960px) {
+    	@media (min-width: $bp2-5) {
 
       		margin-bottom: $gutterwidth*5;
 
@@ -63,7 +63,9 @@
 
 
 	.galeria-fotos__description {
+
 		@extend %flex-basis-fullwidth;
+	
 	}
 
 
@@ -85,15 +87,13 @@
 			}
 		}
 
-		
-		@media screen and (max-width: $bp3) {}
+    	@media screen and (min-width: $bp2-5) {
 
-
-    	@media screen and (min-width: 960px) {
-
-      		width: calc(50% - #{$gutterwidth});
+      		// width: calc(50% - #{$gutterwidth});
     	
     	}
+		
+		@media screen and (max-width: $bp3) {}
 
 
     	@media (min-width: $bp2) {
@@ -108,7 +108,8 @@
 			position: relative;
 	    	transition: all .2s;
 	    	font-size: 12px; // fallback + progressive enhancement
-	    	font-size: 1rem;
+	    	font-size: .7rem;
+	    	margin: ($gutterwidth*2) 0;
 
 			&::after {}
 			&:hover::after {}
