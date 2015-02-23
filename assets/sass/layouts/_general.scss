@@ -1,10 +1,12 @@
 html {
 
-  font-size: 100%; //de 16px
+	font-size: 100%; //de 16px
 
-  @media all and (min-width: $bp3) {
-    font-size: 125%;
-  }
+	@media all and (min-width: $bp3) {
+
+		font-size: 125%;
+
+	}
 
 }
 
@@ -19,10 +21,8 @@ body {
 	background-repeat: no-repeat;
 	background-position: top center;
 	font-size: 1rem;
+
 }
-
-
-
 
 
 
@@ -39,33 +39,58 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
     .cpt-#{$brand} {
 
         color: $grey;
-        background-image: url(#{$image-path}bg_#{$brand}.svg);
-        background-color: lighten($elcolor, 5%);
-        background-position: center 150px;
+        
+        .main-post__header {
+
+	        background-image: url(#{$image-path}bg_#{$brand}.svg);
+
+	        background-color: lighten($elcolor, 5%);
+
+	        background-position: center bottom;
+
+	        background-repeat: no-repeat;
+
+	        background-size: contain;
+        	
+        }
+
 		
 		.main-post__content {
+
 			background-color: $white;
+
 		}
+
         .galeria-fotos__figure {
+
         	a {
 
             	color: $elcolor;
         		
         		&:hover {
 
-            	color: darken($elcolor,10%);
+            		color: darken($elcolor,10%);
 
             	}
+
         	}
+
             img {
+
             	background-color: lighten($elcolor, 45%);
-            		&:hover {
-            			background-color: $elcolor;
-            		}
+
+            	&:hover {
+
+            		background-color: $elcolor;
+
+            	}
+
             }
+
         }
 
     }
+
 }
 
 
@@ -109,6 +134,7 @@ img[src$=".svg"] {
 	
 	@include max-width($bp0);
     // background-color: $white;
+
     @media all and (min-width: $bp3) {
     	// padding: $gutterwidth;
     }
@@ -116,7 +142,6 @@ img[src$=".svg"] {
 	header:first-child {
 
 		padding: ($gutterwidth/2)($gutterwidth * 1.5) $gutterwidth ($gutterwidth * 1.5);
-
 
 		h1 {
 			// color: $background;

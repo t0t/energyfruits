@@ -628,6 +628,8 @@ article, aside, figure, footer, header, hgroup, nav, section {
 }
 
 .header {
+  position: fixed;
+  z-index: 10;
   display: -moz-flex;
   /* OLD - Firefox 19 */
   display: -ms-flexbox;
@@ -1326,9 +1328,13 @@ body {
 
 .cpt-graviola {
   color: gray;
+}
+.cpt-graviola .main-post__header {
   background-image: url(assets/img/bg_graviola.svg);
   background-color: #8f8356;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-graviola .main-post__content {
   background-color: white;
@@ -1348,9 +1354,13 @@ body {
 
 .cpt-cacaocriollo {
   color: gray;
+}
+.cpt-cacaocriollo .main-post__header {
   background-image: url(assets/img/bg_cacaocriollo.svg);
   background-color: #4d2525;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-cacaocriollo .main-post__content {
   background-color: white;
@@ -1370,9 +1380,13 @@ body {
 
 .cpt-chlorella {
   color: gray;
+}
+.cpt-chlorella .main-post__header {
   background-image: url(assets/img/bg_chlorella.svg);
   background-color: #988b81;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-chlorella .main-post__content {
   background-color: white;
@@ -1392,9 +1406,13 @@ body {
 
 .cpt-chia {
   color: gray;
+}
+.cpt-chia .main-post__header {
   background-image: url(assets/img/bg_chia.svg);
   background-color: #988b81;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-chia .main-post__content {
   background-color: white;
@@ -1414,9 +1432,13 @@ body {
 
 .cpt-amaranto {
   color: gray;
+}
+.cpt-amaranto .main-post__header {
   background-image: url(assets/img/bg_amaranto.svg);
   background-color: #c62771;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-amaranto .main-post__content {
   background-color: white;
@@ -1436,9 +1458,13 @@ body {
 
 .cpt-spiroulina {
   color: gray;
+}
+.cpt-spiroulina .main-post__header {
   background-image: url(assets/img/bg_spiroulina.svg);
   background-color: #3a4733;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-spiroulina .main-post__content {
   background-color: white;
@@ -1458,9 +1484,13 @@ body {
 
 .cpt-camucamu {
   color: gray;
+}
+.cpt-camucamu .main-post__header {
   background-image: url(assets/img/bg_camucamu.svg);
   background-color: #763c46;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-camucamu .main-post__content {
   background-color: white;
@@ -1480,9 +1510,13 @@ body {
 
 .cpt-canamo {
   color: gray;
+}
+.cpt-canamo .main-post__header {
   background-image: url(assets/img/bg_canamo.svg);
   background-color: #00aa5b;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-canamo .main-post__content {
   background-color: white;
@@ -1502,9 +1536,13 @@ body {
 
 .cpt-maca {
   color: gray;
+}
+.cpt-maca .main-post__header {
   background-image: url(assets/img/bg_maca.svg);
   background-color: #b95179;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-maca .main-post__content {
   background-color: white;
@@ -1524,9 +1562,13 @@ body {
 
 .cpt-lucuma {
   color: gray;
+}
+.cpt-lucuma .main-post__header {
   background-image: url(assets/img/bg_lucuma.svg);
   background-color: #f9b91b;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-lucuma .main-post__content {
   background-color: white;
@@ -1546,9 +1588,13 @@ body {
 
 .cpt-stevia {
   color: gray;
+}
+.cpt-stevia .main-post__header {
   background-image: url(assets/img/bg_stevia.svg);
   background-color: #009559;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-stevia .main-post__content {
   background-color: white;
@@ -1568,9 +1614,13 @@ body {
 
 .cpt-quinoa {
   color: gray;
+}
+.cpt-quinoa .main-post__header {
   background-image: url(assets/img/bg_quinoa.svg);
   background-color: #d3313a;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-quinoa .main-post__content {
   background-color: white;
@@ -1590,9 +1640,13 @@ body {
 
 .cpt-alfalfa {
   color: gray;
+}
+.cpt-alfalfa .main-post__header {
   background-image: url(assets/img/bg_alfalfa.svg);
   background-color: #2c9c80;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-alfalfa .main-post__content {
   background-color: white;
@@ -1612,9 +1666,13 @@ body {
 
 .cpt-trigoverde {
   color: gray;
+}
+.cpt-trigoverde .main-post__header {
   background-image: url(assets/img/bg_trigoverde.svg);
   background-color: #558b36;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-trigoverde .main-post__content {
   background-color: white;
@@ -1634,9 +1692,13 @@ body {
 
 .cpt-algarroba {
   color: gray;
+}
+.cpt-algarroba .main-post__header {
   background-image: url(assets/img/bg_algarroba.svg);
   background-color: #301f19;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-algarroba .main-post__content {
   background-color: white;
@@ -1656,9 +1718,13 @@ body {
 
 .cpt-cardomariano {
   color: gray;
+}
+.cpt-cardomariano .main-post__header {
   background-image: url(assets/img/bg_cardomariano.svg);
   background-color: #b188b8;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-cardomariano .main-post__content {
   background-color: white;
@@ -1678,9 +1744,13 @@ body {
 
 .cpt-linodorado {
   color: gray;
+}
+.cpt-linodorado .main-post__header {
   background-image: url(assets/img/bg_linodorado.svg);
   background-color: #e2cc59;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-linodorado .main-post__content {
   background-color: white;
@@ -1700,9 +1770,13 @@ body {
 
 .cpt-fresa {
   color: gray;
+}
+.cpt-fresa .main-post__header {
   background-image: url(assets/img/bg_fresa.svg);
   background-color: #fb3e03;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-fresa .main-post__content {
   background-color: white;
@@ -1722,9 +1796,13 @@ body {
 
 .cpt-coco {
   color: gray;
+}
+.cpt-coco .main-post__header {
   background-image: url(assets/img/bg_coco.svg);
   background-color: #955928;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-coco .main-post__content {
   background-color: white;
@@ -1744,9 +1822,13 @@ body {
 
 .cpt-gymtonic {
   color: gray;
+}
+.cpt-gymtonic .main-post__header {
   background-image: url(assets/img/bg_gymtonic.svg);
   background-color: #d90513;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-gymtonic .main-post__content {
   background-color: white;
@@ -1766,9 +1848,13 @@ body {
 
 .cpt-delifiber {
   color: gray;
+}
+.cpt-delifiber .main-post__header {
   background-image: url(assets/img/bg_delifiber.svg);
   background-color: #ffe509;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-delifiber .main-post__content {
   background-color: white;
@@ -1788,9 +1874,13 @@ body {
 
 .cpt-brainshake {
   color: gray;
+}
+.cpt-brainshake .main-post__header {
   background-image: url(assets/img/bg_brainshake.svg);
   background-color: #f3a200;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-brainshake .main-post__content {
   background-color: white;
@@ -1810,9 +1900,13 @@ body {
 
 .cpt-andeanprotein {
   color: gray;
+}
+.cpt-andeanprotein .main-post__header {
   background-image: url(assets/img/bg_andeanprotein.svg);
   background-color: #45762b;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-andeanprotein .main-post__content {
   background-color: white;
@@ -1832,9 +1926,13 @@ body {
 
 .cpt-macuchino {
   color: gray;
+}
+.cpt-macuchino .main-post__header {
   background-image: url(assets/img/bg_macuchino.svg);
   background-color: #bd944f;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-macuchino .main-post__content {
   background-color: white;
@@ -1854,9 +1952,13 @@ body {
 
 .cpt-bodtox {
   color: gray;
+}
+.cpt-bodtox .main-post__header {
   background-image: url(assets/img/bg_bodtox.svg);
   background-color: #b1cc3b;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-bodtox .main-post__content {
   background-color: white;
@@ -1876,9 +1978,13 @@ body {
 
 .cpt-royalbreakfast {
   color: gray;
+}
+.cpt-royalbreakfast .main-post__header {
   background-image: url(assets/img/bg_royalbreakfast.svg);
   background-color: #871a14;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-royalbreakfast .main-post__content {
   background-color: white;
@@ -1898,9 +2004,13 @@ body {
 
 .cpt-camucao {
   color: gray;
+}
+.cpt-camucao .main-post__header {
   background-image: url(assets/img/bg_camucao.svg);
   background-color: #871a14;
-  background-position: center 150px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cpt-camucao .main-post__content {
   background-color: white;

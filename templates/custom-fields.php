@@ -16,19 +16,20 @@
             <?php if( have_rows('block')): ?>
             <?php while (have_rows('block')) : the_row(); ?>
 
-            
 
 
+                <header class="main-post__header">
+
+                <!-- Page Header -->
+                <?php get_template_part('templates/page', 'header'); ?>
                 
-
-
-
                 <?php if (get_sub_field("header")): ?>
 
                     <h3 class="main-post__subheader"><?php the_sub_field("header"); ?></h3>
 
                 <?php endif ?>
 
+                </header>
 
 
                 <!-- main post content -->

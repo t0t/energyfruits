@@ -44,7 +44,7 @@
 
     <header>
 
-    <h1><?php the_title(); ?></h1>
+        <h1><?php the_title(); ?></h1>
 
     </header>
         
@@ -53,10 +53,12 @@
     <header>
         
         <h3>
+
             <?php
             $cats=get_the_category();
             echo $cats[0]->cat_name;
             ?>
+
         </h3>
 
         <h1>
@@ -90,7 +92,6 @@
         <h1>"<?php the_search_query() ?>"</h1>
 
     </header>
-    <?php //echo esc_html( get_search_query( false ) ); ?>
 
 <?php elseif ( is_404() ) : ?>
         
