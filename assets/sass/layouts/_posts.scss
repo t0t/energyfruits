@@ -2,6 +2,11 @@
 
 }
 
+.main-post__header {
+	
+	padding-top: 100px;
+
+}
 
 .main-post__content {
 
@@ -76,6 +81,7 @@
 	@media only screen and (min-width: $bp3) {
 
 		@include font-size(26);
+		@include max-width($bp3);
 
     }
 
@@ -83,6 +89,7 @@
     @media only screen and (min-width: $bp1) {
 
 		@include font-size(48);
+		@include max-width($bp2);
 
     }
 

@@ -629,7 +629,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
 
 .header {
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   display: -moz-flex;
   /* OLD - Firefox 19 */
   display: -ms-flexbox;
@@ -666,6 +666,10 @@ article, aside, figure, footer, header, hgroup, nav, section {
   .no-svg .header {
     background-image: url(assets/img/bg_header@2x.png);
   }
+}
+
+.main-post__header {
+  padding-top: 100px;
 }
 
 .main-post__content section {
@@ -731,12 +735,20 @@ article, aside, figure, footer, header, hgroup, nav, section {
   .main-post__subheader {
     font-size: 26px;
     font-size: 1.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 1430px) {
   .main-post__subheader {
     font-size: 48px;
     font-size: 2.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1124px;
+    width: 100%;
   }
 }
 
@@ -983,7 +995,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
 
 .slider__caption {
   z-index: 10;
-  color: #e4f4ea;
+  color: #317549;
 }
 @media all and (min-width: 780px) {
   .slider__caption {
@@ -1066,6 +1078,10 @@ article, aside, figure, footer, header, hgroup, nav, section {
   font-size: 1.5rem;
   color: white;
   border: 2px solid white;
+}
+
+.slider__wrap {
+  background-color: white;
 }
 
 /* Slider */
@@ -1214,6 +1230,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
+  color: white;
   padding: 1.5%;
 }
 .main-footer img[src$=".svg"] {
@@ -1267,7 +1284,6 @@ article, aside, figure, footer, header, hgroup, nav, section {
   margin-right: auto;
   max-width: 1800px;
   width: 100%;
-  background-color: #317549;
   color: white;
 }
 .main-footer__credits a, .main-footer__credits a:visited {
@@ -1320,8 +1336,9 @@ html {
 body {
   font-family: "Averia Serif Libre", cursive;
   color: white;
+  background-color: #317549;
   background-image: url(assets/img/bg.svg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: top center;
   font-size: 1rem;
 }
@@ -2078,14 +2095,13 @@ img[src$=".svg"] {
   width: 100%;
 }
 .main__content header:first-child {
-  padding: 1.5% 4.5% 3% 4.5%;
+  padding-top: 1.5%;
 }
 .main__content header:first-child h1 {
   margin-left: auto;
   margin-right: auto;
   max-width: 75%;
   width: 100%;
-  line-height: 2;
 }
 @media all and (min-width: 600px) {
   .main__content header:first-child h1 {

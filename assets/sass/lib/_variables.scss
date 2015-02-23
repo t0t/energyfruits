@@ -149,7 +149,7 @@ $bordercolorhover   : $color-base;
 // Web
 $baseheadingfontcolor 		: $white;
 
-$background			: 	lighten($color-base, 60%);
+$background			: 	$color-base;
 $background-alt		: 	lighten($color-base, 63%);
 
 

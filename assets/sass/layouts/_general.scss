@@ -16,9 +16,9 @@ body {
 	font-family: $basefont;
 	color: $textcolor;
 	// @include background-image(bg,cover,no-repeat,center top, svg);
-	// background-color: $background;
+	background-color: $background;
 	background-image: url(#{$image-path}bg.svg);
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-position: top center;
 	font-size: 1rem;
 
@@ -141,12 +141,12 @@ img[src$=".svg"] {
 
 	header:first-child {
 
-		padding: ($gutterwidth/2)($gutterwidth * 1.5) $gutterwidth ($gutterwidth * 1.5);
+		padding-top: $gutterwidth/2;
 
 		h1 {
 			// color: $background;
 			@include max-width(75%);
-			line-height: 2;
+			// line-height: 2;
 
 			@media all and (min-width: $bp3) {
 			

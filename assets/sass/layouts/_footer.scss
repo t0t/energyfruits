@@ -9,6 +9,8 @@
 
 	// background-color: $white;
 
+	color: $white;
+
   	padding: $gutterwidth / 2;
 	
 	  	@media (min-width:$bp3) {
@@ -71,7 +73,6 @@
 		@include max-width($bp0);
 		@extend %text-center;
 		@extend %padding-vertical;
-		background-color: $color-base;
 		color: $white;
 
 		aside {
