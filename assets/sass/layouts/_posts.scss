@@ -40,10 +40,11 @@
 		@include padding();
 
 		ul {
+
 	        @extend %no-margin;
-			// background-color: $black-alpha-fuerte;
 			@include padding($gutterwidth);
 			border: 2px dotted $color-alt;
+
 		}
 		
 		li {
