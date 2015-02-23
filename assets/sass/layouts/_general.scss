@@ -40,11 +40,11 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
     .cpt-#{$brand} {
 
         color: $grey;
-        
+
         h1 {
         	@include font-size(100);
         }
-        
+
         .main-post__header {
 
 	        background-image: url(#{$image-path}bg_#{$brand}.svg);
@@ -140,13 +140,20 @@ img[src$=".svg"] {
 	@include max-width($bp0);
     // background-color: $white;
 
+	> *:first-child {
+
+    	padding-top: 75px;
+
+	}
+	
     @media all and (min-width: $bp3) {
+
     	// padding: $gutterwidth;
     }
 
 	header:first-child {
 
-		padding-top: $gutterwidth/2;
+		padding-top: $gutterwidth;
 
 		h1 {
 			// color: $background;
