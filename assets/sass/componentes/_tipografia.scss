@@ -46,7 +46,7 @@ h3 small {
 }
 
 @each $header, $margin-bot, $font-size, $line-height in 
-	(h1, 0, 45, 1.5)
+	(h1, 0, 45, 1)
 	(h2, 3, 45, 1.1)
 	(h3, 0, 25, 1.4)
 	(h4, 2, 30, 1)

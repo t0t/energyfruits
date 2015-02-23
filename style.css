@@ -629,6 +629,8 @@ article, aside, figure, footer, header, hgroup, nav, section {
 
 .header {
   position: fixed;
+  left: 0;
+  right: 0;
   z-index: 2;
   display: -moz-flex;
   /* OLD - Firefox 19 */
@@ -1415,8 +1417,8 @@ body {
   color: gray;
 }
 .cpt-graviola h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-graviola .main-post__header {
   background-image: url(assets/img/bg_graviola.svg);
@@ -1445,8 +1447,8 @@ body {
   color: gray;
 }
 .cpt-cacaocriollo h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-cacaocriollo .main-post__header {
   background-image: url(assets/img/bg_cacaocriollo.svg);
@@ -1475,8 +1477,8 @@ body {
   color: gray;
 }
 .cpt-chlorella h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-chlorella .main-post__header {
   background-image: url(assets/img/bg_chlorella.svg);
@@ -1505,8 +1507,8 @@ body {
   color: gray;
 }
 .cpt-chia h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-chia .main-post__header {
   background-image: url(assets/img/bg_chia.svg);
@@ -1535,8 +1537,8 @@ body {
   color: gray;
 }
 .cpt-amaranto h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-amaranto .main-post__header {
   background-image: url(assets/img/bg_amaranto.svg);
@@ -1565,8 +1567,8 @@ body {
   color: gray;
 }
 .cpt-spiroulina h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-spiroulina .main-post__header {
   background-image: url(assets/img/bg_spiroulina.svg);
@@ -1595,8 +1597,8 @@ body {
   color: gray;
 }
 .cpt-camucamu h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-camucamu .main-post__header {
   background-image: url(assets/img/bg_camucamu.svg);
@@ -1625,8 +1627,8 @@ body {
   color: gray;
 }
 .cpt-canamo h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-canamo .main-post__header {
   background-image: url(assets/img/bg_canamo.svg);
@@ -1655,8 +1657,8 @@ body {
   color: gray;
 }
 .cpt-maca h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-maca .main-post__header {
   background-image: url(assets/img/bg_maca.svg);
@@ -1685,8 +1687,8 @@ body {
   color: gray;
 }
 .cpt-lucuma h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-lucuma .main-post__header {
   background-image: url(assets/img/bg_lucuma.svg);
@@ -1715,8 +1717,8 @@ body {
   color: gray;
 }
 .cpt-stevia h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-stevia .main-post__header {
   background-image: url(assets/img/bg_stevia.svg);
@@ -1745,8 +1747,8 @@ body {
   color: gray;
 }
 .cpt-quinoa h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-quinoa .main-post__header {
   background-image: url(assets/img/bg_quinoa.svg);
@@ -1775,8 +1777,8 @@ body {
   color: gray;
 }
 .cpt-alfalfa h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-alfalfa .main-post__header {
   background-image: url(assets/img/bg_alfalfa.svg);
@@ -1805,8 +1807,8 @@ body {
   color: gray;
 }
 .cpt-trigoverde h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-trigoverde .main-post__header {
   background-image: url(assets/img/bg_trigoverde.svg);
@@ -1835,8 +1837,8 @@ body {
   color: gray;
 }
 .cpt-algarroba h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-algarroba .main-post__header {
   background-image: url(assets/img/bg_algarroba.svg);
@@ -1865,8 +1867,8 @@ body {
   color: gray;
 }
 .cpt-cardomariano h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-cardomariano .main-post__header {
   background-image: url(assets/img/bg_cardomariano.svg);
@@ -1895,8 +1897,8 @@ body {
   color: gray;
 }
 .cpt-linodorado h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-linodorado .main-post__header {
   background-image: url(assets/img/bg_linodorado.svg);
@@ -1925,8 +1927,8 @@ body {
   color: gray;
 }
 .cpt-fresa h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-fresa .main-post__header {
   background-image: url(assets/img/bg_fresa.svg);
@@ -1955,8 +1957,8 @@ body {
   color: gray;
 }
 .cpt-coco h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-coco .main-post__header {
   background-image: url(assets/img/bg_coco.svg);
@@ -1985,8 +1987,8 @@ body {
   color: gray;
 }
 .cpt-gymtonic h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-gymtonic .main-post__header {
   background-image: url(assets/img/bg_gymtonic.svg);
@@ -2015,8 +2017,8 @@ body {
   color: gray;
 }
 .cpt-delifiber h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-delifiber .main-post__header {
   background-image: url(assets/img/bg_delifiber.svg);
@@ -2045,8 +2047,8 @@ body {
   color: gray;
 }
 .cpt-brainshake h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-brainshake .main-post__header {
   background-image: url(assets/img/bg_brainshake.svg);
@@ -2075,8 +2077,8 @@ body {
   color: gray;
 }
 .cpt-andeanprotein h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-andeanprotein .main-post__header {
   background-image: url(assets/img/bg_andeanprotein.svg);
@@ -2105,8 +2107,8 @@ body {
   color: gray;
 }
 .cpt-macuchino h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-macuchino .main-post__header {
   background-image: url(assets/img/bg_macuchino.svg);
@@ -2135,8 +2137,8 @@ body {
   color: gray;
 }
 .cpt-bodtox h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-bodtox .main-post__header {
   background-image: url(assets/img/bg_bodtox.svg);
@@ -2165,8 +2167,8 @@ body {
   color: gray;
 }
 .cpt-royalbreakfast h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-royalbreakfast .main-post__header {
   background-image: url(assets/img/bg_royalbreakfast.svg);
@@ -2195,8 +2197,8 @@ body {
   color: gray;
 }
 .cpt-camucao h1 {
-  font-size: 100px;
-  font-size: 5rem;
+  font-size: 90px;
+  font-size: 4.5rem;
 }
 .cpt-camucao .main-post__header {
   background-image: url(assets/img/bg_camucao.svg);
@@ -3122,7 +3124,7 @@ h1, .h1 {
   margin-bottom: Infinityem;
   font-size: 45px;
   font-size: 2.25rem;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 h2, .h2 {

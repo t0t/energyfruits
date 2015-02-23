@@ -6,7 +6,7 @@ Template Name: Portada
 <?php get_header(); ?>
 
 <!-- Slider -->
-<?php putRevSlider("kenburns_fullwidth","portada") ?>
+<?php //putRevSlider("kenburns_fullwidth","portada") ?>
 
 <main class="main__content">
 
