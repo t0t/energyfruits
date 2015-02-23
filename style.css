@@ -1212,7 +1212,6 @@ article, aside, figure, footer, header, hgroup, nav, section {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
-  background-color: white;
   padding: 1.5%;
 }
 .main-footer img[src$=".svg"] {
@@ -3196,8 +3195,6 @@ Main navbar
   display: table-cell;
   color: #f0730b;
   letter-spacing: 0;
-  font-size: 20px;
-  font-size: 1rem;
 }
 @media all and (min-width: 1430px) {
   .nav-secondary li {

@@ -188,7 +188,7 @@ Main navbar
         color: $color-alt;
         letter-spacing: 0;
         
-        @include font-size(20);
+        // @include font-size(20);
 
         @media all and (min-width: $bp1) {
 

@@ -24,7 +24,6 @@
             
         </div>
 
-    </footer>
 
     <div class="main-footer__credits">
 
@@ -49,6 +48,8 @@
         </aside>
 
     </div>
+    
+    </footer>
     
     <?php wp_footer(); ?>
 
