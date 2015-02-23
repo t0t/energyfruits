@@ -3,7 +3,7 @@
 <div class="widget widget--pages">
 <li id="categories"><?php _e('Categories:'); ?>
     <ul>
-<?php wp_list_cats(); ?>
+<?php wp_list_categories(); ?>
     </ul>
  </li>
 

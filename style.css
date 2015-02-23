@@ -478,7 +478,7 @@ h3 small {
   display: block;
 }
 
-.post--sidebar, .slider__slides, .slider__figure, .slider__caption, .main-footer__credits, .main-footer__brand, .main-footer__adicional, .main-footer__searchform, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-secondary li, .nav-header .nav-header__item, .nav-header li, .widget--newsletter, .idiomas, .alert--info, .well, .well--large, .content-summary__item, .video-main, .tienda__item, .galeria-fotos {
+.post--sidebar, .slider__slides, .slider__figure, .slider__caption, .main-footer__credits, .main-footer__brand, .main-footer__adicional, .main-footer__searchform label, .main-footer__searchform label input, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-secondary li, .nav-header .nav-header__item, .nav-header li, .widget--newsletter, .idiomas, .alert--info, .well, .well--large, .content-summary__item, .video-main, .tienda__item, .galeria-fotos {
   text-align: center;
 }
 
@@ -629,7 +629,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
 
 .header {
   position: fixed;
-  z-index: 100;
+  z-index: 2;
   display: -moz-flex;
   /* OLD - Firefox 19 */
   display: -ms-flexbox;
@@ -901,11 +901,6 @@ article, aside, figure, footer, header, hgroup, nav, section {
 .slider * {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-}
-@media all and (max-width: 1124px) {
-  .slider {
-    background-color: #317549;
-  }
 }
 
 .slider__item {
@@ -1347,6 +1342,9 @@ article, aside, figure, footer, header, hgroup, nav, section {
   }
 }
 
+.main-footer__searchform label input {
+  display: inline;
+}
 @media all and (min-width: 600px) {
   .main-footer__searchform {
     margin-left: auto;
@@ -1354,6 +1352,28 @@ article, aside, figure, footer, header, hgroup, nav, section {
     max-width: 300px;
     width: 100%;
   }
+}
+.main-footer__searchform ::-webkit-input-placeholder {
+  color: white;
+  line-height: 1.6em;
+}
+.main-footer__searchform :-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+  line-height: 1.6em;
+}
+.main-footer__searchform ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+  line-height: 1.6em;
+}
+.main-footer__searchform :-ms-input-placeholder {
+  color: white;
+  line-height: 1.6em;
+}
+.main-footer__searchform .search-form
+.search-submit {
+  display: none;
 }
 .main-footer__searchform .screen-reader-text {
   display: none;
@@ -1387,6 +1407,7 @@ body {
   background-image: url(assets/img/bg.svg);
   background-repeat: repeat;
   background-position: top center;
+  background-attachment: fixed;
   font-size: 1rem;
 }
 
@@ -2258,6 +2279,10 @@ img[src$=".svg"] {
   text-shadow: none;
 }
 
+.rev_slider_wrapper {
+  z-index: 0;
+}
+
 .wpcf7 img {
   width: auto;
 }
@@ -2342,7 +2367,7 @@ figure.alignnone {
   font-weight: normal;
   font-style: normal;
 }
-.icon-megaphone, .icon-envelope, .icon-paperclip, .icon-profile-male, .icon-facebook, .icon-logo_sf2, .icon-arrow-right2, .slider__btn-next, .slick-next, .icon-arrow-left2, .slider__btn-prev, .slick-prev, .icon-arrow-up2, .icon-attachment, .icon-magnifying-glass, .icon-file-pdf, .icon-download2 {
+.icon-megaphone, .icon-envelope, .icon-paperclip, .icon-profile-male, .icon-facebook, .icon-logo_sf2, .icon-arrow-right2, .slider__btn-next, .slick-next, .icon-arrow-left2, .slider__btn-prev, .slick-prev, .icon-arrow-up2, .icon-attachment, .icon-magnifying-glass, .main-footer input[type="submit"], .icon-file-pdf, .icon-download2, .icon-key {
   font-family: "icomoon";
   speak: none;
   font-style: normal;
@@ -2352,6 +2377,10 @@ figure.alignnone {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-key:before {
+  content: "\e02c";
 }
 
 .icon-megaphone:before {
@@ -2370,7 +2399,7 @@ figure.alignnone {
   content: "\e02e";
 }
 
-.icon-magnifying-glass:before {
+.icon-magnifying-glass:before, .main-footer input[type="submit"]:before {
   content: "\e037";
 }
 
@@ -2438,17 +2467,17 @@ figure.alignnone {
 \*------------------------------------*/
 a {
   text-decoration: none;
-  color: #317549;
+  color: white;
 }
 a:visited {
-  color: #317549;
+  color: white;
 }
 a:hover {
-  color: #40995f;
+  color: white;
 }
 a:focus {
   outline: thin dotted;
-  color: #317549;
+  color: white;
 }
 a:hover, a:active {
   outline: 0;

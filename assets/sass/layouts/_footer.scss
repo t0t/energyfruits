@@ -43,6 +43,7 @@
   		background-color: $color-base;
 
   		color: $white;
+  		@extend .icon-magnifying-glass;
 
   	}
 
@@ -166,8 +167,20 @@
 	}
 
 	.main-footer__searchform {
-		
-		@extend %text-center;
+
+		label {
+
+			@extend %text-center;
+			
+			input {
+
+				@extend %text-center;
+				display: inline;
+
+			}
+
+		}
+
 
 		@media all and (min-width: $bp3) {
 
@@ -178,6 +191,75 @@
 			// background-color: pink;
 
 		}
+
+		::-webkit-input-placeholder {
+   			color: $white;
+   			line-height: $baselineheight;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		   color: $white;
+		   line-height: $baselineheight;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		   color: $white;
+		   line-height: $baselineheight;  
+		}
+
+		:-ms-input-placeholder {  
+		   color: $white;
+		   line-height: $baselineheight;  
+		}
+
+		// .search-form {
+		// 	position: relative;
+		// 	right: 0;
+		// 	top: 10px;
+		// 	background-color: red;
+		// }
+
+		// .search-field {
+		// 	background-color: transparent;
+		// 	// background-image: url(images/search-icon.png);
+		// 	@extend .icon-magnifying-glass;
+		// 	border: none;
+		// 	cursor: pointer;
+		// 	height: 37px;
+		// 	position: relative;
+		// 	-webkit-transition: width 400ms ease, background 400ms ease;
+		// 	transition:         width 400ms ease, background 400ms ease;
+		// 	width: 0;
+		// }
+
+		// .search-field:focus {
+		// 	background-color: #fff;
+		// 	cursor: text;
+		// 	outline: 0;
+		// 	width: 230px;
+		// }
+
+		.search-form
+		.search-submit { 
+			display:none;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		.screen-reader-text {
 

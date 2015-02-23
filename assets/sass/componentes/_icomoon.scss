@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-$icons: ".icon-megaphone,.icon-envelope,.icon-paperclip,.icon-profile-male,.icon-facebook,.icon-logo_sf2,.icon-arrow-right2,.icon-arrow-left2, .icon-arrow-up2, .icon-attachment, .icon-magnifying-glass, .icon-file-pdf, .icon-download2";
+$icons: ".icon-megaphone,.icon-envelope,.icon-paperclip,.icon-profile-male,.icon-facebook,.icon-logo_sf2,.icon-arrow-right2,.icon-arrow-left2, .icon-arrow-up2, .icon-attachment, .icon-magnifying-glass, .icon-file-pdf, .icon-download2, .icon-key";
 
 %icomoon {
 	font-family: "icomoon";
@@ -28,6 +28,9 @@ $icons: ".icon-megaphone,.icon-envelope,.icon-paperclip,.icon-profile-male,.icon
 	// &:hover {
 	// 	@extend: %icon;
 	// }
+}
+.icon-key:before {
+	content: "\e02c";
 }
 
 .icon-megaphone:before {

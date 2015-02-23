@@ -25,7 +25,7 @@
 
         <div class="main-footer__adicional">
 
-            <a class="btn btn--footer" href="/area-privada">Area privada</a>
+            <a class="btn btn--footer" href="/area-privada"><i class="icon-key"></i> Area privada</a>
 
         </div>
     

@@ -29,7 +29,7 @@
 
 <li id="categories"><?php _e('Categories:'); ?>
 	<ul>
-	<?php wp_list_cats('sort_column=name&optioncount=1&exclude=5, 6'); ?>
+	<?php wp_list_categories('sort_column=name&optioncount=1&exclude=5, 6'); ?>
 	</ul>
  </li>
 

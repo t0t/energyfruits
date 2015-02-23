@@ -157,7 +157,7 @@ $textcolor			: 	$white;
 $textcolor-strong	:	$white;
 
 // Links  //////////////////////
-$linkcolor 			: $color-base;
+$linkcolor 			: $white;
 $linkcolorhover 	: lighten($linkcolor, 10%);
 $linkcolorvisited   : $linkcolor;
 $linkcolorfocus 	: $linkcolorvisited;
