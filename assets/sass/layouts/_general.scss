@@ -41,6 +41,10 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
 
         color: $grey;
         
+        h1 {
+        	@include font-size(100);
+        }
+        
         .main-post__header {
 
 	        background-image: url(#{$image-path}bg_#{$brand}.svg);
@@ -151,13 +155,13 @@ img[src$=".svg"] {
 
 			@media all and (min-width: $bp3) {
 			
-	    		@include font-size(100);
+	    		
     		
     		}
 
     		@media all and (min-width: $bp1) {
 			
-	    		@include font-size(125);
+	    		// @include font-size(125);
     		
     		}
 		}

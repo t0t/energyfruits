@@ -671,6 +671,9 @@ article, aside, figure, footer, header, hgroup, nav, section {
 .main-post__header {
   padding-top: 100px;
 }
+.main-post__header .h3 {
+  margin-bottom: 3%;
+}
 
 .main-post__content section {
   margin-bottom: 3%;
@@ -1414,6 +1417,10 @@ body {
 .cpt-graviola {
   color: gray;
 }
+.cpt-graviola h1 {
+  font-size: 100px;
+  font-size: 5rem;
+}
 .cpt-graviola .main-post__header {
   background-image: url(assets/img/bg_graviola.svg);
   background-color: #8f8356;
@@ -1439,6 +1446,10 @@ body {
 
 .cpt-cacaocriollo {
   color: gray;
+}
+.cpt-cacaocriollo h1 {
+  font-size: 100px;
+  font-size: 5rem;
 }
 .cpt-cacaocriollo .main-post__header {
   background-image: url(assets/img/bg_cacaocriollo.svg);
@@ -1466,6 +1477,10 @@ body {
 .cpt-chlorella {
   color: gray;
 }
+.cpt-chlorella h1 {
+  font-size: 100px;
+  font-size: 5rem;
+}
 .cpt-chlorella .main-post__header {
   background-image: url(assets/img/bg_chlorella.svg);
   background-color: #988b81;
@@ -1491,6 +1506,10 @@ body {
 
 .cpt-chia {
   color: gray;
+}
+.cpt-chia h1 {
+  font-size: 100px;
+  font-size: 5rem;
 }
 .cpt-chia .main-post__header {
   background-image: url(assets/img/bg_chia.svg);
@@ -1518,6 +1537,10 @@ body {
 .cpt-amaranto {
   color: gray;
 }
+.cpt-amaranto h1 {
+  font-size: 100px;
+  font-size: 5rem;
+}
 .cpt-amaranto .main-post__header {
   background-image: url(assets/img/bg_amaranto.svg);
   background-color: #c62771;
@@ -1543,6 +1566,10 @@ body {
 
 .cpt-spiroulina {
   color: gray;
+}
+.cpt-spiroulina h1 {
+  font-size: 100px;
+  font-size: 5rem;
 }
 .cpt-spiroulina .main-post__header {
   background-image: url(assets/img/bg_spiroulina.svg);
@@ -1570,6 +1597,10 @@ body {
 .cpt-camucamu {
   color: gray;
 }
+.cpt-camucamu h1 {
+  font-size: 100px;
+  font-size: 5rem;
+}
 .cpt-camucamu .main-post__header {
   background-image: url(assets/img/bg_camucamu.svg);
   background-color: #763c46;
@@ -1595,6 +1626,10 @@ body {
 
 .cpt-canamo {
   color: gray;
+}
+.cpt-canamo h1 {
+  font-size: 100px;
+  font-size: 5rem;
 }
 .cpt-canamo .main-post__header {
   background-image: url(assets/img/bg_canamo.svg);
@@ -1622,6 +1657,10 @@ body {
 .cpt-maca {
   color: gray;
 }
+.cpt-maca h1 {
+  font-size: 100px;
+  font-size: 5rem;
+}
 .cpt-maca .main-post__header {
   background-image: url(assets/img/bg_maca.svg);
   background-color: #b95179;
@@ -1647,6 +1686,10 @@ body {
 
 .cpt-lucuma {
   color: gray;
+}
+.cpt-lucuma h1 {
+  font-size: 100px;
+  font-size: 5rem;
 }
 .cpt-lucuma .main-post__header {
   background-image: url(assets/img/bg_lucuma.svg);
@@ -1674,6 +1717,10 @@ body {
 .cpt-stevia {
   color: gray;
 }
+.cpt-stevia h1 {
+  font-size: 100px;
+  font-size: 5rem;
+}
 .cpt-stevia .main-post__header {
   background-image: url(assets/img/bg_stevia.svg);
   background-color: #009559;
@@ -1699,6 +1746,10 @@ body {
 
 .cpt-quinoa {
   color: gray;
+}
+.cpt-quinoa h1 {
+  font-size: 100px;
+  font-size: 5rem;
 }
 .cpt-quinoa .main-post__header {
   background-image: url(assets/img/bg_quinoa.svg);
@@ -1726,6 +1777,10 @@ body {
 .cpt-alfalfa {
   color: gray;
 }
+.cpt-alfalfa h1 {
+  font-size: 100px;
+  font-size: 5rem;
+}
 .cpt-alfalfa .main-post__header {
   background-image: url(assets/img/bg_alfalfa.svg);
   background-color: #2c9c80;
@@ -1751,6 +1806,10 @@ body {
 
 .cpt-trigoverde {
   color: gray;
+}
+.cpt-trigoverde h1 {
+  font-size: 100px;
+  font-size: 5rem;
 }
 .cpt-trigoverde .main-post__header {
   background-image: url(assets/img/bg_trigoverde.svg);
@@ -1778,6 +1837,10 @@ body {
 .cpt-algarroba {
   color: gray;
 }
+.cpt-algarroba h1 {
+  font-size: 100px;
+  font-size: 5rem;
+}
 .cpt-algarroba .main-post__header {
   background-image: url(assets/img/bg_algarroba.svg);
   background-color: #301f19;
@@ -1803,6 +1866,10 @@ body {
 
 .cpt-cardomariano {
   color: gray;
+}
+.cpt-cardomariano h1 {
+  font-size: 100px;
+  font-size: 5rem;
 }
 .cpt-cardomariano .main-post__header {
   background-image: url(assets/img/bg_cardomariano.svg);
@@ -1830,6 +1897,10 @@ body {
 .cpt-linodorado {
   color: gray;
 }
+.cpt-linodorado h1 {
+  font-size: 100px;
+  font-size: 5rem;
+}
 .cpt-linodorado .main-post__header {
   background-image: url(assets/img/bg_linodorado.svg);
   background-color: #e2cc59;
@@ -1855,6 +1926,10 @@ body {
 
 .cpt-fresa {
   color: gray;
+}
+.cpt-fresa h1 {
+  font-size: 100px;
+  font-size: 5rem;
 }
 .cpt-fresa .main-post__header {
   background-image: url(assets/img/bg_fresa.svg);
@@ -1882,6 +1957,10 @@ body {
 .cpt-coco {
   color: gray;
 }
+.cpt-coco h1 {
+  font-size: 100px;
+  font-size: 5rem;
+}
 .cpt-coco .main-post__header {
   background-image: url(assets/img/bg_coco.svg);
   background-color: #955928;
@@ -1907,6 +1986,10 @@ body {
 
 .cpt-gymtonic {
   color: gray;
+}
+.cpt-gymtonic h1 {
+  font-size: 100px;
+  font-size: 5rem;
 }
 .cpt-gymtonic .main-post__header {
   background-image: url(assets/img/bg_gymtonic.svg);
@@ -1934,6 +2017,10 @@ body {
 .cpt-delifiber {
   color: gray;
 }
+.cpt-delifiber h1 {
+  font-size: 100px;
+  font-size: 5rem;
+}
 .cpt-delifiber .main-post__header {
   background-image: url(assets/img/bg_delifiber.svg);
   background-color: #ffe509;
@@ -1959,6 +2046,10 @@ body {
 
 .cpt-brainshake {
   color: gray;
+}
+.cpt-brainshake h1 {
+  font-size: 100px;
+  font-size: 5rem;
 }
 .cpt-brainshake .main-post__header {
   background-image: url(assets/img/bg_brainshake.svg);
@@ -1986,6 +2077,10 @@ body {
 .cpt-andeanprotein {
   color: gray;
 }
+.cpt-andeanprotein h1 {
+  font-size: 100px;
+  font-size: 5rem;
+}
 .cpt-andeanprotein .main-post__header {
   background-image: url(assets/img/bg_andeanprotein.svg);
   background-color: #45762b;
@@ -2011,6 +2106,10 @@ body {
 
 .cpt-macuchino {
   color: gray;
+}
+.cpt-macuchino h1 {
+  font-size: 100px;
+  font-size: 5rem;
 }
 .cpt-macuchino .main-post__header {
   background-image: url(assets/img/bg_macuchino.svg);
@@ -2038,6 +2137,10 @@ body {
 .cpt-bodtox {
   color: gray;
 }
+.cpt-bodtox h1 {
+  font-size: 100px;
+  font-size: 5rem;
+}
 .cpt-bodtox .main-post__header {
   background-image: url(assets/img/bg_bodtox.svg);
   background-color: #b1cc3b;
@@ -2064,6 +2167,10 @@ body {
 .cpt-royalbreakfast {
   color: gray;
 }
+.cpt-royalbreakfast h1 {
+  font-size: 100px;
+  font-size: 5rem;
+}
 .cpt-royalbreakfast .main-post__header {
   background-image: url(assets/img/bg_royalbreakfast.svg);
   background-color: #871a14;
@@ -2089,6 +2196,10 @@ body {
 
 .cpt-camucao {
   color: gray;
+}
+.cpt-camucao h1 {
+  font-size: 100px;
+  font-size: 5rem;
 }
 .cpt-camucao .main-post__header {
   background-image: url(assets/img/bg_camucao.svg);
@@ -2170,18 +2281,6 @@ img[src$=".svg"] {
   margin-right: auto;
   max-width: 75%;
   width: 100%;
-}
-@media all and (min-width: 600px) {
-  .main__content header:first-child h1 {
-    font-size: 100px;
-    font-size: 5rem;
-  }
-}
-@media all and (min-width: 1430px) {
-  .main__content header:first-child h1 {
-    font-size: 125px;
-    font-size: 6.25rem;
-  }
 }
 
 .main__content--split {
@@ -3021,9 +3120,9 @@ h3 small {
 
 h1, .h1 {
   margin-bottom: Infinityem;
-  font-size: 50px;
-  font-size: 2.5rem;
-  line-height: 1;
+  font-size: 45px;
+  font-size: 2.25rem;
+  line-height: 1.5;
 }
 
 h2, .h2 {
