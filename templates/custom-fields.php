@@ -682,9 +682,13 @@
     <?php while ($loop->have_posts()) : $loop->the_post(); ?>
       
             <a href="<?php the_permalink(); ?>">
+
                 <figure>
+
                     <figcaption class="slider__caption"><?php the_title(); ?></figcaption>
+                    
                 </figure>
+
             </a>
       
     <?php endwhile; ?>

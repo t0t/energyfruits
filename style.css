@@ -442,7 +442,7 @@ th {
   line-height: 1;
 }
 
-.slider__title, .btn, .nav-main__overlay li, .content-summary h3 {
+.btn, .nav-main__overlay li, .content-summary h3 {
   text-transform: lowercase;
 }
 
@@ -956,8 +956,8 @@ article, aside, figure, footer, header, hgroup, nav, section {
 }
 
 .slider__title {
-  color: #317549;
-  padding-bottom: 1.5%;
+  color: #f0730b;
+  padding: 3% 0;
 }
 
 .slider__caption {
@@ -1424,9 +1424,6 @@ body {
 .cpt-graviola {
   color: gray;
 }
-.cpt-graviola a {
-  position: fixed;
-}
 .cpt-graviola h1 {
   font-size: 90px;
   font-size: 4.5rem;
@@ -1460,13 +1457,13 @@ a[href*="producto/graviola"] {
 a[href*="producto/graviola"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_graviola.svg);
   background-color: #6f6542;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #7f744c;
-  line-height: 250px;
 }
 a[href*="producto/graviola"] figure:hover {
   background-position: 0 90px;
@@ -1475,9 +1472,6 @@ a[href*="producto/graviola"] figure:hover {
 
 .cpt-cacaocriollo {
   color: gray;
-}
-.cpt-cacaocriollo a {
-  position: fixed;
 }
 .cpt-cacaocriollo h1 {
   font-size: 90px;
@@ -1512,13 +1506,13 @@ a[href*="producto/cacaocriollo"] {
 a[href*="producto/cacaocriollo"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_cacaocriollo.svg);
   background-color: #2b1515;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #3c1d1d;
-  line-height: 250px;
 }
 a[href*="producto/cacaocriollo"] figure:hover {
   background-position: 0 90px;
@@ -1527,9 +1521,6 @@ a[href*="producto/cacaocriollo"] figure:hover {
 
 .cpt-chlorella {
   color: gray;
-}
-.cpt-chlorella a {
-  position: fixed;
 }
 .cpt-chlorella h1 {
   font-size: 90px;
@@ -1564,13 +1555,13 @@ a[href*="producto/chlorella"] {
 a[href*="producto/chlorella"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_chlorella.svg);
   background-color: #7e7167;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #8c7e73;
-  line-height: 250px;
 }
 a[href*="producto/chlorella"] figure:hover {
   background-position: 0 90px;
@@ -1579,9 +1570,6 @@ a[href*="producto/chlorella"] figure:hover {
 
 .cpt-chia {
   color: gray;
-}
-.cpt-chia a {
-  position: fixed;
 }
 .cpt-chia h1 {
   font-size: 90px;
@@ -1616,13 +1604,13 @@ a[href*="producto/chia"] {
 a[href*="producto/chia"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_chia.svg);
   background-color: #7e7167;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #8c7e73;
-  line-height: 250px;
 }
 a[href*="producto/chia"] figure:hover {
   background-position: 0 90px;
@@ -1631,9 +1619,6 @@ a[href*="producto/chia"] figure:hover {
 
 .cpt-amaranto {
   color: gray;
-}
-.cpt-amaranto a {
-  position: fixed;
 }
 .cpt-amaranto h1 {
   font-size: 90px;
@@ -1668,13 +1653,13 @@ a[href*="producto/amaranto"] {
 a[href*="producto/amaranto"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_amaranto.svg);
   background-color: #9c1f59;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #b12365;
-  line-height: 250px;
 }
 a[href*="producto/amaranto"] figure:hover {
   background-position: 0 90px;
@@ -1683,9 +1668,6 @@ a[href*="producto/amaranto"] figure:hover {
 
 .cpt-spiroulina {
   color: gray;
-}
-.cpt-spiroulina a {
-  position: fixed;
 }
 .cpt-spiroulina h1 {
   font-size: 90px;
@@ -1720,13 +1702,13 @@ a[href*="producto/spiroulina"] {
 a[href*="producto/spiroulina"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_spiroulina.svg);
   background-color: #22291d;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #2e3828;
-  line-height: 250px;
 }
 a[href*="producto/spiroulina"] figure:hover {
   background-position: 0 90px;
@@ -1735,9 +1717,6 @@ a[href*="producto/spiroulina"] figure:hover {
 
 .cpt-camucamu {
   color: gray;
-}
-.cpt-camucamu a {
-  position: fixed;
 }
 .cpt-camucamu h1 {
   font-size: 90px;
@@ -1772,13 +1751,13 @@ a[href*="producto/camucamu"] {
 a[href*="producto/camucamu"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_camucamu.svg);
   background-color: #542a32;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #65333c;
-  line-height: 250px;
 }
 a[href*="producto/camucamu"] figure:hover {
   background-position: 0 90px;
@@ -1787,9 +1766,6 @@ a[href*="producto/camucamu"] figure:hover {
 
 .cpt-canamo {
   color: gray;
-}
-.cpt-canamo a {
-  position: fixed;
 }
 .cpt-canamo h1 {
   font-size: 90px;
@@ -1824,13 +1800,13 @@ a[href*="producto/canamo"] {
 a[href*="producto/canamo"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_canamo.svg);
   background-color: #00763f;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #00904d;
-  line-height: 250px;
 }
 a[href*="producto/canamo"] figure:hover {
   background-position: 0 90px;
@@ -1839,9 +1815,6 @@ a[href*="producto/canamo"] figure:hover {
 
 .cpt-maca {
   color: gray;
-}
-.cpt-maca a {
-  position: fixed;
 }
 .cpt-maca h1 {
   font-size: 90px;
@@ -1876,13 +1849,13 @@ a[href*="producto/maca"] {
 a[href*="producto/maca"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_maca.svg);
   background-color: #993e61;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #ab456c;
-  line-height: 250px;
 }
 a[href*="producto/maca"] figure:hover {
   background-position: 0 90px;
@@ -1891,9 +1864,6 @@ a[href*="producto/maca"] figure:hover {
 
 .cpt-lucuma {
   color: gray;
-}
-.cpt-lucuma a {
-  position: fixed;
 }
 .cpt-lucuma h1 {
   font-size: 90px;
@@ -1928,13 +1898,13 @@ a[href*="producto/lucuma"] {
 a[href*="producto/lucuma"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_lucuma.svg);
   background-color: #dc9e05;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #f5b006;
-  line-height: 250px;
 }
 a[href*="producto/lucuma"] figure:hover {
   background-position: 0 90px;
@@ -1943,9 +1913,6 @@ a[href*="producto/lucuma"] figure:hover {
 
 .cpt-stevia {
   color: gray;
-}
-.cpt-stevia a {
-  position: fixed;
 }
 .cpt-stevia h1 {
   font-size: 90px;
@@ -1980,13 +1947,13 @@ a[href*="producto/stevia"] {
 a[href*="producto/stevia"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_stevia.svg);
   background-color: #00623b;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #007b4a;
-  line-height: 250px;
 }
 a[href*="producto/stevia"] figure:hover {
   background-position: 0 90px;
@@ -1995,9 +1962,6 @@ a[href*="producto/stevia"] figure:hover {
 
 .cpt-quinoa {
   color: gray;
-}
-.cpt-quinoa a {
-  position: fixed;
 }
 .cpt-quinoa h1 {
   font-size: 90px;
@@ -2032,13 +1996,13 @@ a[href*="producto/quinoa"] {
 a[href*="producto/quinoa"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_quinoa.svg);
   background-color: #ad252c;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #c22931;
-  line-height: 250px;
 }
 a[href*="producto/quinoa"] figure:hover {
   background-position: 0 90px;
@@ -2047,9 +2011,6 @@ a[href*="producto/quinoa"] figure:hover {
 
 .cpt-alfalfa {
   color: gray;
-}
-.cpt-alfalfa a {
-  position: fixed;
 }
 .cpt-alfalfa h1 {
   font-size: 90px;
@@ -2084,13 +2045,13 @@ a[href*="producto/alfalfa"] {
 a[href*="producto/alfalfa"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_alfalfa.svg);
   background-color: #207460;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #268870;
-  line-height: 250px;
 }
 a[href*="producto/alfalfa"] figure:hover {
   background-position: 0 90px;
@@ -2099,9 +2060,6 @@ a[href*="producto/alfalfa"] figure:hover {
 
 .cpt-trigoverde {
   color: gray;
-}
-.cpt-trigoverde a {
-  position: fixed;
 }
 .cpt-trigoverde h1 {
   font-size: 90px;
@@ -2136,13 +2094,13 @@ a[href*="producto/trigoverde"] {
 a[href*="producto/trigoverde"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_trigoverde.svg);
   background-color: #3f6728;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #4a792f;
-  line-height: 250px;
 }
 a[href*="producto/trigoverde"] figure:hover {
   background-position: 0 90px;
@@ -2151,9 +2109,6 @@ a[href*="producto/trigoverde"] figure:hover {
 
 .cpt-algarroba {
   color: gray;
-}
-.cpt-algarroba a {
-  position: fixed;
 }
 .cpt-algarroba h1 {
   font-size: 90px;
@@ -2188,13 +2143,13 @@ a[href*="producto/algarroba"] {
 a[href*="producto/algarroba"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_algarroba.svg);
   background-color: #0e0907;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #1f1410;
-  line-height: 250px;
 }
 a[href*="producto/algarroba"] figure:hover {
   background-position: 0 90px;
@@ -2203,9 +2158,6 @@ a[href*="producto/algarroba"] figure:hover {
 
 .cpt-cardomariano {
   color: gray;
-}
-.cpt-cardomariano a {
-  position: fixed;
 }
 .cpt-cardomariano h1 {
   font-size: 90px;
@@ -2240,13 +2192,13 @@ a[href*="producto/cardomariano"] {
 a[href*="producto/cardomariano"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_cardomariano.svg);
   background-color: #9b68a4;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #a678ae;
-  line-height: 250px;
 }
 a[href*="producto/cardomariano"] figure:hover {
   background-position: 0 90px;
@@ -2255,9 +2207,6 @@ a[href*="producto/cardomariano"] figure:hover {
 
 .cpt-linodorado {
   color: gray;
-}
-.cpt-linodorado a {
-  position: fixed;
 }
 .cpt-linodorado h1 {
   font-size: 90px;
@@ -2292,13 +2241,13 @@ a[href*="producto/linodorado"] {
 a[href*="producto/linodorado"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_linodorado.svg);
   background-color: #dabe2d;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #dec543;
-  line-height: 250px;
 }
 a[href*="producto/linodorado"] figure:hover {
   background-position: 0 90px;
@@ -2307,9 +2256,6 @@ a[href*="producto/linodorado"] figure:hover {
 
 .cpt-fresa {
   color: gray;
-}
-.cpt-fresa a {
-  position: fixed;
 }
 .cpt-fresa h1 {
   font-size: 90px;
@@ -2344,13 +2290,13 @@ a[href*="producto/fresa"] {
 a[href*="producto/fresa"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_fresa.svg);
   background-color: #c93203;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #e23803;
-  line-height: 250px;
 }
 a[href*="producto/fresa"] figure:hover {
   background-position: 0 90px;
@@ -2359,9 +2305,6 @@ a[href*="producto/fresa"] figure:hover {
 
 .cpt-coco {
   color: gray;
-}
-.cpt-coco a {
-  position: fixed;
 }
 .cpt-coco h1 {
   font-size: 90px;
@@ -2396,13 +2339,13 @@ a[href*="producto/coco"] {
 a[href*="producto/coco"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_coco.svg);
   background-color: #6d411e;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #814d23;
-  line-height: 250px;
 }
 a[href*="producto/coco"] figure:hover {
   background-position: 0 90px;
@@ -2411,9 +2354,6 @@ a[href*="producto/coco"] figure:hover {
 
 .cpt-gymtonic {
   color: gray;
-}
-.cpt-gymtonic a {
-  position: fixed;
 }
 .cpt-gymtonic h1 {
   font-size: 90px;
@@ -2448,13 +2388,13 @@ a[href*="producto/gymtonic"] {
 a[href*="producto/gymtonic"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_gymtonic.svg);
   background-color: #a7030f;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #c00411;
-  line-height: 250px;
 }
 a[href*="producto/gymtonic"] figure:hover {
   background-position: 0 90px;
@@ -2463,9 +2403,6 @@ a[href*="producto/gymtonic"] figure:hover {
 
 .cpt-delifiber {
   color: gray;
-}
-.cpt-delifiber a {
-  position: fixed;
 }
 .cpt-delifiber h1 {
   font-size: 90px;
@@ -2500,13 +2437,13 @@ a[href*="producto/delifiber"] {
 a[href*="producto/delifiber"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_delifiber.svg);
   background-color: #d5bf00;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #efd600;
-  line-height: 250px;
 }
 a[href*="producto/delifiber"] figure:hover {
   background-position: 0 90px;
@@ -2515,9 +2452,6 @@ a[href*="producto/delifiber"] figure:hover {
 
 .cpt-brainshake {
   color: gray;
-}
-.cpt-brainshake a {
-  position: fixed;
 }
 .cpt-brainshake h1 {
   font-size: 90px;
@@ -2552,13 +2486,13 @@ a[href*="producto/brainshake"] {
 a[href*="producto/brainshake"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_brainshake.svg);
   background-color: #c08000;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #d99100;
-  line-height: 250px;
 }
 a[href*="producto/brainshake"] figure:hover {
   background-position: 0 90px;
@@ -2567,9 +2501,6 @@ a[href*="producto/brainshake"] figure:hover {
 
 .cpt-andeanprotein {
   color: gray;
-}
-.cpt-andeanprotein a {
-  position: fixed;
 }
 .cpt-andeanprotein h1 {
   font-size: 90px;
@@ -2604,13 +2535,13 @@ a[href*="producto/andeanprotein"] {
 a[href*="producto/andeanprotein"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_andeanprotein.svg);
   background-color: #2f501d;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #3a6324;
-  line-height: 250px;
 }
 a[href*="producto/andeanprotein"] figure:hover {
   background-position: 0 90px;
@@ -2619,9 +2550,6 @@ a[href*="producto/andeanprotein"] figure:hover {
 
 .cpt-macuchino {
   color: gray;
-}
-.cpt-macuchino a {
-  position: fixed;
 }
 .cpt-macuchino h1 {
   font-size: 90px;
@@ -2656,13 +2584,13 @@ a[href*="producto/macuchino"] {
 a[href*="producto/macuchino"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_macuchino.svg);
   background-color: #9d793b;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #b08742;
-  line-height: 250px;
 }
 a[href*="producto/macuchino"] figure:hover {
   background-position: 0 90px;
@@ -2671,9 +2599,6 @@ a[href*="producto/macuchino"] figure:hover {
 
 .cpt-bodtox {
   color: gray;
-}
-.cpt-bodtox a {
-  position: fixed;
 }
 .cpt-bodtox h1 {
   font-size: 90px;
@@ -2708,13 +2633,13 @@ a[href*="producto/bodtox"] {
 a[href*="producto/bodtox"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_bodtox.svg);
   background-color: #92a92c;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #a3bd31;
-  line-height: 250px;
 }
 a[href*="producto/bodtox"] figure:hover {
   background-position: 0 90px;
@@ -2723,9 +2648,6 @@ a[href*="producto/bodtox"] figure:hover {
 
 .cpt-royalbreakfast {
   color: gray;
-}
-.cpt-royalbreakfast a {
-  position: fixed;
 }
 .cpt-royalbreakfast h1 {
   font-size: 90px;
@@ -2760,13 +2682,13 @@ a[href*="producto/royalbreakfast"] {
 a[href*="producto/royalbreakfast"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_royalbreakfast.svg);
   background-color: #5b120e;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #711611;
-  line-height: 250px;
 }
 a[href*="producto/royalbreakfast"] figure:hover {
   background-position: 0 90px;
@@ -2775,9 +2697,6 @@ a[href*="producto/royalbreakfast"] figure:hover {
 
 .cpt-camucao {
   color: gray;
-}
-.cpt-camucao a {
-  position: fixed;
 }
 .cpt-camucao h1 {
   font-size: 90px;
@@ -2812,13 +2731,13 @@ a[href*="producto/camucao"] {
 a[href*="producto/camucao"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  line-height: 250px;
   background-image: url(assets/img/bg_camucao.svg);
   background-color: #763219;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #8b3b1d;
-  line-height: 250px;
 }
 a[href*="producto/camucao"] figure:hover {
   background-position: 0 90px;

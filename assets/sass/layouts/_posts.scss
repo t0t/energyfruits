@@ -50,12 +50,17 @@
 		}
 		
 		li {
+
 			@include font-size(23);
+
 		}
 
 		a {
+
 			color: $color-alt;
+
 		}
+		
 
 		@media all and (min-width: $bp3) {
 

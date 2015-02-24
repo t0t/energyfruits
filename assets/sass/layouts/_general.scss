@@ -40,11 +40,7 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
 
     .cpt-#{$brand} {
 
-    	a {
-    		position: fixed;
-    	}
-
-        color: $grey;
+    	color: $grey;
 
         h1 {
         	@include font-size(90);
@@ -64,8 +60,7 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
         	
         }
 
-		
-		.main-post__content {
+        .main-post__content {
 
 			background-color: $white;
 
@@ -103,34 +98,34 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
 
     a[href*="producto/#{$brand}"] {
 		
-			cursor: ew-resize;
+		cursor: ew-resize;
 
-	    	figure {
+		figure {
 
-	    		@include transition(.3s);
+			@include transition(.3s);
 
-	    		@extend .img--circle;
+			@extend .img--circle;
 
-	    		background-image: url(#{$image-path}bg_#{$brand}.svg);
+			line-height: 250px;
 
-	    		background-color: darken($elcolor, 5%);
+			background-image: url(#{$image-path}bg_#{$brand}.svg);
 
-		        background-position: 0 100px;
+			background-color: darken($elcolor, 5%);
 
-		        background-repeat: no-repeat;
+			background-position: 0 100px;
 
-		        background-size: contain;
+			background-repeat: no-repeat;
 
-		        border: solid 10px $elcolor;
+			background-size: contain;
 
-		        &:hover {
+			border: solid 10px $elcolor;
+
+				&:hover {
 		        	
 		        	background-position: 0 90px;
 	    			background-color: darken($elcolor, 7%);
 
 		        }
-
-		        line-height: 250px;
 
 		        @media screen and (max-width:$bp3) {  }
 		        // @media screen and (min-width:$bp3) { line-height: 255px; }
