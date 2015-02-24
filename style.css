@@ -478,7 +478,7 @@ h3 small {
   display: block;
 }
 
-.post--sidebar, .slider__slides, .slider__figure, .slider__caption, .main-footer__credits, .main-footer__brand, .main-footer__adicional, .main-footer__searchform label, .main-footer__searchform label input, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-secondary li, .nav-header .nav-header__item, .nav-header li, .widget--newsletter, .idiomas, .alert--info, .well, .well--large, .content-summary__item, .video-main, .tienda__item, .galeria-fotos {
+.post--sidebar, .slider__slides, .slider__figure, .main-footer__credits, .main-footer__brand, .main-footer__adicional, .main-footer__searchform label, .main-footer__searchform label input, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-secondary li, .nav-header .nav-header__item, .nav-header li, .widget--newsletter, .idiomas, .alert--info, .well, .well--large, .content-summary__item, .video-main, .tienda__item, .galeria-fotos {
   text-align: center;
 }
 
@@ -964,8 +964,10 @@ article, aside, figure, footer, header, hgroup, nav, section {
 }
 
 .slider__caption {
-  z-index: 10;
-  color: #317549;
+  font-size: 30px;
+  font-size: 1.5rem;
+  font-style: normal;
+  letter-spacing: -1px;
 }
 
 .slider__btn {
@@ -1126,9 +1128,8 @@ article, aside, figure, footer, header, hgroup, nav, section {
   display: inline-block;
 }
 .slick-dots li button {
-  border-radius: 100%;
-  width: 30px;
-  min-height: 30px;
+  width: 10px;
+  height: 10px;
   border: none;
   color: rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.1);
@@ -1369,8 +1370,6 @@ body {
 a[href*="graviola"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_graviola.svg);
   background-color: #6f6542;
   background-position: 0 100px;
@@ -1381,6 +1380,21 @@ a[href*="graviola"] figure {
 a[href*="graviola"] figure:hover {
   background-position: 0 90px;
   background-color: #69603f;
+}
+@media screen and (max-width: 600px) {
+  a[href*="graviola"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="graviola"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="graviola"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-graviola {
@@ -1416,8 +1430,6 @@ a[href*="graviola"] figure:hover {
 a[href*="cacaocriollo"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_cacaocriollo.svg);
   background-color: #2b1515;
   background-position: 0 100px;
@@ -1428,6 +1440,21 @@ a[href*="cacaocriollo"] figure {
 a[href*="cacaocriollo"] figure:hover {
   background-position: 0 90px;
   background-color: #241111;
+}
+@media screen and (max-width: 600px) {
+  a[href*="cacaocriollo"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="cacaocriollo"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="cacaocriollo"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-cacaocriollo {
@@ -1463,8 +1490,6 @@ a[href*="cacaocriollo"] figure:hover {
 a[href*="chlorella"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_chlorella.svg);
   background-color: #7e7167;
   background-position: 0 100px;
@@ -1475,6 +1500,21 @@ a[href*="chlorella"] figure {
 a[href*="chlorella"] figure:hover {
   background-position: 0 90px;
   background-color: #786c63;
+}
+@media screen and (max-width: 600px) {
+  a[href*="chlorella"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="chlorella"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="chlorella"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-chlorella {
@@ -1510,8 +1550,6 @@ a[href*="chlorella"] figure:hover {
 a[href*="chia"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_chia.svg);
   background-color: #7e7167;
   background-position: 0 100px;
@@ -1522,6 +1560,21 @@ a[href*="chia"] figure {
 a[href*="chia"] figure:hover {
   background-position: 0 90px;
   background-color: #786c63;
+}
+@media screen and (max-width: 600px) {
+  a[href*="chia"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="chia"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="chia"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-chia {
@@ -1557,8 +1610,6 @@ a[href*="chia"] figure:hover {
 a[href*="amaranto"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_amaranto.svg);
   background-color: #9c1f59;
   background-position: 0 100px;
@@ -1569,6 +1620,21 @@ a[href*="amaranto"] figure {
 a[href*="amaranto"] figure:hover {
   background-position: 0 90px;
   background-color: #931d54;
+}
+@media screen and (max-width: 600px) {
+  a[href*="amaranto"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="amaranto"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="amaranto"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-amaranto {
@@ -1604,8 +1670,6 @@ a[href*="amaranto"] figure:hover {
 a[href*="spiroulina"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_spiroulina.svg);
   background-color: #22291d;
   background-position: 0 100px;
@@ -1616,6 +1680,21 @@ a[href*="spiroulina"] figure {
 a[href*="spiroulina"] figure:hover {
   background-position: 0 90px;
   background-color: #1d2319;
+}
+@media screen and (max-width: 600px) {
+  a[href*="spiroulina"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="spiroulina"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="spiroulina"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-spiroulina {
@@ -1651,8 +1730,6 @@ a[href*="spiroulina"] figure:hover {
 a[href*="camucamu"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_camucamu.svg);
   background-color: #542a32;
   background-position: 0 100px;
@@ -1663,6 +1740,21 @@ a[href*="camucamu"] figure {
 a[href*="camucamu"] figure:hover {
   background-position: 0 90px;
   background-color: #4d272e;
+}
+@media screen and (max-width: 600px) {
+  a[href*="camucamu"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="camucamu"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="camucamu"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-camucamu {
@@ -1698,8 +1790,6 @@ a[href*="camucamu"] figure:hover {
 a[href*="canamo"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_canamo.svg);
   background-color: #00763f;
   background-position: 0 100px;
@@ -1710,6 +1800,21 @@ a[href*="canamo"] figure {
 a[href*="canamo"] figure:hover {
   background-position: 0 90px;
   background-color: #006c3a;
+}
+@media screen and (max-width: 600px) {
+  a[href*="canamo"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="canamo"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="canamo"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-canamo {
@@ -1745,8 +1850,6 @@ a[href*="canamo"] figure:hover {
 a[href*="maca"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_maca.svg);
   background-color: #993e61;
   background-position: 0 100px;
@@ -1757,6 +1860,21 @@ a[href*="maca"] figure {
 a[href*="maca"] figure:hover {
   background-position: 0 90px;
   background-color: #923b5c;
+}
+@media screen and (max-width: 600px) {
+  a[href*="maca"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="maca"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="maca"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-maca {
@@ -1792,8 +1910,6 @@ a[href*="maca"] figure:hover {
 a[href*="lucuma"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_lucuma.svg);
   background-color: #dc9e05;
   background-position: 0 100px;
@@ -1804,6 +1920,21 @@ a[href*="lucuma"] figure {
 a[href*="lucuma"] figure:hover {
   background-position: 0 90px;
   background-color: #d29705;
+}
+@media screen and (max-width: 600px) {
+  a[href*="lucuma"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="lucuma"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="lucuma"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-lucuma {
@@ -1839,8 +1970,6 @@ a[href*="lucuma"] figure:hover {
 a[href*="stevia"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_stevia.svg);
   background-color: #00623b;
   background-position: 0 100px;
@@ -1851,6 +1980,21 @@ a[href*="stevia"] figure {
 a[href*="stevia"] figure:hover {
   background-position: 0 90px;
   background-color: #005735;
+}
+@media screen and (max-width: 600px) {
+  a[href*="stevia"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="stevia"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="stevia"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-stevia {
@@ -1886,8 +2030,6 @@ a[href*="stevia"] figure:hover {
 a[href*="quinoa"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_quinoa.svg);
   background-color: #ad252c;
   background-position: 0 100px;
@@ -1898,6 +2040,21 @@ a[href*="quinoa"] figure {
 a[href*="quinoa"] figure:hover {
   background-position: 0 90px;
   background-color: #a5232a;
+}
+@media screen and (max-width: 600px) {
+  a[href*="quinoa"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="quinoa"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="quinoa"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-quinoa {
@@ -1933,8 +2090,6 @@ a[href*="quinoa"] figure:hover {
 a[href*="alfalfa"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_alfalfa.svg);
   background-color: #207460;
   background-position: 0 100px;
@@ -1945,6 +2100,21 @@ a[href*="alfalfa"] figure {
 a[href*="alfalfa"] figure:hover {
   background-position: 0 90px;
   background-color: #1e6c59;
+}
+@media screen and (max-width: 600px) {
+  a[href*="alfalfa"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="alfalfa"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="alfalfa"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-alfalfa {
@@ -1980,8 +2150,6 @@ a[href*="alfalfa"] figure:hover {
 a[href*="trigoverde"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_trigoverde.svg);
   background-color: #3f6728;
   background-position: 0 100px;
@@ -1992,6 +2160,21 @@ a[href*="trigoverde"] figure {
 a[href*="trigoverde"] figure:hover {
   background-position: 0 90px;
   background-color: #3a5f25;
+}
+@media screen and (max-width: 600px) {
+  a[href*="trigoverde"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="trigoverde"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="trigoverde"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-trigoverde {
@@ -2027,8 +2210,6 @@ a[href*="trigoverde"] figure:hover {
 a[href*="algarroba"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_algarroba.svg);
   background-color: #0e0907;
   background-position: 0 100px;
@@ -2039,6 +2220,21 @@ a[href*="algarroba"] figure {
 a[href*="algarroba"] figure:hover {
   background-position: 0 90px;
   background-color: #070504;
+}
+@media screen and (max-width: 600px) {
+  a[href*="algarroba"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="algarroba"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="algarroba"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-algarroba {
@@ -2074,8 +2270,6 @@ a[href*="algarroba"] figure:hover {
 a[href*="cardomariano"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_cardomariano.svg);
   background-color: #9b68a4;
   background-position: 0 100px;
@@ -2086,6 +2280,21 @@ a[href*="cardomariano"] figure {
 a[href*="cardomariano"] figure:hover {
   background-position: 0 90px;
   background-color: #9762a1;
+}
+@media screen and (max-width: 600px) {
+  a[href*="cardomariano"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="cardomariano"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="cardomariano"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-cardomariano {
@@ -2121,8 +2330,6 @@ a[href*="cardomariano"] figure:hover {
 a[href*="linodorado"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_linodorado.svg);
   background-color: #dabe2d;
   background-position: 0 100px;
@@ -2133,6 +2340,21 @@ a[href*="linodorado"] figure {
 a[href*="linodorado"] figure:hover {
   background-position: 0 90px;
   background-color: #d7bb26;
+}
+@media screen and (max-width: 600px) {
+  a[href*="linodorado"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="linodorado"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="linodorado"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-linodorado {
@@ -2168,8 +2390,6 @@ a[href*="linodorado"] figure:hover {
 a[href*="fresa"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_fresa.svg);
   background-color: #c93203;
   background-position: 0 100px;
@@ -2180,6 +2400,21 @@ a[href*="fresa"] figure {
 a[href*="fresa"] figure:hover {
   background-position: 0 90px;
   background-color: #bf2f03;
+}
+@media screen and (max-width: 600px) {
+  a[href*="fresa"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="fresa"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="fresa"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-fresa {
@@ -2215,8 +2450,6 @@ a[href*="fresa"] figure:hover {
 a[href*="coco"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_coco.svg);
   background-color: #6d411e;
   background-position: 0 100px;
@@ -2227,6 +2460,21 @@ a[href*="coco"] figure {
 a[href*="coco"] figure:hover {
   background-position: 0 90px;
   background-color: #653c1b;
+}
+@media screen and (max-width: 600px) {
+  a[href*="coco"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="coco"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="coco"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-coco {
@@ -2262,8 +2510,6 @@ a[href*="coco"] figure:hover {
 a[href*="gymtonic"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_gymtonic.svg);
   background-color: #a7030f;
   background-position: 0 100px;
@@ -2274,6 +2520,21 @@ a[href*="gymtonic"] figure {
 a[href*="gymtonic"] figure:hover {
   background-position: 0 90px;
   background-color: #9d030e;
+}
+@media screen and (max-width: 600px) {
+  a[href*="gymtonic"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="gymtonic"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="gymtonic"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-gymtonic {
@@ -2309,8 +2570,6 @@ a[href*="gymtonic"] figure:hover {
 a[href*="delifiber"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_delifiber.svg);
   background-color: #d5bf00;
   background-position: 0 100px;
@@ -2321,6 +2580,21 @@ a[href*="delifiber"] figure {
 a[href*="delifiber"] figure:hover {
   background-position: 0 90px;
   background-color: #cbb600;
+}
+@media screen and (max-width: 600px) {
+  a[href*="delifiber"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="delifiber"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="delifiber"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-delifiber {
@@ -2356,8 +2630,6 @@ a[href*="delifiber"] figure:hover {
 a[href*="brainshake"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_brainshake.svg);
   background-color: #c08000;
   background-position: 0 100px;
@@ -2368,6 +2640,21 @@ a[href*="brainshake"] figure {
 a[href*="brainshake"] figure:hover {
   background-position: 0 90px;
   background-color: #b57900;
+}
+@media screen and (max-width: 600px) {
+  a[href*="brainshake"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="brainshake"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="brainshake"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-brainshake {
@@ -2403,8 +2690,6 @@ a[href*="brainshake"] figure:hover {
 a[href*="andeanprotein"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_andeanprotein.svg);
   background-color: #2f501d;
   background-position: 0 100px;
@@ -2415,6 +2700,21 @@ a[href*="andeanprotein"] figure {
 a[href*="andeanprotein"] figure:hover {
   background-position: 0 90px;
   background-color: #2b491a;
+}
+@media screen and (max-width: 600px) {
+  a[href*="andeanprotein"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="andeanprotein"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="andeanprotein"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-andeanprotein {
@@ -2450,8 +2750,6 @@ a[href*="andeanprotein"] figure:hover {
 a[href*="macuchino"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_macuchino.svg);
   background-color: #9d793b;
   background-position: 0 100px;
@@ -2462,6 +2760,21 @@ a[href*="macuchino"] figure {
 a[href*="macuchino"] figure:hover {
   background-position: 0 90px;
   background-color: #967338;
+}
+@media screen and (max-width: 600px) {
+  a[href*="macuchino"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="macuchino"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="macuchino"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-macuchino {
@@ -2497,8 +2810,6 @@ a[href*="macuchino"] figure:hover {
 a[href*="bodtox"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_bodtox.svg);
   background-color: #92a92c;
   background-position: 0 100px;
@@ -2509,6 +2820,21 @@ a[href*="bodtox"] figure {
 a[href*="bodtox"] figure:hover {
   background-position: 0 90px;
   background-color: #8ba12a;
+}
+@media screen and (max-width: 600px) {
+  a[href*="bodtox"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="bodtox"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="bodtox"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-bodtox {
@@ -2544,8 +2870,6 @@ a[href*="bodtox"] figure:hover {
 a[href*="royalbreakfast"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_royalbreakfast.svg);
   background-color: #5b120e;
   background-position: 0 100px;
@@ -2556,6 +2880,21 @@ a[href*="royalbreakfast"] figure {
 a[href*="royalbreakfast"] figure:hover {
   background-position: 0 90px;
   background-color: #52100c;
+}
+@media screen and (max-width: 600px) {
+  a[href*="royalbreakfast"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="royalbreakfast"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="royalbreakfast"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-royalbreakfast {
@@ -2591,18 +2930,31 @@ a[href*="royalbreakfast"] figure:hover {
 a[href*="camucao"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding-top: 100px;
-  padding-bottom: 150px;
   background-image: url(assets/img/bg_camucao.svg);
-  background-color: #5b120e;
+  background-color: #763219;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #711611;
+  border: solid 10px #8b3b1d;
 }
 a[href*="camucao"] figure:hover {
   background-position: 0 90px;
-  background-color: #52100c;
+  background-color: #6d2e17;
+}
+@media screen and (max-width: 600px) {
+  a[href*="camucao"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 600px) {
+  a[href*="camucao"] figure {
+    line-height: 295px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  a[href*="camucao"] figure {
+    line-height: 295px;
+  }
 }
 
 .cpt-camucao {
@@ -2614,7 +2966,7 @@ a[href*="camucao"] figure:hover {
 }
 .cpt-camucao .main-post__header {
   background-image: url(assets/img/bg_camucao.svg);
-  background-color: #871a14;
+  background-color: #a04421;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2623,16 +2975,16 @@ a[href*="camucao"] figure:hover {
   background-color: white;
 }
 .cpt-camucao .galeria-fotos__figure a {
-  color: #711611;
+  color: #8b3b1d;
 }
 .cpt-camucao .galeria-fotos__figure a:hover {
-  color: #450d0a;
+  color: #612914;
 }
 .cpt-camucao .galeria-fotos__figure img {
-  background-color: #eb827c;
+  background-color: #ecb6a2;
 }
 .cpt-camucao .galeria-fotos__figure img:hover {
-  background-color: #711611;
+  background-color: #8b3b1d;
 }
 
 img[src$=".svg"] {

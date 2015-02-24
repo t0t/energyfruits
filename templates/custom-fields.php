@@ -683,7 +683,7 @@
       
             <a href="<?php the_permalink(); ?>">
                 <figure>
-                    <figcaption><?php the_title(); ?></figcaption>
+                    <figcaption class="slider__caption"><?php the_title(); ?></figcaption>
                 </figure>
             </a>
       
@@ -718,7 +718,7 @@
       
             <a href="<?php the_permalink(); ?>">
                 <figure>
-                    <figcaption><?php the_title(); ?></figcaption>
+                    <figcaption class="slider__caption"><?php the_title(); ?></figcaption>
                 </figure>
             </a>
       

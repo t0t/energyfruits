@@ -45,9 +45,9 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
 
     		@extend .img--circle;
     		
-    		padding-top: 100px;
+    		// padding-top: 100px;
 
-    		padding-bottom: 150px;
+    		// padding-bottom: 150px;
 
     		background-image: url(#{$image-path}bg_#{$brand}.svg);
 
@@ -67,6 +67,10 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
     			background-color: darken($elcolor, 7%);
 
 	        }
+
+	        @media screen and (max-width:$bp3) { line-height: 295px; }
+	        @media screen and (min-width:$bp3) { line-height: 295px; }
+	        @media screen and (min-width:$bp2) { line-height: 295px; }
     	
     	}
 	}
