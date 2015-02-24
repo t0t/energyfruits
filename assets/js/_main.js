@@ -8,14 +8,20 @@
 
 $(".video-main__iframe").fitVids();
 
+
+
 // Slider
+
+// Get the current slide
+// var currentSlide = $('.slider__btn-next').slick('slickCurrentSlide');
+
 // http://kenwheeler.github.io/slick/
 $('.slider').slick({
 
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    dots: false,
-    speed: 300,
+    // speed: 100,
+    // rtl: false,
+    arrows: true,
+
 
     responsive: [
 
@@ -27,7 +33,10 @@ $('.slider').slick({
 
                 slidesToShow: 4,
                 slidesToScroll: 4,
-                dots: true
+                dots: true,
+                prevArrow: '.slider__btn-prev',
+                nextArrow: '.slider__btn-next'
+
             }
 
         },
@@ -40,7 +49,11 @@ $('.slider').slick({
 
                 slidesToShow: 3,
                 slidesToScroll: 3,
-                dots: true
+                dots: true,
+                arrows: true,
+                prevArrow: '.slider__btn-prev',
+                nextArrow: '.slider__btn-next'
+
             }
 
         },
@@ -53,7 +66,10 @@ $('.slider').slick({
 
                 slidesToShow: 2,
                 slidesToScroll: 2,
-                dots: true
+                dots: true,
+                arrows: true,
+                prevArrow: '.slider__btn-prev',
+                nextArrow: '.slider__btn-next'
             }
 
         },
@@ -64,8 +80,12 @@ $('.slider').slick({
 
             settings: {
 
-            slidesToShow: 1,
-            slidesToScroll: 1
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 8000
 
             }
 

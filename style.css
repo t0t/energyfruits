@@ -472,7 +472,7 @@ th {
   margin-bottom: 20px;
 }
 
-.slider__btn-next::after, .slick-next::after, .slider__btn-prev::before, .slick-prev::before, .aligncenter, .lightbox .lb-image, .lb-cancel, .lb-prev, .lb-next, .lb-data .lb-number, .lb-data .lb-close, hr, figure figcaption, h1 small,
+.slider__btn-next::after, .slider__btn-prev::before, .aligncenter, .lightbox .lb-image, .lb-cancel, .lb-prev, .lb-next, .lb-data .lb-number, .lb-data .lb-close, hr, figure figcaption, h1 small,
 h2 small,
 h3 small {
   display: block;
@@ -892,11 +892,11 @@ article, aside, figure, footer, header, hgroup, nav, section {
   margin-right: auto;
   max-width: 1600px;
   width: 100%;
+  position: relative;
+  z-index: 1;
   padding-top: 0;
   padding-left: 9%;
   padding-right: 9%;
-  position: relative;
-  z-index: 1;
 }
 .slider ul {
   margin: 0;
@@ -1003,11 +1003,11 @@ article, aside, figure, footer, header, hgroup, nav, section {
   border: none;
 }
 
-.slider__btn-next, .slider__btn-prev, .slick-prev, .slick-next {
-  height: 100px;
-  width: 100px;
+.slider__btn-next, .slider__btn-prev {
+  height: 50px;
+  width: 50px;
   position: absolute;
-  top: 18%;
+  top: 45%;
   border-radius: 100%;
   border: none;
   z-index: 100;
@@ -1015,12 +1015,18 @@ article, aside, figure, footer, header, hgroup, nav, section {
   display: none;
 }
 
-.slider__btn-next, .slick-next {
-  right: 0;
+.slick-disabled {
+  -webkit-opacity: 0.2;
+  -moz-opacity: 0.2;
+  opacity: 0.2;
 }
 
-.slider__btn-prev, .slick-prev {
-  left: 0;
+.slider__btn-next {
+  right: 10px;
+}
+
+.slider__btn-prev {
+  left: 10px;
 }
 
 .sliderh1 h1 {
@@ -1042,6 +1048,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
 }
 
 .slider__wrap {
+  position: relative;
   background-color: white;
   padding-bottom: 3%;
 }
@@ -1367,6 +1374,9 @@ body {
   font-size: 1rem;
 }
 
+a[href*="graviola"] {
+  cursor: ew-resize;
+}
 a[href*="graviola"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1427,6 +1437,9 @@ a[href*="graviola"] figure:hover {
   background-color: #7f744c;
 }
 
+a[href*="cacaocriollo"] {
+  cursor: ew-resize;
+}
 a[href*="cacaocriollo"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1487,6 +1500,9 @@ a[href*="cacaocriollo"] figure:hover {
   background-color: #3c1d1d;
 }
 
+a[href*="chlorella"] {
+  cursor: ew-resize;
+}
 a[href*="chlorella"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1547,6 +1563,9 @@ a[href*="chlorella"] figure:hover {
   background-color: #8c7e73;
 }
 
+a[href*="chia"] {
+  cursor: ew-resize;
+}
 a[href*="chia"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1607,6 +1626,9 @@ a[href*="chia"] figure:hover {
   background-color: #8c7e73;
 }
 
+a[href*="amaranto"] {
+  cursor: ew-resize;
+}
 a[href*="amaranto"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1667,6 +1689,9 @@ a[href*="amaranto"] figure:hover {
   background-color: #b12365;
 }
 
+a[href*="spiroulina"] {
+  cursor: ew-resize;
+}
 a[href*="spiroulina"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1727,6 +1752,9 @@ a[href*="spiroulina"] figure:hover {
   background-color: #2e3828;
 }
 
+a[href*="camucamu"] {
+  cursor: ew-resize;
+}
 a[href*="camucamu"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1787,6 +1815,9 @@ a[href*="camucamu"] figure:hover {
   background-color: #65333c;
 }
 
+a[href*="canamo"] {
+  cursor: ew-resize;
+}
 a[href*="canamo"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1847,6 +1878,9 @@ a[href*="canamo"] figure:hover {
   background-color: #00904d;
 }
 
+a[href*="maca"] {
+  cursor: ew-resize;
+}
 a[href*="maca"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1907,6 +1941,9 @@ a[href*="maca"] figure:hover {
   background-color: #ab456c;
 }
 
+a[href*="lucuma"] {
+  cursor: ew-resize;
+}
 a[href*="lucuma"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1967,6 +2004,9 @@ a[href*="lucuma"] figure:hover {
   background-color: #f5b006;
 }
 
+a[href*="stevia"] {
+  cursor: ew-resize;
+}
 a[href*="stevia"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2027,6 +2067,9 @@ a[href*="stevia"] figure:hover {
   background-color: #007b4a;
 }
 
+a[href*="quinoa"] {
+  cursor: ew-resize;
+}
 a[href*="quinoa"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2087,6 +2130,9 @@ a[href*="quinoa"] figure:hover {
   background-color: #c22931;
 }
 
+a[href*="alfalfa"] {
+  cursor: ew-resize;
+}
 a[href*="alfalfa"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2147,6 +2193,9 @@ a[href*="alfalfa"] figure:hover {
   background-color: #268870;
 }
 
+a[href*="trigoverde"] {
+  cursor: ew-resize;
+}
 a[href*="trigoverde"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2207,6 +2256,9 @@ a[href*="trigoverde"] figure:hover {
   background-color: #4a792f;
 }
 
+a[href*="algarroba"] {
+  cursor: ew-resize;
+}
 a[href*="algarroba"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2267,6 +2319,9 @@ a[href*="algarroba"] figure:hover {
   background-color: #1f1410;
 }
 
+a[href*="cardomariano"] {
+  cursor: ew-resize;
+}
 a[href*="cardomariano"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2327,6 +2382,9 @@ a[href*="cardomariano"] figure:hover {
   background-color: #a678ae;
 }
 
+a[href*="linodorado"] {
+  cursor: ew-resize;
+}
 a[href*="linodorado"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2387,6 +2445,9 @@ a[href*="linodorado"] figure:hover {
   background-color: #dec543;
 }
 
+a[href*="fresa"] {
+  cursor: ew-resize;
+}
 a[href*="fresa"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2447,6 +2508,9 @@ a[href*="fresa"] figure:hover {
   background-color: #e23803;
 }
 
+a[href*="coco"] {
+  cursor: ew-resize;
+}
 a[href*="coco"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2507,6 +2571,9 @@ a[href*="coco"] figure:hover {
   background-color: #814d23;
 }
 
+a[href*="gymtonic"] {
+  cursor: ew-resize;
+}
 a[href*="gymtonic"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2567,6 +2634,9 @@ a[href*="gymtonic"] figure:hover {
   background-color: #c00411;
 }
 
+a[href*="delifiber"] {
+  cursor: ew-resize;
+}
 a[href*="delifiber"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2627,6 +2697,9 @@ a[href*="delifiber"] figure:hover {
   background-color: #efd600;
 }
 
+a[href*="brainshake"] {
+  cursor: ew-resize;
+}
 a[href*="brainshake"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2687,6 +2760,9 @@ a[href*="brainshake"] figure:hover {
   background-color: #d99100;
 }
 
+a[href*="andeanprotein"] {
+  cursor: ew-resize;
+}
 a[href*="andeanprotein"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2747,6 +2823,9 @@ a[href*="andeanprotein"] figure:hover {
   background-color: #3a6324;
 }
 
+a[href*="macuchino"] {
+  cursor: ew-resize;
+}
 a[href*="macuchino"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2807,6 +2886,9 @@ a[href*="macuchino"] figure:hover {
   background-color: #b08742;
 }
 
+a[href*="bodtox"] {
+  cursor: ew-resize;
+}
 a[href*="bodtox"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2867,6 +2949,9 @@ a[href*="bodtox"] figure:hover {
   background-color: #a3bd31;
 }
 
+a[href*="royalbreakfast"] {
+  cursor: ew-resize;
+}
 a[href*="royalbreakfast"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2927,6 +3012,9 @@ a[href*="royalbreakfast"] figure:hover {
   background-color: #711611;
 }
 
+a[href*="camucao"] {
+  cursor: ew-resize;
+}
 a[href*="camucao"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -3232,7 +3320,7 @@ figure.alignnone {
   font-weight: normal;
   font-style: normal;
 }
-.icon-megaphone, .icon-envelope, .icon-paperclip, .icon-profile-male, .icon-facebook, .icon-logo_sf2, .icon-arrow-right2, .slider__btn-next, .slick-next, .icon-arrow-left2, .slider__btn-prev, .slick-prev, .icon-arrow-up2, .icon-attachment, .icon-magnifying-glass, .main-footer input[type="submit"], .icon-file-pdf, .icon-download2, .icon-key {
+.icon-megaphone, .icon-envelope, .icon-paperclip, .icon-profile-male, .icon-facebook, .icon-logo_sf2, .icon-arrow-right2, .slider__btn-next, .icon-arrow-left2, .slider__btn-prev, .icon-arrow-up2, .icon-attachment, .icon-magnifying-glass, .main-footer input[type="submit"], .icon-file-pdf, .icon-download2, .icon-key {
   font-family: "icomoon";
   speak: none;
   font-style: normal;
@@ -3288,11 +3376,11 @@ figure.alignnone {
   content: "\ea3a";
 }
 
-.icon-arrow-right2:before, .slider__btn-next:before, .slick-next:before {
+.icon-arrow-right2:before, .slider__btn-next:before {
   content: "\ea3c";
 }
 
-.icon-arrow-left2:before, .slider__btn-prev:before, .slick-prev:before {
+.icon-arrow-left2:before, .slider__btn-prev:before {
   content: "\ea40";
 }
 

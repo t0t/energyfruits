@@ -38,6 +38,8 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
     $elcolor: nth($brand_colors, $i);
 	
 	a[href*="#{$brand}"] {
+		
+		cursor: ew-resize;
 
     	figure {
 

@@ -691,6 +691,9 @@
     <?php wp_reset_postdata(); ?>
         
     </div>
+
+    <button type="button" data-role="none" class="slider__btn-prev" style="display: block;"></button>
+    <button type="button" data-role="none" class="slider__btn-next" style="display: block;"></button>
   
     </section>
 
@@ -726,6 +729,9 @@
     <?php wp_reset_postdata(); ?>
         
     </div>
+
+    <button type="button" data-role="none" class="slider__btn-prev" style="display: block;"></button>
+    <button type="button" data-role="none" class="slider__btn-next" style="display: block;"></button>
   
     </section>
 

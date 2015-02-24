@@ -2,12 +2,12 @@
 .slider {
 
 	@include max-width($bp0 - ($paddingbase * 10));
+	position: relative;
 	// height: 500px;
+	z-index: 1;
 	padding-top: 0;
 	padding-left: $gutterwidth*3;
 	padding-right: $gutterwidth*3;
-	position: relative;
-	z-index: 1;
 	// background-color: $background-alt;
 	// @include background-image(bg_top_main,100%,no-repeat,svg);
 
@@ -220,11 +220,11 @@
 }
 
 
-.slider__btn-next, .slider__btn-prev, .slick-prev, .slick-next {
-	height: 100px;
-	width: 100px;
+.slider__btn-next, .slider__btn-prev {
+	height: 50px;
+	width: 50px;
 	position: absolute;
-	top: $gutterwidth*6;
+	top: 45%;
 	border-radius: 100%;
 	border: none;
 	z-index: 100;
@@ -232,10 +232,13 @@
 	display: none;
 }
 
+.slick-disabled {
+	@include opacity(.2);
+}
 
-.slider__btn-next, .slick-next {
+.slider__btn-next {
 
-	right: 0;
+	right: 10px;
 	
 	@extend .icon-arrow-right2;
 
@@ -247,9 +250,9 @@
 
 }
 
-.slider__btn-prev, .slick-prev {
+.slider__btn-prev{
 
-	left: 0;
+	left: 10px;
 
 	@extend .icon-arrow-left2;
 
@@ -294,6 +297,7 @@
 
 .slider__wrap {
 	
+	position: relative;
 	background-color: $white;
 	padding-bottom: $gutterwidth;
 	
