@@ -452,7 +452,7 @@
 
 
 
-                
+
 
                 </div>
                 <!-- /main post content -->
@@ -681,42 +681,11 @@
 
     <?php while ($loop->have_posts()) : $loop->the_post(); ?>
       
-        <article>
-
-        <? if ( has_post_thumbnail() ) { ?>
-
             <a href="<?php the_permalink(); ?>">
-
                 <figure>
-
-                    <?php the_post_thumbnail('thumbnail'); ?>
-                    <figcaption class="slider__caption">
-
-                        <span class="slider__title"><?php the_title(); ?></span>
-
-                    </figcaption>
-
+                    <figcaption><?php the_title(); ?></figcaption>
                 </figure>
-
             </a>
-
-        <?}else {?>
-
-            <a href="<?php the_permalink(); ?>">
-
-                <figure class="slider__figure">
-
-                    <img src="<?php echo get_bloginfo('template_directory');?>/assets/img/logo.svg" alt="logo">
-
-                    <figcaption class="slider__caption"><?php the_title(); ?></figcaption>
-
-                </figure>
-
-            </a>
-        
-        <?}?>
-
-        </article>
       
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
@@ -748,35 +717,9 @@
     <?php while ($loop->have_posts()) : $loop->the_post(); ?>
       
             <a href="<?php the_permalink(); ?>">
-
-        <? if ( has_post_thumbnail() ) { ?>
-
                 <figure>
-
-                    <?php the_post_thumbnail('thumbnail'); ?>
-                    <figcaption class="slider__caption">
-
-                        <span class="slider__title"><?php the_title(); ?></span>
-
-                    </figcaption>
-
+                    <figcaption><?php the_title(); ?></figcaption>
                 </figure>
-
-
-        <?}else {?>
-
-
-                <figure class="slider__figure">
-
-                    <img src="<?php echo get_bloginfo('template_directory');?>/assets/img/logo.svg" alt="logo">
-
-                    <figcaption class="slider__caption"><?php the_title(); ?></figcaption>
-
-                </figure>
-
-        
-        <?}?>
-
             </a>
       
     <?php endwhile; ?>

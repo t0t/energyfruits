@@ -1366,6 +1366,23 @@ body {
   font-size: 1rem;
 }
 
+a[href*="graviola"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_graviola.svg);
+  background-color: #6f6542;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #7f744c;
+}
+a[href*="graviola"] figure:hover {
+  background-position: 0 90px;
+  background-color: #69603f;
+}
+
 .cpt-graviola {
   color: gray;
 }
@@ -1394,6 +1411,23 @@ body {
 }
 .cpt-graviola .galeria-fotos__figure img:hover {
   background-color: #7f744c;
+}
+
+a[href*="cacaocriollo"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_cacaocriollo.svg);
+  background-color: #2b1515;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #3c1d1d;
+}
+a[href*="cacaocriollo"] figure:hover {
+  background-position: 0 90px;
+  background-color: #241111;
 }
 
 .cpt-cacaocriollo {
@@ -1426,6 +1460,23 @@ body {
   background-color: #3c1d1d;
 }
 
+a[href*="chlorella"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_chlorella.svg);
+  background-color: #7e7167;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #8c7e73;
+}
+a[href*="chlorella"] figure:hover {
+  background-position: 0 90px;
+  background-color: #786c63;
+}
+
 .cpt-chlorella {
   color: gray;
 }
@@ -1454,6 +1505,23 @@ body {
 }
 .cpt-chlorella .galeria-fotos__figure img:hover {
   background-color: #8c7e73;
+}
+
+a[href*="chia"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_chia.svg);
+  background-color: #7e7167;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #8c7e73;
+}
+a[href*="chia"] figure:hover {
+  background-position: 0 90px;
+  background-color: #786c63;
 }
 
 .cpt-chia {
@@ -1486,6 +1554,23 @@ body {
   background-color: #8c7e73;
 }
 
+a[href*="amaranto"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_amaranto.svg);
+  background-color: #9c1f59;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #b12365;
+}
+a[href*="amaranto"] figure:hover {
+  background-position: 0 90px;
+  background-color: #931d54;
+}
+
 .cpt-amaranto {
   color: gray;
 }
@@ -1514,6 +1599,23 @@ body {
 }
 .cpt-amaranto .galeria-fotos__figure img:hover {
   background-color: #b12365;
+}
+
+a[href*="spiroulina"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_spiroulina.svg);
+  background-color: #22291d;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #2e3828;
+}
+a[href*="spiroulina"] figure:hover {
+  background-position: 0 90px;
+  background-color: #1d2319;
 }
 
 .cpt-spiroulina {
@@ -1546,6 +1648,23 @@ body {
   background-color: #2e3828;
 }
 
+a[href*="camucamu"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_camucamu.svg);
+  background-color: #542a32;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #65333c;
+}
+a[href*="camucamu"] figure:hover {
+  background-position: 0 90px;
+  background-color: #4d272e;
+}
+
 .cpt-camucamu {
   color: gray;
 }
@@ -1574,6 +1693,23 @@ body {
 }
 .cpt-camucamu .galeria-fotos__figure img:hover {
   background-color: #65333c;
+}
+
+a[href*="canamo"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_canamo.svg);
+  background-color: #00763f;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #00904d;
+}
+a[href*="canamo"] figure:hover {
+  background-position: 0 90px;
+  background-color: #006c3a;
 }
 
 .cpt-canamo {
@@ -1606,6 +1742,23 @@ body {
   background-color: #00904d;
 }
 
+a[href*="maca"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_maca.svg);
+  background-color: #993e61;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #ab456c;
+}
+a[href*="maca"] figure:hover {
+  background-position: 0 90px;
+  background-color: #923b5c;
+}
+
 .cpt-maca {
   color: gray;
 }
@@ -1634,6 +1787,23 @@ body {
 }
 .cpt-maca .galeria-fotos__figure img:hover {
   background-color: #ab456c;
+}
+
+a[href*="lucuma"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_lucuma.svg);
+  background-color: #dc9e05;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #f5b006;
+}
+a[href*="lucuma"] figure:hover {
+  background-position: 0 90px;
+  background-color: #d29705;
 }
 
 .cpt-lucuma {
@@ -1666,6 +1836,23 @@ body {
   background-color: #f5b006;
 }
 
+a[href*="stevia"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_stevia.svg);
+  background-color: #00623b;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #007b4a;
+}
+a[href*="stevia"] figure:hover {
+  background-position: 0 90px;
+  background-color: #005735;
+}
+
 .cpt-stevia {
   color: gray;
 }
@@ -1694,6 +1881,23 @@ body {
 }
 .cpt-stevia .galeria-fotos__figure img:hover {
   background-color: #007b4a;
+}
+
+a[href*="quinoa"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_quinoa.svg);
+  background-color: #ad252c;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #c22931;
+}
+a[href*="quinoa"] figure:hover {
+  background-position: 0 90px;
+  background-color: #a5232a;
 }
 
 .cpt-quinoa {
@@ -1726,6 +1930,23 @@ body {
   background-color: #c22931;
 }
 
+a[href*="alfalfa"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_alfalfa.svg);
+  background-color: #207460;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #268870;
+}
+a[href*="alfalfa"] figure:hover {
+  background-position: 0 90px;
+  background-color: #1e6c59;
+}
+
 .cpt-alfalfa {
   color: gray;
 }
@@ -1754,6 +1975,23 @@ body {
 }
 .cpt-alfalfa .galeria-fotos__figure img:hover {
   background-color: #268870;
+}
+
+a[href*="trigoverde"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_trigoverde.svg);
+  background-color: #3f6728;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #4a792f;
+}
+a[href*="trigoverde"] figure:hover {
+  background-position: 0 90px;
+  background-color: #3a5f25;
 }
 
 .cpt-trigoverde {
@@ -1786,6 +2024,23 @@ body {
   background-color: #4a792f;
 }
 
+a[href*="algarroba"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_algarroba.svg);
+  background-color: #0e0907;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #1f1410;
+}
+a[href*="algarroba"] figure:hover {
+  background-position: 0 90px;
+  background-color: #070504;
+}
+
 .cpt-algarroba {
   color: gray;
 }
@@ -1814,6 +2069,23 @@ body {
 }
 .cpt-algarroba .galeria-fotos__figure img:hover {
   background-color: #1f1410;
+}
+
+a[href*="cardomariano"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_cardomariano.svg);
+  background-color: #9b68a4;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #a678ae;
+}
+a[href*="cardomariano"] figure:hover {
+  background-position: 0 90px;
+  background-color: #9762a1;
 }
 
 .cpt-cardomariano {
@@ -1846,6 +2118,23 @@ body {
   background-color: #a678ae;
 }
 
+a[href*="linodorado"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_linodorado.svg);
+  background-color: #dabe2d;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #dec543;
+}
+a[href*="linodorado"] figure:hover {
+  background-position: 0 90px;
+  background-color: #d7bb26;
+}
+
 .cpt-linodorado {
   color: gray;
 }
@@ -1874,6 +2163,23 @@ body {
 }
 .cpt-linodorado .galeria-fotos__figure img:hover {
   background-color: #dec543;
+}
+
+a[href*="fresa"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_fresa.svg);
+  background-color: #c93203;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #e23803;
+}
+a[href*="fresa"] figure:hover {
+  background-position: 0 90px;
+  background-color: #bf2f03;
 }
 
 .cpt-fresa {
@@ -1906,6 +2212,23 @@ body {
   background-color: #e23803;
 }
 
+a[href*="coco"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_coco.svg);
+  background-color: #6d411e;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #814d23;
+}
+a[href*="coco"] figure:hover {
+  background-position: 0 90px;
+  background-color: #653c1b;
+}
+
 .cpt-coco {
   color: gray;
 }
@@ -1934,6 +2257,23 @@ body {
 }
 .cpt-coco .galeria-fotos__figure img:hover {
   background-color: #814d23;
+}
+
+a[href*="gymtonic"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_gymtonic.svg);
+  background-color: #a7030f;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #c00411;
+}
+a[href*="gymtonic"] figure:hover {
+  background-position: 0 90px;
+  background-color: #9d030e;
 }
 
 .cpt-gymtonic {
@@ -1966,6 +2306,23 @@ body {
   background-color: #c00411;
 }
 
+a[href*="delifiber"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_delifiber.svg);
+  background-color: #d5bf00;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #efd600;
+}
+a[href*="delifiber"] figure:hover {
+  background-position: 0 90px;
+  background-color: #cbb600;
+}
+
 .cpt-delifiber {
   color: gray;
 }
@@ -1994,6 +2351,23 @@ body {
 }
 .cpt-delifiber .galeria-fotos__figure img:hover {
   background-color: #efd600;
+}
+
+a[href*="brainshake"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_brainshake.svg);
+  background-color: #c08000;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #d99100;
+}
+a[href*="brainshake"] figure:hover {
+  background-position: 0 90px;
+  background-color: #b57900;
 }
 
 .cpt-brainshake {
@@ -2026,6 +2400,23 @@ body {
   background-color: #d99100;
 }
 
+a[href*="andeanprotein"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_andeanprotein.svg);
+  background-color: #2f501d;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #3a6324;
+}
+a[href*="andeanprotein"] figure:hover {
+  background-position: 0 90px;
+  background-color: #2b491a;
+}
+
 .cpt-andeanprotein {
   color: gray;
 }
@@ -2054,6 +2445,23 @@ body {
 }
 .cpt-andeanprotein .galeria-fotos__figure img:hover {
   background-color: #3a6324;
+}
+
+a[href*="macuchino"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_macuchino.svg);
+  background-color: #9d793b;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #b08742;
+}
+a[href*="macuchino"] figure:hover {
+  background-position: 0 90px;
+  background-color: #967338;
 }
 
 .cpt-macuchino {
@@ -2086,6 +2494,23 @@ body {
   background-color: #b08742;
 }
 
+a[href*="bodtox"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_bodtox.svg);
+  background-color: #92a92c;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #a3bd31;
+}
+a[href*="bodtox"] figure:hover {
+  background-position: 0 90px;
+  background-color: #8ba12a;
+}
+
 .cpt-bodtox {
   color: gray;
 }
@@ -2116,6 +2541,23 @@ body {
   background-color: #a3bd31;
 }
 
+a[href*="royalbreakfast"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_royalbreakfast.svg);
+  background-color: #5b120e;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #711611;
+}
+a[href*="royalbreakfast"] figure:hover {
+  background-position: 0 90px;
+  background-color: #52100c;
+}
+
 .cpt-royalbreakfast {
   color: gray;
 }
@@ -2144,6 +2586,23 @@ body {
 }
 .cpt-royalbreakfast .galeria-fotos__figure img:hover {
   background-color: #711611;
+}
+
+a[href*="camucao"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(assets/img/bg_camucao.svg);
+  background-color: #5b120e;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #711611;
+}
+a[href*="camucao"] figure:hover {
+  background-position: 0 90px;
+  background-color: #52100c;
 }
 
 .cpt-camucao {
@@ -2976,7 +3435,7 @@ hr {
   border-radius: 20px;
 }
 
-.img--circle {
+.img--circle, a[href*="graviola"] figure, a[href*="cacaocriollo"] figure, a[href*="chlorella"] figure, a[href*="chia"] figure, a[href*="amaranto"] figure, a[href*="spiroulina"] figure, a[href*="camucamu"] figure, a[href*="canamo"] figure, a[href*="maca"] figure, a[href*="lucuma"] figure, a[href*="stevia"] figure, a[href*="quinoa"] figure, a[href*="alfalfa"] figure, a[href*="trigoverde"] figure, a[href*="algarroba"] figure, a[href*="cardomariano"] figure, a[href*="linodorado"] figure, a[href*="fresa"] figure, a[href*="coco"] figure, a[href*="gymtonic"] figure, a[href*="delifiber"] figure, a[href*="brainshake"] figure, a[href*="andeanprotein"] figure, a[href*="macuchino"] figure, a[href*="bodtox"] figure, a[href*="royalbreakfast"] figure, a[href*="camucao"] figure {
   border-radius: 100%;
 }
 

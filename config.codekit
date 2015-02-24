@@ -2531,7 +2531,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/fondo_slider1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/fondo_slider2.jpg": {
 		"fileType": 16384,
@@ -2542,7 +2542,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/fondo_slider2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/IcoMoon - 13 Icons\/demo-files\/demo.css": {
 		"fileType": 16,

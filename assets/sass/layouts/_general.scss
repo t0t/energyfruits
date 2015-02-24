@@ -36,7 +36,41 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
 
     $i: index($brand_names, $brand);
     $elcolor: nth($brand_colors, $i);
+	
+	a[href*="#{$brand}"] {
 
+    	figure {
+
+    		@include transition(.3s);
+
+    		@extend .img--circle;
+    		
+    		padding-top: 100px;
+
+    		padding-bottom: 150px;
+
+    		background-image: url(#{$image-path}bg_#{$brand}.svg);
+
+    		background-color: darken($elcolor, 5%);
+
+	        background-position: 0 100px;
+
+	        background-repeat: no-repeat;
+
+	        background-size: contain;
+
+	        border: solid 10px $elcolor;
+
+	        &:hover {
+	        	
+	        	background-position: 0 90px;
+    			background-color: darken($elcolor, 7%);
+
+	        }
+    	
+    	}
+	}
+    
     .cpt-#{$brand} {
 
         color: $grey;
