@@ -7,26 +7,19 @@
 
     <header>
         
-        <?php //the_category(''); ?>
-        <?php echo get_the_category(); ?>
+        <?php //echo get_the_category(); ?>
         
         <h1> 
+            
+            <?php the_category(''); ?>
 
             <small class="altheader">
+
                 <?php the_time('F Y'); ?> 
                     
             </small>
 
         </h1>
-
-         <select name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
-
-                    <option value="">
-                        <?php echo esc_attr( __( 'Archivo' ) ); ?>
-                    </option>
-
-                    <?php wp_get_archives( array( 'type' => 'monthly', 'format' => 'option', 'show_post_count' => 1 ) ); ?>
-                    </select>
 
     </header>
 
@@ -40,7 +33,7 @@
 
     </header>
 
-<?php elseif ( is_page() ) : ?>
+<?php elseif ( is_page() && !is_page('home') ) : ?>
 
     <header>
 
@@ -98,7 +91,5 @@
     <h1>Pagina no encontrada!</h1>
 
 <?php else : ?>
-
-    <p>ups, no titulo!</p>  
-
+    <header></header>
 <?php endif; ?>

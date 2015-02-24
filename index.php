@@ -2,11 +2,11 @@
 
 <main class="main__content" role="main">
 
-        <section>
+	<section>
 
-            <?php get_template_part( 'templates/content' ); ?>
+		<?php get_template_part( 'templates/content' ); ?>
 
-        </section>
+	</section>
 
 </main>
 

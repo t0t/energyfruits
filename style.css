@@ -945,15 +945,12 @@ article, aside, figure, footer, header, hgroup, nav, section {
   position: relative;
 }
 .slider__figure img {
-  border-radius: 100%;
-  width: 100px;
-  min-height: 100px;
   margin: 0;
 }
 
 .slider__meta-date {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
   line-height: 0.8em;
   letter-spacing: 0;
 }
@@ -968,6 +965,10 @@ article, aside, figure, footer, header, hgroup, nav, section {
   font-size: 1.5rem;
   font-style: normal;
   letter-spacing: -1px;
+}
+
+.slider__caption-post {
+  color: #317549;
 }
 
 .slider__btn {
@@ -1014,6 +1015,12 @@ article, aside, figure, footer, header, hgroup, nav, section {
   background-color: rgba(0, 0, 0, 0.1);
   display: none;
 }
+.slider__btn-next:hover, .slider__btn-prev:hover {
+  background-color: #f0730b;
+}
+.slider__btn-next:focus, .slider__btn-prev:focus {
+  outline: none;
+}
 
 .slick-disabled {
   -webkit-opacity: 0.2;
@@ -1051,6 +1058,44 @@ article, aside, figure, footer, header, hgroup, nav, section {
   position: relative;
   background-color: white;
   padding-bottom: 3%;
+}
+.slider__wrap::before {
+  content: "";
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  top: -20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(assets/img/bg_ondas_top.svg);
+}
+.no-svg .slider__wrap::before {
+  background-image: url(assets/img/bg_ondas_top.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .no-svg .slider__wrap::before {
+    background-image: url(assets/img/bg_ondas_top@2x.png);
+  }
+}
+.slider__wrap::after {
+  content: "";
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(assets/img/bg_ondas_bottom.svg);
+}
+.no-svg .slider__wrap::after {
+  background-image: url(assets/img/bg_ondas_bottom.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .no-svg .slider__wrap::after {
+    background-image: url(assets/img/bg_ondas_bottom@2x.png);
+  }
 }
 
 /* Slider */
@@ -1107,7 +1152,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
 
 .slick-slide {
   float: left;
-  height: auto;
+  margin: 0 20px;
   display: none;
 }
 [dir="ltr"] .slick-slide {
@@ -1137,6 +1182,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
 .slick-dots li button {
   width: 10px;
   height: 10px;
+  margin: 20px;
   border: none;
   color: rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.1);
@@ -1180,6 +1226,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
   margin-right: auto;
   max-width: 1800px;
   width: 100%;
+  margin-top: 6%;
   color: white;
 }
 @media screen and (max-width: 600px) {
@@ -1282,7 +1329,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
   font-size: 0.75rem;
 }
 .main-footer__brand img {
-  width: 100px;
+  width: 150px !important;
   height: auto;
 }
 
@@ -1374,39 +1421,6 @@ body {
   font-size: 1rem;
 }
 
-a[href*="graviola"] {
-  cursor: ew-resize;
-}
-a[href*="graviola"] figure {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  background-image: url(assets/img/bg_graviola.svg);
-  background-color: #6f6542;
-  background-position: 0 100px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: solid 10px #7f744c;
-}
-a[href*="graviola"] figure:hover {
-  background-position: 0 90px;
-  background-color: #69603f;
-}
-@media screen and (max-width: 600px) {
-  a[href*="graviola"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="graviola"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="graviola"] figure {
-    line-height: 295px;
-  }
-}
-
 .cpt-graviola {
   color: gray;
 }
@@ -1436,38 +1450,23 @@ a[href*="graviola"] figure:hover {
 .cpt-graviola .galeria-fotos__figure img:hover {
   background-color: #7f744c;
 }
-
-a[href*="cacaocriollo"] {
+.cpt-graviola a[href*="graviola"] {
   cursor: ew-resize;
 }
-a[href*="cacaocriollo"] figure {
+.cpt-graviola a[href*="graviola"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_cacaocriollo.svg);
-  background-color: #2b1515;
+  background-image: url(assets/img/bg_graviola.svg);
+  background-color: #6f6542;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #3c1d1d;
+  border: solid 10px #7f744c;
+  line-height: 250px;
 }
-a[href*="cacaocriollo"] figure:hover {
+.cpt-graviola a[href*="graviola"] figure:hover {
   background-position: 0 90px;
-  background-color: #241111;
-}
-@media screen and (max-width: 600px) {
-  a[href*="cacaocriollo"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="cacaocriollo"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="cacaocriollo"] figure {
-    line-height: 295px;
-  }
+  background-color: #69603f;
 }
 
 .cpt-cacaocriollo {
@@ -1499,38 +1498,23 @@ a[href*="cacaocriollo"] figure:hover {
 .cpt-cacaocriollo .galeria-fotos__figure img:hover {
   background-color: #3c1d1d;
 }
-
-a[href*="chlorella"] {
+.cpt-cacaocriollo a[href*="cacaocriollo"] {
   cursor: ew-resize;
 }
-a[href*="chlorella"] figure {
+.cpt-cacaocriollo a[href*="cacaocriollo"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_chlorella.svg);
-  background-color: #7e7167;
+  background-image: url(assets/img/bg_cacaocriollo.svg);
+  background-color: #2b1515;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #8c7e73;
+  border: solid 10px #3c1d1d;
+  line-height: 250px;
 }
-a[href*="chlorella"] figure:hover {
+.cpt-cacaocriollo a[href*="cacaocriollo"] figure:hover {
   background-position: 0 90px;
-  background-color: #786c63;
-}
-@media screen and (max-width: 600px) {
-  a[href*="chlorella"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="chlorella"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="chlorella"] figure {
-    line-height: 295px;
-  }
+  background-color: #241111;
 }
 
 .cpt-chlorella {
@@ -1562,38 +1546,23 @@ a[href*="chlorella"] figure:hover {
 .cpt-chlorella .galeria-fotos__figure img:hover {
   background-color: #8c7e73;
 }
-
-a[href*="chia"] {
+.cpt-chlorella a[href*="chlorella"] {
   cursor: ew-resize;
 }
-a[href*="chia"] figure {
+.cpt-chlorella a[href*="chlorella"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_chia.svg);
+  background-image: url(assets/img/bg_chlorella.svg);
   background-color: #7e7167;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
   border: solid 10px #8c7e73;
+  line-height: 250px;
 }
-a[href*="chia"] figure:hover {
+.cpt-chlorella a[href*="chlorella"] figure:hover {
   background-position: 0 90px;
   background-color: #786c63;
-}
-@media screen and (max-width: 600px) {
-  a[href*="chia"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="chia"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="chia"] figure {
-    line-height: 295px;
-  }
 }
 
 .cpt-chia {
@@ -1625,38 +1594,23 @@ a[href*="chia"] figure:hover {
 .cpt-chia .galeria-fotos__figure img:hover {
   background-color: #8c7e73;
 }
-
-a[href*="amaranto"] {
+.cpt-chia a[href*="chia"] {
   cursor: ew-resize;
 }
-a[href*="amaranto"] figure {
+.cpt-chia a[href*="chia"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_amaranto.svg);
-  background-color: #9c1f59;
+  background-image: url(assets/img/bg_chia.svg);
+  background-color: #7e7167;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #b12365;
+  border: solid 10px #8c7e73;
+  line-height: 250px;
 }
-a[href*="amaranto"] figure:hover {
+.cpt-chia a[href*="chia"] figure:hover {
   background-position: 0 90px;
-  background-color: #931d54;
-}
-@media screen and (max-width: 600px) {
-  a[href*="amaranto"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="amaranto"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="amaranto"] figure {
-    line-height: 295px;
-  }
+  background-color: #786c63;
 }
 
 .cpt-amaranto {
@@ -1688,38 +1642,23 @@ a[href*="amaranto"] figure:hover {
 .cpt-amaranto .galeria-fotos__figure img:hover {
   background-color: #b12365;
 }
-
-a[href*="spiroulina"] {
+.cpt-amaranto a[href*="amaranto"] {
   cursor: ew-resize;
 }
-a[href*="spiroulina"] figure {
+.cpt-amaranto a[href*="amaranto"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_spiroulina.svg);
-  background-color: #22291d;
+  background-image: url(assets/img/bg_amaranto.svg);
+  background-color: #9c1f59;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #2e3828;
+  border: solid 10px #b12365;
+  line-height: 250px;
 }
-a[href*="spiroulina"] figure:hover {
+.cpt-amaranto a[href*="amaranto"] figure:hover {
   background-position: 0 90px;
-  background-color: #1d2319;
-}
-@media screen and (max-width: 600px) {
-  a[href*="spiroulina"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="spiroulina"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="spiroulina"] figure {
-    line-height: 295px;
-  }
+  background-color: #931d54;
 }
 
 .cpt-spiroulina {
@@ -1751,38 +1690,23 @@ a[href*="spiroulina"] figure:hover {
 .cpt-spiroulina .galeria-fotos__figure img:hover {
   background-color: #2e3828;
 }
-
-a[href*="camucamu"] {
+.cpt-spiroulina a[href*="spiroulina"] {
   cursor: ew-resize;
 }
-a[href*="camucamu"] figure {
+.cpt-spiroulina a[href*="spiroulina"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_camucamu.svg);
-  background-color: #542a32;
+  background-image: url(assets/img/bg_spiroulina.svg);
+  background-color: #22291d;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #65333c;
+  border: solid 10px #2e3828;
+  line-height: 250px;
 }
-a[href*="camucamu"] figure:hover {
+.cpt-spiroulina a[href*="spiroulina"] figure:hover {
   background-position: 0 90px;
-  background-color: #4d272e;
-}
-@media screen and (max-width: 600px) {
-  a[href*="camucamu"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="camucamu"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="camucamu"] figure {
-    line-height: 295px;
-  }
+  background-color: #1d2319;
 }
 
 .cpt-camucamu {
@@ -1814,38 +1738,23 @@ a[href*="camucamu"] figure:hover {
 .cpt-camucamu .galeria-fotos__figure img:hover {
   background-color: #65333c;
 }
-
-a[href*="canamo"] {
+.cpt-camucamu a[href*="camucamu"] {
   cursor: ew-resize;
 }
-a[href*="canamo"] figure {
+.cpt-camucamu a[href*="camucamu"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_canamo.svg);
-  background-color: #00763f;
+  background-image: url(assets/img/bg_camucamu.svg);
+  background-color: #542a32;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #00904d;
+  border: solid 10px #65333c;
+  line-height: 250px;
 }
-a[href*="canamo"] figure:hover {
+.cpt-camucamu a[href*="camucamu"] figure:hover {
   background-position: 0 90px;
-  background-color: #006c3a;
-}
-@media screen and (max-width: 600px) {
-  a[href*="canamo"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="canamo"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="canamo"] figure {
-    line-height: 295px;
-  }
+  background-color: #4d272e;
 }
 
 .cpt-canamo {
@@ -1877,38 +1786,23 @@ a[href*="canamo"] figure:hover {
 .cpt-canamo .galeria-fotos__figure img:hover {
   background-color: #00904d;
 }
-
-a[href*="maca"] {
+.cpt-canamo a[href*="canamo"] {
   cursor: ew-resize;
 }
-a[href*="maca"] figure {
+.cpt-canamo a[href*="canamo"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_maca.svg);
-  background-color: #993e61;
+  background-image: url(assets/img/bg_canamo.svg);
+  background-color: #00763f;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #ab456c;
+  border: solid 10px #00904d;
+  line-height: 250px;
 }
-a[href*="maca"] figure:hover {
+.cpt-canamo a[href*="canamo"] figure:hover {
   background-position: 0 90px;
-  background-color: #923b5c;
-}
-@media screen and (max-width: 600px) {
-  a[href*="maca"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="maca"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="maca"] figure {
-    line-height: 295px;
-  }
+  background-color: #006c3a;
 }
 
 .cpt-maca {
@@ -1940,38 +1834,23 @@ a[href*="maca"] figure:hover {
 .cpt-maca .galeria-fotos__figure img:hover {
   background-color: #ab456c;
 }
-
-a[href*="lucuma"] {
+.cpt-maca a[href*="maca"] {
   cursor: ew-resize;
 }
-a[href*="lucuma"] figure {
+.cpt-maca a[href*="maca"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_lucuma.svg);
-  background-color: #dc9e05;
+  background-image: url(assets/img/bg_maca.svg);
+  background-color: #993e61;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #f5b006;
+  border: solid 10px #ab456c;
+  line-height: 250px;
 }
-a[href*="lucuma"] figure:hover {
+.cpt-maca a[href*="maca"] figure:hover {
   background-position: 0 90px;
-  background-color: #d29705;
-}
-@media screen and (max-width: 600px) {
-  a[href*="lucuma"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="lucuma"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="lucuma"] figure {
-    line-height: 295px;
-  }
+  background-color: #923b5c;
 }
 
 .cpt-lucuma {
@@ -2003,38 +1882,23 @@ a[href*="lucuma"] figure:hover {
 .cpt-lucuma .galeria-fotos__figure img:hover {
   background-color: #f5b006;
 }
-
-a[href*="stevia"] {
+.cpt-lucuma a[href*="lucuma"] {
   cursor: ew-resize;
 }
-a[href*="stevia"] figure {
+.cpt-lucuma a[href*="lucuma"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_stevia.svg);
-  background-color: #00623b;
+  background-image: url(assets/img/bg_lucuma.svg);
+  background-color: #dc9e05;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #007b4a;
+  border: solid 10px #f5b006;
+  line-height: 250px;
 }
-a[href*="stevia"] figure:hover {
+.cpt-lucuma a[href*="lucuma"] figure:hover {
   background-position: 0 90px;
-  background-color: #005735;
-}
-@media screen and (max-width: 600px) {
-  a[href*="stevia"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="stevia"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="stevia"] figure {
-    line-height: 295px;
-  }
+  background-color: #d29705;
 }
 
 .cpt-stevia {
@@ -2066,38 +1930,23 @@ a[href*="stevia"] figure:hover {
 .cpt-stevia .galeria-fotos__figure img:hover {
   background-color: #007b4a;
 }
-
-a[href*="quinoa"] {
+.cpt-stevia a[href*="stevia"] {
   cursor: ew-resize;
 }
-a[href*="quinoa"] figure {
+.cpt-stevia a[href*="stevia"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_quinoa.svg);
-  background-color: #ad252c;
+  background-image: url(assets/img/bg_stevia.svg);
+  background-color: #00623b;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #c22931;
+  border: solid 10px #007b4a;
+  line-height: 250px;
 }
-a[href*="quinoa"] figure:hover {
+.cpt-stevia a[href*="stevia"] figure:hover {
   background-position: 0 90px;
-  background-color: #a5232a;
-}
-@media screen and (max-width: 600px) {
-  a[href*="quinoa"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="quinoa"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="quinoa"] figure {
-    line-height: 295px;
-  }
+  background-color: #005735;
 }
 
 .cpt-quinoa {
@@ -2129,38 +1978,23 @@ a[href*="quinoa"] figure:hover {
 .cpt-quinoa .galeria-fotos__figure img:hover {
   background-color: #c22931;
 }
-
-a[href*="alfalfa"] {
+.cpt-quinoa a[href*="quinoa"] {
   cursor: ew-resize;
 }
-a[href*="alfalfa"] figure {
+.cpt-quinoa a[href*="quinoa"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_alfalfa.svg);
-  background-color: #207460;
+  background-image: url(assets/img/bg_quinoa.svg);
+  background-color: #ad252c;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #268870;
+  border: solid 10px #c22931;
+  line-height: 250px;
 }
-a[href*="alfalfa"] figure:hover {
+.cpt-quinoa a[href*="quinoa"] figure:hover {
   background-position: 0 90px;
-  background-color: #1e6c59;
-}
-@media screen and (max-width: 600px) {
-  a[href*="alfalfa"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="alfalfa"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="alfalfa"] figure {
-    line-height: 295px;
-  }
+  background-color: #a5232a;
 }
 
 .cpt-alfalfa {
@@ -2192,38 +2026,23 @@ a[href*="alfalfa"] figure:hover {
 .cpt-alfalfa .galeria-fotos__figure img:hover {
   background-color: #268870;
 }
-
-a[href*="trigoverde"] {
+.cpt-alfalfa a[href*="alfalfa"] {
   cursor: ew-resize;
 }
-a[href*="trigoverde"] figure {
+.cpt-alfalfa a[href*="alfalfa"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_trigoverde.svg);
-  background-color: #3f6728;
+  background-image: url(assets/img/bg_alfalfa.svg);
+  background-color: #207460;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #4a792f;
+  border: solid 10px #268870;
+  line-height: 250px;
 }
-a[href*="trigoverde"] figure:hover {
+.cpt-alfalfa a[href*="alfalfa"] figure:hover {
   background-position: 0 90px;
-  background-color: #3a5f25;
-}
-@media screen and (max-width: 600px) {
-  a[href*="trigoverde"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="trigoverde"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="trigoverde"] figure {
-    line-height: 295px;
-  }
+  background-color: #1e6c59;
 }
 
 .cpt-trigoverde {
@@ -2255,38 +2074,23 @@ a[href*="trigoverde"] figure:hover {
 .cpt-trigoverde .galeria-fotos__figure img:hover {
   background-color: #4a792f;
 }
-
-a[href*="algarroba"] {
+.cpt-trigoverde a[href*="trigoverde"] {
   cursor: ew-resize;
 }
-a[href*="algarroba"] figure {
+.cpt-trigoverde a[href*="trigoverde"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_algarroba.svg);
-  background-color: #0e0907;
+  background-image: url(assets/img/bg_trigoverde.svg);
+  background-color: #3f6728;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #1f1410;
+  border: solid 10px #4a792f;
+  line-height: 250px;
 }
-a[href*="algarroba"] figure:hover {
+.cpt-trigoverde a[href*="trigoverde"] figure:hover {
   background-position: 0 90px;
-  background-color: #070504;
-}
-@media screen and (max-width: 600px) {
-  a[href*="algarroba"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="algarroba"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="algarroba"] figure {
-    line-height: 295px;
-  }
+  background-color: #3a5f25;
 }
 
 .cpt-algarroba {
@@ -2318,38 +2122,23 @@ a[href*="algarroba"] figure:hover {
 .cpt-algarroba .galeria-fotos__figure img:hover {
   background-color: #1f1410;
 }
-
-a[href*="cardomariano"] {
+.cpt-algarroba a[href*="algarroba"] {
   cursor: ew-resize;
 }
-a[href*="cardomariano"] figure {
+.cpt-algarroba a[href*="algarroba"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_cardomariano.svg);
-  background-color: #9b68a4;
+  background-image: url(assets/img/bg_algarroba.svg);
+  background-color: #0e0907;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #a678ae;
+  border: solid 10px #1f1410;
+  line-height: 250px;
 }
-a[href*="cardomariano"] figure:hover {
+.cpt-algarroba a[href*="algarroba"] figure:hover {
   background-position: 0 90px;
-  background-color: #9762a1;
-}
-@media screen and (max-width: 600px) {
-  a[href*="cardomariano"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="cardomariano"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="cardomariano"] figure {
-    line-height: 295px;
-  }
+  background-color: #070504;
 }
 
 .cpt-cardomariano {
@@ -2381,38 +2170,23 @@ a[href*="cardomariano"] figure:hover {
 .cpt-cardomariano .galeria-fotos__figure img:hover {
   background-color: #a678ae;
 }
-
-a[href*="linodorado"] {
+.cpt-cardomariano a[href*="cardomariano"] {
   cursor: ew-resize;
 }
-a[href*="linodorado"] figure {
+.cpt-cardomariano a[href*="cardomariano"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_linodorado.svg);
-  background-color: #dabe2d;
+  background-image: url(assets/img/bg_cardomariano.svg);
+  background-color: #9b68a4;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #dec543;
+  border: solid 10px #a678ae;
+  line-height: 250px;
 }
-a[href*="linodorado"] figure:hover {
+.cpt-cardomariano a[href*="cardomariano"] figure:hover {
   background-position: 0 90px;
-  background-color: #d7bb26;
-}
-@media screen and (max-width: 600px) {
-  a[href*="linodorado"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="linodorado"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="linodorado"] figure {
-    line-height: 295px;
-  }
+  background-color: #9762a1;
 }
 
 .cpt-linodorado {
@@ -2444,38 +2218,23 @@ a[href*="linodorado"] figure:hover {
 .cpt-linodorado .galeria-fotos__figure img:hover {
   background-color: #dec543;
 }
-
-a[href*="fresa"] {
+.cpt-linodorado a[href*="linodorado"] {
   cursor: ew-resize;
 }
-a[href*="fresa"] figure {
+.cpt-linodorado a[href*="linodorado"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_fresa.svg);
-  background-color: #c93203;
+  background-image: url(assets/img/bg_linodorado.svg);
+  background-color: #dabe2d;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #e23803;
+  border: solid 10px #dec543;
+  line-height: 250px;
 }
-a[href*="fresa"] figure:hover {
+.cpt-linodorado a[href*="linodorado"] figure:hover {
   background-position: 0 90px;
-  background-color: #bf2f03;
-}
-@media screen and (max-width: 600px) {
-  a[href*="fresa"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="fresa"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="fresa"] figure {
-    line-height: 295px;
-  }
+  background-color: #d7bb26;
 }
 
 .cpt-fresa {
@@ -2507,38 +2266,23 @@ a[href*="fresa"] figure:hover {
 .cpt-fresa .galeria-fotos__figure img:hover {
   background-color: #e23803;
 }
-
-a[href*="coco"] {
+.cpt-fresa a[href*="fresa"] {
   cursor: ew-resize;
 }
-a[href*="coco"] figure {
+.cpt-fresa a[href*="fresa"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_coco.svg);
-  background-color: #6d411e;
+  background-image: url(assets/img/bg_fresa.svg);
+  background-color: #c93203;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #814d23;
+  border: solid 10px #e23803;
+  line-height: 250px;
 }
-a[href*="coco"] figure:hover {
+.cpt-fresa a[href*="fresa"] figure:hover {
   background-position: 0 90px;
-  background-color: #653c1b;
-}
-@media screen and (max-width: 600px) {
-  a[href*="coco"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="coco"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="coco"] figure {
-    line-height: 295px;
-  }
+  background-color: #bf2f03;
 }
 
 .cpt-coco {
@@ -2570,38 +2314,23 @@ a[href*="coco"] figure:hover {
 .cpt-coco .galeria-fotos__figure img:hover {
   background-color: #814d23;
 }
-
-a[href*="gymtonic"] {
+.cpt-coco a[href*="coco"] {
   cursor: ew-resize;
 }
-a[href*="gymtonic"] figure {
+.cpt-coco a[href*="coco"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_gymtonic.svg);
-  background-color: #a7030f;
+  background-image: url(assets/img/bg_coco.svg);
+  background-color: #6d411e;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #c00411;
+  border: solid 10px #814d23;
+  line-height: 250px;
 }
-a[href*="gymtonic"] figure:hover {
+.cpt-coco a[href*="coco"] figure:hover {
   background-position: 0 90px;
-  background-color: #9d030e;
-}
-@media screen and (max-width: 600px) {
-  a[href*="gymtonic"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="gymtonic"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="gymtonic"] figure {
-    line-height: 295px;
-  }
+  background-color: #653c1b;
 }
 
 .cpt-gymtonic {
@@ -2633,38 +2362,23 @@ a[href*="gymtonic"] figure:hover {
 .cpt-gymtonic .galeria-fotos__figure img:hover {
   background-color: #c00411;
 }
-
-a[href*="delifiber"] {
+.cpt-gymtonic a[href*="gymtonic"] {
   cursor: ew-resize;
 }
-a[href*="delifiber"] figure {
+.cpt-gymtonic a[href*="gymtonic"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_delifiber.svg);
-  background-color: #d5bf00;
+  background-image: url(assets/img/bg_gymtonic.svg);
+  background-color: #a7030f;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #efd600;
+  border: solid 10px #c00411;
+  line-height: 250px;
 }
-a[href*="delifiber"] figure:hover {
+.cpt-gymtonic a[href*="gymtonic"] figure:hover {
   background-position: 0 90px;
-  background-color: #cbb600;
-}
-@media screen and (max-width: 600px) {
-  a[href*="delifiber"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="delifiber"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="delifiber"] figure {
-    line-height: 295px;
-  }
+  background-color: #9d030e;
 }
 
 .cpt-delifiber {
@@ -2696,38 +2410,23 @@ a[href*="delifiber"] figure:hover {
 .cpt-delifiber .galeria-fotos__figure img:hover {
   background-color: #efd600;
 }
-
-a[href*="brainshake"] {
+.cpt-delifiber a[href*="delifiber"] {
   cursor: ew-resize;
 }
-a[href*="brainshake"] figure {
+.cpt-delifiber a[href*="delifiber"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_brainshake.svg);
-  background-color: #c08000;
+  background-image: url(assets/img/bg_delifiber.svg);
+  background-color: #d5bf00;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #d99100;
+  border: solid 10px #efd600;
+  line-height: 250px;
 }
-a[href*="brainshake"] figure:hover {
+.cpt-delifiber a[href*="delifiber"] figure:hover {
   background-position: 0 90px;
-  background-color: #b57900;
-}
-@media screen and (max-width: 600px) {
-  a[href*="brainshake"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="brainshake"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="brainshake"] figure {
-    line-height: 295px;
-  }
+  background-color: #cbb600;
 }
 
 .cpt-brainshake {
@@ -2759,38 +2458,23 @@ a[href*="brainshake"] figure:hover {
 .cpt-brainshake .galeria-fotos__figure img:hover {
   background-color: #d99100;
 }
-
-a[href*="andeanprotein"] {
+.cpt-brainshake a[href*="brainshake"] {
   cursor: ew-resize;
 }
-a[href*="andeanprotein"] figure {
+.cpt-brainshake a[href*="brainshake"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_andeanprotein.svg);
-  background-color: #2f501d;
+  background-image: url(assets/img/bg_brainshake.svg);
+  background-color: #c08000;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #3a6324;
+  border: solid 10px #d99100;
+  line-height: 250px;
 }
-a[href*="andeanprotein"] figure:hover {
+.cpt-brainshake a[href*="brainshake"] figure:hover {
   background-position: 0 90px;
-  background-color: #2b491a;
-}
-@media screen and (max-width: 600px) {
-  a[href*="andeanprotein"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="andeanprotein"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="andeanprotein"] figure {
-    line-height: 295px;
-  }
+  background-color: #b57900;
 }
 
 .cpt-andeanprotein {
@@ -2822,38 +2506,23 @@ a[href*="andeanprotein"] figure:hover {
 .cpt-andeanprotein .galeria-fotos__figure img:hover {
   background-color: #3a6324;
 }
-
-a[href*="macuchino"] {
+.cpt-andeanprotein a[href*="andeanprotein"] {
   cursor: ew-resize;
 }
-a[href*="macuchino"] figure {
+.cpt-andeanprotein a[href*="andeanprotein"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_macuchino.svg);
-  background-color: #9d793b;
+  background-image: url(assets/img/bg_andeanprotein.svg);
+  background-color: #2f501d;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #b08742;
+  border: solid 10px #3a6324;
+  line-height: 250px;
 }
-a[href*="macuchino"] figure:hover {
+.cpt-andeanprotein a[href*="andeanprotein"] figure:hover {
   background-position: 0 90px;
-  background-color: #967338;
-}
-@media screen and (max-width: 600px) {
-  a[href*="macuchino"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="macuchino"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="macuchino"] figure {
-    line-height: 295px;
-  }
+  background-color: #2b491a;
 }
 
 .cpt-macuchino {
@@ -2885,38 +2554,23 @@ a[href*="macuchino"] figure:hover {
 .cpt-macuchino .galeria-fotos__figure img:hover {
   background-color: #b08742;
 }
-
-a[href*="bodtox"] {
+.cpt-macuchino a[href*="macuchino"] {
   cursor: ew-resize;
 }
-a[href*="bodtox"] figure {
+.cpt-macuchino a[href*="macuchino"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_bodtox.svg);
-  background-color: #92a92c;
+  background-image: url(assets/img/bg_macuchino.svg);
+  background-color: #9d793b;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #a3bd31;
+  border: solid 10px #b08742;
+  line-height: 250px;
 }
-a[href*="bodtox"] figure:hover {
+.cpt-macuchino a[href*="macuchino"] figure:hover {
   background-position: 0 90px;
-  background-color: #8ba12a;
-}
-@media screen and (max-width: 600px) {
-  a[href*="bodtox"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="bodtox"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="bodtox"] figure {
-    line-height: 295px;
-  }
+  background-color: #967338;
 }
 
 .cpt-bodtox {
@@ -2948,38 +2602,23 @@ a[href*="bodtox"] figure:hover {
 .cpt-bodtox .galeria-fotos__figure img:hover {
   background-color: #a3bd31;
 }
-
-a[href*="royalbreakfast"] {
+.cpt-bodtox a[href*="bodtox"] {
   cursor: ew-resize;
 }
-a[href*="royalbreakfast"] figure {
+.cpt-bodtox a[href*="bodtox"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_royalbreakfast.svg);
-  background-color: #5b120e;
+  background-image: url(assets/img/bg_bodtox.svg);
+  background-color: #92a92c;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #711611;
+  border: solid 10px #a3bd31;
+  line-height: 250px;
 }
-a[href*="royalbreakfast"] figure:hover {
+.cpt-bodtox a[href*="bodtox"] figure:hover {
   background-position: 0 90px;
-  background-color: #52100c;
-}
-@media screen and (max-width: 600px) {
-  a[href*="royalbreakfast"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="royalbreakfast"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="royalbreakfast"] figure {
-    line-height: 295px;
-  }
+  background-color: #8ba12a;
 }
 
 .cpt-royalbreakfast {
@@ -3011,38 +2650,23 @@ a[href*="royalbreakfast"] figure:hover {
 .cpt-royalbreakfast .galeria-fotos__figure img:hover {
   background-color: #711611;
 }
-
-a[href*="camucao"] {
+.cpt-royalbreakfast a[href*="royalbreakfast"] {
   cursor: ew-resize;
 }
-a[href*="camucao"] figure {
+.cpt-royalbreakfast a[href*="royalbreakfast"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(assets/img/bg_camucao.svg);
-  background-color: #763219;
+  background-image: url(assets/img/bg_royalbreakfast.svg);
+  background-color: #5b120e;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #8b3b1d;
+  border: solid 10px #711611;
+  line-height: 250px;
 }
-a[href*="camucao"] figure:hover {
+.cpt-royalbreakfast a[href*="royalbreakfast"] figure:hover {
   background-position: 0 90px;
-  background-color: #6d2e17;
-}
-@media screen and (max-width: 600px) {
-  a[href*="camucao"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 600px) {
-  a[href*="camucao"] figure {
-    line-height: 295px;
-  }
-}
-@media screen and (min-width: 1124px) {
-  a[href*="camucao"] figure {
-    line-height: 295px;
-  }
+  background-color: #52100c;
 }
 
 .cpt-camucao {
@@ -3073,6 +2697,24 @@ a[href*="camucao"] figure:hover {
 }
 .cpt-camucao .galeria-fotos__figure img:hover {
   background-color: #8b3b1d;
+}
+.cpt-camucao a[href*="camucao"] {
+  cursor: ew-resize;
+}
+.cpt-camucao a[href*="camucao"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-image: url(assets/img/bg_camucao.svg);
+  background-color: #763219;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #8b3b1d;
+  line-height: 250px;
+}
+.cpt-camucao a[href*="camucao"] figure:hover {
+  background-position: 0 90px;
+  background-color: #6d2e17;
 }
 
 img[src$=".svg"] {
@@ -3161,6 +2803,10 @@ img[src$=".svg"] {
 
 .main {
   padding-bottom: 0;
+}
+
+.section-archivo {
+  padding-top: 6%;
 }
 
 .color-base {
@@ -3875,7 +3521,7 @@ hr {
   border-radius: 20px;
 }
 
-.img--circle, a[href*="graviola"] figure, a[href*="cacaocriollo"] figure, a[href*="chlorella"] figure, a[href*="chia"] figure, a[href*="amaranto"] figure, a[href*="spiroulina"] figure, a[href*="camucamu"] figure, a[href*="canamo"] figure, a[href*="maca"] figure, a[href*="lucuma"] figure, a[href*="stevia"] figure, a[href*="quinoa"] figure, a[href*="alfalfa"] figure, a[href*="trigoverde"] figure, a[href*="algarroba"] figure, a[href*="cardomariano"] figure, a[href*="linodorado"] figure, a[href*="fresa"] figure, a[href*="coco"] figure, a[href*="gymtonic"] figure, a[href*="delifiber"] figure, a[href*="brainshake"] figure, a[href*="andeanprotein"] figure, a[href*="macuchino"] figure, a[href*="bodtox"] figure, a[href*="royalbreakfast"] figure, a[href*="camucao"] figure {
+.img--circle, .cpt-graviola a[href*="graviola"] figure, .cpt-cacaocriollo a[href*="cacaocriollo"] figure, .cpt-chlorella a[href*="chlorella"] figure, .cpt-chia a[href*="chia"] figure, .cpt-amaranto a[href*="amaranto"] figure, .cpt-spiroulina a[href*="spiroulina"] figure, .cpt-camucamu a[href*="camucamu"] figure, .cpt-canamo a[href*="canamo"] figure, .cpt-maca a[href*="maca"] figure, .cpt-lucuma a[href*="lucuma"] figure, .cpt-stevia a[href*="stevia"] figure, .cpt-quinoa a[href*="quinoa"] figure, .cpt-alfalfa a[href*="alfalfa"] figure, .cpt-trigoverde a[href*="trigoverde"] figure, .cpt-algarroba a[href*="algarroba"] figure, .cpt-cardomariano a[href*="cardomariano"] figure, .cpt-linodorado a[href*="linodorado"] figure, .cpt-fresa a[href*="fresa"] figure, .cpt-coco a[href*="coco"] figure, .cpt-gymtonic a[href*="gymtonic"] figure, .cpt-delifiber a[href*="delifiber"] figure, .cpt-brainshake a[href*="brainshake"] figure, .cpt-andeanprotein a[href*="andeanprotein"] figure, .cpt-macuchino a[href*="macuchino"] figure, .cpt-bodtox a[href*="bodtox"] figure, .cpt-royalbreakfast a[href*="royalbreakfast"] figure, .cpt-camucao a[href*="camucao"] figure {
   border-radius: 100%;
 }
 
@@ -3932,10 +3578,6 @@ hr {
 /*------------------------------------*\
     $ELEMENTOS-FIGURE
 \*------------------------------------*/
-figure figcaption {
-  font-style: italic;
-}
-
 /*------------------------------------*\
     $TIPOGRAFÍA
 \*------------------------------------*/

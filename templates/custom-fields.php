@@ -692,8 +692,8 @@
         
     </div>
 
-    <button type="button" data-role="none" class="slider__btn-prev" style="display: block;"></button>
-    <button type="button" data-role="none" class="slider__btn-next" style="display: block;"></button>
+    <button type="button" class="slider__btn-prev"></button>
+    <button type="button" class="slider__btn-next"></button>
   
     </section>
 
@@ -730,8 +730,8 @@
         
     </div>
 
-    <button type="button" data-role="none" class="slider__btn-prev" style="display: block;"></button>
-    <button type="button" data-role="none" class="slider__btn-next" style="display: block;"></button>
+    <button type="button" class="slider__btn-prev"></button>
+    <button type="button" class="slider__btn-next"></button>
   
     </section>
 
@@ -762,6 +762,7 @@
         <? if ( has_post_thumbnail() ) { ?>
 
             <a href="<?php the_permalink(); ?>">
+                
                 <figure>
 
                     <?php the_post_thumbnail('thumbnail'); ?>

@@ -110,7 +110,7 @@
 	img {
 		
 		
-		@include circle();
+		// @include circle();
 		margin: 0;
 		// -webkit-filter: grayscale(1);
   		// filter: grayscale(1);
@@ -133,9 +133,9 @@
 	
 	.slider__meta-date {
 
-		color: $white-alpha-medio;
+		color: $black-alpha-medio;
 		@extend %clearfix;
-    	font-size: 1.2rem;
+    	font-size: 1rem;
     	line-height : $baselineheight/2;
     	letter-spacing: $baseletterspacing;
 
@@ -161,6 +161,12 @@
 			@media all and (min-width: 780px) {}
 
 			@media all and (min-width: 1280px) {}
+	}
+
+	.slider__caption-post {
+
+		color: $color-base;
+
 	}
 
 
@@ -221,6 +227,7 @@
 
 
 .slider__btn-next, .slider__btn-prev {
+
 	height: 50px;
 	width: 50px;
 	position: absolute;
@@ -230,6 +237,19 @@
 	z-index: 100;
 	background-color: $black-alpha-fuerte;
 	display: none;
+
+	&:hover {
+		
+		background-color: $color-alt;
+
+	}
+
+	&:focus {
+
+		outline: none;
+
+	}
+
 }
 
 .slick-disabled {
@@ -300,6 +320,24 @@
 	position: relative;
 	background-color: $white;
 	padding-bottom: $gutterwidth;
+
+	&::before {
+		content: "";
+		height: 20px;
+		width: 100%;
+		position: absolute;
+		top: -20px;
+		@include background-image(bg_ondas_top,cover,no-repeat,center, svg);
+	}
+
+	&::after {
+		content: "";
+		height: 20px;
+		width: 100%;
+		position: absolute;
+		bottom: -20px;
+		@include background-image(bg_ondas_bottom,cover,no-repeat,center, svg);
+	}
 	
 }
 
@@ -366,7 +404,8 @@
 
     float: left;
     // width: 200px;
-    height: auto;
+    margin: 0 $paddingbase;
+    // height: auto;
     // min-height: 1px;
     // background-color: pink;
     // position: relative;
@@ -412,6 +451,7 @@
 			
 			width: $paddingbase/2;
 			height: $paddingbase/2;
+			margin: $paddingbase;
 			border: none;
 			color: $black-alpha-fuerte;
 			background-color: $black-alpha-fuerte;

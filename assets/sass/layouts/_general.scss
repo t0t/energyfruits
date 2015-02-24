@@ -36,47 +36,8 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
 
     $i: index($brand_names, $brand);
     $elcolor: nth($brand_colors, $i);
-	
-	a[href*="#{$brand}"] {
-		
-		cursor: ew-resize;
 
-    	figure {
 
-    		@include transition(.3s);
-
-    		@extend .img--circle;
-    		
-    		// padding-top: 100px;
-
-    		// padding-bottom: 150px;
-
-    		background-image: url(#{$image-path}bg_#{$brand}.svg);
-
-    		background-color: darken($elcolor, 5%);
-
-	        background-position: 0 100px;
-
-	        background-repeat: no-repeat;
-
-	        background-size: contain;
-
-	        border: solid 10px $elcolor;
-
-	        &:hover {
-	        	
-	        	background-position: 0 90px;
-    			background-color: darken($elcolor, 7%);
-
-	        }
-
-	        @media screen and (max-width:$bp3) { line-height: 295px; }
-	        @media screen and (min-width:$bp3) { line-height: 295px; }
-	        @media screen and (min-width:$bp2) { line-height: 295px; }
-    	
-    	}
-	}
-    
     .cpt-#{$brand} {
 
         color: $grey;
@@ -134,6 +95,44 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
 
         }
 
+        a[href*="#{$brand}"] {
+		
+			cursor: ew-resize;
+
+	    	figure {
+
+	    		@include transition(.3s);
+
+	    		@extend .img--circle;
+
+	    		background-image: url(#{$image-path}bg_#{$brand}.svg);
+
+	    		background-color: darken($elcolor, 5%);
+
+		        background-position: 0 100px;
+
+		        background-repeat: no-repeat;
+
+		        background-size: contain;
+
+		        border: solid 10px $elcolor;
+
+		        &:hover {
+		        	
+		        	background-position: 0 90px;
+	    			background-color: darken($elcolor, 7%);
+
+		        }
+
+		        line-height: 250px;
+
+		        @media screen and (max-width:$bp3) {  }
+		        // @media screen and (min-width:$bp3) { line-height: 255px; }
+
+		    }
+
+		}
+
     }
 
 }
@@ -178,7 +177,6 @@ img[src$=".svg"] {
 .main__content {
 	
 	@include max-width($bp0);
-    // background-color: $white;
 
 	> *:first-child {
 
@@ -277,7 +275,11 @@ img[src$=".svg"] {
   padding-bottom: 0;
 }
 
+.section-archivo {
 
+	padding-top: $gutterwidth*2;
+
+}
 
 
 // CUSTOM CLASSES

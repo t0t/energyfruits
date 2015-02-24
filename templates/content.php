@@ -1,8 +1,6 @@
-
-<div class="main__content">
-
-    <!-- Page Header -->
-    <?php get_template_part('templates/page', 'header'); ?>
+	
+	<!-- Page Header -->
+    <?php //get_template_part('templates/page', 'header'); ?>
 
 
     <!-- Loop -->
@@ -12,8 +10,6 @@
 	    <?php get_template_part('templates/custom-fields'); ?>
 
     <?php endwhile; ?>
+
     <?php else: ?>
-    <?php endif; ?>    
-
-
-</div>
+    <?php endif; ?>

@@ -3,10 +3,21 @@
     <!-- Page Header -->
     <?php //get_template_part('templates/page', 'header'); ?>
 
-    <!-- Slider noticias -->
-    <h1>noticias</h1>
+    <header>
+        <h1 class="h3">Blog</h1>
+        <br>
+        <br>
+        <br>
+    </header>
 
-    <section class="slider">
+
+
+
+    <!-- Slider noticias -->
+    <section class="slider__wrap">
+    
+    <h3 class="slider__title">Noticias</h3>
+    <?php //the_sub_field("description"); ?>
     
     <?php 
     $this_post = $post->ID;
@@ -17,37 +28,45 @@
     'category_name' => 'noticias') ); 
     ?>
 
-    <!-- Custom Loop -->
-    <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-        
-            <div class="post">
-
-            <? if ( has_post_thumbnail() ) { ?>
-
-            <figure class="post__figure ">
-                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img--circle' ) ); ?>
-                </a>
-            </figure>
-
-            <div class="post__content">
-
-                <small class="post__meta-date"><?php the_date('j F Y'); ?></small>
-                <h2 class="h4"><?php the_title(); ?></h2>
-                <a class="btn" href="<?php the_permalink(); ?>">&rarr;</a>
-
-            </div>
-
-            <?} else {?>  
-
-            <figure><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" class=""><figcaption><?php the_title(); ?></figcaption></a></figure>
-
-            <?}?>
-
-            </div>
+        <div class="slider__slides slider">
+            <!-- Custom Loop -->
+        <?php while ($loop->have_posts()) : $loop->the_post(); ?>
             
+                <div class="post">
+
+                <? if ( has_post_thumbnail() ) { ?>
+
+                
+                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                
+                    <figure class="slider__figure">
+
+                        <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img--circle' ) ); ?>
+
+                
+                        <figcaption class="slider__caption-post">
+                        <small class="slider__meta-date">
+                        <?php the_date('j F Y'); ?></small>
+                        <?php the_title(); ?> &rarr;</figcaption>
+
+                    </figure>
+
+                </a>
+
+                <?} else {?>  
+
+                <figure><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" class=""><figcaption><?php the_title(); ?></figcaption></a></figure>
+
+                <?}?>
+
+                </div>
+                
         <?php endwhile; ?>
         <?php wp_reset_postdata(); // reset the query ?>
+        </div>
+        
+    <button type="button" class="slider__btn-prev"></button>
+    <button type="button" class="slider__btn-next"></button>
 
     </section>
     <!-- / -->
@@ -55,9 +74,9 @@
 
 
     <!-- Slider novedades -->
-    <h1>novedades</h1>
-
-    <section class="slider">
+    <section class="slider__wrap">
+    
+    <h3 class="slider__title">Novedades</h3>
     
     <?php 
     $this_post = $post->ID;
@@ -68,47 +87,55 @@
     'category_name' => 'novedades') ); 
     ?>
 
-    <!-- Custom Loop -->
-    <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-        
-            <div class="post">
-
-            <? if ( has_post_thumbnail() ) { ?>
-
-            <figure class="post__figure ">
-                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img--circle' ) ); ?>
-                </a>
-            </figure>
-
-            <div class="post__content">
-
-                <small class="post__meta-date"><?php the_date('j F Y'); ?></small>
-                <h2 class="h4"><?php the_title(); ?></h2>
-                <a class="btn" href="<?php the_permalink(); ?>">&rarr;</a>
-
-            </div>
-
-            <?} else {?>  
-
-            <figure><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" class=""><figcaption><?php the_title(); ?></figcaption></a></figure>
-
-            <?}?>
-
-            </div>
+    <div class="slider__slides slider">
+        <!-- Custom Loop -->
+        <?php while ($loop->have_posts()) : $loop->the_post(); ?>
             
+                <div class="post">
+
+                <? if ( has_post_thumbnail() ) { ?>
+
+                
+                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                
+                    <figure class="slider__figure">
+
+                        <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img--circle' ) ); ?>
+
+                
+                        <figcaption class="slider__caption-post">
+                        <small class="slider__meta-date">
+                        <?php the_date('j F Y'); ?></small>
+                        <?php the_title(); ?> &rarr;</figcaption>
+
+                    </figure>
+
+                </a>
+
+                <?} else {?>  
+
+                <figure><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" class=""><figcaption><?php the_title(); ?></figcaption></a></figure>
+
+                <?}?>
+
+                </div>
+                
         <?php endwhile; ?>
         <?php wp_reset_postdata(); // reset the query ?>
+    
+    </div>
+
+    <button type="button" class="slider__btn-prev"></button>
+    <button type="button" class="slider__btn-next"></button>
 
     </section>
     <!-- / -->
 
 
-
     <!-- Slider recetas -->
-    <h1>recetas</h1>
-
-    <section class="slider">
+    <section class="slider__wrap">
+    
+    <h3 class="slider__title">Recetas</h3>
     
     <?php 
     $this_post = $post->ID;
@@ -120,52 +147,61 @@
     ?>
 
     <!-- Custom Loop -->
-    <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+    <div class="slider__slides slider">
         
-            <div class="post">
-
-            <? if ( has_post_thumbnail() ) { ?>
-
-            <figure class="post__figure ">
-                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img--circle' ) ); ?>
-                </a>
-            </figure>
-
-            <div class="post__content">
-
-                <small class="post__meta-date"><?php the_date('j F Y'); ?></small>
-                <h2 class="h4"><?php the_title(); ?></h2>
-                <a class="btn" href="<?php the_permalink(); ?>">&rarr;</a>
-
-            </div>
-
-            <?} else {?>  
-
-            <figure><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" class=""><figcaption><?php the_title(); ?></figcaption></a></figure>
-
-            <?}?>
-
-            </div>
+        <!-- Custom Loop -->
+        <?php while ($loop->have_posts()) : $loop->the_post(); ?>
             
+                <div class="post">
+
+                <? if ( has_post_thumbnail() ) { ?>
+
+                
+                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                
+                    <figure class="slider__figure">
+
+                        <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img--circle' ) ); ?>
+
+                
+                        <figcaption class="slider__caption-post">
+                        <small class="slider__meta-date">
+                        <?php the_date('j F Y'); ?></small>
+                        <?php the_title(); ?> &rarr;</figcaption>
+
+                    </figure>
+
+                </a>
+
+                <?} else {?>  
+
+                <figure><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" class=""><figcaption><?php the_title(); ?></figcaption></a></figure>
+
+                <?}?>
+
+                </div>
+                
         <?php endwhile; ?>
         <?php wp_reset_postdata(); // reset the query ?>
+    
+    </div>
+
+    <button type="button" class="slider__btn-prev"></button>
+    <button type="button" class="slider__btn-next"></button>
 
     </section>
     <!-- / -->
     
 
     <!-- Archive -->
-    <section class="archivo">
+    <section class="section-archivo">
         
-        <h4>Arxiu</h4>
-
         <div class="grid">
         
             <select name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
 
             <option value="">
-                <?php echo esc_attr( __( 'Seleciona Mes' ) ); ?>
+                <?php echo esc_attr( __( 'Archivo' ) ); ?>
             </option>
 
             <?php wp_get_archives( array( 'type' => 'monthly', 'format' => 'option', 'show_post_count' => 1 ) ); ?>

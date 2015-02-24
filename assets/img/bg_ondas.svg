@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1200px" height="21px" viewBox="0 0 1200 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>bg_ondas</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Blank-Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Producto-SuperShake-9" sketch:type="MSArtboardGroup" transform="translate(0.000000, -197.000000)" fill="#FEFEFE">
+            <path d="M0,196 L1200,196 L1200,218 L0,218 L0,196 Z M0,196 L1200,196 L1200,218 C1200,218 977.872396,202 866.808594,202 C844.597656,199.460938 821.609375,195.554688 789.35033,204.312104 C752.548828,207.15625 736.53125,213.277344 703.755859,204.867035 C675.292969,201.333984 668.742188,200.443359 640.283203,211 C608.427734,219.435547 570.591797,215.927734 549.154297,207.533203 C533.910156,201.621094 516.400391,199.341797 491.102918,204.867032 C454.757812,212.582031 438.296875,202 416.058594,200.671875 C380.519531,194.671875 366.964844,198.277344 335.25,202 C223.5,202 0,218 0,218 L0,196 Z" id="bg_ondas" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

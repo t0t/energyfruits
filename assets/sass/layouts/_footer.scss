@@ -3,7 +3,7 @@
 
 	@include max-width($bp0);
 
-	// background-color: $white;
+	margin-top: $gutterwidth*2;
 
 	color: $white;
 
@@ -131,7 +131,7 @@
 
 		img { 
 
-			width: 100px;
+			width: 150px !important;
 
 			height: auto;
 
