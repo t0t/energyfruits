@@ -44,23 +44,24 @@
 		ul {
 
 	        @extend %no-margin;
-			@include padding($gutterwidth);
-			border: 2px dotted $color-alt;
+			@include padding($gutterwidth*2);
+			// border: 2px dotted $color-alt;
 
 		}
 		
 		li {
 
-			@include font-size(23);
+			// @include font-size(23);
+			// line-height: 1;
 
 		}
 
 		a {
 
-			color: $color-alt;
+			// color: $color-alt;
 
 		}
-		
+
 
 		@media all and (min-width: $bp3) {
 

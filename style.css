@@ -704,15 +704,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
   padding: 3%;
 }
 .main-post__content__entry ul {
-  padding: 3%;
-  border: 2px dotted #f0730b;
-}
-.main-post__content__entry li {
-  font-size: 23px;
-  font-size: 1.15rem;
-}
-.main-post__content__entry a {
-  color: #f0730b;
+  padding: 6%;
 }
 @media all and (min-width: 600px) {
   .main-post__content__entry {
@@ -1438,6 +1430,19 @@ body {
 .cpt-graviola .main-post__content {
   background-color: white;
 }
+.cpt-graviola .main-post__content__entry ul {
+  background-image: url(assets/img/bg_graviola.svg);
+  background-color: #8f8356;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-graviola .main-post__content__entry ul:hover {
+  background-color: #998b5b;
+}
+.cpt-graviola .main-post__content__entry a:hover {
+  color: #1f1d13;
+}
 .cpt-graviola .galeria-fotos__figure a {
   color: #7f744c;
 }
@@ -1486,6 +1491,19 @@ a[href*="producto/graviola"] figure:hover {
 }
 .cpt-cacaocriollo .main-post__content {
   background-color: white;
+}
+.cpt-cacaocriollo .main-post__content__entry ul {
+  background-image: url(assets/img/bg_cacaocriollo.svg);
+  background-color: #4d2525;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-cacaocriollo .main-post__content__entry ul:hover {
+  background-color: #582a2a;
+}
+.cpt-cacaocriollo .main-post__content__entry a:hover {
+  color: black;
 }
 .cpt-cacaocriollo .galeria-fotos__figure a {
   color: #3c1d1d;
@@ -1536,6 +1554,19 @@ a[href*="producto/cacaocriollo"] figure:hover {
 .cpt-chlorella .main-post__content {
   background-color: white;
 }
+.cpt-chlorella .main-post__content__entry ul {
+  background-image: url(assets/img/bg_chlorella.svg);
+  background-color: #988b81;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-chlorella .main-post__content__entry ul:hover {
+  background-color: #9e9389;
+}
+.cpt-chlorella .main-post__content__entry a:hover {
+  color: #38322e;
+}
 .cpt-chlorella .galeria-fotos__figure a {
   color: #8c7e73;
 }
@@ -1584,6 +1615,19 @@ a[href*="producto/chlorella"] figure:hover {
 }
 .cpt-chia .main-post__content {
   background-color: white;
+}
+.cpt-chia .main-post__content__entry ul {
+  background-image: url(assets/img/bg_chia.svg);
+  background-color: #988b81;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-chia .main-post__content__entry ul:hover {
+  background-color: #9e9389;
+}
+.cpt-chia .main-post__content__entry a:hover {
+  color: #38322e;
 }
 .cpt-chia .galeria-fotos__figure a {
   color: #8c7e73;
@@ -1634,6 +1678,19 @@ a[href*="producto/chia"] figure:hover {
 .cpt-amaranto .main-post__content {
   background-color: white;
 }
+.cpt-amaranto .main-post__content__entry ul {
+  background-image: url(assets/img/bg_amaranto.svg);
+  background-color: #c62771;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-amaranto .main-post__content__entry ul:hover {
+  background-color: #d32a78;
+}
+.cpt-amaranto .main-post__content__entry a:hover {
+  color: #310a1c;
+}
 .cpt-amaranto .galeria-fotos__figure a {
   color: #b12365;
 }
@@ -1682,6 +1739,19 @@ a[href*="producto/amaranto"] figure:hover {
 }
 .cpt-spiroulina .main-post__content {
   background-color: white;
+}
+.cpt-spiroulina .main-post__content__entry ul {
+  background-image: url(assets/img/bg_spiroulina.svg);
+  background-color: #3a4733;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-spiroulina .main-post__content__entry ul:hover {
+  background-color: #425039;
+}
+.cpt-spiroulina .main-post__content__entry a:hover {
+  color: black;
 }
 .cpt-spiroulina .galeria-fotos__figure a {
   color: #2e3828;
@@ -1732,6 +1802,19 @@ a[href*="producto/spiroulina"] figure:hover {
 .cpt-camucamu .main-post__content {
   background-color: white;
 }
+.cpt-camucamu .main-post__content__entry ul {
+  background-image: url(assets/img/bg_camucamu.svg);
+  background-color: #763c46;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-camucamu .main-post__content__entry ul:hover {
+  background-color: #80414c;
+}
+.cpt-camucamu .main-post__content__entry a:hover {
+  color: black;
+}
 .cpt-camucamu .galeria-fotos__figure a {
   color: #65333c;
 }
@@ -1780,6 +1863,19 @@ a[href*="producto/camucamu"] figure:hover {
 }
 .cpt-canamo .main-post__content {
   background-color: white;
+}
+.cpt-canamo .main-post__content__entry ul {
+  background-image: url(assets/img/bg_canamo.svg);
+  background-color: #00aa5b;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-canamo .main-post__content__entry ul:hover {
+  background-color: #00b963;
+}
+.cpt-canamo .main-post__content__entry a:hover {
+  color: black;
 }
 .cpt-canamo .galeria-fotos__figure a {
   color: #00904d;
@@ -1830,6 +1926,19 @@ a[href*="producto/canamo"] figure:hover {
 .cpt-maca .main-post__content {
   background-color: white;
 }
+.cpt-maca .main-post__content__entry ul {
+  background-image: url(assets/img/bg_maca.svg);
+  background-color: #b95179;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-maca .main-post__content__entry ul:hover {
+  background-color: #bd5c81;
+}
+.cpt-maca .main-post__content__entry a:hover {
+  color: #3e1927;
+}
 .cpt-maca .galeria-fotos__figure a {
   color: #ab456c;
 }
@@ -1878,6 +1987,19 @@ a[href*="producto/maca"] figure:hover {
 }
 .cpt-lucuma .main-post__content {
   background-color: white;
+}
+.cpt-lucuma .main-post__content__entry ul {
+  background-image: url(assets/img/bg_lucuma.svg);
+  background-color: #f9b91b;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-lucuma .main-post__content__entry ul:hover {
+  background-color: #fabe2a;
+}
+.cpt-lucuma .main-post__content__entry a:hover {
+  color: #604502;
 }
 .cpt-lucuma .galeria-fotos__figure a {
   color: #f5b006;
@@ -1928,6 +2050,19 @@ a[href*="producto/lucuma"] figure:hover {
 .cpt-stevia .main-post__content {
   background-color: white;
 }
+.cpt-stevia .main-post__content__entry ul {
+  background-image: url(assets/img/bg_stevia.svg);
+  background-color: #009559;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-stevia .main-post__content__entry ul:hover {
+  background-color: #00a463;
+}
+.cpt-stevia .main-post__content__entry a:hover {
+  color: black;
+}
 .cpt-stevia .galeria-fotos__figure a {
   color: #007b4a;
 }
@@ -1976,6 +2111,19 @@ a[href*="producto/stevia"] figure:hover {
 }
 .cpt-quinoa .main-post__content {
   background-color: white;
+}
+.cpt-quinoa .main-post__content__entry ul {
+  background-image: url(assets/img/bg_quinoa.svg);
+  background-color: #d3313a;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-quinoa .main-post__content__entry ul:hover {
+  background-color: #d63e46;
+}
+.cpt-quinoa .main-post__content__entry a:hover {
+  color: #440e11;
 }
 .cpt-quinoa .galeria-fotos__figure a {
   color: #c22931;
@@ -2026,6 +2174,19 @@ a[href*="producto/quinoa"] figure:hover {
 .cpt-alfalfa .main-post__content {
   background-color: white;
 }
+.cpt-alfalfa .main-post__content__entry ul {
+  background-image: url(assets/img/bg_alfalfa.svg);
+  background-color: #2c9c80;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-alfalfa .main-post__content__entry ul:hover {
+  background-color: #2fa88a;
+}
+.cpt-alfalfa .main-post__content__entry a:hover {
+  color: #05100e;
+}
 .cpt-alfalfa .galeria-fotos__figure a {
   color: #268870;
 }
@@ -2074,6 +2235,19 @@ a[href*="producto/alfalfa"] figure:hover {
 }
 .cpt-trigoverde .main-post__content {
   background-color: white;
+}
+.cpt-trigoverde .main-post__content__entry ul {
+  background-image: url(assets/img/bg_trigoverde.svg);
+  background-color: #558b36;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-trigoverde .main-post__content__entry ul:hover {
+  background-color: #5c963a;
+}
+.cpt-trigoverde .main-post__content__entry a:hover {
+  color: #070b04;
 }
 .cpt-trigoverde .galeria-fotos__figure a {
   color: #4a792f;
@@ -2124,6 +2298,19 @@ a[href*="producto/trigoverde"] figure:hover {
 .cpt-algarroba .main-post__content {
   background-color: white;
 }
+.cpt-algarroba .main-post__content__entry ul {
+  background-image: url(assets/img/bg_algarroba.svg);
+  background-color: #301f19;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-algarroba .main-post__content__entry ul:hover {
+  background-color: #3a251e;
+}
+.cpt-algarroba .main-post__content__entry a:hover {
+  color: black;
+}
 .cpt-algarroba .galeria-fotos__figure a {
   color: #1f1410;
 }
@@ -2172,6 +2359,19 @@ a[href*="producto/algarroba"] figure:hover {
 }
 .cpt-cardomariano .main-post__content {
   background-color: white;
+}
+.cpt-cardomariano .main-post__content__entry ul {
+  background-image: url(assets/img/bg_cardomariano.svg);
+  background-color: #b188b8;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-cardomariano .main-post__content__entry ul:hover {
+  background-color: #b791bd;
+}
+.cpt-cardomariano .main-post__content__entry a:hover {
+  color: #533558;
 }
 .cpt-cardomariano .galeria-fotos__figure a {
   color: #a678ae;
@@ -2222,6 +2422,19 @@ a[href*="producto/cardomariano"] figure:hover {
 .cpt-linodorado .main-post__content {
   background-color: white;
 }
+.cpt-linodorado .main-post__content__entry ul {
+  background-image: url(assets/img/bg_linodorado.svg);
+  background-color: #e2cc59;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-linodorado .main-post__content__entry ul:hover {
+  background-color: #e4d066;
+}
+.cpt-linodorado .main-post__content__entry a:hover {
+  color: #746414;
+}
 .cpt-linodorado .galeria-fotos__figure a {
   color: #dec543;
 }
@@ -2270,6 +2483,19 @@ a[href*="producto/linodorado"] figure:hover {
 }
 .cpt-fresa .main-post__content {
   background-color: white;
+}
+.cpt-fresa .main-post__content__entry ul {
+  background-image: url(assets/img/bg_fresa.svg);
+  background-color: #fb3e03;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-fresa .main-post__content__entry ul:hover {
+  background-color: #fc4a12;
+}
+.cpt-fresa .main-post__content__entry a:hover {
+  color: #4b1301;
 }
 .cpt-fresa .galeria-fotos__figure a {
   color: #e23803;
@@ -2320,6 +2546,19 @@ a[href*="producto/fresa"] figure:hover {
 .cpt-coco .main-post__content {
   background-color: white;
 }
+.cpt-coco .main-post__content__entry ul {
+  background-image: url(assets/img/bg_coco.svg);
+  background-color: #955928;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-coco .main-post__content__entry ul:hover {
+  background-color: #a1602c;
+}
+.cpt-coco .main-post__content__entry a:hover {
+  color: #090502;
+}
 .cpt-coco .galeria-fotos__figure a {
   color: #814d23;
 }
@@ -2368,6 +2607,19 @@ a[href*="producto/coco"] figure:hover {
 }
 .cpt-gymtonic .main-post__content {
   background-color: white;
+}
+.cpt-gymtonic .main-post__content__entry ul {
+  background-image: url(assets/img/bg_gymtonic.svg);
+  background-color: #d90513;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-gymtonic .main-post__content__entry ul:hover {
+  background-color: #e80515;
+}
+.cpt-gymtonic .main-post__content__entry a:hover {
+  color: #2a0104;
 }
 .cpt-gymtonic .galeria-fotos__figure a {
   color: #c00411;
@@ -2418,6 +2670,19 @@ a[href*="producto/gymtonic"] figure:hover {
 .cpt-delifiber .main-post__content {
   background-color: white;
 }
+.cpt-delifiber .main-post__content__entry ul {
+  background-image: url(assets/img/bg_delifiber.svg);
+  background-color: #ffe509;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-delifiber .main-post__content__entry ul:hover {
+  background-color: #ffe719;
+}
+.cpt-delifiber .main-post__content__entry a:hover {
+  color: #564d00;
+}
 .cpt-delifiber .galeria-fotos__figure a {
   color: #efd600;
 }
@@ -2466,6 +2731,19 @@ a[href*="producto/delifiber"] figure:hover {
 }
 .cpt-brainshake .main-post__content {
   background-color: white;
+}
+.cpt-brainshake .main-post__content__entry ul {
+  background-image: url(assets/img/bg_brainshake.svg);
+  background-color: #f3a200;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-brainshake .main-post__content__entry ul:hover {
+  background-color: #ffab03;
+}
+.cpt-brainshake .main-post__content__entry a:hover {
+  color: #402b00;
 }
 .cpt-brainshake .galeria-fotos__figure a {
   color: #d99100;
@@ -2516,6 +2794,19 @@ a[href*="producto/brainshake"] figure:hover {
 .cpt-andeanprotein .main-post__content {
   background-color: white;
 }
+.cpt-andeanprotein .main-post__content__entry ul {
+  background-image: url(assets/img/bg_andeanprotein.svg);
+  background-color: #45762b;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-andeanprotein .main-post__content__entry ul:hover {
+  background-color: #4c812f;
+}
+.cpt-andeanprotein .main-post__content__entry a:hover {
+  color: black;
+}
 .cpt-andeanprotein .galeria-fotos__figure a {
   color: #3a6324;
 }
@@ -2564,6 +2855,19 @@ a[href*="producto/andeanprotein"] figure:hover {
 }
 .cpt-macuchino .main-post__content {
   background-color: white;
+}
+.cpt-macuchino .main-post__content__entry ul {
+  background-image: url(assets/img/bg_macuchino.svg);
+  background-color: #bd944f;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-macuchino .main-post__content__entry ul:hover {
+  background-color: #c19b5a;
+}
+.cpt-macuchino .main-post__content__entry a:hover {
+  color: #413218;
 }
 .cpt-macuchino .galeria-fotos__figure a {
   color: #b08742;
@@ -2614,6 +2918,19 @@ a[href*="producto/macuchino"] figure:hover {
 .cpt-bodtox .main-post__content {
   background-color: white;
 }
+.cpt-bodtox .main-post__content__entry ul {
+  background-image: url(assets/img/bg_bodtox.svg);
+  background-color: #b1cc3b;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-bodtox .main-post__content__entry ul:hover {
+  background-color: #b6cf47;
+}
+.cpt-bodtox .main-post__content__entry a:hover {
+  color: #3a4311;
+}
 .cpt-bodtox .galeria-fotos__figure a {
   color: #a3bd31;
 }
@@ -2663,6 +2980,19 @@ a[href*="producto/bodtox"] figure:hover {
 .cpt-royalbreakfast .main-post__content {
   background-color: white;
 }
+.cpt-royalbreakfast .main-post__content__entry ul {
+  background-image: url(assets/img/bg_royalbreakfast.svg);
+  background-color: #871a14;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-royalbreakfast .main-post__content__entry ul:hover {
+  background-color: #941d16;
+}
+.cpt-royalbreakfast .main-post__content__entry a:hover {
+  color: black;
+}
 .cpt-royalbreakfast .galeria-fotos__figure a {
   color: #711611;
 }
@@ -2711,6 +3041,19 @@ a[href*="producto/royalbreakfast"] figure:hover {
 }
 .cpt-camucao .main-post__content {
   background-color: white;
+}
+.cpt-camucao .main-post__content__entry ul {
+  background-image: url(assets/img/bg_camucao.svg);
+  background-color: #a04421;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cpt-camucao .main-post__content__entry ul:hover {
+  background-color: #ad4924;
+}
+.cpt-camucao .main-post__content__entry a:hover {
+  color: #0c0503;
 }
 .cpt-camucao .galeria-fotos__figure a {
   color: #8b3b1d;
