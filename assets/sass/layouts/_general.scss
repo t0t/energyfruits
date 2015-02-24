@@ -40,6 +40,10 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
 
     .cpt-#{$brand} {
 
+    	a {
+    		position: fixed;
+    	}
+
         color: $grey;
 
         h1 {
@@ -95,7 +99,9 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
 
         }
 
-        a[href*="#{$brand}"] {
+    }
+
+    a[href*="producto/#{$brand}"] {
 		
 			cursor: ew-resize;
 
@@ -132,8 +138,6 @@ $brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia 
 		    }
 
 		}
-
-    }
 
 }
 

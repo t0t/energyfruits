@@ -156,18 +156,13 @@
 
                 <? if ( has_post_thumbnail() ) { ?>
 
-                
                 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                 
                     <figure class="slider__figure">
 
                         <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img--circle' ) ); ?>
 
-                
-                        <figcaption class="slider__caption-post">
-                        <small class="slider__meta-date">
-                        <?php the_date('j F Y'); ?></small>
-                        <?php the_title(); ?> &rarr;</figcaption>
+                        <figcaption class="slider__caption-post"><small class="slider__meta-date"><?php the_date('j F Y'); ?></small><?php the_title(); ?> &rarr;</figcaption>
 
                     </figure>
 
@@ -175,7 +170,9 @@
 
                 <?} else {?>  
 
-                <figure><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" class=""><figcaption><?php the_title(); ?></figcaption></a></figure>
+                <figure>
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg"><figcaption><?php the_title(); ?></figcaption></a>
+                </figure>
 
                 <?}?>
 

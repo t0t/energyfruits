@@ -1424,6 +1424,9 @@ body {
 .cpt-graviola {
   color: gray;
 }
+.cpt-graviola a {
+  position: fixed;
+}
 .cpt-graviola h1 {
   font-size: 90px;
   font-size: 4.5rem;
@@ -1450,10 +1453,11 @@ body {
 .cpt-graviola .galeria-fotos__figure img:hover {
   background-color: #7f744c;
 }
-.cpt-graviola a[href*="graviola"] {
+
+a[href*="producto/graviola"] {
   cursor: ew-resize;
 }
-.cpt-graviola a[href*="graviola"] figure {
+a[href*="producto/graviola"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_graviola.svg);
@@ -1464,13 +1468,16 @@ body {
   border: solid 10px #7f744c;
   line-height: 250px;
 }
-.cpt-graviola a[href*="graviola"] figure:hover {
+a[href*="producto/graviola"] figure:hover {
   background-position: 0 90px;
   background-color: #69603f;
 }
 
 .cpt-cacaocriollo {
   color: gray;
+}
+.cpt-cacaocriollo a {
+  position: fixed;
 }
 .cpt-cacaocriollo h1 {
   font-size: 90px;
@@ -1498,10 +1505,11 @@ body {
 .cpt-cacaocriollo .galeria-fotos__figure img:hover {
   background-color: #3c1d1d;
 }
-.cpt-cacaocriollo a[href*="cacaocriollo"] {
+
+a[href*="producto/cacaocriollo"] {
   cursor: ew-resize;
 }
-.cpt-cacaocriollo a[href*="cacaocriollo"] figure {
+a[href*="producto/cacaocriollo"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_cacaocriollo.svg);
@@ -1512,13 +1520,16 @@ body {
   border: solid 10px #3c1d1d;
   line-height: 250px;
 }
-.cpt-cacaocriollo a[href*="cacaocriollo"] figure:hover {
+a[href*="producto/cacaocriollo"] figure:hover {
   background-position: 0 90px;
   background-color: #241111;
 }
 
 .cpt-chlorella {
   color: gray;
+}
+.cpt-chlorella a {
+  position: fixed;
 }
 .cpt-chlorella h1 {
   font-size: 90px;
@@ -1546,10 +1557,11 @@ body {
 .cpt-chlorella .galeria-fotos__figure img:hover {
   background-color: #8c7e73;
 }
-.cpt-chlorella a[href*="chlorella"] {
+
+a[href*="producto/chlorella"] {
   cursor: ew-resize;
 }
-.cpt-chlorella a[href*="chlorella"] figure {
+a[href*="producto/chlorella"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_chlorella.svg);
@@ -1560,13 +1572,16 @@ body {
   border: solid 10px #8c7e73;
   line-height: 250px;
 }
-.cpt-chlorella a[href*="chlorella"] figure:hover {
+a[href*="producto/chlorella"] figure:hover {
   background-position: 0 90px;
   background-color: #786c63;
 }
 
 .cpt-chia {
   color: gray;
+}
+.cpt-chia a {
+  position: fixed;
 }
 .cpt-chia h1 {
   font-size: 90px;
@@ -1594,10 +1609,11 @@ body {
 .cpt-chia .galeria-fotos__figure img:hover {
   background-color: #8c7e73;
 }
-.cpt-chia a[href*="chia"] {
+
+a[href*="producto/chia"] {
   cursor: ew-resize;
 }
-.cpt-chia a[href*="chia"] figure {
+a[href*="producto/chia"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_chia.svg);
@@ -1608,13 +1624,16 @@ body {
   border: solid 10px #8c7e73;
   line-height: 250px;
 }
-.cpt-chia a[href*="chia"] figure:hover {
+a[href*="producto/chia"] figure:hover {
   background-position: 0 90px;
   background-color: #786c63;
 }
 
 .cpt-amaranto {
   color: gray;
+}
+.cpt-amaranto a {
+  position: fixed;
 }
 .cpt-amaranto h1 {
   font-size: 90px;
@@ -1642,10 +1661,11 @@ body {
 .cpt-amaranto .galeria-fotos__figure img:hover {
   background-color: #b12365;
 }
-.cpt-amaranto a[href*="amaranto"] {
+
+a[href*="producto/amaranto"] {
   cursor: ew-resize;
 }
-.cpt-amaranto a[href*="amaranto"] figure {
+a[href*="producto/amaranto"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_amaranto.svg);
@@ -1656,13 +1676,16 @@ body {
   border: solid 10px #b12365;
   line-height: 250px;
 }
-.cpt-amaranto a[href*="amaranto"] figure:hover {
+a[href*="producto/amaranto"] figure:hover {
   background-position: 0 90px;
   background-color: #931d54;
 }
 
 .cpt-spiroulina {
   color: gray;
+}
+.cpt-spiroulina a {
+  position: fixed;
 }
 .cpt-spiroulina h1 {
   font-size: 90px;
@@ -1690,10 +1713,11 @@ body {
 .cpt-spiroulina .galeria-fotos__figure img:hover {
   background-color: #2e3828;
 }
-.cpt-spiroulina a[href*="spiroulina"] {
+
+a[href*="producto/spiroulina"] {
   cursor: ew-resize;
 }
-.cpt-spiroulina a[href*="spiroulina"] figure {
+a[href*="producto/spiroulina"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_spiroulina.svg);
@@ -1704,13 +1728,16 @@ body {
   border: solid 10px #2e3828;
   line-height: 250px;
 }
-.cpt-spiroulina a[href*="spiroulina"] figure:hover {
+a[href*="producto/spiroulina"] figure:hover {
   background-position: 0 90px;
   background-color: #1d2319;
 }
 
 .cpt-camucamu {
   color: gray;
+}
+.cpt-camucamu a {
+  position: fixed;
 }
 .cpt-camucamu h1 {
   font-size: 90px;
@@ -1738,10 +1765,11 @@ body {
 .cpt-camucamu .galeria-fotos__figure img:hover {
   background-color: #65333c;
 }
-.cpt-camucamu a[href*="camucamu"] {
+
+a[href*="producto/camucamu"] {
   cursor: ew-resize;
 }
-.cpt-camucamu a[href*="camucamu"] figure {
+a[href*="producto/camucamu"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_camucamu.svg);
@@ -1752,13 +1780,16 @@ body {
   border: solid 10px #65333c;
   line-height: 250px;
 }
-.cpt-camucamu a[href*="camucamu"] figure:hover {
+a[href*="producto/camucamu"] figure:hover {
   background-position: 0 90px;
   background-color: #4d272e;
 }
 
 .cpt-canamo {
   color: gray;
+}
+.cpt-canamo a {
+  position: fixed;
 }
 .cpt-canamo h1 {
   font-size: 90px;
@@ -1786,10 +1817,11 @@ body {
 .cpt-canamo .galeria-fotos__figure img:hover {
   background-color: #00904d;
 }
-.cpt-canamo a[href*="canamo"] {
+
+a[href*="producto/canamo"] {
   cursor: ew-resize;
 }
-.cpt-canamo a[href*="canamo"] figure {
+a[href*="producto/canamo"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_canamo.svg);
@@ -1800,13 +1832,16 @@ body {
   border: solid 10px #00904d;
   line-height: 250px;
 }
-.cpt-canamo a[href*="canamo"] figure:hover {
+a[href*="producto/canamo"] figure:hover {
   background-position: 0 90px;
   background-color: #006c3a;
 }
 
 .cpt-maca {
   color: gray;
+}
+.cpt-maca a {
+  position: fixed;
 }
 .cpt-maca h1 {
   font-size: 90px;
@@ -1834,10 +1869,11 @@ body {
 .cpt-maca .galeria-fotos__figure img:hover {
   background-color: #ab456c;
 }
-.cpt-maca a[href*="maca"] {
+
+a[href*="producto/maca"] {
   cursor: ew-resize;
 }
-.cpt-maca a[href*="maca"] figure {
+a[href*="producto/maca"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_maca.svg);
@@ -1848,13 +1884,16 @@ body {
   border: solid 10px #ab456c;
   line-height: 250px;
 }
-.cpt-maca a[href*="maca"] figure:hover {
+a[href*="producto/maca"] figure:hover {
   background-position: 0 90px;
   background-color: #923b5c;
 }
 
 .cpt-lucuma {
   color: gray;
+}
+.cpt-lucuma a {
+  position: fixed;
 }
 .cpt-lucuma h1 {
   font-size: 90px;
@@ -1882,10 +1921,11 @@ body {
 .cpt-lucuma .galeria-fotos__figure img:hover {
   background-color: #f5b006;
 }
-.cpt-lucuma a[href*="lucuma"] {
+
+a[href*="producto/lucuma"] {
   cursor: ew-resize;
 }
-.cpt-lucuma a[href*="lucuma"] figure {
+a[href*="producto/lucuma"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_lucuma.svg);
@@ -1896,13 +1936,16 @@ body {
   border: solid 10px #f5b006;
   line-height: 250px;
 }
-.cpt-lucuma a[href*="lucuma"] figure:hover {
+a[href*="producto/lucuma"] figure:hover {
   background-position: 0 90px;
   background-color: #d29705;
 }
 
 .cpt-stevia {
   color: gray;
+}
+.cpt-stevia a {
+  position: fixed;
 }
 .cpt-stevia h1 {
   font-size: 90px;
@@ -1930,10 +1973,11 @@ body {
 .cpt-stevia .galeria-fotos__figure img:hover {
   background-color: #007b4a;
 }
-.cpt-stevia a[href*="stevia"] {
+
+a[href*="producto/stevia"] {
   cursor: ew-resize;
 }
-.cpt-stevia a[href*="stevia"] figure {
+a[href*="producto/stevia"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_stevia.svg);
@@ -1944,13 +1988,16 @@ body {
   border: solid 10px #007b4a;
   line-height: 250px;
 }
-.cpt-stevia a[href*="stevia"] figure:hover {
+a[href*="producto/stevia"] figure:hover {
   background-position: 0 90px;
   background-color: #005735;
 }
 
 .cpt-quinoa {
   color: gray;
+}
+.cpt-quinoa a {
+  position: fixed;
 }
 .cpt-quinoa h1 {
   font-size: 90px;
@@ -1978,10 +2025,11 @@ body {
 .cpt-quinoa .galeria-fotos__figure img:hover {
   background-color: #c22931;
 }
-.cpt-quinoa a[href*="quinoa"] {
+
+a[href*="producto/quinoa"] {
   cursor: ew-resize;
 }
-.cpt-quinoa a[href*="quinoa"] figure {
+a[href*="producto/quinoa"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_quinoa.svg);
@@ -1992,13 +2040,16 @@ body {
   border: solid 10px #c22931;
   line-height: 250px;
 }
-.cpt-quinoa a[href*="quinoa"] figure:hover {
+a[href*="producto/quinoa"] figure:hover {
   background-position: 0 90px;
   background-color: #a5232a;
 }
 
 .cpt-alfalfa {
   color: gray;
+}
+.cpt-alfalfa a {
+  position: fixed;
 }
 .cpt-alfalfa h1 {
   font-size: 90px;
@@ -2026,10 +2077,11 @@ body {
 .cpt-alfalfa .galeria-fotos__figure img:hover {
   background-color: #268870;
 }
-.cpt-alfalfa a[href*="alfalfa"] {
+
+a[href*="producto/alfalfa"] {
   cursor: ew-resize;
 }
-.cpt-alfalfa a[href*="alfalfa"] figure {
+a[href*="producto/alfalfa"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_alfalfa.svg);
@@ -2040,13 +2092,16 @@ body {
   border: solid 10px #268870;
   line-height: 250px;
 }
-.cpt-alfalfa a[href*="alfalfa"] figure:hover {
+a[href*="producto/alfalfa"] figure:hover {
   background-position: 0 90px;
   background-color: #1e6c59;
 }
 
 .cpt-trigoverde {
   color: gray;
+}
+.cpt-trigoverde a {
+  position: fixed;
 }
 .cpt-trigoverde h1 {
   font-size: 90px;
@@ -2074,10 +2129,11 @@ body {
 .cpt-trigoverde .galeria-fotos__figure img:hover {
   background-color: #4a792f;
 }
-.cpt-trigoverde a[href*="trigoverde"] {
+
+a[href*="producto/trigoverde"] {
   cursor: ew-resize;
 }
-.cpt-trigoverde a[href*="trigoverde"] figure {
+a[href*="producto/trigoverde"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_trigoverde.svg);
@@ -2088,13 +2144,16 @@ body {
   border: solid 10px #4a792f;
   line-height: 250px;
 }
-.cpt-trigoverde a[href*="trigoverde"] figure:hover {
+a[href*="producto/trigoverde"] figure:hover {
   background-position: 0 90px;
   background-color: #3a5f25;
 }
 
 .cpt-algarroba {
   color: gray;
+}
+.cpt-algarroba a {
+  position: fixed;
 }
 .cpt-algarroba h1 {
   font-size: 90px;
@@ -2122,10 +2181,11 @@ body {
 .cpt-algarroba .galeria-fotos__figure img:hover {
   background-color: #1f1410;
 }
-.cpt-algarroba a[href*="algarroba"] {
+
+a[href*="producto/algarroba"] {
   cursor: ew-resize;
 }
-.cpt-algarroba a[href*="algarroba"] figure {
+a[href*="producto/algarroba"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_algarroba.svg);
@@ -2136,13 +2196,16 @@ body {
   border: solid 10px #1f1410;
   line-height: 250px;
 }
-.cpt-algarroba a[href*="algarroba"] figure:hover {
+a[href*="producto/algarroba"] figure:hover {
   background-position: 0 90px;
   background-color: #070504;
 }
 
 .cpt-cardomariano {
   color: gray;
+}
+.cpt-cardomariano a {
+  position: fixed;
 }
 .cpt-cardomariano h1 {
   font-size: 90px;
@@ -2170,10 +2233,11 @@ body {
 .cpt-cardomariano .galeria-fotos__figure img:hover {
   background-color: #a678ae;
 }
-.cpt-cardomariano a[href*="cardomariano"] {
+
+a[href*="producto/cardomariano"] {
   cursor: ew-resize;
 }
-.cpt-cardomariano a[href*="cardomariano"] figure {
+a[href*="producto/cardomariano"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_cardomariano.svg);
@@ -2184,13 +2248,16 @@ body {
   border: solid 10px #a678ae;
   line-height: 250px;
 }
-.cpt-cardomariano a[href*="cardomariano"] figure:hover {
+a[href*="producto/cardomariano"] figure:hover {
   background-position: 0 90px;
   background-color: #9762a1;
 }
 
 .cpt-linodorado {
   color: gray;
+}
+.cpt-linodorado a {
+  position: fixed;
 }
 .cpt-linodorado h1 {
   font-size: 90px;
@@ -2218,10 +2285,11 @@ body {
 .cpt-linodorado .galeria-fotos__figure img:hover {
   background-color: #dec543;
 }
-.cpt-linodorado a[href*="linodorado"] {
+
+a[href*="producto/linodorado"] {
   cursor: ew-resize;
 }
-.cpt-linodorado a[href*="linodorado"] figure {
+a[href*="producto/linodorado"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_linodorado.svg);
@@ -2232,13 +2300,16 @@ body {
   border: solid 10px #dec543;
   line-height: 250px;
 }
-.cpt-linodorado a[href*="linodorado"] figure:hover {
+a[href*="producto/linodorado"] figure:hover {
   background-position: 0 90px;
   background-color: #d7bb26;
 }
 
 .cpt-fresa {
   color: gray;
+}
+.cpt-fresa a {
+  position: fixed;
 }
 .cpt-fresa h1 {
   font-size: 90px;
@@ -2266,10 +2337,11 @@ body {
 .cpt-fresa .galeria-fotos__figure img:hover {
   background-color: #e23803;
 }
-.cpt-fresa a[href*="fresa"] {
+
+a[href*="producto/fresa"] {
   cursor: ew-resize;
 }
-.cpt-fresa a[href*="fresa"] figure {
+a[href*="producto/fresa"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_fresa.svg);
@@ -2280,13 +2352,16 @@ body {
   border: solid 10px #e23803;
   line-height: 250px;
 }
-.cpt-fresa a[href*="fresa"] figure:hover {
+a[href*="producto/fresa"] figure:hover {
   background-position: 0 90px;
   background-color: #bf2f03;
 }
 
 .cpt-coco {
   color: gray;
+}
+.cpt-coco a {
+  position: fixed;
 }
 .cpt-coco h1 {
   font-size: 90px;
@@ -2314,10 +2389,11 @@ body {
 .cpt-coco .galeria-fotos__figure img:hover {
   background-color: #814d23;
 }
-.cpt-coco a[href*="coco"] {
+
+a[href*="producto/coco"] {
   cursor: ew-resize;
 }
-.cpt-coco a[href*="coco"] figure {
+a[href*="producto/coco"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_coco.svg);
@@ -2328,13 +2404,16 @@ body {
   border: solid 10px #814d23;
   line-height: 250px;
 }
-.cpt-coco a[href*="coco"] figure:hover {
+a[href*="producto/coco"] figure:hover {
   background-position: 0 90px;
   background-color: #653c1b;
 }
 
 .cpt-gymtonic {
   color: gray;
+}
+.cpt-gymtonic a {
+  position: fixed;
 }
 .cpt-gymtonic h1 {
   font-size: 90px;
@@ -2362,10 +2441,11 @@ body {
 .cpt-gymtonic .galeria-fotos__figure img:hover {
   background-color: #c00411;
 }
-.cpt-gymtonic a[href*="gymtonic"] {
+
+a[href*="producto/gymtonic"] {
   cursor: ew-resize;
 }
-.cpt-gymtonic a[href*="gymtonic"] figure {
+a[href*="producto/gymtonic"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_gymtonic.svg);
@@ -2376,13 +2456,16 @@ body {
   border: solid 10px #c00411;
   line-height: 250px;
 }
-.cpt-gymtonic a[href*="gymtonic"] figure:hover {
+a[href*="producto/gymtonic"] figure:hover {
   background-position: 0 90px;
   background-color: #9d030e;
 }
 
 .cpt-delifiber {
   color: gray;
+}
+.cpt-delifiber a {
+  position: fixed;
 }
 .cpt-delifiber h1 {
   font-size: 90px;
@@ -2410,10 +2493,11 @@ body {
 .cpt-delifiber .galeria-fotos__figure img:hover {
   background-color: #efd600;
 }
-.cpt-delifiber a[href*="delifiber"] {
+
+a[href*="producto/delifiber"] {
   cursor: ew-resize;
 }
-.cpt-delifiber a[href*="delifiber"] figure {
+a[href*="producto/delifiber"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_delifiber.svg);
@@ -2424,13 +2508,16 @@ body {
   border: solid 10px #efd600;
   line-height: 250px;
 }
-.cpt-delifiber a[href*="delifiber"] figure:hover {
+a[href*="producto/delifiber"] figure:hover {
   background-position: 0 90px;
   background-color: #cbb600;
 }
 
 .cpt-brainshake {
   color: gray;
+}
+.cpt-brainshake a {
+  position: fixed;
 }
 .cpt-brainshake h1 {
   font-size: 90px;
@@ -2458,10 +2545,11 @@ body {
 .cpt-brainshake .galeria-fotos__figure img:hover {
   background-color: #d99100;
 }
-.cpt-brainshake a[href*="brainshake"] {
+
+a[href*="producto/brainshake"] {
   cursor: ew-resize;
 }
-.cpt-brainshake a[href*="brainshake"] figure {
+a[href*="producto/brainshake"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_brainshake.svg);
@@ -2472,13 +2560,16 @@ body {
   border: solid 10px #d99100;
   line-height: 250px;
 }
-.cpt-brainshake a[href*="brainshake"] figure:hover {
+a[href*="producto/brainshake"] figure:hover {
   background-position: 0 90px;
   background-color: #b57900;
 }
 
 .cpt-andeanprotein {
   color: gray;
+}
+.cpt-andeanprotein a {
+  position: fixed;
 }
 .cpt-andeanprotein h1 {
   font-size: 90px;
@@ -2506,10 +2597,11 @@ body {
 .cpt-andeanprotein .galeria-fotos__figure img:hover {
   background-color: #3a6324;
 }
-.cpt-andeanprotein a[href*="andeanprotein"] {
+
+a[href*="producto/andeanprotein"] {
   cursor: ew-resize;
 }
-.cpt-andeanprotein a[href*="andeanprotein"] figure {
+a[href*="producto/andeanprotein"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_andeanprotein.svg);
@@ -2520,13 +2612,16 @@ body {
   border: solid 10px #3a6324;
   line-height: 250px;
 }
-.cpt-andeanprotein a[href*="andeanprotein"] figure:hover {
+a[href*="producto/andeanprotein"] figure:hover {
   background-position: 0 90px;
   background-color: #2b491a;
 }
 
 .cpt-macuchino {
   color: gray;
+}
+.cpt-macuchino a {
+  position: fixed;
 }
 .cpt-macuchino h1 {
   font-size: 90px;
@@ -2554,10 +2649,11 @@ body {
 .cpt-macuchino .galeria-fotos__figure img:hover {
   background-color: #b08742;
 }
-.cpt-macuchino a[href*="macuchino"] {
+
+a[href*="producto/macuchino"] {
   cursor: ew-resize;
 }
-.cpt-macuchino a[href*="macuchino"] figure {
+a[href*="producto/macuchino"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_macuchino.svg);
@@ -2568,13 +2664,16 @@ body {
   border: solid 10px #b08742;
   line-height: 250px;
 }
-.cpt-macuchino a[href*="macuchino"] figure:hover {
+a[href*="producto/macuchino"] figure:hover {
   background-position: 0 90px;
   background-color: #967338;
 }
 
 .cpt-bodtox {
   color: gray;
+}
+.cpt-bodtox a {
+  position: fixed;
 }
 .cpt-bodtox h1 {
   font-size: 90px;
@@ -2602,10 +2701,11 @@ body {
 .cpt-bodtox .galeria-fotos__figure img:hover {
   background-color: #a3bd31;
 }
-.cpt-bodtox a[href*="bodtox"] {
+
+a[href*="producto/bodtox"] {
   cursor: ew-resize;
 }
-.cpt-bodtox a[href*="bodtox"] figure {
+a[href*="producto/bodtox"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_bodtox.svg);
@@ -2616,13 +2716,16 @@ body {
   border: solid 10px #a3bd31;
   line-height: 250px;
 }
-.cpt-bodtox a[href*="bodtox"] figure:hover {
+a[href*="producto/bodtox"] figure:hover {
   background-position: 0 90px;
   background-color: #8ba12a;
 }
 
 .cpt-royalbreakfast {
   color: gray;
+}
+.cpt-royalbreakfast a {
+  position: fixed;
 }
 .cpt-royalbreakfast h1 {
   font-size: 90px;
@@ -2650,10 +2753,11 @@ body {
 .cpt-royalbreakfast .galeria-fotos__figure img:hover {
   background-color: #711611;
 }
-.cpt-royalbreakfast a[href*="royalbreakfast"] {
+
+a[href*="producto/royalbreakfast"] {
   cursor: ew-resize;
 }
-.cpt-royalbreakfast a[href*="royalbreakfast"] figure {
+a[href*="producto/royalbreakfast"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_royalbreakfast.svg);
@@ -2664,13 +2768,16 @@ body {
   border: solid 10px #711611;
   line-height: 250px;
 }
-.cpt-royalbreakfast a[href*="royalbreakfast"] figure:hover {
+a[href*="producto/royalbreakfast"] figure:hover {
   background-position: 0 90px;
   background-color: #52100c;
 }
 
 .cpt-camucao {
   color: gray;
+}
+.cpt-camucao a {
+  position: fixed;
 }
 .cpt-camucao h1 {
   font-size: 90px;
@@ -2698,10 +2805,11 @@ body {
 .cpt-camucao .galeria-fotos__figure img:hover {
   background-color: #8b3b1d;
 }
-.cpt-camucao a[href*="camucao"] {
+
+a[href*="producto/camucao"] {
   cursor: ew-resize;
 }
-.cpt-camucao a[href*="camucao"] figure {
+a[href*="producto/camucao"] figure {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-image: url(assets/img/bg_camucao.svg);
@@ -2712,7 +2820,7 @@ body {
   border: solid 10px #8b3b1d;
   line-height: 250px;
 }
-.cpt-camucao a[href*="camucao"] figure:hover {
+a[href*="producto/camucao"] figure:hover {
   background-position: 0 90px;
   background-color: #6d2e17;
 }
@@ -3521,7 +3629,7 @@ hr {
   border-radius: 20px;
 }
 
-.img--circle, .cpt-graviola a[href*="graviola"] figure, .cpt-cacaocriollo a[href*="cacaocriollo"] figure, .cpt-chlorella a[href*="chlorella"] figure, .cpt-chia a[href*="chia"] figure, .cpt-amaranto a[href*="amaranto"] figure, .cpt-spiroulina a[href*="spiroulina"] figure, .cpt-camucamu a[href*="camucamu"] figure, .cpt-canamo a[href*="canamo"] figure, .cpt-maca a[href*="maca"] figure, .cpt-lucuma a[href*="lucuma"] figure, .cpt-stevia a[href*="stevia"] figure, .cpt-quinoa a[href*="quinoa"] figure, .cpt-alfalfa a[href*="alfalfa"] figure, .cpt-trigoverde a[href*="trigoverde"] figure, .cpt-algarroba a[href*="algarroba"] figure, .cpt-cardomariano a[href*="cardomariano"] figure, .cpt-linodorado a[href*="linodorado"] figure, .cpt-fresa a[href*="fresa"] figure, .cpt-coco a[href*="coco"] figure, .cpt-gymtonic a[href*="gymtonic"] figure, .cpt-delifiber a[href*="delifiber"] figure, .cpt-brainshake a[href*="brainshake"] figure, .cpt-andeanprotein a[href*="andeanprotein"] figure, .cpt-macuchino a[href*="macuchino"] figure, .cpt-bodtox a[href*="bodtox"] figure, .cpt-royalbreakfast a[href*="royalbreakfast"] figure, .cpt-camucao a[href*="camucao"] figure {
+.img--circle, a[href*="producto/graviola"] figure, a[href*="producto/cacaocriollo"] figure, a[href*="producto/chlorella"] figure, a[href*="producto/chia"] figure, a[href*="producto/amaranto"] figure, a[href*="producto/spiroulina"] figure, a[href*="producto/camucamu"] figure, a[href*="producto/canamo"] figure, a[href*="producto/maca"] figure, a[href*="producto/lucuma"] figure, a[href*="producto/stevia"] figure, a[href*="producto/quinoa"] figure, a[href*="producto/alfalfa"] figure, a[href*="producto/trigoverde"] figure, a[href*="producto/algarroba"] figure, a[href*="producto/cardomariano"] figure, a[href*="producto/linodorado"] figure, a[href*="producto/fresa"] figure, a[href*="producto/coco"] figure, a[href*="producto/gymtonic"] figure, a[href*="producto/delifiber"] figure, a[href*="producto/brainshake"] figure, a[href*="producto/andeanprotein"] figure, a[href*="producto/macuchino"] figure, a[href*="producto/bodtox"] figure, a[href*="producto/royalbreakfast"] figure, a[href*="producto/camucao"] figure {
   border-radius: 100%;
 }
 
