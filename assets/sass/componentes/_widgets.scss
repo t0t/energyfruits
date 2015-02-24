@@ -40,13 +40,13 @@
 
 .widget--newsletter {
 		
-		@extend %basepadding;
+		// @extend %basepadding;
 
-		margin-top: $gutterwidth / 2;
+		padding-top: $gutterwidth*2;
+
+		@include max-width($bp3);
 
 		@extend %text-center;
-
-		background-color: $color-alt;
 
 		form {
 
@@ -64,7 +64,7 @@
 		}
 
 		h3 {
-			padding-bottom: $gutterwidth / 2;
+			// padding-bottom: $gutterwidth / 2;
 			margin-right: $gutterwidth;
 		}
 

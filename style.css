@@ -450,7 +450,7 @@ th {
   text-transform: uppercase;
 }
 
-.widget--newsletter, .galeria-fotos {
+.galeria-fotos {
   padding: 3% 7%;
 }
 
@@ -4454,8 +4454,11 @@ Main navbar
 }
 
 .widget--newsletter {
-  margin-top: 1.5%;
-  background-color: #f0730b;
+  padding-top: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  width: 100%;
 }
 .widget--newsletter form {
   width: 100%;
@@ -4486,7 +4489,6 @@ Main navbar
   }
 }
 .widget--newsletter h3 {
-  padding-bottom: 1.5%;
   margin-right: 3%;
 }
 .widget--newsletter h3, .widget--newsletter label {
