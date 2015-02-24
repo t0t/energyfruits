@@ -3,7 +3,9 @@
 
 	@include max-width($bp0 - ($paddingbase * 10));
 	// height: 500px;
-	@include padding();
+	padding-top: 0;
+	padding-left: $gutterwidth*3;
+	padding-right: $gutterwidth*3;
 	position: relative;
 	z-index: 1;
 	// background-color: $background-alt;
@@ -16,11 +18,14 @@
 
 	}
 
-	* {
-		
-		@include transition(.5s);
-		
+	figure {
 	}
+
+	// * {
+		
+	// 	@include transition(.5s);
+		
+	// }
 
 	@media all and (max-width:$bp2) {
 		
@@ -95,23 +100,23 @@
 .slider__figure {
 
 	@extend %text-center;
-	
+	position: relative;
+
 	@media all and (min-width: 780px) {
 
-		@include flexbox;
-		@include justify-content(center); //alineado horizontal
-		@include align-items(center); //alineado vertical
-		width: 100%;
+		// @include flexbox;
+		// @include justify-content(center); //alineado horizontal
+		// @include align-items(center); //alineado vertical
 
 	}
 
 	img {
 		
-		width: 250px;
+		
 		@include circle();
 		margin: 0;
-		-webkit-filter: grayscale(1);
-  		filter: grayscale(1);
+		// -webkit-filter: grayscale(1);
+  		// filter: grayscale(1);
 
 		@media all and (min-width: 780px) {
 
@@ -156,24 +161,17 @@
     	@extend %text-center;
     	color: $background;
     	// font-size: 1.9rem;
+    	// position: absolute;
+    	// top: 10px;
+    	// left: 10px;
 
 			@media all and (min-width: 780px) {
 
-				width: 250px;
 
 			}
 
 
 			@media all and (min-width: 1280px) {
-
-	    		width: 440px;
-
-	    		// font-size: 3.3rem;
-
-	    		line-height: 1.2;
-
-	    		// margin-left: $gutterwidth;
-
 			}
 	}
 
@@ -309,6 +307,7 @@
 .slider__wrap {
 	
 	background-color: $white;
+	padding-bottom: $gutterwidth;
 	
 }
 
@@ -317,10 +316,7 @@
 /* Slider */
 
 .slick-slider {
-    position: relative;
     display: block;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -349,11 +345,9 @@
 }
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    
+	@include translate3d(0,0,0);
+
 }
 
 .slick-track {
@@ -377,15 +371,18 @@
     }
 }
 .slick-slide {
+
     float: left;
-    height: 100%;
-    min-height: 1px;
+    // width: 200px;
+    height: auto;
+    // min-height: 1px;
+    // background-color: pink;
+    // position: relative;
+
     [dir="ltr"] & {
         float: right;
     }
-    img {
-        display: block;
-    }
+
     &.slick-loading img {
         display: none;
     }
@@ -415,8 +412,8 @@
 
 	li {
 
-		margin-top: $gutterwidth;
-		height: 50px;
+		// margin-top: $gutterwidth;
+		// height: 50px;
 		display: inline-block;
 
 		button {
