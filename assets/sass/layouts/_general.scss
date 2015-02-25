@@ -286,9 +286,9 @@ img[src$=".svg"] {
 
 
 //Rev Slider
-.rev_slider_wrapper {
-	z-index: 0;
-}
+// .rev_slider_wrapper {
+// 	z-index: 0;
+// }
 
 // Contact Form 7
 .wpcf7-form-control-wrap {}
@@ -319,54 +319,64 @@ input {
 
 // Mappress
 .mapp-canvas {
+	
+	border-radius: 10px;
+	@include max-width($bp0);
 
-	@media all and (min-width: 410px) {
-
-    	display: table-cell;
-		width: 50% !important;
-
-    }
 }
 
-.mapp-layout {
+.mapp-iw {
+	p, a {
+		color: $color-base;
+	}
+	a:hover {
+		text-decoration: underline;
+		color: $color-base;
+	}
+}
 
-	@media all and (min-width: 410px) {
+.gm-style {
+	.gm-style-iw {}
+}
+// .mapp-layout {
 
-		display: table;
-		// width: 50%;
+// 	@media all and (min-width: 410px) {
+
+// 		display: table;
+// 		// width: 50%;
     
-    }
-}
+//     }
+// }
 .mapp-directions, .mapp-map-links, .mapp-dialog {display: none}
 
-.mapp-poi-list {
+// .mapp-poi-list {
 	
-	display: table-cell;
-	width: 50% !important;
-	@include font-size(16);
-	padding-left: $gutterwidth*2;
+// 	display: table-cell;
+// 	width: 50% !important;
+// 	@include font-size(16);
+// 	padding-left: $gutterwidth*2;
 
-	thead {
-		display: none;
-	}
+// 	thead {
+// 		display: none;
+// 	}
 
-	tbody {
-		// display: table;
-	}
+// 	tbody {
+// 		// display: table;
+// 	}
 
-	img {
-		// display: none;
-		height: 10px;
-	}
-	td {
-		// @extend %text-center;
-	}
-	tr {
-		float: left;
-		width: 50%;
-	}
+// 	img {
+// 		// display: none;
+// 		height: 10px;
+// 	}
+// 	td {
+// 		// @extend %text-center;
+// 	}
+// 	tr {
+// 		float: left;
+// 		width: 50%;
+// 	}
 
-}
+// }
 
 
 

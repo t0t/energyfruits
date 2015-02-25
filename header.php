@@ -82,7 +82,9 @@
 		wp_nav_menu( $defaults );
 		?>
 
+	<?php echo do_shortcode('[google-translator]'); ?>
 	</nav>
+
 
 
 </header>
@@ -107,8 +109,7 @@
 
 	</nav>
 
-	<!-- Traductor en vivo, es intrusivo y feo pero hace lo que el cliente pide: tengo un dilema... -->
-	<?php //bing_translator(); ?>
+	
 
 <?php //get_template_part('templates/nav', 'secondary' ); ?>
 <?php //get_template_part('templates/nav', 'main' ); ?>

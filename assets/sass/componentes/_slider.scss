@@ -8,8 +8,6 @@
 	padding-top: 0;
 	padding-left: $gutterwidth*3;
 	padding-right: $gutterwidth*3;
-	// background-color: $background-alt;
-	// @include background-image(bg_top_main,100%,no-repeat,svg);
 
 	ul {
 
@@ -18,22 +16,9 @@
 
 	}
 
-	// * {
-		
-	// 	@include transition(.5s);
-		
-	// }
+	@media all and (max-width:$bp2) {}
 
-	@media all and (max-width:$bp2) {
-		
-		// background-color: $color-base;
-
-	}
-
-	@media all and (min-width:$bp3) {
-		
-
-	}
+	@media all and (min-width:$bp3) {}
 
 }
 
@@ -320,6 +305,7 @@
 	position: relative;
 	background-color: $white;
 	padding-bottom: $gutterwidth;
+	width: 100%;
 
 	&::before {
 		content: "";

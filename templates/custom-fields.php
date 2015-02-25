@@ -345,7 +345,7 @@
                     <!-- carrusel links externos -->
                     <section class="slider__wrap">
     
-                    <h3 class="slider__title">Tiendas Virtuales</h3>
+                    <h3 class="slider__title"><i class="icon-attachment"></i> Tiendas Virtuales</h3>
 
                     <div class="slider__slides slider">
 
@@ -360,7 +360,7 @@
 
                         <?php if (get_sub_field("img")): ?>
 
-                            <a href="<?php echo $link; ?>" target="_blank">
+                            <a class="" href="<?php echo $link; ?>" target="_blank">
                                 <?php $image = get_sub_field('img');
                                 echo '<img src="'.$image['sizes']['large'].'" />'; ?>
                             </a>
@@ -377,10 +377,6 @@
                         <?php endif; ?>
 
                         <?php if( $link ): ?>
-
-                            <a class="btn" href="<?php echo $link; ?>" target="_blank">
-                            <i class="icon-attachment"></i> <?php echo $link; ?></a>
-
                         <?php endif; ?>
 
                         </figcaption>
@@ -570,7 +566,7 @@
     
     <div style="
     background-image: url('<?php the_sub_field("bg_image"); ?>');
-    background-size: cover;
+    background-attachment: fixed;
     " class="img--bg-big well well--img">
         
         <h2 class="efecto--intro"><?php the_sub_field("title"); ?></h2>

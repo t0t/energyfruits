@@ -1091,6 +1091,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
   position: relative;
   background-color: white;
   padding-bottom: 3%;
+  width: 100%;
 }
 .slider__wrap::before {
   content: "";
@@ -3456,47 +3457,28 @@ img[src$=".svg"] {
   text-shadow: none;
 }
 
-.rev_slider_wrapper {
-  z-index: 0;
-}
-
 .wpcf7 img {
   width: auto;
 }
 
-@media all and (min-width: 410px) {
-  .mapp-canvas {
-    display: table-cell;
-    width: 50% !important;
-  }
+.mapp-canvas {
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1800px;
+  width: 100%;
 }
 
-@media all and (min-width: 410px) {
-  .mapp-layout {
-    display: table;
-  }
+.mapp-iw p, .mapp-iw a {
+  color: #317549;
+}
+.mapp-iw a:hover {
+  text-decoration: underline;
+  color: #317549;
 }
 
 .mapp-directions, .mapp-map-links, .mapp-dialog {
   display: none;
-}
-
-.mapp-poi-list {
-  display: table-cell;
-  width: 50% !important;
-  font-size: 16px;
-  font-size: 0.8rem;
-  padding-left: 6%;
-}
-.mapp-poi-list thead {
-  display: none;
-}
-.mapp-poi-list img {
-  height: 10px;
-}
-.mapp-poi-list tr {
-  float: left;
-  width: 50%;
 }
 
 .aligncenter {
@@ -3839,6 +3821,17 @@ input[type="submit"].btn:hover {
   color: #ffcccc;
 }
 .btn--warning:visited {
+  color: #330000;
+}
+
+.btn--link {
+  background-color: red;
+  color: #330000;
+}
+.btn--link:hover {
+  color: #ffcccc;
+}
+.btn--link:visited {
   color: #330000;
 }
 

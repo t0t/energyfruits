@@ -185,6 +185,16 @@ input[type="submit"].btn:hover {
 	}
 }
 
+.btn--link {
+	background-color: $color-warning;
+	color : darken($color-warning, 40%);
+	&:hover {
+		color : lighten($color-warning, 40%); }
+	&:visited {
+		color : darken($color-warning, 40%);
+	}
+}
+
 /**
 * Botón en footer
 */
