@@ -285,6 +285,16 @@
 	.scroll-top {
 		// @extend .icon-arrow-up2;
 		position: relative;
-		float: right;
-		margin-right: $gutterwidth;
+
+		.icon-arrow-up2 {
+
+			position: absolute;
+			top: -200px;
+			right: 0;
+			left: 0;
+
+			&:before {
+				@include font-size(30);
+			}
+		}
 	}

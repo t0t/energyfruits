@@ -399,6 +399,55 @@
 
 
 
+
+                    <?php if( have_rows('carrusel_webs_interesantes')): ?>
+
+                    <!-- carrusel webs interesantes -->
+                    <section class="slider__wrap">
+    
+                    <h3 class="slider__title"><i class="icon-attachment"></i> Webs interesantes</h3>
+
+                    <div class="slider__slides slider">
+
+                    <?php while( have_rows('carrusel_webs_interesantes') ): the_row(); ?>
+
+                    <a class="" href="<?php the_sub_field('link') ?>" target="_blank">
+                    
+                    <figure>
+
+                        <?php if (get_sub_field("img")): ?>
+
+                                <?php $image = get_sub_field('img');
+                                echo '<img src="'.$image['sizes']['large'].'" />'; ?>
+
+                        <?php endif ?>
+                    
+
+                        <figcaption class="slider__title">
+
+                            <?php the_sub_field('titulo'); ?>
+
+                        </figcaption>
+
+                    </figure>
+                    </a>
+
+
+                    <?php endwhile; ?>
+
+                    </div>
+        
+                    <button type="button" class="slider__btn-prev"></button>
+                    <button type="button" class="slider__btn-next"></button>
+
+                    </section>
+                    <!-- /carrusel webs interesantes -->
+
+                    <?php endif; ?>
+
+
+
+
                     
                     <?php if( have_rows('grid')): ?>
                     <?php while (have_rows('grid')) : the_row(); ?>
@@ -573,7 +622,7 @@
 
         <p><?php the_sub_field("description"); ?></p>
 
-        <button class="btn btn--image"><a href="<?php the_sub_field("call_to_action"); ?>">Work in progress</a></button>
+        <button class="btn btn--image"><a href="<?php the_sub_field("call_to_action"); ?>">Más info</a></button>
 
     </div>   
 
@@ -582,9 +631,6 @@
     
     <div class="well well--anim">
 
-
-        <!-- <img src="<?php //echo get_bloginfo('template_directory');?>/assets/img/logo_anim.svg" alt="" class="anim-intro"> -->
-        
         <svg class="anim-intro" viewBox="0 -14 151 151" preserveAspectRatio="xMidYMid meet">
 
             <title>Logo t0theme anim</title>
@@ -674,7 +720,7 @@
 
 
 
-    <?php elseif(get_row_layout() == "carusel1"): // Carusel Energyfruits ?>
+    <?php elseif(get_row_layout() == "carusel1"): // Carusel Superfoods ?>
     
     <?php 
         $loop = new WP_Query( array( 
@@ -754,6 +800,8 @@
     </section>
 
     
+
+
     <?php elseif(get_row_layout() == "carusel3"): // Carusel enlaces externos ?>
     
     <?php 
