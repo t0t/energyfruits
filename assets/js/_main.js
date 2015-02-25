@@ -20,6 +20,8 @@ $('.slider').slick({
 
     // speed: 100,
     // rtl: false,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     arrows: true,
 
 

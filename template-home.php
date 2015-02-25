@@ -30,7 +30,7 @@ Template Name: Portada
 
 			<form action="//energyfruits.us5.list-manage.com/subscribe/post?u=c5802993bc&amp;id=857eaffa92" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
-				<h3>newsletter</h3>
+				<h3>Te informamos. Newsletter</h3>
 
 				<label for="mce-EMAIL"></label>
 				<input type="email" value="" name="EMAIL" placeholder="Tu email aquí" id="mce-EMAIL">
