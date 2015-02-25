@@ -59,6 +59,10 @@
                             <?php } ?>
 
 
+                            <?php if ( !is_page()): ?>
+                                <small><?php echo get_the_time('j F Y'); ?></small>
+                            <?php endif ?>
+
                             <!-- the post content -->
                             <?php the_sub_field("content"); ?>
 
@@ -69,14 +73,16 @@
 
                             <?php while( have_rows('lista_simple') ): the_row(); ?>
                             
-                                <?php if (get_sub_field("title")): ?>
-
-                                    <h4><?php the_sub_field('title'); ?></h4>
-
-                                <?php endif ?>
+                                
 
                             <ul class="list list--unordered">
                             
+                                <?php if (get_sub_field("title")): ?>
+
+                                    <li><?php the_sub_field('title'); ?></li>
+
+                                <?php endif ?>
+
                                 <?php while(has_sub_field('lista_simple_elemento')): ?>  
                             
                             <?php
@@ -164,7 +170,7 @@
 
 
 
-                        <?php the_tags( 'Contingut relacionat: ', ' • ', '<br />' ); ?>
+                        <?php the_tags( '', ' • ', '<br />' ); ?>
 
 
 
@@ -336,9 +342,11 @@
                     <?php if( have_rows('carrusel_links_externos')): ?>
 
                     <!-- carrusel links externos -->
-                    <h3>Tiendas Virtuales</h3>
+                    <section class="slider__wrap">
+    
+                    <h3 class="slider__title">Tiendas Virtuales</h3>
 
-                    <div class="slider">
+                    <div class="slider__slides slider">
 
                     <?php while( have_rows('carrusel_links_externos') ): the_row(); ?>
                     
@@ -382,6 +390,11 @@
                     <?php endwhile; ?>
 
                     </div>
+        
+                    <button type="button" class="slider__btn-prev"></button>
+                    <button type="button" class="slider__btn-next"></button>
+
+                    </section>
                     <!-- /carrusel links externos -->
 
                     <?php endif; ?>
@@ -686,7 +699,7 @@
                 <figure>
 
                     <figcaption class="slider__caption"><?php the_title(); ?></figcaption>
-                    
+
                 </figure>
 
             </a>

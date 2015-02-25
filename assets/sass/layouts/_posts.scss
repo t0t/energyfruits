@@ -10,6 +10,37 @@
 
 }
 
+.main-post__subheader {
+
+	// @include max-width($bp2);
+	@include padding($gutterwidth);
+	margin-bottom: 0;
+
+
+	@media only screen and (min-width: $bp3) {
+
+		@include font-size(26);
+		@include max-width(800px);
+		margin-bottom: $gutterwidth;
+
+    }
+
+    @media only screen and (min-width: $bp2) {
+
+		@include font-size(36);
+		@include max-width(950px);
+
+    }
+
+    @media only screen and (min-width: $bp1) {
+
+		@include font-size(42);
+		@include max-width(1180px);
+
+    }
+
+}
+
 .main-post__content {
 
 	// @include padding();
@@ -39,13 +70,28 @@
 
 	.main-post__content__entry {
 
-		@include padding();
+		@extend %padding-horizontal;
+
+		position: relative;
+		
+
+		small {
+
+			display: inline-block;
+			@include font-size(13);
+			background-color: $black-alpha-fuerte;;
+			padding: 3px 5px;
+			margin-bottom: 10px;
+
+		}
+
 
 		ul {
 
 	        @extend %no-margin;
 			@include padding($gutterwidth*2);
 			// border: 2px dotted $color-alt;
+			background-color: $white-alpha-suave;
 
 		}
 		
@@ -58,51 +104,41 @@
 
 		a {
 
-			// color: $color-alt;
+			color: $white-alpha-medio;
+			border-bottom: 2px dotted $color-alt;
+			padding-bottom: 3px;
 
 		}
 
 
 		@media all and (min-width: $bp3) {
 
+			padding-right: $gutterwidth*2;
+
+			width: calc(75% - #{$gutterwidth});
+	    
+	    }
+
+	    @media all and (min-width: 900px) {
+
+			padding-right: $gutterwidth*2;
+
 			width: calc(65% - #{$gutterwidth});
-	    
-	    }
 
+		}
 
-	    @media all and (min-width: $bp2) {
+	    @media all and (min-width: $bp1) {
 
-	    	width: calc(55% - #{$gutterwidth});
-	    
-	    }
+			padding-right: $gutterwidth*2;
+
+			width: calc(55% - #{$gutterwidth});
+
+		}
 
 	}
 
 
-.main-post__subheader {
 
-	@include max-width($bp2);
-	// @include padding($gutterwidth);
-	padding-bottom: $gutterwidth*2;
-	margin-bottom: 0;
-
-
-	@media only screen and (min-width: $bp3) {
-
-		@include font-size(26);
-		@include max-width($bp3);
-
-    }
-
-
-    @media only screen and (min-width: $bp1) {
-
-		@include font-size(48);
-		@include max-width($bp2);
-
-    }
-
-}
 
 
 

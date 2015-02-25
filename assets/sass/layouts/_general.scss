@@ -14,7 +14,9 @@ html {
 body {
 
 	font-family: $basefont;
+	font-weight: 400;
 	color: $textcolor;
+	letter-spacing: $baseletterspacing;
 	// @include background-image(bg,cover,no-repeat,center top, svg);
 	background-color: $background;
 	background-image: url(#{$image-path}bg.svg);

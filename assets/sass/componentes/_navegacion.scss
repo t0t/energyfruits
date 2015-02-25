@@ -192,7 +192,7 @@ Main navbar
 
         @media all and (min-width: $bp1) {
 
-            @include font-size(30);
+            @include font-size(25);
 
         }
 
@@ -204,7 +204,7 @@ Main navbar
     }
 
     a {
-        font-family: $basefont;
+        // font-family: $basefont;
         color: $color-base;
 
         &:hover {

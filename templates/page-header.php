@@ -59,8 +59,6 @@
             <?php the_title(); ?>
 
             <?php  if ( get_post_type() == 'post' ) { ?>
-    
-            <small class="altheader"><?php echo get_the_time('j F Y'); ?></small>
 
             <?php } ?>
 

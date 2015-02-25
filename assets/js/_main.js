@@ -6,7 +6,7 @@
     $(function() {
 
 
-$(".video-main__iframe").fitVids();
+$(".main-post__content__entry").fitVids();
 
 
 

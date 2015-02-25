@@ -46,7 +46,7 @@ h3 small {
 }
 
 @each $header, $margin-bot, $font-size, $line-height in 
-	(h1, 0, 45, 1)
+	(h1, 0, 65, 1)
 	(h2, 3, 45, 1.1)
 	(h3, 0, 25, 1.4)
 	(h4, 2, 30, 1)
@@ -108,9 +108,13 @@ ul {
 blockquote  {
 	margin : 0 0 $baselineheight 0;
 	padding-left : $gutterwidth;
-	border-left : ($paddingbase / 4) solid $color-base;
-	font-style : normal;
+	border-left : ($paddingbase / 4) solid $color-alt;
+	font-style : italic;
+	color: $white-alpha-fuerte;
 	line-height: $baselineheight;
+
+	@include max-width($bp3);
+
 	q {
 		@include font-size(32);
 		@include margin-bottom(0);

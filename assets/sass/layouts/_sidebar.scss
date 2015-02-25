@@ -1,12 +1,12 @@
 
 .sidebar {
 
-	// width: 100%;
-	padding: $gutterwidth/2;
-	// background-color: $color-alt;
-	@include font-size(24);
+	border-radius: $radius*5;
+	padding: $gutterwidth;
+	background-color: $black-alpha-fuerte;
+	// @include font-size(24);
 	
-	@media all and (min-width: $bp2) {
+	@media all and (min-width: 900px) {
 
     	// padding: $gutterwidth;
     	position: relative;
@@ -23,10 +23,10 @@
 
 	a, a:visited {
 
-		color: $color-alt;
+		color: $white-alpha-medio;
 
 		&:hover {
-			color: $color-base;
+			color: $white;
 		}
 
 	}
