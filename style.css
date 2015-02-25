@@ -681,7 +681,6 @@ article, aside, figure, footer, header, hgroup, nav, section {
 
 .main-post__subheader {
   padding: 3%;
-  margin-bottom: 0;
 }
 @media only screen and (min-width: 600px) {
   .main-post__subheader {
@@ -691,7 +690,6 @@ article, aside, figure, footer, header, hgroup, nav, section {
     margin-right: auto;
     max-width: 800px;
     width: 100%;
-    margin-bottom: 3%;
   }
 }
 @media only screen and (min-width: 1124px) {
@@ -1453,6 +1451,7 @@ body {
   color: gray;
 }
 .cpt-graviola h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -1465,6 +1464,9 @@ body {
 }
 .cpt-graviola .main-post__content {
   background-color: white;
+}
+.cpt-graviola .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-graviola .main-post__content__entry ul {
   background-image: url(assets/img/bg_graviola.svg);
@@ -1515,6 +1517,7 @@ a[href*="producto/graviola"] figure:hover {
   color: gray;
 }
 .cpt-cacaocriollo h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -1527,6 +1530,9 @@ a[href*="producto/graviola"] figure:hover {
 }
 .cpt-cacaocriollo .main-post__content {
   background-color: white;
+}
+.cpt-cacaocriollo .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-cacaocriollo .main-post__content__entry ul {
   background-image: url(assets/img/bg_cacaocriollo.svg);
@@ -1577,6 +1583,7 @@ a[href*="producto/cacaocriollo"] figure:hover {
   color: gray;
 }
 .cpt-chlorella h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -1589,6 +1596,9 @@ a[href*="producto/cacaocriollo"] figure:hover {
 }
 .cpt-chlorella .main-post__content {
   background-color: white;
+}
+.cpt-chlorella .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-chlorella .main-post__content__entry ul {
   background-image: url(assets/img/bg_chlorella.svg);
@@ -1639,6 +1649,7 @@ a[href*="producto/chlorella"] figure:hover {
   color: gray;
 }
 .cpt-chia h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -1651,6 +1662,9 @@ a[href*="producto/chlorella"] figure:hover {
 }
 .cpt-chia .main-post__content {
   background-color: white;
+}
+.cpt-chia .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-chia .main-post__content__entry ul {
   background-image: url(assets/img/bg_chia.svg);
@@ -1701,6 +1715,7 @@ a[href*="producto/chia"] figure:hover {
   color: gray;
 }
 .cpt-amaranto h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -1713,6 +1728,9 @@ a[href*="producto/chia"] figure:hover {
 }
 .cpt-amaranto .main-post__content {
   background-color: white;
+}
+.cpt-amaranto .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-amaranto .main-post__content__entry ul {
   background-image: url(assets/img/bg_amaranto.svg);
@@ -1763,6 +1781,7 @@ a[href*="producto/amaranto"] figure:hover {
   color: gray;
 }
 .cpt-spiroulina h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -1775,6 +1794,9 @@ a[href*="producto/amaranto"] figure:hover {
 }
 .cpt-spiroulina .main-post__content {
   background-color: white;
+}
+.cpt-spiroulina .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-spiroulina .main-post__content__entry ul {
   background-image: url(assets/img/bg_spiroulina.svg);
@@ -1825,6 +1847,7 @@ a[href*="producto/spiroulina"] figure:hover {
   color: gray;
 }
 .cpt-camucamu h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -1837,6 +1860,9 @@ a[href*="producto/spiroulina"] figure:hover {
 }
 .cpt-camucamu .main-post__content {
   background-color: white;
+}
+.cpt-camucamu .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-camucamu .main-post__content__entry ul {
   background-image: url(assets/img/bg_camucamu.svg);
@@ -1887,6 +1913,7 @@ a[href*="producto/camucamu"] figure:hover {
   color: gray;
 }
 .cpt-canamo h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -1899,6 +1926,9 @@ a[href*="producto/camucamu"] figure:hover {
 }
 .cpt-canamo .main-post__content {
   background-color: white;
+}
+.cpt-canamo .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-canamo .main-post__content__entry ul {
   background-image: url(assets/img/bg_canamo.svg);
@@ -1949,6 +1979,7 @@ a[href*="producto/canamo"] figure:hover {
   color: gray;
 }
 .cpt-maca h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -1961,6 +1992,9 @@ a[href*="producto/canamo"] figure:hover {
 }
 .cpt-maca .main-post__content {
   background-color: white;
+}
+.cpt-maca .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-maca .main-post__content__entry ul {
   background-image: url(assets/img/bg_maca.svg);
@@ -2011,6 +2045,7 @@ a[href*="producto/maca"] figure:hover {
   color: gray;
 }
 .cpt-lucuma h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -2023,6 +2058,9 @@ a[href*="producto/maca"] figure:hover {
 }
 .cpt-lucuma .main-post__content {
   background-color: white;
+}
+.cpt-lucuma .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-lucuma .main-post__content__entry ul {
   background-image: url(assets/img/bg_lucuma.svg);
@@ -2073,6 +2111,7 @@ a[href*="producto/lucuma"] figure:hover {
   color: gray;
 }
 .cpt-stevia h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -2085,6 +2124,9 @@ a[href*="producto/lucuma"] figure:hover {
 }
 .cpt-stevia .main-post__content {
   background-color: white;
+}
+.cpt-stevia .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-stevia .main-post__content__entry ul {
   background-image: url(assets/img/bg_stevia.svg);
@@ -2135,6 +2177,7 @@ a[href*="producto/stevia"] figure:hover {
   color: gray;
 }
 .cpt-quinoa h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -2147,6 +2190,9 @@ a[href*="producto/stevia"] figure:hover {
 }
 .cpt-quinoa .main-post__content {
   background-color: white;
+}
+.cpt-quinoa .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-quinoa .main-post__content__entry ul {
   background-image: url(assets/img/bg_quinoa.svg);
@@ -2197,6 +2243,7 @@ a[href*="producto/quinoa"] figure:hover {
   color: gray;
 }
 .cpt-alfalfa h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -2209,6 +2256,9 @@ a[href*="producto/quinoa"] figure:hover {
 }
 .cpt-alfalfa .main-post__content {
   background-color: white;
+}
+.cpt-alfalfa .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-alfalfa .main-post__content__entry ul {
   background-image: url(assets/img/bg_alfalfa.svg);
@@ -2259,6 +2309,7 @@ a[href*="producto/alfalfa"] figure:hover {
   color: gray;
 }
 .cpt-trigoverde h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -2271,6 +2322,9 @@ a[href*="producto/alfalfa"] figure:hover {
 }
 .cpt-trigoverde .main-post__content {
   background-color: white;
+}
+.cpt-trigoverde .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-trigoverde .main-post__content__entry ul {
   background-image: url(assets/img/bg_trigoverde.svg);
@@ -2321,6 +2375,7 @@ a[href*="producto/trigoverde"] figure:hover {
   color: gray;
 }
 .cpt-algarroba h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -2333,6 +2388,9 @@ a[href*="producto/trigoverde"] figure:hover {
 }
 .cpt-algarroba .main-post__content {
   background-color: white;
+}
+.cpt-algarroba .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-algarroba .main-post__content__entry ul {
   background-image: url(assets/img/bg_algarroba.svg);
@@ -2383,6 +2441,7 @@ a[href*="producto/algarroba"] figure:hover {
   color: gray;
 }
 .cpt-cardomariano h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -2395,6 +2454,9 @@ a[href*="producto/algarroba"] figure:hover {
 }
 .cpt-cardomariano .main-post__content {
   background-color: white;
+}
+.cpt-cardomariano .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-cardomariano .main-post__content__entry ul {
   background-image: url(assets/img/bg_cardomariano.svg);
@@ -2445,6 +2507,7 @@ a[href*="producto/cardomariano"] figure:hover {
   color: gray;
 }
 .cpt-linodorado h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -2457,6 +2520,9 @@ a[href*="producto/cardomariano"] figure:hover {
 }
 .cpt-linodorado .main-post__content {
   background-color: white;
+}
+.cpt-linodorado .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-linodorado .main-post__content__entry ul {
   background-image: url(assets/img/bg_linodorado.svg);
@@ -2507,6 +2573,7 @@ a[href*="producto/linodorado"] figure:hover {
   color: gray;
 }
 .cpt-fresa h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -2519,6 +2586,9 @@ a[href*="producto/linodorado"] figure:hover {
 }
 .cpt-fresa .main-post__content {
   background-color: white;
+}
+.cpt-fresa .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-fresa .main-post__content__entry ul {
   background-image: url(assets/img/bg_fresa.svg);
@@ -2569,6 +2639,7 @@ a[href*="producto/fresa"] figure:hover {
   color: gray;
 }
 .cpt-coco h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -2581,6 +2652,9 @@ a[href*="producto/fresa"] figure:hover {
 }
 .cpt-coco .main-post__content {
   background-color: white;
+}
+.cpt-coco .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-coco .main-post__content__entry ul {
   background-image: url(assets/img/bg_coco.svg);
@@ -2631,6 +2705,7 @@ a[href*="producto/coco"] figure:hover {
   color: gray;
 }
 .cpt-gymtonic h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -2643,6 +2718,9 @@ a[href*="producto/coco"] figure:hover {
 }
 .cpt-gymtonic .main-post__content {
   background-color: white;
+}
+.cpt-gymtonic .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-gymtonic .main-post__content__entry ul {
   background-image: url(assets/img/bg_gymtonic.svg);
@@ -2693,6 +2771,7 @@ a[href*="producto/gymtonic"] figure:hover {
   color: gray;
 }
 .cpt-delifiber h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -2705,6 +2784,9 @@ a[href*="producto/gymtonic"] figure:hover {
 }
 .cpt-delifiber .main-post__content {
   background-color: white;
+}
+.cpt-delifiber .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-delifiber .main-post__content__entry ul {
   background-image: url(assets/img/bg_delifiber.svg);
@@ -2755,6 +2837,7 @@ a[href*="producto/delifiber"] figure:hover {
   color: gray;
 }
 .cpt-brainshake h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -2767,6 +2850,9 @@ a[href*="producto/delifiber"] figure:hover {
 }
 .cpt-brainshake .main-post__content {
   background-color: white;
+}
+.cpt-brainshake .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-brainshake .main-post__content__entry ul {
   background-image: url(assets/img/bg_brainshake.svg);
@@ -2817,6 +2903,7 @@ a[href*="producto/brainshake"] figure:hover {
   color: gray;
 }
 .cpt-andeanprotein h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -2829,6 +2916,9 @@ a[href*="producto/brainshake"] figure:hover {
 }
 .cpt-andeanprotein .main-post__content {
   background-color: white;
+}
+.cpt-andeanprotein .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-andeanprotein .main-post__content__entry ul {
   background-image: url(assets/img/bg_andeanprotein.svg);
@@ -2879,6 +2969,7 @@ a[href*="producto/andeanprotein"] figure:hover {
   color: gray;
 }
 .cpt-macuchino h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -2891,6 +2982,9 @@ a[href*="producto/andeanprotein"] figure:hover {
 }
 .cpt-macuchino .main-post__content {
   background-color: white;
+}
+.cpt-macuchino .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-macuchino .main-post__content__entry ul {
   background-image: url(assets/img/bg_macuchino.svg);
@@ -2941,6 +3035,7 @@ a[href*="producto/macuchino"] figure:hover {
   color: gray;
 }
 .cpt-bodtox h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -2953,6 +3048,9 @@ a[href*="producto/macuchino"] figure:hover {
 }
 .cpt-bodtox .main-post__content {
   background-color: white;
+}
+.cpt-bodtox .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-bodtox .main-post__content__entry ul {
   background-image: url(assets/img/bg_bodtox.svg);
@@ -3003,6 +3101,7 @@ a[href*="producto/bodtox"] figure:hover {
   color: gray;
 }
 .cpt-royalbreakfast h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -3015,6 +3114,9 @@ a[href*="producto/bodtox"] figure:hover {
 }
 .cpt-royalbreakfast .main-post__content {
   background-color: white;
+}
+.cpt-royalbreakfast .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-royalbreakfast .main-post__content__entry ul {
   background-image: url(assets/img/bg_royalbreakfast.svg);
@@ -3065,6 +3167,7 @@ a[href*="producto/royalbreakfast"] figure:hover {
   color: gray;
 }
 .cpt-camucao h1 {
+  margin-top: 3%;
   font-size: 90px;
   font-size: 4.5rem;
 }
@@ -3077,6 +3180,9 @@ a[href*="producto/royalbreakfast"] figure:hover {
 }
 .cpt-camucao .main-post__content {
   background-color: white;
+}
+.cpt-camucao .main-post__content__entry {
+  padding-top: 3%;
 }
 .cpt-camucao .main-post__content__entry ul {
   background-image: url(assets/img/bg_camucao.svg);
@@ -5135,6 +5241,7 @@ input:required:focus:valid {
 
 .galeria {
   line-height: 0.8em;
+  padding-top: 3%;
 }
 @media (min-width: 930px) {
   .galeria {

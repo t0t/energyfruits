@@ -59,7 +59,7 @@
                             <?php } ?>
 
 
-                            <?php if ( !is_page()): ?>
+                            <?php if ( get_post_type() == 'post'): ?>
                                 <small><?php echo get_the_time('j F Y'); ?></small>
                             <?php endif ?>
 

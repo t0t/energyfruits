@@ -12,6 +12,8 @@
         color: $grey;
 
         h1 {
+            
+            margin-top: $gutterwidth;
             @include font-size(90);
         }
 
@@ -36,6 +38,8 @@
         }
 
         .main-post__content__entry {
+
+            padding-top: $gutterwidth;
 
             ul {
 

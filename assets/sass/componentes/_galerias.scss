@@ -2,6 +2,7 @@
 .galeria {
 	//mirar el line-height del small
 	line-height : $baselineheight/2;
+	padding-top: $gutterwidth;
 
     @media (min-width: $bp2-5) {
 
