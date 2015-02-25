@@ -1,5 +1,4 @@
 
-
 <!-- Bloques -->
 <?php if( have_rows('layout_content') ): ?>
 <?php while ( have_rows('layout_content') ) : the_row();?>
@@ -20,8 +19,10 @@
 
                 <hgroup class="main-post__header">
 
-                <!-- Page Header -->
-                <?php get_template_part('templates/page', 'header'); ?>
+                <?php if ( !is_page('catalogo')): ?>
+                    <!-- Page Header -->
+                    <?php get_template_part('templates/page', 'header'); ?>
+                <?php endif ?>
 
                 <?php if (get_sub_field("header")): ?>
 
@@ -566,9 +567,13 @@
     
     <?php elseif(get_row_layout() == "well-img"): //Wellcome panel ?>
     
-    <div class="img--bg-big well well--img">
+    
+    <div style="
+    background-image: url('<?php the_sub_field("bg_image"); ?>');
+    background-size: cover;
+    " class="img--bg-big well well--img">
         
-        <h1 class="altheader efecto--intro"><?php the_sub_field("title"); ?></h1>
+        <h2 class="efecto--intro"><?php the_sub_field("title"); ?></h2>
 
         <p><?php the_sub_field("description"); ?></p>
 

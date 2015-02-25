@@ -206,11 +206,8 @@
 	//align-content: center;
 	@include max-width($bp2);
 	// min-height : $paddingbase;
-	padding : $paddingbase $paddingbase;
 	border-radius: $radius;
-	margin-bottom : $baselineheight;
 	@extend %text-center;
-	background-color : $color-base-light;
 	
 	p {
 		@include max-width($bp3);
@@ -234,9 +231,9 @@
 	}
 
 	.well--img {
-		@include max-width($bp1);
-		@include size(100%, 600px);
-		border-radius: 0;
+		@include max-width($bp0);
+		@include size(100%, 400px);
+
 		p, h3 {
 			color: $white;
 		}

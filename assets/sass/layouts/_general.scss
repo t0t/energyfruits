@@ -53,9 +53,9 @@ img[src$=".svg"] {
 		background-color: $color-base;
 	}
 	.img--bg-big {
-		@include background-image(image,cover,no-repeat,jpg);
+		@include background-image(logo,cover,no-repeat,svg);
 		background-position: center;
-		background-color: $color-base;
+		// background-color: $color-base;
 	}
 	// Mascaras
 	.img--mascara {
