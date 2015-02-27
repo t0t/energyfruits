@@ -1458,6 +1458,7 @@ html {
 }
 
 body {
+  position: relative;
   font-family: "Averia Serif Libre", cursive;
   font-weight: 400;
   color: white;
@@ -1468,6 +1469,13 @@ body {
   background-position: top center;
   background-attachment: fixed;
   font-size: 1rem;
+}
+body > select {
+  width: 20%;
+  top: 95px;
+  left: 10px;
+  position: absolute;
+  margin: 0;
 }
 
 .cpt-graviola {
@@ -4871,17 +4879,6 @@ Main navbar
 }
 .well p:last-child {
   margin-bottom: 0;
-}
-.well select {
-  margin: 0;
-}
-@media screen and (min-width: 600px) {
-  .well select {
-    width: 20%;
-    top: 95px;
-    left: 10px;
-    position: absolute;
-  }
 }
 
 .well--large {

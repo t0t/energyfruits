@@ -1,9 +1,9 @@
 
+
 <!-- Bloques -->
 <?php if( have_rows('layout_content') ): ?>
 <?php while ( have_rows('layout_content') ) : the_row();?>
     
-
 
 
 
@@ -618,10 +618,6 @@
     background-attachment: fixed;
     " class="img--bg-big well well--img">
 
-        <?php if (is_page('home' )): ?>
-        <?php echo do_shortcode('[gtranslate]'); ?>
-        <?php endif ?>
-        
         <h2 class="efecto--intro"><?php the_sub_field("title"); ?></h2>
 
         <p><?php the_sub_field("description"); ?></p>

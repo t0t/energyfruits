@@ -12,7 +12,7 @@ html {
 
 
 body {
-
+	position: relative;
 	font-family: $basefont;
 	font-weight: 400;
 	color: $textcolor;
@@ -24,6 +24,17 @@ body {
 	background-position: top center;
 	background-attachment: fixed;
 	font-size: 1rem;
+
+	> select {
+
+		//gTranslate
+		width: 20%;
+		top: 95px;
+		left: 10px;
+		position: absolute;
+		margin: 0;
+
+	} 
 
 }
 
@@ -316,6 +327,8 @@ input {
 
 	}
 }
+
+
 
 // Mappress
 .mapp-canvas {

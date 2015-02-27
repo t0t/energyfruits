@@ -82,14 +82,13 @@
 		wp_nav_menu( $defaults );
 		?>
 
-		<?php //echo do_shortcode('[google-translator]'); ?>
-		
 	</nav>
 
 
 
 </header>
 	
+	<?php echo do_shortcode('[gtranslate]'); ?>
 	
 	
 	

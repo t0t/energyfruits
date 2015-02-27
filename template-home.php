@@ -13,8 +13,6 @@ Template Name: Portada
 
 		</div>
 
-<!-- Slider -->
-<?php //putRevSlider("kenburns_fullwidth","portada") ?>
 
 <main class="main__content">
 
