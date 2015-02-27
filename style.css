@@ -1044,7 +1044,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
   top: 45%;
   border-radius: 100%;
   border: none;
-  z-index: 100;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.1);
   display: none;
 }
@@ -3759,6 +3759,21 @@ input[type="submit"].btn:hover {
 /**
 * Botones
 */
+.btn--alert {
+  font-size: 10px;
+  font-size: 0.5rem;
+  margin-top: 6%;
+}
+.btn--alert:hover {
+  background-color: #317549;
+}
+
+.btn--close {
+  font-size: 20px;
+  font-size: 1rem;
+  margin: 6% 0;
+}
+
 .btn--well {
   color: #225133;
 }
@@ -4768,8 +4783,7 @@ Main navbar
 }
 
 .alert {
-  justify-content: center;
-  padding: 8px 35px 8px 14px;
+  padding: 1.5%;
   background-color: #f0730b;
   border: 1px solid #d8670a;
   font-family: "Averia Serif Libre", cursive;
@@ -4787,13 +4801,14 @@ Main navbar
 }
 
 .alert--info {
-  position: absolute;
-  display: table;
-  line-height: 1;
-  border: none;
-  position: fixed;
   width: 250px;
   height: auto;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  display: table;
+  border: none;
+  position: fixed;
   z-index: 2;
 }
 

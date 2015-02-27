@@ -9,8 +9,9 @@ Template Name: Portada
 
 		<div class="alert alert--info">
 
-			<p>Este sitio web utiliza cookies propias para ofrecer un mejor servicio. Si continúa navegando consideramos que acepta su uso. Encontrará más información en nuestra <a href="http://congresoweb.es/aviso-legal/#cookies"> Política de Cookies.</a></p>
-			<a href="#" id="close"><i class="icon-cross"></i></a>
+			<i class="icon-megaphone"></i>
+			<p>Este sitio web utiliza cookies propias para ofrecer un mejor servicio. Si continúa navegando consideramos que acepta su uso. Encontrará más información en nuestra <a href="/aviso-legal/">Política de Cookies.</a></p>
+			<a href="#" id="close" class="btn btn--alert"><i class="icon-cross"></i> Cerrar</a>
 
 		</div>
 

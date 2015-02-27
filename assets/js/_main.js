@@ -209,12 +209,9 @@ $('.slider').slick({
 
 
 
-// $('#close').on('click', function (e) {
-// e.preventDefault();
-
-
-    $( '#close' ).one( "click", function() {
-    $(this).parent('div').remove();
+    $( '#close' ).on( "click", function(e) {
+        e.preventDefault();
+        $(this).parent('div').remove();
     });
 
 

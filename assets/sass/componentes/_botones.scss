@@ -108,6 +108,20 @@ input[type="submit"].btn:hover {
 * Botones
 */
 
+.btn--alert {
+	@include font-size(10);
+	margin-top: $gutterwidth*2;
+
+	&:hover {
+		background-color: $color-base;
+	}
+}
+
+.btn--close {
+	@include font-size(20);
+	margin: ($gutterwidth*2) 0;
+}
+
 .btn--well {
 	color 				: $color-base-darken;
 
