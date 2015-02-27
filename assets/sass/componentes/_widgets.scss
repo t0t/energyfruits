@@ -234,6 +234,18 @@
 	p:last-child {
 		margin-bottom : 0;
 	}
+
+	select {
+
+		margin: 0;
+
+		@media screen and (min-width:$bp3) {
+			width: 20%;
+			top: 95px;
+			left: 10px;
+			position: absolute;
+		}
+	}
 }
 
 	.well--large {

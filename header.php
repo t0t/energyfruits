@@ -27,8 +27,6 @@
 <body <?php body_class(["unaclase", "otraclase"]); ?>>
 
 
-
-
 <header class="header">
 
 	<!-- Secondary menu 1 -->
@@ -49,9 +47,10 @@
 
 	<div class="brand">
 
-		<a href="/" title="<?php bloginfo('name'); ?>" alt="<?php bloginfo('description'); ?>">
+		<a class="brand__logo" href="/" alt="<?php bloginfo('name'); ?>">
 
-			<img src="<?php echo get_bloginfo('template_directory');?>/assets/img/logo.svg" alt="logo" class="brand__logo">
+			<!-- <img src="<?php //echo get_bloginfo('template_directory');?>/assets/img/logo.svg" alt="logo" class=""> -->
+			<?php //bloginfo('description'); ?>
 
 		</a>
 
@@ -83,13 +82,15 @@
 		wp_nav_menu( $defaults );
 		?>
 
-	<?php echo do_shortcode('[google-translator]'); ?>
+		<?php //echo do_shortcode('[google-translator]'); ?>
+		
 	</nav>
 
 
 
 </header>
-
+	
+	
 	
 	
 	<!-- Hamburguer menu -->

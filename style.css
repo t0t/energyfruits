@@ -4872,6 +4872,17 @@ Main navbar
 .well p:last-child {
   margin-bottom: 0;
 }
+.well select {
+  margin: 0;
+}
+@media screen and (min-width: 600px) {
+  .well select {
+    width: 20%;
+    top: 95px;
+    left: 10px;
+    position: absolute;
+  }
+}
 
 .well--large {
   padding: 80px 80px;
@@ -5468,25 +5479,36 @@ input:required:focus:valid {
 .brand {
   height: 100px;
   overflow: hidden;
-  padding-top: 1.5%;
-  padding-bottom: 0;
 }
 @media all and (min-width: 600px) {
   .brand {
-    padding-bottom: 1.5%;
     margin: 0 3%;
   }
 }
 
 .brand__logo {
-  width: 120px;
-  height: auto;
+  width: 200px;
+  height: 100%;
+  display: inline-block;
+  background-size: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url(assets/img/logo.svg);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
 }
-@media screen and (min-width: 600px) {
-  .brand__logo {
-    width: 180px;
-    height: auto;
+.no-svg .brand__logo {
+  background-image: url(assets/img/logo.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .no-svg .brand__logo {
+    background-image: url(assets/img/logo@2x.png);
   }
+}
+.brand__logo:hover {
+  background-position: 0 -105px;
 }
 
 .brand__name {

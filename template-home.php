@@ -5,8 +5,6 @@ Template Name: Portada
 ?>
 <?php get_header(); ?>
 
-	<?php if(is_page('home')){ ?>
-
 		<div class="alert alert--info">
 
 			<i class="icon-megaphone"></i>
@@ -14,8 +12,6 @@ Template Name: Portada
 			<a href="#" id="close" class="btn btn--alert"><i class="icon-cross"></i> Cerrar</a>
 
 		</div>
-
-	<? } ?>
 
 <!-- Slider -->
 <?php //putRevSlider("kenburns_fullwidth","portada") ?>
