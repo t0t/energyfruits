@@ -44,15 +44,17 @@
 
             <span>
 
-                <?php bloginfo('name'); ?> <?php echo date('Y'); ?> 
-                        Texto legal, privacidad...
-                        <?php edit_post_link('&oplus; Editar ') ?> &sdot;
-                        <?php wp_loginout(); ?> &sdot;
-                    </span>
+                <?php bloginfo('name'); ?> <?php echo date('Y'); ?> &sdot;
+                <a href="/aviso-legal/">Aviso Legal</a> &sdot;
+                <?php edit_post_link('Editame ') ?>
+                <?php wp_loginout(); ?> &sdot;
+
+            </span>
 
                     <span rel="author">
 
                         <a href="http://sergiofores.net" target="_blank"> <i class="icon-logo_sf2"></i></a> 
+
                     </span>
 
                 </aside>

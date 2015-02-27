@@ -127,29 +127,51 @@
 
 // Alerts
 .alert {
-	display: table;
-	width: 100%;
+
 	justify-content: center;
-	margin-bottom : $baselineheight;
 	padding : 8px 35px 8px 14px;
 	background-color : $color-alert;
 	border : $alertborderwidth $alertborderstyle $alertbordercolor;
 	font-family : $basefont;
-	@include font-size(18);
+	@include font-size(13);
 	color: $alerttext;
 
 	> p {
+		
 		margin-bottom: 0;
-		display: table-cell;
+		display: table-row;
 		width: 90%;
+
+		a {
+			text-decoration: underline;
+		}
+
 	}
+
+	
+
 }
 
-	.alert--heading {
+.alert--info {
+		position: absolute;
+		display: table;
+		@extend %text-center;
+		// padding: 6px 0;
+		line-height: 1;
+		border: none;
+		position: fixed;
+		width: 250px;
+		height: auto;
+		z-index: 2;
+
+	}
+
+
+	.alert__heading {
 		color : inherit;
 	}
 
-	.close {
+	.alert__close {
 		display: table-cell;
 		width: 10%;
 		@include font-size(21);
@@ -158,36 +180,31 @@
 		color 		: inherit;
 	}
 
-	.alert--success {
+	.alert__success {
 		background-color 	: $alertsuccesscolor;
 		border-color 		: $alertsuccessborder;
 		color 			: $alertsuccesstext;
 	}
 
-	.alert--warning {
+	.alert__warning {
 		background-color 	: $alertwarningcolor;
 		border-color 		: $alertwarningborder;
 		color 			: $alertwarningtext;
 	}
 
-	.alert--error {
+	.alert__error {
 		background-color 	: $alerterrorcolor;
 		border-color 		: $alerterrorborder;
 		color 			: $alerterrortext;
 	}
 
-	.alert--info {
-		@extend %text-center;
-		padding: 6px 0;
-		line-height: 1;
-		border: none;
-		background-color: $alertinfobg;
-		// border-color 	: $alertinfoborder;
-		color 			: $alertinfotext;
+	
 
+	.alert__link {
+		color: $color-base;
 	}
 
-	.alert--inverse {
+	.alert__inverse {
 		background-color 	: $alertinversecolor;
 		border-color 		: $alertinverseborder;
 		color 			: $alertinversetext;

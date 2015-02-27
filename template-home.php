@@ -5,6 +5,17 @@ Template Name: Portada
 ?>
 <?php get_header(); ?>
 
+	<?php if(is_page('home')){ ?>
+
+		<div class="alert alert--info">
+
+			<p>Este sitio web utiliza cookies propias para ofrecer un mejor servicio. Si continúa navegando consideramos que acepta su uso. Encontrará más información en nuestra <a href="http://congresoweb.es/aviso-legal/#cookies"> Política de Cookies.</a></p>
+			<a href="#" id="close"><i class="icon-cross"></i></a>
+
+		</div>
+
+	<? } ?>
+
 <!-- Slider -->
 <?php //putRevSlider("kenburns_fullwidth","portada") ?>
 
@@ -23,6 +34,7 @@ Template Name: Portada
 
 
 </main>
+
 
 
 <!-- Newsletter form -->

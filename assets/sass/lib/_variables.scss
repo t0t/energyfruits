@@ -167,7 +167,7 @@ $linkcolorvisited   : $linkcolor;
 $linkcolorfocus 	: $linkcolorvisited;
 $linkcolorfooter	: $white;
 
-$color-alert 		: $color-base;
+$color-alert 		: $color-alt;
 $color-error 		: red;
 $color-info 		: $color-base-invert;
 $color-inverse 	: invert($color-base);
@@ -178,7 +178,7 @@ $color-warning 	: $color-error;
 $alertbordercolor	: darken($color-alert, 5%);
 $alertborderwidth 	: 1px;
 $alertborderstyle 	: solid;
-$alerttext		: darken($color-alert, 60%);
+$alerttext		: $white;
 
 // Error
 $alerterrorcolor 	: lighten($color-error, 30%);

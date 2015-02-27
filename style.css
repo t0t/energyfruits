@@ -3534,7 +3534,7 @@ figure.alignnone {
   font-weight: normal;
   font-style: normal;
 }
-.icon-megaphone, .icon-envelope, .icon-paperclip, .icon-profile-male, .icon-facebook, .icon-logo_sf2, .icon-arrow-right2, .slider__btn-next, .icon-arrow-left2, .slider__btn-prev, .icon-arrow-up2, .icon-attachment, .icon-magnifying-glass, .main-footer input[type="submit"], .icon-file-pdf, .icon-download2, .icon-key {
+.icon-megaphone, .icon-envelope, .icon-paperclip, .icon-profile-male, .icon-facebook, .icon-logo_sf2, .icon-arrow-right2, .slider__btn-next, .icon-arrow-left2, .slider__btn-prev, .icon-arrow-up2, .icon-attachment, .icon-magnifying-glass, .main-footer input[type="submit"], .icon-file-pdf, .icon-download2, .icon-key, .icon-cross {
   font-family: "icomoon";
   speak: none;
   font-style: normal;
@@ -3544,6 +3544,10 @@ figure.alignnone {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cross:before {
+  content: "\ea0f";
 }
 
 .icon-key:before {
@@ -4764,29 +4768,40 @@ Main navbar
 }
 
 .alert {
-  display: table;
-  width: 100%;
   justify-content: center;
-  margin-bottom: 1.6em;
   padding: 8px 35px 8px 14px;
-  background-color: #317549;
-  border: 1px solid #29633e;
+  background-color: #f0730b;
+  border: 1px solid #d8670a;
   font-family: "Averia Serif Libre", cursive;
-  font-size: 18px;
-  font-size: 0.9rem;
-  color: black;
+  font-size: 13px;
+  font-size: 0.65rem;
+  color: white;
 }
 .alert > p {
   margin-bottom: 0;
-  display: table-cell;
+  display: table-row;
   width: 90%;
 }
+.alert > p a {
+  text-decoration: underline;
+}
 
-.alert--heading {
+.alert--info {
+  position: absolute;
+  display: table;
+  line-height: 1;
+  border: none;
+  position: fixed;
+  width: 250px;
+  height: auto;
+  z-index: 2;
+}
+
+.alert__heading {
   color: inherit;
 }
 
-.close {
+.alert__close {
   display: table-cell;
   width: 10%;
   font-size: 21px;
@@ -4796,33 +4811,29 @@ Main navbar
   color: inherit;
 }
 
-.alert--success {
+.alert__success {
   background-color: #1aff1a;
   border-color: #00e600;
   color: #001a00;
 }
 
-.alert--warning {
+.alert__warning {
   background-color: #ff9999;
   border-color: #ff6666;
   color: #990000;
 }
 
-.alert--error {
+.alert__error {
   background-color: #ff9999;
   border-color: #ff6666;
   color: red;
 }
 
-.alert--info {
-  padding: 6px 0;
-  line-height: 1;
-  border: none;
-  background-color: #0b88f0;
-  color: black;
+.alert__link {
+  color: #317549;
 }
 
-.alert--inverse {
+.alert__inverse {
   background-color: #ce8ab6;
   border-color: black;
   color: white;
@@ -5246,8 +5257,8 @@ input:-moz-placeholder {
 * http://coolvillage.es/ayuda-al-usuario-a-rellenar-formularios-con-css/
 */
 input:required:focus:invalid {
-  background-color: #398754;
-  border: 1px solid #317549;
+  background-color: #f58020;
+  border: 1px solid #f0730b;
 }
 
 input:required:focus:valid {
