@@ -30,7 +30,7 @@
 <header class="header">
 
 	<!-- Secondary menu 1 -->
-	<nav class="nav-secondary nav-secondary--uno">
+	<nav class="nav-secondary nav-secondary--uno" role="navigation">
 
 		<?php
 		$defaults = array(
@@ -69,7 +69,7 @@
 	</div>
 
 	<!-- Secondary menu 2 -->
-	<nav class="nav-secondary nav-secondary--dos">
+	<nav class="nav-secondary nav-secondary--dos" role="navigation">
 
 		<?php
 		$defaults = array(

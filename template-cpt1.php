@@ -5,7 +5,7 @@ Template Name: CPT
 ?>
 <?php get_header(); ?>
 NOOOO
-<main class="main__content">
+<main class="main__content" role="main">
 
 	<!-- Content page -->
 	<?php get_template_part('templates/content', 'cpt'); ?>

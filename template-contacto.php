@@ -5,7 +5,7 @@ Template Name: Contacto
 ?>
 <?php get_header(); ?>
 
-	<main class="main__content">
+	<main class="main__content" role="main">
 
 		<!-- Cargame los Custom fields, ACF -->
     	<?php get_template_part('templates/custom-fields'); ?>

@@ -153,7 +153,7 @@
                         <?php endif; ?>
                         
                         <?php if( $title ): ?>
-                        <i class="icon-file-pdf"></i> <?php echo $title; ?>
+                        <span class="icon-file-pdf" aria-labelledby="icono"></span> <?php echo $title; ?>
                         <?php endif; ?>
 
                         <?php if( $file ): ?>
@@ -259,7 +259,7 @@
 
                         <?php if( $nombre ): ?>
 
-                            <h3><i class="icon-profile-male"></i> 
+                            <h3><span class="icon-profile-male" aria-labelledby="icono"></span> 
                             <?php echo $nombre; ?></h3>
                             <h4><?php echo $cargo; ?></h4>
 
@@ -268,7 +268,7 @@
                         <?php if( $email ): ?>
 
                             
-                            <i class="icon-envelope"></i> <?php echo $email; ?>
+                            <span class="icon-envelope" aria-labelledby="icono"></span> <?php echo $email; ?>
 
                         <?php endif; ?>
 
@@ -345,7 +345,7 @@
                     <!-- carrusel links externos -->
                     <section class="slider__wrap">
     
-                    <h3 class="slider__title"><i class="icon-attachment"></i> Tiendas Virtuales</h3>
+                    <h3 class="slider__title"><span class="icon-attachment" aria-labelledby="icono"></span> Tiendas Virtuales</h3>
 
                     <div class="slider__slides slider">
 
@@ -405,13 +405,13 @@
                     <!-- carrusel webs interesantes -->
                     <section class="slider__wrap">
     
-                    <h3 class="slider__title"><i class="icon-attachment"></i> Webs interesantes</h3>
+                    <h3 class="slider__title"><span class="icon-attachment" aria-labelledby="icono"></span> Webs interesantes</h3>
 
                     <div class="slider__slides slider">
 
                     <?php while( have_rows('carrusel_webs_interesantes') ): the_row(); ?>
 
-                    <a class="" href="<?php the_sub_field('link') ?>" target="_blank">
+                    <a class="" href="<?php the_sub_field('link') ?>" target="_blank" aria-labelledby="link externo">
                     
                     <figure>
 
@@ -477,7 +477,6 @@
 
                                     <?php if (get_sub_field("precio")): ?>
                                         <p><?php the_sub_field('precio'); ?>€</p>
-                                        <small>+ 1&#8364; de gastos d&#8217;enviament</small>
                                     <?php endif ?>
 
                                     <?php if (get_sub_field("boto_paypal")): ?>
@@ -509,7 +508,7 @@
                 <?php if (!is_page()): ?>
                     <!-- Sidebars -->
                     <?php get_sidebar(); ?>
-                    
+
                 <?php endif ?>
 
 

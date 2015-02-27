@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="main__content">
+<main class="main__content" role="main">
 
 	
 	<!-- Content search -->
