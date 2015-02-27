@@ -1,9 +1,8 @@
 
 <div class="widget widget--posts">
 
-	
-
-	<ul>
+<h3>Últimos posts</h3>
+    <ul>
 
 	<?php
 	    $recentPosts = new WP_Query();
@@ -26,23 +25,21 @@
 
 </div>
 
+    
+    <ul>
+	
+    <?php wp_list_categories('sort_column=name&optioncount=1&exclude=5, 6'); ?>
+	
+    </ul>
 
-<li id="categories"><?php _e('Categories:'); ?>
-	<ul>
-	<?php wp_list_categories('sort_column=name&optioncount=1&exclude=5, 6'); ?>
-	</ul>
- </li>
 
+    <!-- Navegacion entre posts-->
+    <nav class="nav--posts"> 
 
-<!-- Navegacion -->
-                <nav class="nav--posts"> 
-
-                    <ul>
-                        <li>
-
-                        <?php 
-                            
-                            $prevPost = get_previous_post();
+        <ul>
+            <li>
+                <?php
+                    $prevPost = get_previous_post();
                             
                             if($prevPost) 
                         {

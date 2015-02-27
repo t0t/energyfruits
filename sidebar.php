@@ -1,15 +1,12 @@
 
 
-
-
-
     <?php  if ( get_post_type() == 'post' ) { //Inluyeme los single que no sean custom post types ?>
         
-    <aside class="sidebar" role="complementary">
+        <aside class="sidebar" role="complementary">
 
-        <?php get_sidebar('single'); ?>
+            <?php get_sidebar('single'); ?>
 
-    </aside>
+        </aside>
 
     <?php } ?>
 
@@ -17,11 +14,11 @@
         
     <?php if ( is_page('home') || is_page('contacto') ) : ?>
         
-    <aside class="sidebar--inferior" role="complementary">
+        <aside class="sidebar--inferior" role="complementary">
 
-        <?php get_sidebar('page'); ?>
+            <?php get_sidebar('page'); ?>
 
-    </aside>
+        </aside>
 
     <?php elseif ( is_search() | is_404() ) : ?>
         
@@ -33,4 +30,3 @@
 
     <?php else : ?>
     <?php endif; ?>
-

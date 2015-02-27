@@ -171,7 +171,7 @@
 
 
 
-                        <?php the_tags( '', ' • ', '<br />' ); ?>
+                    <?php the_tags( '', ' • ', '<br />' ); // muestrame los tags al final del post cuando haya?>
 
 
 
