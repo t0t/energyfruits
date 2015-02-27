@@ -5,15 +5,12 @@ Template Name: Contacto
 ?>
 <?php get_header(); ?>
 
-<main class="main__content">
+	<main class="main__content">
 
+		<!-- Content page template -->
+		<?php get_template_part('templates/content', 'page-template'); ?> 
 
-	<!-- Content page template -->
-	<?php get_template_part('templates/content', 'page-template'); ?>    
-
-    
-
-</main>
+	</main>
 
 	<!-- Sidebars -->
     <?php get_sidebar('page'); ?>

@@ -5466,6 +5466,8 @@ input:required:focus:valid {
 }
 
 .brand {
+  height: 100px;
+  overflow: hidden;
   padding-top: 1.5%;
   padding-bottom: 0;
 }
