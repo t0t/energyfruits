@@ -3868,7 +3868,10 @@ input[type="submit"].btn:hover {
 .btn--footer {
   color: white;
   background-color: #f0730b;
+  font-size: 13px;
+  font-size: 0.65rem;
   border-radius: 5px;
+  padding: 0 3%;
   border: none;
 }
 .btn--footer:hover {

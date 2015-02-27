@@ -10,7 +10,7 @@
                 
                 <div id="mce-responses" style="display:none"><div id="mce-error-response" style="display:none"></div><div id="mce-success-response" style="display:none"></div></div>
 
-                <input type="submit" value="Dame de alta" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <input type="submit" value="Dame de alta" name="subscribe" id="mc-embedded-subscribe">
 
             </form>
 

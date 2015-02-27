@@ -216,7 +216,9 @@ input[type="submit"].btn:hover {
 
 	color : $linkcolorfooter;
 	background-color: $color-alt;
+	@include font-size(13);
 	border-radius: $radius;
+	padding: 0 $gutterwidth;
 	border : none;
 
 	&:hover {

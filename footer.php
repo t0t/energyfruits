@@ -29,9 +29,9 @@
 
         <div class="main-footer__adicional">
 
-            <a class="btn btn--footer" href="/area-privada"><i class="icon-key"></i> Area privada</a>
+            <a href="https://www.facebook.com/energyfruits.es" target="_blank"><i class="icon-facebook"></i> Facebook</a>
 
-
+            <a href="/area-privada"><i class="icon-key"></i> Area privada</a>
 
         </div>
     
@@ -53,7 +53,7 @@
 
                     <span rel="author">
 
-                        <a href="http://sergiofores.net" target="_blank"> <i class="icon-logo_sf2"></i></a> 
+                        <a href="http://sergiofores.net" target="_blank">Design: <i class="icon-logo_sf2"></i></a> 
 
                     </span>
 
