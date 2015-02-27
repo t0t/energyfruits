@@ -75,7 +75,7 @@
 		
 		input[type="email"] {
 			width: 50%;
-			@include flex-grow(2);
+			// @include flex-grow(2);
 			margin-right: 10px;
 			background-color: $white-alpha-fuerte;
 			&::-webkit-input-placeholder {
@@ -91,7 +91,7 @@
 			// border: 3px solid $black-alpha-fuerte;
 			color: $white;
 			background-color: $black;
-			width: 30%;
+			width: 50%;
 
 			&:hover {
 				background-color: $black-alpha-medio;

@@ -1,69 +1,20 @@
+<!-- Newsletter form -->
+    <div class="widget widget--newsletter">
 
+            <h4>Te informamos. Boletín de Notícias</h4>
 
-<div class="widget widget--pages">
-<li id="categories"><?php _e('Categories:'); ?>
-    <ul>
-<?php wp_list_categories(); ?>
-    </ul>
- </li>
+            <form action="//energyfruits.us5.list-manage.com/subscribe/post?u=c5802993bc&amp;id=857eaffa92" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
- 
-	<h3></h3>
+                <label for="mce-EMAIL"></label>
+                <input type="email" value="" name="EMAIL" placeholder="Introduce tu em@il" id="mce-EMAIL">
+                
+                <div id="mce-responses" style="display:none"><div id="mce-error-response" style="display:none"></div><div id="mce-success-response" style="display:none"></div></div>
 
-	<!-- http://www.billerickson.net/code/wp_query-arguments/ -->
-	<?php 
-    $this_post = $post->ID;
+                <input type="submit" value="Dame de alta" name="subscribe" id="mc-embedded-subscribe" class="button">
 
-    $loop = new WP_Query( array( 
-    	'post_type' => 'page',
-    	'posts_per_page' => '',
-    	'posts_per_archive_page' => 10,
-    	'post__in' => array( 14, 212, 18, 16, 286, 20, 1423 ),
-    	'post__not_in' => array($this_post),
-    	'orderby' => 'date',
-    	'order' => 'DESC',
-    	// 'year' => 2012,
-    	'category_name' => '') ); 
-    ?>
+            </form>
 
-    <article class="post--sidebar">
-
-    <!-- Custom Loop -->
-    <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-        
-
-            <? if ( has_post_thumbnail() ) { ?>
-
-                <figure class="post--sidebar__figure">
-
-	               <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-		                <?php the_post_thumbnail('thumbnail'); ?>
-
-		                <figcaption class="post--sidebar__content">
-
-		                	<?php the_title(); ?>
-
-		                </figcaption>
-
-	               </a>
-
-                </figure>
-
-
-            <?}else {?>
-			<?}?>
-
-        <?php endwhile; ?>
-        <?php wp_reset_postdata(); // reset ?>
-
-    </article>
-
-</div>
-
-
-
-
-
+    </div>
 
 
 

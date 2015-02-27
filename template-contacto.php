@@ -11,10 +11,11 @@ Template Name: Contacto
 	<!-- Content page template -->
 	<?php get_template_part('templates/content', 'page-template'); ?>    
 
-	<!-- Sidebars -->
-    <?php get_sidebar(); ?>
     
 
 </main>
+
+	<!-- Sidebars -->
+    <?php get_sidebar('page'); ?>
 
 <?php get_footer(); ?>
