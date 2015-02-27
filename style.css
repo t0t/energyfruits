@@ -666,7 +666,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
   max-width: 1800px;
   width: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-image: url(assets/img/bg_header.svg);
 }
@@ -5476,6 +5476,12 @@ input:required:focus:valid {
 .brand {
   height: 100px;
   overflow: hidden;
+}
+.brand.encoge {
+  height: 75px;
+}
+.brand.encoge .brand__logo {
+  background-position: 0 -20px;
 }
 @media all and (min-width: 600px) {
   .brand {

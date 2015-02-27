@@ -8,7 +8,7 @@
 	@include justify-content(center); //alineado horizontal
 	@include align-items(center); //alineado vertical
 	@include max-width($bp0);
-	@include background-image(bg_header,cover,no-repeat,center, svg);
+	@include background-image(bg_header,cover,no-repeat,center bottom, svg);
 	// background-color: $white;
 
 }

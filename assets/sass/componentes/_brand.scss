@@ -17,6 +17,13 @@
 
 	// padding-bottom: 0;
 
+	&.encoge {
+		height: 75px;
+		.brand__logo {
+			background-position: 0 -20px;
+		}
+	}
+
 
 		@media all and (min-width: $bp3) {
 
