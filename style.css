@@ -4277,7 +4277,7 @@ h4, .h4 {
   margin-bottom: Infinityem;
   font-size: 19px;
   font-size: 0.95rem;
-  line-height: 1.4;
+  line-height: 3.4;
 }
 
 h5, .h5 {
@@ -4604,7 +4604,7 @@ Main navbar
 }
 @media screen and (min-width: 600px) {
   .nav-secondary ul {
-    width: 400px;
+    width: 435px;
   }
 }
 @media screen and (min-width: 1430px) {
@@ -4613,7 +4613,7 @@ Main navbar
   }
 }
 .nav-secondary li {
-  width: 50%;
+  width: 33.33%;
   display: table-cell;
   color: #f0730b;
   letter-spacing: 0;
@@ -4811,7 +4811,7 @@ Main navbar
   height: auto;
   position: absolute;
   top: 100px;
-  right: 0;
+  right: 10px;
   display: table;
   border: none;
   position: fixed;

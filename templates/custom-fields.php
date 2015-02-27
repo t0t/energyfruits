@@ -40,7 +40,7 @@
 
                    <?php if (get_sub_field("content")): ?>
 
-                       <article class="main-post__content__entry">
+                       <article class="main-post__content__entry" role="article">
                        
                             
                             <!-- Header image -->
@@ -255,7 +255,7 @@
                         $email = get_sub_field('email');
                     ?>
 
-                    <article>
+                    <article role="article">
 
                         <?php if( $nombre ): ?>
 
@@ -267,8 +267,8 @@
                     
                         <?php if( $email ): ?>
 
-                            <a class="btn" href="mailto:<?php echo $email; ?>">
-                            <i class="icon-envelope"></i> <?php echo $email; ?></a>
+                            
+                            <i class="icon-envelope"></i> <?php echo $email; ?>
 
                         <?php endif; ?>
 
@@ -506,8 +506,11 @@
                 
 
 
-                <!-- Sidebars -->
-                <?php get_sidebar(); ?>
+                <?php if (!is_page()): ?>
+                    <!-- Sidebars -->
+                    <?php get_sidebar(); ?>
+                    
+                <?php endif ?>
 
 
 
@@ -825,7 +828,7 @@
 
     <?php while ($loop->have_posts()) : $loop->the_post(); ?>
       
-        <article>
+        <article role="article">
 
         <? if ( has_post_thumbnail() ) { ?>
 

@@ -31,7 +31,7 @@ Template Name: Portada
 </main>
 
 <!-- Sidebars -->
-<?php get_sidebar('page'); ?>
+<?php get_sidebar(); ?>
 
 
 

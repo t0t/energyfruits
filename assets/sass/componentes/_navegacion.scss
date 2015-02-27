@@ -168,7 +168,7 @@ Main navbar
         
         @media screen and (min-width: $bp3) {
         
-            width: 400px;
+            width: 435px;
 
         }
 
@@ -182,7 +182,7 @@ Main navbar
 
     li {
 
-        width: 50%;
+        width: 33.33%;
         display: table-cell;
         @extend %text-center;
         color: $color-alt;
