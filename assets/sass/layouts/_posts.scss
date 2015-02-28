@@ -1,18 +1,17 @@
-.main-post {
-
-}
+.main-post {}
 
 .main-post__header {
-	
+
 	.h3 {
+
 		margin-bottom: $gutterwidth;
+
 	}
 
 }
 
 .main-post__subheader {
 
-	// @include max-width($bp2);
 	@include padding($gutterwidth);
 
 	@media only screen and (min-width: $bp3) {
@@ -40,12 +39,12 @@
 
 .main-post__content {
 
-	// @include padding();
-    // @include justify-content(space-around);
-
 	section {
+
 		margin-bottom: $gutterwidth;
+
 	}
+
 
 	@media all and (min-width: $bp3) {
 

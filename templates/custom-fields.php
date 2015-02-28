@@ -20,8 +20,10 @@
                 <hgroup class="main-post__header">
 
                 <?php if ( !is_page('catalogo')): ?>
+
                     <!-- Page Header -->
                     <?php get_template_part('templates/page', 'header'); ?>
+                    
                 <?php endif ?>
 
                 <?php if (get_sub_field("header")): ?>
@@ -259,15 +261,17 @@
 
                         <?php if( $nombre ): ?>
 
-                            <h3><span class="icon-profile-male" aria-labelledby="icono"></span> 
-                            <?php echo $nombre; ?></h3>
+                            <div class="icon-profile-male" aria-labelledby="icono"></div> 
+                            
+                            <h3><?php echo $nombre; ?></h3>
+
                             <h4><?php echo $cargo; ?></h4>
 
                         <?php endif; ?>
+
                     
                         <?php if( $email ): ?>
 
-                            
                             <span class="icon-envelope" aria-labelledby="icono"></span> <?php echo $email; ?>
 
                         <?php endif; ?>
@@ -285,27 +289,16 @@
 
 
 
-
-
-
-
-
-                
-                    
-                    
-
-
-
-
                     <?php if (get_sub_field("address")): ?>
-                    
 
                     <!-- mapa/form -->
                     <section class="grid">
 
                     <?php
-                        if ( function_exists( 'wpcf7_enqueue_scripts' ) ) { wpcf7_enqueue_scripts(); }
-                        if ( function_exists( 'wpcf7_enqueue_styles' ) ) { wpcf7_enqueue_styles(); }
+
+                    if ( function_exists( 'wpcf7_enqueue_scripts' ) ) { wpcf7_enqueue_scripts(); }
+                    if ( function_exists( 'wpcf7_enqueue_styles' ) ) { wpcf7_enqueue_styles(); }
+
                     ?>
 
                         <div class="grid-content__item">
@@ -320,8 +313,8 @@
                             <?php echo do_shortcode('[mappress mapid="2" width="100%"]'); ?>
 
                         <?php } ?>
-                            
-                            <p><?php the_sub_field("address"); ?></p>
+
+                        <p><?php the_sub_field("address"); ?></p>
 
                         </div>
 

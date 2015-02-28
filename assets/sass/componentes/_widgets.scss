@@ -74,27 +74,33 @@
 		}
 		
 		input[type="email"] {
+
 			width: 50%;
 			// @include flex-grow(2);
 			margin-right: 10px;
 			background-color: $white-alpha-fuerte;
+
 			&::-webkit-input-placeholder {
+
 	        	font-size: inherit;
 	        	color: $grey;
 	        	padding-left: $gutterwidth;
+
 	    	}
+
 		}
 
 		input[type="button"],
 		input[type="reset"],
 		input[type="submit"] {
-			// border: 3px solid $black-alpha-fuerte;
+
 			color: $white;
 			background-color: $black;
-			width: 50%;
 
 			&:hover {
+
 				background-color: $black-alpha-medio;
+
 			}
 
 		}
@@ -106,20 +112,6 @@
 
 // Idiomas
 .idiomas {
-	margin : $baselineheight/2;
-	display: table;
-	display: none;
-	width: 90px;
-	float: right;
-	padding : 8px 35px 8px 14px;
-	line-height: 1;
-	@extend %text-center;
-	background-color: $alertinfobg;
-
-	li {
-		display: table-cell;
-		@include font-size(18);
-	}
 	.idiomas__item {}
 }
 
@@ -142,31 +134,32 @@
 		width: 90%;
 
 		a {
+
 			text-decoration: underline;
-			&:hover {
-			}
+
+			&:hover {}
+
 		}
 
 	}
 
-	
-
 }
 
-.alert--info {
-		width: 250px;
-		height: auto;
-		position: absolute;
-		top: 100px;
-		right: 10px;
-		display: table;
-		@extend %text-center;
-		// padding: 6px 0;
-		border: none;
-		position: fixed;
-		z-index: 2;
 
-	}
+.alert--info {
+
+	width: 250px;
+	height: auto;
+	position: absolute;
+	top: 100px;
+	right: 10px;
+	display: table;
+	@extend %text-center;
+	border: none;
+	position: fixed;
+	z-index: 2;
+
+}
 
 
 	.alert__heading {
@@ -345,5 +338,3 @@
 		margin-bottom: 0;
 	}
 }
-
-

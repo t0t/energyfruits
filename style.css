@@ -486,7 +486,7 @@ h3 small {
   display: block;
 }
 
-.post--sidebar, .slider__slides, .slider__figure, .main-footer__credits, .main-footer__brand, .main-footer__adicional, .main-footer__searchform label, .main-footer__searchform label input, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-secondary li, .nav-header .nav-header__item, .nav-header li, .widget--newsletter, .idiomas, .alert--info, .well, .well--large, .content-summary__item, .video-main, .tienda__item, .galeria-fotos {
+.post--sidebar, .slider__slides, .slider__figure, .main-footer__credits, .main-footer__brand, .main-footer__adicional, .main-footer__searchform label, .main-footer__searchform label input, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-secondary li, .nav-header .nav-header__item, .nav-header li, .widget--newsletter, .alert--info, .well, .well--large, .content-summary__item, .video-main, .tienda__item, .galeria-fotos {
   text-align: center;
 }
 
@@ -1525,9 +1525,6 @@ body > select {
   background-color: #7f744c;
 }
 
-a[href*="producto/graviola"] {
-  cursor: ew-resize;
-}
 a[href*="producto/graviola"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -1593,9 +1590,6 @@ a[href*="producto/graviola"] figure:hover {
   background-color: #3c1d1d;
 }
 
-a[href*="producto/cacaocriollo"] {
-  cursor: ew-resize;
-}
 a[href*="producto/cacaocriollo"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -1661,9 +1655,6 @@ a[href*="producto/cacaocriollo"] figure:hover {
   background-color: #8c7e73;
 }
 
-a[href*="producto/chlorella"] {
-  cursor: ew-resize;
-}
 a[href*="producto/chlorella"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -1729,9 +1720,6 @@ a[href*="producto/chlorella"] figure:hover {
   background-color: #8c7e73;
 }
 
-a[href*="producto/chia"] {
-  cursor: ew-resize;
-}
 a[href*="producto/chia"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -1797,9 +1785,6 @@ a[href*="producto/chia"] figure:hover {
   background-color: #b12365;
 }
 
-a[href*="producto/amaranto"] {
-  cursor: ew-resize;
-}
 a[href*="producto/amaranto"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -1865,9 +1850,6 @@ a[href*="producto/amaranto"] figure:hover {
   background-color: #2e3828;
 }
 
-a[href*="producto/spiroulina"] {
-  cursor: ew-resize;
-}
 a[href*="producto/spiroulina"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -1933,9 +1915,6 @@ a[href*="producto/spiroulina"] figure:hover {
   background-color: #65333c;
 }
 
-a[href*="producto/camucamu"] {
-  cursor: ew-resize;
-}
 a[href*="producto/camucamu"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2001,9 +1980,6 @@ a[href*="producto/camucamu"] figure:hover {
   background-color: #00904d;
 }
 
-a[href*="producto/canamo"] {
-  cursor: ew-resize;
-}
 a[href*="producto/canamo"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2069,9 +2045,6 @@ a[href*="producto/canamo"] figure:hover {
   background-color: #ab456c;
 }
 
-a[href*="producto/maca"] {
-  cursor: ew-resize;
-}
 a[href*="producto/maca"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2137,9 +2110,6 @@ a[href*="producto/maca"] figure:hover {
   background-color: #f5b006;
 }
 
-a[href*="producto/lucuma"] {
-  cursor: ew-resize;
-}
 a[href*="producto/lucuma"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2205,9 +2175,6 @@ a[href*="producto/lucuma"] figure:hover {
   background-color: #007b4a;
 }
 
-a[href*="producto/stevia"] {
-  cursor: ew-resize;
-}
 a[href*="producto/stevia"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2273,9 +2240,6 @@ a[href*="producto/stevia"] figure:hover {
   background-color: #c22931;
 }
 
-a[href*="producto/quinoa"] {
-  cursor: ew-resize;
-}
 a[href*="producto/quinoa"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2341,9 +2305,6 @@ a[href*="producto/quinoa"] figure:hover {
   background-color: #268870;
 }
 
-a[href*="producto/alfalfa"] {
-  cursor: ew-resize;
-}
 a[href*="producto/alfalfa"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2409,9 +2370,6 @@ a[href*="producto/alfalfa"] figure:hover {
   background-color: #4a792f;
 }
 
-a[href*="producto/trigoverde"] {
-  cursor: ew-resize;
-}
 a[href*="producto/trigoverde"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2477,9 +2435,6 @@ a[href*="producto/trigoverde"] figure:hover {
   background-color: #1f1410;
 }
 
-a[href*="producto/algarroba"] {
-  cursor: ew-resize;
-}
 a[href*="producto/algarroba"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2545,9 +2500,6 @@ a[href*="producto/algarroba"] figure:hover {
   background-color: #a678ae;
 }
 
-a[href*="producto/cardomariano"] {
-  cursor: ew-resize;
-}
 a[href*="producto/cardomariano"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2613,9 +2565,6 @@ a[href*="producto/cardomariano"] figure:hover {
   background-color: #dec543;
 }
 
-a[href*="producto/linodorado"] {
-  cursor: ew-resize;
-}
 a[href*="producto/linodorado"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2681,9 +2630,6 @@ a[href*="producto/linodorado"] figure:hover {
   background-color: #e23803;
 }
 
-a[href*="producto/fresa"] {
-  cursor: ew-resize;
-}
 a[href*="producto/fresa"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2749,9 +2695,6 @@ a[href*="producto/fresa"] figure:hover {
   background-color: #814d23;
 }
 
-a[href*="producto/coco"] {
-  cursor: ew-resize;
-}
 a[href*="producto/coco"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2817,9 +2760,6 @@ a[href*="producto/coco"] figure:hover {
   background-color: #c00411;
 }
 
-a[href*="producto/gymtonic"] {
-  cursor: ew-resize;
-}
 a[href*="producto/gymtonic"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2885,9 +2825,6 @@ a[href*="producto/gymtonic"] figure:hover {
   background-color: #efd600;
 }
 
-a[href*="producto/delifiber"] {
-  cursor: ew-resize;
-}
 a[href*="producto/delifiber"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2953,9 +2890,6 @@ a[href*="producto/delifiber"] figure:hover {
   background-color: #d99100;
 }
 
-a[href*="producto/brainshake"] {
-  cursor: ew-resize;
-}
 a[href*="producto/brainshake"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -3021,9 +2955,6 @@ a[href*="producto/brainshake"] figure:hover {
   background-color: #3a6324;
 }
 
-a[href*="producto/andeanprotein"] {
-  cursor: ew-resize;
-}
 a[href*="producto/andeanprotein"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -3089,9 +3020,6 @@ a[href*="producto/andeanprotein"] figure:hover {
   background-color: #b08742;
 }
 
-a[href*="producto/macuchino"] {
-  cursor: ew-resize;
-}
 a[href*="producto/macuchino"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -3157,9 +3085,6 @@ a[href*="producto/macuchino"] figure:hover {
   background-color: #a3bd31;
 }
 
-a[href*="producto/bodtox"] {
-  cursor: ew-resize;
-}
 a[href*="producto/bodtox"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -3225,9 +3150,6 @@ a[href*="producto/bodtox"] figure:hover {
   background-color: #711611;
 }
 
-a[href*="producto/royalbreakfast"] {
-  cursor: ew-resize;
-}
 a[href*="producto/royalbreakfast"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -3293,9 +3215,6 @@ a[href*="producto/royalbreakfast"] figure:hover {
   background-color: #8b3b1d;
 }
 
-a[href*="producto/camucao"] {
-  cursor: ew-resize;
-}
 a[href*="producto/camucao"] figure {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -4764,28 +4683,11 @@ Main navbar
 .widget--newsletter input[type="submit"] {
   color: white;
   background-color: black;
-  width: 50%;
 }
 .widget--newsletter input[type="button"]:hover,
 .widget--newsletter input[type="reset"]:hover,
 .widget--newsletter input[type="submit"]:hover {
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.idiomas {
-  margin: 0.8em;
-  display: table;
-  display: none;
-  width: 90px;
-  float: right;
-  padding: 8px 35px 8px 14px;
-  line-height: 1;
-  background-color: #0b88f0;
-}
-.idiomas li {
-  display: table-cell;
-  font-size: 18px;
-  font-size: 0.9rem;
 }
 
 .alert {
@@ -5476,6 +5378,10 @@ input:required:focus:valid {
 .brand {
   height: 100px;
   overflow: hidden;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
 }
 .brand.encoge {
   height: 75px;

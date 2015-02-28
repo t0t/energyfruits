@@ -5,7 +5,7 @@
 
 <?php if ( is_archive() ) : ?>
 
-    <header>
+    <header class="efecto--intro">
         
         <?php //echo get_the_category(); ?>
         
@@ -35,7 +35,7 @@
 
 <?php elseif ( is_page() && !is_page('home') ) : ?>
 
-    <header>
+    <header class="efecto--intro">
 
         <h1 class="h3"><?php the_title(); ?></h1>
 
@@ -43,7 +43,7 @@
         
 <?php elseif ( is_single() ) : ?>
         
-    <header>
+    <header class="efecto--intro">
         
         <h3>
 
@@ -68,7 +68,7 @@
 
 <?php elseif ( is_single() && is_post_type('cpt') ) : ?>
         
-    <header>
+    <header class="efecto--intro">
 
         <h1>
             <?php the_title(); ?>vvv
@@ -78,7 +78,7 @@
 
 <?php elseif ( is_search() ) : ?>
         
-    <header>
+    <header class="efecto--intro">
 
         <h1>"<?php the_search_query() ?>"</h1>
 
