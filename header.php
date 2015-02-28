@@ -7,25 +7,26 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="es"><!--<![endif]-->
 
 <html lang="es">
+
 <head>
+
 	<meta charset="UTF-8">
-	<title>
-		<?php 
+
+		<title>
+			<?php
 			wp_title( '|', true, 'right' );
-			// Add the blog name.
-		 	bloginfo( 'name' ); 
-	 	?>
- 	</title>
+			bloginfo( 'name' ); 
+			?>
+		</title>
 
 	<!--iOS -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
 	<?php wp_head(); ?>
+
 </head>
 
-<!-- Aquí acaba el head de mi web -->
-<body <?php body_class(["unaclase", "otraclase"]); ?>>
-
+<body <?php body_class(); ?>>
 
 <header class="header">
 
@@ -47,12 +48,7 @@
 
 	<div class="brand">
 
-		<a class="brand__logo" href="/" alt="<?php bloginfo('name'); ?>">
-
-			<!-- <img src="<?php //echo get_bloginfo('template_directory');?>/assets/img/logo.svg" alt="logo" class=""> -->
-			<?php //bloginfo('description'); ?>
-
-		</a>
+		<a class="brand__logo" href="/" alt="<?php bloginfo('name'); ?>"></a>
 
 		<h1 class="h4 brand__name">
 
@@ -88,11 +84,10 @@
 
 </header>
 	
+	<!-- Traducciones on the fly -->
 	<?php echo do_shortcode('[gtranslate]'); ?>
-	
-	
-	
-	<!-- Hamburguer menu -->
+
+	<!-- menu out of canvas -->
 	<nav class="nav-main" role="navigation">
 
 	<input type="checkbox" id="trigger"/>
@@ -109,8 +104,3 @@
 	?>
 
 	</nav>
-
-	
-
-<?php //get_template_part('templates/nav', 'secondary' ); ?>
-<?php //get_template_part('templates/nav', 'main' ); ?>
