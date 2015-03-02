@@ -1,10 +1,10 @@
 .brand {
 	
-	height: 100px;
+	height: 125px;
 
 	overflow: hidden;
 
-	@include transition(1s);
+	@include transition(.2s);
 
 	&.encoge {
 

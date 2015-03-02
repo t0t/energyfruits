@@ -77,6 +77,7 @@ Main navbar
   }
 
   @media (min-width:$bp3) {
+
     label {
       &:hover:after {
           color: $white;
@@ -154,21 +155,23 @@ Main navbar
 .nav-secondary {
 
     ul {
-    
-        display: table;
 
-        @extend %no-padding;
-        @extend %no-margin;
+      display: table;
 
-        @media all and (max-width: $bp2-5) {
-        
-            display: none;
-        
-        }
+      @extend %no-padding;
+
+      @extend %no-margin;
+
+      @media all and (max-width: $bp2-5) {
+
+        display: none;
+
+      }
         
         @media screen and (min-width: $bp3) {
         
             width: 435px;
+            padding-bottom: 20px;
 
         }
 

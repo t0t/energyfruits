@@ -27,9 +27,8 @@ body {
 
 	> select {
 
-		//gTranslate
 		width: 20%;
-		top: 95px;
+		top: 120px;
 		left: 10px;
 		position: absolute;
 		margin: 0;
@@ -89,7 +88,7 @@ img[src$=".svg"] {
 
 	header:first-child {
 
-		padding-top: $gutterwidth;
+		padding-top: $gutterwidth*2;
 
 		h1 {
 

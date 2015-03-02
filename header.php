@@ -10,7 +10,9 @@
 
 <head>
 
-	<meta charset="UTF-8">
+
+
+	<meta charset="utf-8">
 
 		<title>
 			<?php
@@ -83,9 +85,8 @@
 
 
 </header>
-	
-	<!-- Traducciones on the fly -->
-	<?php echo do_shortcode('[gtranslate]'); ?>
+
+<?php echo do_shortcode('[gtranslate]'); ?>
 
 	<!-- menu out of canvas -->
 	<nav class="nav-main" role="navigation">

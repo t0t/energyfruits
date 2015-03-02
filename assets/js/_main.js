@@ -12,7 +12,6 @@ $(".main-post__content__entry").fitVids();
 
 
 
-
 //http://jsbin.com/boreme/17/edit?html,css,js,output
 $(window).scroll(function() {  
 
@@ -25,6 +24,8 @@ $(window).scroll(function() {
     }
 
 });
+
+
 
 
 
@@ -121,7 +122,6 @@ $('.slider').slick({
     ]
 
 });
-
 
 
 
