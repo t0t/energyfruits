@@ -2,12 +2,15 @@
 <div class="widget widget--posts">
 
 <h3>Últimos posts</h3>
-    <ul>
 
-	<?php
-	    $recentPosts = new WP_Query();
-	    $recentPosts->query('showposts=5');
-	?>
+    <ul>
+    <?php
+        $categories = get_the_category();
+        //$categories = explode(',', $categories);
+        $recentPosts = new WP_Query();
+        $recentPosts->query('showposts=5&cat='.$categories);
+    ?>
+
 	<?php get_the_category(); ?>
 	<?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
 
@@ -21,7 +24,7 @@
 	<?php endwhile; ?>
 	<?php wp_reset_postdata(); // reset the query ?>
 
-	</ul>
+    </ul>
 
 </div>
 
