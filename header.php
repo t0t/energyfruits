@@ -91,8 +91,8 @@
 	<!-- menu out of canvas -->
 	<nav class="nav-main" role="navigation">
 
-	<input type="checkbox" id="trigger"/>
-	<label for="trigger"></label>
+	<input type="checkbox" id="toggle-btn"/>
+	<label for="toggle-btn"></label>
 	<?php
 		$defaults = array(
 			'theme_location'  => 'fixed_menu',
