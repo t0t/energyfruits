@@ -1,7 +1,6 @@
 .brand {
-	
-	height: 125px;
 
+	height: 90px;
 	overflow: hidden;
 
 	@include transition(.2s);
@@ -20,6 +19,7 @@
 
 	@media all and (min-width: $bp3) {
 
+		height: 135px;
 		margin: 0 $gutterwidth;
 
 	}
@@ -29,26 +29,18 @@
 	.brand__logo {
 
 		width: 200px;
-
-		height: 100%;
-
+		height: 90%;
 		display: inline-block;
 
-		@include background-image(logo,100%,no-repeat,center top, svg);
+		@include background-image(logo,100%,no-repeat,center -10px, svg);
 
-		@media screen and (min-width: $bp3) {
-
-			// width: 180px;
-
-			// height: auto;
-
-		}
+		@media screen and (min-width: $bp3) {}
 
 		@include transition(.3s);
 
 		&:hover {
 
-			background-position: 0 -105px;
+			background-position: 0 -125px;
 			
 		}
 

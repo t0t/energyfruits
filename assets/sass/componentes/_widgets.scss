@@ -210,20 +210,19 @@
 // WELL ====================================================
 
 .well {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	//flex-wrap: nowrap;
-	//align-content: center;
+
+	@include flexbox;
+	@include justify-content(center);
+	@include align-items(center);
+	@include flex-direction(column);
 	@include max-width($bp2);
-	// min-height : $paddingbase;
 	border-radius: $radius;
 	@extend %text-center;
 	
 	p {
 		@include max-width($bp3);
 	}
+
 	p:last-child {
 		margin-bottom : 0;
 	}
