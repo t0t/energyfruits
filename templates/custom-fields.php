@@ -696,77 +696,80 @@
     ?>
 
     <section class="slider__wrap">
-    
-    <h3 class="slider__title"><?php the_sub_field("title"); ?></h3>
-    <?php the_sub_field("description"); ?>
 
-    <div class="slider__slides slider">
+        <h3 class="slider__title"><?php the_sub_field("title"); ?></h3>
+        <?php the_sub_field("description"); ?>
 
-    <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-      
-            <a href="<?php the_permalink(); ?>">
+            <div class="slider__slides slider">
 
-                <figure>
+            <?php while ($loop->have_posts()) : $loop->the_post(); ?>
 
-                    <figcaption class="slider__caption"><?php the_title(); ?></figcaption>
+                <a href="<?php the_permalink(); ?>">
 
-                </figure>
+                    <figure>
 
-            </a>
-      
-    <?php endwhile; ?>
-    <?php wp_reset_postdata(); ?>
-        
-    </div>
+                        <figcaption class="slider__caption"><?php the_title(); ?></figcaption>
 
-    <button type="button" class="slider__btn-prev"></button>
-    <button type="button" class="slider__btn-next"></button>
+                    </figure>
+
+                </a>
+              
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+                
+            </div>
+
+        <button type="button" class="slider__btn-prev"></button>
+        <button type="button" class="slider__btn-next"></button>
   
     </section>
 
 
 <?php elseif(get_row_layout() == "carusel2"): // Carusel Supershakes ?>
-    
-    <?php 
+
+    <?php
         $loop = new WP_Query( array( 
             'post_type' => 'cpt',
             'category_name' => 'supershakes',
             'posts_per_page' => '',
             'orderby' => 'title',
             'order'   => 'ASC'
-            )); 
+            ));
     ?>
 
     <section class="slider__wrap">
-    
-    <h3 class="slider__title"><?php the_sub_field("title"); ?></h3>
-    <?php the_sub_field("description"); ?>
 
-    <div class="slider__slides slider">
+        <h3 class="slider__title"><?php the_sub_field("title"); ?></h3>
 
-    <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-      
+        <?php the_sub_field("description"); ?>
+
+        <div class="slider__slides slider">
+
+        <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+
             <a href="<?php the_permalink(); ?>">
-                <figure>
-                    <figcaption class="slider__caption"><?php the_title(); ?></figcaption>
-                </figure>
-            </a>
-      
-    <?php endwhile; ?>
-    <?php wp_reset_postdata(); ?>
-        
-    </div>
 
-    <button type="button" class="slider__btn-prev"></button>
-    <button type="button" class="slider__btn-next"></button>
-  
+                <figure>
+
+                    <figcaption class="slider__caption"><?php the_title(); ?></figcaption>
+
+                </figure>
+
+            </a>
+
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+
+        </div>
+
+        <button type="button" class="slider__btn-prev"></button>
+        <button type="button" class="slider__btn-next"></button>
+
     </section>
 
-    
 
+<?php elseif(get_row_layout() == "carusel3"): // Carusel enlaces externos ?>
 
-    <?php elseif(get_row_layout() == "carusel3"): // Carusel enlaces externos ?>
-    
     <?php 
         $loop = new WP_Query( array( 
             'post_type' => 'post',
