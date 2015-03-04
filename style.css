@@ -457,19 +457,19 @@ a[href*="producto/cacaocriollo"] figure:hover { background-position: 0 90px; bac
 
 .cpt-chlorella { color: gray; }
 .cpt-chlorella h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-chlorella .main-post__header { background-image: url(assets/img/bg_chlorella.svg); background-color: #988b81; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-chlorella .main-post__header { background-image: url(assets/img/bg_chlorella.svg); background-color: #2f1e19; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
 .cpt-chlorella .main-post__content { background-color: white; }
 .cpt-chlorella .main-post__content__entry { padding-top: 3%; }
-.cpt-chlorella .main-post__content__entry ul { background-image: url(assets/img/bg_chlorella.svg); background-color: #988b81; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
-.cpt-chlorella .main-post__content__entry ul:hover { background-color: #9e9389; }
-.cpt-chlorella .main-post__content__entry a:hover { color: #38322e; }
-.cpt-chlorella .galeria-fotos__figure a { color: #8c7e73; }
-.cpt-chlorella .galeria-fotos__figure a:hover { color: #70655c; }
-.cpt-chlorella .galeria-fotos__figure img { background-color: #f4f2f1; }
-.cpt-chlorella .galeria-fotos__figure img:hover { background-color: #8c7e73; }
+.cpt-chlorella .main-post__content__entry ul { background-image: url(assets/img/bg_chlorella.svg); background-color: #2f1e19; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-chlorella .main-post__content__entry ul:hover { background-color: #39241e; }
+.cpt-chlorella .main-post__content__entry a:hover { color: black; }
+.cpt-chlorella .galeria-fotos__figure a { color: #1e1310; }
+.cpt-chlorella .galeria-fotos__figure a:hover { color: black; }
+.cpt-chlorella .galeria-fotos__figure img { background-color: #ad7566; }
+.cpt-chlorella .galeria-fotos__figure img:hover { background-color: #1e1310; }
 
-a[href*="producto/chlorella"] figure { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_chlorella.svg); background-color: #988b81; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #8c7e73; }
-a[href*="producto/chlorella"] figure:hover { background-position: 0 90px; background-color: #786c63; }
+a[href*="producto/chlorella"] figure { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_chlorella.svg); background-color: #2f1e19; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #1e1310; }
+a[href*="producto/chlorella"] figure:hover { background-position: 0 90px; background-color: #070404; }
 
 .cpt-chia { color: gray; }
 .cpt-chia h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
