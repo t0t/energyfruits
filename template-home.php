@@ -5,14 +5,6 @@ Template Name: Portada
 ?>
 <?php get_header(); ?>
 
-		<div class="alert alert--info" aria-labelledby="Notice Alert">
-
-			<i class="icon-megaphone"></i>
-			<p>Este sitio web utiliza cookies propias para ofrecer un mejor servicio. Si continúa navegando consideramos que acepta su uso. Encontrará más información en nuestra <a href="/aviso-legal/">Política de Cookies.</a></p>
-			<a href="#" id="close" class="btn btn--alert"><i class="icon-cross"></i> Cerrar</a>
-
-		</div>
-
 
 <main class="main__content" role="main">
 
