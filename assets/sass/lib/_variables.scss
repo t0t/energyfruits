@@ -86,6 +86,7 @@ $color-base-dark	: darken($color-base, 5%);
 $color-base-darken	: darken($color-base, 10%);
 
 // Brand colors
+$color_goji: rgb(230,25,11); 
 $color_graviola: rgb(127,116,76); 
 $color_cacaocriollo: rgb(60,29,29); 
 $color_chlorella: rgb(30,19,16); 
@@ -115,10 +116,10 @@ $color_royalbreakfast: rgb(113,22,17);
 $color_camucao: rgb(139,59,29);
 
 // Marcas
-$brand_names: graviola cacaocriollo chlorella chia amaranto spiroulina camucamu canamo maca lucuma stevia quinoa alfalfa trigoverde algarroba cardomariano linodorado fresa coco gymtonic delifiber brainshake andeanprotein macuchino bodtox royalbreakfast camucao;
+$brand_names: goji graviola cacaocriollo chlorella chia amaranto spiroulina camucamu canamo maca lucuma stevia quinoa alfalfa trigoverde algarroba cardomariano linodorado fresa coco gymtonic delifiber brainshake andeanprotein macuchino bodtox royalbreakfast camucao;
 
 // Brand Colors
-$brand_colors: $color_graviola $color_cacaocriollo $color_chlorella $color_chia $color_amaranto $color_spiroulina $color_camucamu $color_canamo $color_maca $color_lucuma $color_stevia $color_quinoa $color_alfalfa $color_trigoverde $color_algarroba $color_cardomariano $color_linodorado $color_fresa $color_coco $color_gymtonic $color_delifiber $color_brainshake $color_andeanprotein $color_macuchino $color_bodtox $color_royalbreakfast $color_camucao;
+$brand_colors: $color_graviola $color_goji $color_cacaocriollo $color_chlorella $color_chia $color_amaranto $color_spiroulina $color_camucamu $color_canamo $color_maca $color_lucuma $color_stevia $color_quinoa $color_alfalfa $color_trigoverde $color_algarroba $color_cardomariano $color_linodorado $color_fresa $color_coco $color_gymtonic $color_delifiber $color_brainshake $color_andeanprotein $color_macuchino $color_bodtox $color_royalbreakfast $color_camucao;
 
 
 

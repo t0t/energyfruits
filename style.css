@@ -423,21 +423,37 @@ html { font-size: 100%; }
 body { position: relative; font-family: "Averia Serif Libre", cursive; font-weight: 400; color: white; letter-spacing: 0; background-color: #317549; background-image: url(assets/img/bg.svg); background-repeat: repeat; background-position: top center; background-attachment: fixed; font-size: 1rem; }
 body > select { width: 20%; top: 120px; left: 10px; position: absolute; margin: 0; }
 
+.cpt-goji { color: gray; }
+.cpt-goji h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
+.cpt-goji .main-post__header { background-image: url(assets/img/bg_goji.svg); background-color: #8f8356; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-goji .main-post__content { background-color: white; }
+.cpt-goji .main-post__content__entry { padding-top: 3%; }
+.cpt-goji .main-post__content__entry ul { background-image: url(assets/img/bg_goji.svg); background-color: #8f8356; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-goji .main-post__content__entry ul:hover { background-color: #998b5b; }
+.cpt-goji .main-post__content__entry a:hover { color: #1f1d13; }
+.cpt-goji .galeria-fotos__figure a { color: #7f744c; }
+.cpt-goji .galeria-fotos__figure a:hover { color: #5f5739; }
+.cpt-goji .galeria-fotos__figure img { background-color: #e2decf; }
+.cpt-goji .galeria-fotos__figure img:hover { background-color: #7f744c; }
+
+a[href*="producto/goji"] figure { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_goji.svg); background-color: #8f8356; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #7f744c; }
+a[href*="producto/goji"] figure:hover { background-position: 0 90px; background-color: #69603f; }
+
 .cpt-graviola { color: gray; }
 .cpt-graviola h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-graviola .main-post__header { background-image: url(assets/img/bg_graviola.svg); background-color: #8f8356; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-graviola .main-post__header { background-image: url(assets/img/bg_graviola.svg); background-color: #f42517; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
 .cpt-graviola .main-post__content { background-color: white; }
 .cpt-graviola .main-post__content__entry { padding-top: 3%; }
-.cpt-graviola .main-post__content__entry ul { background-image: url(assets/img/bg_graviola.svg); background-color: #8f8356; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
-.cpt-graviola .main-post__content__entry ul:hover { background-color: #998b5b; }
-.cpt-graviola .main-post__content__entry a:hover { color: #1f1d13; }
-.cpt-graviola .galeria-fotos__figure a { color: #7f744c; }
-.cpt-graviola .galeria-fotos__figure a:hover { color: #5f5739; }
-.cpt-graviola .galeria-fotos__figure img { background-color: #e2decf; }
-.cpt-graviola .galeria-fotos__figure img:hover { background-color: #7f744c; }
+.cpt-graviola .main-post__content__entry ul { background-image: url(assets/img/bg_graviola.svg); background-color: #f42517; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-graviola .main-post__content__entry ul:hover { background-color: #f53225; }
+.cpt-graviola .main-post__content__entry a:hover { color: #540904; }
+.cpt-graviola .galeria-fotos__figure a { color: #e6190b; }
+.cpt-graviola .galeria-fotos__figure a:hover { color: #b51409; }
+.cpt-graviola .galeria-fotos__figure img { background-color: #fddcd9; }
+.cpt-graviola .galeria-fotos__figure img:hover { background-color: #e6190b; }
 
-a[href*="producto/graviola"] figure { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_graviola.svg); background-color: #8f8356; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #7f744c; }
-a[href*="producto/graviola"] figure:hover { background-position: 0 90px; background-color: #69603f; }
+a[href*="producto/graviola"] figure { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_graviola.svg); background-color: #f42517; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #e6190b; }
+a[href*="producto/graviola"] figure:hover { background-position: 0 90px; background-color: #c41509; }
 
 .cpt-cacaocriollo { color: gray; }
 .cpt-cacaocriollo h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -1144,7 +1160,7 @@ hr { clear: both; margin: 1.6em 0; padding: 0; height: 1px; border: 0; border-to
 \*------------------------------------*/
 .img--rounded { border-radius: 20px; }
 
-.img--circle, a[href*="producto/graviola"] figure, a[href*="producto/cacaocriollo"] figure, a[href*="producto/chlorella"] figure, a[href*="producto/chia"] figure, a[href*="producto/amaranto"] figure, a[href*="producto/spiroulina"] figure, a[href*="producto/camucamu"] figure, a[href*="producto/canamo"] figure, a[href*="producto/maca"] figure, a[href*="producto/lucuma"] figure, a[href*="producto/stevia"] figure, a[href*="producto/quinoa"] figure, a[href*="producto/alfalfa"] figure, a[href*="producto/trigoverde"] figure, a[href*="producto/algarroba"] figure, a[href*="producto/cardomariano"] figure, a[href*="producto/linodorado"] figure, a[href*="producto/fresa"] figure, a[href*="producto/coco"] figure, a[href*="producto/gymtonic"] figure, a[href*="producto/delifiber"] figure, a[href*="producto/brainshake"] figure, a[href*="producto/andeanprotein"] figure, a[href*="producto/macuchino"] figure, a[href*="producto/bodtox"] figure, a[href*="producto/royalbreakfast"] figure, a[href*="producto/camucao"] figure { border-radius: 100%; }
+.img--circle, a[href*="producto/goji"] figure, a[href*="producto/graviola"] figure, a[href*="producto/cacaocriollo"] figure, a[href*="producto/chlorella"] figure, a[href*="producto/chia"] figure, a[href*="producto/amaranto"] figure, a[href*="producto/spiroulina"] figure, a[href*="producto/camucamu"] figure, a[href*="producto/canamo"] figure, a[href*="producto/maca"] figure, a[href*="producto/lucuma"] figure, a[href*="producto/stevia"] figure, a[href*="producto/quinoa"] figure, a[href*="producto/alfalfa"] figure, a[href*="producto/trigoverde"] figure, a[href*="producto/algarroba"] figure, a[href*="producto/cardomariano"] figure, a[href*="producto/linodorado"] figure, a[href*="producto/fresa"] figure, a[href*="producto/coco"] figure, a[href*="producto/gymtonic"] figure, a[href*="producto/delifiber"] figure, a[href*="producto/brainshake"] figure, a[href*="producto/andeanprotein"] figure, a[href*="producto/macuchino"] figure, a[href*="producto/bodtox"] figure, a[href*="producto/royalbreakfast"] figure, a[href*="producto/camucao"] figure { border-radius: 100%; }
 
 .img--noajust { width: inherit; }
 
