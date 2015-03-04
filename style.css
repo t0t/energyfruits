@@ -165,9 +165,9 @@ td, th { padding: 0; }
 
 .galeria-fotos { padding: 3% 7%; }
 
-.nav-secondary ul, .nav--posts ul, .widget ul { padding: 0; }
+.nav-secondary ul, .nav--posts ul { padding: 0; }
 
-.main-post__content__entry ul, .nav-secondary ul, .nav--posts ul, .widget ul { margin: 0; }
+.main-post__content__entry ul, .nav-secondary ul, .nav--posts ul { margin: 0; }
 
 .main-post__content__entry { padding-left: 20px; padding-right: 20px; }
 
@@ -1463,6 +1463,8 @@ input:required:focus:valid { background-color: #4dff4d; border: 1px solid green;
 .list__item { color: white; }
 
 .list__item::before { content: "\2714"; color: #317549; }
+
+.list--sidebar { margin-bottom: 3%; }
 
 .list--sidebar__item { border-bottom: 1px solid #317549; }
 .list--sidebar__item:last-child { border-bottom: none; }

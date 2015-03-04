@@ -1,12 +1,35 @@
 
 <div class="widget widget--posts">
 
-
     <?php
-        $categories = get_the_category();
+    $this_post = $post->ID;
+    $categories = get_the_category();
+
+    $cat = "";
+
+    if(isset($categories[0]->term_id)){
+
+        $cat = $categories[0]->term_id;
+
+    }
+
+    $recentPosts = new WP_Query(
+
+        array( 
+        'post_type' => '', 
+        'category_name' => $cat, 
+        'posts_per_page' => '5', 
+        'post__not_in' => array($this_post), 
+        'showposts' => '3', 
+        'orderby' => 'date', 
+        'order'   => 'DESC'
+        ) 
+
+    );
+
+    $recentPosts->query('cat='.$cat);
+
         // print_r($categories);
-        $recentPosts = new WP_Query();
-        $recentPosts->query('showposts=5&cat='.$categories[0]->term_id);
     ?>
 
     <?php the_category(); ?>

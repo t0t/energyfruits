@@ -20,7 +20,11 @@
 	}
 
 
-.list--sidebar {}
+.list--sidebar {
+
+	margin-bottom: $gutterwidth;
+	
+}
 
 .list--sidebar__item {
 	
