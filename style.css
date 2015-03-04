@@ -173,7 +173,7 @@ td, th { padding: 0; }
 
 .main-footer__credits, .video-main { padding-top: 20px; padding-bottom: 20px; }
 
-.post, .post--sidebar__figure, .main-footer__brand { margin-top: 20px; margin-bottom: 20px; }
+.post, .post--sidebar__figure { margin-top: 20px; margin-bottom: 20px; }
 
 .slider__btn-next::after, .slider__btn-prev::before, .aligncenter, .lightbox .lb-image, .lb-cancel, .lb-prev, .lb-next, .lb-data .lb-number, .lb-data .lb-close, hr, figure figcaption, h1 small, h2 small, h3 small { display: block; }
 
