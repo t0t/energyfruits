@@ -117,7 +117,7 @@
 
             background-image: url(#{$image-path}bg_#{$brand}.svg);
 
-            background-color: darken($elcolor, 5%);
+            background-color: lighten($elcolor, 5%);
 
             background-position: 0 100px;
 
