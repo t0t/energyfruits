@@ -1,17 +1,17 @@
-
-
+    
     <!-- Page Header -->
-    <?php //get_template_part('templates/page', 'header'); ?>
+    <hgroup class="main-post__header">
 
-    <header>
-        <h1 class="h3">Blog</h1>
-        <br>
-        <br>
-        <br>
-    </header>
+        <!-- Page Header -->
+        <?php get_template_part('templates/page', 'header'); ?>
 
+        <?php if (get_sub_field("header")): ?>
 
+            <h3 class="main-post__subheader"><?php the_sub_field("header"); ?></h3>
 
+        <?php endif ?>
+
+    </hgroup>
 
     <!-- Slider noticias -->
     <section class="slider__wrap">

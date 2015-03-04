@@ -1,16 +1,9 @@
-<?php //if(!is_front_page()) { ?>
-
-<? //} ?>
-
-
 <?php if ( is_archive() ) : ?>
 
     <header class="efecto--intro">
-        
-        <?php //echo get_the_category(); ?>
-        
-        <h1> 
-            
+
+        <h1>
+
             <?php the_category(''); ?>
 
             <small class="altheader">
@@ -27,9 +20,7 @@
 
     <header>
 
-        <h1>
-            <?php the_title(); ?>
-        </h1>
+        <h1 class="h3"><?php the_title(); ?></h1>
 
     </header>
 
@@ -71,7 +62,7 @@
     <header class="efecto--intro">
 
         <h1>
-            <?php the_title(); ?>vvv
+            <?php the_title(); ?>
         </h1>
 
     </header>
