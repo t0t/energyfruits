@@ -6,7 +6,12 @@
 // Widgets
 .widget {
 
+	ul {
 
+		@extend %no-margin;
+		@extend %no-padding;
+
+	}
 
 }
 

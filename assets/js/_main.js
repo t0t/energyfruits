@@ -130,7 +130,7 @@ $('.slider').slick({
       
     var $scrolltop_link = $('.scroll-top');
 
-    $scrolltop_link.on( 'click' ,  function ( ev ) {
+    $scrolltop_link.on( 'click' , function(ev) {
       
       ev.preventDefault();
       

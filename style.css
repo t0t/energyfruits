@@ -165,9 +165,9 @@ td, th { padding: 0; }
 
 .galeria-fotos { padding: 3% 7%; }
 
-.nav-secondary ul, .nav--posts ul { padding: 0; }
+.nav-secondary ul, .nav--posts ul, .widget ul { padding: 0; }
 
-.main-post__content__entry ul, .nav-secondary ul, .nav--posts ul { margin: 0; }
+.main-post__content__entry ul, .nav-secondary ul, .nav--posts ul, .widget ul { margin: 0; }
 
 .main-post__content__entry { padding-left: 20px; padding-right: 20px; }
 
@@ -293,7 +293,7 @@ article, aside, figure, footer, header, hgroup, nav, section { display: block; }
 @media all and (min-width: 600px) { .post--sidebar__content { width: calc(50% - 3%); } }
 @media all and (min-width: 768px) { .post--sidebar__content { width: calc(100% - 3%); } }
 
-.post--sidebar__meta-date { font-size: 24px; font-size: 1.2rem; color: rgba(0, 0, 0, 0.5); line-height: 1; margin-bottom: 0; letter-spacing: 0; }
+.post--sidebar__meta-date { font-size: 12px; font-size: 0.6rem; color: rgba(0, 0, 0, 0.5); line-height: 1; margin-bottom: 0; letter-spacing: -1; }
 
 .slider { margin-left: auto; margin-right: auto; max-width: 1600px; width: 100%; position: relative; z-index: 1; padding-top: 0; padding-left: 9%; padding-right: 9%; }
 .slider ul { margin: 0; padding: 0; }
@@ -413,9 +413,9 @@ article, aside, figure, footer, header, hgroup, nav, section { display: block; }
 .main-footer__searchform input { width: 60%; }
 .main-footer__searchform form { margin-bottom: 0; }
 
-.scroll-top { position: relative; }
-.scroll-top .icon-arrow-up2 { position: absolute; top: -200px; right: 0; left: 0; }
-.scroll-top .icon-arrow-up2:before { font-size: 30px; font-size: 1.5rem; }
+.scroll { position: relative; width: 100%; }
+.scroll .scroll-top { position: absolute; top: 0; right: 0; padding: 3%; }
+.scroll .scroll-top .icon-arrow-up2:before { font-size: 32px; font-size: 1.6rem; vertical-align: middle; }
 
 html { font-size: 100%; }
 @media all and (min-width: 600px) { html { font-size: 125%; } }
@@ -1463,6 +1463,9 @@ input:required:focus:valid { background-color: #4dff4d; border: 1px solid green;
 .list__item { color: white; }
 
 .list__item::before { content: "\2714"; color: #317549; }
+
+.list--sidebar__item { border-bottom: 1px solid #317549; }
+.list--sidebar__item:last-child { border-bottom: none; }
 
 .list-group { display: flex; flex-direction: row; justify-content: center; }
 

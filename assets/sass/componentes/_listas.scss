@@ -1,13 +1,38 @@
 // Componente Lista
 .list {
+
 	flex: 1;
 	text-align: center;
+
 }
-	.list__item { color: $white; }
+
+	.list__item {
+
+		color: $white;
+
+	}
+
 	.list__item::before {
+
 		content: "\2714";
 		color: $color-base;
+
 	}
+
+
+.list--sidebar {}
+
+.list--sidebar__item {
+	
+	border-bottom: 1px solid $color-base;
+	
+	&:last-child {
+
+		border-bottom: none;
+
+	}
+}
+
 
 
 .list-group {

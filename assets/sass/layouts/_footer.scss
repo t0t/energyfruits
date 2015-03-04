@@ -282,19 +282,26 @@
 	}
 
 	// Scroll to top button
-	.scroll-top {
-		// @extend .icon-arrow-up2;
-		position: relative;
+	.scroll {
 
-		.icon-arrow-up2 {
+		position: relative;
+		width: 100%;
+		// background-color: darken($color-base, 10);
+
+		.scroll-top {
 
 			position: absolute;
-			top: -200px;
+			top: 0;
 			right: 0;
-			left: 0;
+			padding: $gutterwidth;
+			
+			.icon-arrow-up2 {
 
-			&:before {
-				@include font-size(30);
+				&:before {
+
+					@include font-size(32);
+					vertical-align: middle;
+				}
 			}
 		}
 	}

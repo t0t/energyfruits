@@ -1,23 +1,24 @@
 
 <div class="widget widget--posts">
 
-<h3>Últimos posts</h3>
 
-    <ul>
     <?php
         $categories = get_the_category();
-        //$categories = explode(',', $categories);
+        // print_r($categories);
         $recentPosts = new WP_Query();
-        $recentPosts->query('showposts=5&cat='.$categories);
+        $recentPosts->query('showposts=5&cat='.$categories[0]->term_id);
     ?>
 
-	<?php get_the_category(); ?>
-	<?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
+    <?php the_category(); ?>
+        
+    <ul class="list--sidebar">
+    
+    <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
 
-	    <li>
+	    <li class="list--sidebar__item">
 
 	    	<a href="<?php the_permalink() ?>" rel="bookmark">
-	    	<small class="post--sidebar__meta-date"><?php the_date('j F Y'); ?></small> <?php the_title(); ?> &rarr;</a>
+	    	<small class="post--sidebar__meta-date"><?php the_date('j F Y'); ?></small> <?php the_title(); ?></a>
 
 	    </li>
 

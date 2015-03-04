@@ -340,16 +340,15 @@
 
 	.post--sidebar__meta-date {
 
-		@include font-size(24);
+		@include font-size(12);
 
 		color: $black-alpha-medio;
-
 
 		line-height: 1;
 
 		margin-bottom: 0;
 
-		letter-spacing: $baseletterspacing;
+		letter-spacing: $baseletterspacing - 1;
 		
 		@media all and (min-width: $bp3) {}
 
