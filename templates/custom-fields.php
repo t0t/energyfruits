@@ -689,8 +689,8 @@
             'post_type' => 'cpt',
             'category_name' => 'energyfruits',
             'posts_per_page' => '',
-            'orderby' => 'date',
-            'order'   => 'DESC'
+            'orderby' => 'title',
+            'order'   => 'ASC'
             ));
         
     ?>
@@ -732,8 +732,8 @@
             'post_type' => 'cpt',
             'category_name' => 'supershakes',
             'posts_per_page' => '',
-            'orderby' => 'date',
-            'order'   => 'DESC'
+            'orderby' => 'title',
+            'order'   => 'ASC'
             )); 
     ?>
 
