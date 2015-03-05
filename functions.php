@@ -75,61 +75,19 @@ add_filter('excerpt_length', 'new_excerpt_length');
 add_filter( 'wpcf7_load_js', '__return_false' );
 add_filter( 'wpcf7_load_css', '__return_false' );
 
-//conditional plugins - deactivate
-
-// function my_dequeue_styles() {
-
-// 	wp_dequeue_style( '' );
-
-// }
-	 
-// function my_dequeue_javascript() {
-
-// 	wp_dequeue_script( 'jquery' );
-
-// }
-
-// add_action( 'wp_print_styles', 'my_dequeue_styles', 100 );
-// add_action( 'wp_print_scripts', 'my_dequeue_javascript', 100 );
-
-// now we conditionally load the files needed
-// function my_enqueue_styles() {
-
-// 	if (is_page_template('page-homepage.php')) {
-// 		wp_enqueue_style( '' );
-// 	}
-	
-// 	if (is_page('')) {
-// 		wp_enqueue_style( '' );
-// 	}
-// }
-	 
-// function my_enqueue_javascript() {
-
-// 	if (is_page('contacto')) {
-
-// 		wp_enqueue_script( '' );
-
-// 	}
-	
-// 	if (is_page_template('page-homepage.php')) {
-// 		wp_enqueue_script( '' );
-// 	}
-// }
-
-// add_action( 'wp_print_styles', 'my_enqueue_styles', 100 );
-// add_action( 'wp_print_scripts', 'my_enqueue_javascript', 100 );
-
-
-
-                        
-
-
-                        
 
 
 
 
+// Ponme el lightbox2.js en el footer y sólo en los single
+function lightbox_js() {
+
+    if (is_single()) {
+
+		wp_enqueue_script( 'lightbox2', get_template_directory_uri() . '/assets/bower_components/lightbox2/js/lightbox.min.js', true );
+	}
+}
+add_action('wp_footer', 'lightbox_js');
 
 
 

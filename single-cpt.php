@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header("lightbox"); ?>
 
 <main class="main__content" role="main">
 

@@ -6,6 +6,7 @@
     $(function() {
 
 
+// FitVids.js
 $(".main-post__content__entry").fitVids();
 
 
@@ -229,10 +230,10 @@ $('.slider').slick({
 
 
 
-    $( '#close' ).on( "click", function(e) {
-        e.preventDefault();
-        $(this).parent('div').remove();
-    });
+    // $( '#close' ).on( "click", function(e) {
+    //     e.preventDefault();
+    //     $(this).parent('div').remove();
+    // });
 
 
 

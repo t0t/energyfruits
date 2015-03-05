@@ -1613,5 +1613,3 @@ path.anim-agua { fill: #f0730b; animation-name: anim-agua; animation-delay: 0s; 
 @-moz-keyframes efecto-stroke-dashoffset { 50% { stroke-dashoffset: 0; } }
 @-webkit-keyframes efecto-stroke-dashoffset { 50% { stroke-dashoffset: 0; } }
 .efecto--stroke-dashoffset { animation-name: efecto-stroke-dashoffset; animation-delay: 0s; animation-duration: 10s; animation-iteration-count: infinite; animation-timing-function: ease; -moz-animation-name: efecto-stroke-dashoffset; -moz-animation-delay: 0s; -moz-animation-duration: 10s; -moz-animation-iteration-count: infinite; -moz-animation-timing-function: ease; -webkit-animation-name: efecto-stroke-dashoffset; -webkit-animation-delay: 0s; -webkit-animation-duration: 10s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: ease; }
-
-/*# sourceMappingURL=style.css.map */
