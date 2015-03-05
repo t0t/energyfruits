@@ -2,38 +2,16 @@
 <div class="widget widget--posts">
 
     <?php
-    // $this_post = $post->ID;
-    // $categories = get_the_category();
-
-    // $cat = "";
-
-    // if(isset($categories[0]->term_id)){
-
-    //     $cat = $categories[0]->term_id;
-
-    // }
-
-    // $args = array(
-    //         'cat' => $cat,
-    //         'orderby' => 'date', 
-    //         'showposts' => '5',
-    //         'post__not_in' => array($this_post) 
-    //         // 'post_type' => '', 
-    //         // 'category_name' => $cat,
-    //         // 'posts_per_page' => '5', 
-    //         // 'order' => 'DESC'
-    //         // 'paged' => $paged
-    // );
-
-    // $recentPosts = new WP_Query( $args );
-
-    ?>
-
-
-    <?php
-
     $this_post = $post->ID;
     $categories = get_the_category();
+
+    $cat = "";
+
+    if(isset($categories[0]->term_id)){
+
+        $cat = $categories[0]->term_id;
+
+    }
 
     $args = array(
             'cat' => $cat,
@@ -45,17 +23,39 @@
             // 'posts_per_page' => '5', 
             // 'order' => 'DESC'
             // 'paged' => $paged
-            );
-
-    if( isset( $categories[0]->term_id ) ) {
-
-        $args += array( 'cat' => $categories[0]->term_id );
-
-    }
+    );
 
     $recentPosts = new WP_Query( $args );
 
-    print_r($categories);
+    ?>
+
+
+    <?php
+
+    // $this_post = $post->ID;
+    // $categories = get_the_category();
+
+    // $args = array(
+    //         'cat' => $cat,
+    //         'orderby' => 'date', 
+    //         'showposts' => '5',
+    //         'post__not_in' => array($this_post) 
+    //         // 'post_type' => '', 
+    //         // 'category_name' => $cat,
+    //         // 'posts_per_page' => '5', 
+    //         // 'order' => 'DESC'
+    //         // 'paged' => $paged
+    //         );
+
+    // if( isset( $categories[0]->term_id ) ) {
+
+    //     $args += array( 'cat' => $categories[0]->term_id );
+
+    // }
+
+    // $recentPosts = new WP_Query( $args );
+
+    // print_r($categories);
 
     ?>
     
