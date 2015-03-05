@@ -28,6 +28,15 @@
             background-repeat: no-repeat;
 
             background-size: contain;
+
+            @include transition(1s);
+
+            &:hover {
+
+                background-position: center 100px;
+                background-size: cover;
+
+            }
             
         }
 

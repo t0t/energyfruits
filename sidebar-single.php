@@ -25,8 +25,9 @@
             // 'paged' => $paged
     );
 
+    // Estoy instanciando un objeto de la clase WP_Query
     $recentPosts = new WP_Query( $args );
-
+    // print_r($recentPosts);
     ?>
 
 

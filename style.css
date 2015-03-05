@@ -425,7 +425,8 @@ body > select { width: 20%; top: 120px; left: 10px; position: absolute; margin: 
 
 .cpt-graviola { color: gray; }
 .cpt-graviola h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-graviola .main-post__header { background-image: url(assets/img/bg_graviola.svg); background-color: #8f8356; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-graviola .main-post__header { background-image: url(assets/img/bg_graviola.svg); background-color: #8f8356; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-graviola .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-graviola .main-post__content { background-color: white; }
 .cpt-graviola .main-post__content__entry { padding-top: 3%; }
 .cpt-graviola .main-post__content__entry ul { background-image: url(assets/img/bg_graviola.svg); background-color: #8f8356; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -441,7 +442,8 @@ a[href*="producto/graviola"] figure:hover { background-position: 0 90px; backgro
 
 .cpt-goji { color: gray; }
 .cpt-goji h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-goji .main-post__header { background-image: url(assets/img/bg_goji.svg); background-color: #f42517; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-goji .main-post__header { background-image: url(assets/img/bg_goji.svg); background-color: #f42517; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-goji .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-goji .main-post__content { background-color: white; }
 .cpt-goji .main-post__content__entry { padding-top: 3%; }
 .cpt-goji .main-post__content__entry ul { background-image: url(assets/img/bg_goji.svg); background-color: #f42517; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -457,7 +459,8 @@ a[href*="producto/goji"] figure:hover { background-position: 0 90px; background-
 
 .cpt-cacaocriollo { color: gray; }
 .cpt-cacaocriollo h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-cacaocriollo .main-post__header { background-image: url(assets/img/bg_cacaocriollo.svg); background-color: #4d2525; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-cacaocriollo .main-post__header { background-image: url(assets/img/bg_cacaocriollo.svg); background-color: #4d2525; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-cacaocriollo .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-cacaocriollo .main-post__content { background-color: white; }
 .cpt-cacaocriollo .main-post__content__entry { padding-top: 3%; }
 .cpt-cacaocriollo .main-post__content__entry ul { background-image: url(assets/img/bg_cacaocriollo.svg); background-color: #4d2525; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -473,7 +476,8 @@ a[href*="producto/cacaocriollo"] figure:hover { background-position: 0 90px; bac
 
 .cpt-chlorella { color: gray; }
 .cpt-chlorella h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-chlorella .main-post__header { background-image: url(assets/img/bg_chlorella.svg); background-color: #2f1e19; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-chlorella .main-post__header { background-image: url(assets/img/bg_chlorella.svg); background-color: #2f1e19; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-chlorella .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-chlorella .main-post__content { background-color: white; }
 .cpt-chlorella .main-post__content__entry { padding-top: 3%; }
 .cpt-chlorella .main-post__content__entry ul { background-image: url(assets/img/bg_chlorella.svg); background-color: #2f1e19; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -489,7 +493,8 @@ a[href*="producto/chlorella"] figure:hover { background-position: 0 90px; backgr
 
 .cpt-chia { color: gray; }
 .cpt-chia h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-chia .main-post__header { background-image: url(assets/img/bg_chia.svg); background-color: #988b81; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-chia .main-post__header { background-image: url(assets/img/bg_chia.svg); background-color: #988b81; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-chia .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-chia .main-post__content { background-color: white; }
 .cpt-chia .main-post__content__entry { padding-top: 3%; }
 .cpt-chia .main-post__content__entry ul { background-image: url(assets/img/bg_chia.svg); background-color: #988b81; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -505,7 +510,8 @@ a[href*="producto/chia"] figure:hover { background-position: 0 90px; background-
 
 .cpt-amaranto { color: gray; }
 .cpt-amaranto h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-amaranto .main-post__header { background-image: url(assets/img/bg_amaranto.svg); background-color: #c62771; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-amaranto .main-post__header { background-image: url(assets/img/bg_amaranto.svg); background-color: #c62771; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-amaranto .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-amaranto .main-post__content { background-color: white; }
 .cpt-amaranto .main-post__content__entry { padding-top: 3%; }
 .cpt-amaranto .main-post__content__entry ul { background-image: url(assets/img/bg_amaranto.svg); background-color: #c62771; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -521,7 +527,8 @@ a[href*="producto/amaranto"] figure:hover { background-position: 0 90px; backgro
 
 .cpt-spiroulina { color: gray; }
 .cpt-spiroulina h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-spiroulina .main-post__header { background-image: url(assets/img/bg_spiroulina.svg); background-color: #3a4733; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-spiroulina .main-post__header { background-image: url(assets/img/bg_spiroulina.svg); background-color: #3a4733; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-spiroulina .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-spiroulina .main-post__content { background-color: white; }
 .cpt-spiroulina .main-post__content__entry { padding-top: 3%; }
 .cpt-spiroulina .main-post__content__entry ul { background-image: url(assets/img/bg_spiroulina.svg); background-color: #3a4733; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -537,7 +544,8 @@ a[href*="producto/spiroulina"] figure:hover { background-position: 0 90px; backg
 
 .cpt-camucamu { color: gray; }
 .cpt-camucamu h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-camucamu .main-post__header { background-image: url(assets/img/bg_camucamu.svg); background-color: #763c46; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-camucamu .main-post__header { background-image: url(assets/img/bg_camucamu.svg); background-color: #763c46; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-camucamu .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-camucamu .main-post__content { background-color: white; }
 .cpt-camucamu .main-post__content__entry { padding-top: 3%; }
 .cpt-camucamu .main-post__content__entry ul { background-image: url(assets/img/bg_camucamu.svg); background-color: #763c46; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -553,7 +561,8 @@ a[href*="producto/camucamu"] figure:hover { background-position: 0 90px; backgro
 
 .cpt-canamo { color: gray; }
 .cpt-canamo h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-canamo .main-post__header { background-image: url(assets/img/bg_canamo.svg); background-color: #00aa5b; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-canamo .main-post__header { background-image: url(assets/img/bg_canamo.svg); background-color: #00aa5b; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-canamo .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-canamo .main-post__content { background-color: white; }
 .cpt-canamo .main-post__content__entry { padding-top: 3%; }
 .cpt-canamo .main-post__content__entry ul { background-image: url(assets/img/bg_canamo.svg); background-color: #00aa5b; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -569,7 +578,8 @@ a[href*="producto/canamo"] figure:hover { background-position: 0 90px; backgroun
 
 .cpt-maca { color: gray; }
 .cpt-maca h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-maca .main-post__header { background-image: url(assets/img/bg_maca.svg); background-color: #b95179; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-maca .main-post__header { background-image: url(assets/img/bg_maca.svg); background-color: #b95179; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-maca .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-maca .main-post__content { background-color: white; }
 .cpt-maca .main-post__content__entry { padding-top: 3%; }
 .cpt-maca .main-post__content__entry ul { background-image: url(assets/img/bg_maca.svg); background-color: #b95179; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -585,7 +595,8 @@ a[href*="producto/maca"] figure:hover { background-position: 0 90px; background-
 
 .cpt-lucuma { color: gray; }
 .cpt-lucuma h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-lucuma .main-post__header { background-image: url(assets/img/bg_lucuma.svg); background-color: #f9b91b; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-lucuma .main-post__header { background-image: url(assets/img/bg_lucuma.svg); background-color: #f9b91b; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-lucuma .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-lucuma .main-post__content { background-color: white; }
 .cpt-lucuma .main-post__content__entry { padding-top: 3%; }
 .cpt-lucuma .main-post__content__entry ul { background-image: url(assets/img/bg_lucuma.svg); background-color: #f9b91b; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -601,7 +612,8 @@ a[href*="producto/lucuma"] figure:hover { background-position: 0 90px; backgroun
 
 .cpt-stevia { color: gray; }
 .cpt-stevia h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-stevia .main-post__header { background-image: url(assets/img/bg_stevia.svg); background-color: #009559; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-stevia .main-post__header { background-image: url(assets/img/bg_stevia.svg); background-color: #009559; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-stevia .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-stevia .main-post__content { background-color: white; }
 .cpt-stevia .main-post__content__entry { padding-top: 3%; }
 .cpt-stevia .main-post__content__entry ul { background-image: url(assets/img/bg_stevia.svg); background-color: #009559; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -617,7 +629,8 @@ a[href*="producto/stevia"] figure:hover { background-position: 0 90px; backgroun
 
 .cpt-quinoa { color: gray; }
 .cpt-quinoa h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-quinoa .main-post__header { background-image: url(assets/img/bg_quinoa.svg); background-color: #d3313a; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-quinoa .main-post__header { background-image: url(assets/img/bg_quinoa.svg); background-color: #d3313a; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-quinoa .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-quinoa .main-post__content { background-color: white; }
 .cpt-quinoa .main-post__content__entry { padding-top: 3%; }
 .cpt-quinoa .main-post__content__entry ul { background-image: url(assets/img/bg_quinoa.svg); background-color: #d3313a; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -633,7 +646,8 @@ a[href*="producto/quinoa"] figure:hover { background-position: 0 90px; backgroun
 
 .cpt-alfalfa { color: gray; }
 .cpt-alfalfa h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-alfalfa .main-post__header { background-image: url(assets/img/bg_alfalfa.svg); background-color: #2c9c80; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-alfalfa .main-post__header { background-image: url(assets/img/bg_alfalfa.svg); background-color: #2c9c80; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-alfalfa .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-alfalfa .main-post__content { background-color: white; }
 .cpt-alfalfa .main-post__content__entry { padding-top: 3%; }
 .cpt-alfalfa .main-post__content__entry ul { background-image: url(assets/img/bg_alfalfa.svg); background-color: #2c9c80; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -649,7 +663,8 @@ a[href*="producto/alfalfa"] figure:hover { background-position: 0 90px; backgrou
 
 .cpt-trigoverde { color: gray; }
 .cpt-trigoverde h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-trigoverde .main-post__header { background-image: url(assets/img/bg_trigoverde.svg); background-color: #558b36; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-trigoverde .main-post__header { background-image: url(assets/img/bg_trigoverde.svg); background-color: #558b36; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-trigoverde .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-trigoverde .main-post__content { background-color: white; }
 .cpt-trigoverde .main-post__content__entry { padding-top: 3%; }
 .cpt-trigoverde .main-post__content__entry ul { background-image: url(assets/img/bg_trigoverde.svg); background-color: #558b36; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -665,7 +680,8 @@ a[href*="producto/trigoverde"] figure:hover { background-position: 0 90px; backg
 
 .cpt-algarroba { color: gray; }
 .cpt-algarroba h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-algarroba .main-post__header { background-image: url(assets/img/bg_algarroba.svg); background-color: #301f19; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-algarroba .main-post__header { background-image: url(assets/img/bg_algarroba.svg); background-color: #301f19; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-algarroba .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-algarroba .main-post__content { background-color: white; }
 .cpt-algarroba .main-post__content__entry { padding-top: 3%; }
 .cpt-algarroba .main-post__content__entry ul { background-image: url(assets/img/bg_algarroba.svg); background-color: #301f19; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -681,7 +697,8 @@ a[href*="producto/algarroba"] figure:hover { background-position: 0 90px; backgr
 
 .cpt-cardomariano { color: gray; }
 .cpt-cardomariano h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-cardomariano .main-post__header { background-image: url(assets/img/bg_cardomariano.svg); background-color: #b188b8; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-cardomariano .main-post__header { background-image: url(assets/img/bg_cardomariano.svg); background-color: #b188b8; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-cardomariano .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-cardomariano .main-post__content { background-color: white; }
 .cpt-cardomariano .main-post__content__entry { padding-top: 3%; }
 .cpt-cardomariano .main-post__content__entry ul { background-image: url(assets/img/bg_cardomariano.svg); background-color: #b188b8; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -697,7 +714,8 @@ a[href*="producto/cardomariano"] figure:hover { background-position: 0 90px; bac
 
 .cpt-linodorado { color: gray; }
 .cpt-linodorado h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-linodorado .main-post__header { background-image: url(assets/img/bg_linodorado.svg); background-color: #e2cc59; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-linodorado .main-post__header { background-image: url(assets/img/bg_linodorado.svg); background-color: #e2cc59; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-linodorado .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-linodorado .main-post__content { background-color: white; }
 .cpt-linodorado .main-post__content__entry { padding-top: 3%; }
 .cpt-linodorado .main-post__content__entry ul { background-image: url(assets/img/bg_linodorado.svg); background-color: #e2cc59; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -713,7 +731,8 @@ a[href*="producto/linodorado"] figure:hover { background-position: 0 90px; backg
 
 .cpt-fresa { color: gray; }
 .cpt-fresa h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-fresa .main-post__header { background-image: url(assets/img/bg_fresa.svg); background-color: #fb3e03; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-fresa .main-post__header { background-image: url(assets/img/bg_fresa.svg); background-color: #fb3e03; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-fresa .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-fresa .main-post__content { background-color: white; }
 .cpt-fresa .main-post__content__entry { padding-top: 3%; }
 .cpt-fresa .main-post__content__entry ul { background-image: url(assets/img/bg_fresa.svg); background-color: #fb3e03; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -729,7 +748,8 @@ a[href*="producto/fresa"] figure:hover { background-position: 0 90px; background
 
 .cpt-coco { color: gray; }
 .cpt-coco h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-coco .main-post__header { background-image: url(assets/img/bg_coco.svg); background-color: #955928; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-coco .main-post__header { background-image: url(assets/img/bg_coco.svg); background-color: #955928; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-coco .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-coco .main-post__content { background-color: white; }
 .cpt-coco .main-post__content__entry { padding-top: 3%; }
 .cpt-coco .main-post__content__entry ul { background-image: url(assets/img/bg_coco.svg); background-color: #955928; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -745,7 +765,8 @@ a[href*="producto/coco"] figure:hover { background-position: 0 90px; background-
 
 .cpt-gymtonic { color: gray; }
 .cpt-gymtonic h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-gymtonic .main-post__header { background-image: url(assets/img/bg_gymtonic.svg); background-color: #d90513; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-gymtonic .main-post__header { background-image: url(assets/img/bg_gymtonic.svg); background-color: #d90513; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-gymtonic .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-gymtonic .main-post__content { background-color: white; }
 .cpt-gymtonic .main-post__content__entry { padding-top: 3%; }
 .cpt-gymtonic .main-post__content__entry ul { background-image: url(assets/img/bg_gymtonic.svg); background-color: #d90513; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -761,7 +782,8 @@ a[href*="producto/gymtonic"] figure:hover { background-position: 0 90px; backgro
 
 .cpt-delifiber { color: gray; }
 .cpt-delifiber h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-delifiber .main-post__header { background-image: url(assets/img/bg_delifiber.svg); background-color: #ffe509; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-delifiber .main-post__header { background-image: url(assets/img/bg_delifiber.svg); background-color: #ffe509; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-delifiber .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-delifiber .main-post__content { background-color: white; }
 .cpt-delifiber .main-post__content__entry { padding-top: 3%; }
 .cpt-delifiber .main-post__content__entry ul { background-image: url(assets/img/bg_delifiber.svg); background-color: #ffe509; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -777,7 +799,8 @@ a[href*="producto/delifiber"] figure:hover { background-position: 0 90px; backgr
 
 .cpt-brainshake { color: gray; }
 .cpt-brainshake h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-brainshake .main-post__header { background-image: url(assets/img/bg_brainshake.svg); background-color: #f3a200; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-brainshake .main-post__header { background-image: url(assets/img/bg_brainshake.svg); background-color: #f3a200; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-brainshake .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-brainshake .main-post__content { background-color: white; }
 .cpt-brainshake .main-post__content__entry { padding-top: 3%; }
 .cpt-brainshake .main-post__content__entry ul { background-image: url(assets/img/bg_brainshake.svg); background-color: #f3a200; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -793,7 +816,8 @@ a[href*="producto/brainshake"] figure:hover { background-position: 0 90px; backg
 
 .cpt-andeanprotein { color: gray; }
 .cpt-andeanprotein h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-andeanprotein .main-post__header { background-image: url(assets/img/bg_andeanprotein.svg); background-color: #45762b; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-andeanprotein .main-post__header { background-image: url(assets/img/bg_andeanprotein.svg); background-color: #45762b; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-andeanprotein .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-andeanprotein .main-post__content { background-color: white; }
 .cpt-andeanprotein .main-post__content__entry { padding-top: 3%; }
 .cpt-andeanprotein .main-post__content__entry ul { background-image: url(assets/img/bg_andeanprotein.svg); background-color: #45762b; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -809,7 +833,8 @@ a[href*="producto/andeanprotein"] figure:hover { background-position: 0 90px; ba
 
 .cpt-macuchino { color: gray; }
 .cpt-macuchino h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-macuchino .main-post__header { background-image: url(assets/img/bg_macuchino.svg); background-color: #bd944f; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-macuchino .main-post__header { background-image: url(assets/img/bg_macuchino.svg); background-color: #bd944f; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-macuchino .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-macuchino .main-post__content { background-color: white; }
 .cpt-macuchino .main-post__content__entry { padding-top: 3%; }
 .cpt-macuchino .main-post__content__entry ul { background-image: url(assets/img/bg_macuchino.svg); background-color: #bd944f; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -825,7 +850,8 @@ a[href*="producto/macuchino"] figure:hover { background-position: 0 90px; backgr
 
 .cpt-bodtox { color: gray; }
 .cpt-bodtox h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-bodtox .main-post__header { background-image: url(assets/img/bg_bodtox.svg); background-color: #b1cc3b; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-bodtox .main-post__header { background-image: url(assets/img/bg_bodtox.svg); background-color: #b1cc3b; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-bodtox .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-bodtox .main-post__content { background-color: white; }
 .cpt-bodtox .main-post__content__entry { padding-top: 3%; }
 .cpt-bodtox .main-post__content__entry ul { background-image: url(assets/img/bg_bodtox.svg); background-color: #b1cc3b; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -841,7 +867,8 @@ a[href*="producto/bodtox"] figure:hover { background-position: 0 90px; backgroun
 
 .cpt-royalbreakfast { color: gray; }
 .cpt-royalbreakfast h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-royalbreakfast .main-post__header { background-image: url(assets/img/bg_royalbreakfast.svg); background-color: #871a14; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-royalbreakfast .main-post__header { background-image: url(assets/img/bg_royalbreakfast.svg); background-color: #871a14; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-royalbreakfast .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-royalbreakfast .main-post__content { background-color: white; }
 .cpt-royalbreakfast .main-post__content__entry { padding-top: 3%; }
 .cpt-royalbreakfast .main-post__content__entry ul { background-image: url(assets/img/bg_royalbreakfast.svg); background-color: #871a14; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -857,7 +884,8 @@ a[href*="producto/royalbreakfast"] figure:hover { background-position: 0 90px; b
 
 .cpt-camucao { color: gray; }
 .cpt-camucao h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-camucao .main-post__header { background-image: url(assets/img/bg_camucao.svg); background-color: #a04421; background-position: center bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-camucao .main-post__header { background-image: url(assets/img/bg_camucao.svg); background-color: #a04421; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
+.cpt-camucao .main-post__header:hover { background-position: center 100px; background-size: cover; }
 .cpt-camucao .main-post__content { background-color: white; }
 .cpt-camucao .main-post__content__entry { padding-top: 3%; }
 .cpt-camucao .main-post__content__entry ul { background-image: url(assets/img/bg_camucao.svg); background-color: #a04421; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -1613,3 +1641,5 @@ path.anim-agua { fill: #f0730b; animation-name: anim-agua; animation-delay: 0s; 
 @-moz-keyframes efecto-stroke-dashoffset { 50% { stroke-dashoffset: 0; } }
 @-webkit-keyframes efecto-stroke-dashoffset { 50% { stroke-dashoffset: 0; } }
 .efecto--stroke-dashoffset { animation-name: efecto-stroke-dashoffset; animation-delay: 0s; animation-duration: 10s; animation-iteration-count: infinite; animation-timing-function: ease; -moz-animation-name: efecto-stroke-dashoffset; -moz-animation-delay: 0s; -moz-animation-duration: 10s; -moz-animation-iteration-count: infinite; -moz-animation-timing-function: ease; -webkit-animation-name: efecto-stroke-dashoffset; -webkit-animation-delay: 0s; -webkit-animation-duration: 10s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: ease; }
+
+/*# sourceMappingURL=style.css.map */
