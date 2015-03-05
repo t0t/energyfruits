@@ -12,9 +12,8 @@
         $cat = $categories[0]->term_id;
 
     }
-
-    $recentPosts = new WP_Query(
-        array( 
+    
+    $args = array(
             'cat' => $cat,
             'orderby' => 'date', 
             'showposts' => '5',
@@ -22,11 +21,11 @@
             // 'post_type' => '', 
             // 'category_name' => $cat,
             // 'posts_per_page' => '5', 
-            // 'order'   => 'DESC'
-        ) 
-
+            // 'order' => 'DESC'
+            // 'paged' => $paged
     );
 
+    $recentPosts = new WP_Query( $args );
 
     ?>
     
