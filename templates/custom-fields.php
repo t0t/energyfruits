@@ -601,7 +601,7 @@
 
             <p><?php the_sub_field("description"); ?></p>
 
-            <button class="btn btn--image"><a href="<?php the_sub_field("call_to_action"); ?>">Más info</a></button>
+            <button class="btn btn--image"><a href="<?php the_sub_field("call_to_action"); ?>">lo último...</a></button>
 
             </div>
 
