@@ -14,25 +14,28 @@
     }
 
     $recentPosts = new WP_Query(
-
         array( 
-        'post_type' => '', 
-        'category_name' => $cat, 
-        'posts_per_page' => '5', 
-        'post__not_in' => array($this_post), 
-        'showposts' => '3', 
-        'orderby' => 'date', 
-        'order'   => 'DESC'
+            'cat' => $cat,
+            'orderby' => 'date', 
+            'showposts' => '5',
+            'post__not_in' => array($this_post) 
+            // 'post_type' => '', 
+            // 'category_name' => $cat,
+            // 'posts_per_page' => '5', 
+            // 'order'   => 'DESC'
         ) 
 
     );
 
-    $recentPosts->query('cat='.$cat);
 
+    ?>
+    
+
+    <?php
+        //sacame el nombre del array
+        echo $categories[0]->name;
         // print_r($categories);
     ?>
-
-    <?php the_category(); ?>
         
     <ul class="list--sidebar">
     

@@ -29,12 +29,18 @@ register_sidebar( array(
 
 //Page Slug Body Class
 function add_slug_body_class( $classes ) {
+
 global $post;
-if ( isset( $post ) ) {
-$classes[] = $post->post_type . '-' . $post->post_name;
+
+	if ( isset( $post ) ) {
+
+		$classes[] = $post->post_type . '-' . $post->post_name;
+	}
+
+	return $classes;
+
 }
-return $classes;
-}
+
 add_filter( 'body_class', 'add_slug_body_class' );
 
 
@@ -51,14 +57,82 @@ add_filter( 'body_class', 'add_slug_body_class' );
  */
 // max excerpt
 function new_excerpt_length($length) {
+
 	return 10;
+
 }
+
 add_filter('excerpt_length', 'new_excerpt_length');
+
+
+
+
+
+
 
 
 /* No me carges los scripts de cf7, los cargare luego solo para contacto */
 add_filter( 'wpcf7_load_js', '__return_false' );
 add_filter( 'wpcf7_load_css', '__return_false' );
+
+//conditional plugins - deactivate
+
+// function my_dequeue_styles() {
+
+// 	wp_dequeue_style( '' );
+
+// }
+	 
+// function my_dequeue_javascript() {
+
+// 	wp_dequeue_script( 'jquery' );
+
+// }
+
+// add_action( 'wp_print_styles', 'my_dequeue_styles', 100 );
+// add_action( 'wp_print_scripts', 'my_dequeue_javascript', 100 );
+
+// now we conditionally load the files needed
+// function my_enqueue_styles() {
+
+// 	if (is_page_template('page-homepage.php')) {
+// 		wp_enqueue_style( '' );
+// 	}
+	
+// 	if (is_page('')) {
+// 		wp_enqueue_style( '' );
+// 	}
+// }
+	 
+// function my_enqueue_javascript() {
+
+// 	if (is_page('contacto')) {
+
+// 		wp_enqueue_script( '' );
+
+// 	}
+	
+// 	if (is_page_template('page-homepage.php')) {
+// 		wp_enqueue_script( '' );
+// 	}
+// }
+
+// add_action( 'wp_print_styles', 'my_enqueue_styles', 100 );
+// add_action( 'wp_print_scripts', 'my_enqueue_javascript', 100 );
+
+
+
+                        
+
+
+                        
+
+
+
+
+
+
+
 
 
 // quita admin bar
@@ -68,22 +142,22 @@ add_filter('show_admin_bar', '__return_false');
 remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
 
+
 // CPT's
 add_action( 'init', 'create_post_type' );
+
 function create_post_type() {
-	register_post_type( 'cpt',
-		array(
-			'labels' => array(
-				'name' => __( 'Productos' ),
-				'singular_name' => __( 'Producto' )
-			),
-		'public' => true,
-		'has_archive' => true,
-		'rewrite' => array('slug' => 'producto'),
-		'taxonomies' => array('category'),
-		'supports' => array( 'title', 'editor', 'thumbnail' ),
-		)
-	);
+
+	register_post_type( 'cpt', array( 
+
+			'labels' => array( 'name' => __( 'Productos' ), 'singular_name' => __( 'Producto' )),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array( 'slug' => 'producto' ),
+			'taxonomies' => array( 'category' ),
+			'supports' => array( 'title', 'editor', 'thumbnail' ),
+			)
+		);
 }
 
 // http://wordpress.stackexchange.com/questions/6731/if-is-custom-post-type

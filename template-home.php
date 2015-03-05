@@ -15,6 +15,13 @@ Template Name: Portada
     <!-- Cargame los Custom fields, ACF -->
     <?php get_template_part('templates/custom-fields'); ?>
 
+    <?php 
+
+    	$myvar = "pedro";
+    	echo "hola " . $myvar;
+
+     ?>
+
     <?php endwhile; ?>
     <?php else: ?>
     <?php endif; ?> 
