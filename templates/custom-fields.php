@@ -246,6 +246,19 @@
                             $email = get_sub_field('email');
                             ?>
 
+                            <?php 
+                            // $personal = array(
+                            //         $nombre,
+                            //         $cargo,
+                            //         $email
+                            //     );
+
+                            // foreach ($personal as $persona) {
+                            //     $persona = $nombre." ".$cargo."<br>".'<span class="icon-envelope" aria-labelledby="icono"></span>'.$email;
+                            // }
+                            // echo $persona;
+                            ?>
+
                             <article role="article">
 
                             <?php if( $nombre ): ?>

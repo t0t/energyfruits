@@ -2,17 +2,10 @@
 <div class="widget widget--posts">
 
     <?php
+
     $this_post = $post->ID;
     $categories = get_the_category();
 
-    $cat = "";
-
-    if(isset($categories[0]->term_id)){
-
-        $cat = $categories[0]->term_id;
-
-    }
-    
     $args = array(
             'cat' => $cat,
             'orderby' => 'date', 
@@ -23,7 +16,13 @@
             // 'posts_per_page' => '5', 
             // 'order' => 'DESC'
             // 'paged' => $paged
-    );
+            );
+
+    if( isset( $categories[0]->term_id ) ) {
+
+        $args += array( 'cat' => $categories[0]->term_id );
+
+    }
 
     $recentPosts = new WP_Query( $args );
 
@@ -31,7 +30,7 @@
     
 
     <?php
-        //sacame el nombre del array
+        //traeme el nombre del array
         echo $categories[0]->name;
         // print_r($categories);
     ?>
