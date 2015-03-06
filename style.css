@@ -925,28 +925,28 @@ img[src$=".svg"] { max-width: auto; width: 100%; height: auto; }
 .section-archivo { padding-top: 6%; }
 
 .color-base { background-color: #317549; }
-.color-base::before { content: "#317549"; }
+.color-base::before { content: #317549; }
 
 .color-base-invert { background-color: #0b88f0; }
-.color-base-invert::before { content: "#0b88f0"; }
+.color-base-invert::before { content: #0b88f0; }
 
 .color-base-light { background-color: #347c4d; }
-.color-base-light::before { content: "#347c4d"; }
+.color-base-light::before { content: #347c4d; }
 
 .color-base-lighten { background-color: #40995f; }
-.color-base-lighten::before { content: "#40995f"; }
+.color-base-lighten::before { content: #40995f; }
 
 .color-base-dark { background-color: #29633e; }
-.color-base-dark::before { content: "#29633e"; }
+.color-base-dark::before { content: #29633e; }
 
 .color-base-darken { background-color: #225133; }
-.color-base-darken::before { content: "#225133"; }
+.color-base-darken::before { content: #225133; }
 
 .white { background-color: white; }
-.white::before { content: "white"; }
+.white::before { content: white; }
 
 .black { background-color: black; }
-.black::before { content: "black"; color: #347c4d; }
+.black::before { content: black; color: #347c4d; }
 
 ::-moz-selection { background-color: #317549; color: black; text-shadow: none; }
 
@@ -1184,7 +1184,8 @@ body:after { content: url(assets/img/close.png) url(assets/img/loading.gif) url(
 
 hr { clear: both; margin: 1.6em 0; padding: 0; height: 1px; border: 0; border-top: 1px dotted white; }
 
-/*------------------------------------*\ $ELEMENTOS-IMÁGENES
+/*------------------------------------*\
+$ELEMENTOS-IMAGENES
 \*------------------------------------*/
 .img--rounded { border-radius: 20px; }
 
@@ -1203,7 +1204,8 @@ hr { clear: both; margin: 1.6em 0; padding: 0; height: 1px; border: 0; border-to
 .no-svg .content-summary__img.ico_tienda { background-image: url(assets/img/ico_tienda.png); }
 @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { .no-svg .content-summary__img.ico_tienda { background-image: url(assets/img/ico_tienda@2x.png); } }
 
-/*------------------------------------*\ $ELEMENTOS-FIGURE
+/*------------------------------------*\
+$ELEMENTOS-FIGURE
 \*------------------------------------*/
 /*------------------------------------*\ $TIPOGRAFÍA
 \*------------------------------------*/

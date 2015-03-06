@@ -2,36 +2,37 @@
     $LINKS
 \*------------------------------------*/
 a {
-	text-decoration : none;
-	color : $linkcolor;
+    text-decoration: none;
+    color: $linkcolor;
 
-	&:visited {
-		color : $linkcolorvisited;
-	}
+    &:visited {
+        color: $linkcolorvisited;
+    }
 
-	&:hover {
-		// text-decoration : underline;
-		color : $linkcolorhover;
-	}
+    &:hover {
+        // text-decoration : underline;
+        color: $linkcolorhover;
+    }
 
-	&:focus {
-		outline : thin dotted;
-		color : $linkcolorfocus;
-	}
+    &:focus {
+        outline: thin dotted;
+        color: $linkcolorfocus;
+    }
 
-	&:hover,
-	&:active {
-		outline : 0;
-	}
-	
-	// Links que estan dentro de un p dentro de .main
-	.main p & {
-		border-bottom: solid 3px $color-base;
-		&:hover {
-			text-decoration: none;
-			border-bottom: solid 3px $white;
-		}
-	}
+    &:hover,
+    &:active {
+        outline: 0;
+    }
+
+    // Links que estan dentro de un p dentro de .main
+    .main p & {
+        border-bottom: solid 3px $color-base;
+
+        &:hover {
+            text-decoration: none;
+            border-bottom: solid 3px $white;
+        }
+    }
 }
 
 // a[target="_blank"]::after {

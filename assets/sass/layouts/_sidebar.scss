@@ -1,64 +1,43 @@
-
 .sidebar {
+    border-radius: $radius * 5;
+    padding: $gutterwidth;
+    background-color: $black-alpha-fuerte;
+    // @include font-size(24);
 
-	border-radius: $radius*5;
-	padding: $gutterwidth;
-	background-color: $black-alpha-fuerte;
-	// @include font-size(24);
-	
-	@media all and (min-width: 900px) {
-
-    	// padding: $gutterwidth;
-    	position: relative;
-		width: 25%;
-
+    @media all and (min-width: 900px) {
+        // padding: $gutterwidth;
+        position: relative;
+        width: 25%;
     }
 
+    * {
+        letter-spacing: $baseletterspacing;
+        @include transition(0.3s);
+    }
 
-	* {
-		letter-spacing: $baseletterspacing;
-		@include transition(.3s);
-	}
+    a, a:visited {
+        color: $white-alpha-medio;
 
+        &:hover {
+            color: $white;
+        }
+    }
+    // background-color: $white;
+    // background-color: darken($color-alt, 10%);
+    // background-color: lighten($color-base, 55%);
 
-	a, a:visited {
+    h3, h2, h4 {
+        color: $black;
+    }
 
-		color: $white-alpha-medio;
+    img {
+        width: inherit;
+    }
 
-		&:hover {
-			color: $white;
-		}
-
-	}
-
-
-	// background-color: $white;
-	// background-color: darken($color-alt, 10%);
-	// background-color: lighten($color-base, 55%);
-
-	
-	h3, h2, h4 {
-
-		color: $black;
-
-	}
-
-
-	img {
-
-		width: inherit;
-	}
-
-
-	figure {
-
-		> a {
-
-			@extend %clearfix;
-
-		}
-
-		figcaption {}
-	}
-
+    figure {
+        > a {
+            @extend %clearfix;
+        }
+        figcaption {}
+    }
 }

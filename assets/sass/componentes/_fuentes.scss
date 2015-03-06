@@ -1,5 +1,3 @@
-
-
 /*------------------------------------*\
     $FUENTES
 \*------------------------------------*/
@@ -10,18 +8,29 @@
 // icomoon
 @import "icomoon.scss";
 
-.basefont { font-family: $basefont }
-.altfont { font-family: $altfont }
-.codefont { font-family: $codefont }
+.basefont {
+    font-family: $basefont;
+}
+
+.altfont {
+    font-family: $altfont;
+}
+
+.codefont {
+    font-family: $codefont;
+}
+
 .basefont::after {
-	content: " #{$basefont}";
-	color: $white;
+    content: " #{$basefont}";
+    color: $white;
 }
+
 .altfont::after {
-	content: " #{$altfont}";
-	color: $white;
+    content: " #{$altfont}";
+    color: $white;
 }
+
 .codefont::after {
-	content: " #{$codefont}";
-	color: $white;
+    content: " #{$codefont}";
+    color: $white;
 }

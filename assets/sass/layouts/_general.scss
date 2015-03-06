@@ -1,378 +1,327 @@
 html {
+    font-size: 100%;
 
-	font-size: 100%; //de 16px
-
-	@media all and (min-width: $bp3) {
-
-		font-size: 125%;
-
-	}
-
+    //de 16px
+    @media all and (min-width: $bp3) {
+        font-size: 125%;
+    }
 }
 
-
 body {
-	position: relative;
-	font-family: $basefont;
-	font-weight: 400;
-	color: $textcolor;
-	letter-spacing: $baseletterspacing;
-	// @include background-image(bg,cover,no-repeat,center top, svg);
-	background-color: $background;
-	background-image: url(#{$image-path}bg.svg);
-	background-repeat: repeat;
-	background-position: top center;
-	background-attachment: fixed;
-	font-size: 1rem;
+    position: relative;
+    font-family: $basefont;
+    font-weight: 400;
+    color: $textcolor;
+    letter-spacing: $baseletterspacing;
+    // @include background-image(bg,cover,no-repeat,center top, svg);
+    background-color: $background;
+    background-image: url(#{$image-path}bg.svg);
+    background-repeat: repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    font-size: 1rem;
 
-	> select {
-
-		width: 20%;
-		top: 120px;
-		left: 10px;
-		position: absolute;
-		margin: 0;
-
-	} 
-
+    > select {
+        width: 20%;
+        top: 120px;
+        left: 10px;
+        position: absolute;
+        margin: 0;
+    }
 }
 
 // Custom brand colors and images
-@include gama-producto();
+@include gama-producto;
 
 img {
-
-  // @include max-width(100%);
-
-  // height: auto;
-
-  @media all and (min-width: $bp3) {}
-
+    // @include max-width(100%);
+    // height: auto;
+    @media all and (min-width: $bp3) {}
 }
 
 img[src$=".svg"] {
-	max-width: auto;
-	width: 100%;
-	height: auto;
+    max-width: auto;
+    width: 100%;
+    height: auto;
 }
 
-	// Fondos
-	.img--bg {
-		@include background-image(logoyo,contain,no-repeat,png);
-		background-position: center;
-		background-color: $color-base;
-	}
-	.img--bg-big {
-		@include background-image(logo,cover,no-repeat,svg);
-		background-position: center;
-		// background-color: $color-base;
-	}
-	// Mascaras
-	.img--mascara {
-		clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
-	}
+// Fondos
+.img--bg {
+    @include background-image(logoyo, contain, no-repeat, png);
+    background-position: center;
+    background-color: $color-base;
+}
 
+.img--bg-big {
+    @include background-image(logo, cover, no-repeat, svg);
+    background-position: center;
+    // background-color: $color-base;
+}
 
+// Mascaras
+.img--mascara {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
 
 // LAYOUT
-
 .main__content {
-	
-	@include max-width($bp0);
+    @include max-width($bp0);
 
-	> *:first-child {
+    > *:first-child {
+        padding-top: 75px;
+    }
 
-    	padding-top: 75px;
+    header:first-child {
+        padding-top: $gutterwidth * 2;
 
-	}
+        h1 {
+            @include max-width(75%);
+            @media all and (min-width: $bp3) {}
+            @media all and (min-width: $bp1) {}
+        }
+    }
 
-	header:first-child {
-
-		padding-top: $gutterwidth*2;
-
-		h1 {
-
-			@include max-width(75%);
-
-			@media all and (min-width: $bp3) {}
-
-    		@media all and (min-width: $bp1) {}
-
-		}
-
-	}
-
-	p:first-child {
-		
-		&::first-letter {}
-		
-	}
-
-	@media all and (min-width: $bp3) {}
-
+    p:first-child {
+        &::first-letter {}
+    }
+    @media all and (min-width: $bp3) {}
 }
 
 .main__content--split {
+    @include max-width($bp0);
+    display: table;
 
-	@include max-width($bp0);
+    > main {
+        @media all and (min-width: $bp2-5) {
+            display: table-cell;
+            width: 75%;
+            background-color: $white;
+        }
+    }
 
-	display: table;
-
-
-	> main {
-
-		@media all and (min-width: $bp2-5) {
-			
-    		display: table-cell;
-    		width: 75%;
-    		background-color: $white;
-    		
-    	}
-
-	}
-
-
-	> aside {
-
-		@media all and (min-width: $bp2-5) {
-
-    		display: table-cell;
-    		width: 25%;
-    		background-color: $white;
-
-    	}
-
-	}
-
-
+    > aside {
+        @media all and (min-width: $bp2-5) {
+            display: table-cell;
+            width: 25%;
+            background-color: $white;
+        }
+    }
 }
 
-
 .wrapper {
-  @include grid(2, 8, 2);
+    @include grid(2, 8, 2);
 }
 
 .main {
-  @include grid(2, 4, 2, 4); 
-  padding-bottom: 0;
+    @include grid(2, 4, 2, 4);
+    padding-bottom: 0;
 }
 
 .section-archivo {
-
-	padding-top: $gutterwidth*2;
-
+    padding-top: $gutterwidth * 2;
 }
-
-
-
-
-
-
 
 // CUSTOM CLASSES
 // $type: monster;
+
 // p {
 //   @if $type == ocean {
 //     color: blue;
+
 //   } @else if $type == matador {
 //     color: red;
+
 //   } @else if $type == monster {
 //     color: green;
+
 //   } @else {
 //     color: black;
 //   }
 // }
-
-
-
-
-
 // COLORES
+.color-base {
+    background-color: $color-base;
 
-	.color-base {
-		background-color: $color-base;
-		&::before {
-			content: "#{$color-base}";
-		}
-	}
+    &::before {
+        content: #{$color-base};
+    }
+}
 
-	.color-base-invert 	{
-		background-color: $color-base-invert;
-		&::before {
-			content: "#{$color-base-invert}";
-		}
-	}
+.color-base-invert {
+    background-color: $color-base-invert;
 
-	.color-base-light 	{ 
-		background-color: $color-base-light;
-		&::before {
-			content: "#{$color-base-light}";
-		}
-	}
+    &::before {
+        content: #{$color-base-invert};
+    }
+}
 
-	.color-base-lighten { 
-		background-color: $color-base-lighten;
-		&::before {
-			content: "#{$color-base-lighten}";
-		}
-	}
+.color-base-light {
+    background-color: $color-base-light;
 
-	.color-base-dark 	{ 
-		background-color: $color-base-dark;	
-		&::before {
-			content: "#{$color-base-dark}";
-		}
-	}
+    &::before {
+        content: #{$color-base-light};
+    }
+}
 
-	.color-base-darken	{ 
-		background-color: $color-base-darken;	
-		&::before {
-			content: "#{$color-base-darken}";
-		}
-	}
+.color-base-lighten {
+    background-color: $color-base-lighten;
 
-	.white	{ 
-		background-color: $white;	
-		&::before {
-			content: "#{$white}";
-		}
-	}
+    &::before {
+        content: #{$color-base-lighten};
+    }
+}
 
-	.black	{ 
-		background-color: $black;
-		&::before {
-			content: "#{$black}";
-			color: $color-base-light;	
-		}
-	}
+.color-base-dark {
+    background-color: $color-base-dark;
 
+    &::before {
+        content: #{$color-base-dark};
+    }
+}
+
+.color-base-darken {
+    background-color: $color-base-darken;
+
+    &::before {
+        content: #{$color-base-darken};
+    }
+}
+
+.white {
+    background-color: $white;
+
+    &::before {
+        content: #{$white};
+    }
+}
+
+.black {
+    background-color: $black;
+
+    &::before {
+        content: #{$black};
+        color: $color-base-light;
+    }
+}
 
 // Web Colours
 ::-moz-selection {
-	background-color : $color-base;
-	color : $black;
-	text-shadow : none;
+    background-color: $color-base;
+    color: $black;
+    text-shadow: none;
 }
 
 ::selection {
-	background-color : $color-base;
-	color : $black;
-	text-shadow : none;
+    background-color: $color-base;
+    color: $black;
+    text-shadow: none;
 }
 
 // Esconde visualmente
 .hidden {
-	@extend %hidden;
+    @extend %hidden;
 }
 
-
-
-
 // PLUGINS
-
-
 //Rev Slider
 // .rev_slider_wrapper {
-// 	z-index: 0;
+//  z-index: 0;
 // }
-
 // Contact Form 7
 .wpcf7-form-control-wrap {}
+
 .your-name {}
 
 input {
-	.wpcf7-form {}
-	.wpcf7-form-control {}
-	.wpcf7-text {}
-	.wpcf7-validates-as-required {}
-	.wpcf7-textarea {}
-	.wpcf7-submit {}
-	.wpcf7-response-output {}
-	.wpcf7-display-none {}
+    .wpcf7-form {}
+    .wpcf7-form-control {}
+    .wpcf7-text {}
+    .wpcf7-validates-as-required {}
+    .wpcf7-textarea {}
+    .wpcf7-submit {}
+    .wpcf7-response-output {}
+    .wpcf7-display-none {}
 }
 
 .wpcf7 {
+    // display: table-cell;
 
-	// display: table-cell;	
-	img { width: auto; } // que no hayan sorpresas...
+    img {
+        width: auto;
+    }
 
-	@media screen and (max-width: $bp3) {
-
-		// display: table-row;
-
-	}
+    // que no hayan sorpresas...
+    @media screen and (max-width: $bp3) {
+        // display: table-row;
+    }
 }
-
-
 
 // Mappress
 .mapp-canvas {
-	
-	border-radius: 10px;
-	@include max-width($bp0);
-
+    border-radius: 10px;
+    @include max-width($bp0);
 }
 
 .mapp-iw {
-	p, a {
-		color: $color-base;
-	}
-	a:hover {
-		text-decoration: underline;
-		color: $color-base;
-	}
+    p, a {
+        color: $color-base;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: $color-base;
+    }
 }
 
 .gm-style {
-	.gm-style-iw {}
+    .gm-style-iw {}
 }
+
 // .mapp-layout {
+//  @media all and (min-width: 410px) {
+//      display: table;
+//      // width: 50%;
 
-// 	@media all and (min-width: 410px) {
-
-// 		display: table;
-// 		// width: 50%;
-    
 //     }
 // }
-.mapp-directions, .mapp-map-links, .mapp-dialog {display: none}
+
+.mapp-directions, .mapp-map-links, .mapp-dialog {
+    display: none;
+}
 
 // .mapp-poi-list {
-	
-// 	display: table-cell;
-// 	width: 50% !important;
-// 	@include font-size(16);
-// 	padding-left: $gutterwidth*2;
 
-// 	thead {
-// 		display: none;
-// 	}
+//  display: table-cell;
+//  width: 50% !important;
+//  @include font-size(16);
+//  padding-left: $gutterwidth*2;
 
-// 	tbody {
-// 		// display: table;
-// 	}
+//  thead {
+//      display: none;
+//  }
 
-// 	img {
-// 		// display: none;
-// 		height: 10px;
-// 	}
-// 	td {
-// 		// @extend %text-center;
-// 	}
-// 	tr {
-// 		float: left;
-// 		width: 50%;
-// 	}
+//  tbody {
+//      // display: table;
+//  }
 
+//  img {
+//      // display: none;
+//      height: 10px;
+//  }
+
+//  td {
+//      // @extend %text-center;
+//  }
+
+//  tr {
+//      float: left;
+//      width: 50%;
+//  }
 // }
-
-
-
 //.mapp-iw { color: $black; }
-
 // Vegas
 // .nav-arrows {
-// 	@media all and (max-width: $bp3) {
-// 		display: none;
-// 	}
+//  @media all and (max-width: $bp3) {
+//      display: none;
+//  }
 // }

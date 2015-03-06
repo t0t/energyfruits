@@ -9,23 +9,20 @@
 ========================================================================== */
 
 @mixin break($media, $col) {
-	@if $media == tablet {
+    @if $media == tablet {
+        @media only screen and (max-width: $break-tablet) {
+            width: $unit * $col - $margin;
+            margin: $margin / 2;
+        }
+    }
 
-		@media only screen and (max-width:$break-tablet) {
-			width: (($unit * $col) - $margin ) ;
-			margin: $margin / 2;
-		}
-	}
-
-	@else if $media == mobile {
-
-		@media only screen and (max-width:$break-mobile) {
-			width: (($unit * $col) - $margin ) ;
-			margin: $margin / 2;
-		}
-	}
+    @else if $media == mobile {
+        @media only screen and (max-width: $break-mobile) {
+            width: $unit * $col - $margin;
+            margin: $margin / 2;
+        }
+    }
 }
-
 
 /*------------------------------------*\
     $BREAKPOINTS

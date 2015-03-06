@@ -1,201 +1,162 @@
-
 // Efectos, animaciones
 
 .anim-intro {
-	width: 100%;
-	height: 150px;
-	
-	path {
-		fill: none;
-		stroke: $white;
-		stroke-width: 4;
-		// stroke-linejoin: round;
-		// stroke-linecap: round;
-		stroke-dashoffset: 500; 
-		stroke-dasharray: 500;
-		// stroke-miterlimit: 10;
-		// @include scale(2);
+    width: 100%;
+    height: 150px;
 
-		&:hover {
-			fill: $color-alt;
-			fill-opacity: 0;
-			fill-rule: inherit;
-			stroke-width: 2;
-			// stroke-linejoin: round;
-			// stroke-linecap: round;
-			stroke-dashoffset: 10; 
-			stroke-dasharray: 10;
-		}
-	}
+    path {
+        fill: none;
+        stroke: $white;
+        stroke-width: 4;
+        // stroke-linejoin: round;
+        // stroke-linecap: round;
+        stroke-dashoffset: 500;
+        stroke-dasharray: 500;
+        // stroke-miterlimit: 10;
+        // @include scale(2);
+
+        &:hover {
+            fill: $color-alt;
+            fill-opacity: 0;
+            fill-rule: inherit;
+            stroke-width: 2;
+            // stroke-linejoin: round;
+            // stroke-linecap: round;
+            stroke-dashoffset: 10;
+            stroke-dasharray: 10;
+        }
+    }
 }
-
 
 // Animacion logo intro
 
+path {
+    &.anim-enano-izda {
+        fill: $black;
+        @include animation(anim-nano-izda, 0.5s, 0.3s, linear, 4);
+    }
 
-	path {
-	
-		&.anim-enano-izda {
-			
-			fill: $black;
-			@include animation(anim-nano-izda, .5s, .3s, linear, 4);
+    &.anim-enano-dcha {
+        fill: $black;
+        @include animation(anim-nano-dcha, 0s, 0.3s, ease, 3);
+    }
 
-		}
+    &.anim-gegant {
+        fill: $color-base;
+        @include animation(anim-gegant, 1s, 0.5s, ease, 2);
+    }
 
-		&.anim-enano-dcha {
-			
-			fill: $black;
-			@include animation(anim-nano-dcha, 0s, .3s, ease, 3);
+    &.anim-puntitos {
+        fill: $color-alt;
+        @include animation(anim-puntitos, 0s, 1s, ease, 2);
+    }
 
-		}
-
-		&.anim-gegant {
-			
-			fill: $color-base;
-			@include animation(anim-gegant, 1s, .5s, ease, 2);
-
-		}
-
-		&.anim-puntitos {
-			
-			fill: $color-alt;
-			@include animation(anim-puntitos, 0s, 1s, ease, 2);
-
-		}
-
-		&.anim-agua {
-			
-			fill: $color-alt;
-			@include animation(anim-agua, 0s, .5s, linear, infinite);
-
-		}
-
-	}
-
+    &.anim-agua {
+        fill: $color-alt;
+        @include animation(anim-agua, 0s, 0.5s, linear, infinite);
+    }
+}
 
 @include keyframe(anim-nano-izda) {
+    0%, 100% {
+        @include translate(0px, 0px);
+    }
 
-	0%, 100% {
-		
-		@include translate(0px, 0px);
-		
-	}
-
-	50% {
-
-		@include translate(0px, -5px);
-
-	}
-
+    50% {
+        @include translate(0px, -5px);
+    }
 }
+
 
 @include keyframe(anim-nano-dcha) {
+    0%, 100% {
+        @include translate(0px, 0px);
+    }
 
-    	
-	0%, 100% {
-		
-		@include translate(0px, 0px);
-		
-	}
-
-	50% {
-
-		@include translate(0px, -3px);
-
-	}
-
+    50% {
+        @include translate(0px, -3px);
+    }
 }
+
 
 @include keyframe(anim-gegant) {
+    0%, 100% {
+        @include translate(0px, 0px);
+    }
 
-	0%, 100% {
-		
-		@include translate(0px, 0px);
-		
-	}
-
-	50% {
-
-		@include translate(0px, -5px);
-
-	}
-
+    50% {
+        @include translate(0px, -5px);
+    }
 }
+
 
 @include keyframe(anim-puntitos) {
+    0%, 100% {
+        @include rotate(0deg);
+    }
 
-	0%, 100% {
-		
-		@include rotate(0deg);
-		
-	}
-
-	50% {
-
-		@include rotate(360deg);
-
-	}
-
+    50% {
+        @include rotate(360deg);
+    }
 }
-
 
 
 // animacion intro fade
 @include keyframe(animacion--intro) {
-	0%, 100% {opacity: 1}
-	50% {opacity:0}
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
+
 
 .efecto--intro {
-  @include animation(animacion--intro, 1s, 1s, ease, 1);
-  @include animation(animacion--shake, 0s, 1s, ease, 1);
+    @include animation(animacion--intro, 1s, 1s, ease, 1);
+    @include animation(animacion--shake, 0s, 1s, ease, 1);
 }
-
 
 // Efecto SHAKE
 @include keyframe(animacion--shake) {
-
-	from {
-
-      @include translateX(20px)
-
+    from {
+        @include translateX(20px);
     }
 
     to {
-
-      @include translateX(0px) 
-
+        @include translateX(0px);
     }
+}
 
-  }
 
 .efecto--shake {
-  @include animation(animacion--shake, 0s, 1s, ease, 1);
+    @include animation(animacion--shake, 0s, 1s, ease, 1);
 }
 
-
-
-
-
-  @include keyframe(animacion--gira) {
+@include keyframe(animacion--gira) {
     from {
-      @include rotate(360deg); 
+        @include rotate(360deg);
     }
+
     to {
-      @include rotate(0deg);
+        @include rotate(0deg);
     }
 }
+
 
 .efecto--gira {
-  @include animation (animacion--gira, 3s, 2s, linear, 1);
+    @include animation(animacion--gira, 3s, 2s, linear, 1);
 }
 
 // animacion SVG
 @include keyframe(efecto-stroke-dashoffset) {
-  50% {
-    stroke-dashoffset: 0;
-  }
+    50% {
+        stroke-dashoffset: 0;
+    }
 }
+
+
 .efecto--stroke-dashoffset {
-  @include animation(efecto-stroke-dashoffset, 0s,10s,ease,infinite);
+    @include animation(efecto-stroke-dashoffset, 0s, 10s, ease, infinite);
 }

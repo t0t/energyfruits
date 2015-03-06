@@ -56,12 +56,12 @@
 	}
 
 	> li { //primera linea de items
-	    // width: 100%;
-	    @media screen and (min-width: $bp3){
+		// width: 100%;
+		@media screen and (min-width: $bp3){
 			// display: inline-block;
-	        // width: 15%;
-	        background-color: transparent;
-	    }
+			// width: 15%;
+			background-color: transparent;
+		}
 	}
 
 	a {

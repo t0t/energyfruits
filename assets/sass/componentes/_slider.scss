@@ -1,332 +1,243 @@
 //Slider
 .slider {
+    @include max-width($bp0 - $paddingbase * 10);
+    position: relative;
+    // height: 500px;
+    z-index: 1;
+    padding-top: 0;
+    padding-left: $gutterwidth * 3;
+    padding-right: $gutterwidth * 3;
 
-	@include max-width($bp0 - ($paddingbase * 10));
-	position: relative;
-	// height: 500px;
-	z-index: 1;
-	padding-top: 0;
-	padding-left: $gutterwidth*3;
-	padding-right: $gutterwidth*3;
-
-	ul {
-
-		margin: 0;
-		padding: 0;
-
-	}
-
-	@media all and (max-width:$bp2) {}
-
-	@media all and (min-width:$bp3) {}
-
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    @media all and (max-width: $bp2) {}
+    @media all and (min-width: $bp3) {}
 }
 
-  .slider__item {
-
-	position: absolute;
-	top: 50px;
-	right: 0;
-	left: 0;
+.slider__item {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
     opacity: 0;
     overflow: hidden;
     padding-bottom: 5px;
-	
 
-	@media all and (min-width: 780px) {
-
-		// @include max-width(900px);
-		// right: auto;
-		// left: auto;
-		// background-color: red;
-		// width: 90%;
-	
-	}
-
-
-    &.current {
-    	opacity: 1;
-    	padding-bottom: 0;
+    @media all and (min-width: 780px) {
+        // @include max-width(900px);
+        // right: auto;
+        // left: auto;
+        // background-color: red;
+        // width: 90%;
     }
 
-  }
-
+    &.current {
+        opacity: 1;
+        padding-bottom: 0;
+    }
+}
 
 .slider__slides {
-	
-	@extend %text-center;
-	
-	img {
-	
-		width: inherit;
+    @extend %text-center;
 
-	}
+    img {
+        width: inherit;
+    }
 
-
-	@media all and (min-width: 780px) {
-
-		@include flexbox;
-		// @include align-content(center); //alineado horizontal
-		// @include align-items(center); //alineado vertical
-		@include justify-content(center); //alineado vertical
-		// width: 100%;
-		
-		margin: 0 auto;
-		// border: 1px dotted $black-alpha-suave;
-
-	}
-
+    @media all and (min-width: 780px) {
+        @include flexbox;
+        // @include align-content(center); //alineado horizontal
+        // @include align-items(center); //alineado vertical
+        @include justify-content(center);
+        //alineado vertical
+        // width: 100%;
+        margin: 0 auto;
+        // border: 1px dotted $black-alpha-suave;
+    }
 }
-
 
 .slider__figure {
+    @extend %text-center;
+    position: relative;
 
-	@extend %text-center;
-	position: relative;
+    @media all and (min-width: 780px) {
+        // @include flexbox;
+        // @include justify-content(center); //alineado horizontal
+        // @include align-items(center); //alineado vertical
+    }
 
-	@media all and (min-width: 780px) {
+    img {
+        // @include circle();
+        margin: 0;
+        // -webkit-filter: grayscale(1);
+        // filter: grayscale(1);
 
-		// @include flexbox;
-		// @include justify-content(center); //alineado horizontal
-		// @include align-items(center); //alineado vertical
+        @media all and (min-width: 780px) {
+            // border-radius: $radius;
+        }
 
-	}
-
-	img {
-		
-		
-		// @include circle();
-		margin: 0;
-		// -webkit-filter: grayscale(1);
-  		// filter: grayscale(1);
-
-		@media all and (min-width: 780px) {
-
-			// border-radius: $radius;
-
-		}
-
-		@media all and (min-width: 900px) {
-
-			// width: 250px;
-
-		}
-
-	}
-
+        @media all and (min-width: 900px) {
+            // width: 250px;
+        }
+    }
 }
-	
-	.slider__meta-date {
 
-		color: $black-alpha-medio;
-		@extend %clearfix;
-    	font-size: 1rem;
-    	line-height : $baselineheight/2;
-    	letter-spacing: $baseletterspacing;
+.slider__meta-date {
+    color: $black-alpha-medio;
+    @extend %clearfix;
+    font-size: 1rem;
+    line-height: $baselineheight / 2;
+    letter-spacing: $baseletterspacing;
+}
 
-	}
-	
+.slider__title {
+    color: $color-alt;
+    // @extend %clearfix;
+    // @extend %lowercase;
+    padding: $gutterwidth 0;
+}
 
-	.slider__title {
-		
-		color: $color-alt;
-		// @extend %clearfix;
-		// @extend %lowercase;
-		padding: $gutterwidth 0;
+.slider__caption {
+    @include font-size(30);
+    font-style: normal;
+    letter-spacing: -1px;
+    @media all and (min-width: 780px) {}
+    @media all and (min-width: 1280px) {}
+}
 
-	}
-	
-
-	.slider__caption {
-
-    	@include font-size(30);
-    	font-style: normal;
-    	letter-spacing: -1px;
-
-			@media all and (min-width: 780px) {}
-
-			@media all and (min-width: 1280px) {}
-	}
-
-	.slider__caption-post {
-
-		color: $color-base;
-
-	}
-
+.slider__caption-post {
+    color: $color-base;
+}
 
 .slider__btn {
+    border: none;
+    @include font-size(36);
+    line-height: 2;
+    color: $white;
+    border: 1px dotted $white;
 
-	border: none;
-	@include font-size(36);
-	line-height: 2;
-	color: $white;
-	border: 1px dotted $white;
-	
-	&:hover {
+    &:hover {
+        background-color: $black-alpha-fuerte;
+    }
 
-		background-color: $black-alpha-fuerte;
+    &:visited {
+        color: $white;
+    }
 
-	}
-	
-	&:visited {
-
-		color: $white;
-
-	}
-
-	&:focus {
-
-		outline: none;
-
-	}
-
+    &:focus {
+        outline: none;
+    }
 }
-
 
 .slider__btn-call {
-	
-	width: 180px;
-	height: 40px;
-	display: block;
-	margin: $paddingbase auto;
-	border-radius: $radius*10;
-	@include font-size(24);
-	line-height: $baselineheight*1.5;
+    width: 180px;
+    height: 40px;
+    display: block;
+    margin: $paddingbase auto;
+    border-radius: $radius * 10;
+    @include font-size(24);
+    line-height: $baselineheight * 1.5;
 
-	&:hover {
+    &:hover {
+        background-color: $black;
+        border: none;
+    }
 
-		background-color: $black;
-		border: none;
-
-	}
-
-
-		@media all and (min-width: $bp3) {
-
-    		// display: inline;
-
-		}
-	
+    @media all and (min-width: $bp3) {
+        // display: inline;
+    }
 }
 
-
 .slider__btn-next, .slider__btn-prev {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 45%;
+    border-radius: 100%;
+    border: none;
+    z-index: 1;
+    background-color: $black-alpha-fuerte;
+    display: none;
 
-	height: 50px;
-	width: 50px;
-	position: absolute;
-	top: 45%;
-	border-radius: 100%;
-	border: none;
-	z-index: 1;
-	background-color: $black-alpha-fuerte;
-	display: none;
+    &:hover {
+        background-color: $color-alt;
+    }
 
-	&:hover {
-		
-		background-color: $color-alt;
-
-	}
-
-	&:focus {
-
-		outline: none;
-
-	}
-
+    &:focus {
+        outline: none;
+    }
 }
 
 .slick-disabled {
-	@include opacity(.2);
+    @include opacity(0.2);
 }
 
 .slider__btn-next {
+    right: 10px;
+    @extend .icon-arrow-right2;
 
-	right: 10px;
-	
-	@extend .icon-arrow-right2;
-
-	&::after {
-
-		@extend %display-block;
-
-	}
-
+    &::after {
+        @extend %display-block;
+    }
 }
 
-.slider__btn-prev{
+.slider__btn-prev {
+    left: 10px;
+    @extend .icon-arrow-left2;
 
-	left: 10px;
-
-	@extend .icon-arrow-left2;
-
-	&::before {
-
-		@extend %display-block;
-
-	}
+    &::before {
+        @extend %display-block;
+    }
 }
-
 
 // Estilos Revolution Slider
 .sliderh1 {
+    h1 {
+        color: $white;
+        font-size: 6rem;
+    }
 
-	h1 {
+    h2 {
+        color: $white;
+        font-size: 2rem;
+        max-width: $bp3;
+        text-transform: inherit;
+        letter-spacing: $baseletterspacing;
+    }
 
-		color: $white;
-		font-size: 6rem;
-
-	}
-
-	h2 {
-
-		color: $white;
-		font-size: 2rem;
-		max-width: $bp3;
-		text-transform: inherit;
-		letter-spacing: $baseletterspacing;
-
-	}
-
-	.btn {
-		
-		@include font-size(30);
-		color: $white;
-		border: 2px solid $white;
-
-	}
-
+    .btn {
+        @include font-size(30);
+        color: $white;
+        border: 2px solid $white;
+    }
 }
-
 
 .slider__wrap {
-	
-	position: relative;
-	background-color: $white;
-	padding-bottom: $gutterwidth;
-	width: 100%;
+    position: relative;
+    background-color: $white;
+    padding-bottom: $gutterwidth;
+    width: 100%;
 
-	&::before {
-		content: "";
-		height: 20px;
-		width: 100%;
-		position: absolute;
-		top: -18px;
-		@include background-image(bg_ondas_top,cover,no-repeat,center, svg);
-	}
+    &::before {
+        content: "";
+        height: 20px;
+        width: 100%;
+        position: absolute;
+        top: -18px;
+        @include background-image(bg_ondas_top, cover, no-repeat, center, svg);
+    }
 
-	&::after {
-		content: "";
-		height: 20px;
-		width: 100%;
-		position: absolute;
-		bottom: -20px;
-		@include background-image(bg_ondas_bottom,cover,no-repeat,center, svg);
-	}
-	
+    &::after {
+        content: "";
+        height: 20px;
+        width: 100%;
+        position: absolute;
+        bottom: -20px;
+        @include background-image(bg_ondas_bottom, cover, no-repeat, center, svg);
+    }
 }
-
 
 // Slick Slider
 /* Slider */
@@ -343,6 +254,7 @@
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
+
 .slick-list {
     position: relative;
     overflow: hidden;
@@ -359,11 +271,10 @@
         cursor: hand;
     }
 }
+
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-    
-	@include translate3d(0,0,0);
-
+    @include translate3d(0, 0, 0);
 }
 
 .slick-track {
@@ -386,8 +297,8 @@
         visibility: hidden;
     }
 }
-.slick-slide {
 
+.slick-slide {
     float: left;
     // width: 200px;
     margin: 0 $paddingbase;
@@ -403,7 +314,6 @@
     &.slick-loading img {
         display: none;
     }
-
     display: none;
 
     &.dragging img {
@@ -426,33 +336,25 @@
 }
 
 .slick-dots {
+    li {
+        // margin-top: $gutterwidth;
+        // height: 50px;
+        display: inline-block;
 
-	li {
+        button {
+            width: $paddingbase / 2;
+            height: $paddingbase / 2;
+            margin: $paddingbase;
+            border: none;
+            color: $black-alpha-fuerte;
+            background-color: $black-alpha-fuerte;
+        }
 
-		// margin-top: $gutterwidth;
-		// height: 50px;
-		display: inline-block;
-
-		button {
-			
-			width: $paddingbase/2;
-			height: $paddingbase/2;
-			margin: $paddingbase;
-			border: none;
-			color: $black-alpha-fuerte;
-			background-color: $black-alpha-fuerte;
-
-		}
-		
-		&.slick-active {
-
-			button {
-
-				color: $color-alt;
-				background-color: $color-alt;
-
-			}
-		}
-	}
-
+        &.slick-active {
+            button {
+                color: $color-alt;
+                background-color: $color-alt;
+            }
+        }
+    }
 }

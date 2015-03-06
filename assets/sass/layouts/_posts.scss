@@ -1,356 +1,220 @@
 .main-post {}
 
 .main-post__header {
-
-	.h3 {
-
-		margin-bottom: $gutterwidth;
-
-	}
-
+    .h3 {
+        margin-bottom: $gutterwidth;
+    }
 }
 
 .main-post__subheader {
+    @include padding($gutterwidth);
 
-	@include padding($gutterwidth);
-
-	@media only screen and (min-width: $bp3) {
-
-		@include font-size(26);
-		@include max-width(800px);
-
+    @media only screen and (min-width: $bp3) {
+        @include font-size(26);
+        @include max-width(800px);
     }
 
     @media only screen and (min-width: $bp2) {
-
-		@include font-size(36);
-		@include max-width(950px);
-
+        @include font-size(36);
+        @include max-width(950px);
     }
 
     @media only screen and (min-width: $bp1) {
-
-		@include font-size(42);
-		@include max-width(1180px);
-
+        @include font-size(42);
+        @include max-width(1180px);
     }
-
 }
 
 .main-post__content {
-
-	section {
-
-		margin-bottom: $gutterwidth;
-
-	}
-
-
-	@media all and (min-width: $bp3) {
-
-		@include flexbox;
-	    @include flex-flow(row wrap);
-	    @include justify-content(center);
-		// width: calc(75% - #{$gutterwidth});
-    
+    section {
+        margin-bottom: $gutterwidth;
     }
 
+    @media all and (min-width: $bp3) {
+        @include flexbox;
+        @include flex-flow(row wrap);
+        @include justify-content(center);
+        // width: calc(75% - #{$gutterwidth});
+    }
 
     @media all and (min-width: $bp2) {
-
-    	// width: calc(55% - #{$gutterwidth});
-    
+        // width: calc(55% - #{$gutterwidth});
     }
-
 }
 
-	.main-post__content__entry {
+.main-post__content__entry {
+    @extend %padding-horizontal;
+    position: relative;
 
-		@extend %padding-horizontal;
+    small {
+        display: inline-block;
+        @include font-size(13);
+        background-color: $black-alpha-fuerte;
+        padding: 3px 5px;
+        margin-bottom: 10px;
+    }
 
-		position: relative;
-		
+    ul {
+        @extend %no-margin;
+        @include padding($gutterwidth * 2);
+        // border: 2px dotted $color-alt;
+        background-color: $white-alpha-suave;
+    }
 
-		small {
+    li {
+        // @include font-size(23);
+        // line-height: 1;
+   
+    }
 
-			display: inline-block;
-			@include font-size(13);
-			background-color: $black-alpha-fuerte;;
-			padding: 3px 5px;
-			margin-bottom: 10px;
+    a {
+        color: $white-alpha-medio;
+        border-bottom: 2px dotted $color-alt;
+        padding-bottom: 3px;
+    }
 
-		}
+    @media all and (min-width: $bp3) {
+        padding-right: $gutterwidth * 2;
+        width: calc(75% - #{$gutterwidth});
+    }
 
+    @media all and (min-width: 900px) {
+        padding-right: $gutterwidth * 2;
+        width: calc(65% - #{$gutterwidth});
+    }
 
-		ul {
-
-	        @extend %no-margin;
-			@include padding($gutterwidth*2);
-			// border: 2px dotted $color-alt;
-			background-color: $white-alpha-suave;
-
-		}
-		
-		li {
-
-			// @include font-size(23);
-			// line-height: 1;
-
-		}
-
-		a {
-
-			color: $white-alpha-medio;
-			border-bottom: 2px dotted $color-alt;
-			padding-bottom: 3px;
-
-		}
-
-
-		@media all and (min-width: $bp3) {
-
-			padding-right: $gutterwidth*2;
-
-			width: calc(75% - #{$gutterwidth});
-	    
-	    }
-
-	    @media all and (min-width: 900px) {
-
-			padding-right: $gutterwidth*2;
-
-			width: calc(65% - #{$gutterwidth});
-
-		}
-
-	    @media all and (min-width: $bp1) {
-
-			padding-right: $gutterwidth*2;
-
-			width: calc(55% - #{$gutterwidth});
-
-		}
-
-	}
-
-
-
-
-
+    @media all and (min-width: $bp1) {
+        padding-right: $gutterwidth * 2;
+        width: calc(55% - #{$gutterwidth});
+    }
+}
 
 // Post
 .post {
+    display: table;
 
-	display: table;	
-
-
-	@media only screen and (min-width: 780px) {
-
-		width: calc(50% - #{$gutterwidth});
-
+    @media only screen and (min-width: 780px) {
+        width: calc(50% - #{$gutterwidth});
     }
 
     @media only screen and (min-width: 1120px) {
-
-		width: calc(33.33% - #{$gutterwidth});
-
+        width: calc(33.33% - #{$gutterwidth});
     }
-
-
-	@extend %margin-vertical;
-
+    @extend %margin-vertical;
 }
 
-	.post__figure {
+.post__figure {
+    width: 50%;
+    display: table-cell;
+    padding: $gutterwidth * 2;
+    img {}
+}
 
-		width: 50%;
-		display: table-cell;
-		padding: $gutterwidth * 2;
+.post__figure + p {}
 
+.post__content {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
 
-		img {
-			
-		}
+    * {
+        @extend %clearfix;
+    }
 
-	}
+    h2 {
+        @extend %text-left;
+        margin-bottom: $gutterwidth;
+        // color: $white-alpha-medio;
 
-		.post__figure + p {}
+        @media all and (min-width: $bp3) {
+            // color: $black;
+        }
+    }
 
+    h2 + p {
+        margin-bottom: $gutterwidth;
+        @extend %line-height-smaller;
+    }
+}
 
-	.post__content {
-
-			display: table-cell;
-			width: 50%;
-			vertical-align: top;
-
-
-			* {
-				@extend %clearfix;
-			}
-
-
-			h2 {
-
-				@extend %text-left;
-
-				margin-bottom: $gutterwidth;
-
-				// color: $white-alpha-medio;
-
-
-				@media all and (min-width: $bp3) {
-
-					// color: $black;
-
-				}
-
-			}
-
-
-			h2 + p {
-
-				margin-bottom: $gutterwidth;
-				@extend %line-height-smaller;
-
-			}
-
-		}
-
-
-	.post__meta-date {
-
-		@include font-size(24);
-		color: $color-alt;
-		font-style: italic;
-		line-height: 1;
-		margin-bottom: 0;
-		letter-spacing: $baseletterspacing;
-		
-		@media all and (min-width: $bp3) {}
-
-	}
-
-
-
-
-
+.post__meta-date {
+    @include font-size(24);
+    color: $color-alt;
+    font-style: italic;
+    line-height: 1;
+    margin-bottom: 0;
+    letter-spacing: $baseletterspacing;
+    @media all and (min-width: $bp3) {}
+}
 
 // Posts en Sidebar
 
-  .post--sidebar {
+.post--sidebar {
+    @extend %text-center;
 
-	
-	@extend %text-center;
+    @media only screen and (min-width: $bp3) {
+        @include flexbox;
+        @include flex-flow(row wrap);
+        @include justify-content(center);
+        @include align-items(baseline);
+    }
 
-		@media only screen and (min-width: $bp3) {
+    @media only and (orientation: landscape) {
+        background-color: red;
+    }
+}
 
-		    @include flexbox;
-		    @include flex-flow(row wrap);
-		    @include justify-content(center);
-		    @include align-items(baseline);
+.post--sidebar__figure {
+    @extend %margin-vertical;
 
-	  	}
+    @media only screen and (min-width: $bp3) {
+        width: calc(50% - #{$gutterwidth});
+    }
 
-	  	@media only and (orientation: landscape) {
+    @media all and (min-width: 768px) {
+        width: calc(33% - #{$gutterwidth});
+    }
 
-		    background-color: red;
+    @media all and (min-width: 900px) {
+        width: calc(15% - #{$gutterwidth});
+    }
 
-	  	}
+    img {
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+        -moz-filter: grayscale(1);
+        -o-filter: grayscale(1);
+        -ms-filter: grayscale(1);
 
-	}
+        @media all and (min-width: $bp3) {
+            width: calc(50% - #{$gutterwidth});
+        }
 
+        @media all and (min-width: 768px) {
+            width: calc(33% - #{$gutterwidth});
+        }
 
-	.post--sidebar__figure {
+        @media all and (min-width: 1280px) {
+            width: calc(20% - #{$gutterwidth});
+        }
+    }
+}
 
-		@extend %margin-vertical;
+.post--sidebar__content {
+    @media all and (min-width: $bp3) {
+        width: calc(50% - #{$gutterwidth});
+    }
 
-    	@media only screen and (min-width: $bp3) {
+    @media all and (min-width: 768px) {
+        width: calc(100% - #{$gutterwidth});
+    }
+}
 
-			width: calc(50% - #{$gutterwidth});
-
-
-    	}
-		
-
-	    @media all and (min-width: 768px) {
-
-	    	width: calc(33% - #{$gutterwidth});
-
-	    }
-
-
-	    @media all and (min-width: 900px) {
-
-	    	width: calc(15% - #{$gutterwidth});
-
-	    }
-
-
-	    img {
-
-	    	filter: grayscale(1);
-			-webkit-filter: grayscale(1);
-			-moz-filter: grayscale(1);
-			-o-filter: grayscale(1);
-			-ms-filter: grayscale(1);
-
-
-			@media all and (min-width: $bp3) {
-
-				width: calc(50% - #{$gutterwidth});
-
-	    	}
-
-
-		    @media all and (min-width: 768px) {
-
-		    	width: calc(33% - #{$gutterwidth});
-
-		    }
-
-
-		    @media all and (min-width: 1280px) {
-
-		    	width: calc(20% - #{$gutterwidth});
-
-		    }
-
-	    }
-
-	}
-
-
-	.post--sidebar__content {
-
-		@media all and (min-width: $bp3) {
-
-			width: calc(50% - #{$gutterwidth});
-
-    	}
-
-
-	    @media all and (min-width: 768px) {
-
-	    	width: calc(100% - #{$gutterwidth});
-
-	    }
-
-	}
-
-
-	.post--sidebar__meta-date {
-
-		@include font-size(12);
-
-		color: $black-alpha-medio;
-
-		line-height: 1;
-
-		margin-bottom: 0;
-
-		letter-spacing: $baseletterspacing - 1;
-		
-		@media all and (min-width: $bp3) {}
-
-	}
-
+.post--sidebar__meta-date {
+    @include font-size(12);
+    color: $black-alpha-medio;
+    line-height: 1;
+    margin-bottom: 0;
+    letter-spacing: $baseletterspacing - 1;
+    @media all and (min-width: $bp3) {}
+}

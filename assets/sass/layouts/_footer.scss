@@ -1,307 +1,226 @@
 // Footer principal
 .main-footer {
+    @include max-width($bp0);
+    margin-top: $gutterwidth * 2;
+    color: $white;
 
-	@include max-width($bp0);
+    @media screen and (max-width: $bp3) {
+        padding: $gutterwidth * 2;
+    }
 
-	margin-top: $gutterwidth*2;
+    @media screen and (min-width: $bp3) {
+        @include flexbox;
+        @include justify-content(space-around);
+        @include align-items(center);
+        @include align-content(center);
+        // min-height: 217px;
+    }
 
-	color: $white;
+    img[src$=".svg"] {
+        @media screen and (max-width: $bp3) {
+            width: inherit;
+        }
+    }
 
-		@media screen and (max-width:$bp3) {
-
-			padding: $gutterwidth*2;
-			
-		}
-
-	
-	  	@media screen and (min-width:$bp3) {
-
-			@include flexbox;
-
-			@include justify-content(space-around); 
-
-			@include align-items(center);
-
-			@include align-content(center);
-
-			// min-height: 217px;
-
-	  	}
-
-  	img[src$=".svg"] {
-
-  		@media screen and (max-width:$bp3) {
-
-			width: inherit;
-			
-		}
-
-  	}
-
-  	input[type="submit"] {
-
-  		background-color: $color-base;
-
-  		color: $white;
-  		@extend .icon-magnifying-glass;
-
-  	}
-
+    input[type="submit"] {
+        background-color: $color-base;
+        color: $white;
+        @extend .icon-magnifying-glass;
+    }
 }
 
-
-	.main-footer__header {}
-
-	.main-footer__social {
-
-		@include flexbox;
-		@include justify-content(center);
-		@include align-items(center);
-		height: 75px;
-		@media all and (min-width: $bp3) {
-			// width: 19%;
-			// @include order(3);
-		}
-
-		a {
-
-			width: 75px;
-			height: 75px;
-			color: $black-alpha-medio;
-
-			&:visited {
-				color: $black;
-			}
-
-			&:hover {
-				color: $white;
-			}
-
-		  	&::before {
-		  		font-size: 3.2rem;
-		  	}
-		}
-	}
-
-	.main-footer__credits {
-		
-		@include max-width($bp0);
-		@extend %text-center;
-		@extend %padding-vertical;
-		@include font-size(13);
-		color: $white;
-
-		aside {
-			// margin-top: $gutterwidth;
-		}
-
-		a, a:visited {
-			color: $linkcolorfooter;
-		}
-
-		a:hover {
-			text-decoration: underline;
-		}
-
-		a i:hover {}
-
-	}
-
-
-	.main-footer__brand {
-
-		// @extend %margin-vertical;
-
-		@extend %text-center;
-
-		// @include flex-grow(1);
-
-		address {
-
-			@include font-size(15);
-
-		}	
-
-			@media all and (min-width: $bp3) {
-
-				// width: 300px;
-
-			}
-
-
-		img { 
-
-			width: 150px !important;
-
-			height: auto;
-
-		}
-
-	}
-
-
-	.main-footer__brand__name {
-		font-family: $altfont;
-		text-align: center;
-		margin-bottom: 0;
-		font-size: 1.2rem;
-		letter-spacing: $baseletterspacing;
-		font-style: italic;
-		color: $white;
-	}
-
-	.main-footer__adicional {
-
-		@extend %text-center;
-		
-		@media all and (min-width: $bp3) {
-
-			// @include order(1);
-
-			@include max-width(300px);
-
-			// background-color: pink;
-
-		}
-
-	}
-
-	.main-footer__searchform {
-
-		label {
-
-			@extend %text-center;
-			
-			input {
-
-				@extend %text-center;
-				display: inline;
-
-			}
-
-		}
-
-
-		@media all and (min-width: $bp3) {
-
-			// @include order(1);
-
-			@include max-width(300px);
-
-			// background-color: pink;
-
-		}
-
-		::-webkit-input-placeholder {
-   			color: $white;
-   			line-height: $baselineheight;
-		}
-
-		:-moz-placeholder { /* Firefox 18- */
-		   color: $white;
-		   line-height: $baselineheight;  
-		}
-
-		::-moz-placeholder {  /* Firefox 19+ */
-		   color: $white;
-		   line-height: $baselineheight;  
-		}
-
-		:-ms-input-placeholder {  
-		   color: $white;
-		   line-height: $baselineheight;  
-		}
-
-		// .search-form {
-		// 	position: relative;
-		// 	right: 0;
-		// 	top: 10px;
-		// 	background-color: red;
-		// }
-
-		// .search-field {
-		// 	background-color: transparent;
-		// 	// background-image: url(images/search-icon.png);
-		// 	@extend .icon-magnifying-glass;
-		// 	border: none;
-		// 	cursor: pointer;
-		// 	height: 37px;
-		// 	position: relative;
-		// 	-webkit-transition: width 400ms ease, background 400ms ease;
-		// 	transition:         width 400ms ease, background 400ms ease;
-		// 	width: 0;
-		// }
-
-		// .search-field:focus {
-		// 	background-color: #fff;
-		// 	cursor: text;
-		// 	outline: 0;
-		// 	width: 230px;
-		// }
-
-		.search-form
-		.search-submit { 
-			display:none;
-		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		.screen-reader-text {
-
-			display: none;
-
-		}
-
-		input {
-
-			width: 60%;
-
-		}
-
-		form {
-
-			margin-bottom: 0;
-
-		}
-
-	}
-
-	// Scroll to top button
-	.scroll {
-
-		position: relative;
-		width: 100%;
-		// background-color: darken($color-base, 10);
-
-		.scroll-top {
-
-			position: absolute;
-			top: 0;
-			right: 0;
-			padding: $gutterwidth;
-			
-			.icon-arrow-up2 {
-
-				&:before {
-
-					@include font-size(32);
-					vertical-align: middle;
-				}
-			}
-		}
-	}
+.main-footer__header {}
+
+.main-footer__social {
+    @include flexbox;
+    @include justify-content(center);
+    @include align-items(center);
+    height: 75px;
+
+    @media all and (min-width: $bp3) {
+        // width: 19%;
+        // @include order(3);
+    }
+
+    a {
+        width: 75px;
+        height: 75px;
+        color: $black-alpha-medio;
+
+        &:visited {
+            color: $black;
+        }
+
+        &:hover {
+            color: $white;
+        }
+
+        &::before {
+            font-size: 3.2rem;
+        }
+    }
+}
+
+.main-footer__credits {
+    @include max-width($bp0);
+    @extend %text-center;
+    @extend %padding-vertical;
+    @include font-size(13);
+    color: $white;
+
+    aside {
+        // margin-top: $gutterwidth;
+   
+    }
+
+    a, a:visited {
+        color: $linkcolorfooter;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    a i:hover {}
+}
+
+.main-footer__brand {
+    // @extend %margin-vertical;
+    @extend %text-center;
+    // @include flex-grow(1);
+
+    address {
+        @include font-size(15);
+    }
+
+    @media all and (min-width: $bp3) {
+        // width: 300px;
+    }
+
+    img {
+        width: 150px !important;
+        height: auto;
+    }
+}
+
+.main-footer__brand__name {
+    font-family: $altfont;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    letter-spacing: $baseletterspacing;
+    font-style: italic;
+    color: $white;
+}
+
+.main-footer__adicional {
+    @extend %text-center;
+
+    @media all and (min-width: $bp3) {
+        // @include order(1);
+        @include max-width(300px);
+        // background-color: pink;
+    }
+}
+
+.main-footer__searchform {
+    label {
+        @extend %text-center;
+
+        input {
+            @extend %text-center;
+            display: inline;
+        }
+    }
+
+    @media all and (min-width: $bp3) {
+        // @include order(1);
+        @include max-width(300px);
+        // background-color: pink;
+    }
+
+    ::-webkit-input-placeholder {
+        color: $white;
+        line-height: $baselineheight;
+    }
+
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: $white;
+        line-height: $baselineheight;
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $white;
+        line-height: $baselineheight;
+    }
+
+    :-ms-input-placeholder {
+        color: $white;
+        line-height: $baselineheight;
+    }
+
+    // .search-form {
+    // 	position: relative;
+    // 	right: 0;
+    // 	top: 10px;
+    // 	background-color: red;
+    // }
+
+    // .search-field {
+    // 	background-color: transparent;
+    // 	// background-image: url(images/search-icon.png);
+    // 	@extend .icon-magnifying-glass;
+    // 	border: none;
+    // 	cursor: pointer;
+    // 	height: 37px;
+    // 	position: relative;
+    // 	-webkit-transition: width 400ms ease, background 400ms ease;
+    // 	transition:         width 400ms ease, background 400ms ease;
+    // 	width: 0;
+    // }
+
+    // .search-field:focus {
+    // 	background-color: #fff;
+    // 	cursor: text;
+    // 	outline: 0;
+    // 	width: 230px;
+    // }
+    .search-form
+    .search-submit {
+        display: none;
+    }
+
+    .screen-reader-text {
+        display: none;
+    }
+
+    input {
+        width: 60%;
+    }
+
+    form {
+        margin-bottom: 0;
+    }
+}
+
+// Scroll to top button
+.scroll {
+    position: relative;
+    width: 100%;
+    // background-color: darken($color-base, 10);
+
+    .scroll-top {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: $gutterwidth;
+
+        .icon-arrow-up2 {
+            &:before {
+                @include font-size(32);
+                vertical-align: middle;
+            }
+        }
+    }
+}

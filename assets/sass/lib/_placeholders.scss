@@ -1,7 +1,7 @@
 //letreritos indicadores styleguide
 %txtinfo {
-  color: gray;
-  font-size: .8rem;
+    color: gray;
+    font-size: .8rem;
 }
 
 /*------------------------------------*\
@@ -9,137 +9,153 @@
 \*------------------------------------*/
 
 %line-height-smaller {
-  line-height: 1;
+    line-height: 1;
 }
 
 %lowercase {
-  text-transform: lowercase;
+    text-transform: lowercase;
 }
+
 %uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 %basepadding {
-  padding: $gutterwidth $gutterwidth + 4;
+    padding: $gutterwidth $gutterwidth + 4;
 }
+
 %imgbgsize {
-  background-size: contain;
+    background-size: contain;
 }
+
 %no-padding {
-  padding: 0;
+    padding: 0;
 }
+
 %no-margin {
-  margin: 0;
+    margin: 0;
 }
+
 %padding-horizontal {
-  padding-left: $paddingbase;
-  padding-right: $paddingbase;
+    padding-left: $paddingbase;
+    padding-right: $paddingbase;
 }
+
 %padding-top {
-  padding-top: $paddingbase;
+    padding-top: $paddingbase;
 }
+
 %padding-vertical {
-  padding-top: $paddingbase;
-  padding-bottom: $paddingbase;
+    padding-top: $paddingbase;
+    padding-bottom: $paddingbase;
 }
+
 %margin-vertical {
-  margin-top: $paddingbase;
-  margin-bottom: $paddingbase;
+    margin-top: $paddingbase;
+    margin-bottom: $paddingbase;
 }
+
 %display-block {
-  display: block;
+    display: block;
 }
+
 %display-table {
-  display: table;
+    display: table;
 }
+
 %full-width {
-  width: 100%;
+    width: 100%;
 }
+
 %imgbgsize-contain {
-  background-size: contain;
+    background-size: contain;
 }
+
 %icon {
-  transition: background-color ease .2s;
-  margin: 0 .5em;
+    transition: background-color ease .2s;
+    margin: 0 .5em;
 }
+
 %text-center {
-  text-align: center;
+    text-align: center;
 }
+
 %text-right {
-  text-align: right;
+    text-align: right;
 }
+
 %text-left {
-  text-align: left;
+    text-align: left;
 }
+
 %inline-block {
-  display: inline-block;
+    display: inline-block;
 }
+
 %list-inline {
-  display: inline-block;
-  padding-right: $gutterwidth;
+    display: inline-block;
+    padding-right: $gutterwidth;
 }
 
 %background-color {
-  background-color: $background;
+    background-color: $background;
 }
 
 %text-overflow {
-	overflow : hidden;
-	text-overflow : ellipsis;
-	white-space : nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 %flex-basis-fullwidth {
-  flex-basis: 100%;
+    flex-basis: 100%;
 }
 
 /**
 * Escondemos el texto solo VISUALMENTE
 */
 %hide-text {
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
-  /**
-  * Escondemos el texto de VISUALMENTE y SCREENREADERS
-  */
+
+/**
+* Escondemos el texto de VISUALMENTE y SCREENREADERS
+*/
 %hidden {
-	display : none !important;
-	visibility : hidden;
+    display: none !important;
+    visibility: hidden;
 }
 
-
-  /**
-  * Escondemos pero mantenemos layout.
-  */
+/**
+* Escondemos pero mantenemos layout.
+*/
 %invisible {
-	visibility : hidden;
+    visibility: hidden;
 }
 
-
-  /**
-  * Visualmente escondido, pero se puede detectar con teclado (focus).
-  */
+/**
+* Visualmente escondido, pero se puede detectar con teclado (focus).
+*/
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-	position : static;
-	clip : auto;
-	height : auto;
-	width : auto;
-	margin : 0;
-	overflow: visible;
+    position: static;
+    clip: auto;
+    height: auto;
+    width: auto;
+    margin: 0;
+    overflow: visible;
 }
 
-
-  /**
-  * Clear floats.
-  * http://bit.ly/1e3YaBH
-  */
+/**
+* Clear floats.
+* http://bit.ly/1e3YaBH
+*/
 %clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }

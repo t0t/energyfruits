@@ -1,14 +1,15 @@
 .header {
-	// @include max-width($bp0);
-	position: fixed;
-	left: 0;
-	right: 0;
-	z-index: 2;
-	@include flexbox;
-	@include justify-content(center); //alineado horizontal
-	@include align-items(center); //alineado vertical
-	@include max-width($bp0);
-	@include background-image(bg_header,cover,no-repeat,center bottom, svg);
-	// background-color: $white;
-
+    // @include max-width($bp0);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    @include flexbox;
+    @include justify-content(center);
+    //alineado horizontal
+    @include align-items(center);
+    //alineado vertical
+    @include max-width($bp0);
+    @include background-image(bg_header, cover, no-repeat, center bottom, svg);
+    // background-color: $white;
 }
