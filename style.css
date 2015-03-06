@@ -1132,7 +1132,7 @@ input[type="submit"].btn:hover { border-color: #317549; }
 /* Preload images */
 body:after { content: url(assets/img/close.png) url(assets/img/loading.gif) url(assets/img/prev.png) url(assets/img/next.png); display: none; }
 
-.lightboxOverlay { position: absolute; top: 0; left: 0; z-index: 9999; background-color: black; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; display: none; }
+.lightboxOverlay { position: absolute; top: 0; left: 0; z-index: 9999; background-color: rgba(0, 0, 0, 0.5); filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); display: none; }
 
 .lightbox { position: absolute; left: 0; width: 100%; z-index: 10000; text-align: center; line-height: 0; font-weight: normal; }
 
