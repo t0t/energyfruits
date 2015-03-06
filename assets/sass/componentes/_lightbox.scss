@@ -1,10 +1,9 @@
 /* Preload images */
 body {
   &:after {
-    content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
+    content: url(#{$image-path}close.png) url(#{$image-path}loading.gif) url(#{$image-path}prev.png) url(#{$image-path}next.png);
     display: none;
   }
-  
 }
 
 .lightboxOverlay {
@@ -32,11 +31,11 @@ body {
   @extend %display-block;
   height: auto;
   max-width: inherit;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
 }
 
 .lightbox a img {
@@ -45,16 +44,16 @@ body {
 
 .lb-outerContainer {
   position: relative;
-  background-color: white;
+  background-color: $white;
   *zoom: 1;
   width: 250px;
   height: 250px;
   margin: 0 auto;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
 }
 
 .lb-outerContainer:after {
@@ -82,7 +81,7 @@ body {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../img/loading.gif) no-repeat;
+  background: url(#{$image-path}loading.gif) no-repeat;
 }
 
 .lb-nav {
@@ -113,7 +112,7 @@ body {
   width: 34%;
   left: 0;
   float: left;
-  background: url(../img/prev.png) left 48% no-repeat;
+  background: url(#{$image-path}prev.png) left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -131,7 +130,7 @@ body {
   width: 64%;
   right: 0;
   float: right;
-  background: url(../img/next.png) right 48% no-repeat;
+  background: url(#{$image-path}next.png) right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -177,7 +176,7 @@ body {
 }
 
 .lb-data .lb-caption {
-  font-size: 13px;
+  @include font-size();
   font-weight: bold;
   line-height: 1em;
 }
@@ -195,7 +194,7 @@ body {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../img/close.png) top right no-repeat;
+  background: url(#{$image-path}close.png) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);

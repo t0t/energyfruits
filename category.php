@@ -2,7 +2,7 @@
 
 <main class="main__content--split" role="main">
 
-        <section>xxx
+        <section>
 
             <?php get_template_part('templates/content'); ?>
 

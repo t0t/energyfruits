@@ -425,8 +425,8 @@ body > select { width: 20%; top: 120px; left: 10px; position: absolute; margin: 
 
 .cpt-graviola { color: gray; }
 .cpt-graviola h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-graviola .main-post__header { background-image: url(assets/img/bg_graviola.svg); background-color: #8f8356; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-graviola .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-graviola .main-post__header { background-image: url(assets/img/bg_graviola.svg); background-color: #8f8356; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-graviola .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-graviola .main-post__content { background-color: white; }
 .cpt-graviola .main-post__content__entry { padding-top: 3%; }
 .cpt-graviola .main-post__content__entry ul { background-image: url(assets/img/bg_graviola.svg); background-color: #8f8356; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -442,8 +442,8 @@ a[href*="producto/graviola"] figure:hover { background-position: 0 90px; backgro
 
 .cpt-goji { color: gray; }
 .cpt-goji h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-goji .main-post__header { background-image: url(assets/img/bg_goji.svg); background-color: #f42517; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-goji .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-goji .main-post__header { background-image: url(assets/img/bg_goji.svg); background-color: #f42517; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-goji .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-goji .main-post__content { background-color: white; }
 .cpt-goji .main-post__content__entry { padding-top: 3%; }
 .cpt-goji .main-post__content__entry ul { background-image: url(assets/img/bg_goji.svg); background-color: #f42517; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -459,8 +459,8 @@ a[href*="producto/goji"] figure:hover { background-position: 0 90px; background-
 
 .cpt-cacaocriollo { color: gray; }
 .cpt-cacaocriollo h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-cacaocriollo .main-post__header { background-image: url(assets/img/bg_cacaocriollo.svg); background-color: #4d2525; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-cacaocriollo .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-cacaocriollo .main-post__header { background-image: url(assets/img/bg_cacaocriollo.svg); background-color: #4d2525; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-cacaocriollo .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-cacaocriollo .main-post__content { background-color: white; }
 .cpt-cacaocriollo .main-post__content__entry { padding-top: 3%; }
 .cpt-cacaocriollo .main-post__content__entry ul { background-image: url(assets/img/bg_cacaocriollo.svg); background-color: #4d2525; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -476,8 +476,8 @@ a[href*="producto/cacaocriollo"] figure:hover { background-position: 0 90px; bac
 
 .cpt-chlorella { color: gray; }
 .cpt-chlorella h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-chlorella .main-post__header { background-image: url(assets/img/bg_chlorella.svg); background-color: #2f1e19; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-chlorella .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-chlorella .main-post__header { background-image: url(assets/img/bg_chlorella.svg); background-color: #2f1e19; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-chlorella .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-chlorella .main-post__content { background-color: white; }
 .cpt-chlorella .main-post__content__entry { padding-top: 3%; }
 .cpt-chlorella .main-post__content__entry ul { background-image: url(assets/img/bg_chlorella.svg); background-color: #2f1e19; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -493,8 +493,8 @@ a[href*="producto/chlorella"] figure:hover { background-position: 0 90px; backgr
 
 .cpt-chia { color: gray; }
 .cpt-chia h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-chia .main-post__header { background-image: url(assets/img/bg_chia.svg); background-color: #988b81; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-chia .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-chia .main-post__header { background-image: url(assets/img/bg_chia.svg); background-color: #988b81; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-chia .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-chia .main-post__content { background-color: white; }
 .cpt-chia .main-post__content__entry { padding-top: 3%; }
 .cpt-chia .main-post__content__entry ul { background-image: url(assets/img/bg_chia.svg); background-color: #988b81; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -510,8 +510,8 @@ a[href*="producto/chia"] figure:hover { background-position: 0 90px; background-
 
 .cpt-amaranto { color: gray; }
 .cpt-amaranto h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-amaranto .main-post__header { background-image: url(assets/img/bg_amaranto.svg); background-color: #c62771; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-amaranto .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-amaranto .main-post__header { background-image: url(assets/img/bg_amaranto.svg); background-color: #c62771; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-amaranto .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-amaranto .main-post__content { background-color: white; }
 .cpt-amaranto .main-post__content__entry { padding-top: 3%; }
 .cpt-amaranto .main-post__content__entry ul { background-image: url(assets/img/bg_amaranto.svg); background-color: #c62771; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -527,8 +527,8 @@ a[href*="producto/amaranto"] figure:hover { background-position: 0 90px; backgro
 
 .cpt-spiroulina { color: gray; }
 .cpt-spiroulina h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-spiroulina .main-post__header { background-image: url(assets/img/bg_spiroulina.svg); background-color: #3a4733; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-spiroulina .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-spiroulina .main-post__header { background-image: url(assets/img/bg_spiroulina.svg); background-color: #3a4733; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-spiroulina .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-spiroulina .main-post__content { background-color: white; }
 .cpt-spiroulina .main-post__content__entry { padding-top: 3%; }
 .cpt-spiroulina .main-post__content__entry ul { background-image: url(assets/img/bg_spiroulina.svg); background-color: #3a4733; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -544,8 +544,8 @@ a[href*="producto/spiroulina"] figure:hover { background-position: 0 90px; backg
 
 .cpt-camucamu { color: gray; }
 .cpt-camucamu h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-camucamu .main-post__header { background-image: url(assets/img/bg_camucamu.svg); background-color: #763c46; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-camucamu .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-camucamu .main-post__header { background-image: url(assets/img/bg_camucamu.svg); background-color: #763c46; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-camucamu .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-camucamu .main-post__content { background-color: white; }
 .cpt-camucamu .main-post__content__entry { padding-top: 3%; }
 .cpt-camucamu .main-post__content__entry ul { background-image: url(assets/img/bg_camucamu.svg); background-color: #763c46; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -561,8 +561,8 @@ a[href*="producto/camucamu"] figure:hover { background-position: 0 90px; backgro
 
 .cpt-canamo { color: gray; }
 .cpt-canamo h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-canamo .main-post__header { background-image: url(assets/img/bg_canamo.svg); background-color: #00aa5b; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-canamo .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-canamo .main-post__header { background-image: url(assets/img/bg_canamo.svg); background-color: #00aa5b; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-canamo .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-canamo .main-post__content { background-color: white; }
 .cpt-canamo .main-post__content__entry { padding-top: 3%; }
 .cpt-canamo .main-post__content__entry ul { background-image: url(assets/img/bg_canamo.svg); background-color: #00aa5b; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -578,8 +578,8 @@ a[href*="producto/canamo"] figure:hover { background-position: 0 90px; backgroun
 
 .cpt-maca { color: gray; }
 .cpt-maca h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-maca .main-post__header { background-image: url(assets/img/bg_maca.svg); background-color: #b95179; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-maca .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-maca .main-post__header { background-image: url(assets/img/bg_maca.svg); background-color: #b95179; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-maca .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-maca .main-post__content { background-color: white; }
 .cpt-maca .main-post__content__entry { padding-top: 3%; }
 .cpt-maca .main-post__content__entry ul { background-image: url(assets/img/bg_maca.svg); background-color: #b95179; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -595,8 +595,8 @@ a[href*="producto/maca"] figure:hover { background-position: 0 90px; background-
 
 .cpt-lucuma { color: gray; }
 .cpt-lucuma h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-lucuma .main-post__header { background-image: url(assets/img/bg_lucuma.svg); background-color: #f9b91b; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-lucuma .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-lucuma .main-post__header { background-image: url(assets/img/bg_lucuma.svg); background-color: #f9b91b; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-lucuma .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-lucuma .main-post__content { background-color: white; }
 .cpt-lucuma .main-post__content__entry { padding-top: 3%; }
 .cpt-lucuma .main-post__content__entry ul { background-image: url(assets/img/bg_lucuma.svg); background-color: #f9b91b; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -612,8 +612,8 @@ a[href*="producto/lucuma"] figure:hover { background-position: 0 90px; backgroun
 
 .cpt-stevia { color: gray; }
 .cpt-stevia h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-stevia .main-post__header { background-image: url(assets/img/bg_stevia.svg); background-color: #009559; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-stevia .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-stevia .main-post__header { background-image: url(assets/img/bg_stevia.svg); background-color: #009559; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-stevia .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-stevia .main-post__content { background-color: white; }
 .cpt-stevia .main-post__content__entry { padding-top: 3%; }
 .cpt-stevia .main-post__content__entry ul { background-image: url(assets/img/bg_stevia.svg); background-color: #009559; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -629,8 +629,8 @@ a[href*="producto/stevia"] figure:hover { background-position: 0 90px; backgroun
 
 .cpt-quinoa { color: gray; }
 .cpt-quinoa h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-quinoa .main-post__header { background-image: url(assets/img/bg_quinoa.svg); background-color: #d3313a; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-quinoa .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-quinoa .main-post__header { background-image: url(assets/img/bg_quinoa.svg); background-color: #d3313a; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-quinoa .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-quinoa .main-post__content { background-color: white; }
 .cpt-quinoa .main-post__content__entry { padding-top: 3%; }
 .cpt-quinoa .main-post__content__entry ul { background-image: url(assets/img/bg_quinoa.svg); background-color: #d3313a; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -646,8 +646,8 @@ a[href*="producto/quinoa"] figure:hover { background-position: 0 90px; backgroun
 
 .cpt-alfalfa { color: gray; }
 .cpt-alfalfa h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-alfalfa .main-post__header { background-image: url(assets/img/bg_alfalfa.svg); background-color: #2c9c80; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-alfalfa .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-alfalfa .main-post__header { background-image: url(assets/img/bg_alfalfa.svg); background-color: #2c9c80; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-alfalfa .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-alfalfa .main-post__content { background-color: white; }
 .cpt-alfalfa .main-post__content__entry { padding-top: 3%; }
 .cpt-alfalfa .main-post__content__entry ul { background-image: url(assets/img/bg_alfalfa.svg); background-color: #2c9c80; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -663,8 +663,8 @@ a[href*="producto/alfalfa"] figure:hover { background-position: 0 90px; backgrou
 
 .cpt-trigoverde { color: gray; }
 .cpt-trigoverde h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-trigoverde .main-post__header { background-image: url(assets/img/bg_trigoverde.svg); background-color: #558b36; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-trigoverde .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-trigoverde .main-post__header { background-image: url(assets/img/bg_trigoverde.svg); background-color: #558b36; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-trigoverde .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-trigoverde .main-post__content { background-color: white; }
 .cpt-trigoverde .main-post__content__entry { padding-top: 3%; }
 .cpt-trigoverde .main-post__content__entry ul { background-image: url(assets/img/bg_trigoverde.svg); background-color: #558b36; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -680,8 +680,8 @@ a[href*="producto/trigoverde"] figure:hover { background-position: 0 90px; backg
 
 .cpt-algarroba { color: gray; }
 .cpt-algarroba h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-algarroba .main-post__header { background-image: url(assets/img/bg_algarroba.svg); background-color: #301f19; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-algarroba .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-algarroba .main-post__header { background-image: url(assets/img/bg_algarroba.svg); background-color: #301f19; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-algarroba .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-algarroba .main-post__content { background-color: white; }
 .cpt-algarroba .main-post__content__entry { padding-top: 3%; }
 .cpt-algarroba .main-post__content__entry ul { background-image: url(assets/img/bg_algarroba.svg); background-color: #301f19; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -697,8 +697,8 @@ a[href*="producto/algarroba"] figure:hover { background-position: 0 90px; backgr
 
 .cpt-cardomariano { color: gray; }
 .cpt-cardomariano h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-cardomariano .main-post__header { background-image: url(assets/img/bg_cardomariano.svg); background-color: #b188b8; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-cardomariano .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-cardomariano .main-post__header { background-image: url(assets/img/bg_cardomariano.svg); background-color: #b188b8; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-cardomariano .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-cardomariano .main-post__content { background-color: white; }
 .cpt-cardomariano .main-post__content__entry { padding-top: 3%; }
 .cpt-cardomariano .main-post__content__entry ul { background-image: url(assets/img/bg_cardomariano.svg); background-color: #b188b8; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -714,8 +714,8 @@ a[href*="producto/cardomariano"] figure:hover { background-position: 0 90px; bac
 
 .cpt-linodorado { color: gray; }
 .cpt-linodorado h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-linodorado .main-post__header { background-image: url(assets/img/bg_linodorado.svg); background-color: #e2cc59; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-linodorado .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-linodorado .main-post__header { background-image: url(assets/img/bg_linodorado.svg); background-color: #e2cc59; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-linodorado .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-linodorado .main-post__content { background-color: white; }
 .cpt-linodorado .main-post__content__entry { padding-top: 3%; }
 .cpt-linodorado .main-post__content__entry ul { background-image: url(assets/img/bg_linodorado.svg); background-color: #e2cc59; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -731,8 +731,8 @@ a[href*="producto/linodorado"] figure:hover { background-position: 0 90px; backg
 
 .cpt-fresa { color: gray; }
 .cpt-fresa h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-fresa .main-post__header { background-image: url(assets/img/bg_fresa.svg); background-color: #fb3e03; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-fresa .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-fresa .main-post__header { background-image: url(assets/img/bg_fresa.svg); background-color: #fb3e03; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-fresa .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-fresa .main-post__content { background-color: white; }
 .cpt-fresa .main-post__content__entry { padding-top: 3%; }
 .cpt-fresa .main-post__content__entry ul { background-image: url(assets/img/bg_fresa.svg); background-color: #fb3e03; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -748,8 +748,8 @@ a[href*="producto/fresa"] figure:hover { background-position: 0 90px; background
 
 .cpt-coco { color: gray; }
 .cpt-coco h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-coco .main-post__header { background-image: url(assets/img/bg_coco.svg); background-color: #955928; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-coco .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-coco .main-post__header { background-image: url(assets/img/bg_coco.svg); background-color: #955928; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-coco .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-coco .main-post__content { background-color: white; }
 .cpt-coco .main-post__content__entry { padding-top: 3%; }
 .cpt-coco .main-post__content__entry ul { background-image: url(assets/img/bg_coco.svg); background-color: #955928; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -765,8 +765,8 @@ a[href*="producto/coco"] figure:hover { background-position: 0 90px; background-
 
 .cpt-gymtonic { color: gray; }
 .cpt-gymtonic h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-gymtonic .main-post__header { background-image: url(assets/img/bg_gymtonic.svg); background-color: #d90513; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-gymtonic .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-gymtonic .main-post__header { background-image: url(assets/img/bg_gymtonic.svg); background-color: #d90513; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-gymtonic .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-gymtonic .main-post__content { background-color: white; }
 .cpt-gymtonic .main-post__content__entry { padding-top: 3%; }
 .cpt-gymtonic .main-post__content__entry ul { background-image: url(assets/img/bg_gymtonic.svg); background-color: #d90513; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -782,8 +782,8 @@ a[href*="producto/gymtonic"] figure:hover { background-position: 0 90px; backgro
 
 .cpt-delifiber { color: gray; }
 .cpt-delifiber h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-delifiber .main-post__header { background-image: url(assets/img/bg_delifiber.svg); background-color: #ffe509; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-delifiber .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-delifiber .main-post__header { background-image: url(assets/img/bg_delifiber.svg); background-color: #ffe509; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-delifiber .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-delifiber .main-post__content { background-color: white; }
 .cpt-delifiber .main-post__content__entry { padding-top: 3%; }
 .cpt-delifiber .main-post__content__entry ul { background-image: url(assets/img/bg_delifiber.svg); background-color: #ffe509; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -799,8 +799,8 @@ a[href*="producto/delifiber"] figure:hover { background-position: 0 90px; backgr
 
 .cpt-brainshake { color: gray; }
 .cpt-brainshake h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-brainshake .main-post__header { background-image: url(assets/img/bg_brainshake.svg); background-color: #f3a200; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-brainshake .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-brainshake .main-post__header { background-image: url(assets/img/bg_brainshake.svg); background-color: #f3a200; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-brainshake .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-brainshake .main-post__content { background-color: white; }
 .cpt-brainshake .main-post__content__entry { padding-top: 3%; }
 .cpt-brainshake .main-post__content__entry ul { background-image: url(assets/img/bg_brainshake.svg); background-color: #f3a200; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -816,8 +816,8 @@ a[href*="producto/brainshake"] figure:hover { background-position: 0 90px; backg
 
 .cpt-andeanprotein { color: gray; }
 .cpt-andeanprotein h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-andeanprotein .main-post__header { background-image: url(assets/img/bg_andeanprotein.svg); background-color: #45762b; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-andeanprotein .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-andeanprotein .main-post__header { background-image: url(assets/img/bg_andeanprotein.svg); background-color: #45762b; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-andeanprotein .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-andeanprotein .main-post__content { background-color: white; }
 .cpt-andeanprotein .main-post__content__entry { padding-top: 3%; }
 .cpt-andeanprotein .main-post__content__entry ul { background-image: url(assets/img/bg_andeanprotein.svg); background-color: #45762b; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -833,8 +833,8 @@ a[href*="producto/andeanprotein"] figure:hover { background-position: 0 90px; ba
 
 .cpt-macuchino { color: gray; }
 .cpt-macuchino h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-macuchino .main-post__header { background-image: url(assets/img/bg_macuchino.svg); background-color: #bd944f; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-macuchino .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-macuchino .main-post__header { background-image: url(assets/img/bg_macuchino.svg); background-color: #bd944f; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-macuchino .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-macuchino .main-post__content { background-color: white; }
 .cpt-macuchino .main-post__content__entry { padding-top: 3%; }
 .cpt-macuchino .main-post__content__entry ul { background-image: url(assets/img/bg_macuchino.svg); background-color: #bd944f; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -850,8 +850,8 @@ a[href*="producto/macuchino"] figure:hover { background-position: 0 90px; backgr
 
 .cpt-bodtox { color: gray; }
 .cpt-bodtox h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-bodtox .main-post__header { background-image: url(assets/img/bg_bodtox.svg); background-color: #b1cc3b; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-bodtox .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-bodtox .main-post__header { background-image: url(assets/img/bg_bodtox.svg); background-color: #b1cc3b; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-bodtox .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-bodtox .main-post__content { background-color: white; }
 .cpt-bodtox .main-post__content__entry { padding-top: 3%; }
 .cpt-bodtox .main-post__content__entry ul { background-image: url(assets/img/bg_bodtox.svg); background-color: #b1cc3b; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -867,8 +867,8 @@ a[href*="producto/bodtox"] figure:hover { background-position: 0 90px; backgroun
 
 .cpt-royalbreakfast { color: gray; }
 .cpt-royalbreakfast h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-royalbreakfast .main-post__header { background-image: url(assets/img/bg_royalbreakfast.svg); background-color: #871a14; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-royalbreakfast .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-royalbreakfast .main-post__header { background-image: url(assets/img/bg_royalbreakfast.svg); background-color: #871a14; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-royalbreakfast .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-royalbreakfast .main-post__content { background-color: white; }
 .cpt-royalbreakfast .main-post__content__entry { padding-top: 3%; }
 .cpt-royalbreakfast .main-post__content__entry ul { background-image: url(assets/img/bg_royalbreakfast.svg); background-color: #871a14; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -884,8 +884,8 @@ a[href*="producto/royalbreakfast"] figure:hover { background-position: 0 90px; b
 
 .cpt-camucao { color: gray; }
 .cpt-camucao h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-camucao .main-post__header { background-image: url(assets/img/bg_camucao.svg); background-color: #a04421; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 1s; -moz-transition: all 1s; -ms-transition: all 1s; transition: all 1s; }
-.cpt-camucao .main-post__header:hover { background-position: center 100px; background-size: cover; }
+.cpt-camucao .main-post__header { background-image: url(assets/img/bg_camucao.svg); background-color: #a04421; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; }
+.cpt-camucao .main-post__header:hover { -webkit-transition: all 4s; -moz-transition: all 4s; -ms-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-camucao .main-post__content { background-color: white; }
 .cpt-camucao .main-post__content__entry { padding-top: 3%; }
 .cpt-camucao .main-post__content__entry ul { background-image: url(assets/img/bg_camucao.svg); background-color: #a04421; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
@@ -1130,17 +1130,17 @@ input[type="submit"].btn:hover { border-color: #317549; }
 .btn--invert { border-color: white; color: white; }
 
 /* Preload images */
-body:after { content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png); display: none; }
+body:after { content: url(assets/img/close.png) url(assets/img/loading.gif) url(assets/img/prev.png) url(assets/img/next.png); display: none; }
 
 .lightboxOverlay { position: absolute; top: 0; left: 0; z-index: 9999; background-color: black; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; display: none; }
 
 .lightbox { position: absolute; left: 0; width: 100%; z-index: 10000; text-align: center; line-height: 0; font-weight: normal; }
 
-.lightbox .lb-image { height: auto; max-width: inherit; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
+.lightbox .lb-image { height: auto; max-width: inherit; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
 
 .lightbox a img { border: none; }
 
-.lb-outerContainer { position: relative; background-color: white; *zoom: 1; width: 250px; height: 250px; margin: 0 auto; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
+.lb-outerContainer { position: relative; background-color: white; *zoom: 1; width: 250px; height: 250px; margin: 0 auto; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
 
 .lb-outerContainer:after { content: ""; display: table; clear: both; }
 
@@ -1148,7 +1148,7 @@ body:after { content: url(../img/close.png) url(../img/loading.gif) url(../img/p
 
 .lb-loader { position: absolute; top: 43%; left: 0; height: 25%; width: 100%; text-align: center; line-height: 0; }
 
-.lb-cancel { width: 32px; height: 32px; margin: 0 auto; background: url(../img/loading.gif) no-repeat; }
+.lb-cancel { width: 32px; height: 32px; margin: 0 auto; background: url(assets/img/loading.gif) no-repeat; }
 
 .lb-nav { position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
 
@@ -1158,11 +1158,11 @@ body:after { content: url(../img/close.png) url(../img/loading.gif) url(../img/p
 
 .lb-prev, .lb-next { height: 100%; cursor: pointer; }
 
-.lb-nav a.lb-prev { width: 34%; left: 0; float: left; background: url(../img/prev.png) left 48% no-repeat; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-transition: opacity 0.6s; -moz-transition: opacity 0.6s; -o-transition: opacity 0.6s; transition: opacity 0.6s; }
+.lb-nav a.lb-prev { width: 34%; left: 0; float: left; background: url(assets/img/prev.png) left 48% no-repeat; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-transition: opacity 0.6s; -moz-transition: opacity 0.6s; -o-transition: opacity 0.6s; transition: opacity 0.6s; }
 
 .lb-nav a.lb-prev:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 
-.lb-nav a.lb-next { width: 64%; right: 0; float: right; background: url(../img/next.png) right 48% no-repeat; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-transition: opacity 0.6s; -moz-transition: opacity 0.6s; -o-transition: opacity 0.6s; transition: opacity 0.6s; }
+.lb-nav a.lb-next { width: 64%; right: 0; float: right; background: url(assets/img/next.png) right 48% no-repeat; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-transition: opacity 0.6s; -moz-transition: opacity 0.6s; -o-transition: opacity 0.6s; transition: opacity 0.6s; }
 
 .lb-nav a.lb-next:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 
@@ -1174,11 +1174,11 @@ body:after { content: url(../img/close.png) url(../img/loading.gif) url(../img/p
 
 .lb-data .lb-details { width: 85%; float: left; text-align: left; line-height: 1.1em; }
 
-.lb-data .lb-caption { font-size: 13px; font-weight: bold; line-height: 1em; }
+.lb-data .lb-caption { font-size: 20px; font-size: 1rem; font-weight: bold; line-height: 1em; }
 
 .lb-data .lb-number { clear: left; padding-bottom: 1em; font-size: 12px; color: #999999; }
 
-.lb-data .lb-close { float: right; width: 30px; height: 30px; background: url(../img/close.png) top right no-repeat; text-align: right; outline: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; -webkit-transition: opacity 0.2s; -moz-transition: opacity 0.2s; -o-transition: opacity 0.2s; transition: opacity 0.2s; }
+.lb-data .lb-close { float: right; width: 30px; height: 30px; background: url(assets/img/close.png) top right no-repeat; text-align: right; outline: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; -webkit-transition: opacity 0.2s; -moz-transition: opacity 0.2s; -o-transition: opacity 0.2s; transition: opacity 0.2s; }
 
 .lb-data .lb-close:hover { cursor: pointer; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 

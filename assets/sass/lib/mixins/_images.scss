@@ -29,10 +29,11 @@
 
             background-size: contain;
 
-            @include transition(1s);
+            @include transition(4s);
 
             &:hover {
 
+            @include transition(4s);
                 background-position: center 100px;
                 background-size: cover;
 
