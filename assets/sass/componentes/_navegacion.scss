@@ -75,11 +75,6 @@ Main navbar
 
     input[type="checkbox"]:checked ~ ul {
 
-        @include translateY(0);
-        
-    }
-
-    > ul {
         z-index: 4;
         height: 100vh;
         @include flexbox;
@@ -94,6 +89,12 @@ Main navbar
         margin: 0;
         padding: 0;
         @include transition(.4s);
+        @include translateY(0);
+        
+    }
+
+    > ul {
+        
         @include translateY(-800px);
         
             display: none;
