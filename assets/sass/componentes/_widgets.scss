@@ -169,6 +169,10 @@
     border-radius: $radius;
     @extend %text-center;
 
+    h1 {
+        font-size: 5rem;
+        letter-spacing: -3px;
+    }
     p {
         @include max-width($bp3);
     }
@@ -193,7 +197,7 @@
 
 .well--img {
     @include max-width($bp0);
-    @include size(100%, 400px);
+    min-height: 70vh;
 
     p, h3 {
         color: $white;

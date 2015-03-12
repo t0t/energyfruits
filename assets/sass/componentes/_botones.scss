@@ -267,20 +267,21 @@ input[type="submit"].btn:hover {
 
 .btn--image{
 
-    // background-color: $color-alt;
-
-    border: 2px solid $white;
+    background-color: $color-alt;
 
 		&:hover {
 
-			background-color: $color-alt;
-			border: 2px solid $color-alt;
+			background-color: lighten($color-alt, 3);
 
 		}
 
     a {
 
     	color: $white;
+    	
+    	&:hover {
+    		background-color: transparent;
+    	}
 		
 
     }
