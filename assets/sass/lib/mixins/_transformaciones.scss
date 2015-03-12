@@ -59,54 +59,46 @@
 }
 
 @mixin scale($ratio) {
-    -webkit-transform: scale($ratio);
     -ms-transform: scale($ratio);
     // IE9+
     transform: scale($ratio);
 }
 
 @mixin translate($x, $y) {
-    -webkit-transform: translate($x, $y);
     -ms-transform: translate($x, $y);
     // IE9+
     transform: translate($x, $y);
 }
 
 @mixin translateX($x) {
-    -webkit-transform: translate($x);
-    -ms-transform: translate($x);
+    -ms-transform: translateX($x);
     // IE9+
-    transform: translate($x);
+    transform: translateX($x);
 }
 
 @mixin translateY($y) {
-    -webkit-transform: translate($y);
-    -ms-transform: translate($y);
+    -ms-transform: translateY($y);
     // IE9+
-    transform: translate($y);
+    transform: translateY($y);
 }
 
 @mixin skew($x, $y) {
-    -webkit-transform: skew($x, $y);
     -ms-transform: skewX($x) skewY($y);
     // See https://github.com/twbs/bootstrap/issues/4885; IE9+
     transform: skew($x, $y);
 }
 
 @mixin translate3d($x, $y, $z) {
-    -webkit-transform: translate3d($x, $y, $z);
     transform: translate3d($x, $y, $z);
 }
 
 @mixin rotateX($degrees) {
-    -webkit-transform: rotateX($degrees);
     -ms-transform: rotateX($degrees);
     // IE9+
     transform: rotateX($degrees);
 }
 
 @mixin rotateY($degrees) {
-    -webkit-transform: rotateY($degrees);
     -ms-transform: rotateY($degrees);
     // IE9+
     transform: rotateY($degrees);
