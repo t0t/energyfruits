@@ -595,7 +595,9 @@
 
         <?php elseif(get_row_layout() == "well-img"): //Wellcome panel ?>
 
-            <div style="background-image: url('<?php the_sub_field("bg_image"); ?>'); background-attachment: fixed;" class="img--bg-big well well--img">
+            <div style="background-image: url('<?php the_sub_field("bg_image"); ?>'), radial-gradient(ellipse at center, #23904D 0%, #317549 99%); 
+            background-attachment: fixed;
+            " class="img--bg-big well well--img">
 
             <h1 class="efecto--intro"><?php the_sub_field("title"); ?></h1>
             <h3><?php the_sub_field("subtitle"); ?></h3>
