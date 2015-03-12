@@ -170,8 +170,12 @@
     @extend %text-center;
 
     h1 {
-        font-size: 5rem;
-        letter-spacing: -3px;
+        
+        letter-spacing: -1px;
+        @media screen and (min-width: $bp3) {
+            font-size: 5rem;
+            letter-spacing: -3px;
+        }
     }
     p {
         @include max-width($bp3);
@@ -197,7 +201,11 @@
 
 .well--img {
     @include max-width($bp0);
-    min-height: 70vh;
+    min-height: 300px;
+    
+        @media screen and (min-width: $bp3) {
+            min-height: 60vh;
+        }
     
     p, h3 {
         color: $white;
