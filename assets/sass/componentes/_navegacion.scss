@@ -96,9 +96,7 @@ Main navbar
         @include transition(.4s);
         @include translateY(-800px);
         
-        @media screen and (min-width: $bp2-5) {
             display: none;
-        }
 
     }
 
