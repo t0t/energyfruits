@@ -76,21 +76,21 @@ Main navbar
     input[type="checkbox"]:checked ~ ul {
 
         z-index: 4;
-        height: 100vh;
+        height: 100%;
+        width: 100%;
+        position: fixed;
         @include flexbox;
         @include flex-direction(column);
         @include justify-content(center);
         @include flex-wrap(wrap);
         @include align-items(center);
-        @include align-content(center);
-        position: fixed;
         background-color: $color-alt;
-        width: 100%;
         margin: 0;
         padding: 0;
         @include transition(.4s);
         @include translateY(0);
         
+   
     }
 
     > ul {
