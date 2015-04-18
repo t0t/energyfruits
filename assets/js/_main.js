@@ -23,10 +23,20 @@ $(".brand").removeClass("encoge");
 // var currentSlide = $('.slider__btn-next').slick('slickCurrentSlide');
 // http://kenwheeler.github.io/slick/
 $('.slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
     dots: true,
-    lazyLoad: 'ondemand',
-    slidesToShow: 3,
-    slidesToScroll: 1
+    responsive: [
+        {
+            breakpoint: 850,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        }
+    ]
 });
 
 
