@@ -33,6 +33,7 @@ responsive: [
 {
 breakpoint: 1800,
     settings: {
+        rtl: false,
         slidesToShow: 4,
         slidesToScroll: 4,
         dots: true,
@@ -68,6 +69,7 @@ breakpoint: 600,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
+        rtl: true,
         arrows: false,
         autoplay: true,
         autoplaySpeed: 8000
@@ -82,10 +84,8 @@ breakpoint: 600,
 function addScrollTopAnimation() {
 var $scrolltop_link = $('.scroll-top');
 $scrolltop_link.on( 'click' , function(ev) {
-ev.preventDefault();
-$( 'html, body' ).animate( {
-scrollTop: 0
-}, 700 );
+    ev.preventDefault();
+    $( 'html, body' ).animate( { scrollTop: 0 }, 700 );
 })
 // Hides the link initially
 .data('hidden', 1).hide();
