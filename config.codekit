@@ -1117,7 +1117,7 @@
 		},
 	"\/assets\/bower_components\/jquery\/dist\/jquery.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/bower_components\/jquery\/dist\/jquery.js",
 		"outputAbbreviatedPath": "\/assets\/bower_components\/jquery\/dist\/min\/jquery-min.js",
@@ -2824,7 +2824,7 @@
 		"outputAbbreviatedPath": "\/assets\/js\/main.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 2,
+		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
 	"\/assets\/js\/main.min.js": {
@@ -4422,14 +4422,20 @@
 	"\/assets\/js\/_main.js": [
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/bower_components\/fitvids\/jquery.fitvids.js",
+			"linkedFileAbbreviatedPath": "\/assets\/bower_components\/jquery\/dist\/jquery.js",
 			"position": 0,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/bower_components\/slick-carousel\/slick\/slick.min.js",
+			"linkedFileAbbreviatedPath": "\/assets\/bower_components\/fitvids\/jquery.fitvids.js",
 			"position": 1,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/assets\/bower_components\/slick-carousel\/slick\/slick.min.js",
+			"position": 2,
 			"type": 1
 			}
 		]

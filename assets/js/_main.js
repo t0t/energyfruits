@@ -23,63 +23,14 @@ $(".brand").removeClass("encoge");
 // var currentSlide = $('.slider__btn-next').slick('slickCurrentSlide');
 // http://kenwheeler.github.io/slick/
 $('.slider').slick({
-// speed: 100,
-rtl: false,
-slidesToShow: 4,
-slidesToScroll: 4,
-arrows: true,
-// variableWidth: true,
-responsive: [
-{
-breakpoint: 1800,
-    settings: {
-        rtl: false,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        dots: true,
-        prevArrow: '.slider__btn-prev',
-        nextArrow: '.slider__btn-next'
-    }
-},
-{
-breakpoint: 1180,
-    settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        dots: true,
-        arrows: true,
-        prevArrow: '.slider__btn-prev',
-        nextArrow: '.slider__btn-next'
-    }
-},
-{
-breakpoint: 1024,
-    settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        dots: true,
-        arrows: true,
-        prevArrow: '.slider__btn-prev',
-        nextArrow: '.slider__btn-next'
-    }
-},
-{
-breakpoint: 600,
-    settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        rtl: true,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 8000
-    }
-}
-// You can unslick at a given breakpoint now by adding:
-// settings: "unslick"
-// instead of a settings object
-]
+    dots: true,
+    lazyLoad: 'ondemand',
+    slidesToShow: 3,
+    slidesToScroll: 1
 });
+
+
+
 // SCROLL TOP ANIMATION
 function addScrollTopAnimation() {
 var $scrolltop_link = $('.scroll-top');

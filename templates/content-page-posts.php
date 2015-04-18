@@ -16,7 +16,7 @@
     $this_post = $post->ID;
     $loop = new WP_Query( array(
     'post_type' => 'post',
-    'order' => 'asc',
+    'order' => 'DESC', // el ultimo primero
     'orderby' => 'date',
     'posts_per_page' => '',
     'post__not_in' => array($this_post),
@@ -33,11 +33,11 @@
                 
                 <figure class="slider__figure">
                     <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img--circle' ) ); ?>
-                    
                     <figcaption class="slider__caption-post">
                     <small class="slider__meta-date">
                     <?php the_date('j F Y'); ?></small>
-                    <?php the_title(); ?> &rarr;</figcaption>
+                    <?php the_title(); ?> &rarr;
+                    </figcaption>
                 </figure>
             </a>
             <?} else {?>
