@@ -1,7 +1,5 @@
 <footer class="main-footer">
 
-<?php //$defaults=array('theme_location'=>'footer_menu','menu_class'=>'nav-footer'); wp_nav_menu($defaults);?> 
-
     <div class="main-footer__searchform">
 
         <?php get_search_form(); ?>
@@ -10,8 +8,7 @@
 
     <div class="main-footer__brand">
 
-        <img src="<?php echo get_bloginfo('template_directory');?>/assets/img/bg_logo_footer.svg" alt="logo">
-
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg_logo_footer.svg" alt="logo">
         <address>Carrer Major, 4 43550 Ulldecona Tarragona, España <br>(+ 34) 97 757 31 84</address>
 
     </div>
