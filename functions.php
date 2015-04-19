@@ -82,7 +82,6 @@ return false;
 		remove_action( 'wp_head', 'rsd_link');
 		remove_action( 'wp_head', 'feed_links');
 		remove_action( 'wp_head', 'feed_links_extra', 3);
-		
 function quita_metaboxes_admin() {
 	remove_meta_box('postexcerpt' , 'page' , 'normal' );
 	remove_meta_box('authordiv', 'page', 'normal');
@@ -99,7 +98,7 @@ add_action( 'admin_menu' , 'quita_metaboxes_admin' );
 *
 */
 function t0theme_scripts() {
-wp_deregister_script( 'jquery' ); //Ya lo incluyo en main.min.js
+// wp_deregister_script( 'jquery' ); //Ya lo incluyo en main.min.js
 wp_enqueue_style( 't0theme', get_stylesheet_uri());
 wp_enqueue_script( 'main_js',
 		get_template_directory_uri() . '/assets/js/main.min.js',
