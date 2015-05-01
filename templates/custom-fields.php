@@ -19,19 +19,22 @@
 <div class="main-post__content">
     <?php if (get_sub_field("content")): ?>
     <article class="main-post__content__entry" role="article">
+    
         <!-- Header image -->
         <?php if (get_sub_field("header_image")) { ?>
     <figure><img src="<?php the_sub_field("header_image"); ?>" alt=""></figure>
     <?php } else { ?>
-    
-    <!-- thumb -->
-    <?php //the_post_thumbnail('thumbnail'); ?>
     <?php } ?>
     <?php if ( get_post_type() == 'post'): ?>
     <small><?php echo get_the_time('j F Y'); ?></small>
     <?php endif ?>
     <!-- the post content -->
     <?php the_sub_field("content"); ?>
+    <?php
+    // Store the short code in a variable.
+    $var = do_shortcode( '[fbcomments]' );
+    echo $var;
+    ?>
     <!-- Lista -->
     <?php if( have_rows('lista_simple')): ?>
     <?php while( have_rows('lista_simple') ): the_row(); ?>
@@ -268,7 +271,6 @@
     <?php endif ?>
 </div>
 <!-- /grid item -->
-
 <?php endwhile; ?>
 <!-- /grid -->
 <?php endwhile; ?>
@@ -328,7 +330,7 @@ background-attachment: fixed;
 <h1 class="efecto--intro"><?php the_sub_field("title"); ?></h1>
 <h3><?php the_sub_field("subtitle"); ?></h3>
 <p><?php the_sub_field("description"); ?></p>
-<button class="btn btn--image"><a href="<?php the_sub_field("call_to_action"); ?>">lo último...</a></button>
+<button class="btn btn--image"><a href="<?php the_sub_field("call_to_action"); ?>">Lo último del blog</a></button>
 </div>
 <?php elseif(get_row_layout() == "well-anim"): //Wellcome panel ?>
 <div class="well well--anim">
@@ -350,12 +352,9 @@ background-attachment: fixed;
 </h3>
 <?php endif ?>
 <div class="galeria-fotos">
-
 <?php
 $images = get_sub_field('gallery');
-
 if( $images ): ?>
-
 <?php foreach( $images as $image ): ?>
 <figure class="galeria-fotos__figure">
     <a href="<?php echo $image['url']; ?>" data-lightbox="serie" data-title="<?php echo $image['description']; ?>">
@@ -365,17 +364,12 @@ if( $images ): ?>
     </a>
     
 </figure>
-
 <?php endforeach; ?>
-
 <?php endif; ?>
 </div>
-
 <?php elseif(get_row_layout() == "video"): // Layout Videos ?>
 <section class="video-main">
-
 <h2 class="video-main__header"></h2>
-
 <?php if(get_sub_field('video_repeater')): ?>
 <?php while(has_sub_field('video_repeater')): ?>
 <?php if (get_sub_field("video")): ?>
@@ -387,13 +381,10 @@ if( $images ): ?>
 <?php if (get_sub_field("btn")): ?>
 <a class="btn btn--invert" href="<?php the_sub_field('btn'); ?>"><?php the_sub_field('btn-title'); ?> &rarr;</a>
 <?php endif ?>
-
 <?php endwhile; ?>
 <?php endif; ?>
-
 </section>
 <?php elseif(get_row_layout() == "carusel1"): // Carusel Superfoods ?>
-
 <?php
 $loop = new WP_Query( array(
 'post_type' => 'cpt',
@@ -402,7 +393,6 @@ $loop = new WP_Query( array(
 'orderby' => 'title',
 'order'   => 'ASC'
 ));
-
 ?>
 <section class="slider__wrap">
 <h3 class="slider__title"><?php the_sub_field("title"); ?></h3>
@@ -421,7 +411,6 @@ $loop = new WP_Query( array(
 </div>
 <button type="button" class="slider__btn-prev"></button>
 <button type="button" class="slider__btn-next"></button>
-
 </section>
 <?php elseif(get_row_layout() == "carusel2"): // Carusel Supershakes ?>
 <?php
@@ -460,7 +449,6 @@ $loop = new WP_Query( array(
 ));
 ?>
 <section>
-
 <?php the_sub_field("title"); ?>
 <?php the_sub_field("description"); ?>
 <div class="slider__slides slider">
@@ -492,10 +480,8 @@ $loop = new WP_Query( array(
     <?php wp_reset_postdata(); ?>
     
 </div>
-
 </section>
 <?php elseif(get_row_layout() == "list-group-ul"): // Grupo Listas Desordenadas ?>
-
 <h2>Best Tools + Metodologies</h2>
 <section class="list-group">
 <?php
@@ -504,8 +490,6 @@ if( have_rows('lista') ):
 // loop through the rows of data
 while ( have_rows('lista') ) : the_row();
 ?>
-
-
 <ul class="list list--unordered">
     <li><?php the_sub_field('titulo'); ?></li>
     
@@ -524,7 +508,6 @@ endif;
 ?>
 </section>
 <?php elseif(get_row_layout() == "tienda"): // tienda ?>
-
 <section class="tienda">
 <?php
 // check if the repeater field has rows of data
@@ -532,8 +515,6 @@ if( have_rows('lista') ):
 // loop through the rows of data
 while ( have_rows('lista') ) : the_row();
 ?>
-
-
 <div class="grid">
     
     <?php while(has_sub_field('productos')): ?>
@@ -597,9 +578,7 @@ endif;
 </div>
 </section>
 <?php elseif(get_row_layout() == "content_summary"): // Sumario de contenido ?>
-
 <section class="content-summary">
-
 <div class="grid">
     <?php
     // check if the repeater field has rows of data
@@ -633,9 +612,7 @@ endif;
 </div>
 </section>
 <?php elseif(get_row_layout() == "sub_heading"): // Layout lista ?>
-
 <h3><?php the_sub_field('subheading'); ?> </h3>
 <?php endif; ?>
-
 <?php endwhile; ?>
 <?php endif; ?>
