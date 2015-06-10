@@ -296,7 +296,7 @@ article, aside, figure, footer, header, hgroup, nav, section { display: block; }
 .post--sidebar__meta-date { font-size: 12px; font-size: 0.6rem; color: rgba(0, 0, 0, 0.5); line-height: 1; margin-bottom: 0; letter-spacing: -1; }
 
 .slider { margin-left: auto; margin-right: auto; max-width: 1600px; width: 100%; position: relative; z-index: 1; padding-top: 0; padding-left: 9%; padding-right: 9%; width: 90%; }
-.slider ul { margin: 0; padding: 0; }
+.slider ul { margin: 0; }
 .slider img { width: inherit; }
 @media all and (min-width: 780px) { .slider { margin: 0 auto; } }
 
@@ -367,10 +367,6 @@ article, aside, figure, footer, header, hgroup, nav, section { display: block; }
 .slick-loading .slick-slide { visibility: hidden; }
 .slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
 
-.slick-dots li { display: inline-block; }
-.slick-dots li button { margin: 20px; border: none; color: rgba(0, 0, 0, 0.1); background-color: rgba(0, 0, 0, 0.1); }
-.slick-dots li.slick-active button { color: #f0730b; background-color: #f0730b; }
-
 /* Arrows */
 .slick-prev, .slick-next { position: absolute; display: block; height: 20px; width: 20px; cursor: pointer; background: transparent; top: 50%; margin-top: -10px; padding: 0; border: none; outline: none; }
 .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus { outline: none; background: transparent; color: transparent; }
@@ -392,9 +388,10 @@ article, aside, figure, footer, header, hgroup, nav, section { display: block; }
 /* Dots */
 .slick-slider { padding-left: 0; padding-right: 0; margin-bottom: 30px; }
 
-.slick-dots { position: absolute; bottom: -45px; list-style: none; display: block; text-align: center; padding: 0; width: 100%; }
-.slick-dots li { position: relative; display: inline-block; height: 20px; width: 20px; margin: 0 5px; padding: 0; cursor: pointer; }
-.slick-dots li button { border: 0; display: block; height: 10px; width: 10px; outline: none; line-height: 0; font-size: 0; color: transparent; padding: 5px; cursor: pointer; }
+.slick-dots { padding-top: 20px; }
+.slick-dots li { display: inline-block; width: 25px; cursor: pointer; }
+.slick-dots li.slick-active button { color: #f0730b; background-color: #f0730b; }
+.slick-dots li button { color: rgba(0, 0, 0, 0.1); background-color: rgba(0, 0, 0, 0.1); border: none; display: block; height: 10px; width: 10px; outline: none; color: transparent; padding: 5px; cursor: pointer; }
 .slick-dots li button:hover, .slick-dots li button:focus { outline: none; }
 .slick-dots li button:hover:before, .slick-dots li button:focus:before { opacity: 1; }
 .slick-dots li button:before { width: 20px; height: 20px; font-size: 25px; font-size: 1.25rem; line-height: 20px; text-align: center; color: black; opacity: 0.25; }
@@ -466,8 +463,9 @@ body > select { width: 20%; top: 120px; left: 10px; position: absolute; margin: 
 .cpt-graviola .galeria-fotos__figure img { background-color: #e2decf; }
 .cpt-graviola .galeria-fotos__figure img:hover { background-color: #7f744c; }
 
-a[href*="producto/graviola"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_graviola.svg); background-color: #8f8356; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #7f744c; }
+a[href*="producto/graviola"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_graviola.svg); background-color: #8f8356; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #7f744c; }
 a[href*="producto/graviola"] figure:hover { background-position: 0 90px; background-color: #69603f; }
+@media screen and (min-width: 600px) { a[href*="producto/graviola"] figure { width: 250px; height: 250px; } }
 
 .cpt-goji { color: gray; }
 .cpt-goji h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -483,8 +481,9 @@ a[href*="producto/graviola"] figure:hover { background-position: 0 90px; backgro
 .cpt-goji .galeria-fotos__figure img { background-color: #fddcd9; }
 .cpt-goji .galeria-fotos__figure img:hover { background-color: #e6190b; }
 
-a[href*="producto/goji"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_goji.svg); background-color: #f42517; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #e6190b; }
+a[href*="producto/goji"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_goji.svg); background-color: #f42517; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #e6190b; }
 a[href*="producto/goji"] figure:hover { background-position: 0 90px; background-color: #c41509; }
+@media screen and (min-width: 600px) { a[href*="producto/goji"] figure { width: 250px; height: 250px; } }
 
 .cpt-cacaocriollo { color: gray; }
 .cpt-cacaocriollo h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -500,8 +499,9 @@ a[href*="producto/goji"] figure:hover { background-position: 0 90px; background-
 .cpt-cacaocriollo .galeria-fotos__figure img { background-color: #c17e7e; }
 .cpt-cacaocriollo .galeria-fotos__figure img:hover { background-color: #3c1d1d; }
 
-a[href*="producto/cacaocriollo"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_cacaocriollo.svg); background-color: #4d2525; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #3c1d1d; }
+a[href*="producto/cacaocriollo"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_cacaocriollo.svg); background-color: #4d2525; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #3c1d1d; }
 a[href*="producto/cacaocriollo"] figure:hover { background-position: 0 90px; background-color: #241111; }
+@media screen and (min-width: 600px) { a[href*="producto/cacaocriollo"] figure { width: 250px; height: 250px; } }
 
 .cpt-chlorella { color: gray; }
 .cpt-chlorella h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -517,8 +517,9 @@ a[href*="producto/cacaocriollo"] figure:hover { background-position: 0 90px; bac
 .cpt-chlorella .galeria-fotos__figure img { background-color: #ad7566; }
 .cpt-chlorella .galeria-fotos__figure img:hover { background-color: #1e1310; }
 
-a[href*="producto/chlorella"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_chlorella.svg); background-color: #2f1e19; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #1e1310; }
+a[href*="producto/chlorella"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_chlorella.svg); background-color: #2f1e19; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #1e1310; }
 a[href*="producto/chlorella"] figure:hover { background-position: 0 90px; background-color: #070404; }
+@media screen and (min-width: 600px) { a[href*="producto/chlorella"] figure { width: 250px; height: 250px; } }
 
 .cpt-chia { color: gray; }
 .cpt-chia h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -534,8 +535,9 @@ a[href*="producto/chlorella"] figure:hover { background-position: 0 90px; backgr
 .cpt-chia .galeria-fotos__figure img { background-color: #f4f2f1; }
 .cpt-chia .galeria-fotos__figure img:hover { background-color: #8c7e73; }
 
-a[href*="producto/chia"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_chia.svg); background-color: #988b81; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #8c7e73; }
+a[href*="producto/chia"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_chia.svg); background-color: #988b81; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #8c7e73; }
 a[href*="producto/chia"] figure:hover { background-position: 0 90px; background-color: #786c63; }
+@media screen and (min-width: 600px) { a[href*="producto/chia"] figure { width: 250px; height: 250px; } }
 
 .cpt-amaranto { color: gray; }
 .cpt-amaranto h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -551,8 +553,9 @@ a[href*="producto/chia"] figure:hover { background-position: 0 90px; background-
 .cpt-amaranto .galeria-fotos__figure img { background-color: #f4c6db; }
 .cpt-amaranto .galeria-fotos__figure img:hover { background-color: #b12365; }
 
-a[href*="producto/amaranto"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_amaranto.svg); background-color: #c62771; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #b12365; }
+a[href*="producto/amaranto"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_amaranto.svg); background-color: #c62771; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #b12365; }
 a[href*="producto/amaranto"] figure:hover { background-position: 0 90px; background-color: #931d54; }
+@media screen and (min-width: 600px) { a[href*="producto/amaranto"] figure { width: 250px; height: 250px; } }
 
 .cpt-spiroulina { color: gray; }
 .cpt-spiroulina h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -568,8 +571,9 @@ a[href*="producto/amaranto"] figure:hover { background-position: 0 90px; backgro
 .cpt-spiroulina .galeria-fotos__figure img { background-color: #9fb293; }
 .cpt-spiroulina .galeria-fotos__figure img:hover { background-color: #2e3828; }
 
-a[href*="producto/spiroulina"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_spiroulina.svg); background-color: #3a4733; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #2e3828; }
+a[href*="producto/spiroulina"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_spiroulina.svg); background-color: #3a4733; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #2e3828; }
 a[href*="producto/spiroulina"] figure:hover { background-position: 0 90px; background-color: #1d2319; }
+@media screen and (min-width: 600px) { a[href*="producto/spiroulina"] figure { width: 250px; height: 250px; } }
 
 .cpt-camucamu { color: gray; }
 .cpt-camucamu h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -585,8 +589,9 @@ a[href*="producto/spiroulina"] figure:hover { background-position: 0 90px; backg
 .cpt-camucamu .galeria-fotos__figure img { background-color: #d4aab1; }
 .cpt-camucamu .galeria-fotos__figure img:hover { background-color: #65333c; }
 
-a[href*="producto/camucamu"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_camucamu.svg); background-color: #763c46; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #65333c; }
+a[href*="producto/camucamu"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_camucamu.svg); background-color: #763c46; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #65333c; }
 a[href*="producto/camucamu"] figure:hover { background-position: 0 90px; background-color: #4d272e; }
+@media screen and (min-width: 600px) { a[href*="producto/camucamu"] figure { width: 250px; height: 250px; } }
 
 .cpt-canamo { color: gray; }
 .cpt-canamo h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -602,8 +607,9 @@ a[href*="producto/camucamu"] figure:hover { background-position: 0 90px; backgro
 .cpt-canamo .galeria-fotos__figure img { background-color: #76ffbf; }
 .cpt-canamo .galeria-fotos__figure img:hover { background-color: #00904d; }
 
-a[href*="producto/canamo"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_canamo.svg); background-color: #00aa5b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #00904d; }
+a[href*="producto/canamo"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_canamo.svg); background-color: #00aa5b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #00904d; }
 a[href*="producto/canamo"] figure:hover { background-position: 0 90px; background-color: #006c3a; }
+@media screen and (min-width: 600px) { a[href*="producto/canamo"] figure { width: 250px; height: 250px; } }
 
 .cpt-maca { color: gray; }
 .cpt-maca h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -619,8 +625,9 @@ a[href*="producto/canamo"] figure:hover { background-position: 0 90px; backgroun
 .cpt-maca .galeria-fotos__figure img { background-color: #f3e2e9; }
 .cpt-maca .galeria-fotos__figure img:hover { background-color: #ab456c; }
 
-a[href*="producto/maca"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_maca.svg); background-color: #b95179; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #ab456c; }
+a[href*="producto/maca"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_maca.svg); background-color: #b95179; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #ab456c; }
 a[href*="producto/maca"] figure:hover { background-position: 0 90px; background-color: #923b5c; }
+@media screen and (min-width: 600px) { a[href*="producto/maca"] figure { width: 250px; height: 250px; } }
 
 .cpt-lucuma { color: gray; }
 .cpt-lucuma h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -636,8 +643,9 @@ a[href*="producto/maca"] figure:hover { background-position: 0 90px; background-
 .cpt-lucuma .galeria-fotos__figure img { background-color: #fef6e2; }
 .cpt-lucuma .galeria-fotos__figure img:hover { background-color: #f5b006; }
 
-a[href*="producto/lucuma"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_lucuma.svg); background-color: #f9b91b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #f5b006; }
+a[href*="producto/lucuma"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_lucuma.svg); background-color: #f9b91b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #f5b006; }
 a[href*="producto/lucuma"] figure:hover { background-position: 0 90px; background-color: #d29705; }
+@media screen and (min-width: 600px) { a[href*="producto/lucuma"] figure { width: 250px; height: 250px; } }
 
 .cpt-stevia { color: gray; }
 .cpt-stevia h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -653,8 +661,9 @@ a[href*="producto/lucuma"] figure:hover { background-position: 0 90px; backgroun
 .cpt-stevia .galeria-fotos__figure img { background-color: #62ffc0; }
 .cpt-stevia .galeria-fotos__figure img:hover { background-color: #007b4a; }
 
-a[href*="producto/stevia"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_stevia.svg); background-color: #009559; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #007b4a; }
+a[href*="producto/stevia"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_stevia.svg); background-color: #009559; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #007b4a; }
 a[href*="producto/stevia"] figure:hover { background-position: 0 90px; background-color: #005735; }
+@media screen and (min-width: 600px) { a[href*="producto/stevia"] figure { width: 250px; height: 250px; } }
 
 .cpt-quinoa { color: gray; }
 .cpt-quinoa h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -670,8 +679,9 @@ a[href*="producto/stevia"] figure:hover { background-position: 0 90px; backgroun
 .cpt-quinoa .galeria-fotos__figure img { background-color: #f7d9db; }
 .cpt-quinoa .galeria-fotos__figure img:hover { background-color: #c22931; }
 
-a[href*="producto/quinoa"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_quinoa.svg); background-color: #d3313a; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #c22931; }
+a[href*="producto/quinoa"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_quinoa.svg); background-color: #d3313a; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #c22931; }
 a[href*="producto/quinoa"] figure:hover { background-position: 0 90px; background-color: #a5232a; }
+@media screen and (min-width: 600px) { a[href*="producto/quinoa"] figure { width: 250px; height: 250px; } }
 
 .cpt-alfalfa { color: gray; }
 .cpt-alfalfa h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -687,8 +697,9 @@ a[href*="producto/quinoa"] figure:hover { background-position: 0 90px; backgroun
 .cpt-alfalfa .galeria-fotos__figure img { background-color: #ace8d9; }
 .cpt-alfalfa .galeria-fotos__figure img:hover { background-color: #268870; }
 
-a[href*="producto/alfalfa"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_alfalfa.svg); background-color: #2c9c80; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #268870; }
+a[href*="producto/alfalfa"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_alfalfa.svg); background-color: #2c9c80; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #268870; }
 a[href*="producto/alfalfa"] figure:hover { background-position: 0 90px; background-color: #1e6c59; }
+@media screen and (min-width: 600px) { a[href*="producto/alfalfa"] figure { width: 250px; height: 250px; } }
 
 .cpt-trigoverde { color: gray; }
 .cpt-trigoverde h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -704,8 +715,9 @@ a[href*="producto/alfalfa"] figure:hover { background-position: 0 90px; backgrou
 .cpt-trigoverde .galeria-fotos__figure img { background-color: #c0e0ae; }
 .cpt-trigoverde .galeria-fotos__figure img:hover { background-color: #4a792f; }
 
-a[href*="producto/trigoverde"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_trigoverde.svg); background-color: #558b36; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #4a792f; }
+a[href*="producto/trigoverde"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_trigoverde.svg); background-color: #558b36; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #4a792f; }
 a[href*="producto/trigoverde"] figure:hover { background-position: 0 90px; background-color: #3a5f25; }
+@media screen and (min-width: 600px) { a[href*="producto/trigoverde"] figure { width: 250px; height: 250px; } }
 
 .cpt-algarroba { color: gray; }
 .cpt-algarroba h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -721,8 +733,9 @@ a[href*="producto/trigoverde"] figure:hover { background-position: 0 90px; backg
 .cpt-algarroba .galeria-fotos__figure img { background-color: #b07965; }
 .cpt-algarroba .galeria-fotos__figure img:hover { background-color: #1f1410; }
 
-a[href*="producto/algarroba"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_algarroba.svg); background-color: #301f19; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #1f1410; }
+a[href*="producto/algarroba"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_algarroba.svg); background-color: #301f19; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #1f1410; }
 a[href*="producto/algarroba"] figure:hover { background-position: 0 90px; background-color: #070504; }
+@media screen and (min-width: 600px) { a[href*="producto/algarroba"] figure { width: 250px; height: 250px; } }
 
 .cpt-cardomariano { color: gray; }
 .cpt-cardomariano h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -738,8 +751,9 @@ a[href*="producto/algarroba"] figure:hover { background-position: 0 90px; backgr
 .cpt-cardomariano .galeria-fotos__figure img { background-color: white; }
 .cpt-cardomariano .galeria-fotos__figure img:hover { background-color: #a678ae; }
 
-a[href*="producto/cardomariano"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_cardomariano.svg); background-color: #b188b8; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #a678ae; }
+a[href*="producto/cardomariano"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_cardomariano.svg); background-color: #b188b8; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #a678ae; }
 a[href*="producto/cardomariano"] figure:hover { background-position: 0 90px; background-color: #9762a1; }
+@media screen and (min-width: 600px) { a[href*="producto/cardomariano"] figure { width: 250px; height: 250px; } }
 
 .cpt-linodorado { color: gray; }
 .cpt-linodorado h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -755,8 +769,9 @@ a[href*="producto/cardomariano"] figure:hover { background-position: 0 90px; bac
 .cpt-linodorado .galeria-fotos__figure img { background-color: white; }
 .cpt-linodorado .galeria-fotos__figure img:hover { background-color: #dec543; }
 
-a[href*="producto/linodorado"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_linodorado.svg); background-color: #e2cc59; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #dec543; }
+a[href*="producto/linodorado"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_linodorado.svg); background-color: #e2cc59; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #dec543; }
 a[href*="producto/linodorado"] figure:hover { background-position: 0 90px; background-color: #d7bb26; }
+@media screen and (min-width: 600px) { a[href*="producto/linodorado"] figure { width: 250px; height: 250px; } }
 
 .cpt-fresa { color: gray; }
 .cpt-fresa h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -772,8 +787,9 @@ a[href*="producto/linodorado"] figure:hover { background-position: 0 90px; backg
 .cpt-fresa .galeria-fotos__figure img { background-color: #fed8cc; }
 .cpt-fresa .galeria-fotos__figure img:hover { background-color: #e23803; }
 
-a[href*="producto/fresa"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_fresa.svg); background-color: #fb3e03; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #e23803; }
+a[href*="producto/fresa"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_fresa.svg); background-color: #fb3e03; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #e23803; }
 a[href*="producto/fresa"] figure:hover { background-position: 0 90px; background-color: #bf2f03; }
+@media screen and (min-width: 600px) { a[href*="producto/fresa"] figure { width: 250px; height: 250px; } }
 
 .cpt-coco { color: gray; }
 .cpt-coco h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -789,8 +805,9 @@ a[href*="producto/fresa"] figure:hover { background-position: 0 90px; background
 .cpt-coco .galeria-fotos__figure img { background-color: #e6c1a3; }
 .cpt-coco .galeria-fotos__figure img:hover { background-color: #814d23; }
 
-a[href*="producto/coco"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_coco.svg); background-color: #955928; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #814d23; }
+a[href*="producto/coco"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_coco.svg); background-color: #955928; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #814d23; }
 a[href*="producto/coco"] figure:hover { background-position: 0 90px; background-color: #653c1b; }
+@media screen and (min-width: 600px) { a[href*="producto/coco"] figure { width: 250px; height: 250px; } }
 
 .cpt-gymtonic { color: gray; }
 .cpt-gymtonic h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -806,8 +823,9 @@ a[href*="producto/coco"] figure:hover { background-position: 0 90px; background-
 .cpt-gymtonic .galeria-fotos__figure img { background-color: #fdacb2; }
 .cpt-gymtonic .galeria-fotos__figure img:hover { background-color: #c00411; }
 
-a[href*="producto/gymtonic"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_gymtonic.svg); background-color: #d90513; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #c00411; }
+a[href*="producto/gymtonic"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_gymtonic.svg); background-color: #d90513; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #c00411; }
 a[href*="producto/gymtonic"] figure:hover { background-position: 0 90px; background-color: #9d030e; }
+@media screen and (min-width: 600px) { a[href*="producto/gymtonic"] figure { width: 250px; height: 250px; } }
 
 .cpt-delifiber { color: gray; }
 .cpt-delifiber h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -823,8 +841,9 @@ a[href*="producto/gymtonic"] figure:hover { background-position: 0 90px; backgro
 .cpt-delifiber .galeria-fotos__figure img { background-color: #fffbd6; }
 .cpt-delifiber .galeria-fotos__figure img:hover { background-color: #efd600; }
 
-a[href*="producto/delifiber"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_delifiber.svg); background-color: #ffe509; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #efd600; }
+a[href*="producto/delifiber"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_delifiber.svg); background-color: #ffe509; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #efd600; }
 a[href*="producto/delifiber"] figure:hover { background-position: 0 90px; background-color: #cbb600; }
+@media screen and (min-width: 600px) { a[href*="producto/delifiber"] figure { width: 250px; height: 250px; } }
 
 .cpt-brainshake { color: gray; }
 .cpt-brainshake h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -840,8 +859,9 @@ a[href*="producto/delifiber"] figure:hover { background-position: 0 90px; backgr
 .cpt-brainshake .galeria-fotos__figure img { background-color: #ffeac0; }
 .cpt-brainshake .galeria-fotos__figure img:hover { background-color: #d99100; }
 
-a[href*="producto/brainshake"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_brainshake.svg); background-color: #f3a200; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #d99100; }
+a[href*="producto/brainshake"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_brainshake.svg); background-color: #f3a200; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #d99100; }
 a[href*="producto/brainshake"] figure:hover { background-position: 0 90px; background-color: #b57900; }
+@media screen and (min-width: 600px) { a[href*="producto/brainshake"] figure { width: 250px; height: 250px; } }
 
 .cpt-andeanprotein { color: gray; }
 .cpt-andeanprotein h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -857,8 +877,9 @@ a[href*="producto/brainshake"] figure:hover { background-position: 0 90px; backg
 .cpt-andeanprotein .galeria-fotos__figure img { background-color: #acd894; }
 .cpt-andeanprotein .galeria-fotos__figure img:hover { background-color: #3a6324; }
 
-a[href*="producto/andeanprotein"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_andeanprotein.svg); background-color: #45762b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #3a6324; }
+a[href*="producto/andeanprotein"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_andeanprotein.svg); background-color: #45762b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #3a6324; }
 a[href*="producto/andeanprotein"] figure:hover { background-position: 0 90px; background-color: #2b491a; }
+@media screen and (min-width: 600px) { a[href*="producto/andeanprotein"] figure { width: 250px; height: 250px; } }
 
 .cpt-macuchino { color: gray; }
 .cpt-macuchino h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -874,8 +895,9 @@ a[href*="producto/andeanprotein"] figure:hover { background-position: 0 90px; ba
 .cpt-macuchino .galeria-fotos__figure img { background-color: #f4eee3; }
 .cpt-macuchino .galeria-fotos__figure img:hover { background-color: #b08742; }
 
-a[href*="producto/macuchino"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_macuchino.svg); background-color: #bd944f; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #b08742; }
+a[href*="producto/macuchino"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_macuchino.svg); background-color: #bd944f; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #b08742; }
 a[href*="producto/macuchino"] figure:hover { background-position: 0 90px; background-color: #967338; }
+@media screen and (min-width: 600px) { a[href*="producto/macuchino"] figure { width: 250px; height: 250px; } }
 
 .cpt-bodtox { color: gray; }
 .cpt-bodtox h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -891,8 +913,9 @@ a[href*="producto/macuchino"] figure:hover { background-position: 0 90px; backgr
 .cpt-bodtox .galeria-fotos__figure img { background-color: #f2f6dd; }
 .cpt-bodtox .galeria-fotos__figure img:hover { background-color: #a3bd31; }
 
-a[href*="producto/bodtox"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_bodtox.svg); background-color: #b1cc3b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #a3bd31; }
+a[href*="producto/bodtox"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_bodtox.svg); background-color: #b1cc3b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #a3bd31; }
 a[href*="producto/bodtox"] figure:hover { background-position: 0 90px; background-color: #8ba12a; }
+@media screen and (min-width: 600px) { a[href*="producto/bodtox"] figure { width: 250px; height: 250px; } }
 
 .cpt-royalbreakfast { color: gray; }
 .cpt-royalbreakfast h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -908,8 +931,9 @@ a[href*="producto/bodtox"] figure:hover { background-position: 0 90px; backgroun
 .cpt-royalbreakfast .galeria-fotos__figure img { background-color: #eb827c; }
 .cpt-royalbreakfast .galeria-fotos__figure img:hover { background-color: #711611; }
 
-a[href*="producto/royalbreakfast"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_royalbreakfast.svg); background-color: #871a14; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #711611; }
+a[href*="producto/royalbreakfast"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_royalbreakfast.svg); background-color: #871a14; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #711611; }
 a[href*="producto/royalbreakfast"] figure:hover { background-position: 0 90px; background-color: #52100c; }
+@media screen and (min-width: 600px) { a[href*="producto/royalbreakfast"] figure { width: 250px; height: 250px; } }
 
 .cpt-camucao { color: gray; }
 .cpt-camucao h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -925,8 +949,9 @@ a[href*="producto/royalbreakfast"] figure:hover { background-position: 0 90px; b
 .cpt-camucao .galeria-fotos__figure img { background-color: #ecb6a2; }
 .cpt-camucao .galeria-fotos__figure img:hover { background-color: #8b3b1d; }
 
-a[href*="producto/camucao"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_camucao.svg); background-color: #a04421; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #8b3b1d; }
+a[href*="producto/camucao"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_camucao.svg); background-color: #a04421; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #8b3b1d; }
 a[href*="producto/camucao"] figure:hover { background-position: 0 90px; background-color: #6d2e17; }
+@media screen and (min-width: 600px) { a[href*="producto/camucao"] figure { width: 250px; height: 250px; } }
 
 img[src$=".svg"] { max-width: auto; width: 100%; height: auto; }
 

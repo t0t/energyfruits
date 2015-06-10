@@ -83,8 +83,8 @@
             figure {
                 @include transition(0.3s);
                 @extend .img--circle;
-                width: 250px;
-                height: 250px;
+                width: 200px;
+                height: 200px;
                 margin: 0 auto;
                 text-align: center;
                 background-image: url(#{$image-path}bg_#{$brand}.svg);
@@ -98,7 +98,10 @@
                     background-position: 0 90px;
                     background-color: darken($elcolor, 7%);
                 }
-                @media screen and (max-width: $bp3) {}
+                @media screen and (min-width: $bp3) {
+                    width: 250px;
+                    height: 250px;
+                }
                 // @media screen and (min-width:$bp3) { line-height: 255px; }
            
             }
