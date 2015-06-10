@@ -28,7 +28,27 @@ $('.slider').slick({
     dots: true,
     responsive: [
         {
-            breakpoint: 1120,
+            breakpoint: 1350,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                arrows: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 1052,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                arrows: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 500,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,

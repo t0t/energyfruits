@@ -6,23 +6,23 @@
     padding-top: 0;
     padding-left: $gutterwidth * 3;
     padding-right: $gutterwidth * 3;
-
+    width: 90%;
     ul {
-        margin: 0;
-        padding: 0;
+        margin: 0; padding: 0;
     }
     
     @extend %text-center;
     img { width: inherit }
 
     @media all and (min-width: 780px) {
-        @include flexbox;
-        @include justify-content(center);
+        // @include flexbox;
+        // @include justify-content(center);
         margin: 0 auto;
     }
     @media all and (max-width: $bp2) {}
     @media all and (min-width: $bp3) {}
 }
+
 .slider__wrap {
     position: relative;
     background-color: $white;
@@ -237,9 +237,11 @@
     position: relative;
     overflow: hidden;
     display: block;
-    margin: 0;
-    padding: 0;
-
+    .slick-loading & {
+        background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+    }
+    width: 90%;
+    margin: 0 auto;
     &:focus {
         outline: none;
     }
@@ -359,18 +361,7 @@ $slick-opacity-not-active: 0.25 !default;
     }
 }
 
-/* Slider */
-
-.slick-list {
-    .slick-loading & {
-        background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
-    }
-}
-
-
-
 /* Arrows */
-
 .slick-prev,
 .slick-next {
     position: absolute;
@@ -408,10 +399,10 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: -50px;
+    left: 15px;
     [dir="rtl"] & {
         left: auto;
-        right: -25px;
+        right: 15px;
     }
     &:before {
         content: $slick-prev-character;
@@ -422,9 +413,9 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -25px;
+    right: 15px;
     [dir="rtl"] & {
-        left: -25px;
+        left: 15px;
         right: auto;
     }
     &:before {
