@@ -177,7 +177,7 @@ td, th { padding: 0; }
 
 .slider__btn-next::after, .slider__btn-prev::before, .aligncenter, .lightbox .lb-image, .lb-cancel, .lb-prev, .lb-next, .lb-data .lb-number, .lb-data .lb-close, hr, figure figcaption, h1 small, h2 small, h3 small { display: block; }
 
-.post--sidebar, .slider__slides, .slider__figure, .main-footer__credits, .main-footer__brand, .main-footer__adicional, .main-footer__searchform label, .main-footer__searchform label input, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-secondary li, .nav-header .nav-header__item, .nav-header li, .nav--posts ul li, .widget--newsletter, .alert--info, .well, .well--large, .content-summary__item, .video-main, .tienda__item, .galeria-fotos { text-align: center; }
+.post--sidebar, .slider, .slider__figure, .main-footer__credits, .main-footer__brand, .main-footer__adicional, .main-footer__searchform label, .main-footer__searchform label input, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-secondary li, .nav-header .nav-header__item, .nav-header li, .nav--posts ul li, .widget--newsletter, .alert--info, .well, .well--large, .content-summary__item, .video-main, .tienda__item, .galeria-fotos { text-align: center; }
 
 h1.altheader, h2.altheader, h3.altheader, h4.altheader, h5.altheader, h6.altheader { text-align: right; }
 
@@ -297,12 +297,19 @@ article, aside, figure, footer, header, hgroup, nav, section { display: block; }
 
 .slider { margin-left: auto; margin-right: auto; max-width: 1600px; width: 100%; position: relative; z-index: 1; padding-top: 0; padding-left: 9%; padding-right: 9%; }
 .slider ul { margin: 0; padding: 0; }
+.slider img { width: inherit; }
+@media all and (min-width: 780px) { .slider { display: -moz-flex; /* OLD - Firefox 19 */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; margin: 0 auto; } }
 
-.slider__item { position: absolute; top: 50px; right: 0; left: 0; opacity: 0; overflow: hidden; padding-bottom: 5px; }
+.slider__wrap { position: relative; background-color: white; padding-bottom: 3%; width: 100%; }
+.slider__wrap::before { content: ""; height: 20px; width: 100%; position: absolute; top: -18px; background-size: cover; background-position: center; background-repeat: no-repeat; background-image: url(assets/img/bg_ondas_top.svg); }
+.no-svg .slider__wrap::before { background-image: url(assets/img/bg_ondas_top.png); }
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { .no-svg .slider__wrap::before { background-image: url(assets/img/bg_ondas_top@2x.png); } }
+.slider__wrap::after { content: ""; height: 20px; width: 100%; position: absolute; bottom: -20px; background-size: cover; background-position: center; background-repeat: no-repeat; background-image: url(assets/img/bg_ondas_bottom.svg); }
+.no-svg .slider__wrap::after { background-image: url(assets/img/bg_ondas_bottom.png); }
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { .no-svg .slider__wrap::after { background-image: url(assets/img/bg_ondas_bottom@2x.png); } }
+
+.slider__item { text-align: center; }
 .slider__item.current { opacity: 1; padding-bottom: 0; }
-
-.slider__slides img { width: inherit; }
-@media all and (min-width: 780px) { .slider__slides { display: -moz-flex; /* OLD - Firefox 19 */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; margin: 0 auto; } }
 
 .slider__figure { position: relative; }
 .slider__figure img { margin: 0; }
@@ -311,7 +318,7 @@ article, aside, figure, footer, header, hgroup, nav, section { display: block; }
 
 .slider__title { color: #f0730b; padding: 3% 0; }
 
-.slider__caption { font-size: 30px; font-size: 1.5rem; font-style: normal; letter-spacing: -1px; }
+.slider__caption { font-size: 30px; font-size: 1.5rem; line-height: 7em; font-style: normal; letter-spacing: -1px; }
 
 .slider__caption-post { color: #317549; }
 
@@ -336,14 +343,6 @@ article, aside, figure, footer, header, hgroup, nav, section { display: block; }
 .sliderh1 h1 { color: white; font-size: 6rem; }
 .sliderh1 h2 { color: white; font-size: 2rem; max-width: 600px; text-transform: inherit; letter-spacing: 0; }
 .sliderh1 .btn { font-size: 30px; font-size: 1.5rem; color: white; border: 2px solid white; }
-
-.slider__wrap { position: relative; background-color: white; padding-bottom: 3%; width: 100%; }
-.slider__wrap::before { content: ""; height: 20px; width: 100%; position: absolute; top: -18px; background-size: cover; background-position: center; background-repeat: no-repeat; background-image: url(assets/img/bg_ondas_top.svg); }
-.no-svg .slider__wrap::before { background-image: url(assets/img/bg_ondas_top.png); }
-@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { .no-svg .slider__wrap::before { background-image: url(assets/img/bg_ondas_top@2x.png); } }
-.slider__wrap::after { content: ""; height: 20px; width: 100%; position: absolute; bottom: -20px; background-size: cover; background-position: center; background-repeat: no-repeat; background-image: url(assets/img/bg_ondas_bottom.svg); }
-.no-svg .slider__wrap::after { background-image: url(assets/img/bg_ondas_bottom.png); }
-@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { .no-svg .slider__wrap::after { background-image: url(assets/img/bg_ondas_bottom@2x.png); } }
 
 /* Slider */
 .slick-slider { display: block; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
@@ -375,14 +374,14 @@ article, aside, figure, footer, header, hgroup, nav, section { display: block; }
 .slick-loading .slick-list { background: #fff url("./ajax-loader.gif") center center no-repeat; }
 
 /* Arrows */
-.slick-prev, .slick-next { position: absolute; display: block; height: 20px; width: 20px; line-height: 0px; font-size: 0px; cursor: pointer; background: transparent; color: transparent; top: 50%; margin-top: -10px; padding: 0; border: none; outline: none; }
+.slick-prev, .slick-next { position: absolute; display: block; height: 20px; width: 20px; cursor: pointer; background: transparent; top: 50%; margin-top: -10px; padding: 0; border: none; outline: none; }
 .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus { outline: none; background: transparent; color: transparent; }
 .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before { opacity: 1; }
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before { opacity: 0.25; }
 
-.slick-prev:before, .slick-next:before { font-size: 20px; line-height: 1; color: white; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.slick-prev:before, .slick-next:before { font-size: 25px; font-size: 1.25rem; z-index: 1000; line-height: 1; color: #f0730b; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-.slick-prev { left: -25px; }
+.slick-prev { left: -50px; }
 [dir="rtl"] .slick-prev { left: auto; right: -25px; }
 .slick-prev:before { content: "←"; }
 [dir="rtl"] .slick-prev:before { content: "→"; }
@@ -469,7 +468,7 @@ body > select { width: 20%; top: 120px; left: 10px; position: absolute; margin: 
 .cpt-graviola .galeria-fotos__figure img { background-color: #e2decf; }
 .cpt-graviola .galeria-fotos__figure img:hover { background-color: #7f744c; }
 
-a[href*="producto/graviola"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_graviola.svg); background-color: #8f8356; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #7f744c; }
+a[href*="producto/graviola"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_graviola.svg); background-color: #8f8356; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #7f744c; }
 a[href*="producto/graviola"] figure:hover { background-position: 0 90px; background-color: #69603f; }
 
 .cpt-goji { color: gray; }
@@ -486,7 +485,7 @@ a[href*="producto/graviola"] figure:hover { background-position: 0 90px; backgro
 .cpt-goji .galeria-fotos__figure img { background-color: #fddcd9; }
 .cpt-goji .galeria-fotos__figure img:hover { background-color: #e6190b; }
 
-a[href*="producto/goji"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_goji.svg); background-color: #f42517; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #e6190b; }
+a[href*="producto/goji"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_goji.svg); background-color: #f42517; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #e6190b; }
 a[href*="producto/goji"] figure:hover { background-position: 0 90px; background-color: #c41509; }
 
 .cpt-cacaocriollo { color: gray; }
@@ -503,7 +502,7 @@ a[href*="producto/goji"] figure:hover { background-position: 0 90px; background-
 .cpt-cacaocriollo .galeria-fotos__figure img { background-color: #c17e7e; }
 .cpt-cacaocriollo .galeria-fotos__figure img:hover { background-color: #3c1d1d; }
 
-a[href*="producto/cacaocriollo"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_cacaocriollo.svg); background-color: #4d2525; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #3c1d1d; }
+a[href*="producto/cacaocriollo"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_cacaocriollo.svg); background-color: #4d2525; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #3c1d1d; }
 a[href*="producto/cacaocriollo"] figure:hover { background-position: 0 90px; background-color: #241111; }
 
 .cpt-chlorella { color: gray; }
@@ -520,7 +519,7 @@ a[href*="producto/cacaocriollo"] figure:hover { background-position: 0 90px; bac
 .cpt-chlorella .galeria-fotos__figure img { background-color: #ad7566; }
 .cpt-chlorella .galeria-fotos__figure img:hover { background-color: #1e1310; }
 
-a[href*="producto/chlorella"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_chlorella.svg); background-color: #2f1e19; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #1e1310; }
+a[href*="producto/chlorella"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_chlorella.svg); background-color: #2f1e19; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #1e1310; }
 a[href*="producto/chlorella"] figure:hover { background-position: 0 90px; background-color: #070404; }
 
 .cpt-chia { color: gray; }
@@ -537,7 +536,7 @@ a[href*="producto/chlorella"] figure:hover { background-position: 0 90px; backgr
 .cpt-chia .galeria-fotos__figure img { background-color: #f4f2f1; }
 .cpt-chia .galeria-fotos__figure img:hover { background-color: #8c7e73; }
 
-a[href*="producto/chia"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_chia.svg); background-color: #988b81; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #8c7e73; }
+a[href*="producto/chia"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_chia.svg); background-color: #988b81; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #8c7e73; }
 a[href*="producto/chia"] figure:hover { background-position: 0 90px; background-color: #786c63; }
 
 .cpt-amaranto { color: gray; }
@@ -554,7 +553,7 @@ a[href*="producto/chia"] figure:hover { background-position: 0 90px; background-
 .cpt-amaranto .galeria-fotos__figure img { background-color: #f4c6db; }
 .cpt-amaranto .galeria-fotos__figure img:hover { background-color: #b12365; }
 
-a[href*="producto/amaranto"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_amaranto.svg); background-color: #c62771; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #b12365; }
+a[href*="producto/amaranto"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_amaranto.svg); background-color: #c62771; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #b12365; }
 a[href*="producto/amaranto"] figure:hover { background-position: 0 90px; background-color: #931d54; }
 
 .cpt-spiroulina { color: gray; }
@@ -571,7 +570,7 @@ a[href*="producto/amaranto"] figure:hover { background-position: 0 90px; backgro
 .cpt-spiroulina .galeria-fotos__figure img { background-color: #9fb293; }
 .cpt-spiroulina .galeria-fotos__figure img:hover { background-color: #2e3828; }
 
-a[href*="producto/spiroulina"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_spiroulina.svg); background-color: #3a4733; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #2e3828; }
+a[href*="producto/spiroulina"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_spiroulina.svg); background-color: #3a4733; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #2e3828; }
 a[href*="producto/spiroulina"] figure:hover { background-position: 0 90px; background-color: #1d2319; }
 
 .cpt-camucamu { color: gray; }
@@ -588,7 +587,7 @@ a[href*="producto/spiroulina"] figure:hover { background-position: 0 90px; backg
 .cpt-camucamu .galeria-fotos__figure img { background-color: #d4aab1; }
 .cpt-camucamu .galeria-fotos__figure img:hover { background-color: #65333c; }
 
-a[href*="producto/camucamu"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_camucamu.svg); background-color: #763c46; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #65333c; }
+a[href*="producto/camucamu"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_camucamu.svg); background-color: #763c46; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #65333c; }
 a[href*="producto/camucamu"] figure:hover { background-position: 0 90px; background-color: #4d272e; }
 
 .cpt-canamo { color: gray; }
@@ -605,7 +604,7 @@ a[href*="producto/camucamu"] figure:hover { background-position: 0 90px; backgro
 .cpt-canamo .galeria-fotos__figure img { background-color: #76ffbf; }
 .cpt-canamo .galeria-fotos__figure img:hover { background-color: #00904d; }
 
-a[href*="producto/canamo"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_canamo.svg); background-color: #00aa5b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #00904d; }
+a[href*="producto/canamo"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_canamo.svg); background-color: #00aa5b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #00904d; }
 a[href*="producto/canamo"] figure:hover { background-position: 0 90px; background-color: #006c3a; }
 
 .cpt-maca { color: gray; }
@@ -622,7 +621,7 @@ a[href*="producto/canamo"] figure:hover { background-position: 0 90px; backgroun
 .cpt-maca .galeria-fotos__figure img { background-color: #f3e2e9; }
 .cpt-maca .galeria-fotos__figure img:hover { background-color: #ab456c; }
 
-a[href*="producto/maca"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_maca.svg); background-color: #b95179; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #ab456c; }
+a[href*="producto/maca"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_maca.svg); background-color: #b95179; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #ab456c; }
 a[href*="producto/maca"] figure:hover { background-position: 0 90px; background-color: #923b5c; }
 
 .cpt-lucuma { color: gray; }
@@ -639,7 +638,7 @@ a[href*="producto/maca"] figure:hover { background-position: 0 90px; background-
 .cpt-lucuma .galeria-fotos__figure img { background-color: #fef6e2; }
 .cpt-lucuma .galeria-fotos__figure img:hover { background-color: #f5b006; }
 
-a[href*="producto/lucuma"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_lucuma.svg); background-color: #f9b91b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #f5b006; }
+a[href*="producto/lucuma"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_lucuma.svg); background-color: #f9b91b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #f5b006; }
 a[href*="producto/lucuma"] figure:hover { background-position: 0 90px; background-color: #d29705; }
 
 .cpt-stevia { color: gray; }
@@ -656,7 +655,7 @@ a[href*="producto/lucuma"] figure:hover { background-position: 0 90px; backgroun
 .cpt-stevia .galeria-fotos__figure img { background-color: #62ffc0; }
 .cpt-stevia .galeria-fotos__figure img:hover { background-color: #007b4a; }
 
-a[href*="producto/stevia"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_stevia.svg); background-color: #009559; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #007b4a; }
+a[href*="producto/stevia"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_stevia.svg); background-color: #009559; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #007b4a; }
 a[href*="producto/stevia"] figure:hover { background-position: 0 90px; background-color: #005735; }
 
 .cpt-quinoa { color: gray; }
@@ -673,7 +672,7 @@ a[href*="producto/stevia"] figure:hover { background-position: 0 90px; backgroun
 .cpt-quinoa .galeria-fotos__figure img { background-color: #f7d9db; }
 .cpt-quinoa .galeria-fotos__figure img:hover { background-color: #c22931; }
 
-a[href*="producto/quinoa"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_quinoa.svg); background-color: #d3313a; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #c22931; }
+a[href*="producto/quinoa"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_quinoa.svg); background-color: #d3313a; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #c22931; }
 a[href*="producto/quinoa"] figure:hover { background-position: 0 90px; background-color: #a5232a; }
 
 .cpt-alfalfa { color: gray; }
@@ -690,7 +689,7 @@ a[href*="producto/quinoa"] figure:hover { background-position: 0 90px; backgroun
 .cpt-alfalfa .galeria-fotos__figure img { background-color: #ace8d9; }
 .cpt-alfalfa .galeria-fotos__figure img:hover { background-color: #268870; }
 
-a[href*="producto/alfalfa"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_alfalfa.svg); background-color: #2c9c80; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #268870; }
+a[href*="producto/alfalfa"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_alfalfa.svg); background-color: #2c9c80; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #268870; }
 a[href*="producto/alfalfa"] figure:hover { background-position: 0 90px; background-color: #1e6c59; }
 
 .cpt-trigoverde { color: gray; }
@@ -707,7 +706,7 @@ a[href*="producto/alfalfa"] figure:hover { background-position: 0 90px; backgrou
 .cpt-trigoverde .galeria-fotos__figure img { background-color: #c0e0ae; }
 .cpt-trigoverde .galeria-fotos__figure img:hover { background-color: #4a792f; }
 
-a[href*="producto/trigoverde"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_trigoverde.svg); background-color: #558b36; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #4a792f; }
+a[href*="producto/trigoverde"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_trigoverde.svg); background-color: #558b36; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #4a792f; }
 a[href*="producto/trigoverde"] figure:hover { background-position: 0 90px; background-color: #3a5f25; }
 
 .cpt-algarroba { color: gray; }
@@ -724,7 +723,7 @@ a[href*="producto/trigoverde"] figure:hover { background-position: 0 90px; backg
 .cpt-algarroba .galeria-fotos__figure img { background-color: #b07965; }
 .cpt-algarroba .galeria-fotos__figure img:hover { background-color: #1f1410; }
 
-a[href*="producto/algarroba"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_algarroba.svg); background-color: #301f19; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #1f1410; }
+a[href*="producto/algarroba"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_algarroba.svg); background-color: #301f19; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #1f1410; }
 a[href*="producto/algarroba"] figure:hover { background-position: 0 90px; background-color: #070504; }
 
 .cpt-cardomariano { color: gray; }
@@ -741,7 +740,7 @@ a[href*="producto/algarroba"] figure:hover { background-position: 0 90px; backgr
 .cpt-cardomariano .galeria-fotos__figure img { background-color: white; }
 .cpt-cardomariano .galeria-fotos__figure img:hover { background-color: #a678ae; }
 
-a[href*="producto/cardomariano"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_cardomariano.svg); background-color: #b188b8; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #a678ae; }
+a[href*="producto/cardomariano"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_cardomariano.svg); background-color: #b188b8; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #a678ae; }
 a[href*="producto/cardomariano"] figure:hover { background-position: 0 90px; background-color: #9762a1; }
 
 .cpt-linodorado { color: gray; }
@@ -758,7 +757,7 @@ a[href*="producto/cardomariano"] figure:hover { background-position: 0 90px; bac
 .cpt-linodorado .galeria-fotos__figure img { background-color: white; }
 .cpt-linodorado .galeria-fotos__figure img:hover { background-color: #dec543; }
 
-a[href*="producto/linodorado"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_linodorado.svg); background-color: #e2cc59; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #dec543; }
+a[href*="producto/linodorado"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_linodorado.svg); background-color: #e2cc59; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #dec543; }
 a[href*="producto/linodorado"] figure:hover { background-position: 0 90px; background-color: #d7bb26; }
 
 .cpt-fresa { color: gray; }
@@ -775,7 +774,7 @@ a[href*="producto/linodorado"] figure:hover { background-position: 0 90px; backg
 .cpt-fresa .galeria-fotos__figure img { background-color: #fed8cc; }
 .cpt-fresa .galeria-fotos__figure img:hover { background-color: #e23803; }
 
-a[href*="producto/fresa"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_fresa.svg); background-color: #fb3e03; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #e23803; }
+a[href*="producto/fresa"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_fresa.svg); background-color: #fb3e03; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #e23803; }
 a[href*="producto/fresa"] figure:hover { background-position: 0 90px; background-color: #bf2f03; }
 
 .cpt-coco { color: gray; }
@@ -792,7 +791,7 @@ a[href*="producto/fresa"] figure:hover { background-position: 0 90px; background
 .cpt-coco .galeria-fotos__figure img { background-color: #e6c1a3; }
 .cpt-coco .galeria-fotos__figure img:hover { background-color: #814d23; }
 
-a[href*="producto/coco"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_coco.svg); background-color: #955928; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #814d23; }
+a[href*="producto/coco"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_coco.svg); background-color: #955928; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #814d23; }
 a[href*="producto/coco"] figure:hover { background-position: 0 90px; background-color: #653c1b; }
 
 .cpt-gymtonic { color: gray; }
@@ -809,7 +808,7 @@ a[href*="producto/coco"] figure:hover { background-position: 0 90px; background-
 .cpt-gymtonic .galeria-fotos__figure img { background-color: #fdacb2; }
 .cpt-gymtonic .galeria-fotos__figure img:hover { background-color: #c00411; }
 
-a[href*="producto/gymtonic"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_gymtonic.svg); background-color: #d90513; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #c00411; }
+a[href*="producto/gymtonic"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_gymtonic.svg); background-color: #d90513; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #c00411; }
 a[href*="producto/gymtonic"] figure:hover { background-position: 0 90px; background-color: #9d030e; }
 
 .cpt-delifiber { color: gray; }
@@ -826,7 +825,7 @@ a[href*="producto/gymtonic"] figure:hover { background-position: 0 90px; backgro
 .cpt-delifiber .galeria-fotos__figure img { background-color: #fffbd6; }
 .cpt-delifiber .galeria-fotos__figure img:hover { background-color: #efd600; }
 
-a[href*="producto/delifiber"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_delifiber.svg); background-color: #ffe509; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #efd600; }
+a[href*="producto/delifiber"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_delifiber.svg); background-color: #ffe509; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #efd600; }
 a[href*="producto/delifiber"] figure:hover { background-position: 0 90px; background-color: #cbb600; }
 
 .cpt-brainshake { color: gray; }
@@ -843,7 +842,7 @@ a[href*="producto/delifiber"] figure:hover { background-position: 0 90px; backgr
 .cpt-brainshake .galeria-fotos__figure img { background-color: #ffeac0; }
 .cpt-brainshake .galeria-fotos__figure img:hover { background-color: #d99100; }
 
-a[href*="producto/brainshake"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_brainshake.svg); background-color: #f3a200; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #d99100; }
+a[href*="producto/brainshake"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_brainshake.svg); background-color: #f3a200; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #d99100; }
 a[href*="producto/brainshake"] figure:hover { background-position: 0 90px; background-color: #b57900; }
 
 .cpt-andeanprotein { color: gray; }
@@ -860,7 +859,7 @@ a[href*="producto/brainshake"] figure:hover { background-position: 0 90px; backg
 .cpt-andeanprotein .galeria-fotos__figure img { background-color: #acd894; }
 .cpt-andeanprotein .galeria-fotos__figure img:hover { background-color: #3a6324; }
 
-a[href*="producto/andeanprotein"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_andeanprotein.svg); background-color: #45762b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #3a6324; }
+a[href*="producto/andeanprotein"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_andeanprotein.svg); background-color: #45762b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #3a6324; }
 a[href*="producto/andeanprotein"] figure:hover { background-position: 0 90px; background-color: #2b491a; }
 
 .cpt-macuchino { color: gray; }
@@ -877,7 +876,7 @@ a[href*="producto/andeanprotein"] figure:hover { background-position: 0 90px; ba
 .cpt-macuchino .galeria-fotos__figure img { background-color: #f4eee3; }
 .cpt-macuchino .galeria-fotos__figure img:hover { background-color: #b08742; }
 
-a[href*="producto/macuchino"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_macuchino.svg); background-color: #bd944f; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #b08742; }
+a[href*="producto/macuchino"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_macuchino.svg); background-color: #bd944f; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #b08742; }
 a[href*="producto/macuchino"] figure:hover { background-position: 0 90px; background-color: #967338; }
 
 .cpt-bodtox { color: gray; }
@@ -894,7 +893,7 @@ a[href*="producto/macuchino"] figure:hover { background-position: 0 90px; backgr
 .cpt-bodtox .galeria-fotos__figure img { background-color: #f2f6dd; }
 .cpt-bodtox .galeria-fotos__figure img:hover { background-color: #a3bd31; }
 
-a[href*="producto/bodtox"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_bodtox.svg); background-color: #b1cc3b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #a3bd31; }
+a[href*="producto/bodtox"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_bodtox.svg); background-color: #b1cc3b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #a3bd31; }
 a[href*="producto/bodtox"] figure:hover { background-position: 0 90px; background-color: #8ba12a; }
 
 .cpt-royalbreakfast { color: gray; }
@@ -911,7 +910,7 @@ a[href*="producto/bodtox"] figure:hover { background-position: 0 90px; backgroun
 .cpt-royalbreakfast .galeria-fotos__figure img { background-color: #eb827c; }
 .cpt-royalbreakfast .galeria-fotos__figure img:hover { background-color: #711611; }
 
-a[href*="producto/royalbreakfast"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_royalbreakfast.svg); background-color: #871a14; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #711611; }
+a[href*="producto/royalbreakfast"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_royalbreakfast.svg); background-color: #871a14; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #711611; }
 a[href*="producto/royalbreakfast"] figure:hover { background-position: 0 90px; background-color: #52100c; }
 
 .cpt-camucao { color: gray; }
@@ -928,7 +927,7 @@ a[href*="producto/royalbreakfast"] figure:hover { background-position: 0 90px; b
 .cpt-camucao .galeria-fotos__figure img { background-color: #ecb6a2; }
 .cpt-camucao .galeria-fotos__figure img:hover { background-color: #8b3b1d; }
 
-a[href*="producto/camucao"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 250px; background-image: url(assets/img/bg_camucao.svg); background-color: #a04421; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #8b3b1d; }
+a[href*="producto/camucao"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 250px; height: 250px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_camucao.svg); background-color: #a04421; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #8b3b1d; }
 a[href*="producto/camucao"] figure:hover { background-position: 0 90px; background-color: #6d2e17; }
 
 img[src$=".svg"] { max-width: auto; width: 100%; height: auto; }
@@ -1222,7 +1221,7 @@ $ELEMENTOS-IMAGENES
 \*------------------------------------*/
 .img--rounded { border-radius: 20px; }
 
-.img--circle, a[href*="producto/graviola"] figure, a[href*="producto/goji"] figure, a[href*="producto/cacaocriollo"] figure, a[href*="producto/chlorella"] figure, a[href*="producto/chia"] figure, a[href*="producto/amaranto"] figure, a[href*="producto/spiroulina"] figure, a[href*="producto/camucamu"] figure, a[href*="producto/canamo"] figure, a[href*="producto/maca"] figure, a[href*="producto/lucuma"] figure, a[href*="producto/stevia"] figure, a[href*="producto/quinoa"] figure, a[href*="producto/alfalfa"] figure, a[href*="producto/trigoverde"] figure, a[href*="producto/algarroba"] figure, a[href*="producto/cardomariano"] figure, a[href*="producto/linodorado"] figure, a[href*="producto/fresa"] figure, a[href*="producto/coco"] figure, a[href*="producto/gymtonic"] figure, a[href*="producto/delifiber"] figure, a[href*="producto/brainshake"] figure, a[href*="producto/andeanprotein"] figure, a[href*="producto/macuchino"] figure, a[href*="producto/bodtox"] figure, a[href*="producto/royalbreakfast"] figure, a[href*="producto/camucao"] figure { border-radius: 100%; }
+.img--circle, a[href*="producto/graviola"] figure, a[href*="producto/goji"] figure, a[href*="producto/cacaocriollo"] figure, a[href*="producto/chlorella"] figure, a[href*="producto/chia"] figure, a[href*="producto/amaranto"] figure, a[href*="producto/spiroulina"] figure, a[href*="producto/camucamu"] figure, a[href*="producto/canamo"] figure, a[href*="producto/maca"] figure, a[href*="producto/lucuma"] figure, a[href*="producto/stevia"] figure, a[href*="producto/quinoa"] figure, a[href*="producto/alfalfa"] figure, a[href*="producto/trigoverde"] figure, a[href*="producto/algarroba"] figure, a[href*="producto/cardomariano"] figure, a[href*="producto/linodorado"] figure, a[href*="producto/fresa"] figure, a[href*="producto/coco"] figure, a[href*="producto/gymtonic"] figure, a[href*="producto/delifiber"] figure, a[href*="producto/brainshake"] figure, a[href*="producto/andeanprotein"] figure, a[href*="producto/macuchino"] figure, a[href*="producto/bodtox"] figure, a[href*="producto/royalbreakfast"] figure, a[href*="producto/camucao"] figure { border-radius: 50%; }
 
 .img--noajust { width: inherit; }
 

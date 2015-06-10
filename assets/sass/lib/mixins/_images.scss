@@ -83,7 +83,10 @@
             figure {
                 @include transition(0.3s);
                 @extend .img--circle;
-                line-height: 250px;
+                width: 250px;
+                height: 250px;
+                margin: 0 auto;
+                text-align: center;
                 background-image: url(#{$image-path}bg_#{$brand}.svg);
                 background-color: lighten($elcolor, 5%);
                 background-position: 0 100px;

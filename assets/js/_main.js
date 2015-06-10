@@ -28,7 +28,7 @@ $('.slider').slick({
     dots: true,
     responsive: [
         {
-            breakpoint: 850,
+            breakpoint: 1120,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
