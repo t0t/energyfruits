@@ -3006,6 +3006,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/assets\/bower_components\/slick-carousel\/slick\/min\/slick-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/bower_components\/slick-carousel\/slick\/min\/slick-min.js",
+		"outputAbbreviatedPath": "\/assets\/bower_components\/slick-carousel\/slick\/min\/min\/slick-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/bower_components\/slick-carousel\/slick\/slick-theme.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -3557,18 +3568,18 @@
 		},
 	"\/assets\/js\/_main.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/_main.js",
-		"outputAbbreviatedPath": "\/assets\/js\/main.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/_main-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
+		"syntaxCheckerStyle": 1
 		},
 	"\/assets\/js\/main.min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/main.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/main.min-min.js",
@@ -5178,20 +5189,6 @@
 	],
 "lastSavedByUser": "t0t",
 "manualImportLinks": {
-	"\/assets\/js\/_main.js": [
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/bower_components\/fitvids\/jquery.fitvids.js",
-			"position": 0,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/bower_components\/slick-carousel\/slick\/slick.min.js",
-			"position": 1,
-			"type": 1
-			}
-		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "assets",

@@ -1,21 +1,16 @@
 (function($) {
 $(function() {
-    
-    
-    
-    
-    
 
 // FitVids.js
 //http://jsbin.com/boreme/17/edit?html,css,js,output
 $(".main-post__content__entry").fitVids();
-$(window).scroll(function() {
-var scroll = $(window).scrollTop();
-if (scroll >= 50) {
-$(".brand").addClass("encoge");
-} else {
-$(".brand").removeClass("encoge");
-}
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 50) {
+        $(".brand").addClass("encoge");
+        } else {
+        $(".brand").removeClass("encoge");
+    }
 });
 
 // Slider
@@ -25,6 +20,8 @@ $(".brand").removeClass("encoge");
 $('.slider').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
     dots: true,
     responsive: [
         {
