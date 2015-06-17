@@ -20,8 +20,6 @@ $(".main-post__content__entry").fitVids();
 $('.slider').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
-    prevArrow: $('.prev'),
-    nextArrow: $('.next'),
     dots: true,
     responsive: [
         {
@@ -100,6 +98,11 @@ $scrolltop_link.slideUp().data('hidden', 1);
 }, 300);
 }
 addScrollTopAnimation(); // start
+
+
+
+
+
 
 
 

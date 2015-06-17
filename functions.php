@@ -102,9 +102,11 @@ add_action('admin_menu', 'quita_metaboxes_admin');
  */
 function t0theme_scripts() {
 // wp_deregister_script( 'jquery' ); //Ya lo incluyo en main.min.js
+	// wp_enqueue_style('slick-css', get_template_directory_uri() . '/assets/bower_components/slick-carousel/slick/slick.css');
 	wp_enqueue_style('t0theme', get_stylesheet_uri());
-	wp_enqueue_script('main_js',
-		get_template_directory_uri() . '/assets/js/main.min.js',
-		'', '', true);
+
+	wp_register_script('slick-carousel', get_template_directory_uri() . '/assets/bower_components/slick-carousel/slick/slick.js');
+	wp_enqueue_script('t0theme_scripts', get_template_directory_uri() . '/assets/js/main.min.js',
+		array('slick-carousel'), '', true);
 }
 add_action('wp_enqueue_scripts', 't0theme_scripts', 100);
