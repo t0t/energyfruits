@@ -24,17 +24,18 @@
 									<figure><img src="<?php the_sub_field("header_image");?>" alt=""></figure>
 									<?php } else {?>
 									<?php }
-		?>
+									?>
 									<?php if (get_post_type() == 'post'): ?>
 									<small><?php echo get_the_time('j F Y');?></small>
 									<?php endif?>
+
 									<!-- the post content -->
 									<?php the_sub_field("content");?>
+
 									<?php
-		// Store the short code in a variable.
-		$var = do_shortcode('[fbcomments]');
-		echo $var;
-		?>
+										$var = do_shortcode('[fbcomments]');
+										echo $var;
+									?>
 									<!-- Lista -->
 									<?php if (have_rows('lista_simple')): ?>
 									<?php while (have_rows('lista_simple')): the_row();?>
