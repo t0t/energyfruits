@@ -44,13 +44,13 @@
 														<li><?php the_sub_field('title');?></li>
 														<?php endif?>
 														<?php while (has_sub_field('lista_simple_elemento')): ?>
-																		<?php
-				$txt = get_sub_field('txt');
-				$link = get_sub_field('link');
-				?>
-																		<li class="list__item">
-																			<?php if ($link): ?>
-																			<a href="<?php the_sub_field('link');?>">
+														<?php
+														$txt = get_sub_field('txt');
+														$link = get_sub_field('link');
+														?>
+															<li class="list__item">
+																<?php if ($link): ?>
+																	<a href="<?php the_sub_field('link');?>">
 																				<?php endif;?>
 																				<?php if ($txt): ?>
 																				<?php the_sub_field('txt');?>
@@ -60,9 +60,9 @@
 																				<?php endif;?>
 																				<?php if ($link): ?>
 																			</a>
-																			<?php endif;?>
-																		</li>
-																		<?php endwhile;?>
+																		<?php endif;?>
+																</li>
+																<?php endwhile;?>
 													</ul>
 													<!-- /lista -->
 													<?php endwhile;?>
