@@ -4,17 +4,16 @@
 
 // Widgets
 .widget {
-    ul {}
+  color: $color-base;
 }
-
+.widget__title {
+  color: $color-alt;
+}
+.widget--posts {}
+.widget--pages {}
 .widget--wp {
     color: $white;
 }
-
-.widget--posts {}
-
-.widget--pages {}
-
 .widget--tags {
     .tagcloud {
         a {
@@ -22,12 +21,9 @@
         }
     }
 }
-
 .widget--agenda {}
 
 .widget--newsletter {
-    // @extend %basepadding;
-    padding-top: $gutterwidth * 2;
     @include max-width($bp3);
     @extend %text-center;
 
@@ -35,34 +31,36 @@
         width: 100%;
         margin: 0;
         padding: 0;
-        
+
         @media screen and (min-width: $bp3) {
             @include flexbox;
-            @include justify-content(space-around);
+            @include justify-content(center);
             @include align-items(baseline);
         }
     }
 
     h3 {
-        // padding-bottom: $gutterwidth / 2;
         margin-right: $gutterwidth;
     }
 
-    h3, label {
-        color: $white;
+    label {
         margin-bottom: 0;
+        color: $color-base;
     }
 
     input[type="email"] {
-        width: 50%;
-        // @include flex-grow(2);
+        width: 200px;
         margin-right: 10px;
-        background-color: $white-alpha-fuerte;
-        color: $color-base-dark;
+        color: $white;
 
+        &:focus {
+          background-color: $color-alt;
+          color: $white;
+        }
         &::-webkit-input-placeholder {
             font-size: inherit;
             padding-left: $gutterwidth;
+            color: $white;
         }
     }
 
@@ -70,14 +68,27 @@
     input[type="reset"],
     input[type="submit"] {
         color: $white;
-        background-color: $black;
+        background-color: $black-alpha-medio;
 
         &:hover {
-            background-color: $black-alpha-medio;
+          background-color: $color-base;
+        }
+        &:focus {
+          background-color: $color-alt;
         }
     }
 }
+  .widget--newsletter-page {
+    background-color: $white;
+    border-radius: 5%;
+    padding: $gutterwidth / 2;
 
+    input[type="email"] {
+      width: 200px;
+      margin-right: 10px;
+      color: $color-base;
+    }
+  }
 // Idiomas
 .idiomas {
     .idiomas__item {}
@@ -170,7 +181,7 @@
     @extend %text-center;
 
     h1 {
-        
+
         letter-spacing: -1px;
         @media screen and (min-width: $bp3) {
             font-size: 5rem;
@@ -202,11 +213,11 @@
 .well--img {
     @include max-width($bp0);
     min-height: 300px;
-    
+
         @media screen and (min-width: $bp3) {
             min-height: 60vh;
         }
-    
+
     p, h3 {
         color: $white;
     }
@@ -245,8 +256,6 @@
 
     p {
         margin-bottom: $gutterwidth;
-        // @extend %line-height-smaller;
-   
     }
 
     @media all and (min-width: 850px) {

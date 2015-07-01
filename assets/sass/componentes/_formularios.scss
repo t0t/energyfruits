@@ -73,19 +73,18 @@ input,
 textarea,
 select {
 	display : inline-block;
-	width : 100%;
 	padding : 10px;
 	margin-bottom : $baselineheight / 4;
 	background-color : $inputbackground;
 	border : none;
-	// border : $inputborderwidth $inputborderstyle $inputborder;
-	color : $textcolor;
+	color : $color-base;
 
 	&:hover {
 		border-color : $inputhover;
 	}
 	&:focus {
-		background-color: $inputfocus;
+		color: $white;
+		background-color: $color-alt;
 	}
 }
 
@@ -121,8 +120,7 @@ input[type="file"] {
 	padding : initial;
 	line-height : initial;
 	border : initial;
-	background-color : transparent;
-	background-color : initial;
+	background-color: $color-alt;
 	@include box-shadow(none);
 }
 
@@ -341,7 +339,7 @@ input:required:focus:valid {
 
 // .form--contacto
 // @media all and (min-width: $bp3) {
-	
+
 // 	.form-contacto {
 // 		display: flex;
 // 		flex-flow: column nowrap;
@@ -373,5 +371,3 @@ input:required:focus:valid {
 // 	}
 
 // }
-
-

@@ -1,92 +1,95 @@
 <!-- Bloques -->
 <?php if (have_rows('layout_content')): ?>
 <?php while (have_rows('layout_content')): the_row();?>
-				<!-- Contenido principal -->
-				<?php if (get_row_layout() == '1_block'): ?>
-				<!-- repeater -->
-				<?php if (have_rows('block')): ?>
-				<?php while (have_rows('block')): the_row();?>
-								<hgroup class="main-post__header">
-								<?php if (!is_page('catalogo')): ?>
-								<!-- Page Header -->
-								<?php get_template_part('templates/page', 'header');?>
-								<?php endif?>
-								<?php if (get_sub_field("header")): ?>
-								<h3 class="main-post__subheader"><?php the_sub_field("header");?></h3>
-								<?php endif?>
-								</hgroup>
-								<!-- main post content -->
-								<div class="main-post__content">
-									<?php if (get_sub_field("content")): ?>
-									<article class="main-post__content__entry" role="article">
-										<!-- Header image -->
-										<?php if (get_sub_field("header_image")) {?>
-									<figure><img src="<?php the_sub_field("header_image");?>" alt=""></figure>
-									<?php } else {?>
-									<?php }
-									?>
-									<?php if (get_post_type() == 'post'): ?>
-									<small><?php echo get_the_time('j F Y');?></small>
-									<?php endif?>
+	<!-- Contenido principal -->
+	<?php if (get_row_layout() == '1_block'): ?>
+		<!-- repeater -->
+		<?php if (have_rows('block')): ?>
+			<?php while (have_rows('block')): the_row();?>
 
-									<!-- the post content -->
-									<?php the_sub_field("content");?>
+				<hgroup class="main-post__header">
+					<?php if (!is_page('catalogo')): ?>
+						<!-- Page Header -->
+						<?php get_template_part('templates/page', 'header');?>
+					<?php endif?>
 
-									<?php
-										$var = do_shortcode('[fbcomments]');
-										echo $var;
-									?>
-									<!-- Lista -->
-									<?php if (have_rows('lista_simple')): ?>
-									<?php while (have_rows('lista_simple')): the_row();?>
-													<ul class="list list--unordered">
-														<?php if (get_sub_field("title")): ?>
-														<li><?php the_sub_field('title');?></li>
+					<?php if (get_sub_field("header")): ?>
+						<h3 class="main-post__subheader"><?php the_sub_field("header");?></h3>
+					<?php endif?>
+				</hgroup>
+
+				<!-- main post content -->
+				<div class="main-post__content">
+					<?php if (get_sub_field("content")): ?>
+						<article class="main-post__content__entry" role="article">
+							<!-- Header image -->
+							<?php if (get_sub_field("header_image")) {?>
+								<figure><img src="<?php the_sub_field("header_image");?>" alt=""></figure>
+							<?php } else {?>
+							<?php } ?>
+
+							<?php if (get_post_type() == 'post'): ?>
+								<small><?php echo get_the_time('j F Y');?></small>
+							<?php endif?>
+
+							<!-- the post content -->
+							<?php the_sub_field("content");?>
+
+							<?php
+								$var = do_shortcode('[fbcomments]');
+								echo $var;
+							?>
+							<!-- Lista -->
+							<?php if (have_rows('lista_simple')): ?>
+								<?php while (have_rows('lista_simple')): the_row();?>
+									<ul class="list list--unordered">
+										<?php if (get_sub_field("title")): ?>
+											<li><?php the_sub_field('title');?></li>
+										<?php endif?>
+										<?php while (has_sub_field('lista_simple_elemento')): ?>
+										<?php
+										$txt = get_sub_field('txt');
+										$link = get_sub_field('link');
+										?>
+										<li class="list__item">
+											<?php if ($link): ?>
+												<a href="<?php the_sub_field('link');?>">
+													<?php endif;?>
+														<?php if ($txt): ?>
+														<?php the_sub_field('txt');?>
+														<?php if (get_sub_field("external_url")): ?>
+														<?php the_sub_field('external_url');?>
 														<?php endif?>
-														<?php while (has_sub_field('lista_simple_elemento')): ?>
-														<?php
-														$txt = get_sub_field('txt');
-														$link = get_sub_field('link');
-														?>
-															<li class="list__item">
-																<?php if ($link): ?>
-																	<a href="<?php the_sub_field('link');?>">
-																				<?php endif;?>
-																				<?php if ($txt): ?>
-																				<?php the_sub_field('txt');?>
-																				<?php if (get_sub_field("external_url")): ?>
-																				<?php the_sub_field('external_url');?>
-																				<?php endif?>
-																				<?php endif;?>
-																				<?php if ($link): ?>
-																			</a>
-																		<?php endif;?>
-																</li>
-																<?php endwhile;?>
-													</ul>
-													<!-- /lista -->
-													<?php endwhile;?>
+														<?php endif;?>
+														<?php if ($link): ?>
+													</a>
+											<?php endif;?>
+										</li>
+											<?php endwhile;?>
+									</ul>
+									<!-- /lista -->
+									<?php endwhile;?>
 									<?php endif;?>
+									
 									<?php if (have_rows('upload_files')): ?>
 									<!-- Upload files -->
 									<ul>
 										<?php while (have_rows('upload_files')): the_row();?>
 														<?php
-			$title = get_sub_field('title');
-			$file = get_sub_field('file');
-			?>
+														$title = get_sub_field('title');
+														$file = get_sub_field('file');
+														?>
 														<li>
 															<?php if ($file): ?>
-															<a href="<?php echo $file['url'];?>" alt="<?php echo $file['url'];?>" target="_blank">
-																<?php endif;?>
-																<?php if ($title): ?>
-																<span class="icon-file-pdf" aria-labelledby="icono"></span> <?php echo $title;?>
-																<?php endif;?>
-																<?php if ($file): ?>
-															</a>
-															<?php endif;?>
-														</li>
-														<?php endwhile;?>
+																<a href="<?php echo $file['url'];?>" alt="<?php echo $file['url'];?>" target="_blank">
+						<?php endif;?>
+						<?php if ($title): ?>
+							<span class="icon-file-pdf" aria-labelledby="icono"></span> <?php echo $title;?>
+									<?php endif;?>
+									<?php if ($file): ?></a>
+									<?php endif;?>
+									</li>
+									<?php endwhile;?>
 									</ul>
 									<!-- /Upload files -->
 									<?php endif;?>

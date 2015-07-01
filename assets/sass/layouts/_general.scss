@@ -28,8 +28,8 @@ body {
         position: absolute;
         margin: 0;
     }
-    
-        
+
+
 }
 
 // Custom brand colors and images
@@ -215,7 +215,7 @@ img[src$=".svg"] {
 
 ::selection {
     background-color: $color-base;
-    color: $black;
+    color: $white;
     text-shadow: none;
 }
 

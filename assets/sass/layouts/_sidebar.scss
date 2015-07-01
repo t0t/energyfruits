@@ -2,10 +2,8 @@
     border-radius: $radius * 5;
     padding: $gutterwidth;
     background-color: $black-alpha-fuerte;
-    // @include font-size(24);
 
     @media all and (min-width: 900px) {
-        // padding: $gutterwidth;
         position: relative;
         width: 25%;
     }
@@ -22,9 +20,6 @@
             color: $white;
         }
     }
-    // background-color: $white;
-    // background-color: darken($color-alt, 10%);
-    // background-color: lighten($color-base, 55%);
 
     h3, h2, h4 {
         color: $black;
@@ -40,4 +35,7 @@
         }
         figcaption {}
     }
+}
+.sidebar--inferior {
+  padding-top: $gutterwidth * 2;
 }
