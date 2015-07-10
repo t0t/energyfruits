@@ -31,6 +31,7 @@ Main navbar
         a {
 
             background-color: $color-base;
+            background-color: red;
 
         }
 
@@ -43,7 +44,7 @@ Main navbar
 .nav-main {
     position: relative;
     @include transition(.4s);
-    
+
     label {
 
         margin-bottom: 0;
@@ -89,14 +90,14 @@ Main navbar
         padding: 0;
         @include transition(.4s);
         @include translateY(0);
-        
-   
+
+
     }
 
     > ul {
-        
+
         @include translateY(-800px);
-        
+
             display: none;
 
     }
@@ -174,14 +175,14 @@ Main navbar
         }
 
         @media screen and (min-width: $bp3) {
-        
+
             width: 435px;
             padding-bottom: 20px;
 
         }
 
         @media screen and (min-width: $bp1) {
-        
+
             width: 550px;
 
         }
@@ -189,29 +190,28 @@ Main navbar
     }
 
     li {
-
         width: 33.33%;
         display: table-cell;
         @extend %text-center;
         color: $color-alt;
         letter-spacing: 0;
-
         @media all and (min-width: $bp1) {
-
             @include font-size(25);
-
         }
+    }
+
+    .current-menu-item {
+      a {
+        color: $color-alt;
+      }
     }
 
     a {
-        // font-family: $basefont;
         color: $color-base;
-
         &:hover {
-                color: $color-alt;
+          color: $color-alt;
         }
     }
-
 }
 
 
@@ -262,7 +262,7 @@ Main navbar
     .nav-header__item, li {
 
         display: inline-block;
-        @extend %text-center; 
+        @extend %text-center;
         vertical-align: bottom;
         @include margin-bottom($gutterwidth/10);
         @extend %uppercase;
@@ -273,7 +273,7 @@ Main navbar
             color: $white;
         }
     }
-} 
+}
 
 // Navegacion
 .nav--posts {
@@ -286,7 +286,7 @@ Main navbar
         display: table;
         @extend %no-padding;
         @extend %no-margin;
-        // @include padding($gutterwidth); 
+        // @include padding($gutterwidth);
 
         li {
 

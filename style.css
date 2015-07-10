@@ -420,6 +420,8 @@ article, aside, figure, footer, header, hgroup, nav, section { display: block; }
 
 .main-footer__brand__name { font-family: "Averia Serif Libre", cursive; text-align: center; margin-bottom: 0; font-size: 1.2rem; letter-spacing: 0; font-style: italic; color: white; }
 
+.main-footer__adicional a { margin: 15px; display: inline-block; }
+.main-footer__adicional i { margin-right: 10px; }
 @media all and (min-width: 600px) { .main-footer__adicional { margin-left: auto; margin-right: auto; max-width: 300px; width: 100%; } }
 
 .main-footer__searchform label input { display: inline; }
@@ -1340,7 +1342,7 @@ Main navbar
 .nav-barra a { -webkit-transition: all 0.4s; transition: all 0.4s; border-radius: 20px; padding: 15px 20px; background-color: rgba(0, 0, 0, 0.1); }
 .nav-barra a:hover { background-color: rgba(0, 0, 0, 0.5); }
 .nav-barra ul { padding-left: 0; }
-.nav-barra .current-menu-item a { background-color: #317549; }
+.nav-barra .current-menu-item a { background-color: #317549; background-color: red; }
 
 .nav-main { position: relative; -webkit-transition: all 0.4s; transition: all 0.4s; }
 .nav-main label { margin-bottom: 0; }
@@ -1362,6 +1364,7 @@ Main navbar
 @media screen and (min-width: 1430px) { .nav-secondary ul { width: 550px; } }
 .nav-secondary li { width: 33.33%; display: table-cell; color: #f0730b; letter-spacing: 0; }
 @media all and (min-width: 1430px) { .nav-secondary li { font-size: 25px; font-size: 1.25rem; } }
+.nav-secondary .current-menu-item a { color: #f0730b; }
 .nav-secondary a { color: #317549; }
 .nav-secondary a:hover { color: #f0730b; }
 

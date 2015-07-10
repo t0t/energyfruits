@@ -70,7 +70,7 @@
 
     aside {
         // margin-top: $gutterwidth;
-   
+
     }
 
     a, a:visited {
@@ -113,13 +113,16 @@
 }
 
 .main-footer__adicional {
-    @extend %text-center;
-
-    @media all and (min-width: $bp3) {
-        // @include order(1);
-        @include max-width(300px);
-        // background-color: pink;
-    }
+  @extend %text-center;
+  a {
+    margin: 15px;
+    display: inline-block;
+  }
+  i {
+    margin-right: 10px;
+  }
+  @media all and (min-width: $bp3) {
+      @include max-width(300px); }
 }
 
 .main-footer__searchform {
