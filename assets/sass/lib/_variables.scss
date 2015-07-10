@@ -50,33 +50,15 @@ $baseheadingfontweight: 400;
 $altlineheight : 1.35em;
 // $icons	: icomoon;
 
-
 /*------------------------------------*\
     $TAMAÑOS
 \*------------------------------------*/
 $basefontsize 		: 20 !default;
 $baseletterspacing 	: 0;
 
-
 /*------------------------------------*\
     $COLORS
 \*------------------------------------*/
-// Archivo de colores geniales:
-// ROJOS
-// rgb(225,86,89);
-// VERDES
-// rgb(119,199,132);
-// rgb(119,220,203);
-// AZULES
-// rgb(119,199,203);
-// NEUTROS
-// rgb(248,237,222);
-// rgb(197,152,128);
-// rgb(226,221,224);
-//
-/**
- * Base colors
- */
 $color-base			: rgb(49,117,73); // color principal
 $color-alt			: rgb(240,115,11); //azul
 $color-base-invert 	: complement($color-alt);
@@ -121,19 +103,17 @@ $brand_names: graviola goji cacaocriollo chlorella chia amaranto spiroulina camu
 // Brand Colors
 $brand_colors: $color_graviola $color_goji $color_cacaocriollo $color_chlorella $color_chia $color_amaranto $color_spiroulina $color_camucamu $color_canamo $color_maca $color_lucuma $color_stevia $color_quinoa $color_alfalfa $color_trigoverde $color_algarroba $color_cardomariano $color_linodorado $color_fresa $color_coco $color_gymtonic $color_delifiber $color_brainshake $color_andeanprotein $color_macuchino $color_bodtox $color_royalbreakfast $color_camucao;
 
-
 /**
  * Transparencias
  */
-
-$black 				: rgb(0,0,0);
-$black-alpha		: transparentize($black, .3);
+$black 				      : rgb(0,0,0);
+$black-alpha		    : transparentize($black, .3);
 $black-alpha-suave 	: transparentize($black, .1);
 $black-alpha-medio	: transparentize($black, .5);
 $black-alpha-fuerte	: transparentize($black, .9);
 
-$white				: rgb(255,255,255);
-$white-alpha 		: rgba(255,255,255,0.3);
+$white				      : rgb(255,255,255);
+$white-alpha 		    : rgba(255,255,255,0.3);
 $white-alpha-suave 	: rgba(255,255,255,0.1);
 $white-alpha-medio	: rgba(255,255,255,0.5);
 $white-alpha-fuerte	: rgba(255,255,255,0.8);

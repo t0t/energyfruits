@@ -152,7 +152,6 @@ td, th { padding: 0; }
 \*------------------------------------*/
 /*------------------------------------*\ $COLORS
 \*------------------------------------*/
-/** Base colors */
 /** Transparencias */
 /** Escala de grises */
 /*------------------------------------*\ $PLACEHOLDERS
@@ -443,7 +442,6 @@ html { font-size: 100%; }
 @media all and (min-width: 600px) { html { font-size: 125%; } }
 
 body { position: relative; font-family: "Averia Serif Libre", cursive; font-weight: 400; color: white; letter-spacing: 0; background-color: #317549; background-image: url(assets/img/bg.svg); background-repeat: repeat; background-position: top center; background-attachment: fixed; font-size: 1rem; }
-body > select { width: 20%; top: 120px; left: 10px; position: absolute; margin: 0; }
 
 .cpt-graviola { color: gray; }
 .cpt-graviola h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
@@ -1493,9 +1491,11 @@ input[type="file"] { width: auto; padding: initial; line-height: initial; border
 
 input[type="button"], input[type="reset"], input[type="submit"] { width: auto; height: auto; cursor: pointer; *overflow: visible; }
 
-select, input[type="file"] { height: 35px; *margin-top: 4px; line-height: 1; margin-left: auto; margin-right: auto; max-width: 190px; width: 100%; min-width: 160px; }
+input[type="file"] { height: 35px; *margin-top: 4px; line-height: 1; margin-left: auto; margin-right: auto; max-width: 190px; width: 100%; min-width: 160px; }
 
-select { background-color: rgba(0, 0, 0, 0.1); }
+select { width: 130px; position: absolute; top: 10px; left: 10px; font-size: 16px; font-size: 0.8rem; font-weight: normal; color: rgba(0, 0, 0, 0.5); z-index: 2; }
+@media all and (min-width: 600px) { select { width: 160px; } }
+@media all and (min-width: 930px) { select { top: 125px; left: 10px; color: rgba(255, 255, 255, 0.5); background-color: rgba(0, 0, 0, 0.1); } }
 
 select[multiple], select[size] { height: auto; }
 

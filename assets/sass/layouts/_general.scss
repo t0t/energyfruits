@@ -8,28 +8,18 @@ html {
 }
 
 body {
-    position: relative;
-    font-family: $basefont;
-    font-weight: 400;
-    color: $textcolor;
-    letter-spacing: $baseletterspacing;
-    // @include background-image(bg,cover,no-repeat,center top, svg);
-    background-color: $background;
-    background-image: url(#{$image-path}bg.svg);
-    background-repeat: repeat;
-    background-position: top center;
-    background-attachment: fixed;
-    font-size: 1rem;
-
-    > select {
-        width: 20%;
-        top: 120px;
-        left: 10px;
-        position: absolute;
-        margin: 0;
-    }
-
-
+  position: relative;
+  font-family: $basefont;
+  font-weight: 400;
+  color: $textcolor;
+  letter-spacing: $baseletterspacing;
+  // @include background-image(bg,cover,no-repeat,center top, svg);
+  background-color: $background;
+  background-image: url(#{$image-path}bg.svg);
+  background-repeat: repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  font-size: 1rem;
 }
 
 // Custom brand colors and images

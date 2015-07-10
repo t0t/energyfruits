@@ -133,7 +133,6 @@ input[type="submit"] {
 	*overflow : visible;
 }
 
-select,
 input[type="file"] {
 	height : 35px;
 	*margin-top : 4px;
@@ -142,14 +141,31 @@ input[type="file"] {
 	min-width: 160px;
 }
 
+// Selector Idioma
 select {
-	background-color : $inputbackground;
-	// @include font-size(13);
+	width: 130px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	@include font-size(16);
+	font-weight: normal;
+	color: $black-alpha-medio;
+	z-index: 2;
+
+	@media all and (min-width:600px) {
+		width: 160px;
+	}
+	@media all and (min-width:930px) {
+		top: 125px;
+		left: 10px;
+		color: $white-alpha-medio;
+		background-color: $inputbackground;
+	}
 }
 
 select[multiple],
 select[size] {
-	height : auto;
+	height: auto;
 }
 
 textarea {
@@ -272,21 +288,10 @@ input:-moz-placeholder {
 	margin-right : 3px;
 }
 
-	.form-inline__group {
-
-		@media all and (min-width:$bp3) {
-			// background-color: red;
-			// display: flex;
-			// flex-flow: row wrap;
-
-			// input { flex: 1; }
-			// label { flex: 0.5; }
-		}
-	}
+.form-inline__group {}
 
 
 // .form-search
-
 .form-search input,
 .form-search textarea,
 .form-search select {
