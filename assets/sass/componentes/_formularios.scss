@@ -56,9 +56,8 @@ textarea {
 }
 
 label {
-	display : block;
-	margin-bottom : $baseline / 8;
-	// font-weight : bold;
+	display: block;
+	margin-bottom: $baseline / 8;
 	color : $textcolor;
 	cursor : pointer;
 
@@ -143,6 +142,10 @@ input[type="file"] {
 
 // Selector Idioma
 select {
+	.section-archivo & {
+		right: 10px;
+		left: auto;
+	}
 	width: 130px;
 	position: absolute;
 	top: 10px;

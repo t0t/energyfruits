@@ -21,6 +21,7 @@ $loop = new WP_Query(array(
 	'category_name' => 'noticias'));
 ?>
     <div class="slider__slides slider">
+
         <!-- Custom Loop -->
         <?php while ($loop->have_posts()): $loop->the_post();?>
 		        <div class="post">
