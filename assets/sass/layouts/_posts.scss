@@ -26,6 +26,14 @@
 }
 
 .main-post__content {
+
+    background-color: $white;
+    padding-top: $gutterwidth;
+
+    h3 {
+      color: $color-base;
+    }
+
     section {
         margin-bottom: $gutterwidth;
     }
@@ -37,12 +45,11 @@
         // width: calc(75% - #{$gutterwidth});
     }
 
-    @media all and (min-width: $bp2) {
-        // width: calc(55% - #{$gutterwidth});
-    }
+    @media all and (min-width: $bp2) {}
 }
 
 .main-post__content__entry {
+
     @extend %padding-horizontal;
     position: relative;
 
@@ -64,13 +71,17 @@
     li {
         // @include font-size(23);
         // line-height: 1;
-   
+
     }
 
     a {
-        color: $white-alpha-medio;
+        color: $black-alpha-medio;
         border-bottom: 2px dotted $color-alt;
         padding-bottom: 3px;
+
+        &:hover {
+          color: $color-alt;
+        }
     }
 
     @media all and (min-width: $bp3) {
