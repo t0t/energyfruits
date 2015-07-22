@@ -10,12 +10,12 @@
     @include padding($gutterwidth);
 
     @media only screen and (min-width: $bp3) {
-        @include font-size(26);
+        @include font-size(20);
         @include max-width(800px);
     }
 
     @media only screen and (min-width: $bp2) {
-        @include font-size(36);
+        @include font-size(26);
         @include max-width(950px);
     }
 
@@ -52,6 +52,12 @@
 
     @extend %padding-horizontal;
     position: relative;
+
+    h3 {
+      color: $color-alt;
+      text-align: left;
+      margin-bottom: 8px;
+    }
 
     small {
         display: inline-block;
