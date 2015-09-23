@@ -172,29 +172,30 @@
 // WELL ====================================================
 
 .well {
-    @include flexbox;
-    @include justify-content(center);
-    @include align-items(center);
-    @include flex-direction(column);
-    @include max-width($bp2);
-    border-radius: $radius;
-    @extend %text-center;
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
+  @include flex-direction(column);
+  @include max-width($bp2);
+  border-radius: $radius;
+  @extend %text-center;
 
-    h1 {
+  h1 {
+    letter-spacing: -1px;
 
-        letter-spacing: -1px;
-        @media screen and (min-width: $bp3) {
-            font-size: 5rem;
-            letter-spacing: -3px;
-        }
+    @media screen and (min-width: $bp3) {
+      font-size: 4rem;
+      letter-spacing: -3px;
     }
-    p {
-        @include max-width($bp3);
-    }
+  }
 
-    p:last-child {
-        margin-bottom: 0;
-    }
+  p {
+    @include max-width($bp3);
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .well--large {

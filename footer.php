@@ -51,9 +51,7 @@
     </aside>
 
 </div>
-<div class="pdfViewer">
-  <a href="https://www.yumpu.com/en/document/fullscreen/53899858/catalogo-sf-esppdf" target="_blank">Echa un vistazo a nuestro catálogo 2015!</a>
-</div>
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

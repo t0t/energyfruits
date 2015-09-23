@@ -1,0 +1,21 @@
+.catalog {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+  .catalog-figure {
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    @include rotate(-3deg);
+
+    figcaption {
+      color: $white;
+      @include font-size(14);
+    }
+
+    img {
+      width: 100px;
+    }
+
+  }

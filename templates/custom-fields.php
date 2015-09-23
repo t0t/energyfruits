@@ -321,34 +321,46 @@
 		<?php else: ?>
 		<?php endif;?>
 		<!-- /bloques -->
+
 		<!-- //////////// Componentes ////////////////////////////////-->
+
 		<?php if (get_field('flexible_content')): ?>
 		<?php while (has_sub_field("flexible_content")): ?>
+
 		<?php if (get_row_layout() == "quote"): // Frases ?>
-		<blockquote cite="<?php the_sub_field("autor");?>">
-		<q>"<?php the_sub_field("quote");?>" </q><span><?php the_sub_field("autor");?></span>
-		</blockquote>
+
+			<blockquote cite="<?php the_sub_field("autor");?>">
+				<q>"<?php the_sub_field("quote");?>"</q>
+				<span><?php the_sub_field("autor");?></span>
+			</blockquote>
+
 		<?php elseif (get_row_layout() == "well-img"): //Wellcome panel ?>
-		<div style="background-image: url('<?php the_sub_field("bg_image");?>'), radial-gradient(ellipse at center, #23904D 0%, #317549 99%);
-		background-attachment: fixed;
-		" class="img--bg-big well well--img">
-		<h1 class="efecto--intro"><?php the_sub_field("title");?></h1>
-		<h3><?php the_sub_field("subtitle");?></h3>
-		<p><?php the_sub_field("description");?></p>
-		<a class="btn btn--image" href="<?php the_sub_field("call_to_action");?>">Lo último del blog</a>
-		</div>
+
+			<div style="background-image: url('<?php the_sub_field("bg_image");?>'), radial-gradient(ellipse at center, #23904D 0%, #317549 99%);
+			background-attachment: fixed;" class="img--bg-big well well--img">
+
+				<h1 class="efecto--intro"><?php the_sub_field("title");?></h1>
+				<h3><?php the_sub_field("subtitle");?></h3>
+				<p><?php the_sub_field("description");?></p>
+				<a class="btn btn--image" href="<?php the_sub_field("call_to_action");?>">Lo último del blog</a>
+
+			</div>
+
 		<?php elseif (get_row_layout() == "well-anim"): //Wellcome panel ?>
+
 		<div class="well well--anim">
-		<svg class="anim-intro" viewBox="0 -14 151 151" preserveAspectRatio="xMidYMid meet">
-		<title>Logo t0theme anim</title>
-		<desc>Logotipo de tema Wordpress y Styleguide de Sergio Forés</desc>
-		<path class="efecto--stroke-dashoffset" d="M33.8175546,9.19339982 C33.8175546,9.19339982 46.2905546,0.973399822 69.8175546,2.10739982 C93.3455546,3.24139982 133.880555,7.49339982 144.652555,31.5873998 C155.423555,55.6823998 142.152555,90.3353998 115.738555,107.2724 C89.3255546,124.2104 54.5105546,125.4144 31.2665546,117.4774 C8.02255465,109.5404 -2.46544535,85.8133998 3.77055465,62.1013998 C10.0065546,38.3903998 12.5575546,22.8003998 33.8175546,9.19339982 L33.8175546,9.19339982 Z M91.0105546,55.4653998 L104.750555,55.4653998 L104.750555,39.1743998 L91.0105546,39.1743998 L91.0105546,55.4653998 Z M68.9675546,84.0283998 C68.9675546,84.0283998 69.5345546,89.1313998 73.7865546,92.8163998 C78.0385546,96.5013998 75.3175546,102.7374 71.2915546,101.8864 C67.2665546,101.0364 65.5655546,97.8743998 66.4155546,93.2193998 C67.2665546,88.5643998 68.9675546,84.0283998 68.9675546,84.0283998 L68.9675546,84.0283998 Z M32.9675546,86.5793998 C32.9675546,86.5793998 29.2825546,72.4063998 37.7865546,65.8863998 C46.2905546,59.3673998 55.3605546,60.2173998 60.7465546,54.2643998 C66.1325546,48.3123998 68.6835546,39.5243998 68.6835546,39.5243998 M27.5155546,81.1273998 C27.5155546,81.1273998 23.8305546,66.9543998 32.3345546,60.4343998 C33.9377315,59.2054358 35.561024,58.2383654 37.1759571,57.4382363 C44.1273844,53.9941064 50.9239252,53.6431383 55.2945546,48.8123998 C60.6805546,42.8593998 63.2315546,34.0723998 63.2315546,34.0723998" />
-		</svg>
-		<h1 class="altheader efecto--intro"><?php the_sub_field("title");?></h1>
-		<h2><?php the_sub_field("description");?></h2>
-		<button href="<?php the_sub_field("call_to_action");?>" class="btn btn--well">Work in progress</button>
+			<svg class="anim-intro" viewBox="0 -14 151 151" preserveAspectRatio="xMidYMid meet">
+				<title>Logo t0theme anim</title>
+				<desc>Logotipo de tema Wordpress y Styleguide de Sergio Forés</desc>
+				<path class="efecto--stroke-dashoffset" d="M33.8175546,9.19339982 C33.8175546,9.19339982 46.2905546,0.973399822 69.8175546,2.10739982 C93.3455546,3.24139982 133.880555,7.49339982 144.652555,31.5873998 C155.423555,55.6823998 142.152555,90.3353998 115.738555,107.2724 C89.3255546,124.2104 54.5105546,125.4144 31.2665546,117.4774 C8.02255465,109.5404 -2.46544535,85.8133998 3.77055465,62.1013998 C10.0065546,38.3903998 12.5575546,22.8003998 33.8175546,9.19339982 L33.8175546,9.19339982 Z M91.0105546,55.4653998 L104.750555,55.4653998 L104.750555,39.1743998 L91.0105546,39.1743998 L91.0105546,55.4653998 Z M68.9675546,84.0283998 C68.9675546,84.0283998 69.5345546,89.1313998 73.7865546,92.8163998 C78.0385546,96.5013998 75.3175546,102.7374 71.2915546,101.8864 C67.2665546,101.0364 65.5655546,97.8743998 66.4155546,93.2193998 C67.2665546,88.5643998 68.9675546,84.0283998 68.9675546,84.0283998 L68.9675546,84.0283998 Z M32.9675546,86.5793998 C32.9675546,86.5793998 29.2825546,72.4063998 37.7865546,65.8863998 C46.2905546,59.3673998 55.3605546,60.2173998 60.7465546,54.2643998 C66.1325546,48.3123998 68.6835546,39.5243998 68.6835546,39.5243998 M27.5155546,81.1273998 C27.5155546,81.1273998 23.8305546,66.9543998 32.3345546,60.4343998 C33.9377315,59.2054358 35.561024,58.2383654 37.1759571,57.4382363 C44.1273844,53.9941064 50.9239252,53.6431383 55.2945546,48.8123998 C60.6805546,42.8593998 63.2315546,34.0723998 63.2315546,34.0723998" />
+			</svg>
+			<h1 class="altheader efecto--intro"><?php the_sub_field("title");?></h1>
+			<h2><?php the_sub_field("description");?></h2>
+			<button href="<?php the_sub_field("call_to_action");?>" class="btn btn--well">Work in progress</button>
 		</div>
+
 		<?php elseif (get_row_layout() == "gallery"): // Layout Gallery ?>
+
 		<h2 class="galeria-fotos__title">Galeria de fotos</h2>
 		<?php if (get_sub_field("description")): ?>
 		<h3 class="galeria-fotos__description">
@@ -421,18 +433,18 @@
 		));
 		?>
 		<section class="slider__wrap">
-		<h3 class="slider__title"><?php the_sub_field("title");?></h3>
-		<?php the_sub_field("description");?>
-		<div class="slider__slides slider">
-		<?php while ($loop->have_posts()): $loop->the_post();?>
-		<a href="<?php the_permalink();?>">
-		<figure>
-		<figcaption class="slider__caption"><?php the_title();?></figcaption>
-		</figure>
-		</a>
-		<?php endwhile;?>
-		<?php wp_reset_postdata();?>
-		</div>
+			<h3 class="slider__title"><?php the_sub_field("title");?></h3>
+			<?php the_sub_field("description");?>
+			<div class="slider__slides slider">
+			<?php while ($loop->have_posts()): $loop->the_post();?>
+				<a href="<?php the_permalink();?>">
+					<figure>
+						<figcaption class="slider__caption"><?php the_title();?></figcaption>
+					</figure>
+				</a>
+			<?php endwhile;?>
+			<?php wp_reset_postdata();?>
+			</div>
 		</section>
 		<?php elseif (get_row_layout() == "carusel3"): // Carusel enlaces externos ?>
 		<?php
@@ -447,33 +459,35 @@
 		<section>
 		<?php the_sub_field("title");?>
 		<?php the_sub_field("description");?>
-		<div class="slider__slides slider">
-		<?php while ($loop->have_posts()): $loop->the_post();?>
-		<article role="article">
-		<?if (has_post_thumbnail()) {?>
-		<a href="<?php the_permalink();?>">
-		<figure>
-		<?php the_post_thumbnail('thumbnail');?>
-		<figcaption class="slider__caption">
-		<span class="slider__title"><?php the_title();?></span>
-		</figcaption>
-		</figure>
-		</a>
-		<?} else {?>
-		<a href="<?php the_permalink();?>">
-		<figure class="slider__figure">
-		<img src="<?php echo get_template_directory_uri();?>/assets/img/logo.svg" alt="logo">
-		<figcaption class="slider__caption"><?php the_title();?></figcaption>
-		</figure>
-		</a>
-		<?}
-		?>
-		</article>
-		<?php endwhile;?>
-		<?php wp_reset_postdata();?>
-		</div>
+			<div class="slider__slides slider">
+			<?php while ($loop->have_posts()): $loop->the_post();?>
+				<article role="article">
+				<?if (has_post_thumbnail()) {?>
+					<a href="<?php the_permalink();?>">
+						<figure>
+						<?php the_post_thumbnail('thumbnail');?>
+							<figcaption class="slider__caption">
+								<span class="slider__title"><?php the_title();?></span>
+							</figcaption>
+						</figure>
+						</a>
+						<?} else {?>
+					<a href="<?php the_permalink();?>">
+						<figure class="slider__figure">
+							<img src="<?php echo get_template_directory_uri();?>/assets/img/logo.svg" alt="logo">
+							<figcaption class="slider__caption"><?php the_title();?></figcaption>
+						</figure>
+					</a>
+				<?}
+				?>
+				</article>
+			<?php endwhile;?>
+			<?php wp_reset_postdata();?>
+			</div>
 		</section>
+
 		<?php elseif (get_row_layout() == "list-group-ul"): // Grupo Listas Desordenadas ?>
+
 		<h2>Best Tools + Metodologies</h2>
 		<section class="list-group">
 		<?php
@@ -482,14 +496,14 @@
 		// loop through the rows of data
 		while (have_rows('lista')): the_row();
 		?>
-		<ul class="list list--unordered">
-		<li><?php the_sub_field('titulo');?></li>
-		<?php while (has_sub_field('item_repeater')): ?>
-		<li class="list__item">
-		<?php the_sub_field('item');?>
-		</li>
-		<?php endwhile;?>
-		</ul>
+			<ul class="list list--unordered">
+				<li><?php the_sub_field('titulo');?></li>
+				<?php while (has_sub_field('item_repeater')): ?>
+				<li class="list__item">
+				<?php the_sub_field('item');?>
+				</li>
+			<?php endwhile;?>
+			</ul>
 		<?
 		endwhile;
 		else:
@@ -507,25 +521,25 @@
 		?>
 		<div class="grid">
 		<?php while (has_sub_field('productos')): ?>
-		<div class="tienda__item">
+			<div class="tienda__item">
 		<?php if (get_sub_field("nom")): ?>
-		<h3><?php the_sub_field('nom');?></h3>
+			<h3><?php the_sub_field('nom');?></h3>
 		<?php endif?>
 		<?php if (get_sub_field("descripcio")): ?>
 		<?php $image = get_sub_field('imatge');
-		echo '<img src="' . $image['sizes']['medium'] . '" />';?>
+			echo '<img src="' . $image['sizes']['medium'] . '" />';?>
 		<?php endif?>
 		<?php if (get_sub_field("descripcio")): ?>
-		<p><?php the_sub_field('descripcio');?>€</p>
+			<p><?php the_sub_field('descripcio');?>€</p>
 		<?php endif?>
 		<?php if (get_sub_field("preu")): ?>
-		<p><?php the_sub_field('preu');?>€</p>
-		<small>+ 1&#8364; de gastos d&#8217;enviament</small>
+			<p><?php the_sub_field('preu');?>€</p>
+			<small>+ 1&#8364; de gastos d&#8217;enviament</small>
 		<?php endif?>
 		<?php if (get_sub_field("boto_paypal")): ?>
 		<?php the_sub_field('boto_paypal');?>
 		<?php endif?>
-		</div>
+			</div>
 		<?php endwhile;?>
 		</div>
 		<?
@@ -537,61 +551,63 @@
 		</section>
 		<?php elseif (get_row_layout() == "links_gallery"): // Galeria de enlaces ?>
 		<section class="galeria-links">
-		<div class="grid">
-		<?php
-		// check if the repeater field has rows of data
-		if (have_rows('lista')):
-		// loop through the rows of data
-		while (have_rows('lista')): the_row();
-		?>
-		<div class="galeria-links__item">
-		<?php the_sub_field('title');?>
-		<?php
-		$image = get_sub_field('img');
-		$url = get_sub_field('url');
-		echo '<a href="' . $url . '" target="_new"><img src="' . $image['sizes']['thumbnail'] . '" /></a>';
-		?>
-		<p><?php the_sub_field('description');?></p>
-		</div>
-		<?
-		endwhile;
-		else:
-		// no rows found
-		endif;
-		?>
-		</div>
+			<div class="grid">
+			<?php
+			// check if the repeater field has rows of data
+			if (have_rows('lista')):
+			// loop through the rows of data
+			while (have_rows('lista')): the_row();
+			?>
+				<div class="galeria-links__item">
+				<?php the_sub_field('title');?>
+				<?php
+				$image = get_sub_field('img');
+				$url = get_sub_field('url');
+				echo '<a href="' . $url . '" target="_new"><img src="' . $image['sizes']['thumbnail'] . '" /></a>';
+				?>
+					<p><?php the_sub_field('description');?></p>
+				</div>
+			<?
+			endwhile;
+			else:
+			// no rows found
+			endif;
+			?>
+			</div>
 		</section>
+
 		<?php elseif (get_row_layout() == "content_summary"): // Sumario de contenido ?>
+
 		<section class="content-summary">
-		<div class="grid">
-		<?php
-		// check if the repeater field has rows of data
-		if (have_rows('lista')):
-		// loop through the rows of data
-		while (have_rows('lista')): the_row();
-		?>
-		<?php while (has_sub_field('apartado')): ?>
-		<div class="content-summary__item">
-		<h3><?php the_sub_field('title');?></h3>
-		<?php if (get_sub_field("asocia_imagen")) {?>
-		<div class="content-summary__img <?php the_sub_field('asocia_imagen');?>"></div>
-		<?php } else {?>
-		<?php }
-		?>
-		<p><?php the_sub_field('text');?></p>
-		<a class="btn" href="<?php the_sub_field('btn');?>"><?php the_sub_field('btn-title');?> &rarr;</a>
-		</div>
-		<?php endwhile;?>
-		<?
-		endwhile;
-		else:
-		// no rows found
-		endif;
-		?>
-		</div>
+			<div class="grid">
+			<?php
+			// check if the repeater field has rows of data
+			if (have_rows('lista')):
+			// loop through the rows of data
+			while (have_rows('lista')): the_row();
+			?>
+			<?php while (has_sub_field('apartado')): ?>
+				<div class="content-summary__item">
+				<h3><?php the_sub_field('title');?></h3>
+				<?php if (get_sub_field("asocia_imagen")) {?>
+				<div class="content-summary__img <?php the_sub_field('asocia_imagen');?>"></div>
+				<?php } else {?>
+				<?php }
+				?>
+				<p><?php the_sub_field('text');?></p>
+				<a class="btn" href="<?php the_sub_field('btn');?>"><?php the_sub_field('btn-title');?> &rarr;</a>
+				</div>
+			<?php endwhile;?>
+			<?
+			endwhile;
+			else:
+			// no rows found
+			endif;
+			?>
+			</div>
 		</section>
 		<?php elseif (get_row_layout() == "sub_heading"): // Layout lista ?>
-		<h3><?php the_sub_field('subheading');?> </h3>
+			<h3><?php the_sub_field('subheading');?> </h3>
 		<?php endif;?>
 	<?php endwhile;?>
 <?php endif;?>

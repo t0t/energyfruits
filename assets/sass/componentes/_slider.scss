@@ -22,7 +22,7 @@ $slick-opacity-not-active: 0.25 !default;
     ul {
         margin: 0;
     }
-    
+
     @extend %text-center;
     img { width: inherit }
 
@@ -36,7 +36,7 @@ $slick-opacity-not-active: 0.25 !default;
 .slider__wrap {
     position: relative;
     background-color: $white;
-    padding-bottom: $gutterwidth;
+    padding-bottom: 5px;
     width: 100%;
     button {
         // opacity: 0;
@@ -285,14 +285,14 @@ $slick-opacity-not-active: 0.25 !default;
     display: none;
     height: 60px;
     width: 60px;
-    cursor: pointer;    
+    cursor: pointer;
     top: 38%;
     margin-top: -10px;
     padding: 0;
     border: none;
     outline: none;
     background: transparent;
-    
+
     &:hover, &:focus {
         outline: none;
         background: transparent;
@@ -359,7 +359,7 @@ $slick-opacity-not-active: 0.25 !default;
         display: inline-block;
         width: 25px;
         cursor: pointer;
-        
+
         &.slick-active {
              button {
                 color: $color-alt;
@@ -378,7 +378,7 @@ $slick-opacity-not-active: 0.25 !default;
             color: transparent;
             padding: 5px;
             cursor: pointer;
-            
+
             &:hover, &:focus {
                 outline: none;
                 &:before {

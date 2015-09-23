@@ -3484,6 +3484,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/catalog-2015.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 173554,
+		"inputAbbreviatedPath": "\/assets\/img\/catalog-2015.png",
+		"outputAbbreviatedPath": "\/assets\/img\/catalog-2015.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/close.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3645,6 +3656,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/sass\/componentes\/_brand.scss",
 		"outputAbbreviatedPath": "\/assets\/sass\/css\/_brand.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/assets\/sass\/componentes\/_catalog.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/sass\/componentes\/_catalog.scss",
+		"outputAbbreviatedPath": "\/assets\/sass\/css\/_catalog.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

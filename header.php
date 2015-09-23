@@ -83,22 +83,34 @@
 
 </header>
 
+<!-- Traductor -->
 <?php echo do_shortcode('[gtranslate]'); ?>
 
-	<!-- menu out of canvas -->
+	<!-- Menu out of canvas -->
 	<nav class="nav-main" role="navigation">
 
-	<input type="checkbox" id="toggle-btn"/>
-	<label for="toggle-btn"></label>
-	<?php
-		$defaults = array(
-			'theme_location'  => 'fixed_menu',
-			'container'       => '',
-			'container_class' => '',
-			'menu_class'      => 'nav-main__overlay'
-		);
+		<input type="checkbox" id="toggle-btn"/>
+		<label for="toggle-btn"></label>
 
-		wp_nav_menu( $defaults );
-	?>
+		<?php
+			$defaults = array(
+				'theme_location'  => 'fixed_menu',
+				'container'       => '',
+				'container_class' => '',
+				'menu_class'      => 'nav-main__overlay'
+			);
+
+			wp_nav_menu( $defaults );
+		?>
 
 	</nav>
+
+<!-- // Link Catálogo -->
+<div class="catalog">
+	<a href="https://www.yumpu.com/en/document/fullscreen/53899858/catalogo-sf-esppdf" target="_blank">
+		<figure class="catalog-figure">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/catalog-2015.png" alt="Catálogo 2015">
+			<figcaption>Catálogo 2015!</figcaption>
+		</figure>
+	</a>
+</div>
