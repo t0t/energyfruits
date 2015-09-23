@@ -1,23 +1,12 @@
 
+<!-- Loop -->
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <!-- Page Header -->
-    <?php //get_template_part('templates/page', 'header'); ?>
-
-
-    <!-- Loop -->
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-
-    <!-- Cargame los Custom fields, ACF -->
-    <?php get_template_part('templates/custom-fields'); ?>
-    
-
-    <?php endwhile; ?>
-    <?php else: ?>
-    <?php endif; ?>    
+  <?php
+  /* Cargame los Custom fields, ACF */
+  get_template_part('templates/custom-fields'); ?>
 
 
-    <!-- Navegacion -->
-    <?php //previous_post_link(); ?>
-    <?php //next_post_link(); ?>
-
+  <?php endwhile; ?>
+  <?php else: ?>
+<?php endif; ?>
