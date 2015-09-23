@@ -656,7 +656,7 @@ a[href*="producto/camucamu"] figure:hover { background-position: 0 90px; backgro
 .cpt-canamo .main-post__content__entry a:hover { color: black; }
 .cpt-canamo .galeria-fotos__figure a { color: #00904d; }
 .cpt-canamo .galeria-fotos__figure a:hover { color: #005d32; }
-.cpt-canamo .galeria-fotos__figure img { background-color: #76ffbf; }
+.cpt-canamo .galeria-fotos__figure img { background-color: #77ffbf; }
 .cpt-canamo .galeria-fotos__figure img:hover { background-color: #00904d; }
 
 a[href*="producto/canamo"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_canamo.svg); background-color: #00aa5b; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #00904d; }
@@ -796,7 +796,7 @@ a[href*="producto/algarroba"] figure:hover { background-position: 0 90px; backgr
 .cpt-cardomariano .main-post__content { background-color: white; }
 .cpt-cardomariano .main-post__content__entry { padding-top: 3%; }
 .cpt-cardomariano .main-post__content__entry ul { background-image: url(assets/img/bg_cardomariano.svg); background-color: #b188b8; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
-.cpt-cardomariano .main-post__content__entry ul:hover { background-color: #b791bd; }
+.cpt-cardomariano .main-post__content__entry ul:hover { background-color: #b792bd; }
 .cpt-cardomariano .main-post__content__entry a:hover { color: #533558; }
 .cpt-cardomariano .galeria-fotos__figure a { color: #a678ae; }
 .cpt-cardomariano .galeria-fotos__figure a:hover { color: #8f5b98; }
@@ -881,11 +881,11 @@ a[href*="producto/gymtonic"] figure:hover { background-position: 0 90px; backgro
 
 .cpt-delifiber { color: gray; }
 .cpt-delifiber h1 { margin-top: 3%; font-size: 90px; font-size: 4.5rem; }
-.cpt-delifiber .main-post__header { background-image: url(assets/img/bg_delifiber.svg); background-color: #ffe509; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; transition: all 4s; }
+.cpt-delifiber .main-post__header { background-image: url(assets/img/bg_delifiber.svg); background-color: #ffe50a; background-position: center bottom; background-repeat: no-repeat; background-size: contain; -webkit-transition: all 4s; transition: all 4s; }
 .cpt-delifiber .main-post__header:hover { -webkit-transition: all 4s; transition: all 4s; background-position: center 100px; background-size: cover; }
 .cpt-delifiber .main-post__content { background-color: white; }
 .cpt-delifiber .main-post__content__entry { padding-top: 3%; }
-.cpt-delifiber .main-post__content__entry ul { background-image: url(assets/img/bg_delifiber.svg); background-color: #ffe509; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
+.cpt-delifiber .main-post__content__entry ul { background-image: url(assets/img/bg_delifiber.svg); background-color: #ffe50a; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
 .cpt-delifiber .main-post__content__entry ul:hover { background-color: #ffe719; }
 .cpt-delifiber .main-post__content__entry a:hover { color: #564d00; }
 .cpt-delifiber .galeria-fotos__figure a { color: #efd600; }
@@ -893,7 +893,7 @@ a[href*="producto/gymtonic"] figure:hover { background-position: 0 90px; backgro
 .cpt-delifiber .galeria-fotos__figure img { background-color: #fffbd6; }
 .cpt-delifiber .galeria-fotos__figure img:hover { background-color: #efd600; }
 
-a[href*="producto/delifiber"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_delifiber.svg); background-color: #ffe509; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #efd600; }
+a[href*="producto/delifiber"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_delifiber.svg); background-color: #ffe50a; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #efd600; }
 a[href*="producto/delifiber"] figure:hover { background-position: 0 90px; background-color: #cbb600; }
 @media screen and (min-width: 600px) { a[href*="producto/delifiber"] figure { width: 250px; height: 250px; } }
 
@@ -944,7 +944,7 @@ a[href*="producto/andeanprotein"] figure:hover { background-position: 0 90px; ba
 .cpt-macuchino .main-post__content__entry a:hover { color: #413218; }
 .cpt-macuchino .galeria-fotos__figure a { color: #b08742; }
 .cpt-macuchino .galeria-fotos__figure a:hover { color: #8b6b34; }
-.cpt-macuchino .galeria-fotos__figure img { background-color: #f4eee3; }
+.cpt-macuchino .galeria-fotos__figure img { background-color: #f5eee3; }
 .cpt-macuchino .galeria-fotos__figure img:hover { background-color: #b08742; }
 
 a[href*="producto/macuchino"] figure { -webkit-transition: all 0.3s; transition: all 0.3s; width: 200px; height: 200px; margin: 0 auto; text-align: center; background-image: url(assets/img/bg_macuchino.svg); background-color: #bd944f; background-position: 0 100px; background-repeat: no-repeat; background-size: contain; border: solid 10px #b08742; }
@@ -959,9 +959,9 @@ a[href*="producto/macuchino"] figure:hover { background-position: 0 90px; backgr
 .cpt-bodtox .main-post__content__entry { padding-top: 3%; }
 .cpt-bodtox .main-post__content__entry ul { background-image: url(assets/img/bg_bodtox.svg); background-color: #b1cc3b; background-position: 350px bottom; background-repeat: no-repeat; background-size: contain; }
 .cpt-bodtox .main-post__content__entry ul:hover { background-color: #b6cf47; }
-.cpt-bodtox .main-post__content__entry a:hover { color: #3a4311; }
+.cpt-bodtox .main-post__content__entry a:hover { color: #3a4412; }
 .cpt-bodtox .galeria-fotos__figure a { color: #a3bd31; }
-.cpt-bodtox .galeria-fotos__figure a:hover { color: #809526; }
+.cpt-bodtox .galeria-fotos__figure a:hover { color: #809527; }
 .cpt-bodtox .galeria-fotos__figure img { background-color: #f2f6dd; }
 .cpt-bodtox .galeria-fotos__figure img:hover { background-color: #a3bd31; }
 
@@ -1495,8 +1495,7 @@ Main navbar
 
 .well--small { padding: 10px; }
 
-.well--img { margin-left: auto; margin-right: auto; max-width: 1800px; width: 100%; min-height: 300px; }
-@media screen and (min-width: 600px) { .well--img { min-height: 500px; } }
+.well--img { margin-left: auto; margin-right: auto; max-width: 1800px; width: 100%; height: 300px; }
 .well--img p, .well--img h3 { color: white; }
 
 .well--anim { margin-left: auto; margin-right: auto; max-width: 100%; width: 100%; width: 100%; min-height: auto; border-radius: 0; }
