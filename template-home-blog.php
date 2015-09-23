@@ -10,7 +10,7 @@
 
   <?php
   /* Loop for posts */
-  get_template_part('templates/content', 'page-posts');
+  get_template_part('partials/content', 'page-posts');
   ?>
 
 </main>

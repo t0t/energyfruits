@@ -32,12 +32,6 @@
     <h1><?php the_title(); ?></h1>
   </header>
 
-<?php elseif ( is_single() && is_post_type('cpt') ) : ?>
-
-  <header class="efecto--intro">
-    <h1><?php the_title(); ?>XXXXX</h1>
-  </header>
-
 <?php elseif ( is_search() ) : ?>
 
   <header class="efecto--intro">

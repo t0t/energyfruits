@@ -12,7 +12,7 @@
 		<hgroup class="main-post__header">
 			<?php if (!is_page('catalogo')): ?>
 			<!-- Page Header -->
-			<?php get_template_part('templates/page', 'header');?>
+			<?php get_template_part('partials/page', 'header');?>
 			<?php endif?>
 
 			<?php if (get_sub_field("header")): ?>
@@ -24,6 +24,7 @@
 		<div class="main-post__content">
 		<?php if (get_sub_field("content")): ?>
 		<article class="main-post__content__entry" role="article">
+
 		<!-- Header image -->
 		<?php if (get_sub_field("header_image")) {?>
 		<figure><img src="<?php the_sub_field("header_image");?>" alt=""></figure>
@@ -153,20 +154,22 @@
 		// echo $persona;
 		?>
 		<article role="article">
-		<?php if ($nombre): ?>
-		<div class="icon-profile-male" aria-labelledby="icono"></div>
-		<h3><?php echo $nombre;?></h3>
-		<h4><?php echo $cargo;?></h4>
-		<?php endif;?>
-		<?php if ($email): ?>
-		<span class="icon-envelope" aria-labelledby="icono"></span> <?php echo $email;?>
-		<?php endif;?>
+			<?php if ($nombre): ?>
+				<div class="icon-profile-male" aria-labelledby="icono"></div>
+				<h3><?php echo $nombre;?></h3>
+				<h4><?php echo $cargo;?></h4>
+			<?php endif;?>
+			<?php if ($email): ?>
+				<span class="icon-envelope" aria-labelledby="icono"></span> <?php echo $email;?>
+			<?php endif;?>
 		</article>
 		<?php endwhile;?>
 		</section>
 		<!-- /equipo -->
+
 		<?php endif;?>
 		<?php if (get_sub_field("address")): ?>
+
 		<!-- mapa/form -->
 		<section class="grid">
 		<?php
@@ -181,6 +184,7 @@
 		<?php if (get_sub_field("image")) {?>
 		<img src="<?php the_sub_field("image");?>" alt="">
 		<?php } else {?>
+
 		<!-- Mapa -->
 		<?php echo do_shortcode('[mappress mapid="2" width="100%"]');?>
 		<?php }
@@ -192,7 +196,9 @@
 		</div>
 		</section>
 		<!-- /mapa/form -->
+
 		<?php endif;?>
+
 		<?php if (have_rows('carrusel_links_externos')): ?>
 		<!-- carrusel links externos -->
 		<section class="slider__wrap">
@@ -223,6 +229,7 @@
 		</section>
 		<!-- /carrusel links externos -->
 		<?php endif;?>
+
 		<?php if (have_rows('carrusel_webs_interesantes')): ?>
 		<!-- carrusel webs interesantes -->
 		<section class="slider__wrap">

@@ -4,7 +4,7 @@
 
 	<?php
 	/* Content page */
-	get_template_part('templates/content', 'page');
+	get_template_part('partials/content', 'page');
 	?>
 
 </main>

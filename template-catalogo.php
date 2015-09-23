@@ -10,9 +10,12 @@
 
 	<?php
 	/* Loop for posts */
-	get_template_part('templates/content', 'page-catalogo'); ?>
+	get_template_part('partials/content', 'page-catalogo'); ?>
 
 </main>
 
-<?php get_sidebar(); ?>
+<?php
+/* Sidebars */
+get_sidebar(); ?>
+
 <?php get_footer(); ?>

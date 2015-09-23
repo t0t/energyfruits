@@ -9,10 +9,13 @@
 
 		<?php
 		/* Cargame los Custom fields, ACF */
-		get_template_part('templates/custom-fields');
+		get_template_part('partials/custom-fields');
 		?>
 
 	</main>
 
-<?php get_sidebar(); ?>
+	<?php
+	/* Sidebars */
+	get_sidebar(); ?>
+	
 <?php get_footer(); ?>

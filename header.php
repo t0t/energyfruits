@@ -37,7 +37,7 @@ get_template_part( 'partials/head' );
 
 	<?php
 	/* Language Selector */
-	echo do_shortcode('[gtranslate]');
+	echo do_shortcode( '[gtranslate]' );
 	?>
 
 	<?php

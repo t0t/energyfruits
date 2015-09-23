@@ -1,11 +1,17 @@
+
 <!-- Page Header -->
 <hgroup class="main-post__header">
-<!-- Page Header -->
-<?php get_template_part('templates/page', 'header');?>
-<?php if (get_sub_field("header")): ?>
-<h3 class="main-post__subheader"><?php the_sub_field("header");?></h3>
-<?php endif?>
+
+  <?php
+  /* Page Header */
+  get_template_part('partials/page', 'header'); ?>
+
+  <?php if (get_sub_field("header")): ?>
+  <h3 class="main-post__subheader"><?php the_sub_field("header");?></h3>
+  <?php endif?>
+
 </hgroup>
+
 <!-- Slider noticias -->
 <section class="slider__wrap">
     <h3 class="slider__title">Noticias</h3>

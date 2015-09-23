@@ -14,13 +14,5 @@
     <?php get_sidebar('page'); ?>
   </aside>
 
-<?php elseif ( is_search() | is_404() ) : ?>
-
-  <?php //get_sidebar('single'); ?>
-
-<?php elseif ( is_page_template() ) : ?>
-
-  <?php //get_sidebar('page-template.php'); ?>
-
 <?php else : ?>
 <?php endif; ?>

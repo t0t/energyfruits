@@ -2,7 +2,7 @@
 <?php if (in_category('supershakes')): ?>
 
 <?php
-	$loop = new WP_Query(array(
+	$loop = new WP_Query( array(
 		'post_type' => 'cpt',
 		'category_name' => 'supershakes',
 		'posts_per_page' => '',
@@ -14,7 +14,7 @@
 
 <?php if (in_category('energyfruits')): ?>
 <?php
-	$loop = new WP_Query(array(
+	$loop = new WP_Query( array(
 		'post_type' => 'cpt',
 		'category_name' => 'energyfruits',
 		'posts_per_page' => '',

@@ -1,17 +1,18 @@
 
 <div class="main__content">
 
-    <!-- Page Header -->
-    <?php get_template_part('templates/page', 'header'); ?>
+  <?php
+  /* Page Header */
+  get_template_part('partials/page', 'header'); ?>
 
 
     <section class="grid">
 
     <!-- Loop -->
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        
+
         <div class="post">
-        
+
         <?php the_date('j F Y'); ?>
         <?php the_tags(); ?>
 
@@ -31,7 +32,7 @@
 
             </div>
 
-            <?}else {?>  
+            <?}else {?>
 
             <figure><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" class=""><figcaption><?php the_title(); ?></figcaption></a></figure>
 
@@ -44,8 +45,8 @@
 
 			Ups!, en este sitio web no se utiliza la palabra "<?php echo esc_html( get_search_query( false ) ); ?>" en ninguna ocasión.
 
-    <?php endif; ?>    
-	
+    <?php endif; ?>
+
 	</section>
 
 
