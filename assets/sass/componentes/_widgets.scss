@@ -214,10 +214,6 @@
     @include max-width($bp0);
     height: 300px;
 
-      // @media screen and (min-width: $bp3) {
-      //     min-height: 500px;
-      // }
-
     p, h3 {
         color: $white;
     }
@@ -236,7 +232,6 @@
 
 // Sumario de contenidos
 .content-summary {
-    // min-height: 500px;
 
     h3 {
         @extend %lowercase;
