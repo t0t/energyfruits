@@ -21,7 +21,7 @@ h6 {
 	letter-spacing: $baseletterspacing - 1;
 
 	text-rendering 	: optimizelegibility;
-		
+
 		&.altheader {
 
 			// font-family: $google-font;
@@ -45,7 +45,7 @@ h3 small {
 
 }
 
-@each $header, $margin-bot, $font-size, $line-height in 
+@each $header, $margin-bot, $font-size, $line-height in
 	(h1, 0, 65, 1)
 	(h2, 3, 45, 1.1)
 	(h3, 0, 25, 1.4)
@@ -59,7 +59,7 @@ h3 small {
   		@extend %text-center;
   		}
 	}
-	
+
 // TYPOGRAFÍA ====================================================
 p,
 ol,
@@ -90,8 +90,8 @@ dd {
 
 ul,
 ol {
-	margin : 0 0 $baselineheight 0;
-	padding : 0 0 0 $gutterwidth;
+	margin: 0;
+	padding: 0;
 }
 
 li ul,
@@ -110,7 +110,7 @@ blockquote  {
 	padding-left : $gutterwidth;
 	border-left : ($paddingbase / 4) solid $color-alt;
 	font-style : italic;
-	color: $white-alpha-fuerte;
+	color: $color-alt;
 	line-height: $baselineheight;
 
 	@include max-width($bp3);

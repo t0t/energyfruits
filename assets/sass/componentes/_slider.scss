@@ -2,8 +2,8 @@
 $slick-loader-path: "./" !default;
 $slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "←" !default;
-$slick-next-character: "→" !default;
+$slick-prev-character: "<" !default;
+$slick-next-character: ">" !default;
 $slick-dot-character: "•" !default;
 $slick-dot-size: 6px !default;
 $slick-opacity-default: 0.75 !default;
@@ -22,13 +22,11 @@ $slick-opacity-not-active: 0.25 !default;
     ul {
         margin: 0;
     }
-    
+
     @extend %text-center;
     img { width: inherit }
 
     @media all and (min-width: 780px) {
-        // @include flexbox;
-        // @include justify-content(center);
         margin: 0 auto;
     }
     @media all and (max-width: $bp2) {}
@@ -38,9 +36,11 @@ $slick-opacity-not-active: 0.25 !default;
 .slider__wrap {
     position: relative;
     background-color: $white;
-    padding-bottom: $gutterwidth;
+    padding-bottom: 5px;
     width: 100%;
-
+    button {
+        // opacity: 0;
+    }
     &::before {
         content: "";
         height: 20px;
@@ -150,47 +150,11 @@ $slick-opacity-not-active: 0.25 !default;
     }
 }
 
-.slider__btn-next, .slider__btn-prev {
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    top: 45%;
-    border-radius: 100%;
-    border: none;
-    z-index: 1;
-    background-color: $black-alpha-fuerte;
-    display: none;
-
-    &:hover {
-        background-color: $color-alt;
-    }
-
-    &:focus {
-        outline: none;
-    }
-}
-
 .slick-disabled {
     @include opacity(0.2);
 }
 
-.slider__btn-next {
-    right: 10px;
-    @extend .icon-arrow-right2;
 
-    &::after {
-        @extend %display-block;
-    }
-}
-
-.slider__btn-prev {
-    left: 10px;
-    @extend .icon-arrow-left2;
-
-    &::before {
-        @extend %display-block;
-    }
-}
 
 // Estilos Revolution Slider
 .sliderh1 {
@@ -318,22 +282,22 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-prev,
 .slick-next {
     position: absolute;
-    display: block;
-    height: 20px;
-    width: 20px;
+    display: none;
+    height: 60px;
+    width: 60px;
     cursor: pointer;
-    background: transparent;
-    top: 50%;
+    top: 38%;
     margin-top: -10px;
     padding: 0;
     border: none;
     outline: none;
+    background: transparent;
+
     &:hover, &:focus {
         outline: none;
         background: transparent;
-        color: transparent;
         &:before {
-            opacity: $slick-opacity-on-hover;
+            opacity: 1;
         }
     }
     &.slick-disabled:before {
@@ -342,11 +306,12 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev:before, .slick-next:before {
-    @include font-size(25);
+    display: block !important;
+    @include font-size(60);
+    // text-indent: -9000px;
     z-index: 1000;
     line-height: 1;
     color: $color-alt;
-    opacity: $slick-opacity-default;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -389,15 +354,17 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-dots {
     padding-top: 20px;
+    padding-left: 0;
     li {
         display: inline-block;
         width: 25px;
         cursor: pointer;
-        
+
         &.slick-active {
              button {
                 color: $color-alt;
                 background-color: $color-alt;
+                text-indent: -9000px;
             }
         }
         button {
@@ -405,13 +372,13 @@ $slick-opacity-not-active: 0.25 !default;
             background-color: $black-alpha-fuerte;
             border: none;
             display: block;
-            height: 10px;
-            width: 10px;
+            height: 15px;
+            width: 15px;
             outline: none;
             color: transparent;
             padding: 5px;
             cursor: pointer;
-            
+
             &:hover, &:focus {
                 outline: none;
                 &:before {

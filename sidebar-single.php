@@ -15,14 +15,9 @@
 
     $args = array(
             'cat' => $cat,
-            'orderby' => 'date', 
+            'orderby' => 'date',
             'showposts' => '5',
-            'post__not_in' => array($this_post) 
-            // 'post_type' => '', 
-            // 'category_name' => $cat,
-            // 'posts_per_page' => '5', 
-            // 'order' => 'DESC'
-            // 'paged' => $paged
+            'post__not_in' => array($this_post)
     );
 
     // Estoy instanciando un objeto de la clase WP_Query
@@ -32,49 +27,27 @@
 
 
     <?php
-
-    // $this_post = $post->ID;
-    // $categories = get_the_category();
-
-    // $args = array(
-    //         'cat' => $cat,
-    //         'orderby' => 'date', 
-    //         'showposts' => '5',
-    //         'post__not_in' => array($this_post) 
-    //         // 'post_type' => '', 
-    //         // 'category_name' => $cat,
-    //         // 'posts_per_page' => '5', 
-    //         // 'order' => 'DESC'
-    //         // 'paged' => $paged
-    //         );
-
-    // if( isset( $categories[0]->term_id ) ) {
-
-    //     $args += array( 'cat' => $categories[0]->term_id );
-
-    // }
-
-    // $recentPosts = new WP_Query( $args );
-
-    // print_r($categories);
-
-    ?>
-    
-
-    <?php
         //traeme el nombre del array
-        echo $categories[0]->name;
+        $current = $categories[0]->name;
+        echo $current;
         // print_r($categories);
     ?>
-        
+
     <ul class="list--sidebar">
-    
+
     <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
 
 	    <li class="list--sidebar__item">
 
 	    	<a href="<?php the_permalink() ?>" rel="bookmark">
-	    	<small class="post--sidebar__meta-date"><?php the_date('j F Y'); ?></small> <?php the_title(); ?></a>
+
+          <?php if ($current=='Recetas') { ?>
+            <!-- No me muestres la fecha si es Recetas -->
+          <?php } else { ?>
+            <small class="post--sidebar__meta-date"><?php the_date('j F Y'); ?></small>
+          <?php } ?>
+           <?php the_title(); ?>
+        </a>
 
 	    </li>
 
@@ -85,28 +58,28 @@
 
 </div>
 
-    
+
     <ul>
-	
+
     <?php wp_list_categories('sort_column=name&optioncount=1&exclude=5, 6'); ?>
-	
+
     </ul>
 
 
     <!-- Navegacion entre posts-->
-    <nav class="nav--posts"> 
+    <nav class="nav--posts">
 
         <ul>
             <li>
                 <?php
                     $prevPost = get_previous_post();
-                            
-                            if($prevPost) 
+
+                            if($prevPost)
                         {
                             $prevthumbnail = get_the_post_thumbnail($prevPost->ID, 'mini', array('class' => 'img--rounded') );
 
-                            previous_post_link('%link', "$prevthumbnail &larr; %title"); 
-                        } 
+                            previous_post_link('%link', "$prevthumbnail &larr; %title");
+                        }
                         ?>
                         </li>
 
@@ -122,16 +95,16 @@
 
 
                         <li>
-                        
+
                         <?php
 
                             $nextPost = get_next_post();
 
-                            if($nextPost) 
+                            if($nextPost)
                         {
-                            $nextthumbnail = get_the_post_thumbnail($nextPost->ID, 'mini', array('class' => 'img--circle')); 
+                            $nextthumbnail = get_the_post_thumbnail($nextPost->ID, 'mini', array('class' => 'img--circle'));
 
-                            next_post_link('%link', "%title &rarr; $nextthumbnail"); 
+                            next_post_link('%link', "%title &rarr; $nextthumbnail");
                         }
                         ?>
 
@@ -141,7 +114,7 @@
 
                 </nav>
 
-                
+
 
 <?php if ( is_active_sidebar( 'sidebar-custom' ) ) : ?>
 	<?php //dynamic_sidebar( 'sidebar-custom' ); ?>

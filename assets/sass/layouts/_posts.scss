@@ -10,12 +10,12 @@
     @include padding($gutterwidth);
 
     @media only screen and (min-width: $bp3) {
-        @include font-size(26);
+        @include font-size(20);
         @include max-width(800px);
     }
 
     @media only screen and (min-width: $bp2) {
-        @include font-size(36);
+        @include font-size(26);
         @include max-width(950px);
     }
 
@@ -26,6 +26,14 @@
 }
 
 .main-post__content {
+
+    background-color: $white;
+    padding-top: $gutterwidth;
+
+    h3 {
+      color: $color-base;
+    }
+
     section {
         margin-bottom: $gutterwidth;
     }
@@ -37,14 +45,19 @@
         // width: calc(75% - #{$gutterwidth});
     }
 
-    @media all and (min-width: $bp2) {
-        // width: calc(55% - #{$gutterwidth});
-    }
+    @media all and (min-width: $bp2) {}
 }
 
 .main-post__content__entry {
+
     @extend %padding-horizontal;
     position: relative;
+
+    h3 {
+      color: $color-alt;
+      text-align: left;
+      margin-bottom: 8px;
+    }
 
     small {
         display: inline-block;
@@ -64,13 +77,17 @@
     li {
         // @include font-size(23);
         // line-height: 1;
-   
+
     }
 
     a {
-        color: $white-alpha-medio;
+        color: $black-alpha-medio;
         border-bottom: 2px dotted $color-alt;
         padding-bottom: 3px;
+
+        &:hover {
+          color: $color-alt;
+        }
     }
 
     @media all and (min-width: $bp3) {

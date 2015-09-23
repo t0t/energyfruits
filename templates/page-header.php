@@ -8,8 +8,8 @@
 
             <small class="altheader">
 
-                <?php the_time('F Y'); ?> 
-                    
+                <?php the_time('F Y'); ?>
+
             </small>
 
         </h1>
@@ -31,11 +31,11 @@
         <h1 class="h3"><?php the_title(); ?></h1>
 
     </header>
-        
+
 <?php elseif ( is_single() ) : ?>
-        
+
     <header class="efecto--intro">
-        
+
         <h3>
 
             <?php
@@ -58,7 +58,7 @@
     </header>
 
 <?php elseif ( is_single() && is_post_type('cpt') ) : ?>
-        
+
     <header class="efecto--intro">
 
         <h1>
@@ -68,7 +68,7 @@
     </header>
 
 <?php elseif ( is_search() ) : ?>
-        
+
     <header class="efecto--intro">
 
         <h1>"<?php the_search_query() ?>"</h1>
@@ -76,7 +76,7 @@
     </header>
 
 <?php elseif ( is_404() ) : ?>
-        
+
     <h1>Pagina no encontrada!</h1>
 
 <?php else : ?>

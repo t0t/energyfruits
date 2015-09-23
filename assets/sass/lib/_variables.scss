@@ -19,10 +19,10 @@ $retina-suffix: '@2x';
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
-$baselineheight  		:     1.6em;
-$line-height-computed	:	$baselineheight;
-$baseline :           	$baselineheight;
-$pagemaxwitdh :       	100%;
+$baselineheight:     1.6em;
+$line-height-computed  :	$baselineheight;
+$baseline              :           	$baselineheight;
+$pagemaxwitdh:       	100%;
 $radius :             	5px;
 $hovertransition :    	.3s;
 $animationtime :      	.8s;
@@ -41,15 +41,14 @@ $link-horizontal-padding:20px;
 // $basefont 				: "Lato", sans-serif;
 // $basefont 				: Helvetica, Arial, sans-serif;
 $googlefont 				: "http://fonts.googleapis.com/css?family=Averia+Serif+Libre";
-$altfont 					: 'Averia Serif Libre', cursive;
+$altfont 					  : 'Averia Serif Libre', cursive;
 $codefont 					: "Courier New", monospace;
-$basefont					: $altfont;
-$baseheadingfont 			: $basefont;
-$baseheadingfontweight 		: 400;
+$basefont					  : $altfont;
+$baseheadingfont 		: $basefont;
+$baseheadingfontweight: 400;
 
 $altlineheight : 1.35em;
 // $icons	: icomoon;
-
 
 /*------------------------------------*\
     $TAMAÑOS
@@ -57,26 +56,9 @@ $altlineheight : 1.35em;
 $basefontsize 		: 20 !default;
 $baseletterspacing 	: 0;
 
-
 /*------------------------------------*\
     $COLORS
 \*------------------------------------*/
-// Archivo de colores geniales:
-// ROJOS
-// rgb(225,86,89);
-// VERDES
-// rgb(119,199,132);
-// rgb(119,220,203);
-// AZULES
-// rgb(119,199,203);
-// NEUTROS
-// rgb(248,237,222);
-// rgb(197,152,128);
-// rgb(226,221,224);
-// 
-/**
- * Base colors
- */
 $color-base			: rgb(49,117,73); // color principal
 $color-alt			: rgb(240,115,11); //azul
 $color-base-invert 	: complement($color-alt);
@@ -86,11 +68,11 @@ $color-base-dark	: darken($color-base, 5%);
 $color-base-darken	: darken($color-base, 10%);
 
 // Brand colors
-$color_goji: rgb(230,25,11); 
-$color_graviola: rgb(127,116,76); 
-$color_cacaocriollo: rgb(60,29,29); 
-$color_chlorella: rgb(30,19,16); 
-$color_chia: rgb(140,126,115); 
+$color_goji: rgb(230,25,11);
+$color_graviola: rgb(127,116,76);
+$color_cacaocriollo: rgb(60,29,29);
+$color_chlorella: rgb(30,19,16);
+$color_chia: rgb(140,126,115);
 $color_amaranto: rgb(177,35,101);
 $color_spiroulina: rgb(46,56,40);
 $color_camucamu: rgb(101,51,60);
@@ -103,7 +85,7 @@ $color_alfalfa: rgb(38,136,112);
 $color_trigoverde: rgb(74,121,47);
 $color_algarroba: rgb(31,20,16);
 $color_cardomariano: rgb(166,120,174);
-$color_linodorado: rgb(222,197,67); 
+$color_linodorado: rgb(222,197,67);
 $color_fresa: rgb(226,56,3);
 $color_coco: rgb(129,77,35);
 $color_gymtonic: rgb(192,4,17);
@@ -114,29 +96,28 @@ $color_macuchino: rgb(176,135,66);
 $color_bodtox: rgb(163,189,49);
 $color_royalbreakfast: rgb(113,22,17);
 $color_camucao: rgb(139,59,29);
+// Añadido en Agosto 2015
+$color_gojicaotrailmix: rgb(193,82,46);
+$color_andeantrailmix: rgb(193,82,46);
+$color_aguaymanto: rgb(230,25,11);
 
 // Marcas
-$brand_names: graviola goji cacaocriollo chlorella chia amaranto spiroulina camucamu canamo maca lucuma stevia quinoa alfalfa trigoverde algarroba cardomariano linodorado fresa coco gymtonic delifiber brainshake andeanprotein macuchino bodtox royalbreakfast camucao;
+$brand_names: aguaymanto andeantrailmix gojicaotrailmix graviola goji cacaocriollo chlorella chia amaranto spiroulina camucamu canamo maca lucuma stevia quinoa alfalfa trigoverde algarroba cardomariano linodorado fresa coco gymtonic delifiber brainshake andeanprotein macuchino bodtox royalbreakfast camucao;
 
 // Brand Colors
-$brand_colors: $color_graviola $color_goji $color_cacaocriollo $color_chlorella $color_chia $color_amaranto $color_spiroulina $color_camucamu $color_canamo $color_maca $color_lucuma $color_stevia $color_quinoa $color_alfalfa $color_trigoverde $color_algarroba $color_cardomariano $color_linodorado $color_fresa $color_coco $color_gymtonic $color_delifiber $color_brainshake $color_andeanprotein $color_macuchino $color_bodtox $color_royalbreakfast $color_camucao;
-
-
-
-
+$brand_colors: $color_aguaymanto $color_andeantrailmix $color_gojicaotrailmix $color_graviola $color_goji $color_cacaocriollo $color_chlorella $color_chia $color_amaranto $color_spiroulina $color_camucamu $color_canamo $color_maca $color_lucuma $color_stevia $color_quinoa $color_alfalfa $color_trigoverde $color_algarroba $color_cardomariano $color_linodorado $color_fresa $color_coco $color_gymtonic $color_delifiber $color_brainshake $color_andeanprotein $color_macuchino $color_bodtox $color_royalbreakfast $color_camucao;
 
 /**
  * Transparencias
  */
-
-$black 				: rgb(0,0,0);
-$black-alpha		: transparentize($black, .3);
+$black 				      : rgb(0,0,0);
+$black-alpha		    : transparentize($black, .3);
 $black-alpha-suave 	: transparentize($black, .1);
 $black-alpha-medio	: transparentize($black, .5);
 $black-alpha-fuerte	: transparentize($black, .9);
 
-$white				: rgb(255,255,255);
-$white-alpha 		: rgba(255,255,255,0.3);
+$white				      : rgb(255,255,255);
+$white-alpha 		    : rgba(255,255,255,0.3);
 $white-alpha-suave 	: rgba(255,255,255,0.1);
 $white-alpha-medio	: rgba(255,255,255,0.5);
 $white-alpha-fuerte	: rgba(255,255,255,0.8);
@@ -158,7 +139,7 @@ $background			: 	$color-base;
 $background-alt		: 	lighten($color-base, 63%);
 
 
-$textcolor			: 	$white;
+$textcolor			: 	$color-base;
 $textcolor-strong	:	$white;
 
 // Links  //////////////////////
@@ -231,7 +212,7 @@ $inputborderwidth   : 1px;
 $inputborderstyle   : dotted;
 $inputhover         : lighten($black, 50%);
 $inputfocus         : $white-alpha-suave;
-$placeholdercolor   : $color-base-darken;
+$placeholdercolor   : $white;
 
 
 // Navegación
@@ -242,7 +223,3 @@ $navtabsbordercolor    : $bordercolor;
 // Bordes
 $borde				: 2px solid $bordercolor;
 $bordehover			: 2px solid $bordercolorhover;
-
-
-
-

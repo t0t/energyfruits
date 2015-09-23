@@ -1,7 +1,8 @@
-assets/bower_components/*
+# assets/bower_components/*
 assets/sass/.sass-cache/*
 assets/img/*.sketch
 assets/css/*.map
+*.codekit
 *.log
 *.sketch
 *.json

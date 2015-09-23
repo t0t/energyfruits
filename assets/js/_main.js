@@ -1,21 +1,16 @@
 (function($) {
 $(function() {
-    
-    
-    
-    
-    
 
 // FitVids.js
 //http://jsbin.com/boreme/17/edit?html,css,js,output
 $(".main-post__content__entry").fitVids();
-$(window).scroll(function() {
-var scroll = $(window).scrollTop();
-if (scroll >= 50) {
-$(".brand").addClass("encoge");
-} else {
-$(".brand").removeClass("encoge");
-}
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 50) {
+        $(".brand").addClass("encoge");
+        } else {
+        $(".brand").removeClass("encoge");
+    }
 });
 
 // Slider
@@ -103,6 +98,11 @@ $scrolltop_link.slideUp().data('hidden', 1);
 }, 300);
 }
 addScrollTopAnimation(); // start
+
+
+
+
+
 
 
 
