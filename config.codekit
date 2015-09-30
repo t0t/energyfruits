@@ -5207,6 +5207,14 @@
 	],
 "lastSavedByUser": "t0t",
 "manualImportLinks": {
+	"\/assets\/js\/_main.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/assets\/bower_components\/fitvids\/jquery.fitvids.js",
+			"position": 0,
+			"type": 1
+			}
+		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "assets",
