@@ -133,6 +133,7 @@
 		</div>
 		<!-- /galeria -->
 		<?php endif?>
+
 		<!-- Lista con emails -->
 		<?php if (have_rows('equipo')): ?>
 		<section class="grid">

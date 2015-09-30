@@ -1,10 +1,8 @@
 <!-- main post content -->
-<div class="main-post__content">
-</div>
+<div class="main-post__content"></div>
 
 <?php if (get_field('flexible_content')): ?>
   <?php while (has_sub_field("flexible_content")): ?>
-
     <?php
     /* Wellcome panel */
     if (get_row_layout() == "well-img"): ?>
@@ -16,7 +14,6 @@
           <?php the_sub_field("description");?>
         </a>
       </div>
-
     <?php
     /* Carusel Superfoods */
     elseif (get_row_layout() == "carusel1"): ?>
@@ -42,7 +39,6 @@
         <?php wp_reset_postdata();?>
       </div>
     </section>
-
     <?php
     /* Carusel Supershakes */
     elseif (get_row_layout() == "carusel2"): ?>
@@ -69,9 +65,6 @@
         <?php wp_reset_postdata();?>
       </div>
     </section>
-
-
     <?php endif;?>
-
   <?php endwhile;?>
 <?php endif;?>
