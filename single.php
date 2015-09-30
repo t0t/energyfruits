@@ -2,8 +2,10 @@
 
 <main class="main__content" role="main">
 
-		<!-- Content single -->
-		<?php get_template_part('templates/content', 'single'); ?>
+		<?php
+		/* Content single */
+		get_template_part( 'partials/content', 'single' );
+		?>
 
 </main>
 

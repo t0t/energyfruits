@@ -4,7 +4,9 @@
 
 	<section>
 
-		<?php get_template_part( 'templates/content' ); ?>
+		<?php
+		/* Get content */
+		get_template_part( 'partials/content' ); ?>
 
 	</section>
 

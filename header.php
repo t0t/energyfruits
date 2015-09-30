@@ -8,109 +8,37 @@
 
 <html lang="es">
 
-<head>
-
-
-
-	<meta charset="utf-8">
-	<title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
-
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
-	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
-
-	<!--iOS -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<?php wp_head(); ?>
-
-</head>
+<?php
+/* Site Head */
+get_template_part( 'partials/head' );
+?>
 
 <body <?php body_class(); ?>>
 
-<header class="header">
-
-	<!-- Secondary menu 1 -->
-	<nav class="nav-secondary nav-secondary--uno" role="navigation">
-
+	<header class="header">
 		<?php
-		$defaults = array(
-			'theme_location'  => 'secondary_menu1',
-			'container'       => '',
-			'container_class' => '',
-			'menu_class'      => ''
-		);
-
-		wp_nav_menu( $defaults );
+		/* Nav 1 (Izquierda) */
+		get_template_part( 'partials/nav', '1' );
 		?>
-
-	</nav>
-
-	<div class="brand">
-
-		<a class="brand__logo" href="/" alt="<?php bloginfo('name'); ?>"></a>
-
-		<h1 class="h4 brand__name">
-
-			<?php bloginfo('name'); ?>
-
-			<span class="brand__description">
-
-				<?php bloginfo('description'); ?>
-
-			</span>
-
-		</h1>
-
-	</div>
-
-	<!-- Secondary menu 2 -->
-	<nav class="nav-secondary nav-secondary--dos" role="navigation">
-
 		<?php
-		$defaults = array(
-			'theme_location'  => 'secondary_menu2',
-			'container'       => '',
-			'container_class' => '',
-			'menu_class'      => ''
-			);
-		wp_nav_menu( $defaults );
+		/* Brand (Logo)*/
+		get_template_part( 'partials/brand' );
 		?>
-
-	</nav>
-
-
-
-</header>
-
-<!-- Traductor -->
-<?php echo do_shortcode('[gtranslate]'); ?>
-
-	<!-- Menu out of canvas -->
-	<nav class="nav-main" role="navigation">
-
-		<input type="checkbox" id="toggle-btn"/>
-		<label for="toggle-btn"></label>
-
 		<?php
-			$defaults = array(
-				'theme_location'  => 'fixed_menu',
-				'container'       => '',
-				'container_class' => '',
-				'menu_class'      => 'nav-main__overlay'
-			);
-
-			wp_nav_menu( $defaults );
+		/* Nav 2 (Derecha)*/
+		get_template_part( 'partials/nav', '2' );
 		?>
+	</header>
 
-	</nav>
-
-<!-- // Link Catálogo -->
-<div class="catalog">
-	<a href="https://www.yumpu.com/en/document/fullscreen/53899858/catalogo-sf-esppdf" target="_blank">
-		<figure class="catalog-figure">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/catalog-2015.png" alt="Catálogo 2015">
-			<figcaption>Catálogo 2015!</figcaption>
-		</figure>
-	</a>
-</div>
+	<?php
+	/* Language Selector */
+	echo do_shortcode( '[gtranslate]' );
+	?>
+	<?php
+	/* Nav Off Canvas */
+	get_template_part( 'partials/nav', 'offcanvas' );
+	?>
+	<?php
+	/* Component Catalog */
+	get_template_part( 'partials/catalog' );
+	?>

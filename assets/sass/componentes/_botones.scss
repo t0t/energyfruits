@@ -266,26 +266,17 @@ input[type="submit"].btn:hover {
 }
 
 .btn--image{
-
     background-color: $color-alt;
-
+    margin-top: $paddingbase/2;
 		&:hover {
-
 			background-color: lighten($color-alt, 3);
-
 		}
-
     a {
-
     	color: $white;
-    	
     	&:hover {
     		background-color: transparent;
     	}
-		
-
     }
-
 }
 
 .btn--invert {
