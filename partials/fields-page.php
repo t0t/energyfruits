@@ -73,7 +73,5 @@ if (have_rows('layout_content')):
 		  <?php endif ?>
 		<?php endif; ?>
 
-
-
 	<?php endwhile; ?>
 <?php endif; ?>

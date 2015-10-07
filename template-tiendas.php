@@ -3,18 +3,16 @@
 	Template Name: Tiendas
 	*/
 ?>
-
 <?php get_header(); ?>
-
 <main class="main__content">
-
 	<?php
 	/* Content page */
-	get_template_part('partials/fields', 'page'); ?>
-
-	<!-- Mapa -->
-	<?php echo do_shortcode('[mappress mapid="3" width="100%"]'); ?>
-
+	get_template_part('partials/fields', 'page');
+  ?>
+	<h3 class="slider__title">Tiendas Físicas</h3>
+	<?php
+  /* Mapa */
+  echo do_shortcode('[mappress mapid="3" width="100%"]');
+  ?>
 </main>
-
 <?php get_footer(); ?>
