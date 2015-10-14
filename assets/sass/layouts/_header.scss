@@ -1,5 +1,4 @@
 .header {
-  // @include max-width($bp0);
   position: fixed;
   left: 0;
   right: 0;
@@ -13,7 +12,4 @@
 }
 .page-header {
   padding-top: 100px;
-  @media screen and (min-width: 600px) {
-    padding-top: 145px;
-  }
 }

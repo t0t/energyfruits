@@ -1,49 +1,36 @@
 .brand {
-    height: 90px;
-    overflow: hidden;
-    @include transition(0.2s);
-
-    &.encoge {
-        height: 75px;
-
-        .brand__logo {
-            background-position: 0 -20px;
-        }
+  height: 90px;
+  overflow: hidden;
+  @include transition(0.2s);
+  &.encoge {
+    height: 75px;
+    .brand__logo {
+      background-position: 0 -#{$paddingbase};
     }
-
-    @media all and (min-width: $bp3) {
-        height: 135px;
-        margin: 0 $gutterwidth;
-    }
+  }
 }
-
 .brand__logo {
-    width: 200px;
-    height: 90%;
-    display: inline-block;
-    @include background-image(logo, 100%, no-repeat, center -10px, svg);
-    @media screen and (min-width: $bp3) {}
-    @include transition(0.3s);
-
-    &:hover {
-        background-position: 0 -125px;
-    }
+  width: 200px;
+  height: 80px;
+  display: inline-block;
+  @include background-image(logo, 100%, no-repeat, center -10px, svg);
+  @include transition(0.3s);
+  &:hover {
+    background-position: 0 -125px;
+  }
 }
-
 .brand__name {
-    line-height: 1;
-    margin-bottom: 0;
-    font-size: 1.1em;
-    font-style: italic;
-    letter-spacing: 1px;
-    color: $color-alt;
-    display: none;
-
-    @media all and (max-width: 700px) {
-        width: 140px;
-    }
+  line-height: 1;
+  margin-bottom: 0;
+  font-size: 1.1em;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: $color-alt;
+  display: none;
+  @media all and (max-width: 700px) {
+    width: 140px;
+  }
 }
-
 .brand__description {
-    display: none;
+  display: none;
 }

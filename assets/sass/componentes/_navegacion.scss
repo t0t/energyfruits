@@ -1,46 +1,7 @@
 /*********************
 Main navbar
 **********************/
-
-//Navegacion general
-.nav-barra {
-
-    a {
-
-        @include transition(.4s);
-        border-radius: $radius * 4;
-        padding: 15px 20px;
-        background-color: $black-alpha-fuerte;
-
-        &:hover {
-
-            background-color: $black-alpha-medio;
-
-        }
-
-    }
-
-    ul {
-
-        padding-left: 0;
-
-    }
-
-    .current-menu-item {
-
-        a {
-
-            background-color: $color-base;
-            background-color: red;
-
-        }
-
-    }
-
-}
-
-
-//Navegacion principal
+// Navegacion principal
 .nav-main {
   position: relative;
   @include transition(.4s);
@@ -51,8 +12,8 @@ Main navbar
   label::after {
     width: 2em;
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: ( $paddingbase / 2 );
+    right: $paddingbase;
     display: block;
     @include font-size(22);
     line-height: 2.1;
@@ -60,18 +21,17 @@ Main navbar
     z-index: 250;
     text-align: center;
     background-color: $color-alt;
-    border-radius: 100%;
+    border-radius: 8px;
     color: $white;
     @media screen and (min-width: 900px) {
       display: none;
     }
   }
-
   input[type="checkbox"]:checked ~ ul {
     z-index: 4;
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: fixed;
+    top: ( $paddingbase * 2 );
+    right: $paddingbase;
     @include flexbox;
     @include flex-direction(column);
     @include justify-content(center);
@@ -120,51 +80,37 @@ Main navbar
     }
   }
 }
-
 // Nav Secondary
 .nav-secondary {
   flex: 1;
-  background-color: red;
   ul {
-    display: table;
+    display: flex;
+    justify-content: space-around;
     @extend %no-padding;
     @extend %no-margin;
     // Hide navs
     @media all and (max-width: 900px) {
       display: none;
     }
-    @media screen and (min-width: $bp3) {
-      width: 435px;
-      padding-bottom: 20px;
-    }
-    @media screen and (min-width: $bp1) {
-      width: 550px;
+  }
+  li {
+    @extend %text-center;
+    color: $color-alt;
+    @media all and (min-width: $bp1) {
+      @include font-size(25);
     }
   }
-
-    li {
-        width: 33.33%;
-        display: table-cell;
-        @extend %text-center;
-        color: $color-alt;
-        letter-spacing: 0;
-        @media all and (min-width: $bp1) {
-            @include font-size(25);
-        }
-    }
-
-    .current-menu-item {
-      a {
-        color: $color-alt;
-      }
-    }
-
+  .current-menu-item {
     a {
-        color: $color-base;
-        &:hover {
-          color: $color-alt;
-        }
+      color: $color-alt;
     }
+  }
+  a {
+    color: $color-base;
+    &:hover {
+      color: $color-alt;
+    }
+  }
 }
 
 
