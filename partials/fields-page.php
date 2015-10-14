@@ -58,7 +58,7 @@ if (have_rows('layout_content')):
                     /* Header image */
                     if (get_sub_field("header_image")) {
                   ?>
-              		  <figure><img src="<?php the_sub_field("header_image");?>" alt=""></figure>
+              		  <figure><img src="<?php the_sub_field("header_image"); ?>" alt=""></figure>
               		<?php } else { ?>
               		<?php } ?>
                   <?php
@@ -72,5 +72,6 @@ if (have_rows('layout_content')):
 		    <?php endwhile; ?>
 		  <?php endif ?>
 		<?php endif; ?>
+
 	<?php endwhile; ?>
 <?php endif; ?>

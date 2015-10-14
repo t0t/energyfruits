@@ -1,10 +1,6 @@
 <?php if ( is_archive() ) : ?>
-
   <header class="efecto--intro">
-    <h1>
-      <?php the_category(''); ?>
-      <small class="altheader"><?php the_time('F Y'); ?></small>
-    </h1>
+    <h1><?php the_category(''); ?></h1>
   </header>
 
 <!-- Header Home Blog -->
