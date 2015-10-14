@@ -38,26 +38,6 @@ $slick-opacity-not-active: 0.25 !default;
     background-color: $white;
     padding-bottom: 5px;
     width: 100%;
-    button {
-        // opacity: 0;
-    }
-    &::before {
-        content: "";
-        height: 20px;
-        width: 100%;
-        position: absolute;
-        top: -18px;
-        @include background-image(bg_ondas_top, cover, no-repeat, center, svg);
-    }
-
-    &::after {
-        content: "";
-        height: 20px;
-        width: 100%;
-        position: absolute;
-        bottom: -20px;
-        @include background-image(bg_ondas_bottom, cover, no-repeat, center, svg);
-    }
 }
 .slider__item {
     @media all and (min-width: 780px) {}

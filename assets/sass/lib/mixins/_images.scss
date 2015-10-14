@@ -1,43 +1,31 @@
 // Ponme el svg y la gama de colores
 @mixin gama-producto {
-    
-    @each $brand in $brand_names {
-        
-        $i: index($brand_names, $brand);
-        $elcolor: nth($brand_colors, $i);
-
-        .cpt-#{$brand} {
-            
-            color: $grey;
-
-            h1 {
-                margin-top: $gutterwidth;
-                @include font-size(90);
-            }
-
-            .main-post__header {
-                
-                background-image: url(#{$image-path}bg_#{$brand}.svg);
-                background-color: lighten($elcolor, 5%);
-                background-position: center bottom;
-                background-repeat: no-repeat;
-                background-size: contain;
-                @include transition(4s);
-
-                &:hover {
-                    @include transition(4s);
-                    background-position: center 100px;
-                    background-size: cover;
-                }
-            }
-
-            .main-post__content {
-                background-color: $white;
-            }
-
+  @each $brand in $brand_names {
+    $i: index($brand_names, $brand);
+    $elcolor: nth($brand_colors, $i);
+    .cpt-#{$brand} {
+      color: $grey;
+      h1 {
+        margin-top: $gutterwidth;
+        @include font-size(90);
+      }
+      .page-header {
+        background-image: url(#{$image-path}bg_#{$brand}.svg);
+        background-color: lighten($elcolor, 5%);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        @include transition(4s);
+        &:hover {
+          @include transition(4s);
+          background-position: center 100px;
+          background-size: cover;
+        }
+      }
+      .main-post__content {
+          background-color: $white;
+      }
             .main-post__content__entry {
-                padding-top: $gutterwidth;
-
                 ul {
                     background-image: url(#{$image-path}bg_#{$brand}.svg);
                     background-color: lighten($elcolor, 5%);

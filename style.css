@@ -595,21 +595,39 @@ article, aside, figure, footer, header, hgroup, nav, section {
         background-image: url(assets/img/bg_header@2x.png); } }
 
 .page-header {
+  position: relative;
   min-height: 330px;
-  padding-top: 100px;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  padding-top: 100px;
+  padding-bottom: 20px; }
   @media screen and (min-width: 500px) {
     .page-header {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; } }
+  .page-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-size: initial;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-image: url(assets/img/bg_ondas_top.svg); }
+    .no-svg .page-header::after {
+      background-image: url(assets/img/bg_ondas_top.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        .no-svg .page-header::after {
+          background-image: url(assets/img/bg_ondas_top@2x.png); } }
 
 .page-header__left {
   text-align: center;
@@ -849,36 +867,6 @@ article, aside, figure, footer, header, hgroup, nav, section {
   background-color: white;
   padding-bottom: 5px;
   width: 100%; }
-  .slider__wrap::before {
-    content: "";
-    height: 20px;
-    width: 100%;
-    position: absolute;
-    top: -18px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(assets/img/bg_ondas_top.svg); }
-    .no-svg .slider__wrap::before {
-      background-image: url(assets/img/bg_ondas_top.png); }
-      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-        .no-svg .slider__wrap::before {
-          background-image: url(assets/img/bg_ondas_top@2x.png); } }
-  .slider__wrap::after {
-    content: "";
-    height: 20px;
-    width: 100%;
-    position: absolute;
-    bottom: -20px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(assets/img/bg_ondas_bottom.svg); }
-    .no-svg .slider__wrap::after {
-      background-image: url(assets/img/bg_ondas_bottom.png); }
-      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-        .no-svg .slider__wrap::after {
-          background-image: url(assets/img/bg_ondas_bottom@2x.png); } }
 
 .slider__item {
   text-align: center; }
@@ -1301,7 +1289,7 @@ body {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-aguaymanto .main-post__header {
+  .cpt-aguaymanto .page-header {
     background-image: url(assets/img/bg_aguaymanto.svg);
     background-color: #f42517;
     background-position: center bottom;
@@ -1309,25 +1297,23 @@ body {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-aguaymanto .main-post__header:hover {
+    .cpt-aguaymanto .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-aguaymanto .main-post__content {
     background-color: white; }
-  .cpt-aguaymanto .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-aguaymanto .main-post__content__entry ul {
-      background-image: url(assets/img/bg_aguaymanto.svg);
-      background-color: #f42517;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-aguaymanto .main-post__content__entry ul:hover {
-        background-color: #f53225; }
-    .cpt-aguaymanto .main-post__content__entry a:hover {
-      color: #540904; }
+  .cpt-aguaymanto .main-post__content__entry ul {
+    background-image: url(assets/img/bg_aguaymanto.svg);
+    background-color: #f42517;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-aguaymanto .main-post__content__entry ul:hover {
+      background-color: #f53225; }
+  .cpt-aguaymanto .main-post__content__entry a:hover {
+    color: #540904; }
   .cpt-aguaymanto .galeria-fotos__figure a {
     color: #e6190b; }
     .cpt-aguaymanto .galeria-fotos__figure a:hover {
@@ -1364,7 +1350,7 @@ a[href*="producto/aguaymanto"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-andeantrailmix .main-post__header {
+  .cpt-andeantrailmix .page-header {
     background-image: url(assets/img/bg_andeantrailmix.svg);
     background-color: #d05e39;
     background-position: center bottom;
@@ -1372,25 +1358,23 @@ a[href*="producto/aguaymanto"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-andeantrailmix .main-post__header:hover {
+    .cpt-andeantrailmix .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-andeantrailmix .main-post__content {
     background-color: white; }
-  .cpt-andeantrailmix .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-andeantrailmix .main-post__content__entry ul {
-      background-image: url(assets/img/bg_andeantrailmix.svg);
-      background-color: #d05e39;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-andeantrailmix .main-post__content__entry ul:hover {
-        background-color: #d36845; }
-    .cpt-andeantrailmix .main-post__content__entry a:hover {
-      color: #451e11; }
+  .cpt-andeantrailmix .main-post__content__entry ul {
+    background-image: url(assets/img/bg_andeantrailmix.svg);
+    background-color: #d05e39;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-andeantrailmix .main-post__content__entry ul:hover {
+      background-color: #d36845; }
+  .cpt-andeantrailmix .main-post__content__entry a:hover {
+    color: #451e11; }
   .cpt-andeantrailmix .galeria-fotos__figure a {
     color: #c1522e; }
     .cpt-andeantrailmix .galeria-fotos__figure a:hover {
@@ -1427,7 +1411,7 @@ a[href*="producto/andeantrailmix"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-gojicaotrailmix .main-post__header {
+  .cpt-gojicaotrailmix .page-header {
     background-image: url(assets/img/bg_gojicaotrailmix.svg);
     background-color: #d05e39;
     background-position: center bottom;
@@ -1435,25 +1419,23 @@ a[href*="producto/andeantrailmix"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-gojicaotrailmix .main-post__header:hover {
+    .cpt-gojicaotrailmix .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-gojicaotrailmix .main-post__content {
     background-color: white; }
-  .cpt-gojicaotrailmix .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-gojicaotrailmix .main-post__content__entry ul {
-      background-image: url(assets/img/bg_gojicaotrailmix.svg);
-      background-color: #d05e39;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-gojicaotrailmix .main-post__content__entry ul:hover {
-        background-color: #d36845; }
-    .cpt-gojicaotrailmix .main-post__content__entry a:hover {
-      color: #451e11; }
+  .cpt-gojicaotrailmix .main-post__content__entry ul {
+    background-image: url(assets/img/bg_gojicaotrailmix.svg);
+    background-color: #d05e39;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-gojicaotrailmix .main-post__content__entry ul:hover {
+      background-color: #d36845; }
+  .cpt-gojicaotrailmix .main-post__content__entry a:hover {
+    color: #451e11; }
   .cpt-gojicaotrailmix .galeria-fotos__figure a {
     color: #c1522e; }
     .cpt-gojicaotrailmix .galeria-fotos__figure a:hover {
@@ -1490,7 +1472,7 @@ a[href*="producto/gojicaotrailmix"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-graviola .main-post__header {
+  .cpt-graviola .page-header {
     background-image: url(assets/img/bg_graviola.svg);
     background-color: #8f8356;
     background-position: center bottom;
@@ -1498,25 +1480,23 @@ a[href*="producto/gojicaotrailmix"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-graviola .main-post__header:hover {
+    .cpt-graviola .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-graviola .main-post__content {
     background-color: white; }
-  .cpt-graviola .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-graviola .main-post__content__entry ul {
-      background-image: url(assets/img/bg_graviola.svg);
-      background-color: #8f8356;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-graviola .main-post__content__entry ul:hover {
-        background-color: #998b5b; }
-    .cpt-graviola .main-post__content__entry a:hover {
-      color: #1f1d13; }
+  .cpt-graviola .main-post__content__entry ul {
+    background-image: url(assets/img/bg_graviola.svg);
+    background-color: #8f8356;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-graviola .main-post__content__entry ul:hover {
+      background-color: #998b5b; }
+  .cpt-graviola .main-post__content__entry a:hover {
+    color: #1f1d13; }
   .cpt-graviola .galeria-fotos__figure a {
     color: #7f744c; }
     .cpt-graviola .galeria-fotos__figure a:hover {
@@ -1553,7 +1533,7 @@ a[href*="producto/graviola"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-goji .main-post__header {
+  .cpt-goji .page-header {
     background-image: url(assets/img/bg_goji.svg);
     background-color: #f42517;
     background-position: center bottom;
@@ -1561,25 +1541,23 @@ a[href*="producto/graviola"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-goji .main-post__header:hover {
+    .cpt-goji .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-goji .main-post__content {
     background-color: white; }
-  .cpt-goji .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-goji .main-post__content__entry ul {
-      background-image: url(assets/img/bg_goji.svg);
-      background-color: #f42517;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-goji .main-post__content__entry ul:hover {
-        background-color: #f53225; }
-    .cpt-goji .main-post__content__entry a:hover {
-      color: #540904; }
+  .cpt-goji .main-post__content__entry ul {
+    background-image: url(assets/img/bg_goji.svg);
+    background-color: #f42517;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-goji .main-post__content__entry ul:hover {
+      background-color: #f53225; }
+  .cpt-goji .main-post__content__entry a:hover {
+    color: #540904; }
   .cpt-goji .galeria-fotos__figure a {
     color: #e6190b; }
     .cpt-goji .galeria-fotos__figure a:hover {
@@ -1616,7 +1594,7 @@ a[href*="producto/goji"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-cacaocriollo .main-post__header {
+  .cpt-cacaocriollo .page-header {
     background-image: url(assets/img/bg_cacaocriollo.svg);
     background-color: #4d2525;
     background-position: center bottom;
@@ -1624,25 +1602,23 @@ a[href*="producto/goji"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-cacaocriollo .main-post__header:hover {
+    .cpt-cacaocriollo .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-cacaocriollo .main-post__content {
     background-color: white; }
-  .cpt-cacaocriollo .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-cacaocriollo .main-post__content__entry ul {
-      background-image: url(assets/img/bg_cacaocriollo.svg);
-      background-color: #4d2525;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-cacaocriollo .main-post__content__entry ul:hover {
-        background-color: #582a2a; }
-    .cpt-cacaocriollo .main-post__content__entry a:hover {
-      color: black; }
+  .cpt-cacaocriollo .main-post__content__entry ul {
+    background-image: url(assets/img/bg_cacaocriollo.svg);
+    background-color: #4d2525;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-cacaocriollo .main-post__content__entry ul:hover {
+      background-color: #582a2a; }
+  .cpt-cacaocriollo .main-post__content__entry a:hover {
+    color: black; }
   .cpt-cacaocriollo .galeria-fotos__figure a {
     color: #3c1d1d; }
     .cpt-cacaocriollo .galeria-fotos__figure a:hover {
@@ -1679,7 +1655,7 @@ a[href*="producto/cacaocriollo"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-chlorella .main-post__header {
+  .cpt-chlorella .page-header {
     background-image: url(assets/img/bg_chlorella.svg);
     background-color: #2f1e19;
     background-position: center bottom;
@@ -1687,25 +1663,23 @@ a[href*="producto/cacaocriollo"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-chlorella .main-post__header:hover {
+    .cpt-chlorella .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-chlorella .main-post__content {
     background-color: white; }
-  .cpt-chlorella .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-chlorella .main-post__content__entry ul {
-      background-image: url(assets/img/bg_chlorella.svg);
-      background-color: #2f1e19;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-chlorella .main-post__content__entry ul:hover {
-        background-color: #39241e; }
-    .cpt-chlorella .main-post__content__entry a:hover {
-      color: black; }
+  .cpt-chlorella .main-post__content__entry ul {
+    background-image: url(assets/img/bg_chlorella.svg);
+    background-color: #2f1e19;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-chlorella .main-post__content__entry ul:hover {
+      background-color: #39241e; }
+  .cpt-chlorella .main-post__content__entry a:hover {
+    color: black; }
   .cpt-chlorella .galeria-fotos__figure a {
     color: #1e1310; }
     .cpt-chlorella .galeria-fotos__figure a:hover {
@@ -1742,7 +1716,7 @@ a[href*="producto/chlorella"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-chia .main-post__header {
+  .cpt-chia .page-header {
     background-image: url(assets/img/bg_chia.svg);
     background-color: #988b81;
     background-position: center bottom;
@@ -1750,25 +1724,23 @@ a[href*="producto/chlorella"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-chia .main-post__header:hover {
+    .cpt-chia .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-chia .main-post__content {
     background-color: white; }
-  .cpt-chia .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-chia .main-post__content__entry ul {
-      background-image: url(assets/img/bg_chia.svg);
-      background-color: #988b81;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-chia .main-post__content__entry ul:hover {
-        background-color: #9e9389; }
-    .cpt-chia .main-post__content__entry a:hover {
-      color: #38322e; }
+  .cpt-chia .main-post__content__entry ul {
+    background-image: url(assets/img/bg_chia.svg);
+    background-color: #988b81;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-chia .main-post__content__entry ul:hover {
+      background-color: #9e9389; }
+  .cpt-chia .main-post__content__entry a:hover {
+    color: #38322e; }
   .cpt-chia .galeria-fotos__figure a {
     color: #8c7e73; }
     .cpt-chia .galeria-fotos__figure a:hover {
@@ -1805,7 +1777,7 @@ a[href*="producto/chia"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-amaranto .main-post__header {
+  .cpt-amaranto .page-header {
     background-image: url(assets/img/bg_amaranto.svg);
     background-color: #c62771;
     background-position: center bottom;
@@ -1813,25 +1785,23 @@ a[href*="producto/chia"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-amaranto .main-post__header:hover {
+    .cpt-amaranto .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-amaranto .main-post__content {
     background-color: white; }
-  .cpt-amaranto .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-amaranto .main-post__content__entry ul {
-      background-image: url(assets/img/bg_amaranto.svg);
-      background-color: #c62771;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-amaranto .main-post__content__entry ul:hover {
-        background-color: #d32a78; }
-    .cpt-amaranto .main-post__content__entry a:hover {
-      color: #310a1c; }
+  .cpt-amaranto .main-post__content__entry ul {
+    background-image: url(assets/img/bg_amaranto.svg);
+    background-color: #c62771;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-amaranto .main-post__content__entry ul:hover {
+      background-color: #d32a78; }
+  .cpt-amaranto .main-post__content__entry a:hover {
+    color: #310a1c; }
   .cpt-amaranto .galeria-fotos__figure a {
     color: #b12365; }
     .cpt-amaranto .galeria-fotos__figure a:hover {
@@ -1868,7 +1838,7 @@ a[href*="producto/amaranto"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-spiroulina .main-post__header {
+  .cpt-spiroulina .page-header {
     background-image: url(assets/img/bg_spiroulina.svg);
     background-color: #3a4733;
     background-position: center bottom;
@@ -1876,25 +1846,23 @@ a[href*="producto/amaranto"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-spiroulina .main-post__header:hover {
+    .cpt-spiroulina .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-spiroulina .main-post__content {
     background-color: white; }
-  .cpt-spiroulina .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-spiroulina .main-post__content__entry ul {
-      background-image: url(assets/img/bg_spiroulina.svg);
-      background-color: #3a4733;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-spiroulina .main-post__content__entry ul:hover {
-        background-color: #425039; }
-    .cpt-spiroulina .main-post__content__entry a:hover {
-      color: black; }
+  .cpt-spiroulina .main-post__content__entry ul {
+    background-image: url(assets/img/bg_spiroulina.svg);
+    background-color: #3a4733;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-spiroulina .main-post__content__entry ul:hover {
+      background-color: #425039; }
+  .cpt-spiroulina .main-post__content__entry a:hover {
+    color: black; }
   .cpt-spiroulina .galeria-fotos__figure a {
     color: #2e3828; }
     .cpt-spiroulina .galeria-fotos__figure a:hover {
@@ -1931,7 +1899,7 @@ a[href*="producto/spiroulina"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-camucamu .main-post__header {
+  .cpt-camucamu .page-header {
     background-image: url(assets/img/bg_camucamu.svg);
     background-color: #763c46;
     background-position: center bottom;
@@ -1939,25 +1907,23 @@ a[href*="producto/spiroulina"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-camucamu .main-post__header:hover {
+    .cpt-camucamu .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-camucamu .main-post__content {
     background-color: white; }
-  .cpt-camucamu .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-camucamu .main-post__content__entry ul {
-      background-image: url(assets/img/bg_camucamu.svg);
-      background-color: #763c46;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-camucamu .main-post__content__entry ul:hover {
-        background-color: #80414c; }
-    .cpt-camucamu .main-post__content__entry a:hover {
-      color: black; }
+  .cpt-camucamu .main-post__content__entry ul {
+    background-image: url(assets/img/bg_camucamu.svg);
+    background-color: #763c46;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-camucamu .main-post__content__entry ul:hover {
+      background-color: #80414c; }
+  .cpt-camucamu .main-post__content__entry a:hover {
+    color: black; }
   .cpt-camucamu .galeria-fotos__figure a {
     color: #65333c; }
     .cpt-camucamu .galeria-fotos__figure a:hover {
@@ -1994,7 +1960,7 @@ a[href*="producto/camucamu"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-canamo .main-post__header {
+  .cpt-canamo .page-header {
     background-image: url(assets/img/bg_canamo.svg);
     background-color: #00aa5b;
     background-position: center bottom;
@@ -2002,25 +1968,23 @@ a[href*="producto/camucamu"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-canamo .main-post__header:hover {
+    .cpt-canamo .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-canamo .main-post__content {
     background-color: white; }
-  .cpt-canamo .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-canamo .main-post__content__entry ul {
-      background-image: url(assets/img/bg_canamo.svg);
-      background-color: #00aa5b;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-canamo .main-post__content__entry ul:hover {
-        background-color: #00b963; }
-    .cpt-canamo .main-post__content__entry a:hover {
-      color: black; }
+  .cpt-canamo .main-post__content__entry ul {
+    background-image: url(assets/img/bg_canamo.svg);
+    background-color: #00aa5b;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-canamo .main-post__content__entry ul:hover {
+      background-color: #00b963; }
+  .cpt-canamo .main-post__content__entry a:hover {
+    color: black; }
   .cpt-canamo .galeria-fotos__figure a {
     color: #00904d; }
     .cpt-canamo .galeria-fotos__figure a:hover {
@@ -2057,7 +2021,7 @@ a[href*="producto/canamo"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-maca .main-post__header {
+  .cpt-maca .page-header {
     background-image: url(assets/img/bg_maca.svg);
     background-color: #b95179;
     background-position: center bottom;
@@ -2065,25 +2029,23 @@ a[href*="producto/canamo"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-maca .main-post__header:hover {
+    .cpt-maca .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-maca .main-post__content {
     background-color: white; }
-  .cpt-maca .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-maca .main-post__content__entry ul {
-      background-image: url(assets/img/bg_maca.svg);
-      background-color: #b95179;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-maca .main-post__content__entry ul:hover {
-        background-color: #bd5c81; }
-    .cpt-maca .main-post__content__entry a:hover {
-      color: #3e1927; }
+  .cpt-maca .main-post__content__entry ul {
+    background-image: url(assets/img/bg_maca.svg);
+    background-color: #b95179;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-maca .main-post__content__entry ul:hover {
+      background-color: #bd5c81; }
+  .cpt-maca .main-post__content__entry a:hover {
+    color: #3e1927; }
   .cpt-maca .galeria-fotos__figure a {
     color: #ab456c; }
     .cpt-maca .galeria-fotos__figure a:hover {
@@ -2120,7 +2082,7 @@ a[href*="producto/maca"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-lucuma .main-post__header {
+  .cpt-lucuma .page-header {
     background-image: url(assets/img/bg_lucuma.svg);
     background-color: #f9b91b;
     background-position: center bottom;
@@ -2128,25 +2090,23 @@ a[href*="producto/maca"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-lucuma .main-post__header:hover {
+    .cpt-lucuma .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-lucuma .main-post__content {
     background-color: white; }
-  .cpt-lucuma .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-lucuma .main-post__content__entry ul {
-      background-image: url(assets/img/bg_lucuma.svg);
-      background-color: #f9b91b;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-lucuma .main-post__content__entry ul:hover {
-        background-color: #fabe2a; }
-    .cpt-lucuma .main-post__content__entry a:hover {
-      color: #604502; }
+  .cpt-lucuma .main-post__content__entry ul {
+    background-image: url(assets/img/bg_lucuma.svg);
+    background-color: #f9b91b;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-lucuma .main-post__content__entry ul:hover {
+      background-color: #fabe2a; }
+  .cpt-lucuma .main-post__content__entry a:hover {
+    color: #604502; }
   .cpt-lucuma .galeria-fotos__figure a {
     color: #f5b006; }
     .cpt-lucuma .galeria-fotos__figure a:hover {
@@ -2183,7 +2143,7 @@ a[href*="producto/lucuma"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-stevia .main-post__header {
+  .cpt-stevia .page-header {
     background-image: url(assets/img/bg_stevia.svg);
     background-color: #009559;
     background-position: center bottom;
@@ -2191,25 +2151,23 @@ a[href*="producto/lucuma"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-stevia .main-post__header:hover {
+    .cpt-stevia .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-stevia .main-post__content {
     background-color: white; }
-  .cpt-stevia .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-stevia .main-post__content__entry ul {
-      background-image: url(assets/img/bg_stevia.svg);
-      background-color: #009559;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-stevia .main-post__content__entry ul:hover {
-        background-color: #00a463; }
-    .cpt-stevia .main-post__content__entry a:hover {
-      color: black; }
+  .cpt-stevia .main-post__content__entry ul {
+    background-image: url(assets/img/bg_stevia.svg);
+    background-color: #009559;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-stevia .main-post__content__entry ul:hover {
+      background-color: #00a463; }
+  .cpt-stevia .main-post__content__entry a:hover {
+    color: black; }
   .cpt-stevia .galeria-fotos__figure a {
     color: #007b4a; }
     .cpt-stevia .galeria-fotos__figure a:hover {
@@ -2246,7 +2204,7 @@ a[href*="producto/stevia"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-quinoa .main-post__header {
+  .cpt-quinoa .page-header {
     background-image: url(assets/img/bg_quinoa.svg);
     background-color: #d3313a;
     background-position: center bottom;
@@ -2254,25 +2212,23 @@ a[href*="producto/stevia"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-quinoa .main-post__header:hover {
+    .cpt-quinoa .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-quinoa .main-post__content {
     background-color: white; }
-  .cpt-quinoa .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-quinoa .main-post__content__entry ul {
-      background-image: url(assets/img/bg_quinoa.svg);
-      background-color: #d3313a;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-quinoa .main-post__content__entry ul:hover {
-        background-color: #d63e46; }
-    .cpt-quinoa .main-post__content__entry a:hover {
-      color: #440e11; }
+  .cpt-quinoa .main-post__content__entry ul {
+    background-image: url(assets/img/bg_quinoa.svg);
+    background-color: #d3313a;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-quinoa .main-post__content__entry ul:hover {
+      background-color: #d63e46; }
+  .cpt-quinoa .main-post__content__entry a:hover {
+    color: #440e11; }
   .cpt-quinoa .galeria-fotos__figure a {
     color: #c22931; }
     .cpt-quinoa .galeria-fotos__figure a:hover {
@@ -2309,7 +2265,7 @@ a[href*="producto/quinoa"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-alfalfa .main-post__header {
+  .cpt-alfalfa .page-header {
     background-image: url(assets/img/bg_alfalfa.svg);
     background-color: #2c9c80;
     background-position: center bottom;
@@ -2317,25 +2273,23 @@ a[href*="producto/quinoa"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-alfalfa .main-post__header:hover {
+    .cpt-alfalfa .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-alfalfa .main-post__content {
     background-color: white; }
-  .cpt-alfalfa .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-alfalfa .main-post__content__entry ul {
-      background-image: url(assets/img/bg_alfalfa.svg);
-      background-color: #2c9c80;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-alfalfa .main-post__content__entry ul:hover {
-        background-color: #2fa88a; }
-    .cpt-alfalfa .main-post__content__entry a:hover {
-      color: #05100e; }
+  .cpt-alfalfa .main-post__content__entry ul {
+    background-image: url(assets/img/bg_alfalfa.svg);
+    background-color: #2c9c80;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-alfalfa .main-post__content__entry ul:hover {
+      background-color: #2fa88a; }
+  .cpt-alfalfa .main-post__content__entry a:hover {
+    color: #05100e; }
   .cpt-alfalfa .galeria-fotos__figure a {
     color: #268870; }
     .cpt-alfalfa .galeria-fotos__figure a:hover {
@@ -2372,7 +2326,7 @@ a[href*="producto/alfalfa"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-trigoverde .main-post__header {
+  .cpt-trigoverde .page-header {
     background-image: url(assets/img/bg_trigoverde.svg);
     background-color: #558b36;
     background-position: center bottom;
@@ -2380,25 +2334,23 @@ a[href*="producto/alfalfa"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-trigoverde .main-post__header:hover {
+    .cpt-trigoverde .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-trigoverde .main-post__content {
     background-color: white; }
-  .cpt-trigoverde .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-trigoverde .main-post__content__entry ul {
-      background-image: url(assets/img/bg_trigoverde.svg);
-      background-color: #558b36;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-trigoverde .main-post__content__entry ul:hover {
-        background-color: #5c963a; }
-    .cpt-trigoverde .main-post__content__entry a:hover {
-      color: #070b04; }
+  .cpt-trigoverde .main-post__content__entry ul {
+    background-image: url(assets/img/bg_trigoverde.svg);
+    background-color: #558b36;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-trigoverde .main-post__content__entry ul:hover {
+      background-color: #5c963a; }
+  .cpt-trigoverde .main-post__content__entry a:hover {
+    color: #070b04; }
   .cpt-trigoverde .galeria-fotos__figure a {
     color: #4a792f; }
     .cpt-trigoverde .galeria-fotos__figure a:hover {
@@ -2435,7 +2387,7 @@ a[href*="producto/trigoverde"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-algarroba .main-post__header {
+  .cpt-algarroba .page-header {
     background-image: url(assets/img/bg_algarroba.svg);
     background-color: #301f19;
     background-position: center bottom;
@@ -2443,25 +2395,23 @@ a[href*="producto/trigoverde"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-algarroba .main-post__header:hover {
+    .cpt-algarroba .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-algarroba .main-post__content {
     background-color: white; }
-  .cpt-algarroba .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-algarroba .main-post__content__entry ul {
-      background-image: url(assets/img/bg_algarroba.svg);
-      background-color: #301f19;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-algarroba .main-post__content__entry ul:hover {
-        background-color: #3a251e; }
-    .cpt-algarroba .main-post__content__entry a:hover {
-      color: black; }
+  .cpt-algarroba .main-post__content__entry ul {
+    background-image: url(assets/img/bg_algarroba.svg);
+    background-color: #301f19;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-algarroba .main-post__content__entry ul:hover {
+      background-color: #3a251e; }
+  .cpt-algarroba .main-post__content__entry a:hover {
+    color: black; }
   .cpt-algarroba .galeria-fotos__figure a {
     color: #1f1410; }
     .cpt-algarroba .galeria-fotos__figure a:hover {
@@ -2498,7 +2448,7 @@ a[href*="producto/algarroba"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-cardomariano .main-post__header {
+  .cpt-cardomariano .page-header {
     background-image: url(assets/img/bg_cardomariano.svg);
     background-color: #b188b8;
     background-position: center bottom;
@@ -2506,25 +2456,23 @@ a[href*="producto/algarroba"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-cardomariano .main-post__header:hover {
+    .cpt-cardomariano .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-cardomariano .main-post__content {
     background-color: white; }
-  .cpt-cardomariano .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-cardomariano .main-post__content__entry ul {
-      background-image: url(assets/img/bg_cardomariano.svg);
-      background-color: #b188b8;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-cardomariano .main-post__content__entry ul:hover {
-        background-color: #b792bd; }
-    .cpt-cardomariano .main-post__content__entry a:hover {
-      color: #533558; }
+  .cpt-cardomariano .main-post__content__entry ul {
+    background-image: url(assets/img/bg_cardomariano.svg);
+    background-color: #b188b8;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-cardomariano .main-post__content__entry ul:hover {
+      background-color: #b792bd; }
+  .cpt-cardomariano .main-post__content__entry a:hover {
+    color: #533558; }
   .cpt-cardomariano .galeria-fotos__figure a {
     color: #a678ae; }
     .cpt-cardomariano .galeria-fotos__figure a:hover {
@@ -2561,7 +2509,7 @@ a[href*="producto/cardomariano"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-linodorado .main-post__header {
+  .cpt-linodorado .page-header {
     background-image: url(assets/img/bg_linodorado.svg);
     background-color: #e2cc59;
     background-position: center bottom;
@@ -2569,25 +2517,23 @@ a[href*="producto/cardomariano"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-linodorado .main-post__header:hover {
+    .cpt-linodorado .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-linodorado .main-post__content {
     background-color: white; }
-  .cpt-linodorado .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-linodorado .main-post__content__entry ul {
-      background-image: url(assets/img/bg_linodorado.svg);
-      background-color: #e2cc59;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-linodorado .main-post__content__entry ul:hover {
-        background-color: #e4d066; }
-    .cpt-linodorado .main-post__content__entry a:hover {
-      color: #746414; }
+  .cpt-linodorado .main-post__content__entry ul {
+    background-image: url(assets/img/bg_linodorado.svg);
+    background-color: #e2cc59;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-linodorado .main-post__content__entry ul:hover {
+      background-color: #e4d066; }
+  .cpt-linodorado .main-post__content__entry a:hover {
+    color: #746414; }
   .cpt-linodorado .galeria-fotos__figure a {
     color: #dec543; }
     .cpt-linodorado .galeria-fotos__figure a:hover {
@@ -2624,7 +2570,7 @@ a[href*="producto/linodorado"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-fresa .main-post__header {
+  .cpt-fresa .page-header {
     background-image: url(assets/img/bg_fresa.svg);
     background-color: #fb3e03;
     background-position: center bottom;
@@ -2632,25 +2578,23 @@ a[href*="producto/linodorado"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-fresa .main-post__header:hover {
+    .cpt-fresa .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-fresa .main-post__content {
     background-color: white; }
-  .cpt-fresa .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-fresa .main-post__content__entry ul {
-      background-image: url(assets/img/bg_fresa.svg);
-      background-color: #fb3e03;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-fresa .main-post__content__entry ul:hover {
-        background-color: #fc4a12; }
-    .cpt-fresa .main-post__content__entry a:hover {
-      color: #4b1301; }
+  .cpt-fresa .main-post__content__entry ul {
+    background-image: url(assets/img/bg_fresa.svg);
+    background-color: #fb3e03;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-fresa .main-post__content__entry ul:hover {
+      background-color: #fc4a12; }
+  .cpt-fresa .main-post__content__entry a:hover {
+    color: #4b1301; }
   .cpt-fresa .galeria-fotos__figure a {
     color: #e23803; }
     .cpt-fresa .galeria-fotos__figure a:hover {
@@ -2687,7 +2631,7 @@ a[href*="producto/fresa"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-coco .main-post__header {
+  .cpt-coco .page-header {
     background-image: url(assets/img/bg_coco.svg);
     background-color: #955928;
     background-position: center bottom;
@@ -2695,25 +2639,23 @@ a[href*="producto/fresa"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-coco .main-post__header:hover {
+    .cpt-coco .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-coco .main-post__content {
     background-color: white; }
-  .cpt-coco .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-coco .main-post__content__entry ul {
-      background-image: url(assets/img/bg_coco.svg);
-      background-color: #955928;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-coco .main-post__content__entry ul:hover {
-        background-color: #a1602c; }
-    .cpt-coco .main-post__content__entry a:hover {
-      color: #090502; }
+  .cpt-coco .main-post__content__entry ul {
+    background-image: url(assets/img/bg_coco.svg);
+    background-color: #955928;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-coco .main-post__content__entry ul:hover {
+      background-color: #a1602c; }
+  .cpt-coco .main-post__content__entry a:hover {
+    color: #090502; }
   .cpt-coco .galeria-fotos__figure a {
     color: #814d23; }
     .cpt-coco .galeria-fotos__figure a:hover {
@@ -2750,7 +2692,7 @@ a[href*="producto/coco"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-gymtonic .main-post__header {
+  .cpt-gymtonic .page-header {
     background-image: url(assets/img/bg_gymtonic.svg);
     background-color: #d90513;
     background-position: center bottom;
@@ -2758,25 +2700,23 @@ a[href*="producto/coco"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-gymtonic .main-post__header:hover {
+    .cpt-gymtonic .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-gymtonic .main-post__content {
     background-color: white; }
-  .cpt-gymtonic .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-gymtonic .main-post__content__entry ul {
-      background-image: url(assets/img/bg_gymtonic.svg);
-      background-color: #d90513;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-gymtonic .main-post__content__entry ul:hover {
-        background-color: #e80515; }
-    .cpt-gymtonic .main-post__content__entry a:hover {
-      color: #2a0104; }
+  .cpt-gymtonic .main-post__content__entry ul {
+    background-image: url(assets/img/bg_gymtonic.svg);
+    background-color: #d90513;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-gymtonic .main-post__content__entry ul:hover {
+      background-color: #e80515; }
+  .cpt-gymtonic .main-post__content__entry a:hover {
+    color: #2a0104; }
   .cpt-gymtonic .galeria-fotos__figure a {
     color: #c00411; }
     .cpt-gymtonic .galeria-fotos__figure a:hover {
@@ -2813,7 +2753,7 @@ a[href*="producto/gymtonic"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-delifiber .main-post__header {
+  .cpt-delifiber .page-header {
     background-image: url(assets/img/bg_delifiber.svg);
     background-color: #ffe50a;
     background-position: center bottom;
@@ -2821,25 +2761,23 @@ a[href*="producto/gymtonic"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-delifiber .main-post__header:hover {
+    .cpt-delifiber .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-delifiber .main-post__content {
     background-color: white; }
-  .cpt-delifiber .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-delifiber .main-post__content__entry ul {
-      background-image: url(assets/img/bg_delifiber.svg);
-      background-color: #ffe50a;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-delifiber .main-post__content__entry ul:hover {
-        background-color: #ffe719; }
-    .cpt-delifiber .main-post__content__entry a:hover {
-      color: #564d00; }
+  .cpt-delifiber .main-post__content__entry ul {
+    background-image: url(assets/img/bg_delifiber.svg);
+    background-color: #ffe50a;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-delifiber .main-post__content__entry ul:hover {
+      background-color: #ffe719; }
+  .cpt-delifiber .main-post__content__entry a:hover {
+    color: #564d00; }
   .cpt-delifiber .galeria-fotos__figure a {
     color: #efd600; }
     .cpt-delifiber .galeria-fotos__figure a:hover {
@@ -2876,7 +2814,7 @@ a[href*="producto/delifiber"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-brainshake .main-post__header {
+  .cpt-brainshake .page-header {
     background-image: url(assets/img/bg_brainshake.svg);
     background-color: #f3a200;
     background-position: center bottom;
@@ -2884,25 +2822,23 @@ a[href*="producto/delifiber"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-brainshake .main-post__header:hover {
+    .cpt-brainshake .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-brainshake .main-post__content {
     background-color: white; }
-  .cpt-brainshake .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-brainshake .main-post__content__entry ul {
-      background-image: url(assets/img/bg_brainshake.svg);
-      background-color: #f3a200;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-brainshake .main-post__content__entry ul:hover {
-        background-color: #ffab03; }
-    .cpt-brainshake .main-post__content__entry a:hover {
-      color: #402b00; }
+  .cpt-brainshake .main-post__content__entry ul {
+    background-image: url(assets/img/bg_brainshake.svg);
+    background-color: #f3a200;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-brainshake .main-post__content__entry ul:hover {
+      background-color: #ffab03; }
+  .cpt-brainshake .main-post__content__entry a:hover {
+    color: #402b00; }
   .cpt-brainshake .galeria-fotos__figure a {
     color: #d99100; }
     .cpt-brainshake .galeria-fotos__figure a:hover {
@@ -2939,7 +2875,7 @@ a[href*="producto/brainshake"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-andeanprotein .main-post__header {
+  .cpt-andeanprotein .page-header {
     background-image: url(assets/img/bg_andeanprotein.svg);
     background-color: #45762b;
     background-position: center bottom;
@@ -2947,25 +2883,23 @@ a[href*="producto/brainshake"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-andeanprotein .main-post__header:hover {
+    .cpt-andeanprotein .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-andeanprotein .main-post__content {
     background-color: white; }
-  .cpt-andeanprotein .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-andeanprotein .main-post__content__entry ul {
-      background-image: url(assets/img/bg_andeanprotein.svg);
-      background-color: #45762b;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-andeanprotein .main-post__content__entry ul:hover {
-        background-color: #4c812f; }
-    .cpt-andeanprotein .main-post__content__entry a:hover {
-      color: black; }
+  .cpt-andeanprotein .main-post__content__entry ul {
+    background-image: url(assets/img/bg_andeanprotein.svg);
+    background-color: #45762b;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-andeanprotein .main-post__content__entry ul:hover {
+      background-color: #4c812f; }
+  .cpt-andeanprotein .main-post__content__entry a:hover {
+    color: black; }
   .cpt-andeanprotein .galeria-fotos__figure a {
     color: #3a6324; }
     .cpt-andeanprotein .galeria-fotos__figure a:hover {
@@ -3002,7 +2936,7 @@ a[href*="producto/andeanprotein"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-macuchino .main-post__header {
+  .cpt-macuchino .page-header {
     background-image: url(assets/img/bg_macuchino.svg);
     background-color: #bd944f;
     background-position: center bottom;
@@ -3010,25 +2944,23 @@ a[href*="producto/andeanprotein"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-macuchino .main-post__header:hover {
+    .cpt-macuchino .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-macuchino .main-post__content {
     background-color: white; }
-  .cpt-macuchino .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-macuchino .main-post__content__entry ul {
-      background-image: url(assets/img/bg_macuchino.svg);
-      background-color: #bd944f;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-macuchino .main-post__content__entry ul:hover {
-        background-color: #c19b5a; }
-    .cpt-macuchino .main-post__content__entry a:hover {
-      color: #413218; }
+  .cpt-macuchino .main-post__content__entry ul {
+    background-image: url(assets/img/bg_macuchino.svg);
+    background-color: #bd944f;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-macuchino .main-post__content__entry ul:hover {
+      background-color: #c19b5a; }
+  .cpt-macuchino .main-post__content__entry a:hover {
+    color: #413218; }
   .cpt-macuchino .galeria-fotos__figure a {
     color: #b08742; }
     .cpt-macuchino .galeria-fotos__figure a:hover {
@@ -3065,7 +2997,7 @@ a[href*="producto/macuchino"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-bodtox .main-post__header {
+  .cpt-bodtox .page-header {
     background-image: url(assets/img/bg_bodtox.svg);
     background-color: #b1cc3b;
     background-position: center bottom;
@@ -3073,25 +3005,23 @@ a[href*="producto/macuchino"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-bodtox .main-post__header:hover {
+    .cpt-bodtox .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-bodtox .main-post__content {
     background-color: white; }
-  .cpt-bodtox .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-bodtox .main-post__content__entry ul {
-      background-image: url(assets/img/bg_bodtox.svg);
-      background-color: #b1cc3b;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-bodtox .main-post__content__entry ul:hover {
-        background-color: #b6cf47; }
-    .cpt-bodtox .main-post__content__entry a:hover {
-      color: #3a4412; }
+  .cpt-bodtox .main-post__content__entry ul {
+    background-image: url(assets/img/bg_bodtox.svg);
+    background-color: #b1cc3b;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-bodtox .main-post__content__entry ul:hover {
+      background-color: #b6cf47; }
+  .cpt-bodtox .main-post__content__entry a:hover {
+    color: #3a4412; }
   .cpt-bodtox .galeria-fotos__figure a {
     color: #a3bd31; }
     .cpt-bodtox .galeria-fotos__figure a:hover {
@@ -3128,7 +3058,7 @@ a[href*="producto/bodtox"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-royalbreakfast .main-post__header {
+  .cpt-royalbreakfast .page-header {
     background-image: url(assets/img/bg_royalbreakfast.svg);
     background-color: #871a14;
     background-position: center bottom;
@@ -3136,25 +3066,23 @@ a[href*="producto/bodtox"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-royalbreakfast .main-post__header:hover {
+    .cpt-royalbreakfast .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-royalbreakfast .main-post__content {
     background-color: white; }
-  .cpt-royalbreakfast .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-royalbreakfast .main-post__content__entry ul {
-      background-image: url(assets/img/bg_royalbreakfast.svg);
-      background-color: #871a14;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-royalbreakfast .main-post__content__entry ul:hover {
-        background-color: #941d16; }
-    .cpt-royalbreakfast .main-post__content__entry a:hover {
-      color: black; }
+  .cpt-royalbreakfast .main-post__content__entry ul {
+    background-image: url(assets/img/bg_royalbreakfast.svg);
+    background-color: #871a14;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-royalbreakfast .main-post__content__entry ul:hover {
+      background-color: #941d16; }
+  .cpt-royalbreakfast .main-post__content__entry a:hover {
+    color: black; }
   .cpt-royalbreakfast .galeria-fotos__figure a {
     color: #711611; }
     .cpt-royalbreakfast .galeria-fotos__figure a:hover {
@@ -3191,7 +3119,7 @@ a[href*="producto/royalbreakfast"] figure {
     margin-top: 3%;
     font-size: 90px;
     font-size: 4.5rem; }
-  .cpt-camucao .main-post__header {
+  .cpt-camucao .page-header {
     background-image: url(assets/img/bg_camucao.svg);
     background-color: #a04421;
     background-position: center bottom;
@@ -3199,25 +3127,23 @@ a[href*="producto/royalbreakfast"] figure {
     background-size: contain;
     -webkit-transition: all 4s;
     transition: all 4s; }
-    .cpt-camucao .main-post__header:hover {
+    .cpt-camucao .page-header:hover {
       -webkit-transition: all 4s;
       transition: all 4s;
       background-position: center 100px;
       background-size: cover; }
   .cpt-camucao .main-post__content {
     background-color: white; }
-  .cpt-camucao .main-post__content__entry {
-    padding-top: 3%; }
-    .cpt-camucao .main-post__content__entry ul {
-      background-image: url(assets/img/bg_camucao.svg);
-      background-color: #a04421;
-      background-position: 350px bottom;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .cpt-camucao .main-post__content__entry ul:hover {
-        background-color: #ad4924; }
-    .cpt-camucao .main-post__content__entry a:hover {
-      color: #0c0503; }
+  .cpt-camucao .main-post__content__entry ul {
+    background-image: url(assets/img/bg_camucao.svg);
+    background-color: #a04421;
+    background-position: 350px bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cpt-camucao .main-post__content__entry ul:hover {
+      background-color: #ad4924; }
+  .cpt-camucao .main-post__content__entry a:hover {
+    color: #0c0503; }
   .cpt-camucao .galeria-fotos__figure a {
     color: #8b3b1d; }
     .cpt-camucao .galeria-fotos__figure a:hover {
