@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main class="main__content" role="main">
 		<?php
-		/* Content single */
+		/* Content page */
 		get_template_part( 'partials/fields', 'page' );
 		?>
 </main>

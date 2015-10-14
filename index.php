@@ -3,7 +3,8 @@
 	<section>
 		<?php
 		/* Get content */
-		get_template_part( 'partials/content' ); ?>
+    get_template_part('partials/fields', 'page');
+    ?>
 	</section>
 </main>
 <?php get_footer(); ?>

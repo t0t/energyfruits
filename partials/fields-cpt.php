@@ -1,4 +1,8 @@
 <?php
+/* Page header */
+get_template_part( 'partials/page', 'header' );
+?>
+<?php
 /*****************/
 /* Bloques */
 /*****************/
@@ -15,18 +19,6 @@ if (have_rows('layout_content')): ?>
       <!-- repeater -->
       <?php if (have_rows('block')): ?>
       <?php while (have_rows('block')): the_row();?>
-
-      <hgroup class="main-post__header">
-        <?php if (!is_page('catalogo')): ?>
-          <?php
-          /* Get Page Header */
-          get_template_part( 'partials/page', 'header' ); ?>
-        <?php endif?>
-
-        <?php if (get_sub_field("header")): ?>
-          <h3 class="main-post__subheader"><?php the_sub_field("header");?></h3>
-        <?php endif?>
-      </hgroup>
 
       <!-- main post content -->
       <div class="main-post__content">

@@ -8,11 +8,10 @@
 
 <main class="main__content">
 
-  <hgroup class="main-post__header">
-    <header>
-      <h1 class="h3">Newsletter</h1>
-    </header>
-  </hgroup>
+  <?php
+  /* Page header */
+  get_template_part( 'partials/page', 'header' );
+  ?>
 
   <!-- Newsletter form -->
   <div class="widget widget--newsletter widget--newsletter-page">

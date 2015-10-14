@@ -1,3 +1,4 @@
+// Main Header (menu, logo...)
 .header {
   position: fixed;
   left: 0;
@@ -10,6 +11,25 @@
   @include max-width($bp0);
   @include background-image(bg_header, cover, no-repeat, center bottom, svg);
 }
+// Page Headers
 .page-header {
+  min-height: 330px;
   padding-top: 100px;
+  justify-content: space-around;
+  align-items: flex-start;
+  @media screen and ( min-width: 500px ) {
+    display: flex;
+  }
 }
+  // Page Headers Subzonas
+  .page-header__left {
+    text-align: center;
+    flex: 0.5;
+  }
+  .page-header__center {
+    text-align: center;
+    flex: 1;
+  }
+  .page-header__right {
+    flex: 0.5;
+  }

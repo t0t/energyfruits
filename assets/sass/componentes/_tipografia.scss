@@ -1,48 +1,39 @@
-
 /*------------------------------------*\
-    $TIPOGRAFÍA
+  $TIPOGRAFÍA
 \*------------------------------------*/
 
-
-// HEADINGS ====================================================
-
+// HEADINGS
+h1 {
+  margin-top: $paddingbase;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	margin 			: 0;
-	font-family 	: $baseheadingfont;
-	font-weight 	: $baseheadingfontweight;
-	color 			: $baseheadingfontcolor;
-	// font-style: italic;
-	// @extend %lowercase;
+	font-family: $baseheadingfont;
+	font-weight: $baseheadingfontweight;
+	color: $baseheadingfontcolor;
 	letter-spacing: $baseletterspacing - 1;
-
-	text-rendering 	: optimizelegibility;
-
-		&.altheader {
-
-			// font-family: $google-font;
-			color: $black;
-			@extend %text-right;
-			letter-spacing: 0;
-
-		}
+	text-rendering: optimizelegibility;
+	&.altheader {
+		// font-family: $google-font;
+		color: $black;
+		@extend %text-right;
+		letter-spacing: 0;
+	}
 }
 
 h1 small,
 h2 small,
 h3 small {
-
 	@extend %display-block;
 	// @extend %padding-vertical;
 	color : $color-alt;
 	@include font-size(32);
 	font-style: italic;
 	letter-spacing: $baseletterspacing;
-
 }
 
 @each $header, $margin-bot, $font-size, $line-height in
@@ -52,15 +43,15 @@ h3 small {
 	(h4, 0, 19, 3.4)
 	(h5, 7, 19, 2)
 	(h6, 7, 19, 1){
-  		#{$header}, .#{$header} {
-  		margin-bottom : $baselineheight / $margin-bot;
-  		@include font-size($font-size);
-  		line-height 	: $line-height;
-  		@extend %text-center;
-  		}
+		#{$header}, .#{$header} {
+		margin-bottom : $baselineheight / $margin-bot;
+		@include font-size($font-size);
+		line-height 	: $line-height;
+		@extend %text-center;
+		}
 	}
 
-// TYPOGRAFÍA ====================================================
+// TYPOGRAFÍA
 p,
 ol,
 ul,

@@ -1,67 +1,87 @@
-<?php if ( is_archive() ) : ?>
-  <header class="efecto--intro">
-    <h1><?php the_category(''); ?></h1>
-  </header>
-
-<!-- Header Home Blog -->
-<?php elseif ( is_page_template('template-home-blog.php') ) : ?>
-
-  <header>
-    <h1 class="h3"><?php the_title(); ?></h1>
-  </header>
-
-<?php elseif ( is_page() ) : ?>
-  
-  <header class="efecto--intro page-header">
-    <?php
-      /* Language Selector */
+<?php
+  /* Header de Paginas */
+?>
+<header class="efecto--intro page-header">
+  <div class="page-header__left">
+    <?php /* Language Selector */
       echo do_shortcode( '[gtranslate]' );
     ?>
-    <?php
-      /* Component Catalog */
+    <?php /* Component Catalog */
       get_template_part( 'partials/catalog' );
     ?>
-    <h1 class="h3"><?php the_title(); ?></h1>
-    <!-- main post content -->
-    <?php if (get_field('flexible_content')): ?>
-      <?php while (has_sub_field("flexible_content")): ?>
+  </div>
+
+  <div class="page-header__center">
+    <?php if ( is_single() ) { ?>
+      <h3>
+        <?php
+          $cats=get_the_category();
+          echo $cats[0]->cat_name;
+        ?>
+      </h3>
+    <?php } ?>
+    <?php if ( !is_page( 'home' )) { ?>
+      <h1><?php the_title(); ?></h1>
+    <?php } ?>
+    <?php if ( is_archive() ) { ?>
+      <h1><?php the_category(''); ?></h1>
+    <?php } ?>
+    <?php if ( is_search() ) { ?>
+      <h1>"<?php the_search_query() ?>"</h1>
+    <?php } ?>
+    <?php if ( is_404() ) { ?>
+      <h1>Pagina no encontrada!</h1>
+    <?php } ?>
+
+    <!-- Encabezado home -->
+    <?php if (get_field( 'flexible_content' )): ?>
+      <?php while (has_sub_field( "flexible_content" )): ?>
         <?php
         /* Wellcome panel */
         if (get_row_layout() == "well-img"): ?>
-          <div style="background-image: url('<?php the_sub_field("bg_image");?>'), radial-gradient(ellipse at center, #23904D 0%, #317549 99%);
-          background-attachment: fixed;" class="img--bg-big well well--img">
-            <h1 class="efecto--intro"><?php the_sub_field("title");?></h1>
-            <h3><?php the_sub_field("subtitle");?></h3>
-            <a class="btn btn--image" href="<?php the_sub_field("call_to_action");?>">
-              <?php the_sub_field("description");?>
-            </a>
-          </div>
-        <?php endif;?>
-      <?php endwhile;?>
-    <?php endif;?>
-  </header>
+          <h1 class="efecto--intro"><?php the_sub_field( "title" ); ?></h1>
+          <h3><?php the_sub_field( "subtitle" );?></h3>
+          <a class="btn btn--image" href="<?php the_sub_field( "call_to_action" ); ?>">
+            <?php the_sub_field("description");?>
+          </a>
+        <?php endif; ?>
+      <?php endwhile; ?>
+    <?php endif; ?>
 
-<?php elseif ( is_single() ) : ?>
-
-  <header class="efecto--intro">
-    <h3>
-      <?php
-        $cats=get_the_category();
-        echo $cats[0]->cat_name;
+    <!-- Encabezado Page -->
+    <?php
+    /* Bloques */
+    if ( have_rows( 'layout_content' )):
+    ?>
+    	<?php
+      while ( have_rows( 'layout_content' )): the_row();
       ?>
-    </h3>
-    <h1><?php the_title(); ?></h1>
-  </header>
+        <?php
+        /* Contenido principal */
+        if ( get_row_layout() == '1_block' ):
+        ?>
+          <?php
+          if (have_rows( 'block' )):
+          ?>
+            <?php
+            while (have_rows( 'block' )): the_row();
+            ?>
+              <?php
+                if (get_sub_field( "header" )):
+              ?>
+              <h3 class="main-post__subheader">
+                <?php the_sub_field( "header" ); ?>
+              </h3>
+              <?php endif ?>
+    		    <?php endwhile; ?>
+    		  <?php endif ?>
+    		<?php endif; ?>
+    	<?php endwhile; ?>
+    <?php endif; ?>
+  </div>
 
-<?php elseif ( is_search() ) : ?>
+  <div class="page-header__right">
+    <?php get_search_form(); ?>
+  </div>
 
-  <header class="efecto--intro">
-    <h1>"<?php the_search_query() ?>"</h1>
-  </header>
-
-<?php elseif ( is_404() ) : ?>
-
-    <h1>Pagina no encontrada!</h1>
-
-<?php else : ?>
-<?php endif; ?>
+</header>

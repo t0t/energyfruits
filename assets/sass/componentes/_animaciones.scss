@@ -1,8 +1,7 @@
 // Efectos, animaciones
-
 .anim-intro {
-    width: 100%;
-    height: 150px;
+  width: 100%;
+  height: 150px;
 
     path {
         fill: none;
@@ -103,44 +102,36 @@ path {
 
 // animacion intro fade
 @include keyframe(animacion--intro) {
-    0%, 100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
-
-
 .efecto--intro {
-    @include animation(animacion--intro, 1s, 1s, ease, 1);
-    @include animation(animacion--shake, 0s, 1s, ease, 1);
+  @include animation(animacion--intro, 1s, 1s, ease, 1);
 }
 
 // Efecto SHAKE
 @include keyframe(animacion--shake) {
-    from {
-        @include translateX(20px);
-    }
-
-    to {
-        @include translateX(0px);
-    }
+  0% {
+    @include translateX(20px);
+  }
+  100% {
+    @include translateX(0px);
+  }
 }
-
-
 .efecto--shake {
-    @include animation(animacion--shake, 0s, 1s, ease, 1);
+  @include animation(animacion--shake, 0s, 1s, ease, 1);
 }
 
 @include keyframe(animacion--gira) {
-    from {
-        @include rotate(360deg);
+    0% {
+      @include rotate(360deg);
     }
-
-    to {
-        @include rotate(0deg);
+    100% {
+      @include rotate(0deg);
     }
 }
 

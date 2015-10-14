@@ -1,13 +1,17 @@
 <?php
+  /* Page header */
+  get_template_part( 'partials/page', 'header' );
+?>
+<?php
 /* Bloques */
-if (have_rows('layout_content')):
+if (have_rows( 'layout_content' )):
 ?>
 	<?php
-  while (have_rows('layout_content')): the_row();
+  while (have_rows( 'layout_content' )): the_row();
   ?>
     <?php
     /* Contenido principal */
-    if (get_row_layout() == '1_block'):
+    if ( get_row_layout() == '1_block' ):
     ?>
       <?php
       if (have_rows('block')):
@@ -15,21 +19,6 @@ if (have_rows('layout_content')):
         <?php
         while (have_rows('block')): the_row();
         ?>
-          <hgroup class="main-post__header">
-            <?php
-            /* Page Header */
-            get_template_part('partials/page', 'header');
-            ?>
-            <?php
-            if (get_sub_field("header")):
-            ?>
-            <h3 class="main-post__subheader">
-              <?php
-              the_sub_field("header");
-              ?>
-            </h3>
-            <?php endif ?>
-          </hgroup>
       		<!-- main post content -->
       		<div class="main-post__content">
             <?php

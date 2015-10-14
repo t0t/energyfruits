@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    $FORMULARIOS
+  $FORMULARIOS
 \*------------------------------------*/
 
 form {
@@ -142,27 +142,18 @@ input[type="file"] {
 
 // Selector Idioma
 select {
-	.section-archivo & {
-		right: 10px;
-		left: auto;
-	}
+	// .section-archivo & {
+	// 	right: 10px;
+	// 	left: auto;
+	// }
 	width: 130px;
-	position: absolute;
-	top: 10px;
-	left: 10px;
 	@include font-size(16);
 	font-weight: normal;
-	color: $black-alpha-medio;
+	color: $white-alpha-medio;
+	background-color: $inputbackground;
 	z-index: 2;
-
 	@media all and (min-width:600px) {
 		width: 160px;
-	}
-	@media all and (min-width:930px) {
-		top: 125px;
-		left: 10px;
-		color: $white-alpha-medio;
-		background-color: $inputbackground;
 	}
 }
 
@@ -338,44 +329,32 @@ input:required:focus:invalid {
   	border:1px solid $color-alert;
 }
 input:required:focus:valid {
-  	background-color:lighten($color-success, 40%);
+  	background-color: lighten( $color-success, 40% );
   	border:1px solid $color-success;
 }
 
-
-
-
-// .form--contacto
-// @media all and (min-width: $bp3) {
-
-// 	.form-contacto {
-// 		display: flex;
-// 		flex-flow: column nowrap;
-// 	}
-// 	.form-contacto__group {
-// 		flex: 1 100px;
-// 		display: flex;
-// 		flex-flow: row wrap;
-// 		align-items: center;
-// 		justify-content: center;
-// 		margin-bottom: $gutterwidth;
-// 		background-color: #f3f3f3;
-
-// 		label, select {
-// 			flex: 1;
-// 			margin: 0 15px;
-// 		}
-// 		label:nth-child(2) {
-// 		}
-// 		input[type="radio"] {}
-// 		input[type="radio"]:checked + label {
-// 			color: $color-base-invert;
-// 		}
-// 		input {
-// 			flex: 2;
-// 		}
-// 		input, textarea, select {
-// 		}
-// 	}
-
-// }
+// Site Search From
+.search-form {
+  label {
+    @extend %text-center;
+    input {
+      @extend %text-center;
+      display: inline;
+    }
+  }
+  @media all and ( min-width: $bp3 ) {
+    @include max-width( 300px );
+  }
+  .search-submit {
+    display: none;
+  }
+  .screen-reader-text {
+    display: none;
+  }
+  input {
+    width: 60%;
+  }
+  form {
+    margin-bottom: 0;
+  }
+}

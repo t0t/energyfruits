@@ -1,4 +1,7 @@
-  
+<?php
+/* Page header */
+get_template_part( 'partials/page', 'header' );
+?>
 <?php
 /* Bloques */
 if (have_rows('layout_content')):

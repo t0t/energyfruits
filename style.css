@@ -430,7 +430,7 @@ h2 small,
 h3 small {
   display: block; }
 
-.post--sidebar, .slider, .slider__figure, .main-footer__credits, .main-footer__brand, .main-footer__adicional, .main-footer__searchform label, .main-footer__searchform label input, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-secondary li, .nav-header .nav-header__item, .nav-header li, .nav--posts ul li, .widget--newsletter, .alert--info, .well, .well--large, .content-summary__item, .video-main, .tienda__item, .galeria-fotos {
+.post--sidebar, .slider, .slider__figure, .main-footer__credits, .main-footer__brand, .main-footer__adicional, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-secondary li, .nav-header .nav-header__item, .nav-header li, .nav--posts ul li, .widget--newsletter, .alert--info, .well, .well--large, .content-summary__item, .video-main, .tienda__item, .search-form label, .search-form label input, .galeria-fotos {
   text-align: center; }
 
 h1.altheader,
@@ -595,7 +595,41 @@ article, aside, figure, footer, header, hgroup, nav, section {
         background-image: url(assets/img/bg_header@2x.png); } }
 
 .page-header {
-  padding-top: 100px; }
+  min-height: 330px;
+  padding-top: 100px;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  @media screen and (min-width: 500px) {
+    .page-header {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.page-header__left {
+  text-align: center;
+  -webkit-box-flex: 0.5;
+  -webkit-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5; }
+
+.page-header__center {
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.page-header__right {
+  -webkit-box-flex: 0.5;
+  -webkit-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5; }
 
 .main-post__header .h3 {
   margin-bottom: 3%; }
@@ -1228,38 +1262,6 @@ article, aside, figure, footer, header, hgroup, nav, section {
     margin-right: auto;
     max-width: 300px;
     width: 100%; } }
-
-.main-footer__searchform label input {
-  display: inline; }
-@media all and (min-width: 600px) {
-  .main-footer__searchform {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 300px;
-    width: 100%; } }
-.main-footer__searchform ::-webkit-input-placeholder {
-  color: white;
-  line-height: 1.6em; }
-.main-footer__searchform :-moz-placeholder {
-  /* Firefox 18- */
-  color: white;
-  line-height: 1.6em; }
-.main-footer__searchform ::-moz-placeholder {
-  /* Firefox 19+ */
-  color: white;
-  line-height: 1.6em; }
-.main-footer__searchform :-ms-input-placeholder {
-  color: white;
-  line-height: 1.6em; }
-.main-footer__searchform .search-form
-.search-submit {
-  display: none; }
-.main-footer__searchform .screen-reader-text {
-  display: none; }
-.main-footer__searchform input {
-  width: 60%; }
-.main-footer__searchform form {
-  margin-bottom: 0; }
 
 .scroll {
   position: relative;
@@ -3278,17 +3280,6 @@ img[src$=".svg"] {
   -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
           clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); }
 
-.main__content {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1800px;
-  width: 100%; }
-  .main__content header:first-child h1 {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 75%;
-    width: 100%; }
-
 .main__content--split {
   margin-left: auto;
   margin-right: auto;
@@ -3383,14 +3374,11 @@ img[src$=".svg"] {
   display: none; }
 
 .catalog {
-  position: relative;
   z-index: 1;
-  text-align: center; }
+  text-align: center;
+  margin-top: 20px; }
 
 .catalog-figure {
-  position: absolute;
-  top: 200px;
-  left: 40px;
   -webkit-transform: rotate(-3deg);
       -ms-transform: rotate(-3deg);
           transform: rotate(-3deg); }
@@ -3399,7 +3387,7 @@ img[src$=".svg"] {
     font-size: 14px;
     font-size: 0.7rem; }
   .catalog-figure img {
-    width: 100px; }
+    width: 75px; }
 
 .aligncenter {
   margin: 0.8em auto; }
@@ -3974,15 +3962,17 @@ $ELEMENTOS-IMAGENES
 $ELEMENTOS-FIGURE
 \*------------------------------------*/
 /*------------------------------------*\
-    $TIPOGRAFÍA
+  $TIPOGRAFÍA
 \*------------------------------------*/
+h1 {
+  margin-top: 20px; }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 0;
   font-family: "Averia Serif Libre", cursive;
   font-weight: 400;
   color: white;
@@ -4666,7 +4656,7 @@ Main navbar
     margin-bottom: 0; }
 
 /*------------------------------------*\
-    $FORMULARIOS
+  $FORMULARIOS
 \*------------------------------------*/
 form {
   margin: 0 0 1.6em 0; }
@@ -4789,26 +4779,15 @@ input[type="file"] {
 
 select {
   width: 130px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
   font-size: 16px;
   font-size: 0.8rem;
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
   z-index: 2; }
-  .section-archivo select {
-    right: 10px;
-    left: auto; }
   @media all and (min-width: 600px) {
     select {
       width: 160px; } }
-  @media all and (min-width: 930px) {
-    select {
-      top: 125px;
-      left: 10px;
-      color: rgba(255, 255, 255, 0.5);
-      background-color: rgba(0, 0, 0, 0.1); } }
 
 select[multiple],
 select[size] {
@@ -4950,6 +4929,23 @@ input:required:focus:invalid {
 input:required:focus:valid {
   background-color: #4dff4d;
   border: 1px solid green; }
+
+.search-form label input {
+  display: inline; }
+@media all and (min-width: 600px) {
+  .search-form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    width: 100%; } }
+.search-form .search-submit {
+  display: none; }
+.search-form .screen-reader-text {
+  display: none; }
+.search-form input {
+  width: 60%; }
+.search-form form {
+  margin-bottom: 0; }
 
 .list {
   -webkit-box-flex: 1;
@@ -5419,43 +5415,23 @@ path.anim-agua {
   -webkit-animation-delay: 1s;
   -webkit-animation-duration: 1s;
   -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-name: animacion--shake;
-          animation-name: animacion--shake;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -moz-animation-name: animacion--shake;
-  -moz-animation-delay: 0s;
-  -moz-animation-duration: 1s;
-  -moz-animation-iteration-count: 1;
-  -moz-animation-timing-function: ease;
-  -webkit-animation-name: animacion--shake;
-  -webkit-animation-delay: 0s;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease; }
 
 @keyframes animacion--shake {
-  from {
+  0% {
     -ms-transform: translateX(20px);
     -webkit-transform: translateX(20px);
             transform: translateX(20px); }
-  to {
+  100% {
     -ms-transform: translateX(0px);
     -webkit-transform: translateX(0px);
             transform: translateX(0px); } }
 @-webkit-keyframes animacion--shake {
-  from {
+  0% {
     -ms-transform: translateX(20px);
     -webkit-transform: translateX(20px);
             transform: translateX(20px); }
-  to {
+  100% {
     -ms-transform: translateX(0px);
     -webkit-transform: translateX(0px);
             transform: translateX(0px); } }
@@ -5482,17 +5458,17 @@ path.anim-agua {
   -webkit-animation-timing-function: ease; }
 
 @keyframes animacion--gira {
-  from {
+  0% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); }
-  to {
+  100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); } }
 @-webkit-keyframes animacion--gira {
-  from {
+  0% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); }
-  to {
+  100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); } }
 .efecto--gira {
