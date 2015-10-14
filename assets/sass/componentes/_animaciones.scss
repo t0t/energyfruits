@@ -49,84 +49,31 @@ path {
         fill: $color-alt;
         @include animation(anim-puntitos, 0s, 1s, ease, 2);
     }
-
     &.anim-agua {
         fill: $color-alt;
         @include animation(anim-agua, 0s, 0.5s, linear, infinite);
     }
 }
 
-@include keyframe(anim-nano-izda) {
-    0%, 100% {
-        @include translate(0px, 0px);
-    }
-
-    50% {
-        @include translate(0px, -5px);
-    }
-}
-
-
-@include keyframe(anim-nano-dcha) {
-    0%, 100% {
-        @include translate(0px, 0px);
-    }
-
-    50% {
-        @include translate(0px, -3px);
-    }
-}
-
-
-@include keyframe(anim-gegant) {
-    0%, 100% {
-        @include translate(0px, 0px);
-    }
-
-    50% {
-        @include translate(0px, -5px);
-    }
-}
-
-
-@include keyframe(anim-puntitos) {
-    0%, 100% {
-        @include rotate(0deg);
-    }
-
-    50% {
-        @include rotate(360deg);
-    }
-}
-
-
 // animacion intro fade
-@include keyframe(animacion--intro) {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
 .efecto--intro {
-  @include animation(animacion--intro, 1s, 1s, ease, 1);
+  animation-name: animacion--intro;
+  // animation-delay: .3s;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  // @include animation(animacion--intro, 1s, 1s, ease, 1);
+}
+@keyframes animacion--intro {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 
-// Efecto SHAKE
-@include keyframe(animacion--shake) {
-  0% {
-    @include translateX(20px);
-  }
-  100% {
-    @include translateX(0px);
-  }
-}
-.efecto--shake {
-  @include animation(animacion--shake, 0s, 1s, ease, 1);
-}
-
-@include keyframe(animacion--gira) {
+@keyframes animacion--gira {
     0% {
       @include rotate(360deg);
     }
@@ -141,13 +88,11 @@ path {
 }
 
 // animacion SVG
-@include keyframe(efecto-stroke-dashoffset) {
+@keyframes efecto-stroke-dashoffset {
     50% {
         stroke-dashoffset: 0;
     }
 }
-
-
 .efecto--stroke-dashoffset {
     @include animation(efecto-stroke-dashoffset, 0s, 10s, ease, infinite);
 }

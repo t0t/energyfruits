@@ -5143,17 +5143,7 @@ path.anim-enano-izda {
   -webkit-animation-iteration-count: 4;
           animation-iteration-count: 4;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -moz-animation-name: anim-nano-izda;
-  -moz-animation-delay: 0.5s;
-  -moz-animation-duration: 0.3s;
-  -moz-animation-iteration-count: 4;
-  -moz-animation-timing-function: linear;
-  -webkit-animation-name: anim-nano-izda;
-  -webkit-animation-delay: 0.5s;
-  -webkit-animation-duration: 0.3s;
-  -webkit-animation-iteration-count: 4;
-  -webkit-animation-timing-function: linear; }
+          animation-timing-function: linear; }
 path.anim-enano-dcha {
   fill: black;
   -webkit-animation-name: anim-nano-dcha;
@@ -5165,17 +5155,7 @@ path.anim-enano-dcha {
   -webkit-animation-iteration-count: 3;
           animation-iteration-count: 3;
   -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -moz-animation-name: anim-nano-dcha;
-  -moz-animation-delay: 0s;
-  -moz-animation-duration: 0.3s;
-  -moz-animation-iteration-count: 3;
-  -moz-animation-timing-function: ease;
-  -webkit-animation-name: anim-nano-dcha;
-  -webkit-animation-delay: 0s;
-  -webkit-animation-duration: 0.3s;
-  -webkit-animation-iteration-count: 3;
-  -webkit-animation-timing-function: ease; }
+          animation-timing-function: ease; }
 path.anim-gegant {
   fill: #317549;
   -webkit-animation-name: anim-gegant;
@@ -5187,17 +5167,7 @@ path.anim-gegant {
   -webkit-animation-iteration-count: 2;
           animation-iteration-count: 2;
   -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -moz-animation-name: anim-gegant;
-  -moz-animation-delay: 1s;
-  -moz-animation-duration: 0.5s;
-  -moz-animation-iteration-count: 2;
-  -moz-animation-timing-function: ease;
-  -webkit-animation-name: anim-gegant;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-iteration-count: 2;
-  -webkit-animation-timing-function: ease; }
+          animation-timing-function: ease; }
 path.anim-puntitos {
   fill: #f0730b;
   -webkit-animation-name: anim-puntitos;
@@ -5209,17 +5179,7 @@ path.anim-puntitos {
   -webkit-animation-iteration-count: 2;
           animation-iteration-count: 2;
   -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -moz-animation-name: anim-puntitos;
-  -moz-animation-delay: 0s;
-  -moz-animation-duration: 1s;
-  -moz-animation-iteration-count: 2;
-  -moz-animation-timing-function: ease;
-  -webkit-animation-name: anim-puntitos;
-  -webkit-animation-delay: 0s;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: 2;
-  -webkit-animation-timing-function: ease; }
+          animation-timing-function: ease; }
 path.anim-agua {
   fill: #f0730b;
   -webkit-animation-name: anim-agua;
@@ -5231,166 +5191,41 @@ path.anim-agua {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -moz-animation-name: anim-agua;
-  -moz-animation-delay: 0s;
-  -moz-animation-duration: 0.5s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -webkit-animation-name: anim-agua;
-  -webkit-animation-delay: 0s;
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear; }
+          animation-timing-function: linear; }
 
-@keyframes anim-nano-izda {
-  0%, 100% {
-    -ms-transform: translate(0px, 0px);
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px); }
-  50% {
-    -ms-transform: translate(0px, -5px);
-    -webkit-transform: translate(0px, -5px);
-            transform: translate(0px, -5px); } }
-@-webkit-keyframes anim-nano-izda {
-  0%, 100% {
-    -ms-transform: translate(0px, 0px);
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px); }
-  50% {
-    -ms-transform: translate(0px, -5px);
-    -webkit-transform: translate(0px, -5px);
-            transform: translate(0px, -5px); } }
-@keyframes anim-nano-dcha {
-  0%, 100% {
-    -ms-transform: translate(0px, 0px);
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px); }
-  50% {
-    -ms-transform: translate(0px, -3px);
-    -webkit-transform: translate(0px, -3px);
-            transform: translate(0px, -3px); } }
-@-webkit-keyframes anim-nano-dcha {
-  0%, 100% {
-    -ms-transform: translate(0px, 0px);
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px); }
-  50% {
-    -ms-transform: translate(0px, -3px);
-    -webkit-transform: translate(0px, -3px);
-            transform: translate(0px, -3px); } }
-@keyframes anim-gegant {
-  0%, 100% {
-    -ms-transform: translate(0px, 0px);
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px); }
-  50% {
-    -ms-transform: translate(0px, -5px);
-    -webkit-transform: translate(0px, -5px);
-            transform: translate(0px, -5px); } }
-@-webkit-keyframes anim-gegant {
-  0%, 100% {
-    -ms-transform: translate(0px, 0px);
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px); }
-  50% {
-    -ms-transform: translate(0px, -5px);
-    -webkit-transform: translate(0px, -5px);
-            transform: translate(0px, -5px); } }
-@keyframes anim-puntitos {
-  0%, 100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  50% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
-@-webkit-keyframes anim-puntitos {
-  0%, 100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  50% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
-@keyframes animacion--intro {
-  0%, 100% {
-    opacity: 1; }
-  50% {
-    opacity: 0; } }
-@-webkit-keyframes animacion--intro {
-  0%, 100% {
-    opacity: 1; }
-  50% {
-    opacity: 0; } }
 .efecto--intro {
   -webkit-animation-name: animacion--intro;
           animation-name: animacion--intro;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -moz-animation-name: animacion--intro;
-  -moz-animation-delay: 1s;
-  -moz-animation-duration: 1s;
-  -moz-animation-iteration-count: 1;
-  -moz-animation-timing-function: ease;
-  -webkit-animation-name: animacion--intro;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease; }
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out; }
 
-@keyframes animacion--shake {
-  0% {
-    -ms-transform: translateX(20px);
-    -webkit-transform: translateX(20px);
-            transform: translateX(20px); }
-  100% {
-    -ms-transform: translateX(0px);
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px); } }
-@-webkit-keyframes animacion--shake {
-  0% {
-    -ms-transform: translateX(20px);
-    -webkit-transform: translateX(20px);
-            transform: translateX(20px); }
-  100% {
-    -ms-transform: translateX(0px);
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px); } }
-.efecto--shake {
-  -webkit-animation-name: animacion--shake;
-          animation-name: animacion--shake;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -moz-animation-name: animacion--shake;
-  -moz-animation-delay: 0s;
-  -moz-animation-duration: 1s;
-  -moz-animation-iteration-count: 1;
-  -moz-animation-timing-function: ease;
-  -webkit-animation-name: animacion--shake;
-  -webkit-animation-delay: 0s;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease; }
+@-webkit-keyframes animacion--intro {
+  from {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px); }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
 
-@keyframes animacion--gira {
+@keyframes animacion--intro {
+  from {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px); }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+@-webkit-keyframes animacion--gira {
   0% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); }
   100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); } }
-@-webkit-keyframes animacion--gira {
+@keyframes animacion--gira {
   0% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); }
@@ -5407,22 +5242,13 @@ path.anim-agua {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -moz-animation-name: animacion--gira;
-  -moz-animation-delay: 3s;
-  -moz-animation-duration: 2s;
-  -moz-animation-iteration-count: 1;
-  -moz-animation-timing-function: linear;
-  -webkit-animation-name: animacion--gira;
-  -webkit-animation-delay: 3s;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: linear; }
+          animation-timing-function: linear; }
 
-@keyframes efecto-stroke-dashoffset {
+@-webkit-keyframes efecto-stroke-dashoffset {
   50% {
     stroke-dashoffset: 0; } }
-@-webkit-keyframes efecto-stroke-dashoffset {
+
+@keyframes efecto-stroke-dashoffset {
   50% {
     stroke-dashoffset: 0; } }
 .efecto--stroke-dashoffset {
@@ -5435,16 +5261,6 @@ path.anim-agua {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -moz-animation-name: efecto-stroke-dashoffset;
-  -moz-animation-delay: 0s;
-  -moz-animation-duration: 10s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: ease;
-  -webkit-animation-name: efecto-stroke-dashoffset;
-  -webkit-animation-delay: 0s;
-  -webkit-animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease; }
+          animation-timing-function: ease; }
 
 /*# sourceMappingURL=style.css.map */

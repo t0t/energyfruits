@@ -1,7 +1,7 @@
 <?php
   /* Header de Paginas */
 ?>
-<header class="efecto--intro page-header">
+<header class="page-header">
   <div class="page-header__left">
     <?php /* Language Selector */
       echo do_shortcode( '[gtranslate]' );
@@ -11,25 +11,22 @@
     ?>
   </div>
 
-  <div class="page-header__center">
+  <div class="page-header__center efecto--intro">
     <?php if ( is_single() ) { ?>
       <h3>
         <?php
-          $cats=get_the_category();
+          $cats = get_the_category();
           echo $cats[0]->cat_name;
         ?>
       </h3>
-    <?php } ?>
-    <?php if ( !is_page( 'home' )) { ?>
+    <?php } elseif ( is_page( 'home' ) ) { ?>
+    <?php } elseif ( is_page() ) { ?>
       <h1><?php the_title(); ?></h1>
-    <?php } ?>
-    <?php if ( is_archive() ) { ?>
+    <?php } elseif ( is_archive() ) { ?>
       <h1><?php the_category(''); ?></h1>
-    <?php } ?>
-    <?php if ( is_search() ) { ?>
-      <h1>"<?php the_search_query() ?>"</h1>
-    <?php } ?>
-    <?php if ( is_404() ) { ?>
+    <?php } elseif ( is_search() ) { ?>
+      <h1 class="h5"><?php the_search_query() ?></h1>
+    <?php } else { ?>
       <h1>Pagina no encontrada!</h1>
     <?php } ?>
 
