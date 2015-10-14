@@ -1,22 +1,13 @@
+<?php
+/* Page header */
+get_template_part( 'partials/page', 'header' );
+?>
 <!-- main post content -->
-<div class="main-post__content"></div>
-
 <?php if (get_field('flexible_content')): ?>
   <?php while (has_sub_field("flexible_content")): ?>
     <?php
-    /* Wellcome panel */
-    if (get_row_layout() == "well-img"): ?>
-      <div style="background-image: url('<?php the_sub_field("bg_image");?>'), radial-gradient(ellipse at center, #23904D 0%, #317549 99%);
-      background-attachment: fixed;" class="img--bg-big well well--img">
-        <h1 class="efecto--intro"><?php the_sub_field("title");?></h1>
-        <h3><?php the_sub_field("subtitle");?></h3>
-        <a class="btn btn--image" href="<?php the_sub_field("call_to_action");?>">
-          <?php the_sub_field("description");?>
-        </a>
-      </div>
-    <?php
     /* Carusel Superfoods */
-    elseif (get_row_layout() == "carusel1"): ?>
+    if (get_row_layout() == "carusel1"): ?>
       <?php
         $loop = new WP_Query(array(
         'post_type' => 'cpt',

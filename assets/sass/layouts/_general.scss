@@ -57,21 +57,18 @@ img[src$=".svg"] {
 
 // LAYOUT
 .main__content {
-    @include max-width($bp0);
-
-    > *:first-child {
-        padding-top: 75px;
+  @include max-width($bp0);
+  > *:first-child {
+    // padding-top: 75px;
+  }
+  header:first-child {
+    // padding-top: $gutterwidth * 2;
+    h1 {
+      @include max-width(75%);
+      @media all and (min-width: $bp3) {}
+      @media all and (min-width: $bp1) {}
     }
-
-    header:first-child {
-        padding-top: $gutterwidth * 2;
-
-        h1 {
-            @include max-width(75%);
-            @media all and (min-width: $bp3) {}
-            @media all and (min-width: $bp1) {}
-        }
-    }
+  }
 
     p:first-child {
         &::first-letter {}

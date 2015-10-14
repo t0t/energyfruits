@@ -1,15 +1,19 @@
 .header {
-    // @include max-width($bp0);
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    @include flexbox;
-    @include justify-content(center);
-    //alineado horizontal
-    @include align-items(center);
-    //alineado vertical
-    @include max-width($bp0);
-    @include background-image(bg_header, cover, no-repeat, center bottom, svg);
-    // background-color: $white;
+  // @include max-width($bp0);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  @include justify-content(center);
+  @include align-items(center);
+  @include max-width($bp0);
+  @include background-image(bg_header, cover, no-repeat, center bottom, svg);
+}
+.page-header {
+  padding-top: 100px;
+  @media screen and (min-width: 600px) {
+    padding-top: 145px;
+  }
 }

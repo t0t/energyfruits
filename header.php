@@ -14,7 +14,10 @@ get_template_part( 'partials/head' );
 ?>
 
 <body <?php body_class(); ?>>
-
+	<?php
+	/* Nav Off Canvas */
+	get_template_part( 'partials/nav', 'offcanvas' );
+	?>
 	<header class="header">
 		<?php
 		/* Nav 1 (Izquierda) */
@@ -29,16 +32,3 @@ get_template_part( 'partials/head' );
 		get_template_part( 'partials/nav', '2' );
 		?>
 	</header>
-
-	<?php
-	/* Language Selector */
-	echo do_shortcode( '[gtranslate]' );
-	?>
-	<?php
-	/* Nav Off Canvas */
-	get_template_part( 'partials/nav', 'offcanvas' );
-	?>
-	<?php
-	/* Component Catalog */
-	get_template_part( 'partials/catalog' );
-	?>
