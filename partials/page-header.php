@@ -12,6 +12,10 @@
   </div>
 
   <div class="page-header__center efecto--intro">
+    <?php if ( is_post_type( 'producto' )) { 
+    echo "<h1>string</h1>";
+    } ?>
+    
     <?php if ( is_single() ) { ?>
       <h3>
         <?php
@@ -19,6 +23,7 @@
           echo $cats[0]->cat_name;
         ?>
       </h3>
+      <h1><?php the_title(); ?></h1>
     <?php } elseif ( is_page( 'home' ) ) { ?>
     <?php } elseif ( is_page() ) { ?>
       <h1><?php the_title(); ?></h1>
@@ -66,7 +71,7 @@
               <?php
                 if (get_sub_field( "header" )):
               ?>
-              <h3 class="main-post__subheader">
+              <h3 class="page-subheader">
                 <?php the_sub_field( "header" ); ?>
               </h3>
               <?php endif ?>

@@ -16,9 +16,9 @@
   position: relative;
   min-height: 330px;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   padding-top: 100px;
-  padding-bottom: 20px;
+  padding-bottom: ( $paddingbase * 2 );
   @media screen and ( min-width: 500px ) {
     display: flex;
   }
@@ -30,6 +30,12 @@
     width: 100%;
     height: 20px;
     @include background-image(bg_ondas_top, initial, no-repeat, center bottom, svg);
+  }
+  // Quitame el fondo si es newsletter
+  .page-template-template-newsletter & {
+    &::after {
+      display: none;
+    }
   }
 }
   // Page Headers Subzonas
@@ -44,3 +50,7 @@
   .page-header__right {
     flex: 0.5;
   }
+// El titulo de las entradas
+.page-subheader {
+  margin-top: 10px;
+}

@@ -76,7 +76,7 @@ select {
 	margin-bottom : $baselineheight / 4;
 	background-color : $inputbackground;
 	border : none;
-	color : $color-base;
+	color: $white;
 
 	&:hover {
 		border-color : $inputhover;
@@ -146,14 +146,15 @@ select {
 	// 	right: 10px;
 	// 	left: auto;
 	// }
-	width: 130px;
+	width: 160px;
+  padding: 10px;
 	@include font-size(16);
 	font-weight: normal;
 	color: $white-alpha-medio;
 	background-color: $inputbackground;
 	z-index: 2;
 	@media all and (min-width:600px) {
-		width: 160px;
+		// width: 160px;
 	}
 }
 
@@ -329,10 +330,9 @@ input:required:focus:invalid {
   	border:1px solid $color-alert;
 }
 input:required:focus:valid {
-  	background-color: lighten( $color-success, 40% );
-  	border:1px solid $color-success;
+	background-color: lighten( $color-success, 40% );
+	border:1px solid $color-success;
 }
-
 // Site Search From
 .search-form {
   label {
@@ -340,6 +340,10 @@ input:required:focus:valid {
     input {
       @extend %text-center;
       display: inline;
+      &::-webkit-input-placeholder {
+        @include font-size(20);
+        color: $white;
+      }
     }
   }
   @media all and ( min-width: $bp3 ) {
