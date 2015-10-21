@@ -49,16 +49,17 @@
 }
 
 .main-post__content__entry {
-
-    @extend %padding-horizontal;
-    position: relative;
-
-    h3 {
-      color: $color-alt;
-      text-align: left;
-      margin-bottom: 8px;
-    }
-
+  @extend %padding-horizontal;
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  h3 {
+    color: $color-alt;
+    text-align: left;
+    margin-bottom: 8px;
+  }
     small {
         display: inline-block;
         @include font-size(13);
@@ -66,7 +67,6 @@
         padding: 3px 5px;
         margin-bottom: 10px;
     }
-
     ul {
         @extend %no-margin;
         @include padding($gutterwidth * 2);

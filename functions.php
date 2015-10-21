@@ -65,8 +65,8 @@
 	add_filter('show_admin_bar', '__return_false');
 
 	// wpautop
-	remove_filter('the_content', 'wpautop');
-	remove_filter('the_excerpt', 'wpautop');
+	remove_filter( 'the_content', 'wpautop' );
+	remove_filter( 'the_excerpt', 'wpautop' );
 
 	// CPT's
 	add_action('init', 'create_post_type');

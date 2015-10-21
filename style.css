@@ -714,6 +714,9 @@ article, aside, figure, footer, header, hgroup, nav, section {
 
 .main-post__content__entry {
   position: relative; }
+  .main-post__content__entry img {
+    width: 100%;
+    height: auto; }
   .main-post__content__entry h3 {
     color: #f0730b;
     text-align: left;
