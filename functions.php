@@ -111,9 +111,10 @@
 	}
 	add_action('admin_menu', 'quita_metaboxes_admin');
 
+
+
 /*
  * Enqueue Scripts and Styles
- *
  */
 	function t0theme_scripts() {
 		// wp_deregister_script( 'jquery' ); //Ya lo incluyo en main.min.js

@@ -68,9 +68,8 @@ if (have_rows('layout_content')):
               <?php endif; /* / Recetas (lista) */ ?>
 
           		<?php
-              /* Facebook Comments */
-              $var = do_shortcode('[fbcomments]'); echo $var;
-              ?>
+              /* Comments */
+              comments_template( '/comments.php' ); ?>
           		<?php
               /* The Post Tags */
               the_tags('', ' • ', '<br />');
