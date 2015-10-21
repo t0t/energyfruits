@@ -8,12 +8,10 @@
 .active {
 	font-weight: bold;
 }
-
  /**
  * .btn es la clase principal para definir un botón
  */
 .btn {
-
 	display: inline-block;
 	@include font-size(20);
 	line-height: $baselineheight * 1.3;
@@ -21,15 +19,15 @@
 	vertical-align : middle;
 	letter-spacing: $baseletterspacing;
 	white-space:nowrap;
-	border: 1px solid $black-alpha-fuerte;
+	//border: 1px solid $black-alpha-fuerte;
 	border-radius: 30px;
 	cursor : pointer;
 	margin:0;
 	padding-top:   0;
-   	padding-bottom:0;
-   	padding-right:1em;
-   	padding-left: 1em;
-	background-color : transparent;
+    padding-bottom:0;
+    padding-right:1em;
+    padding-left: 1em;
+	background-color: transparent;
 	@extend %lowercase;
 	
 	&:hover {

@@ -3227,6 +3227,29 @@ img[src$=".svg"] {
   .catalog-figure img {
     width: 75px; }
 
+.comment-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+  .comment-body p {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 100%;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
+    font-size: inherit; }
+
 .aligncenter {
   margin: 0.8em auto; }
 
@@ -3382,7 +3405,6 @@ a {
   vertical-align: middle;
   letter-spacing: 0;
   white-space: nowrap;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 30px;
   cursor: pointer;
   margin: 0;
@@ -5173,5 +5195,16 @@ path.anim-agua {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease; }
+
+.Comments {
+  background-color: rgba(0, 0, 0, 0.1); }
+  .Comments__title {
+    color: #f0730b;
+    line-height: 1;
+    padding-top: 20px; }
+  .Comments__respond textarea {
+    width: 100%; }
+  .Comments a {
+    color: #f0730b; }
 
 /*# sourceMappingURL=style.css.map */

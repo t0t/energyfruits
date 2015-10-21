@@ -1,0 +1,19 @@
+.Comments {
+  background-color: $black-alpha-fuerte;
+  &__title {
+    color: $color-alt;
+    line-height: 1;
+    padding-top: $paddingbase;
+  }
+  &__respond {
+    textarea {
+      width: 100%;
+    }
+  }
+  &__list {
+    //padding-top: $paddingbase / 4;
+  }
+  a {
+    color: $color-alt;
+  }
+}

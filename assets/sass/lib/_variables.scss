@@ -59,13 +59,13 @@ $baseletterspacing 	: 0;
 /*------------------------------------*\
     $COLORS
 \*------------------------------------*/
-$color-base			: rgb(49,117,73); // color principal
-$color-alt			: rgb(240,115,11); //azul
-$color-base-invert 	: complement($color-alt);
-$color-base-light	: lighten($color-base, 2%);
-$color-base-lighten	: lighten($color-base, 10%);
-$color-base-dark	: darken($color-base, 5%);
-$color-base-darken	: darken($color-base, 10%);
+$color-base: rgb(49,117,73); // verde Energyfruits
+$color-alt: rgb(240,115,11); // naranja Energyfruits
+$color-base-invert: complement($color-alt);
+$color-base-light: lighten($color-base, 2%);
+$color-base-lighten: lighten($color-base, 10%);
+$color-base-dark: darken($color-base, 5%);
+$color-base-darken: darken($color-base, 10%);
 
 // Brand colors
 $color_goji: rgb(230,25,11);
