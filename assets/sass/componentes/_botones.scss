@@ -1,6 +1,5 @@
-
 /*------------------------------------*\
-    $BOTONES
+  $BOTONES
 \*------------------------------------*/
 /*
  * Definimos los botones y sus variantes
@@ -21,45 +20,37 @@
 	white-space:nowrap;
 	//border: 1px solid $black-alpha-fuerte;
 	border-radius: 30px;
-	cursor : pointer;
-	margin:0;
-	padding-top:   0;
-    padding-bottom:0;
-    padding-right:1em;
-    padding-left: 1em;
+	cursor: pointer;
+	margin: 0;
+	padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 1em;
+  padding-left: 1em;
 	background-color: transparent;
 	@extend %lowercase;
-	
 	&:hover {
-		
-			text-decoration : none;
-			color: $white;
-			background-color: $color-alt;
-			
-		}
-
+  	text-decoration: none;
+  	color: $white;
+  	background-color: $color-alt;
+	}
 	&:active,
 	&:focus {
-
-			outline:none;
+		outline:none;
 	}
-
 	a {
-		color : $textcolor;
-		@include transition(.4s);
-
-		&:hover {
-			text-decoration : none;
-			color: $white;
-			background-color: $color-alt;
-		}
-		&:active,
-	    &:focus{
-			outline:none;
-	    }
+  	color: $textcolor;
+  	@include transition( .4s );
+  	&:hover {
+  		text-decoration: none;
+  		color: $white;
+  		background-color: $color-alt;
+  	}
+  	&:active,
+      &:focus {
+  		outline: none;
+    }
 	}
 }
-
 /*------------------------------------*\
     $BOTONES-VARIANTES
 \*------------------------------------*/
@@ -67,94 +58,77 @@
  * Variantes de los botones: color para dar sensaciones.
  *
  */
-
-
 /**
 * Inputs con estilo de botones
 */
 input[type="submit"].btn:hover {
 	border-color : $color-base;
 }
-
-
 /**
 * Botón no disponible
 */
 .btn--disabled {
 	@include opacity(.5);
-	cursor : default;
+	cursor: default;
 }
-
-
 // Botón desplegable
 .btn--slidemenu {
 	@include square(50px);
-	border-radius 		: $radius;
-	color 				: rgba(0,0,0,0.3);
-	background-color 	: $color-base-invert;
-	
+	border-radius: $radius;
+	color: rgba(0,0,0,0.3);
+	background-color: $color-base-invert;
 	&:hover {
-		color 				: $color-base-invert;
-		background-color	: $color-base;
+		color: $color-base-invert;
+		background-color: $color-base;
 	}
 	&:visited {
-		color 				: $color-base;
+		color: $color-base;
 	}
 }
-
 /**
 * Botones
 */
-
 .btn--alert {
 	@include font-size(10);
 	margin-top: $gutterwidth*2;
-
 	&:hover {
 		background-color: $color-base;
 	}
 }
-
 .btn--close {
 	@include font-size(20);
 	margin: ($gutterwidth*2) 0;
 }
-
 .btn--well {
-	color 				: $color-base-darken;
-
+	color: $color-base-darken;
 	&:hover {
 		color: $black;
 		background-color 	: $white-alpha-medio;
 	}
-	
 	&:focus {
 		outline: none;
 	}
 }
-
 .btn--info {
-	background-color 	: $color-info;
-	color 				: darken($color-info, 40%);
+	background-color: $color-info;
+	color: darken( $color-info, 40% );
 	&:hover {
-		color 			: lighten($color-info, 40%);
+		color: lighten($color-info, 40%);
 	}
 	&:visited {
-		color 			: darken($color-info, 40%);
+		color: darken($color-info, 40%);
 	}
 }
-
 .btn--error {
 	background-color: $color-error;
-	color : darken($color-error, 40%);
+	color: darken($color-error, 40%);
 	&:hover {
-		color : lighten($color-error, 40%);
+		color: lighten($color-error, 40%);
 	}
 	&:visited {
-		color : darken($color-error, 40%);
+		color: darken($color-error, 40%);
 	}
 }
-
 /**
 * Botón principal
 */
@@ -168,22 +142,19 @@ input[type="submit"].btn:hover {
 	}
 	@include transition(.2s);
 }
-
 /**
 * Botón de OK
 */
 .btn--success {
 	background-color: $color-success;
-	color : darken($color-success, 40%);
+	color: darken($color-success, 40%);
 	&:hover {
-		color : lighten($color-success, 40%);
+		color: lighten($color-success, 40%);
 	}
 	&:visited {
-		color : darken($color-success, 40%);
+		color: darken($color-success, 40%);
 	}
 }
-
-
 /**
 * Botón de advertencia
 */
@@ -196,7 +167,6 @@ input[type="submit"].btn:hover {
 		color : darken($color-warning, 40%);
 	}
 }
-
 .btn--link {
 	background-color: $color-warning;
 	color : darken($color-warning, 40%);
@@ -206,77 +176,64 @@ input[type="submit"].btn:hover {
 		color : darken($color-warning, 40%);
 	}
 }
-
 /**
 * Botón en footer
 */
 .btn--footer {
-
-	color : $linkcolorfooter;
+	color: $linkcolorfooter;
 	background-color: $color-alt;
 	@include font-size(13);
 	border-radius: $radius;
 	padding: 0 $gutterwidth;
-	border : none;
-
+	border: none;
 	&:hover {
-		color : $linkcolorfooter;
+		color: $linkcolorfooter;
 		background-color: $color-base;
 	}
-
 	&:visited {
-		color : $white;
+		color: $white;
 	}
 }
-
-
-
-
 .btn--inactive,
 .btn--inactive:hover,
 .btn--inactive:active,
-.btn--inactive:focus{
+.btn--inactive:focus {
 	@include opacity(.5);
-	cursor : default;
+	cursor: default;
  }
-
-
 /*------------------------------------*\
-    $BOTONES-TAMAÑOS
+  $BOTONES-TAMAÑOS
 \*------------------------------------*/
-
-.btn--mini{
-    padding-right:0.5em;
-    padding-left: 0.5em;
-    line-height:1.5;
+.btn--mini {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  line-height: 1.5;
 }
-
-.btn--small{
-    padding-right:1.5em;
-    padding-left: 1.5em;
-    line-height:2;
+.btn--small {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  line-height: 2;
 }
-
-.btn--large{
-    padding-right:3em;
-    padding-left: 3em;
-    line-height:4;
+.btn--large {
+  padding-right: 3em;
+  padding-left: 3em;
+  line-height: 4;
 }
-
-.btn--image{
-    background-color: $color-alt;
-    margin-top: $paddingbase/2;
-		&:hover {
-			background-color: lighten($color-alt, 3);
-		}
-    a {
-    	color: $white;
-    	&:hover {
-    		background-color: transparent;
-    	}
-    }
+.btn--image {
+  background-color: $color-alt;
+  margin-top: $paddingbase / 2;
+  margin-bottom: $paddingbase / 2;
+	&:hover,
+  &:visited {
+		background-color: lighten( $color-alt, 3 );
+	}
+  a {
+  	color: $white;
+  	&:hover {
+  		background-color: transparent;
+  	}
+  }
 }
-
 .btn--invert {
 	border-color: $white;
 	color: $white;

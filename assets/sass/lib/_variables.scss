@@ -21,7 +21,7 @@ $retina-suffix: '@2x';
 \*------------------------------------*/
 $baselineheight:     1.6em;
 $line-height-computed  :	$baselineheight;
-$baseline              :           	$baselineheight;
+$baseline:           	$baselineheight;
 $pagemaxwitdh:       	100%;
 $radius :             	5px;
 $hovertransition :    	.3s;
@@ -32,8 +32,8 @@ $gutterwidth :       	3%;
 $margin: $gutterwidth;
 $paddingbase: 	20px;
 
-$link-vertical-padding:15px;
-$link-horizontal-padding:20px;
+$link-vertical-padding: 15px;
+$link-horizontal-padding: 20px;
 
 /*------------------------------------*\
     $FONT-FACE
@@ -47,14 +47,14 @@ $basefont					  : $altfont;
 $baseheadingfont 		: $basefont;
 $baseheadingfontweight: 400;
 
-$altlineheight : 1.35em;
+$altlineheight: 1.35em;
 // $icons	: icomoon;
 
 /*------------------------------------*\
     $TAMAÑOS
 \*------------------------------------*/
-$basefontsize 		: 20 !default;
-$baseletterspacing 	: 0;
+$basefontsize: 20 !default;
+$baseletterspacing: 1;
 
 /*------------------------------------*\
     $COLORS

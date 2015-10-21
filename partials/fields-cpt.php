@@ -43,10 +43,6 @@ if (have_rows('layout_content')): ?>
             the_sub_field( "content" ); ?>
 
             <?php
-            /* Facebook Comments */
-            $var = do_shortcode('[fbcomments]'); echo $var; ?>
-
-            <?php
             /* Upload files */
             if (have_rows( 'upload_files' )): ?>
               <ul>

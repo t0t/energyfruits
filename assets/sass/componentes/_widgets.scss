@@ -5,6 +5,9 @@
 // Widgets
 .widget {
   color: $color-base;
+  h4 {
+    color: $baseheadingfontcolor
+  }
 }
 .widget__title {
   color: $color-alt;

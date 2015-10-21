@@ -1,12 +1,10 @@
 html {
-    font-size: 100%;
-
-    //de 16px
-    @media all and (min-width: $bp3) {
-        font-size: 125%;
-    }
+  font-size: 100%;
+  //de 16px
+  @media all and (min-width: $bp3) {
+    font-size: 125%;
+  }
 }
-
 body {
   position: relative;
   font-family: $basefont;
@@ -56,7 +54,9 @@ img[src$=".svg"] {
 }
 
 // LAYOUT
-.main__content {}
+.main__content {
+  //padding-bottom: $paddingbase;
+}
 .main__content--split {
   @include max-width($bp0);
   display: table;

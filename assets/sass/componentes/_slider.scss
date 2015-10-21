@@ -12,153 +12,95 @@ $slick-opacity-not-active: 0.25 !default;
 
 //Slider
 .slider {
-    @include max-width($bp0 - $paddingbase * 10);
-    position: relative;
-    z-index: 1;
-    padding-top: 0;
-    padding-left: $gutterwidth * 3;
-    padding-right: $gutterwidth * 3;
-    width: 90%;
-    ul {
-        margin: 0;
-    }
-
-    @extend %text-center;
-    img { width: inherit }
-
-    @media all and (min-width: 780px) {
-        margin: 0 auto;
-    }
-    @media all and (max-width: $bp2) {}
-    @media all and (min-width: $bp3) {}
+  @include max-width($bp0 - $paddingbase * 10);
+  position: relative;
+  z-index: 1;
+  padding-top: 0;
+  padding-left: $gutterwidth * 3;
+  padding-right: $gutterwidth * 3;
+  width: 90%;
+  ul {
+    margin: 0;
+  }
+  @extend %text-center;
+  img { width: inherit }
+  @media all and (min-width: 780px) {
+    margin: 0 auto;
+  }
 }
-
 .slider__wrap {
-    position: relative;
-    background-color: $white;
-    padding-bottom: 5px;
-    width: 100%;
+  position: relative;
+  background-color: $white;
+  padding-bottom: 5px;
+  width: 100%;
 }
 .slider__item {
-    @media all and (min-width: 780px) {}
-    text-align: center;
-    &.current {
-        opacity: 1;
-        padding-bottom: 0;
-    }
+  text-align: center;
+  &.current {
+    opacity: 1;
+    padding-bottom: 0;
+  }
 }
-
 .slider__slides {}
-
 .slider__figure {
-    @extend %text-center;
-    position: relative;
-
-    @media all and (min-width: 780px) {}
-
-    img {
-        margin: 0;
-        @media all and (min-width: 780px) {}
-        @media all and (min-width: 900px) {}
-    }
+  @extend %text-center;
+  position: relative;
+  img {
+    margin: 0;
+  }
 }
-
 .slider__meta-date {
-    color: $black-alpha-medio;
-    @extend %clearfix;
-    font-size: 1rem;
-    line-height: $baselineheight / 2;
-    letter-spacing: $baseletterspacing;
+  color: $black-alpha-medio;
+  @extend %clearfix;
+  font-size: 1rem;
+  line-height: $baselineheight / 2;
+  letter-spacing: $baseletterspacing;
 }
-
 .slider__title {
-    color: $color-alt;
-    // @extend %clearfix;
-    // @extend %lowercase;
-    padding: $gutterwidth 0;
+  color: $color-alt;
+  padding-top: $paddingbase;
 }
-
 .slider__caption {
-    @include font-size(30);
-    line-height: 7em;
-    font-style: normal;
-    letter-spacing: -1px;
-    @media all and (min-width: 780px) {}
-    @media all and (min-width: 1280px) {}
+  @include font-size(30);
+  line-height: 7em;
+  font-style: normal;
+  letter-spacing: -1px;
 }
-
 .slider__caption-post {
-    color: $color-base;
+  color: $color-base;
 }
-
 .slider__btn {
-    border: none;
-    @include font-size(36);
-    line-height: 2;
+  border: none;
+  @include font-size(36);
+  line-height: 2;
+  color: $white;
+  border: 1px dotted $white;
+  &:hover {
+    background-color: $black-alpha-fuerte;
+  }
+  &:visited {
     color: $white;
-    border: 1px dotted $white;
-
-    &:hover {
-        background-color: $black-alpha-fuerte;
-    }
-
-    &:visited {
-        color: $white;
-    }
-
-    &:focus {
-        outline: none;
-    }
+  }
+  &:focus {
+    outline: none;
+  }
 }
-
 .slider__btn-call {
-    width: 180px;
-    height: 40px;
-    display: block;
-    margin: $paddingbase auto;
-    border-radius: $radius * 10;
-    @include font-size(24);
-    line-height: $baselineheight * 1.5;
-
-    &:hover {
-        background-color: $black;
-        border: none;
-    }
-
-    @media all and (min-width: $bp3) {
-        // display: inline;
-    }
+  width: 180px;
+  height: 40px;
+  display: block;
+  margin: $paddingbase auto;
+  border-radius: $radius * 10;
+  @include font-size(24);
+  line-height: $baselineheight * 1.5;
+  &:hover {
+    background-color: $black;
+    border: none;
+  }
 }
-
 .slick-disabled {
-    @include opacity(0.2);
+  @include opacity(0.2);
 }
-
-
-
-// Estilos Revolution Slider
-.sliderh1 {
-    h1 {
-        color: $white;
-        font-size: 6rem;
-    }
-
-    h2 {
-        color: $white;
-        font-size: 2rem;
-        max-width: $bp3;
-        text-transform: inherit;
-        letter-spacing: $baseletterspacing;
-    }
-
-    .btn {
-        @include font-size(30);
-        color: $white;
-        border: 2px solid $white;
-    }
-}
-
-
 
 // Slick Slider
 /* Slider */

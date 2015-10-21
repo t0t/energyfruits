@@ -425,21 +425,11 @@ th {
   margin-top: 20px;
   margin-bottom: 20px; }
 
-.aligncenter, .lightbox .lb-image, .lb-cancel, .lb-prev, .lb-next, .lb-data .lb-number, .lb-data .lb-close, hr, figure figcaption, h1 small,
-h2 small,
-h3 small {
+.aligncenter, .lightbox .lb-image, .lb-cancel, .lb-prev, .lb-next, .lb-data .lb-number, .lb-data .lb-close, hr, figure figcaption {
   display: block; }
 
 .post--sidebar, .slider, .slider__figure, .main-footer__credits, .main-footer__brand, .main-footer__adicional, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-secondary li, .nav-header .nav-header__item, .nav-header li, .nav--posts ul li, .widget--newsletter, .alert--info, .well, .well--large, .content-summary__item, .video-main, .tienda__item, .search-form label, .search-form label input, .galeria-fotos {
   text-align: center; }
-
-h1.altheader,
-h2.altheader,
-h3.altheader,
-h4.altheader,
-h5.altheader,
-h6.altheader {
-  text-align: right; }
 
 .post__content h2 {
   text-align: left; }
@@ -643,7 +633,8 @@ article, aside, figure, footer, header, hgroup, nav, section {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
-          flex: 1; }
+          flex: 1;
+  color: white; }
 
 .page-header__right {
   -webkit-box-flex: 0.5;
@@ -686,7 +677,8 @@ article, aside, figure, footer, header, hgroup, nav, section {
 
 .main-post__content {
   background-color: white;
-  padding-top: 3%; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
   .main-post__content h3 {
     color: #317549; }
   .main-post__content section {
@@ -780,7 +772,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
   font-style: italic;
   line-height: 1;
   margin-bottom: 0;
-  letter-spacing: 0; }
+  letter-spacing: 1; }
 
 @media only screen and (min-width: 600px) {
   .post--sidebar {
@@ -849,7 +841,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
   color: rgba(0, 0, 0, 0.5);
   line-height: 1;
   margin-bottom: 0;
-  letter-spacing: -1; }
+  letter-spacing: 0; }
 
 .slider {
   margin-left: auto;
@@ -891,11 +883,11 @@ article, aside, figure, footer, header, hgroup, nav, section {
   color: rgba(0, 0, 0, 0.5);
   font-size: 1rem;
   line-height: 0.8em;
-  letter-spacing: 0; }
+  letter-spacing: 1; }
 
 .slider__title {
   color: #f0730b;
-  padding: 3% 0; }
+  padding-top: 20px; }
 
 .slider__caption {
   font-size: 30px;
@@ -938,21 +930,6 @@ article, aside, figure, footer, header, hgroup, nav, section {
   -webkit-opacity: 0.2;
   -moz-opacity: 0.2;
   opacity: 0.2; }
-
-.sliderh1 h1 {
-  color: white;
-  font-size: 6rem; }
-.sliderh1 h2 {
-  color: white;
-  font-size: 2rem;
-  max-width: 600px;
-  text-transform: inherit;
-  letter-spacing: 0; }
-.sliderh1 .btn {
-  font-size: 30px;
-  font-size: 1.5rem;
-  color: white;
-  border: 2px solid white; }
 
 /* Slider */
 .slick-slider {
@@ -1121,15 +1098,16 @@ article, aside, figure, footer, header, hgroup, nav, section {
       opacity: 0.75; }
 
 .sidebar {
-  border-radius: 25px;
-  padding: 3%;
+  margin-top: 20px;
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.1); }
   @media all and (min-width: 900px) {
     .sidebar {
+      border-radius: 25px;
       position: relative;
       width: 25%; } }
   .sidebar * {
-    letter-spacing: 0;
+    letter-spacing: 1;
     -webkit-transition: all 0.3s;
     transition: all 0.3s; }
   .sidebar a, .sidebar a:visited {
@@ -1243,7 +1221,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
   text-align: center;
   margin-bottom: 0;
   font-size: 1.2rem;
-  letter-spacing: 0;
+  letter-spacing: 1;
   font-style: italic;
   color: white; }
 
@@ -1283,7 +1261,7 @@ body {
   font-family: "Averia Serif Libre", cursive;
   font-weight: 400;
   color: #317549;
-  letter-spacing: 0;
+  letter-spacing: 1;
   background-color: #317549;
   background-image: url(assets/img/bg.svg);
   background-repeat: repeat;
@@ -3367,15 +3345,11 @@ figure.alignnone {
   color: white; }
 
 /*------------------------------------*\
-    $LINKS
+  $LINKS
 \*------------------------------------*/
 a {
   text-decoration: none;
   color: white; }
-  a:visited {
-    color: white; }
-  a:hover {
-    color: white; }
   a:focus {
     outline: thin dotted;
     color: white; }
@@ -3388,7 +3362,7 @@ a {
       border-bottom: solid 3px white; }
 
 /*------------------------------------*\
-    $BOTONES
+  $BOTONES
 \*------------------------------------*/
 /*
  * Definimos los botones y sus variantes
@@ -3406,7 +3380,7 @@ a {
   line-height: 2.08em;
   text-align: center;
   vertical-align: middle;
-  letter-spacing: 0;
+  letter-spacing: 1;
   white-space: nowrap;
   border-radius: 30px;
   cursor: pointer;
@@ -3575,7 +3549,7 @@ input[type="submit"].btn:hover {
   cursor: default; }
 
 /*------------------------------------*\
-    $BOTONES-TAMAÑOS
+  $BOTONES-TAMAÑOS
 \*------------------------------------*/
 .btn--mini {
   padding-right: 0.5em;
@@ -3594,8 +3568,9 @@ input[type="submit"].btn:hover {
 
 .btn--image {
   background-color: #f0730b;
-  margin-top: 10px; }
-  .btn--image:hover {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .btn--image:hover, .btn--image:visited {
     background-color: #f47b16; }
   .btn--image a {
     color: white; }
@@ -3827,70 +3802,71 @@ $ELEMENTOS-FIGURE
 /*------------------------------------*\
   $TIPOGRAFÍA
 \*------------------------------------*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, .h1 {
+  margin-bottom: 20px;
+  line-height: 1;
+  font-size: 30px;
   font-family: "Averia Serif Libre", cursive;
   font-weight: 400;
-  color: white;
-  letter-spacing: -1;
   text-rendering: optimizelegibility; }
-  h1.altheader,
-  h2.altheader,
-  h3.altheader,
-  h4.altheader,
-  h5.altheader,
-  h6.altheader {
-    color: black;
-    letter-spacing: 0; }
-
-h1 small,
-h2 small,
-h3 small {
-  color: #f0730b;
-  font-size: 32px;
-  font-size: 1.6rem;
-  font-style: italic;
-  letter-spacing: 0; }
-
-h1, .h1 {
-  margin-bottom: Infinityem;
-  font-size: 65px;
-  font-size: 3.25rem;
-  line-height: 1; }
+  @media screen and (min-width: 700px) {
+    h1, .h1 {
+      font-size: 45px; } }
 
 h2, .h2 {
-  margin-bottom: 0.5333333333em;
-  font-size: 45px;
-  font-size: 2.25rem;
-  line-height: 1.1; }
+  margin-bottom: 20px;
+  line-height: 1.1;
+  font-size: 20px;
+  font-family: "Averia Serif Libre", cursive;
+  font-weight: 400;
+  text-rendering: optimizelegibility; }
+  @media screen and (min-width: 700px) {
+    h2, .h2 {
+      font-size: 30px; } }
 
 h3, .h3 {
-  margin-bottom: Infinityem;
-  font-size: 25px;
-  font-size: 1.25rem;
-  line-height: 1.4; }
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 20px;
+  font-family: "Averia Serif Libre", cursive;
+  font-weight: 400;
+  text-rendering: optimizelegibility; }
+  @media screen and (min-width: 700px) {
+    h3, .h3 {
+      font-size: 30px; } }
 
 h4, .h4 {
-  margin-bottom: Infinityem;
+  margin-bottom: 20px;
+  line-height: 3.4;
   font-size: 19px;
-  font-size: 0.95rem;
-  line-height: 3.4; }
+  font-family: "Averia Serif Libre", cursive;
+  font-weight: 400;
+  text-rendering: optimizelegibility; }
+  @media screen and (min-width: 700px) {
+    h4, .h4 {
+      font-size: 28.5px; } }
 
 h5, .h5 {
-  margin-bottom: 0.2285714286em;
+  margin-bottom: 7px;
+  line-height: 2;
   font-size: 19px;
-  font-size: 0.95rem;
-  line-height: 2; }
+  font-family: "Averia Serif Libre", cursive;
+  font-weight: 400;
+  text-rendering: optimizelegibility; }
+  @media screen and (min-width: 700px) {
+    h5, .h5 {
+      font-size: 28.5px; } }
 
 h6, .h6 {
-  margin-bottom: 0.2285714286em;
+  margin-bottom: 7px;
+  line-height: 1;
   font-size: 19px;
-  font-size: 0.95rem;
-  line-height: 1; }
+  font-family: "Averia Serif Libre", cursive;
+  font-weight: 400;
+  text-rendering: optimizelegibility; }
+  @media screen and (min-width: 700px) {
+    h6, .h6 {
+      font-size: 28.5px; } }
 
 p,
 ol,
@@ -3899,7 +3875,7 @@ dl,
 address {
   margin-bottom: 1.1em;
   line-height: 1.6em;
-  letter-spacing: 0;
+  letter-spacing: 1;
   word-spacing: 0.135em; }
   p small,
   ol small,
@@ -4262,6 +4238,8 @@ Main navbar
 \*------------------------------------*/
 .widget {
   color: #317549; }
+  .widget h4 {
+    color: white; }
 
 .widget__title {
   color: #f0730b; }
@@ -4518,29 +4496,27 @@ Main navbar
 /*------------------------------------*\
   $FORMULARIOS
 \*------------------------------------*/
-form {
-  margin: 0 0 1.6em 0; }
-  form fieldset {
-    margin-bottom: 1.6em;
-    padding: 0;
-    border-width: 0; }
-  form legend {
-    display: block;
-    width: 100%;
-    margin-bottom: 3.2em;
-    padding: 0;
-    color: #317549;
-    border: 0;
-    border-bottom: 1px dotted #317549;
-    white-space: normal; }
-  form p {
-    margin-bottom: 0.8em; }
-  form ul {
-    list-style-type: none;
-    margin: 0 0 1.6em 0;
-    padding: 0; }
-  form br {
-    display: none; }
+form fieldset {
+  margin-bottom: 1.6em;
+  padding: 0;
+  border-width: 0; }
+form legend {
+  display: block;
+  width: 100%;
+  margin-bottom: 3.2em;
+  padding: 0;
+  color: #317549;
+  border: 0;
+  border-bottom: 1px dotted #317549;
+  white-space: normal; }
+form p {
+  margin-bottom: 0.8em; }
+form ul {
+  list-style-type: none;
+  margin: 0 0 1.6em 0;
+  padding: 0; }
+form br {
+  display: none; }
 
 label,
 input,
@@ -5199,15 +5175,13 @@ path.anim-agua {
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease; }
 
-.Comments {
-  background-color: rgba(0, 0, 0, 0.1); }
-  .Comments__title {
-    color: #f0730b;
-    line-height: 1;
-    padding-top: 20px; }
-  .Comments__respond textarea {
-    width: 100%; }
-  .Comments a {
-    color: #f0730b; }
+.Comments__title {
+  color: #f0730b;
+  line-height: 1;
+  padding-top: 20px; }
+.Comments__respond textarea {
+  width: 100%; }
+.Comments a {
+  color: #f0730b; }
 
 /*# sourceMappingURL=style.css.map */
