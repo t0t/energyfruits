@@ -51,9 +51,11 @@
 .main-post__content__entry {
   @extend %padding-horizontal;
   position: relative;
-  img {
-    width: 100%;
-    height: auto;
+  p {
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
   h3 {
     color: $color-alt;
