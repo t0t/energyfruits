@@ -3579,18 +3579,18 @@
 		},
 	"\/assets\/js\/_main.js": {
 		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignore": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/js\/_main.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/_main-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/main.min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/assets\/js\/main.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/main.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/main.min-min.js",

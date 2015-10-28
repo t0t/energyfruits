@@ -1,5 +1,20 @@
+
+
+
 (function($) {
 $(function() {
+
+//toggle bug in iphone6
+var toggleBtn = document.getElementById('toggle');
+var overMenu = document.getElementsByClassName('nav-main')[0].getElementsByTagName('ul')[0];
+function togBot() {
+  if ( !toggleBtn.checked ) {
+    overMenu.className = " ";
+  } else {
+  overMenu.className = "checked";
+  }
+}
+toggleBtn.addEventListener( 'click', togBot);
 
 // FitVids.js
 //http://jsbin.com/boreme/17/edit?html,css,js,output
