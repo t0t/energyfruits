@@ -42,9 +42,7 @@
 .main-post__content__entry {
   @extend %padding-horizontal;
   position: relative;
-  img {
-    text-align: center;
-  }
+  text-align: center;
   p {
     img {
       max-width: 100%;

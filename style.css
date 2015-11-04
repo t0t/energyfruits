@@ -810,8 +810,6 @@ article, aside, figure, footer, header, hgroup, nav, section {
 
 .main-post__content__entry {
   position: relative;
-}
-.main-post__content__entry img {
   text-align: center;
 }
 .main-post__content__entry p img {
