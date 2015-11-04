@@ -812,7 +812,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
   position: relative;
 }
 .main-post__content__entry p img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .main-post__content__entry h3 {
