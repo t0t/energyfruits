@@ -48,11 +48,9 @@
 		return 10;
 	}
 	add_filter('excerpt_length', 'new_excerpt_length');
-
 	/* No me carges los scripts de cf7, los cargare luego solo para contacto */
 	add_filter('wpcf7_load_js', '__return_false');
 	add_filter('wpcf7_load_css', '__return_false');
-
 	// Ponme el lightbox2.js en el footer y sólo en los single
 	function lightbox_js() {
 		if (is_single()) {
@@ -60,14 +58,11 @@
 		}
 	}
 	add_action('wp_footer', 'lightbox_js');
-
 	// quita admin bar
 	add_filter('show_admin_bar', '__return_false');
-
 	// wpautop
 	remove_filter( 'the_content', 'wpautop' );
 	remove_filter( 'the_excerpt', 'wpautop' );
-
 	// CPT's
 	add_action('init', 'create_post_type');
 	function create_post_type() {
@@ -81,24 +76,20 @@
 		)
 		);
 	}
-
 	// http://wordpress.stackexchange.com/questions/6731/if-is-custom-post-type
 	function is_post_type($type) {
 		global $wp_query;
 		if ($type == get_post_type($wp_query->post->ID)) {
 			return true;
 		}
-
 		return false;
 	}
-
 	// Quitame los metaboxes que me sobran
 	remove_action('wp_head', 'wp_generator');
 	remove_action('wp_head', 'wlwmanifest_link');
 	remove_action('wp_head', 'rsd_link');
 	remove_action('wp_head', 'feed_links');
 	remove_action('wp_head', 'feed_links_extra', 3);
-
 	function quita_metaboxes_admin() {
 		remove_meta_box('postexcerpt', 'page', 'normal');
 		remove_meta_box('authordiv', 'page', 'normal');
@@ -110,22 +101,13 @@
 		remove_meta_box('postcustom', 'page', 'normal');
 	}
 	add_action('admin_menu', 'quita_metaboxes_admin');
-
-
-
 /*
  * Enqueue Scripts and Styles
  */
 	function t0theme_scripts() {
 		// wp_deregister_script( 'jquery' ); //Ya lo incluyo en main.min.js
-		// wp_enqueue_style('slick-css', get_template_directory_uri() . '/assets/bower_components/slick-carousel/slick/slick.css');
-		wp_enqueue_style('t0theme', get_stylesheet_uri());
-
-		wp_register_script( 'slick-carousel',
-		get_template_directory_uri() . '/assets/bower_components/slick-carousel/slick/slick.js' );
-
-		wp_enqueue_script( 't0theme_scripts',
-		get_template_directory_uri() . '/assets/js/main.min.js',
-		array('slick-carousel'), '', true );
+		wp_enqueue_style( 'mainstyles', get_stylesheet_uri() );
+		wp_register_script( 'slick-carousel', get_template_directory_uri() . '/assets/bower_components/slick-carousel/slick/slick.js' );
+		wp_enqueue_script( 't0theme_scripts', get_template_directory_uri() . '/assets/js/main.min.js', array('slick-carousel'), '', true );
 	}
 	add_action('wp_enqueue_scripts', 't0theme_scripts', 100);

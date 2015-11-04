@@ -31,7 +31,6 @@
             background-color: lighten($elcolor, 8%);
           }
         }
-
         a {
           color: white;
           border-bottom: none;
@@ -40,90 +39,81 @@
           }
         }
     }
-
-
-          .galeria-fotos__figure {
-              
-              a {
-                  color: $elcolor;
-
-                  &:hover {
-                      color: darken($elcolor, 10%);
-                  }
-              }
-
-              img {
-                  background-color: lighten($elcolor, 45%);
-
-                  &:hover {
-                      background-color: $elcolor;
-                  }
-              }
-          }
+    .galeria-fotos__figure {
+      a {
+        color: $elcolor;
+        &:hover {
+          color: darken($elcolor, 10%);
+        }
       }
-
-      a[href*="producto/#{$brand}"] {
-          // cursor: ew-resize;
-          figure {
-            @include transition(0.3s);
-            @extend .img--circle;
-            width: 200px;
-            height: 200px;
-            margin: 0 auto;
-            text-align: center;
-            background-image: url(#{$image-path}bg_#{$brand}.svg);
-            background-color: lighten($elcolor, 5%);
-            background-position: 0 100px;
-            background-repeat: no-repeat;
-            background-size: contain;
-            border: solid 10px $elcolor;
-
-            &:hover {
-                background-position: 0 90px;
-                background-color: darken($elcolor, 7%);
-            }
-            @media screen and (min-width: $bp3) {
-                width: 250px;
-                height: 250px;
-            }
-            // @media screen and (min-width:$bp3) { line-height: 255px; }
-          }
+      img {
+        background-color: lighten($elcolor, 45%);
+        &:hover {
+          background-color: $elcolor;
+        }
       }
+    }
+  }
+  a[href*="producto/#{$brand}"] {
+    figure {
+      @include transition(0.3s);
+      @extend .img--circle;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      text-align: center;
+      background-image: url(#{$image-path}bg_#{$brand}.svg);
+      background-color: lighten($elcolor, 5%);
+      background-position: 0 100px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border: solid 10px $elcolor;
+      &:hover {
+        background-position: 0 90px;
+        background-color: darken($elcolor, 7%);
+      }
+      @media screen and (min-width: $bp3) {
+        width: 250px;
+        height: 250px;
+      }
+        // @media screen and (min-width:$bp3) { line-height: 255px; }
+      }
+    }
   }
 }
-
 // Por ejemplo: @include background-image(bg, cover, no-repeat, 0 0, svg);
-
 @mixin background-image($name, $size: false, $repeat: false, $position: false, $svg: false, $jpg: false, $gif: false) {
   @if $size {
-      background-size: $size;
+    background-size: $size;
   }
-
   @if $position {
-      background-position: $position;
+    background-position: $position;
   }
-
   @if $repeat {
-      background-repeat: $repeat;
+    background-repeat: $repeat;
   }
-
   @if $jpg {
-      background-image: url(#{$image-path}#{$name}.#{$jpg});
+    background-image: url(#{$image-path}#{$name}.#{$jpg});
   }
-
   @if $gif {
-      background-image: url(#{$image-path}#{$name}.#{$gif});
+    background-image: url(#{$image-path}#{$name}.#{$gif});
   }
-
   @if $svg {
-      background-image: url(#{$image-path}#{$name}.#{$svg});
+    background-image: url(#{$image-path}#{$name}.#{$svg});
   }
-
   .no-svg & {
-      background-image: url(#{$image-path}#{$name}.#{$fallback-extension});
-
-      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-          background-image: url(#{$image-path}#{$name}#{$retina-suffix}.#{$fallback-extension});
-      }
+    background-image: url(#{$image-path}#{$name}.#{$fallback-extension});
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url(#{$image-path}#{$name}#{$retina-suffix}.#{$fallback-extension});
+    }
+  }
+}
+.cpt-delifiber {
+  .page-header,
+  .main-post__content__entry,
+  .galeria-fotos__figure {
+    * {
+      color: $color-base !important;
+    }
   }
 }

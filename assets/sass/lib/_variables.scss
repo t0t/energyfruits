@@ -10,27 +10,27 @@ $bp4 : 200px;
 $bp5 : 150px;
 
 /*------------------------------------*\
-    $IMAGE-DIR
+  $IMAGE-DIR
 \*------------------------------------*/
 $image-path: 'assets/img/' !default;
 $fallback-extension: 'png' !default;
 $retina-suffix: '@2x';
 
 /*------------------------------------*\
-    $LAYOUT
+  $LAYOUT
 \*------------------------------------*/
-$baselineheight:     1.6em;
-$line-height-computed  :	$baselineheight;
-$baseline:           	$baselineheight;
-$pagemaxwitdh:       	100%;
-$radius :             	5px;
-$hovertransition :    	.3s;
-$animationtime :      	.8s;
+$baselineheight: 1.6em;
+$line-height-computed: $baselineheight;
+$baseline: $baselineheight;
+$pagemaxwitdh: 100%;
+$radius: 5px;
+$hovertransition: .3s;
+$animationtime: .8s;
 
 // gutter
-$gutterwidth :       	3%;
+$gutterwidth: 3%;
 $margin: $gutterwidth;
-$paddingbase: 	20px;
+$paddingbase: 20px;
 
 $link-vertical-padding: 15px;
 $link-horizontal-padding: 20px;
@@ -96,7 +96,6 @@ $color_macuchino: rgb(176,135,66);
 $color_bodtox: rgb(163,189,49);
 $color_royalbreakfast: rgb(113,22,17);
 $color_camucao: rgb(139,59,29);
-// Añadido en Agosto 2015
 $color_gojicaotrailmix: rgb(193,82,46);
 $color_andeantrailmix: rgb(193,82,46);
 $color_aguaymanto: rgb(230,25,11);
@@ -110,8 +109,8 @@ $brand_colors: $color_aguaymanto $color_andeantrailmix $color_gojicaotrailmix $c
 /**
  * Transparencias
  */
-$black 				      : rgb(0,0,0);
-$black-alpha		    : transparentize($black, .3);
+$black: rgb(0,0,0);
+$black-alpha: transparentize($black, .3);
 $black-alpha-suave 	: transparentize($black, .1);
 $black-alpha-medio	: transparentize($black, .5);
 $black-alpha-fuerte	: transparentize($black, .9);

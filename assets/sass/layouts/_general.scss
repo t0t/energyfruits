@@ -9,7 +9,7 @@ body {
   position: relative;
   font-family: $basefont;
   font-weight: 400;
-  color: $textcolor;
+  //color: $textcolor;
   letter-spacing: $baseletterspacing;
   // @include background-image(bg,cover,no-repeat,center top, svg);
   background-color: $background;
@@ -23,16 +23,10 @@ body {
 // Custom brand colors and images
 @include gama-producto;
 
-img {
-    // @include max-width(100%);
-    // height: auto;
-    @media all and (min-width: $bp3) {}
-}
-
 img[src$=".svg"] {
-    max-width: auto;
-    width: 100%;
-    height: auto;
+  max-width: auto;
+  width: 100%;
+  height: auto;
 }
 
 // Fondos
