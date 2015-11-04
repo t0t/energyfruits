@@ -68,21 +68,14 @@
         background-color: $white-alpha-suave;
     }
 
-    li {
-        // @include font-size(23);
-        // line-height: 1;
-
+  a {
+    color: $white;
+    border-bottom: 2px dotted $color-alt;
+    padding-bottom: 3px;
+    &:hover {
+      color: $color-alt;
     }
-
-    a {
-        color: $black-alpha-medio;
-        border-bottom: 2px dotted $color-alt;
-        padding-bottom: 3px;
-
-        &:hover {
-          color: $color-alt;
-        }
-    }
+  }
 
     @media all and (min-width: $bp3) {
         padding-right: $gutterwidth * 2;
