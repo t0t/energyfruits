@@ -42,117 +42,96 @@
 .main-post__content__entry {
   @extend %padding-horizontal;
   position: relative;
-  text-align: center;
-  p {
-    img {
-      max-width: 100%;
-      height: auto;
-    }
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
   }
   h3 {
-    color: $color-alt;
-    text-align: left;
     margin-bottom: 8px;
+    line-height: 1.3;
+    text-transform: uppercase;
   }
-    small {
-        display: inline-block;
-        @include font-size(13);
-        background-color: $black-alpha-fuerte;
-        padding: 3px 5px;
-        margin-bottom: 10px;
-    }
-    ul {
-        @extend %no-margin;
-        @include padding($gutterwidth * 2);
-        // border: 2px dotted $color-alt;
-        background-color: $white-alpha-suave;
-    }
-
+  small {
+    @include font-size(13);
+    background-color: $black-alpha-fuerte;
+    padding: 3px 5px;
+    margin-bottom: 10px;
+  }
+  ul {
+    @extend %no-margin;
+    @include padding($gutterwidth * 2);
+    background-color: $white-alpha-suave;
+  }
   a {
-    color: $white;
+    color: inherit;
     border-bottom: 2px dotted $color-alt;
-    padding-bottom: 3px;
     &:hover {
       color: $color-alt;
     }
   }
-
-    @media all and (min-width: $bp3) {
-        padding-right: $gutterwidth * 2;
-        width: calc(75% - #{$gutterwidth});
-    }
-
-    @media all and (min-width: 900px) {
-        padding-right: $gutterwidth * 2;
-        width: calc(65% - #{$gutterwidth});
-    }
-
-    @media all and (min-width: $bp1) {
-        padding-right: $gutterwidth * 2;
-        width: calc(55% - #{$gutterwidth});
-    }
+  @media all and (min-width: $bp3) {
+    padding-right: $gutterwidth * 2;
+    width: calc(75% - #{$gutterwidth});
+  }
+  @media all and (min-width: 900px) {
+    padding-right: $gutterwidth * 2;
+    width: calc(65% - #{$gutterwidth});
+  }
+  @media all and (min-width: $bp1) {
+    padding-right: $gutterwidth * 2;
+    width: calc(55% - #{$gutterwidth});
+  }
 }
 
 // Post
 .post {
-    display: table;
-
-    @media only screen and (min-width: 780px) {
-        width: calc(50% - #{$gutterwidth});
-    }
-
-    @media only screen and (min-width: 1120px) {
-        width: calc(33.33% - #{$gutterwidth});
-    }
-    @extend %margin-vertical;
+  display: table;
+  @extend %margin-vertical;
+  @media only screen and (min-width: 780px) {
+    width: calc(50% - #{$gutterwidth});
+  }
+  @media only screen and (min-width: 1120px) {
+    width: calc(33.33% - #{$gutterwidth});
+  }
 }
-
 .post__figure {
-    width: 50%;
-    display: table-cell;
-    padding: $gutterwidth * 2;
-    img {}
+  width: 50%;
+  display: table-cell;
+  padding: $gutterwidth * 2;
+  img {}
 }
-
 .post__figure + p {}
-
 .post__content {
-    display: table-cell;
-    width: 50%;
-    vertical-align: top;
-
-    * {
-        @extend %clearfix;
-    }
-
-    h2 {
-        @extend %text-left;
-        margin-bottom: $gutterwidth;
-        // color: $white-alpha-medio;
-
-        @media all and (min-width: $bp3) {
-            // color: $black;
-        }
-    }
-
-    h2 + p {
-        margin-bottom: $gutterwidth;
-        @extend %line-height-smaller;
-    }
+  display: table-cell;
+  width: 50%;
+  vertical-align: top;
+  * {
+    @extend %clearfix;
+  }
+  h2 {
+    @extend %text-left;
+    margin-bottom: $gutterwidth;
+  }
+  h2 + p {
+    margin-bottom: $gutterwidth;
+    @extend %line-height-smaller;
+  }
 }
-
 .post__meta-date {
-    @include font-size(24);
-    color: $color-alt;
-    font-style: italic;
-    line-height: 1;
-    margin-bottom: 0;
-    letter-spacing: $baseletterspacing;
-    @media all and (min-width: $bp3) {}
+  @include font-size(24);
+  color: $color-alt;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 0;
+  letter-spacing: $baseletterspacing;
 }
 
 // Posts en Sidebar
-
 .post--sidebar {
     @extend %text-center;
 
