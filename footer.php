@@ -10,7 +10,6 @@
     <a href="/area-privada"><i class="icon-key"></i> Area privada</a>
   </div>
 </footer>
-
 <!-- Scroll to top button -->
 <div class="scroll">
   <a class="scroll-top" href="#page-top"><i class="icon-arrow-up2">TOP</i></a>
@@ -19,9 +18,9 @@
 <div class="main-footer__credits">
   <aside>
     <span>
-    <?php bloginfo('name'); ?> <?php echo date('Y'); ?> &sdot;
+    <?php bloginfo( 'name' ); ?> <?php echo date( 'Y' ); ?> &sdot;
       <a href="/aviso-legal/">Aviso Legal</a> &sdot;
-      <?php edit_post_link('Editame ') ?>
+      <?php edit_post_link( 'Editame ') ?>
       <?php wp_loginout(); ?> &sdot;
     </span>
     <span rel="author">

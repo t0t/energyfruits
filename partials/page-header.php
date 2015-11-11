@@ -10,12 +10,10 @@
       get_template_part( 'partials/catalog' );
     ?>
   </div>
-
   <div class="page-header__center efecto--intro">
-    <?php if ( is_post_type( 'producto' )) { 
+    <?php if ( is_post_type( 'producto' )) {
     echo "<h1>string</h1>";
     } ?>
-    
     <?php if ( is_single() ) { ?>
       <h3>
         <?php
@@ -34,7 +32,6 @@
     <?php } else { ?>
       <h1>Pagina no encontrada!</h1>
     <?php } ?>
-
     <!-- Encabezado home -->
     <?php if (get_field( 'flexible_content' )): ?>
       <?php while (has_sub_field( "flexible_content" )): ?>
@@ -43,13 +40,12 @@
         if (get_row_layout() == "well-img"): ?>
           <h1 class="efecto--intro"><?php the_sub_field( "title" ); ?></h1>
           <h3><?php the_sub_field( "subtitle" );?></h3>
-          <a class="btn btn--image" href="<?php the_sub_field( "call_to_action" ); ?>">
-            <?php the_sub_field("description");?>
+          <a class="btn btn--cta" href="<?php the_sub_field( "call_to_action" ); ?>">
+            <?php the_sub_field( "description" ); ?>
           </a>
         <?php endif; ?>
       <?php endwhile; ?>
     <?php endif; ?>
-
     <!-- Encabezado Page -->
     <?php
     /* Bloques */
@@ -81,9 +77,7 @@
     	<?php endwhile; ?>
     <?php endif; ?>
   </div>
-
   <div class="page-header__right">
     <?php get_search_form(); ?>
   </div>
-
 </header>
