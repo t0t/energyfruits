@@ -7,15 +7,11 @@
       .page-header {
         background-image: url(#{$image-path}bg_#{$brand}.svg);
         background-color: lighten($elcolor, 5%);
-        background-position: center bottom;
+        background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
-        @include transition(4s);
-        &:hover {
-          @include transition(4s);
-          background-position: center 100px;
-          background-size: cover;
-        }
+        animation-name: zoom;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
       }
       .main-post__content {
         background-color: $white;

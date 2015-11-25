@@ -1,83 +1,71 @@
 // Animaciones
 // Glob Animation
 // ====================
-
 // Keyframe Mixin
 // Adds vendor prefixes to keyframes
-// ====================
 
-
-// Animation Mixin
-// ====================
-@mixin animation($animation, $delay, $duration, $function, $count...) {
-    animation-name: $animation;
-    animation-delay: $delay;
-    animation-duration: $duration;
-    animation-iteration-count: $count;
-    animation-timing-function: $function;
+@keyframes zoom {
+  0% { background-size: 50%; }
+  80% { background-size: 80%; }
+  100% { background-size: 100%; }
 }
 
-// .opacity(VALUE);
 
+@mixin animation($animation, $delay, $duration, $function, $count...) {
+  animation-name: $animation;
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-iteration-count: $count;
+  animation-timing-function: $function;
+}
+// .opacity(VALUE);
 @mixin opacity($opacity: 0.5) {
-    -webkit-opacity: $opacity;
-    -moz-opacity: $opacity;
-    opacity: $opacity;
+  -webkit-opacity: $opacity;
+  -moz-opacity: $opacity;
+  opacity: $opacity;
 }
 
 @mixin transition($seconds) {
-    -webkit-transition: all $seconds;
-    -moz-transition: all $seconds;
-    -ms-transition: all $seconds;
-    transition: all $seconds;
+  transition: all $seconds;
 }
-
 @mixin scale($ratio) {
     -ms-transform: scale($ratio);
     // IE9+
     transform: scale($ratio);
 }
-
 @mixin translate($x, $y) {
-    -ms-transform: translate($x, $y);
-    // IE9+
-    transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  // IE9+
+  transform: translate($x, $y);
 }
-
 @mixin translateX($x) {
-    -ms-transform: translateX($x);
-    // IE9+
-    transform: translateX($x);
+  -ms-transform: translateX($x);
+  // IE9+
+  transform: translateX($x);
 }
-
 @mixin translateY($y) {
-    -ms-transform: translateY($y);
-    // IE9+
-    transform: translateY($y);
+  -ms-transform: translateY($y);
+  // IE9+
+  transform: translateY($y);
 }
-
 @mixin skew($x, $y) {
-    -ms-transform: skewX($x) skewY($y);
-    // See https://github.com/twbs/bootstrap/issues/4885; IE9+
-    transform: skew($x, $y);
+  -ms-transform: skewX($x) skewY($y);
+  // See https://github.com/twbs/bootstrap/issues/4885; IE9+
+  transform: skew($x, $y);
 }
-
 @mixin translate3d($x, $y, $z) {
-    transform: translate3d($x, $y, $z);
+  transform: translate3d($x, $y, $z);
 }
-
 @mixin rotateX($degrees) {
-    -ms-transform: rotateX($degrees);
-    // IE9+
-    transform: rotateX($degrees);
+  -ms-transform: rotateX($degrees);
+  // IE9+
+  transform: rotateX($degrees);
 }
-
 @mixin rotateY($degrees) {
-    -ms-transform: rotateY($degrees);
-    // IE9+
-    transform: rotateY($degrees);
+  -ms-transform: rotateY($degrees);
+  // IE9+
+  transform: rotateY($degrees);
 }
-
 @mixin rotate($degrees) {
   transform: rotate($degrees);
 }

@@ -487,6 +487,20 @@ th {
 /*------------------------------------*\
     $BREAKPOINTS
 \*------------------------------------*/
+@-webkit-keyframes zoom {
+  0% {
+    background-size: 50%; }
+  80% {
+    background-size: 80%; }
+  100% {
+    background-size: 100%; } }
+@keyframes zoom {
+  0% {
+    background-size: 50%; }
+  80% {
+    background-size: 80%; }
+  100% {
+    background-size: 100%; } }
 .wrapper > div:nth-of-type(1n), .wrapper > div:nth-of-type(3n), .main > div:nth-of-type(1n), .main > div:nth-of-type(3n) {
   width: calc(100% * 0.1666666667 - 6px * (1 - 0.1666666667)); }
 
@@ -1119,7 +1133,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
   .sidebar * {
     letter-spacing: 1;
     -webkit-transition: all 0.3s;
-    transition: all 0.3s; }
+            transition: all 0.3s; }
   .sidebar a, .sidebar a:visited {
     color: rgba(0, 0, 0, 0.5); }
     .sidebar a:hover, .sidebar a:visited:hover {
@@ -1282,16 +1296,14 @@ body {
 .cpt-polenvacio .page-header {
   background-image: url(assets/img/bg_polenvacio.svg);
   background-color: #d8c207;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-polenvacio .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-polenvacio .main-post__content {
   background-color: white; }
 .cpt-polenvacio .main-post__content__entry ul {
@@ -1318,7 +1330,7 @@ body {
 
 a[href*="producto/polenvacio"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1340,16 +1352,14 @@ a[href*="producto/polenvacio"] figure {
 .cpt-harinaarroz .page-header {
   background-image: url(assets/img/bg_harinaarroz.svg);
   background-color: #10b5b5;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-harinaarroz .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-harinaarroz .main-post__content {
   background-color: white; }
 .cpt-harinaarroz .main-post__content__entry ul {
@@ -1376,7 +1386,7 @@ a[href*="producto/polenvacio"] figure {
 
 a[href*="producto/harinaarroz"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1398,16 +1408,14 @@ a[href*="producto/harinaarroz"] figure {
 .cpt-cococao .page-header {
   background-image: url(assets/img/bg_cococao.svg);
   background-color: #955928;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-cococao .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-cococao .main-post__content {
   background-color: white; }
 .cpt-cococao .main-post__content__entry ul {
@@ -1434,7 +1442,7 @@ a[href*="producto/harinaarroz"] figure {
 
 a[href*="producto/cococao"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1456,16 +1464,14 @@ a[href*="producto/cococao"] figure {
 .cpt-almendramarconavacio .page-header {
   background-image: url(assets/img/bg_almendramarconavacio.svg);
   background-color: #786618;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-almendramarconavacio .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-almendramarconavacio .main-post__content {
   background-color: white; }
 .cpt-almendramarconavacio .main-post__content__entry ul {
@@ -1492,7 +1498,7 @@ a[href*="producto/cococao"] figure {
 
 a[href*="producto/almendramarconavacio"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1514,16 +1520,14 @@ a[href*="producto/almendramarconavacio"] figure {
 .cpt-aguaymanto .page-header {
   background-image: url(assets/img/bg_aguaymanto.svg);
   background-color: #f42517;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-aguaymanto .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-aguaymanto .main-post__content {
   background-color: white; }
 .cpt-aguaymanto .main-post__content__entry ul {
@@ -1550,7 +1554,7 @@ a[href*="producto/almendramarconavacio"] figure {
 
 a[href*="producto/aguaymanto"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1572,16 +1576,14 @@ a[href*="producto/aguaymanto"] figure {
 .cpt-andeantrailmix .page-header {
   background-image: url(assets/img/bg_andeantrailmix.svg);
   background-color: #d05e39;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-andeantrailmix .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-andeantrailmix .main-post__content {
   background-color: white; }
 .cpt-andeantrailmix .main-post__content__entry ul {
@@ -1608,7 +1610,7 @@ a[href*="producto/aguaymanto"] figure {
 
 a[href*="producto/andeantrailmix"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1630,16 +1632,14 @@ a[href*="producto/andeantrailmix"] figure {
 .cpt-gojicaotrailmix .page-header {
   background-image: url(assets/img/bg_gojicaotrailmix.svg);
   background-color: #d05e39;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-gojicaotrailmix .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-gojicaotrailmix .main-post__content {
   background-color: white; }
 .cpt-gojicaotrailmix .main-post__content__entry ul {
@@ -1666,7 +1666,7 @@ a[href*="producto/andeantrailmix"] figure {
 
 a[href*="producto/gojicaotrailmix"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1688,16 +1688,14 @@ a[href*="producto/gojicaotrailmix"] figure {
 .cpt-graviola .page-header {
   background-image: url(assets/img/bg_graviola.svg);
   background-color: #8f8356;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-graviola .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-graviola .main-post__content {
   background-color: white; }
 .cpt-graviola .main-post__content__entry ul {
@@ -1724,7 +1722,7 @@ a[href*="producto/gojicaotrailmix"] figure {
 
 a[href*="producto/graviola"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1746,16 +1744,14 @@ a[href*="producto/graviola"] figure {
 .cpt-goji .page-header {
   background-image: url(assets/img/bg_goji.svg);
   background-color: #f42517;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-goji .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-goji .main-post__content {
   background-color: white; }
 .cpt-goji .main-post__content__entry ul {
@@ -1782,7 +1778,7 @@ a[href*="producto/graviola"] figure {
 
 a[href*="producto/goji"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1804,16 +1800,14 @@ a[href*="producto/goji"] figure {
 .cpt-cacaocriollo .page-header {
   background-image: url(assets/img/bg_cacaocriollo.svg);
   background-color: #4d2525;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-cacaocriollo .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-cacaocriollo .main-post__content {
   background-color: white; }
 .cpt-cacaocriollo .main-post__content__entry ul {
@@ -1840,7 +1834,7 @@ a[href*="producto/goji"] figure {
 
 a[href*="producto/cacaocriollo"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1862,16 +1856,14 @@ a[href*="producto/cacaocriollo"] figure {
 .cpt-chlorella .page-header {
   background-image: url(assets/img/bg_chlorella.svg);
   background-color: #2f1e19;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-chlorella .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-chlorella .main-post__content {
   background-color: white; }
 .cpt-chlorella .main-post__content__entry ul {
@@ -1898,7 +1890,7 @@ a[href*="producto/cacaocriollo"] figure {
 
 a[href*="producto/chlorella"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1920,16 +1912,14 @@ a[href*="producto/chlorella"] figure {
 .cpt-chia .page-header {
   background-image: url(assets/img/bg_chia.svg);
   background-color: #988b81;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-chia .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-chia .main-post__content {
   background-color: white; }
 .cpt-chia .main-post__content__entry ul {
@@ -1956,7 +1946,7 @@ a[href*="producto/chlorella"] figure {
 
 a[href*="producto/chia"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1978,16 +1968,14 @@ a[href*="producto/chia"] figure {
 .cpt-amaranto .page-header {
   background-image: url(assets/img/bg_amaranto.svg);
   background-color: #c62771;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-amaranto .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-amaranto .main-post__content {
   background-color: white; }
 .cpt-amaranto .main-post__content__entry ul {
@@ -2014,7 +2002,7 @@ a[href*="producto/chia"] figure {
 
 a[href*="producto/amaranto"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2036,16 +2024,14 @@ a[href*="producto/amaranto"] figure {
 .cpt-spiroulina .page-header {
   background-image: url(assets/img/bg_spiroulina.svg);
   background-color: #3a4733;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-spiroulina .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-spiroulina .main-post__content {
   background-color: white; }
 .cpt-spiroulina .main-post__content__entry ul {
@@ -2072,7 +2058,7 @@ a[href*="producto/amaranto"] figure {
 
 a[href*="producto/spiroulina"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2094,16 +2080,14 @@ a[href*="producto/spiroulina"] figure {
 .cpt-camucamu .page-header {
   background-image: url(assets/img/bg_camucamu.svg);
   background-color: #763c46;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-camucamu .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-camucamu .main-post__content {
   background-color: white; }
 .cpt-camucamu .main-post__content__entry ul {
@@ -2130,7 +2114,7 @@ a[href*="producto/spiroulina"] figure {
 
 a[href*="producto/camucamu"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2152,16 +2136,14 @@ a[href*="producto/camucamu"] figure {
 .cpt-canamo .page-header {
   background-image: url(assets/img/bg_canamo.svg);
   background-color: #00aa5b;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-canamo .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-canamo .main-post__content {
   background-color: white; }
 .cpt-canamo .main-post__content__entry ul {
@@ -2188,7 +2170,7 @@ a[href*="producto/camucamu"] figure {
 
 a[href*="producto/canamo"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2210,16 +2192,14 @@ a[href*="producto/canamo"] figure {
 .cpt-maca .page-header {
   background-image: url(assets/img/bg_maca.svg);
   background-color: #b95179;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-maca .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-maca .main-post__content {
   background-color: white; }
 .cpt-maca .main-post__content__entry ul {
@@ -2246,7 +2226,7 @@ a[href*="producto/canamo"] figure {
 
 a[href*="producto/maca"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2268,16 +2248,14 @@ a[href*="producto/maca"] figure {
 .cpt-lucuma .page-header {
   background-image: url(assets/img/bg_lucuma.svg);
   background-color: #f9b91b;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-lucuma .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-lucuma .main-post__content {
   background-color: white; }
 .cpt-lucuma .main-post__content__entry ul {
@@ -2304,7 +2282,7 @@ a[href*="producto/maca"] figure {
 
 a[href*="producto/lucuma"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2326,16 +2304,14 @@ a[href*="producto/lucuma"] figure {
 .cpt-stevia .page-header {
   background-image: url(assets/img/bg_stevia.svg);
   background-color: #009559;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-stevia .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-stevia .main-post__content {
   background-color: white; }
 .cpt-stevia .main-post__content__entry ul {
@@ -2362,7 +2338,7 @@ a[href*="producto/lucuma"] figure {
 
 a[href*="producto/stevia"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2384,16 +2360,14 @@ a[href*="producto/stevia"] figure {
 .cpt-quinoa .page-header {
   background-image: url(assets/img/bg_quinoa.svg);
   background-color: #d3313a;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-quinoa .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-quinoa .main-post__content {
   background-color: white; }
 .cpt-quinoa .main-post__content__entry ul {
@@ -2420,7 +2394,7 @@ a[href*="producto/stevia"] figure {
 
 a[href*="producto/quinoa"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2442,16 +2416,14 @@ a[href*="producto/quinoa"] figure {
 .cpt-alfalfa .page-header {
   background-image: url(assets/img/bg_alfalfa.svg);
   background-color: #2c9c80;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-alfalfa .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-alfalfa .main-post__content {
   background-color: white; }
 .cpt-alfalfa .main-post__content__entry ul {
@@ -2478,7 +2450,7 @@ a[href*="producto/quinoa"] figure {
 
 a[href*="producto/alfalfa"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2500,16 +2472,14 @@ a[href*="producto/alfalfa"] figure {
 .cpt-trigoverde .page-header {
   background-image: url(assets/img/bg_trigoverde.svg);
   background-color: #558b36;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-trigoverde .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-trigoverde .main-post__content {
   background-color: white; }
 .cpt-trigoverde .main-post__content__entry ul {
@@ -2536,7 +2506,7 @@ a[href*="producto/alfalfa"] figure {
 
 a[href*="producto/trigoverde"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2558,16 +2528,14 @@ a[href*="producto/trigoverde"] figure {
 .cpt-algarroba .page-header {
   background-image: url(assets/img/bg_algarroba.svg);
   background-color: #301f19;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-algarroba .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-algarroba .main-post__content {
   background-color: white; }
 .cpt-algarroba .main-post__content__entry ul {
@@ -2594,7 +2562,7 @@ a[href*="producto/trigoverde"] figure {
 
 a[href*="producto/algarroba"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2616,16 +2584,14 @@ a[href*="producto/algarroba"] figure {
 .cpt-cardomariano .page-header {
   background-image: url(assets/img/bg_cardomariano.svg);
   background-color: #b188b8;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-cardomariano .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-cardomariano .main-post__content {
   background-color: white; }
 .cpt-cardomariano .main-post__content__entry ul {
@@ -2652,7 +2618,7 @@ a[href*="producto/algarroba"] figure {
 
 a[href*="producto/cardomariano"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2674,16 +2640,14 @@ a[href*="producto/cardomariano"] figure {
 .cpt-linodorado .page-header {
   background-image: url(assets/img/bg_linodorado.svg);
   background-color: #e2cc59;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-linodorado .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-linodorado .main-post__content {
   background-color: white; }
 .cpt-linodorado .main-post__content__entry ul {
@@ -2710,7 +2674,7 @@ a[href*="producto/cardomariano"] figure {
 
 a[href*="producto/linodorado"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2732,16 +2696,14 @@ a[href*="producto/linodorado"] figure {
 .cpt-fresa .page-header {
   background-image: url(assets/img/bg_fresa.svg);
   background-color: #fb3e03;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-fresa .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-fresa .main-post__content {
   background-color: white; }
 .cpt-fresa .main-post__content__entry ul {
@@ -2768,7 +2730,7 @@ a[href*="producto/linodorado"] figure {
 
 a[href*="producto/fresa"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2790,16 +2752,14 @@ a[href*="producto/fresa"] figure {
 .cpt-gymtonic .page-header {
   background-image: url(assets/img/bg_gymtonic.svg);
   background-color: #d90513;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-gymtonic .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-gymtonic .main-post__content {
   background-color: white; }
 .cpt-gymtonic .main-post__content__entry ul {
@@ -2826,7 +2786,7 @@ a[href*="producto/fresa"] figure {
 
 a[href*="producto/gymtonic"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2848,16 +2808,14 @@ a[href*="producto/gymtonic"] figure {
 .cpt-delifiber .page-header {
   background-image: url(assets/img/bg_delifiber.svg);
   background-color: #ffe50a;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-delifiber .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-delifiber .main-post__content {
   background-color: white; }
 .cpt-delifiber .main-post__content__entry ul {
@@ -2884,7 +2842,7 @@ a[href*="producto/gymtonic"] figure {
 
 a[href*="producto/delifiber"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2906,16 +2864,14 @@ a[href*="producto/delifiber"] figure {
 .cpt-brainshake .page-header {
   background-image: url(assets/img/bg_brainshake.svg);
   background-color: #f3a200;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-brainshake .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-brainshake .main-post__content {
   background-color: white; }
 .cpt-brainshake .main-post__content__entry ul {
@@ -2942,7 +2898,7 @@ a[href*="producto/delifiber"] figure {
 
 a[href*="producto/brainshake"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2964,16 +2920,14 @@ a[href*="producto/brainshake"] figure {
 .cpt-andeanprotein .page-header {
   background-image: url(assets/img/bg_andeanprotein.svg);
   background-color: #45762b;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-andeanprotein .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-andeanprotein .main-post__content {
   background-color: white; }
 .cpt-andeanprotein .main-post__content__entry ul {
@@ -3000,7 +2954,7 @@ a[href*="producto/brainshake"] figure {
 
 a[href*="producto/andeanprotein"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -3022,16 +2976,14 @@ a[href*="producto/andeanprotein"] figure {
 .cpt-macuchino .page-header {
   background-image: url(assets/img/bg_macuchino.svg);
   background-color: #bd944f;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-macuchino .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-macuchino .main-post__content {
   background-color: white; }
 .cpt-macuchino .main-post__content__entry ul {
@@ -3058,7 +3010,7 @@ a[href*="producto/andeanprotein"] figure {
 
 a[href*="producto/macuchino"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -3080,16 +3032,14 @@ a[href*="producto/macuchino"] figure {
 .cpt-bodtox .page-header {
   background-image: url(assets/img/bg_bodtox.svg);
   background-color: #b1cc3b;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-bodtox .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-bodtox .main-post__content {
   background-color: white; }
 .cpt-bodtox .main-post__content__entry ul {
@@ -3116,7 +3066,7 @@ a[href*="producto/macuchino"] figure {
 
 a[href*="producto/bodtox"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -3137,57 +3087,55 @@ a[href*="producto/bodtox"] figure {
 
 .cpt-royalbreakfast .page-header {
   background-image: url(assets/img/bg_royalbreakfast.svg);
-  background-color: #871a14;
-  background-position: center bottom;
+  background-color: #8f66b3;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-royalbreakfast .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-royalbreakfast .main-post__content {
   background-color: white; }
 .cpt-royalbreakfast .main-post__content__entry ul {
   background-image: url(assets/img/bg_royalbreakfast.svg);
-  background-color: #871a14;
+  background-color: #8f66b3;
   background-position: 350px bottom;
   background-repeat: no-repeat;
   background-size: contain; }
   .cpt-royalbreakfast .main-post__content__entry ul:hover {
-    background-color: #941d16; }
+    background-color: #9670b8; }
 .cpt-royalbreakfast .main-post__content__entry a {
   color: white;
   border-bottom: none; }
   .cpt-royalbreakfast .main-post__content__entry a:hover {
-    color: black; }
+    color: #342244; }
 .cpt-royalbreakfast .galeria-fotos__figure a {
-  color: #711611; }
+  color: #8255aa; }
   .cpt-royalbreakfast .galeria-fotos__figure a:hover {
-    color: #450d0a; }
+    color: #684488; }
 .cpt-royalbreakfast .galeria-fotos__figure img {
-  background-color: #eb827c; }
+  background-color: #f3eef7; }
   .cpt-royalbreakfast .galeria-fotos__figure img:hover {
-    background-color: #711611; }
+    background-color: #8255aa; }
 
 a[href*="producto/royalbreakfast"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
   text-align: center;
   background-image: url(assets/img/bg_royalbreakfast.svg);
-  background-color: #871a14;
+  background-color: #8f66b3;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #711611; }
+  border: solid 10px #8255aa; }
   a[href*="producto/royalbreakfast"] figure:hover {
     background-position: 0 90px;
-    background-color: #52100c; }
+    background-color: #704992; }
   @media screen and (min-width: 600px) {
     a[href*="producto/royalbreakfast"] figure {
       width: 250px;
@@ -3196,16 +3144,14 @@ a[href*="producto/royalbreakfast"] figure {
 .cpt-camucao .page-header {
   background-image: url(assets/img/bg_camucao.svg);
   background-color: #a04421;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-camucao .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 .cpt-camucao .main-post__content {
   background-color: white; }
 .cpt-camucao .main-post__content__entry ul {
@@ -3232,7 +3178,7 @@ a[href*="producto/royalbreakfast"] figure {
 
 a[href*="producto/camucao"] figure {
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -3583,7 +3529,7 @@ a {
   .btn a {
     color: #317549;
     -webkit-transition: all 0.4s;
-    transition: all 0.4s; }
+            transition: all 0.4s; }
     .btn a:hover {
       text-decoration: none;
       color: white;
@@ -3669,7 +3615,7 @@ input[type="submit"].btn:hover {
 .btn--primary {
   border: 2px solid white;
   -webkit-transition: all 0.2s;
-  transition: all 0.2s; }
+          transition: all 0.2s; }
   .btn--primary:hover {
     color: #225133;
     background-color: #317549;
@@ -5040,7 +4986,7 @@ input:required:focus:valid {
       justify-content: space-around; } }
   .galeria-fotos * {
     -webkit-transition: all 0.5s;
-    transition: all 0.5s; }
+            transition: all 0.5s; }
 
 .galeria-fotos__figure {
   width: 100%;
@@ -5127,7 +5073,7 @@ input:required:focus:valid {
   height: 90px;
   overflow: hidden;
   -webkit-transition: all 0.2s;
-  transition: all 0.2s; }
+          transition: all 0.2s; }
   .brand.encoge {
     height: 75px; }
     .brand.encoge .brand__logo {
@@ -5142,7 +5088,7 @@ input:required:focus:valid {
   background-repeat: no-repeat;
   background-image: url(assets/img/logo.svg);
   -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
+          transition: all 0.3s; }
   .no-svg .brand__logo {
     background-image: url(assets/img/logo.png); }
     @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
