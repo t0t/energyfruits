@@ -55,9 +55,8 @@ $altlineheight: 1.35em;
 \*------------------------------------*/
 $basefontsize: 20 !default;
 $baseletterspacing: 1;
-
 /*------------------------------------*\
-    $COLORS
+  $COLORS
 \*------------------------------------*/
 $color-base: rgb(49,117,73); // verde Energyfruits
 $color-alt: rgb(240,115,11); // naranja Energyfruits
@@ -66,7 +65,6 @@ $color-base-light: lighten($color-base, 2%);
 $color-base-lighten: lighten($color-base, 10%);
 $color-base-dark: darken($color-base, 5%);
 $color-base-darken: darken($color-base, 10%);
-
 // Brand colors
 $color_goji: rgb(230,25,11);
 $color_graviola: rgb(127,116,76);
@@ -87,7 +85,6 @@ $color_algarroba: rgb(31,20,16);
 $color_cardomariano: rgb(166,120,174);
 $color_linodorado: rgb(222,197,67);
 $color_fresa: rgb(226,56,3);
-$color_coco: rgb(129,77,35);
 $color_gymtonic: rgb(192,4,17);
 $color_delifiber: rgb(239,214,0);
 $color_brainshake: rgb(217,145,0);
@@ -99,48 +96,39 @@ $color_camucao: rgb(139,59,29);
 $color_gojicaotrailmix: rgb(193,82,46);
 $color_andeantrailmix: rgb(193,82,46);
 $color_aguaymanto: rgb(230,25,11);
-
+$color_almendramarconavacio: rgb(99,84,20);
+$color_cococao: rgb(129,77,35);
+$color_harinaarroz: rgb(14,158,158);
+$color_polenvacio: rgb(191,172,6);
 // Marcas
-$brand_names: aguaymanto andeantrailmix gojicaotrailmix graviola goji cacaocriollo chlorella chia amaranto spiroulina camucamu canamo maca lucuma stevia quinoa alfalfa trigoverde algarroba cardomariano linodorado fresa coco gymtonic delifiber brainshake andeanprotein macuchino bodtox royalbreakfast camucao;
-
+$brand_names: polenvacio harinaarroz cococao almendramarconavacio
+aguaymanto andeantrailmix gojicaotrailmix graviola goji cacaocriollo chlorella chia amaranto spiroulina camucamu canamo maca lucuma stevia quinoa alfalfa trigoverde algarroba cardomariano linodorado fresa gymtonic delifiber brainshake andeanprotein macuchino bodtox royalbreakfast camucao;
 // Brand Colors
-$brand_colors: $color_aguaymanto $color_andeantrailmix $color_gojicaotrailmix $color_graviola $color_goji $color_cacaocriollo $color_chlorella $color_chia $color_amaranto $color_spiroulina $color_camucamu $color_canamo $color_maca $color_lucuma $color_stevia $color_quinoa $color_alfalfa $color_trigoverde $color_algarroba $color_cardomariano $color_linodorado $color_fresa $color_coco $color_gymtonic $color_delifiber $color_brainshake $color_andeanprotein $color_macuchino $color_bodtox $color_royalbreakfast $color_camucao;
-
-/**
- * Transparencias
- */
+$brand_colors:
+$color_polenvacio $color_harinaarroz $color_cococao $color_almendramarconavacio
+$color_aguaymanto $color_andeantrailmix $color_gojicaotrailmix $color_graviola $color_goji $color_cacaocriollo $color_chlorella $color_chia $color_amaranto $color_spiroulina $color_camucamu $color_canamo $color_maca $color_lucuma $color_stevia $color_quinoa $color_alfalfa $color_trigoverde $color_algarroba $color_cardomariano $color_linodorado $color_fresa $color_gymtonic $color_delifiber $color_brainshake $color_andeanprotein $color_macuchino $color_bodtox $color_royalbreakfast $color_camucao;
+// Transparencias
 $black: rgb(0,0,0);
 $black-alpha: transparentize($black, .3);
-$black-alpha-suave 	: transparentize($black, .1);
-$black-alpha-medio	: transparentize($black, .5);
-$black-alpha-fuerte	: transparentize($black, .9);
-
-$white				      : rgb(255,255,255);
-$white-alpha 		    : rgba(255,255,255,0.3);
-$white-alpha-suave 	: rgba(255,255,255,0.1);
-$white-alpha-medio	: rgba(255,255,255,0.5);
-$white-alpha-fuerte	: rgba(255,255,255,0.8);
-
-/**
- * Escala de grises
- */
-$lightgrey			: lighten($black, 30%);
-$grey				: lighten($black, 50%);
-
+$black-alpha-suave: transparentize($black, .1);
+$black-alpha-medio: transparentize($black, .5);
+$black-alpha-fuerte: transparentize($black, .9);
+$white: rgb(255,255,255);
+$white-alpha: rgba(255,255,255,0.3);
+$white-alpha-suave: rgba(255,255,255,0.1);
+$white-alpha-medio: rgba(255,255,255,0.5);
+$white-alpha-fuerte: rgba(255,255,255,0.8);
+$lightgrey: lighten($black, 30%);
+$grey: lighten($black, 50%);
 // Bordes
 $bordercolor    	: $white;
 $bordercolorhover   : $color-base;
-
 // Web
 $baseheadingfontcolor 		: $white;
-
 $background			: 	$color-base;
 $background-alt		: 	lighten($color-base, 63%);
-
-
 $textcolor			: 	$color-base;
 $textcolor-strong	:	$white;
-
 // Links  //////////////////////
 $linkcolor 			: $white;
 $linkcolorhover 	: lighten($linkcolor, 10%);
@@ -203,7 +191,6 @@ $buttoncolor        : $black;
 $buttonborderwidth  : 1px;
 $buttonborderstyle  : solid;
 
-
 // formularios
 $inputbackground    : $black-alpha-fuerte;
 $inputborder        : $color-base;
@@ -213,12 +200,11 @@ $inputhover         : lighten($black, 50%);
 $inputfocus         : $white-alpha-suave;
 $placeholdercolor   : $white;
 
-
 // Navegación
 $navitembordercolor    : $bordercolor;
 $navitempadding        : $gutterwidth / 2;
 $navtabsbordercolor    : $bordercolor;
 
 // Bordes
-$borde				: 2px solid $bordercolor;
-$bordehover			: 2px solid $bordercolorhover;
+$borde: 2px solid $bordercolor;
+$bordehover: 2px solid $bordercolorhover;

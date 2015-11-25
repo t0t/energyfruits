@@ -383,14 +383,8 @@ th {
     $TAMAÑOS
 \*------------------------------------*/
 /*------------------------------------*\
-    $COLORS
+  $COLORS
 \*------------------------------------*/
-/**
- * Transparencias
- */
-/**
- * Escala de grises
- */
 /*------------------------------------*\
     $PLACEHOLDERS
 \*------------------------------------*/
@@ -1284,6 +1278,238 @@ body {
   background-position: top center;
   background-attachment: fixed;
   font-size: 1rem; }
+
+.cpt-polenvacio .page-header {
+  background-image: url(assets/img/bg_polenvacio.svg);
+  background-color: #d8c207;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: all 4s;
+  transition: all 4s; }
+  .cpt-polenvacio .page-header:hover {
+    -webkit-transition: all 4s;
+    transition: all 4s;
+    background-position: center 100px;
+    background-size: cover; }
+.cpt-polenvacio .main-post__content {
+  background-color: white; }
+.cpt-polenvacio .main-post__content__entry ul {
+  background-image: url(assets/img/bg_polenvacio.svg);
+  background-color: #d8c207;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .cpt-polenvacio .main-post__content__entry ul:hover {
+    background-color: #e7d007; }
+.cpt-polenvacio .main-post__content__entry a {
+  color: white;
+  border-bottom: none; }
+  .cpt-polenvacio .main-post__content__entry a:hover {
+    color: #2b2601; }
+.cpt-polenvacio .galeria-fotos__figure a {
+  color: #bfac06; }
+  .cpt-polenvacio .galeria-fotos__figure a:hover {
+    color: #8e7f04; }
+.cpt-polenvacio .galeria-fotos__figure img {
+  background-color: #fcf4ae; }
+  .cpt-polenvacio .galeria-fotos__figure img:hover {
+    background-color: #bfac06; }
+
+a[href*="producto/polenvacio"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(assets/img/bg_polenvacio.svg);
+  background-color: #d8c207;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #bfac06; }
+  a[href*="producto/polenvacio"] figure:hover {
+    background-position: 0 90px;
+    background-color: #9c8d05; }
+  @media screen and (min-width: 600px) {
+    a[href*="producto/polenvacio"] figure {
+      width: 250px;
+      height: 250px; } }
+
+.cpt-harinaarroz .page-header {
+  background-image: url(assets/img/bg_harinaarroz.svg);
+  background-color: #10b5b5;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: all 4s;
+  transition: all 4s; }
+  .cpt-harinaarroz .page-header:hover {
+    -webkit-transition: all 4s;
+    transition: all 4s;
+    background-position: center 100px;
+    background-size: cover; }
+.cpt-harinaarroz .main-post__content {
+  background-color: white; }
+.cpt-harinaarroz .main-post__content__entry ul {
+  background-image: url(assets/img/bg_harinaarroz.svg);
+  background-color: #10b5b5;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .cpt-harinaarroz .main-post__content__entry ul:hover {
+    background-color: #11c3c3; }
+.cpt-harinaarroz .main-post__content__entry a {
+  color: white;
+  border-bottom: none; }
+  .cpt-harinaarroz .main-post__content__entry a:hover {
+    color: #021111; }
+.cpt-harinaarroz .galeria-fotos__figure a {
+  color: #0e9e9e; }
+  .cpt-harinaarroz .galeria-fotos__figure a:hover {
+    color: #0a6f6f; }
+.cpt-harinaarroz .galeria-fotos__figure img {
+  background-color: #9bf6f6; }
+  .cpt-harinaarroz .galeria-fotos__figure img:hover {
+    background-color: #0e9e9e; }
+
+a[href*="producto/harinaarroz"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(assets/img/bg_harinaarroz.svg);
+  background-color: #10b5b5;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #0e9e9e; }
+  a[href*="producto/harinaarroz"] figure:hover {
+    background-position: 0 90px;
+    background-color: #0b7d7d; }
+  @media screen and (min-width: 600px) {
+    a[href*="producto/harinaarroz"] figure {
+      width: 250px;
+      height: 250px; } }
+
+.cpt-cococao .page-header {
+  background-image: url(assets/img/bg_cococao.svg);
+  background-color: #955928;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: all 4s;
+  transition: all 4s; }
+  .cpt-cococao .page-header:hover {
+    -webkit-transition: all 4s;
+    transition: all 4s;
+    background-position: center 100px;
+    background-size: cover; }
+.cpt-cococao .main-post__content {
+  background-color: white; }
+.cpt-cococao .main-post__content__entry ul {
+  background-image: url(assets/img/bg_cococao.svg);
+  background-color: #955928;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .cpt-cococao .main-post__content__entry ul:hover {
+    background-color: #a1602c; }
+.cpt-cococao .main-post__content__entry a {
+  color: white;
+  border-bottom: none; }
+  .cpt-cococao .main-post__content__entry a:hover {
+    color: #090502; }
+.cpt-cococao .galeria-fotos__figure a {
+  color: #814d23; }
+  .cpt-cococao .galeria-fotos__figure a:hover {
+    color: #593518; }
+.cpt-cococao .galeria-fotos__figure img {
+  background-color: #e6c1a3; }
+  .cpt-cococao .galeria-fotos__figure img:hover {
+    background-color: #814d23; }
+
+a[href*="producto/cococao"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(assets/img/bg_cococao.svg);
+  background-color: #955928;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #814d23; }
+  a[href*="producto/cococao"] figure:hover {
+    background-position: 0 90px;
+    background-color: #653c1b; }
+  @media screen and (min-width: 600px) {
+    a[href*="producto/cococao"] figure {
+      width: 250px;
+      height: 250px; } }
+
+.cpt-almendramarconavacio .page-header {
+  background-image: url(assets/img/bg_almendramarconavacio.svg);
+  background-color: #786618;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: all 4s;
+  transition: all 4s; }
+  .cpt-almendramarconavacio .page-header:hover {
+    -webkit-transition: all 4s;
+    transition: all 4s;
+    background-position: center 100px;
+    background-size: cover; }
+.cpt-almendramarconavacio .main-post__content {
+  background-color: white; }
+.cpt-almendramarconavacio .main-post__content__entry ul {
+  background-image: url(assets/img/bg_almendramarconavacio.svg);
+  background-color: #786618;
+  background-position: 350px bottom;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .cpt-almendramarconavacio .main-post__content__entry ul:hover {
+    background-color: #85711b; }
+.cpt-almendramarconavacio .main-post__content__entry a {
+  color: white;
+  border-bottom: none; }
+  .cpt-almendramarconavacio .main-post__content__entry a:hover {
+    color: black; }
+.cpt-almendramarconavacio .galeria-fotos__figure a {
+  color: #635414; }
+  .cpt-almendramarconavacio .galeria-fotos__figure a:hover {
+    color: #39300b; }
+.cpt-almendramarconavacio .galeria-fotos__figure img {
+  background-color: #e4d079; }
+  .cpt-almendramarconavacio .galeria-fotos__figure img:hover {
+    background-color: #635414; }
+
+a[href*="producto/almendramarconavacio"] figure {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(assets/img/bg_almendramarconavacio.svg);
+  background-color: #786618;
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 10px #635414; }
+  a[href*="producto/almendramarconavacio"] figure:hover {
+    background-position: 0 90px;
+    background-color: #453b0e; }
+  @media screen and (min-width: 600px) {
+    a[href*="producto/almendramarconavacio"] figure {
+      width: 250px;
+      height: 250px; } }
 
 .cpt-aguaymanto .page-header {
   background-image: url(assets/img/bg_aguaymanto.svg);
@@ -2561,64 +2787,6 @@ a[href*="producto/fresa"] figure {
       width: 250px;
       height: 250px; } }
 
-.cpt-coco .page-header {
-  background-image: url(assets/img/bg_coco.svg);
-  background-color: #955928;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 4s;
-  transition: all 4s; }
-  .cpt-coco .page-header:hover {
-    -webkit-transition: all 4s;
-    transition: all 4s;
-    background-position: center 100px;
-    background-size: cover; }
-.cpt-coco .main-post__content {
-  background-color: white; }
-.cpt-coco .main-post__content__entry ul {
-  background-image: url(assets/img/bg_coco.svg);
-  background-color: #955928;
-  background-position: 350px bottom;
-  background-repeat: no-repeat;
-  background-size: contain; }
-  .cpt-coco .main-post__content__entry ul:hover {
-    background-color: #a1602c; }
-.cpt-coco .main-post__content__entry a {
-  color: white;
-  border-bottom: none; }
-  .cpt-coco .main-post__content__entry a:hover {
-    color: #090502; }
-.cpt-coco .galeria-fotos__figure a {
-  color: #814d23; }
-  .cpt-coco .galeria-fotos__figure a:hover {
-    color: #593518; }
-.cpt-coco .galeria-fotos__figure img {
-  background-color: #e6c1a3; }
-  .cpt-coco .galeria-fotos__figure img:hover {
-    background-color: #814d23; }
-
-a[href*="producto/coco"] figure {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  text-align: center;
-  background-image: url(assets/img/bg_coco.svg);
-  background-color: #955928;
-  background-position: 0 100px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: solid 10px #814d23; }
-  a[href*="producto/coco"] figure:hover {
-    background-position: 0 90px;
-    background-color: #653c1b; }
-  @media screen and (min-width: 600px) {
-    a[href*="producto/coco"] figure {
-      width: 250px;
-      height: 250px; } }
-
 .cpt-gymtonic .page-header {
   background-image: url(assets/img/bg_gymtonic.svg);
   background-color: #d90513;
@@ -3800,7 +3968,7 @@ $ELEMENTOS-IMAGENES
 .img--rounded {
   border-radius: 20px; }
 
-.img--circle, a[href*="producto/aguaymanto"] figure, a[href*="producto/andeantrailmix"] figure, a[href*="producto/gojicaotrailmix"] figure, a[href*="producto/graviola"] figure, a[href*="producto/goji"] figure, a[href*="producto/cacaocriollo"] figure, a[href*="producto/chlorella"] figure, a[href*="producto/chia"] figure, a[href*="producto/amaranto"] figure, a[href*="producto/spiroulina"] figure, a[href*="producto/camucamu"] figure, a[href*="producto/canamo"] figure, a[href*="producto/maca"] figure, a[href*="producto/lucuma"] figure, a[href*="producto/stevia"] figure, a[href*="producto/quinoa"] figure, a[href*="producto/alfalfa"] figure, a[href*="producto/trigoverde"] figure, a[href*="producto/algarroba"] figure, a[href*="producto/cardomariano"] figure, a[href*="producto/linodorado"] figure, a[href*="producto/fresa"] figure, a[href*="producto/coco"] figure, a[href*="producto/gymtonic"] figure, a[href*="producto/delifiber"] figure, a[href*="producto/brainshake"] figure, a[href*="producto/andeanprotein"] figure, a[href*="producto/macuchino"] figure, a[href*="producto/bodtox"] figure, a[href*="producto/royalbreakfast"] figure, a[href*="producto/camucao"] figure {
+.img--circle, a[href*="producto/polenvacio"] figure, a[href*="producto/harinaarroz"] figure, a[href*="producto/cococao"] figure, a[href*="producto/almendramarconavacio"] figure, a[href*="producto/aguaymanto"] figure, a[href*="producto/andeantrailmix"] figure, a[href*="producto/gojicaotrailmix"] figure, a[href*="producto/graviola"] figure, a[href*="producto/goji"] figure, a[href*="producto/cacaocriollo"] figure, a[href*="producto/chlorella"] figure, a[href*="producto/chia"] figure, a[href*="producto/amaranto"] figure, a[href*="producto/spiroulina"] figure, a[href*="producto/camucamu"] figure, a[href*="producto/canamo"] figure, a[href*="producto/maca"] figure, a[href*="producto/lucuma"] figure, a[href*="producto/stevia"] figure, a[href*="producto/quinoa"] figure, a[href*="producto/alfalfa"] figure, a[href*="producto/trigoverde"] figure, a[href*="producto/algarroba"] figure, a[href*="producto/cardomariano"] figure, a[href*="producto/linodorado"] figure, a[href*="producto/fresa"] figure, a[href*="producto/gymtonic"] figure, a[href*="producto/delifiber"] figure, a[href*="producto/brainshake"] figure, a[href*="producto/andeanprotein"] figure, a[href*="producto/macuchino"] figure, a[href*="producto/bodtox"] figure, a[href*="producto/royalbreakfast"] figure, a[href*="producto/camucao"] figure {
   border-radius: 50%; }
 
 .img--noajust {
