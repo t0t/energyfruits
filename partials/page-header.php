@@ -79,5 +79,8 @@
   </div>
   <div class="page-header__right">
     <?php get_search_form(); ?>
+    <?php if (in_category( '6' )): ?>
+      <?php /* Component Link a pagina Super Shakes */ get_template_part( 'partials/link-supershakes' ); ?>
+    <?php endif; ?>
   </div>
 </header>

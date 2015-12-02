@@ -1133,7 +1133,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
   .sidebar * {
     letter-spacing: 1;
     -webkit-transition: all 0.3s;
-            transition: all 0.3s; }
+    transition: all 0.3s; }
   .sidebar a, .sidebar a:visited {
     color: rgba(0, 0, 0, 0.5); }
     .sidebar a:hover, .sidebar a:visited:hover {
@@ -1330,7 +1330,7 @@ body {
 
 a[href*="producto/polenvacio"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1386,7 +1386,7 @@ a[href*="producto/polenvacio"] figure {
 
 a[href*="producto/harinaarroz"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1442,7 +1442,7 @@ a[href*="producto/harinaarroz"] figure {
 
 a[href*="producto/cococao"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1498,7 +1498,7 @@ a[href*="producto/cococao"] figure {
 
 a[href*="producto/almendramarconavacio"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1554,7 +1554,7 @@ a[href*="producto/almendramarconavacio"] figure {
 
 a[href*="producto/aguaymanto"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1610,7 +1610,7 @@ a[href*="producto/aguaymanto"] figure {
 
 a[href*="producto/andeantrailmix"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1666,7 +1666,7 @@ a[href*="producto/andeantrailmix"] figure {
 
 a[href*="producto/gojicaotrailmix"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1722,7 +1722,7 @@ a[href*="producto/gojicaotrailmix"] figure {
 
 a[href*="producto/graviola"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1778,7 +1778,7 @@ a[href*="producto/graviola"] figure {
 
 a[href*="producto/goji"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1834,7 +1834,7 @@ a[href*="producto/goji"] figure {
 
 a[href*="producto/cacaocriollo"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1890,7 +1890,7 @@ a[href*="producto/cacaocriollo"] figure {
 
 a[href*="producto/chlorella"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -1946,7 +1946,7 @@ a[href*="producto/chlorella"] figure {
 
 a[href*="producto/chia"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2002,7 +2002,7 @@ a[href*="producto/chia"] figure {
 
 a[href*="producto/amaranto"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2058,7 +2058,7 @@ a[href*="producto/amaranto"] figure {
 
 a[href*="producto/spiroulina"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2114,7 +2114,7 @@ a[href*="producto/spiroulina"] figure {
 
 a[href*="producto/camucamu"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2170,7 +2170,7 @@ a[href*="producto/camucamu"] figure {
 
 a[href*="producto/canamo"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2226,7 +2226,7 @@ a[href*="producto/canamo"] figure {
 
 a[href*="producto/maca"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2282,7 +2282,7 @@ a[href*="producto/maca"] figure {
 
 a[href*="producto/lucuma"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2338,7 +2338,7 @@ a[href*="producto/lucuma"] figure {
 
 a[href*="producto/stevia"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2394,7 +2394,7 @@ a[href*="producto/stevia"] figure {
 
 a[href*="producto/quinoa"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2450,7 +2450,7 @@ a[href*="producto/quinoa"] figure {
 
 a[href*="producto/alfalfa"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2506,7 +2506,7 @@ a[href*="producto/alfalfa"] figure {
 
 a[href*="producto/trigoverde"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2562,7 +2562,7 @@ a[href*="producto/trigoverde"] figure {
 
 a[href*="producto/algarroba"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2618,7 +2618,7 @@ a[href*="producto/algarroba"] figure {
 
 a[href*="producto/cardomariano"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2674,7 +2674,7 @@ a[href*="producto/cardomariano"] figure {
 
 a[href*="producto/linodorado"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2730,7 +2730,7 @@ a[href*="producto/linodorado"] figure {
 
 a[href*="producto/fresa"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2786,7 +2786,7 @@ a[href*="producto/fresa"] figure {
 
 a[href*="producto/gymtonic"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2842,7 +2842,7 @@ a[href*="producto/gymtonic"] figure {
 
 a[href*="producto/delifiber"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2898,7 +2898,7 @@ a[href*="producto/delifiber"] figure {
 
 a[href*="producto/brainshake"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -2954,7 +2954,7 @@ a[href*="producto/brainshake"] figure {
 
 a[href*="producto/andeanprotein"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -3010,7 +3010,7 @@ a[href*="producto/andeanprotein"] figure {
 
 a[href*="producto/macuchino"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -3066,7 +3066,7 @@ a[href*="producto/macuchino"] figure {
 
 a[href*="producto/bodtox"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -3122,7 +3122,7 @@ a[href*="producto/bodtox"] figure {
 
 a[href*="producto/royalbreakfast"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -3178,7 +3178,7 @@ a[href*="producto/royalbreakfast"] figure {
 
 a[href*="producto/camucao"] figure {
   -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+  transition: all 0.3s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -3529,7 +3529,7 @@ a {
   .btn a {
     color: #317549;
     -webkit-transition: all 0.4s;
-            transition: all 0.4s; }
+    transition: all 0.4s; }
     .btn a:hover {
       text-decoration: none;
       color: white;
@@ -3615,7 +3615,7 @@ input[type="submit"].btn:hover {
 .btn--primary {
   border: 2px solid white;
   -webkit-transition: all 0.2s;
-          transition: all 0.2s; }
+  transition: all 0.2s; }
   .btn--primary:hover {
     color: #225133;
     background-color: #317549;
@@ -3710,12 +3710,16 @@ input[type="submit"].btn:hover {
         -ms-transform: rotate(-4deg);
             transform: rotate(-4deg);
     -webkit-transition-property: -webkit-transform opacity;
-            transition-property: transform opacity;
+    transition-property: -webkit-transform opacity;
+    transition-property: transform opacity;
+    transition-property: transform opacity, -webkit-transform opacity;
     -webkit-transition-duration: 1.5s;
             transition-duration: 1.5s; }
   .btn--cta:hover:before {
     -webkit-transition-property: -webkit-transform opacity;
-            transition-property: transform opacity;
+    transition-property: -webkit-transform opacity;
+    transition-property: transform opacity;
+    transition-property: transform opacity, -webkit-transform opacity;
     -webkit-transition-duration: .3s;
             transition-duration: .3s;
     -webkit-transform: rotate(0deg);
@@ -3737,6 +3741,9 @@ input[type="submit"].btn:hover {
 .btn--invert {
   border-color: white;
   color: white; }
+
+.btn--supershakes {
+  fill: white; }
 
 /* Preload images */
 body:after {
@@ -4218,7 +4225,9 @@ Main navbar
     line-height: 1.7;
     text-align: center;
     -webkit-transition-property: -webkit-transform;
-            transition-property: transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
     -webkit-transition-duration: .3s;
             transition-duration: .3s;
     -webkit-transform: translate(100%, 65px) rotate(0deg);
@@ -4235,7 +4244,7 @@ Main navbar
       .nav-main ul a:hover {
         color: #317549;
         -webkit-transition-property: color;
-                transition-property: color;
+        transition-property: color;
         -webkit-transition-duration: .3s;
                 transition-duration: .3s; }
   .nav-main input[type="checkbox"] {
@@ -4255,7 +4264,9 @@ Main navbar
         -ms-transform: translate(0, 65px) rotate(-10deg);
             transform: translate(0, 65px) rotate(-10deg);
     -webkit-transition-property: -webkit-transform;
-            transition-property: transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
     -webkit-transition-duration: .3s;
             transition-duration: .3s; }
 
@@ -4986,7 +4997,7 @@ input:required:focus:valid {
       justify-content: space-around; } }
   .galeria-fotos * {
     -webkit-transition: all 0.5s;
-            transition: all 0.5s; }
+    transition: all 0.5s; }
 
 .galeria-fotos__figure {
   width: 100%;
@@ -5003,7 +5014,7 @@ input:required:focus:valid {
   .galeria-fotos__figure .galeria-fotos__caption {
     position: relative;
     -webkit-transition: all .2s;
-            transition: all .2s;
+    transition: all .2s;
     font-size: 12px;
     font-size: .7rem;
     margin: 6% 0; }
@@ -5073,7 +5084,7 @@ input:required:focus:valid {
   height: 90px;
   overflow: hidden;
   -webkit-transition: all 0.2s;
-          transition: all 0.2s; }
+  transition: all 0.2s; }
   .brand.encoge {
     height: 75px; }
     .brand.encoge .brand__logo {
@@ -5088,7 +5099,7 @@ input:required:focus:valid {
   background-repeat: no-repeat;
   background-image: url(assets/img/logo.svg);
   -webkit-transition: all 0.3s;
-          transition: all 0.3s; }
+  transition: all 0.3s; }
   .no-svg .brand__logo {
     background-image: url(assets/img/logo.png); }
     @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
