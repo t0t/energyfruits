@@ -71,6 +71,7 @@ $color_graviola: rgb(127,116,76);
 $color_cacaocriollo: rgb(60,29,29);
 $color_chlorella: rgb(30,19,16);
 $color_chia: rgb(140,126,115);
+$color_coco: rgb(129,77,35);
 $color_amaranto: rgb(177,35,101);
 $color_spiroulina: rgb(46,56,40);
 $color_camucamu: rgb(101,51,60);
@@ -102,11 +103,11 @@ $color_harinaarroz: rgb(14,158,158);
 $color_polenvacio: rgb(191,172,6);
 // Marcas
 $brand_names: polenvacio harinaarroz cococao almendramarconavacio
-aguaymanto andeantrailmix gojicaotrailmix graviola goji cacaocriollo chlorella chia amaranto spiroulina camucamu canamo maca lucuma stevia quinoa alfalfa trigoverde algarroba cardomariano linodorado fresa gymtonic delifiber brainshake andeanprotein macuchino bodtox royalbreakfast camucao;
+aguaymanto andeantrailmix gojicaotrailmix graviola goji cacaocriollo chlorella chia coco amaranto spiroulina camucamu canamo maca lucuma stevia quinoa alfalfa trigoverde algarroba cardomariano linodorado fresa gymtonic delifiber brainshake andeanprotein macuchino bodtox royalbreakfast camucao;
 // Brand Colors
 $brand_colors:
 $color_polenvacio $color_harinaarroz $color_cococao $color_almendramarconavacio
-$color_aguaymanto $color_andeantrailmix $color_gojicaotrailmix $color_graviola $color_goji $color_cacaocriollo $color_chlorella $color_chia $color_amaranto $color_spiroulina $color_camucamu $color_canamo $color_maca $color_lucuma $color_stevia $color_quinoa $color_alfalfa $color_trigoverde $color_algarroba $color_cardomariano $color_linodorado $color_fresa $color_gymtonic $color_delifiber $color_brainshake $color_andeanprotein $color_macuchino $color_bodtox $color_royalbreakfast $color_camucao;
+$color_aguaymanto $color_andeantrailmix $color_gojicaotrailmix $color_graviola $color_goji $color_cacaocriollo $color_chlorella $color_chia $color_coco $color_amaranto $color_spiroulina $color_camucamu $color_canamo $color_maca $color_lucuma $color_stevia $color_quinoa $color_alfalfa $color_trigoverde $color_algarroba $color_cardomariano $color_linodorado $color_fresa $color_gymtonic $color_delifiber $color_brainshake $color_andeanprotein $color_macuchino $color_bodtox $color_royalbreakfast $color_camucao;
 // Transparencias
 $black: rgb(0,0,0);
 $black-alpha: transparentize($black, .3);
@@ -121,11 +122,11 @@ $white-alpha-fuerte: rgba(255,255,255,0.8);
 $lightgrey: lighten($black, 30%);
 $grey: lighten($black, 50%);
 // Bordes
-$bordercolor    	: $white;
-$bordercolorhover   : $color-base;
+$bordercolor: $white;
+$bordercolorhover: $color-base;
 // Web
-$baseheadingfontcolor 		: $white;
-$background			: 	$color-base;
+$baseheadingfontcolor: $white;
+$background: 	$color-base;
 $background-alt		: 	lighten($color-base, 63%);
 $textcolor			: 	$color-base;
 $textcolor-strong	:	$white;
