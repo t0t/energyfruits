@@ -9,7 +9,7 @@
 	/* Content page */
 	get_template_part('partials/fields', 'page');
   ?>
-	<h3 class="slider__title">Tiendas Físicas</h3>
+	<h3 class="slider__title slider__title--invert">Tiendas Físicas</h3>
 	<?php
   /* Mapa */
   echo do_shortcode('[mappress mapid="3" width="100%"]');
