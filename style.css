@@ -3143,7 +3143,7 @@ a[href*="producto/bodtox"] figure {
 
 .cpt-royalbreakfast .page-header {
   background-image: url(assets/img/bg_royalbreakfast.svg);
-  background-color: #8f66b3;
+  background-color: #684caa;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-animation-name: zoom;
@@ -3156,25 +3156,25 @@ a[href*="producto/bodtox"] figure {
   background-color: white; }
 .cpt-royalbreakfast .main-post__content__entry ul {
   background-image: url(assets/img/bg_royalbreakfast.svg);
-  background-color: #8f66b3;
+  background-color: #684caa;
   background-position: 350px bottom;
   background-repeat: no-repeat;
   background-size: contain; }
   .cpt-royalbreakfast .main-post__content__entry ul:hover {
-    background-color: #9670b8; }
+    background-color: #6f53b2; }
 .cpt-royalbreakfast .main-post__content__entry a {
   color: white;
   border-bottom: none; }
   .cpt-royalbreakfast .main-post__content__entry a:hover {
-    color: #342244; }
+    color: #1c152e; }
 .cpt-royalbreakfast .galeria-fotos__figure a {
-  color: #8255aa; }
+  color: #5d4498; }
   .cpt-royalbreakfast .galeria-fotos__figure a:hover {
-    color: #684488; }
+    color: #473475; }
 .cpt-royalbreakfast .galeria-fotos__figure img {
-  background-color: #f3eef7; }
+  background-color: #dcd5ec; }
   .cpt-royalbreakfast .galeria-fotos__figure img:hover {
-    background-color: #8255aa; }
+    background-color: #5d4498; }
 
 a[href*="producto/royalbreakfast"] figure {
   -webkit-transition: all 0.3s;
@@ -3184,14 +3184,14 @@ a[href*="producto/royalbreakfast"] figure {
   margin: 0 auto;
   text-align: center;
   background-image: url(assets/img/bg_royalbreakfast.svg);
-  background-color: #8f66b3;
+  background-color: #684caa;
   background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: solid 10px #8255aa; }
+  border: solid 10px #5d4498; }
   a[href*="producto/royalbreakfast"] figure:hover {
     background-position: 0 90px;
-    background-color: #704992; }
+    background-color: #4e397f; }
   @media screen and (min-width: 600px) {
     a[href*="producto/royalbreakfast"] figure {
       width: 250px;
