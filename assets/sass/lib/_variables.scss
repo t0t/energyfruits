@@ -126,12 +126,12 @@ $bordercolor: $white;
 $bordercolorhover: $color-base;
 // Web
 $baseheadingfontcolor: $white;
-$background: 	$color-base;
-$background-alt		: 	lighten($color-base, 63%);
-$textcolor			: 	$color-base;
-$textcolor-strong	:	$white;
+$background: $color-base;
+$background-alt: lighten($color-base, 63%);
+$textcolor: $color-base;
+$textcolor-strong:	$white;
 // Links  //////////////////////
-$linkcolor 			: $white;
+$linkcolor: $white;
 $linkcolorhover 	: lighten($linkcolor, 10%);
 $linkcolorvisited   : $linkcolor;
 $linkcolorfocus 	: $linkcolorvisited;
