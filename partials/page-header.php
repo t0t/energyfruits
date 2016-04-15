@@ -2,14 +2,16 @@
   /* Header de Paginas */
 ?>
 <header class="page-header">
+
   <div class="page-header__left">
     <?php /* Language Selector */
       echo do_shortcode( '[gtranslate]' );
     ?>
-    <?php /* Component Catalog */
+    <?php /* Component Enlace Catalogo */
       get_template_part( 'partials/catalog' );
     ?>
   </div>
+
   <div class="page-header__center efecto--intro">
     <?php if ( is_post_type( 'producto' )) {
     echo "<h1>string</h1>";
