@@ -9,7 +9,7 @@
         <?php if(get_row_layout() == "video"): // Layout Videos ?>
 
             <?php if(get_sub_field('video_repeater')): ?>
-            <?php while(has_sub_field('video_repeater')): ?>  
+            <?php while(has_sub_field('video_repeater')): ?>
 
             <div class="row">
 
@@ -22,26 +22,26 @@
                     <?php endif ?>
 
             </div>
-            
+
             <?php endwhile; ?>
-            <?php endif; ?> 
+            <?php endif; ?>
 
 
 
 
         <?php elseif(get_row_layout() == "list"): // Layout lista ?>
-                
+
                 <dl class="col__4">
                      <dt><?php the_sub_field('titulo'); ?></dt>
-                <?php while(has_sub_field('item_repeater')): ?>  
-                     
+                <?php while(has_sub_field('item_repeater')): ?>
+
                      <dd><i class="icon-tick"></i> <?php the_sub_field('item'); ?></dd>
-                                    
+
                 <?php endwhile; ?>
                 </dl>
-     
 
- 
+
+
 
 
         <?php elseif(get_row_layout() == "quote"): //Layout Quotes?>
@@ -62,12 +62,12 @@
             <div class="row">
                 <h3 class="h1"><?php the_sub_field("title"); ?></h3>
                 <h3><?php the_sub_field("description"); ?></h3>
-            
+
                 <?php
                 $images = get_sub_field('gallery');
-             
+
                 if( $images ): ?>
-            
+
                     <ul>
                         <?php foreach( $images as $image ): ?>
                             <li class="col__3">
@@ -80,15 +80,15 @@
                             </li>
                         <?php endforeach; ?>
                     </ul>
-            
+
                 <?php endif; ?>
             </div>
 
 
 
 
-        <?php endif; ?> 
- 
+        <?php endif; ?>
+
     <?php endwhile; ?>
 
  <?php endif; ?>

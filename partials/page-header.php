@@ -37,13 +37,34 @@
       <?php while (has_sub_field( "flexible_content" )): ?>
         <?php
         /* Wellcome panel */
+
         if (get_row_layout() == "well-img"): ?>
+
           <h1 class="efecto--intro"><?php the_sub_field( "title" ); ?></h1>
+
           <h3><?php the_sub_field( "subtitle" );?></h3>
-          <a class="btn btn--cta" href="<?php the_sub_field( "call_to_action" ); ?>">
-            <?php the_sub_field( "description" ); ?>
-          </a>
+
+            <?php
+              $descripcion = get_sub_field('description');
+              $cta_externo = get_sub_field('call_to_action_externo');
+            ?>
+
+            <?php // Si CTA externo es verdadero pinta botón con enlace externo
+            if ( $cta_externo == true ) { ?>
+              <a class="btn" href="<?php echo $cta_externo ?>" target="_blank">
+                <?php echo $descripcion; ?>
+              </a>
+            <?php } ?>
+
+            <?php // Si call to action externo está vacío entonces pinta CTA interno
+              if ( $descripcion == true && $cta_externo == false ) { ?>
+              <a class="btn btn--cta" href="<?php the_sub_field( "call_to_action" ); ?>">
+              <?php echo $descripcion; ?>
+              </a>
+            <?php } ?>
+
         <?php endif; ?>
+
       <?php endwhile; ?>
     <?php endif; ?>
     <!-- Encabezado Page -->
