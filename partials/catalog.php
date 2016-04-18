@@ -10,6 +10,7 @@
 			<?php
 			$descripcion = get_sub_field('description');
 			$url = get_sub_field('url');
+			$img = get_sub_field('img');
 			?>
 
 			<?php if ( $url == true ) { ?>
@@ -17,12 +18,11 @@
 			<div class="catalog">
 				<a href="<?php echo $url ?>" target="_blank">
 					<figure class="catalog-figure">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/catalog-2015.png" alt="<?php the_sub_field( 'title' ); ?>">
+						<img src="<?php echo $img; ?>" alt="<?php the_sub_field( 'title' ); ?>">
 						<figcaption><?php echo $descripcion; ?></figcaption>
 					</figure>
 				</a>
 			</div>
-
 			<?php } ?>
 
 		<?php endif; ?>
