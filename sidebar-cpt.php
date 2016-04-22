@@ -1,4 +1,4 @@
-
+<!-- Sliders footer -->
 <?php if (in_category('supershakes')): ?>
 	<?php
 		$loop = new WP_Query( array(
@@ -29,7 +29,7 @@
   <h3 class="slider__title"><?php the_sub_field("title"); ?></h3>
   <?php the_sub_field("description"); ?>
 
-  <div class="slider__slides slider">
+  <div class="slider__slides sldr slider">
 
     <?php while ($loop->have_posts()): $loop->the_post(); ?>
 
