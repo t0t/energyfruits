@@ -4,7 +4,7 @@ if (have_rows( 'carrusel_links_externos' )):
 ?>
   <section class="slider__wrap">
     <h3 class="slider__title"><span class="icon-attachment" aria-labelledby="icono"></span> Tiendas Virtuales</h3>
-    <div class="slider__slides slider">
+    <div class="slider__slides slider slider-2">
       <?php while (have_rows('carrusel_links_externos')): the_row();?>
         <?php
           $titulo = get_sub_field('titulo');
@@ -35,7 +35,7 @@ if (have_rows( 'carrusel_links_externos' )):
 ?>
 <section class="slider__wrap">
   <h3 class="slider__title"><span class="icon-attachment" aria-labelledby="icono"></span> Webs interesantes</h3>
-  <div class="slider__slides slider">
+  <div class="slider__slides slider slider-2">
   <?php while (have_rows('carrusel_webs_interesantes')): the_row();?>
     <a href="<?php the_sub_field('link')?>" target="_blank" aria-labelledby="link externo">
       <figure>

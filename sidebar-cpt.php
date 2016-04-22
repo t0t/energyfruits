@@ -1,47 +1,47 @@
 
 <?php if (in_category('supershakes')): ?>
-
-<?php
-	$loop = new WP_Query( array(
-		'post_type' => 'cpt',
-		'category_name' => 'supershakes',
-		'posts_per_page' => '',
-		'orderby' => 'date',
-		'order' => 'DESC',
-	));
-?>
+	<?php
+		$loop = new WP_Query( array(
+			'post_type' => 'cpt',
+			'category_name' => 'supershakes',
+			'posts_per_page' => '',
+			'orderby' => 'date',
+			'order' => 'DESC',
+		));
+	?>
 <?php endif?>
 
 <?php if (in_category('energyfruits')): ?>
-<?php
-	$loop = new WP_Query( array(
-		'post_type' => 'cpt',
-		'category_name' => 'energyfruits',
-		'posts_per_page' => '',
-		'orderby' => 'date',
-		'order' => 'DESC',
-	));
-?>
+	<?php
+		$loop = new WP_Query( array(
+			'post_type' => 'cpt',
+			'category_name' => 'energyfruits',
+			'posts_per_page' => '',
+			'orderby' => 'date',
+			'order' => 'DESC',
+		));
+	?>
 <?php endif?>
 
-	<section class="slider__wrap">
 
-    <h3 class="slider__title"><?php the_sub_field("title");?></h3>
-    <?php the_sub_field("description");?>
+<section class="slider__wrap">
 
-    <div class="slider__slides slider">
+  <h3 class="slider__title"><?php the_sub_field("title"); ?></h3>
+  <?php the_sub_field("description"); ?>
 
-      <?php while ($loop->have_posts()): $loop->the_post();?>
+  <div class="slider__slides slider">
 
-        <a href="<?php the_permalink();?>">
-          <figure>
-            <figcaption class="slider__caption"><?php the_title();?></figcaption>
-          </figure>
-        </a>
+    <?php while ($loop->have_posts()): $loop->the_post(); ?>
 
-        <?php endwhile;?>
-      <?php wp_reset_postdata();?>
+      <a href="<?php the_permalink(); ?>" class="slider__item">
+        <figure>
+          <figcaption class="slider__caption"><?php the_title(); ?></figcaption>
+        </figure>
+      </a>
 
-    </div>
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
 
-	</section>
+  </div>
+
+</section>

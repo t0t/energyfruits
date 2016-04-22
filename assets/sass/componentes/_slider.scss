@@ -10,6 +10,10 @@ $slick-opacity-default: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.25 !default;
 
+.sliders {
+  display: flex;
+  flex-wrap: wrap;
+}
 //Slider
 .slider {
   @include max-width($bp0 - $paddingbase * 10);
@@ -34,14 +38,26 @@ $slick-opacity-not-active: 0.25 !default;
   padding-bottom: 5px;
   width: 100%;
 }
+
 .slider__item {
   text-align: center;
   &.current {
     opacity: 1;
     padding-bottom: 0;
   }
+  figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
-.slider__slides {}
+.slider__slides {
+  > div {
+    // display: flex;
+    // flex-wrap: wrap;
+  }
+}
 .slider__figure {
   @extend %text-center;
   position: relative;
@@ -65,10 +81,10 @@ $slick-opacity-not-active: 0.25 !default;
     color: $white;
   }
 .slider__caption {
-  @include font-size(30);
-  line-height: 7em;
+  @include font-size(16);
+  // line-height: 2em;
   font-style: normal;
-  letter-spacing: -1px;
+  // letter-spacing: -1px;
 }
 .slider__caption-post {
   color: $color-base;
@@ -110,7 +126,8 @@ $slick-opacity-not-active: 0.25 !default;
 /* Slider */
 
 .slick-slider {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -279,6 +296,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-dots {
+  flex: 1 100%;
     padding-top: 20px;
     padding-left: 0;
     li {

@@ -54,23 +54,25 @@
     figure {
       @include transition(0.3s);
       @extend .img--circle;
-      width: 200px;
-      height: 200px;
+      width: 100px;
+      height: 100px;
       margin: 0 auto;
       text-align: center;
       background-image: url(#{$image-path}bg_#{$brand}.svg);
       background-color: lighten($elcolor, 5%);
-      background-position: 0 100px;
+      background-position: 0 50px;
       background-repeat: no-repeat;
       background-size: contain;
-      border: solid 10px $elcolor;
+      border: solid 5spx $elcolor;
+      margin-left: 0;
+      margin-right: 0;
       &:hover {
         background-position: 0 90px;
         background-color: darken($elcolor, 7%);
       }
       @media screen and (min-width: $bp3) {
-        width: 250px;
-        height: 250px;
+        width: 100px;
+        height: 100px;
       }
         // @media screen and (min-width:$bp3) { line-height: 255px; }
       }
